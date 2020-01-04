@@ -1,0 +1,12 @@
+<ul>
+{% for post in site.posts limit:35 %}
+
+{% unless post.skipNavigation != nil %}
+    
+<li>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endunless %}
+
+{% endfor %}
+</ul>

@@ -1,0 +1,101 @@
+---
+layout: demo
+title: "Angular 4+ QR Code Generator DEMO"
+image: "images/content/generate-qrcodes-angular.png"
+excerpt: "How To Generate QR Codes In Angular 4+ Applications DEMO " 
+tags : [angular]
+head : '<link rel="icon" type="image/x-icon" href="favicon.ico"><link href="styles.46a55e3e4ece453cfa02.bundle.css" rel="stylesheet"/></head>'
+footer : '<script type="text/javascript" src="inline.7924fc4c84e7e29d5a74.bundle.js"></script><script type="text/javascript" src="polyfills.0033a1274cf6b1ff9ede.bundle.js"></script><script type="text/javascript" src="vendor.891611992eea2c9a025c.bundle.js"></script><script type="text/javascript"src="main.03144d1d089a169e0396.bundle.js"></script>'
+---
+<h1>Angular 4+ AutoLinked Component  </h1>
+
+You can use this component to render urls ,phones ,emails ,hasttags and mentions into clickable links .
+<br>
+
+First you need to install the library from npm :
+
+`
+    npm install ngx-autolinked --save 
+
+`
+<br>
+Next
+<br> 
+`
+    import the module <em>NgxAutolinkedModule</em> and add it to main module imports 
+
+    import { NgxAutolinkedModule } from 'ngx-autolinked';
+
+    @NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        NgxAutolinkedModule,
+    
+    providers: [],
+    bootstrap: [AppComponent]
+    })
+    export class AppModule { }     
+`
+<br>
+Then you can easilly use it in any component .For example :
+<br>
+
+`
+    import { Component } from '@angular/core';
+
+    @Component({
+    selector: 'app-root',
+    template: ` 
+        <div>
+        <ngx-autolinked>
+            <p>https://www.techiediaries.com </p>
+        </ngx-autolinked>
+        </div>
+    `,
+    styles: []
+    })
+    export class AppComponent {
+    }
+
+`
+<br>
+This will be rendered to 
+<br>
+
+{% raw %}
+    <a href="https://www.techiediaries.com">techiediaries.com</a>
+
+{% endraw %}
+<br>
+
+You can pass many options to ngx-autolinked component such as 
+
+`
+      newWindow : boolean : Open links in new window
+      urls : boolean : render urls 
+      email : boolean : render emails
+      phone : boolean : render phones 
+      mention : 'twitter' | 'google' | false : service to use 
+      hashtag : 'twitter' | 'facebook' | false : service to use 
+      stripPrefix : boolean  : string prefixes in urls 
+      stripTrailingSlash : boolean : string trailing slash 
+      truncate : object   : truncate text 
+      className : string  : add a class name to rendred elements 
+`
+<br>
+For example to render urls ,emails and phones without rendering hashtags and mentions use
+
+<br>
+`
+      <ngx-autolinked [newWindow]="true" [urls]="true" [email]="true" [phone]="true" [mention]="false" [hashtag]="false">
+            <p>https://www.techiediaries.com </p><br>
+            <p>techiediaries9@gmail.com</p><br>
+            <p>0 00 00 00 00</p>
+            <p>@techiediaries</p>
+            <p>#techiediaries</p>
+      </ngx-autolinked>
+
+`

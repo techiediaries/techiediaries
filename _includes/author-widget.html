@@ -1,0 +1,42 @@
+{% if page.author %}
+{% assign author = site.authors[page.author] %}
+
+{% else %}
+{% assign author = site.authors["ahmed"] %}
+{% endif %}
+
+<div>
+        <p>
+                You can reach the author via Twitter:
+        </p>
+        {{author.follow}}
+</div>
+<h3>About the author</h3>
+<div>
+    <img class="avatar" src="{{author.gravatar}}"
+        alt="{{author.display_name}}" />
+    <div class="bio">
+            {{ author.bio }}
+    </div>
+    <div class="description">
+            {{ author.description }}
+    </div>
+    <ul class="data">
+    <li>
+          <a target="_blank" rel="nofollow" class="link-dark" href="{{ author.web }}">Website</a></li>
+<li>
+          <a target="_blank" href="{{ author.twitter }}" class="btn follow">Twitter</a>
+    </li>
+<li>
+          <a target="_blank" href="{{ author.linkedin }}" class="btn follow">LinkedIn</a>
+    </li>
+
+<li>
+          <a target="_blank" href="{{ author.github }}" class="btn follow">GitHub</a>
+    </li>
+
+ </ul>
+</div>
+
+
+

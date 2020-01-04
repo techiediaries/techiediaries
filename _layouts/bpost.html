@@ -1,0 +1,184 @@
+---
+layout: nil
+skipRss: true
+skipNavigation: true 
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="msvalidate.01" content="717883E5CC017F74428029865039B548" />
+	<meta name="google-site-verification" content="p5fO6UZ8-nSvKNUMfwmf8jb7dSQTMnSgw7Vrm4V49YE" />
+	<meta name="ahrefs-site-verification" content="b31f0540449b159cb3a9d3272e5f5f7e77a6b7f90289f44bae3ad46d2e015a05">
+	<meta name='dmca-site-verification' content='aUZXeDk0WWR1YXZEbmtuNkV5c2tRaVFUc2NHWlRyUFdVa0lWakF5Y0ptRT01' />
+	<meta property="fb:pages" content="217712901582117" />
+	<meta property="og:image" content="{{page.image}}" />
+	<meta name="p:domain_verify" content="75051f0a45f89e01f06be43dbaff6f74" />
+	<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+	<title>{{ page.title }} | {{site.name}}</title>
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">{% endif %}
+
+	<link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
+
+
+	<!-- Mailchimp popup -->
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+		data-dojo-config="usePlainJson: true, isDebug: false"></script>
+	<script type="text/javascript">
+		window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us17.list-manage.com", "uuid": "444ae13ce2d2ced511cf9d19b", "lid": "0861b927e8", "uniqueMethods": true }) })
+	</script>
+	<!-- End Mailchimp popup -->
+
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css">
+
+{% include bpost-css.html %}
+
+
+
+	<!-- Ezoic Ad Testing Code-->
+	<script src="//g.ezoic.net/ezoic/ezoiclitedata.go?did=51807"></script>
+	<!-- Ezoic Ad Testing Code-->
+
+</head>
+
+<body>
+
+	{% include analytics.html %}
+
+	{% include header.html %}
+
+	<div class="site-content">
+		<div class="container">
+
+			<div class="main-content">
+				<!-- Begin Article
+================================================== -->
+				<div class="container">
+					<div class="row">
+
+						<!-- Post -->
+						{% assign author = site.authors[page.author] %}
+
+						<div class="col-xs-12 col-md-8">
+							<div class="mainheading">
+
+
+								<!-- Post Title -->
+								<h1 class="posttitle">{{ page.title }}</h1>
+
+							</div>
+
+							<!-- Post Featured Image -->
+							{% if page.image %}
+
+							{% endif %}
+							<!-- End Featured Image -->
+
+
+							<!-- Post Content -->
+
+							<div class="article-post">
+								<div style="margin: 10px;" id="share"></div>
+								{{content}}
+							</div>
+
+							<!-- Post Date -->
+							<p>
+								<small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+							</p>
+
+
+							<!-- Post Categories -->
+							<div class="after-post-tags">
+								<ul class="tags">
+									{% assign sortedCategories = page.tags | sort %}
+									{% for category in sortedCategories %}
+									<li>
+										<a href="{{ site.baseurl }}/tag/{{ category | slugify }}/">{{ category }}</a>
+									</li>
+									{% endfor %}
+								</ul>
+							</div>
+							<!-- End Categories -->
+							<!-- Author Box -->
+							{% if page.author %}
+							<div class="row post-top-meta">
+								<div class="col-md-12">
+									<a target="_blank" class="link-dark"
+										href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank"
+										href="{{ author.twitter }}" class="btn follow">Follow</a>
+									<span class="author-description">{{ author.description }}</span>
+								</div>
+							</div>
+							{% endif %}
+							<!-- Prev/Next -->
+							<div class="row PageNavigation">
+								{% if page.previous.url %}
+								<a class="col-md-6 prev" href="{{page.previous.url | absolute_url}}">&laquo;
+									{{page.previous.title}}</a>
+								{% endif %}
+								{% if page.next.url %}
+								<a class="col-md-6 text-right next"
+									href="{{page.next.url | absolute_url}}">{{page.next.title}}
+									&raquo;</a>
+								{% endif %}
+							</div>
+
+
+						</div>
+						<div id="sidebar" class="col-xs-12 col-md-4 col-xs-offset-1 sidebar-outer">
+							<aside class="widget">
+							</aside>
+						</div>
+						<!-- End Post -->
+
+					</div>
+				</div>
+				<!-- End Article
+================================================== -->
+
+
+
+				<!-- Begin Comments
+================================================== -->
+				<div id="comments" class="row mb-5">
+					<div class="col-md-8">
+						{% include disqus.html %}
+					</div>
+				</div>
+				<!--End Comments
+================================================== -->
+			</div>
+
+
+
+			{% include footer.html %}
+
+
+		</div>
+	</div>
+
+	{% include disqusscript.html %}
+
+
+
+	{% include sw.html %}
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+---
+layout: nil
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+{% include author-css.html %}
+{% include carboncss.html %}
+
+</head>
+    
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
+
+    {% include analytics.html %}
+    {% include buysellad.html %}
+    
+    {% comment %}
+     {% include fb.html %}
+    {% endcomment %}
+    
+    {% include header.html %}
+
+<div class="site-content">   
+<div class="container">
+    
+<div class="main-content">
+    {{ content }}
+</div>
+
+
+{% comment %}
+
+{% include footeralertbar.html %}
+
+{% endcomment %}
+
+{% include footer.html %}
+
+
+</div>  
+</div>     
+
+{% include disqusscript.html %}
+{% comment %}
+
+{% include mailchimpscript.html %}
+{% include adsense.html %}
+
+{% endcomment %}
+
+
+{% include sw.html %}
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+
+{% include buysellad2.html %}
+{% include infolinks.html %}
+    
+</body>
+</html>

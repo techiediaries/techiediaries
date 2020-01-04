@@ -1,0 +1,75 @@
+---
+layout: post
+title: "Bozon all in one tool to scaffold ,run ,test and package Desktop apps built with Electron"
+image: "images/content/bozon-all-in-one-tool-to-scaffold-run-test-and-package-desktop-apps-built-with-electron/titleimage.png"
+excerpt: "Bozon all in one tool to scaffold ,run ,test and package Desktop apps built with Electron"
+categories : github-electron
+tags : javascript electron 
+---
+
+{% include image.html
+   img="images/content/bozon-all-in-one-tool-to-scaffold-run-test-and-package-desktop-apps-built-with-electron/bigimage.png"
+       title="Bozon all in one tool to scaffold ,run ,test and package Desktop apps built with Electron "
+%}
+
+Thanks to Electron you can use modern web technologies ,tools and frameworks to build cross platform apps for Desktop targeting major operating systems Windows ,Linux and MAC.
+
+You can also use the great Node.js based build tools such as Grunt and Gulp to automate development tasks such as scaffolding ,running ,testing and packaging your apps built with Electron .
+
+In this post we are going to see another tool which uses best modern JavaScript build tools to offer an all in one tool which you can use to quickly scaffold a new project based on Electron and also run ,test and finally build and package your app for distribution without having to switch between a multitude of existing tools which you can’t even remember .
+
+The tool is Bozon .It makes use of many existing tools such as
+
+Electron : A framework from GitHub to build Desktop apps using web technologies 
+
+Gulp : a Nodejs based task runner which helps you automate development tasks .
+
+Webpack :it’s a tool for package Javascript source code   
+
+Spectron : a tool to test Electron apps using ChromeDriver and WebdriverIO
+
+And finally electron-builder : an NPM tool for building and packaging Electron apps .
+
+{% include image.html
+   img="images/content/bozon-all-in-one-tool-to-scaffold-run-test-and-package-desktop-apps-built-with-electron/bozon-scaffold.png"
+       title="Bozon all in one tool to scaffold ,run ,test and package Desktop apps built with Electron "
+%}
+
+## How to install Bozon ?
+
+First make sure you have Node.js and NPM installed and then open up your terminal under Linux/MAC or your command prompt under Windows then enter 
+
+	npm install -g bozon
+
+This will install bozon globally so it can be accessed anytime you need to create a new Electron based project .
+
+## How to use Bozon ?
+
+You can start using bozon by scaffolding a new Electron app with 
+
+	bozon new [name of project]
+
+This command will create a new project with this directory structure 
+
+{% include image.html
+   img="images/content/bozon-all-in-one-tool-to-scaffold-run-test-and-package-desktop-apps-built-with-electron/bozon-project-directory.png"
+       title="Bozon all in one tool to scaffold ,run ,test and package Desktop apps built with Electron "
+%}
+
+If you want to start your application simply enter
+
+	cd name-of-project
+	bozon start 
+
+To run your test execute 
+
+	bozon test
+
+And finally when you need to package your app for distribution simply enter 
+
+	bozon package [mac|windows|linux]
+
+This tool is built by Alex Chaplinsky and licensed under the MIT license .
+
+
+

@@ -1,0 +1,131 @@
+</br>
+</br>
+<div class="row">
+    <h2>RECOMMENDED TUTORIALS</h2>
+</div>
+
+
+<div class="row">
+
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/angular">Angular</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'angular' %}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/vuejs">Vue.js</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'vue' or post.tags contains 'vuejs' %}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/react">React.js</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'react' or post.tags contains 'reactjs' %}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/python">Python</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'python'%}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/django">Django</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'django' %}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/nodejs">Node.js</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'node' or post.tags contains 'nodejs' %}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+    <div class="col-xs-12 col-md-8">
+        <h3><span><a name="https://www.techiediaries.com/topics/ionic">Ionic</a></span></h3>
+        <ul>
+            {% for post in site.posts %}
+
+            {% if post.tags contains 'ionic'  %}
+            <li>
+                <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
+
+            {% endfor %}
+
+        </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+    </div>
+
+
+</div>

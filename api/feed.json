@@ -1,0 +1,12 @@
+---
+    limit: 50
+---
+[{% for post in site.posts limit: page.limit %}
+{
+    "title": "{{ post.title }}",
+    "date": "{{ post.date | date: '%B %d, %Y' }}",
+    "excerpt": "{{ post.excerpt }}",
+    "url": "https://www.techiediaries.com{{ post.url }}"
+}{% unless forloop.last %},{% endunless %}
+{% endfor %}]
+

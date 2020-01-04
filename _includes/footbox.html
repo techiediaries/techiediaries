@@ -1,0 +1,13 @@
+<!-- begin post -->
+{% assign author = site.authors[post.author] %}
+<div class="col-md-4 grid-item">
+    <div class="card" style="padding:10px;">
+        <!--<a href="{{ post.url | absolute_url }}">
+            {% if post.image %} <img class="img-fluid" src="https://source.unsplash.com/random?computer" alt="{{ post.title }}"> {% endif %}
+        </a>-->
+        <div class="card-block">
+            <a class="card-title" href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+        </div>
+    </div>
+</div>
+<!-- end post -->

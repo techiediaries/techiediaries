@@ -1,0 +1,125 @@
+---
+layout: mydefault
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<div class="container">
+	<div class="row">
+
+        {% assign author = site.authors[page.author] %}
+        
+		<div class="col-xs-12 col-md-8">
+			<div class="mainheading">
+
+
+                <!-- Post Title -->
+				<h1 class="posttitle">{{ page.title }}</h1> 
+                
+			</div>
+
+			<!-- Post Featured Image -->
+            {% if page.image %}
+            <!--<img class="featured-image img-fluid" src="https://source.unsplash.com/random?computer" alt="{{ page.title }}">-->
+            
+            {% endif %}
+			<!-- End Featured Image -->
+
+
+            <!-- Post Content -->
+
+			<div class="article-post">
+                <div style="margin: 10px;" id="share"></div>
+				{{content}}
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
+                {% if page.last_modified_at %}
+                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                {% endif %}
+                </small>
+            </p>
+
+                            
+			<!-- Post Categories -->
+			<div class="after-post-tags">
+				<ul class="tags">
+                    {% assign sortedCategories = page.tags | sort %}
+                    {% for category in sortedCategories %}
+                    <li>
+                     <a href="{{ site.baseurl }}/topics/{{ category | slugify }}/">{{ category }}</a>
+                    </li>
+                    {% endfor %}
+				</ul>
+            </div>
+			<!-- End Categories -->
+                <!-- Author Box -->
+                {% if page.author %}				
+				<div class="row post-top-meta">
+					<!--<div class="col-md-2">
+						<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+					</div>-->
+					<div class="col-md-12">
+						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+						<span class="author-description">{{ author.description }}</span>						
+					</div>
+				</div>				
+                {% endif %}            
+            <!-- Prev/Next -->
+            <div class="row PageNavigation">
+              {% if page.previous.url %}
+                <a class="col-md-6 prev" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
+              {% endif %}
+              {% if page.next.url %}
+                <a class="col-md-6 text-right next" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
+              {% endif %}
+            </div>
+            
+            <hr/>
+
+
+        </div>
+        <div id="sidebar" class="col-xs-12 col-md-4 col-xs-offset-1 sidebar-outer">
+            <!-- Ezoic - SidebarTop1 - sidebar -->
+            <div style="margin-top:10px;" id="ezoic-pub-ad-placeholder-101">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- TechieDiariesBottomRight -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9293763250492023"
+                     data-ad-slot="2757012795"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>                
+            </div>
+            <!-- End Ezoic - SidebarTop1 - sidebar -->
+            <!-- Ezoic - SidebarMiddle1 - sidebar_middle -->
+            <div style="margin-top:10px;" id="ezoic-pub-ad-placeholder-103">
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- TechiediariesHomePage -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9293763250492023"
+                     data-ad-slot="9105165196"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>                
+            </div>
+            <!-- End Ezoic - SidebarMiddle1 - sidebar_middle -->
+        
+        </div>
+        <!-- End Post -->
+
+	</div>
+</div>
+<!-- End Article
+================================================== -->
+

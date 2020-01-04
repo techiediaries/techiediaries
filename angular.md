@@ -1,0 +1,17 @@
+---
+layout: bytag
+title: Angular Tutorials & Learning Path
+comments: false
+tag: angular
+---
+
+Throughout this tutorial series and learning path you'll learn Angular--the most popular platform for building front-end web applications 
+
+Using Angular, you can take advantage of a powerful TypeScript platform and tools to create applications for web, mobile and desktop. TypeScript is a superset of JavaScript with powerful OOP abstracts and a strongly typed system that compiles to JavaScript.
+
+With Angular you have strong tools and design patterns to build either small or large web projects. 
+
+
+Angular is developed and maintained by Google. It has a large community which means you can find help on the web if you have any issues implementing your project requirements.
+
+Our Angular learning path will offer the necessary  tutorials, PDF books, for beginners, and examples to get started using this framework in your next project.

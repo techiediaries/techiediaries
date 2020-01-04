@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Ionic 2 and progressive web apps "
+image: "images/content/ionic2-pwa.png"
+excerpt: "A tutorial on how to build progressive web apps with Ionic 2 " 
+---
+
+{% include image.html 
+    img="images/content/ionic2-pwa.png" 
+    title="Ionic 2 pwa" 
+%}
+What is a progressive web app or pwa ?
+
+A progressive web app is an installable web app ,what does it mean installable ? it can be installed 
+on your system .Still confused !? well it is a web application which should  
+
+
+Be delivered from a web server (over https) and used just like any normal web application.
+
+Be used offline and have diffrent offline support aspects such as caching resources and dispalying 
+offline messages .
+
+Have its own icon on your system home screen once installed .
+
+Provide an app-like experience to users .  
+
+have responsive design (Mobile ,Desktop and tablets) .
+
+Doesn't need app store to be installed .
+
+Technically speaking a pwa should have a web app manifest.json file which has many information about the app such as 
+
+App name,
+
+Icons ,
+
+Splash screen
+
+How to tell browsers about your wpa ?
+
+You simply include a link to a web app manifest file in your app index.html file 
+
+wpas can use service workers for caching resources 
+

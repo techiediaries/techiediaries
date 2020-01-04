@@ -1,0 +1,189 @@
+# Site
+name: Techiediaries
+description: Techiediaries is a website dedicated to bring you tutorials and articles about the latest software and web technologies. 
+meta_description: "Techiediaries is a website dedicated to bring you tutorials and articles about the latest software and web technologies."
+logo: 'assets/images/logo2.png'
+favicon: 'assets/images/logo2.png'
+paginate: 15
+baseurl: 
+google_analytics: 'UA-74071120-2'
+disqus: 'techiediaries'
+mailchimp-list: 'https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0'
+
+# Authors
+authors:
+  ahmed:
+    name: Ahmed 
+    display_name: Ahmed Bouchefra
+    gravatar: "https://pbs.twimg.com/profile_images/1018510452102492161/XjYZLTSl_bigger.jpg"
+    email: "ahmed@techiediaries.com"
+    web: "https://www.ahmedbouchefra.com" 
+    twitter: "https://twitter.com/ahmedbouchefra"
+    linkedin: "https://www.linkedin.com/in/mr-ahmed/"
+    github: "https://github.com/techiediaries"
+    description: '<a href="https://www.techiediaries.com/author/ahmed/" rel="author">Ahmed Bouchefra</a> is a web developer with 5+ years of experience and technical author with an engineering degree on software development. You can hire him with a click on the link above or contact him via his <a href="https://www.linkedin.com/in/mr-ahmed/">LinkedIn account</a>. He authored technical content for the industry-leading websites such as SitePoint, Smashing, DigitalOcean, RealPython, freeCodeCamp, JScrambler, Pusher, and Auth0. He also co-authored various books about modern web development that you can find from <a href="https://www.amazon.com/Ahmed-Bouchefra/e/B07J1XYKT4?ref=dbs_a_def_rwt_hsch_vu00_taft_p1_i0">Amazon</a> or <a href="https://leanpub.com/u/ahmedbouchefra">Leanpub</a>'
+    
+    follow: '<a href="https://twitter.com/ahmedbouchefra?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ahmedbouchefra</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'
+  farid:
+    name: Farid
+    display_name: Farid Rajab
+    gravatar: 
+    email: farid@techiediaries.com
+    web: 
+    twitter: https://twitter.com/farid.rajab
+    description: "Software enginner and web developer"
+  omar:
+    name: Omar
+    display_name: Omar Bakky
+    gravatar: "https://pbs.twimg.com/profile_images/950439106886152193/YnTy36qX_200x200.jpg"
+    email: omar@techiediaries.com
+    web: 
+    twitter: https://twitter.com/techiediaries
+    description: "Software engineer and web developer"  
+  kaima:
+    name: Kaima Abbes
+    display_name: Kaima Abbess
+    gravatar: "https://pbs.twimg.com/profile_images/950439106886152193/YnTy36qX_200x200.jpg"
+    email: kaima@techiediaries.com
+    web: 
+    twitter: https://twitter.com/kaima.abbes
+    description: "Web Developer"
+  amal:
+    name: Amal Jilali
+    display_name: Amal Jilali
+    gravatar: 
+    email: amal@techiediaries.com
+    web: 
+    twitter: https://twitter.com/amal.jilali
+    description: "Amal is a teacher and a web dev enthusiast"
+  sebastian: 
+    name: Sebastian Grebe
+    display_name: Sebastian Grebe
+    gravatar: "https://pbs.twimg.com/profile_images/950439106886152193/YnTy36qX_200x200.jpg"
+    email: support@techiediaries.com
+    web: 
+    twitter: https://twitter.com/techiediaries
+    description: "Sebastian Grebe, a computer science expert for application development. He specializes in web development using modern technologies such as React and FeathersJS, but also traditional technologies such as PHP and SQL."
+  gilad: 
+    name: Gilad David Maayan
+    display_name: Gilad David Maayan
+    gravatar: "https://pbs.twimg.com/profile_images/872010583394193408/HZnARl33_200x200.jpg"
+    email: gilad.maayan@agileseo.co.il
+    web: 
+    linkedin: https://www.linkedin.com/in/giladdavidmaayan/
+    twitter: https://twitter.com/gilad_maayan?lang=en
+    description: "Gilad David Maayan is a technology writer who has worked with over 150 technology companies including SAP, Oracle, Zend, CheckPoint and Ixia, producing technical and thought leadership content that elucidates technical solutions for developers and IT leadership."
+
+  apoorvo: 
+    name: Apoorvo Chakraborty
+    display_name: Apoorvo Chakraborty
+    gravatar: "https://pbs.twimg.com/profile_images/1060565691965698048/ye22lCAA_400x400.jpg"
+    email: apoorvo.chak@gmail.com
+    web: 
+    linkedin: https://www.linkedin.com/in/apoorvo
+    github: https://www.github.com/apoorvo
+    twitter: https://twitter.com/apoorvo_chak
+    description: "Apoorvo Chakraborty is an undergrad Computer Science student. He has been coding since he was in grade third. He loves tinkering with new technology and making things. He has worked with several technologies in both frontend and backend like the MEAN stack, Native development, Python and Django. Currently he is working with Flutter and exploring this new framework by Google."
+
+  team:
+    name: Team
+    display_name: Team
+    gravatar: "https://pbs.twimg.com/profile_images/950439106886152193/YnTy36qX_200x200.jpg"
+    email: support@techiediaries.com
+    web: 
+    twitter: https://twitter.com/techiediaries
+    description: "Techiediaries is a website dedicated to bring you tutorials for the latest web technologies"
+  kibo: 
+    name: Kibo Hutchinson
+    display_name: Kibo Hutchinson
+    gravatar: "https://pbs.twimg.com/profile_images/1069485287376441344/Ja7IzLIZ_200x200.jpg"
+    email: ""
+    web: https://www.tatvasoft.co.uk/technology/java-development.php
+    linkedin: ""
+    github: ""
+    twitter: https://twitter.com/kibo07129790
+    description: "Kibo Hutchinson is a Technology Analyst at Tatvasoft UK which is a Java development company in UK. She has a keen interest in learning latest practices in the development so she is spending her most of the time on the Internet navigating the unique topics and technology trends. That’s why she is actively contributing to development, design and latest technologies topics."
+  kumar: 
+    name: Vikash Kumar
+    display_name: Vikash Kumar
+    gravatar: "https://abs.twimg.com/sticky/default_profile_images/default_profile_200x200.png"
+    email: ""
+    web: "https://www.tatvasoft.com/"
+    linkedin: "https://www.linkedin.com/in/vikashkumarchaudhary/"
+    github: ""
+    twitter: "https://twitter.com/vikashv2v"
+    description: "Vikash Kumar as a manager in a software outsourcing company Tatvasoft, also believes in the fact that knowledge is meant to be shared across relevant people. Vikash in his leisure time always amid by technical stuff and loves to share them too. He is a part time blogger and full time geek. He published his bylines across many online channels and you can follow him on Twitter and LinkedIN below."
+
+
+
+tag_dir: 'topics'
+tag_title_prefix: ''
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+#permalink: /:categories/:title/
+markdown: redcarpet
+encoding: utf-8
+
+redcarpet:
+    extension:
+        - fenced_code_blocks
+#highlighter: pygments
+
+kramdown:
+  input: GFM
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  #- jekyll-minifier 
+  #- jekyll-compose
+  - jekyll-paginate 
+  #- jekyll-sitemap
+  #- jekyll-gist
+  #- jekyll-pwa-plugin
+  #- jekyll-compress-images
+
+plugins_dir: ./_plugins
+  
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  startings: [head, body]
+
+  
+permalink:   /:categories/:title/
+paginate: 15
+paginate_path: "page:num"
+category_dir: "pages"  
+
+algolia:
+  application_id: U6YVQCSK8X
+  index_name: te
+  search_only_api_key: ec6fc7a5bfac7fb62927073c81b97bbe
+  files_to_exclude:
+      - online-tools/*.html
+      - online-tools/*/*.html
+      - demos/*.*
+      - demos/*/*.*
+      
+      
+
+# 2134bbefb10a162dc13128b237692010
+
+include: ["_headers"]
+

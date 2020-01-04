@@ -1,0 +1,49 @@
+[   
+    {
+        "title": "Learn Cordova for Android & iOS",
+        "excerpt": "A Cordova tutorial for building hybrid mobile apps for Android and iOS",
+        "url": "https://www.techiediaries.com/cordova-tutorial/"
+    },
+    
+    {
+        "title": "Getting started with Material Design 6 in Angular 6",
+        "excerpt": "How to get started with Material Design 6 in Angular 6",
+        "url": "https://www.techiediaries.com/angular-material-design/"
+    },
+    
+    {
+        "title": "Angular 6.1 New Features and Angular 7 Is Coming!",
+        "excerpt": "Angular 6.1 New Features",
+        "url": "https://www.techiediaries.com/angular-features/"
+    },
+    
+    {
+        "title": "Angular 6 Universal Example Application with Express.js",
+        "excerpt": "Throughout this tutorial we are going to build an example, server side rendered, web application with Angular 6 and Express server.",
+        "url": "https://www.techiediaries.com/universal-angular-express/"
+    },
+    
+    {
+        "title": "Ionic 3 Grid System Tutorial ",
+        "excerpt": "In this tutorial we are going to understand the Ionic 3 grid layout system to build complex user interfaces with Ionic 3",
+        "url": "https://www.techiediaries.com/ionic2-grid-system-tutorial/"
+    },
+    
+    {
+        "title": "Deploying Angular 6 Apps to Github Pages",
+        "excerpt": "In this tutorial we'll see how to deploy Angular 6 apps to Github pages",
+        "url": "https://www.techiediaries.com/deploy-angular-github-pages/"
+    },
+    
+    {
+        "title": "Building Angular 6 Universal Apps (Server Side Rendering)",
+        "excerpt": "In this tutorial we'll see how to render Angular 6 universal apps on the server ",
+        "url": "https://www.techiediaries.com/angular-4-universal-server-side-rendering/"
+    },
+    
+    {
+        "title": "Learn Ionic 3: Easy Steps Tutorial",
+        "excerpt": "A tutorial to learn Ionic 3 in 7 easy steps",
+        "url": "https://www.techiediaries.com/learn-ionic-2/"
+    }
+]

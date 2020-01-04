@@ -1,0 +1,24 @@
+body { margin: 5% auto; background: #fff; }
+
+input {
+  font-size: 44px;
+  padding: 20px;
+  font-family: courier;
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 4px solid rgba(0,0,0,.15);
+  display: block;
+  margin: 50px auto;
+  width: 80%;
+  background: rgba(255,255,255,0.9);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+input:focus {
+  outline: 0;
+  border: 4px solid rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,.3);
+}

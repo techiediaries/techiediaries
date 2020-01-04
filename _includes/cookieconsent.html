@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#237afc"
+    },
+    "button": {
+      "background": "#237afc",
+      "text": "#000"
+    }
+  },
+  },
+  "theme": "edgeless",
+  "position": "bottom-left",
+  "type": "opt-out",
+  "location": true,
+  "content": {
+    "message": "Google serves cookies to analyse traffic to this site. Information about your use of our site is shared with Google for that purpose. ",
+    "href": "https://policies.google.com/technologies/partner-sites"
+  },
+  /*"onInitialise": function (status) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+    console.log('enable cookies');
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+    console.log('disable cookies');
+  }
+},     
+"onStatusChange": function(status, chosenBefore) {
+  var type = this.options.type;
+  var didConsent = this.hasConsented();
+  if (type == 'opt-in' && didConsent) {
+    // enable cookies
+    console.log('enable cookies');
+  }
+  if (type == 'opt-out' && !didConsent) {
+    // disable cookies
+    console.log('disable cookies');
+  }
+},
+"onRevokeChoice": function() {
+  var type = this.options.type;
+  if (type == 'opt-in') {
+    // disable cookies
+    console.log('disable cookies');
+  }
+  if (type == 'opt-out') {
+    // enable cookies
+    console.log('enable cookies');
+  }
+}*/  
+})});
+</script>   

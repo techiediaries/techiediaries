@@ -1,0 +1,33 @@
+<header>
+    <h2>CSS Grid Layout Example</h2>
+</header>
+<aside>
+  .sidebar
+</aside>
+
+<main>
+  <article>
+    <span>1</span>
+  </article>
+  <article>
+    <span>2</span>
+  </article>
+  <!--... -->
+  <article>
+    <span>11</span>
+  </article>
+</main>
+  
+<footer>
+  Copyright 2018
+</footer>
+<style>
+@supports not (display: grid) {
+  main{
+    width: calc(100% - 145px);
+  }
+  aside{
+    width: 130px;
+  }
+}
+</style>

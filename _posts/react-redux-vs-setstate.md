@@ -1,0 +1,1 @@
+https://iamakulov.com/notes/redux-vs-react-setstate/

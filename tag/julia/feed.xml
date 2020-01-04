@@ -1,0 +1,49 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+	<channel>
+		<title>Techiediaries - Julia</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
+		<link>https://www.techiediaries.com/</link>
+		<atom:link href="https://www.techiediaries.com/{{ page.path }}" rel="self" type="application/rss+xml" />
+	  <language>en-US</language>
+	  <sy:updatePeriod>hourly</sy:updatePeriod>
+	  <sy:updateFrequency>1</sy:updateFrequency>	
+		<lastBuildDate>{% for post in site.posts limit:1 %}{% unless post.link %}{{ post.date | date_to_rfc822 }}{% endunless %}{% endfor %}</lastBuildDate>
+
+  	{% for post in site.posts %}
+		  {% if post.tags contains 'julia' %}
+  
+			{% unless post.link %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+        <link>https://www.techiediaries.com{{ post.url }}</link>
+        <comments>https://www.techiediaries.com{{ post.url }}</comments>
+        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <dc:creator>Ahmed Bouchefra</dc:creator>
+        <category>MySQL</category>
+
+        <guid isPermaLink="true">https://www.techiediaries.com{{ post.url }}</guid>
+				{% if post.excerpt %}
+					<description>{{ post.excerpt | strip_html | xml_escape }}</description>
+				{% else %}
+					<description>{{ post.content | strip_html | xml_escape }}</description>
+				{% endif %}        
+        <content:encoded>{{post.content | strip_html | xml_escape }}</content:encoded>
+			</item>
+			{% endunless %}
+			{% endif %}
+		{% endfor %}
+	</channel>
+</rss>

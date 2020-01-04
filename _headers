@@ -1,0 +1,12 @@
+/api/feed.json
+  X-Frame-Options: SAMEORIGIN
+  Access-Control-Allow-Origin: *
+
+/api/feed2.json
+  X-Frame-Options: SAMEORIGIN
+  Access-Control-Allow-Origin: *
+
+/api/data.json
+  X-Frame-Options: SAMEORIGIN
+  Access-Control-Allow-Origin: *
+  

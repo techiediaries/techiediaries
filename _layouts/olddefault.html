@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google-site-verification" content="p5fO6UZ8-nSvKNUMfwmf8jb7dSQTMnSgw7Vrm4V49YE" />
+<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">    
+<title>{{ page.title }} | {{site.name}}</title>
+{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-minima.css" />
+
+<!--<link rel="stylesheet" href="http://cdn.rawgit.com/tabalinas/jssocials/v1.4.0/dist/jssocials-theme-flat.css">-->
+{% if page.canonical %} 
+<link rel="canonical" href="{{page.canonical}}">
+{% endif %}
+
+<link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "d3aebc6a-438e-48e0-9f50-66766c258f40",
+      autoRegister: false,
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>
+
+<style>
+#toc_container {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    display: table;
+    font-size: 95%;
+    margin-bottom: 1em;
+    padding: 20px;
+    width: auto;
+}
+
+.toc_title {
+    font-weight: 700;
+    text-align: center;
+}
+
+#toc_container li, #toc_container ul, #toc_container ul li{
+    list-style: outs    
+</style>
+</head>
+    
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74071120-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0&appId=201323920300126&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">
+        </a>
+        <h1 style="font-family:Righteous;font-size:18px;">{{ site.name }}</h1>
+
+        <!-- End Logo -->
+
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">                
+                <a class="nav-link" href="/ionic">Ionic</a>
+                </li>
+                <li class="nav-item active">                
+                    <a class="nav-link" href="/angular">Angular</a>
+                </li>
+                <li class="nav-item active">                
+                    <a class="nav-link" href="/react">React</a>
+                </li>
+                <li class="nav-item active">                
+                    <a class="nav-link" href="/vuejs">Vue</a>
+                </li>
+                <li class="nav-item active">                
+                    <a class="nav-link" href="/django">Django</a>
+                </li>
+
+                    
+                <!--<li class="nav-item">
+                <a class="nav-link" href="/ebooks">eBooks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/apps">Apps</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="/askus">ASK US FOR HELP</a>
+                </li>-->
+
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/techiediaries9/"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://github.com/techiediaries"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://twitter.com/ahmedbouchefra"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://plus.google.com/communities/114768319080621974481"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>		
+        </div>
+        <!-- End Menu -->
+
+    </div>
+</header>
+<!-- End Menu Navigation
+================================================== -->
+    
+<div class="site-content">   
+<div class="container">
+    
+<!-- Site Title
+================================================== -->
+
+
+    
+    
+<!-- Content
+================================================== --> 
+<div class="main-content">
+    {{ content }}
+</div>
+
+<!-- Bottom Alert Bar
+================================================== -->
+<div class="alertbar">
+	<div class="container text-center">
+		<!--<img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}">--> &nbsp; Subscribe to our newsletter or just <a href="#" id="closeBtn">close</a> 
+        <form action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0&SIGNUP={{page.tags | join: ", " }}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on">
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+	</div>
+</div>    
+    
+
+
+
+    
+
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <p class="pull-left">
+         Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+    </p>
+    <p class="pull-right">
+    <!-- Please, leave credit to author unless you make a donation: https://www.wowthemes.net/freebies-license/ --> 
+        <a target="_blank" rel=”nofollow” href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+    </p>
+    <div class="clearfix">
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div><!-- /.container -->    
+</div> <!-- /.site-content>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js"></script>
+
+<script>
+$("#share").jsSocials({
+    shares: ["twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+});
+</script>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type='text/javascript' src='{{ site.baseurl }}/assets/js/masonry.pkgd.min.js'></script>
+    
+<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+<!--<script src="{{ site.baseurl }}/assets/js/sticky-sidebar.min.js"></script>
+<script>
+var sidebar = new StickySidebar('#sidebar', {topSpacing: 60});    
+</script>-->
+    
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js" async></script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/444ae13ce2d2ced511cf9d19b/439d2a8f81735096bb1d8bd50.js");</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9293763250492023",
+          enable_page_level_ads: true
+     });
+</script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+
+<script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='3d6ed5028137dbc6a088fc5e4dfcde879672c3bbe670f53acd83a3335faf2a40';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#000"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "theme": "edgeless",
+  "position": "bottom-right",
+  "location": true,
+})});
+</script>
+
+<script>
+window.addEventListener('load',function(){
+    
+    document.querySelector('#closeBtn').addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector('.alertbar').remove();
+    })
+    
+});
+</script>
+
+<!-- BEGIN PRIVY ASYNCHRONOUS WIDGET CODE -->
+<script type='text/javascript'>
+    var _d_site = _d_site || 'E3E1C968C7F56DFCCA860FE0';
+    (function(p, r, i, v, y) {
+      p[i] = p[i] || function() { (p[i].q = p[i].q || []).push(arguments) };
+      v = r.createElement('script'); v.async = 1; v.src = 'https://widget.privy.com/assets/widget.js';
+      y = r.getElementsByTagName('script')[0]; y.parentNode.insertBefore(v, y);
+    })(window, document, 'Privy');
+ </script>
+ <!-- END PRIVY ASYNCHRONOUS WIDGET CODE -->
+ 
+<!-- Default Statcounter code for Techiediaries
+https://www.techiediaries.com -->
+<script type="text/javascript">
+    var sc_project=11727930; 
+    var sc_invisible=1; 
+    var sc_security="6afc9c45"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="real time web
+    analytics" href="http://statcounter.com/"
+    target="_blank"><img class="statcounter"
+    src="//c.statcounter.com/11727930/0/6afc9c45/1/" alt="real
+    time web analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+    
+</body>
+</html>

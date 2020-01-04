@@ -1,0 +1,380 @@
+---
+layout: default
+title: Home
+---
+
+<div class="mainheading">
+    <h1 class="sitetitle">{{ site.name }}</h1>
+    <p class="lead">
+         {{ site.description }}
+    </p>
+</div>
+
+<div class="jumbotron fortags">
+        <div class="row">
+            <div class="col-md-4 align-self-center text-center">
+                <h2 class="hidden-sm-down">Tutorials →</h2>
+            </div>
+            <div class="col-md-8 align-self-center text-center">
+              <a href="#angular-tutorials">Angular</a>
+              <a href="#react-tutorials">React</a>
+              <a href="#vue-js-tutorials">Vue.js</a>
+              <a href="#ionic-tutorials">Ionic</a>
+              <a href="#electron-tutorials">Electron</a>
+              <a href="#nativescript-tutorials">NativeScript</a>
+              <a href="#bootstrap-tutorials">Bootstrap</a>
+              <a href="#wordpress-tutorials">Wordpress</a>
+              <a href="#laravel-tutorials">Laravel</a>
+              <a href="#express-tutorials">Express</a>
+              <a href="#java-tutorials">Java</a>
+              <a href="#cordova-tutorials">Cordova</a>
+              <a href="#django-tutorials">Django</a>
+              <a href="#flask-tutorials">Flask</a>                 
+            </div>
+        </div>
+</div>
+
+<div class="jumbotron fortags">
+        <div class="row">
+                <div class="col-md-12 align-self-center text-center">
+                        <h2 class="hidden-sm-down">Tutorials</h2>
+                </div>
+        </div>
+</div>
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span><a name="angular-tutorials">Angular</a></span></h2>
+
+    </div>
+    <div class="row listfeaturedtag">
+        {% for post in site.posts %}
+
+            {% if post.tags contains 'angular' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}      
+    </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span><a name="react-tutorials">React Tutorials</a></span></h2>
+    
+        </div>
+        <div class="row listfeaturedtag">
+            {% for post in site.posts  %}
+    
+                {% if post.tags contains 'react' %}
+        
+                    {% include featuredbox.html %}
+        
+                {% endif %}
+        
+            {% endfor %}      
+        </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span><a name="vue-js-tutorials">Vue.js Tutorials</a></span></h2>
+    
+        </div>
+        <div class="row listfeaturedtag">
+            {% for post in site.posts %}
+    
+                {% if post.tags contains 'vue' %}
+        
+                    {% include featuredbox.html %}
+        
+                {% endif %}
+        
+            {% endfor %}      
+        </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span><a name="ionic-tutorials">Ionic Tutorials</a></span></h2>
+    
+        </div>
+        <div class="row listfeaturedtag">
+            {% for post in site.posts  %}
+    
+                {% if post.tags contains 'ionic' %}
+        
+                    {% include featuredbox.html %}
+        
+                {% endif %}
+        
+            {% endfor %}      
+        </div>
+</section>
+
+
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span> <a name="electron-tutorials">Electron Tutorials</a></span></h2>
+    </div>
+
+    <div class="row listfeaturedtag">
+        
+    {% for post in site.posts %}
+
+        {% if post.tags contains 'electron' %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+        
+    </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="jekyll-tutorials">Jekyll Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'jekyll' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="wordpress-tutorials">WordPress Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'wordpress' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="nativescript-tutorials">NativeScript Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'nativescript' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="bootstrap-tutorials">Bootstrap Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'bootstrap' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="laravel-tutorials">Laravel Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'laravel' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="express-tutorials">Express Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'express' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="java-tutorials">Java Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'java' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="cordova-tutorials">Cordova Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'cordova' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="flask-tutorials">Flask Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'flask' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+<section class="featured-posts">
+        <div class="section-title">
+            <h2><span> <a name="django-tutorials">Django Tutorials</a></span></h2>
+        </div>
+    
+        <div class="row listfeaturedtag">
+            
+        {% for post in site.posts %}
+    
+            {% if post.tags contains 'django' %}
+    
+                {% include featuredbox.html %}
+    
+            {% endif %}
+    
+        {% endfor %}
+            
+        </div>
+</section>
+
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span> <a name="javascript-tutorials">JavaScript Tutorials</a></span></h2>
+    </div>
+
+    <div class="row listfeaturedtag">
+        
+    {% for post in site.posts %}
+
+        {% if post.tags contains 'javascript' %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+        
+    </div>
+</section>
+
+
+<!-- Posts Loop
+================================================== -->
+
+
+<!-- Pagination
+================================================== -->
+
+<div class="jumbotron fortags">
+	<div class="row">
+		<div class="col-md-4 align-self-center text-center">
+			<h2 class="hidden-sm-down">Explore →</h2>
+		</div>
+		<div class="col-md-8 align-self-center text-center">
+          {% assign tags_list = site.tags %}  
+          {% if tags_list.first[0] == null %}
+            {% for tag in tags_list %} 
+              <a href="{{ site.baseurl }}/topics/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
+            {% endfor %}
+          {% else %}
+            {% for tag in tags_list %} 
+              <a href="{{ site.baseurl }}/topics/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
+            {% endfor %}
+          {% endif %}
+        {% assign tags_list = nil %}
+		</div>
+	</div>
+</div>

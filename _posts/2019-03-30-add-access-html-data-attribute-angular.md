@@ -1,0 +1,152 @@
+---
+layout: post
+title: "Angular 7 Example: Adding & Accessing HTML5 Data Attributes"
+image: "images/content/django.png"
+excerpt: "In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in Angular 7." 
+tags : [ angular ]
+---
+
+In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in Angular 7.
+
+We assume you have an Angular 7 project up and running.
+
+We'll be using [https://stackblitz.com/](https://stackblitz.com/edit/angular-set-access-data-attribute-binding?file=src/app/app.component.ts) for this demo and for the sake of simplicity we'll be working on the existing app component.
+
+Open the the `src/app/app.component.ts` file and the following array which holds a set of messages:
+
+```ts
+export class AppComponent  {
+  name = 'Angular';
+
+  messages = [
+    {
+      id: 11214544,
+      text: "Message 11214544"
+    },
+    {
+      id: 11214545,
+      text: "Message 11214545"
+    },
+    {
+      id: 11214546,
+      text: "Message 11214546"
+    },
+    {
+      id: 11214547,
+      text: "Message 11214547"
+    }
+
+  ]
+}
+```
+
+Next, open the `src/app.component.html` and add the following code:
+
+{% raw %}
+```html
+<h1>
+  Messages
+</h1>
+
+<ul>
+  <li *ngFor="let message of messages">
+    {{ message.text }}
+  </li>
+</ul>
+``` 
+{% endraw %}
+
+We simply loop through the `messages` array using the `*ngFor` directive and display the text of each message using curly braces.
+
+This should give us the following output:
+
+![Angular 7 data attribute binding](https://www.diigo.com/file/image/bbccosoazoabpdccppzdqscaqcd/angular-set-access-data-attribute-binding+-+StackBlitz.jpg) 
+
+Now, let's suppose we have a requirement in which we need to add the message ID to the `<li>` element holding the given message.
+
+We can simply use data attributes for implementing this requirement. 
+
+Let's first see the [definition of data attributes from w3schools](https://www.w3schools.com/TagS/att_global_data.asp):
+
+>The data-* attributes is used to store custom data private to the page or application.
+>
+>The data-* attributes gives us the ability to embed custom data attributes on all HTML elements.
+>
+>The stored (custom) data can then be used in the page's JavaScript to create a more engaging user experience (without any Ajax calls or server-side database queries).
+>
+>The attribute name should not contain any uppercase letters, and must be at least one character long after the prefix "data-"
+
+Data attributes are easy to set and access in HTML and JavaScript but since we are using Angular we need little more work!
+
+Now, let's change our previous template to add a data attribute that holds the ID of ecah message to `<li>` element. Go back to the `src/app/app.component.html` file and add the following changes:
+
+{% raw %}
+```html
+<h1>
+  Messages
+</h1>
+
+<ul>
+  <li *ngFor="let message of messages" [attr.data-message-id]="message.id">
+    {{ message.text }}
+  </li>
+</ul>
+```
+{% endraw %}
+
+We simply use attribute binding to add and set a value for a data attribute.
+
+According to [Angular docs](https://angular.io/guide/template-syntax):
+
+>Attribute binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix attr, followed by a dot (.) and the name of the attribute. You then set the attribute value, using an expression that resolves to a string.
+
+Now, if you insepct your page DOM, you'll see that each `<li>` tag has a `data-message-id` attribute with the corresponding message ID from the array.
+
+![Angular 7 Data Attribute Binding](https://www.diigo.com/file/image/bbccosoazoabpddbrbzdqscaqse/Screenshot+from+2019-03-31+00-09-35.jpg?k=264adb26f4590a693a87b4654470d0dc)
+
+After adding and setting the value of the data attribute, let's see how we can access and get the value of the attribute in Angular.
+
+Go back to the `src/app/app.component.html` file and add the following changes:
+
+{% raw %}
+```html
+<ul>
+  <li #messageEl *ngFor="let message of messages" [attr.data-message-id]="message.id">
+    {{ message.text }}
+    <br><button (click)="logMessageId(messageEl)">Console Log </button>
+  </li>
+</ul>
+```
+{% endraw %}
+
+We add reference variable called `#messageEl` to the `<li>` tag and we also add a `<button>` and bind its click event to a `logMessageId()` method which takes the template reference variable of the `<li>` tag.
+
+Next, open the `src/app/app.component.ts` file and add the `logMessageId()` method to the component:
+
+```ts
+  logMessageId(el){
+
+    let messageId = el.getAttribute('data-message-id');
+    //let messageId = el.dataset.messageId;
+    console.log("Message Id: ", messageId);
+
+  }
+```
+
+We can get the value of the data attribute using the `dataset` property or the `getAttribute()` method on the `messageEl` template reference variable.
+
+If you click on the **Console Log** button, you should see the value of the `data-message-id` data attribute of the corresponding message displayed on the console.
+
+
+## Conclusion
+
+That's it for this quick tutorial. We have seen how we can add and access HTML5 data attributes in Angular 7. You can see the demo example we've used in this tutorial in this [link](https://stackblitz.com/edit/angular-set-access-data-attribute-binding).
+
+
+
+
+
+
+
+
+
