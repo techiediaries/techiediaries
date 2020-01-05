@@ -7,6 +7,11 @@
 <meta property="fb:pages" content="217712901582117" />
 <meta property="og:image" content="{{page.image}}" />
 <meta name="p:domain_verify" content="75051f0a45f89e01f06be43dbaff6f74"/>
+
+{% if page.path contains '_posts' %}
+  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
+{% endif %}
+
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">    
 <title>{{ page.title }} | {{site.name}}</title>
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}   
