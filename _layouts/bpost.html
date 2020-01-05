@@ -1,7 +1,7 @@
 ---
 layout: nil
 skipRss: true
-skipNavigation: true 
+skipNavigation: true
 ---
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@ skipNavigation: true
 	<meta property="og:image" content="{{page.image}}" />
 	<meta name="p:domain_verify" content="75051f0a45f89e01f06be43dbaff6f74" />
 	<meta name="ezoic-ads" content="disabled" />
-	
+
 
 	<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
 	<title>{{ page.title }} | {{site.name}}</title>
@@ -28,7 +28,7 @@ skipNavigation: true
 	<link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
 
 
-	<!-- Mailchimp popup -->
+	<!-- Mailchimp popup 
 	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
 		data-dojo-config="usePlainJson: true, isDebug: false"></script>
 	<script type="text/javascript">
@@ -39,9 +39,7 @@ skipNavigation: true
 
 
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css">
-
-{% include bpost-css.html %}
+	{% include bpost-css.html %}
 
 
 
@@ -95,11 +93,13 @@ skipNavigation: true
 							<!-- Post Date -->
 							<p>
 								<small>
-                <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>           
-                {% if page.last_modified_at %}
-                (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-                {% endif %}
-                </small>
+									<span class="post-date"><time class="post-date"
+											datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
+									{% if page.last_modified_at %}
+									(Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+										itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+									{% endif %}
+								</small>
 							</p>
 
 
