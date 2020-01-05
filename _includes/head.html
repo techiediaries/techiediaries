@@ -9,7 +9,7 @@
 <meta name="p:domain_verify" content="75051f0a45f89e01f06be43dbaff6f74"/>
 
 {% if page.path contains '_posts' %}
-  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | 'https://www.techiediaries.com' | append: '/' }}">
+  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: 'https://www.techiediaries.com' | append: '/' }}">
 {% endif %}
 
 <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">    
