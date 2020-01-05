@@ -918,6 +918,53 @@ layout: amp
         </style>
     </noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "publisher": {
+                "@type": "Organization",
+                "name": "techiediaries.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.techiediaries.com/assets/images/logo.png",
+                    "width": 210,
+                    "height": 24
+                }
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Ahmed Bouchefra",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://www.freecodecamp.org/news/content/images/2019/06/me1.jpeg",
+                    "width": 1501,
+                    "height": 2124
+                },
+                "url": "https://www.techiediaries.com/author/ahmed/",
+                "sameAs": [
+                    "https://www.ahmedbouchefra.com",
+                    "https://twitter.com/ahmedbouchefra"
+                ]
+            },
+            "headline": "{{ page.excerpt }}",
+            "url": "{{page.url}}",
+            "datePublished": "{{ page.date }}",
+            "dateModified": "{{ page.date }}",
+            "image": {
+                "@type": "ImageObject",
+                "url": "{{ page.image }}",
+                "width": 461,
+                "height": 281
+            },
+            "keywords": " {{ page.tags }}",
+            "description": "{{ page.excerpt }}",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://www.techiediaries.com/"
+            }
+        }
+    </script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <amp-analytics type="gtag" data-credentials="include">
         <script type="application/json">
