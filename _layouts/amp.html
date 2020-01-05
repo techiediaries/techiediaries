@@ -102,8 +102,9 @@ layout: amp
 <body>
 
     {% capture header %}{% include ampheader.html %}{% endcapture %}
+    {{ header | amp_images }}
     <h1 class="post-title">
-        {{ header | amp_images }}
+        {{ page.title }}
     </h1>
     {{ content | markdownify | amp_images }}
     {% capture footer %}{% include footer.html %}{% endcapture %}
