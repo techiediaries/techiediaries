@@ -147,17 +147,20 @@ kramdown:
   input: GFM
   toc_levels: 1..2
 highlighter: rouge
-gems:
+plugins:
   #- jekyll-minifier 
   #- jekyll-compose
   - jekyll-paginate 
+  - amp-jekyll
   #- jekyll-sitemap
   #- jekyll-gist
   #- jekyll-pwa-plugin
   #- jekyll-compress-images
 
 plugins_dir: ./_plugins
-  
+
+ampdir: ./amp
+
 compress_html:
   clippings: all
   comments: all
