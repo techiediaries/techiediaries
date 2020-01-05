@@ -1,0 +1,234 @@
+---
+layout: nil
+skipRss: true
+skipNavigation: true
+---
+
+<!DOCTYPE html>
+<html ⚡>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="msvalidate.01" content="717883E5CC017F74428029865039B548" />
+	<meta name="google-site-verification" content="p5fO6UZ8-nSvKNUMfwmf8jb7dSQTMnSgw7Vrm4V49YE" />
+	<meta name="ahrefs-site-verification" content="b31f0540449b159cb3a9d3272e5f5f7e77a6b7f90289f44bae3ad46d2e015a05">
+	<meta name='dmca-site-verification' content='aUZXeDk0WWR1YXZEbmtuNkV5c2tRaVFUc2NHWlRyUFdVa0lWakF5Y0ptRT01' />
+	<meta property="fb:pages" content="217712901582117" />
+	<meta property="og:image" content="{{page.image}}" />
+	<meta name="p:domain_verify" content="75051f0a45f89e01f06be43dbaff6f74" />
+	<meta name="ezoic-ads" content="disabled" />
+
+
+	<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+	<title>{{ page.title }} | {{site.name}}</title>
+	{% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+
+    <link rel="canonical" href="{{ site.baseurl }}/{{page.link}}"> 
+    <link rel="amphtml" href="https://www.example.com/url/to/amp/document.html" />
+
+	<link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
+
+
+
+    <style amp-custom>
+        	{% include bpost-css.html %}
+ 
+    </style>
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BlogPosting",
+          "headline": "{{ page.title }}",
+          "image": ["{{ page.thumbnail }}"],
+          "datePublished": "{{ page.date }}"
+        }
+      </script>
+      <script
+        async
+        custom-element="amp-carousel"
+        src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js">
+      </script>
+      <script
+        async
+        custom-element="amp-ad"
+        src="https://cdn.ampproject.org/v0/amp-ad-0.1.js">
+      </script>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+          -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+          -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+          animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        }
+        @-webkit-keyframes -amp-start {
+          from {
+            visibility: hidden;
+          }
+          to {
+            visibility: visible;
+          }
+        }
+        @-moz-keyframes -amp-start {
+          from {
+            visibility: hidden;
+          }
+          to {
+            visibility: visible;
+          }
+        }
+        @-ms-keyframes -amp-start {
+          from {
+            visibility: hidden;
+          }
+          to {
+            visibility: visible;
+          }
+        }
+        @-o-keyframes -amp-start {
+          from {
+            visibility: hidden;
+          }
+          to {
+            visibility: visible;
+          }
+        }
+        @keyframes -amp-start {
+          from {
+            visibility: hidden;
+          }
+          to {
+            visibility: visible;
+          }
+        }
+      </style>
+      <noscript>
+        <style amp-boilerplate>
+          body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none;
+          }
+        </style>
+       </noscript>
+      <script async src="https://cdn.ampproject.org/v0.js"></script>    
+
+</head>
+
+<body>
+
+	{% include analytics.html %}
+
+	{% include header.html %}
+
+	<div class="site-content">
+		<div class="container">
+
+			<div class="main-content">
+				<div class="container">
+					<div class="row">
+
+						<!-- Post -->
+						{% assign author = site.authors[page.author] %}
+
+						<div class="col-xs-12 col-md-8">
+							<div class="mainheading">
+
+
+								<!-- Post Title -->
+								<h1 class="posttitle">{{ page.title }}</h1>
+
+							</div>
+							<!-- Post Content -->
+
+							<div class="article-post">
+								<div style="margin: 10px;" id="share"></div>
+								{{content}}
+							</div>
+
+							<!-- Post Date -->
+							<p>
+								<small>
+									<span class="post-date"><time class="post-date"
+											datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time></span>
+									{% if page.last_modified_at %}
+									(Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+										itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+									{% endif %}
+								</small>
+							</p>
+
+
+							<!-- Post Categories -->
+							<div class="after-post-tags">
+								<ul class="tags">
+									{% assign sortedCategories = page.tags | sort %}
+									{% for category in sortedCategories %}
+									<li>
+										<a href="{{ site.baseurl }}/tag/{{ category | slugify }}/">{{ category }}</a>
+									</li>
+									{% endfor %}
+								</ul>
+							</div>
+							<!-- End Categories -->
+							<!-- Author Box -->
+							{% if page.author %}
+							<div class="row post-top-meta">
+								<div class="col-md-12">
+									<a target="_blank" class="link-dark"
+										href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank"
+										href="{{ author.twitter }}" class="btn follow">Follow</a>
+									<span class="author-description">{{ author.description }}</span>
+								</div>
+							</div>
+							{% endif %}
+							<!-- Prev/Next -->
+							<div class="row PageNavigation">
+								{% if page.previous.url %}
+								<a class="col-md-6 prev" href="{{page.previous.url | absolute_url}}">&laquo;
+									{{page.previous.title}}</a>
+								{% endif %}
+								{% if page.next.url %}
+								<a class="col-md-6 text-right next"
+									href="{{page.next.url | absolute_url}}">{{page.next.title}}
+									&raquo;</a>
+								{% endif %}
+							</div>
+
+
+						</div>
+						<div id="sidebar" class="col-xs-12 col-md-4 col-xs-offset-1 sidebar-outer">
+							<aside class="widget">
+							</aside>
+						</div>
+						<!-- End Post -->
+
+					</div>
+				</div>
+				<!-- End Article -->
+			</div>
+
+
+
+			{% include footer.html %}
+
+
+		</div>
+	</div>
+
+
+	{% comment %}
+
+	{% include disqusscript.html %}
+
+	{% endcomment %}
+	
+
+	{% include sw.html %}
+
+</body>
+
+</html>
