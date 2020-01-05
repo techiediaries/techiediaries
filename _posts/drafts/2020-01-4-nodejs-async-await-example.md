@@ -7,7 +7,13 @@ skipRss: true
 tags : [drafts] 
 ---
 
-In this quick example, we'll see how to use async/await syntax in Node.js but let's first get started with a small introduction.
+In this quick example, we'll see how to use the `async/await` syntax in Node.js but let's first get started with a small introduction.
+
+## What is Async/Await?
+
+Async/Await is a new JavaScript syntax introduced in Node.js 8.
+
+
 
 ```js
 function handler (req, res) {
