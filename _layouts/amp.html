@@ -477,10 +477,10 @@ layout: amp
             }
 
             .navbar-toggleable-md .navbar-collapse {
-                display: -webkit-box !important;
-                display: -webkit-flex !important;
-                display: -ms-flexbox !important;
-                display: flex !important;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
                 width: 100%
             }
 
@@ -519,11 +519,11 @@ layout: amp
         }
 
         .ml-auto {
-            margin-left: auto !important
+            margin-left: auto 
         }
 
         .text-center {
-            text-align: center !important
+            text-align: center 
         }
 
         @font-face {
@@ -966,8 +966,12 @@ layout: amp
         }
     </script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+</head>
+
+<body>
     <amp-analytics type="gtag" data-credentials="include">
-        <script type="application/json">
+    <script type="application/json">
     {
       "vars" : {
         "gtag_id": "UA-74071120-2",
@@ -978,11 +982,6 @@ layout: amp
     }
     </script>
     </amp-analytics>
-
-</head>
-
-<body>
-
     {% capture header %}{% include ampheader.html %}{% endcapture %}
     {{ header | amp_images }}
     <h1 class="post-title">
