@@ -4,7 +4,7 @@ title:  "MyCLI: A MySQL CLI Based on Python with Auto-completion and Syntax High
 date:   2020-01-6
 excerpt: "mycli is a Python command line interface for MySQL, MariaDB, and Percona with auto-completion and syntax highlighting"
 canonical: https://www.shabang.dev/mysql-cli-with-auto-completion-and-syntax-highlighting/
-tags: [ mysql, python ]
+tags: [ mysql, python, django ]
 ---
 
 If you prefer to work with MySQL via its command-line interface, you'll like [mycli](https://www.mycli.net/) which is a CLI tool with auto-completion and syntax highlighting built on top of Python and [prompt_toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit) for building interactive command line applications with Python. 
