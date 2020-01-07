@@ -3,7 +3,7 @@ layout: post
 title: "HTML Tutorial: Angular 7/8 Template Syntax - Interpolation, ngFor & ngIf Directives"
 image: "images/content/html.png"
 excerpt: "In this tutorial, we’ll teach you HTML which is used as the template language for Angular. We’ll build a simple HTML app before tackling any Angular concepts since it’s a prerequisite in any web development and one of the three pillars of the web along with JavaScript and CSS."
-tags: [ html, angular, angular8, angular-9-ngfor-examples, angular-9-ngif-examples, angular-9-router-examples ] 
+tags: [ html, angular, angular8, angular-9-ngfor-examples, angular-9-ngif-examples, angular-9-router-examples, angular-9-tutorials ] 
 ---
  
 In this tutorial, we’ll teach you HTML which is used as the template language for Angular. We’ll build a simple HTML “app” using JAMStack approach and we'll learn about the Angular advanced concepts (Such as data binding, interpolation, loops with the `ngFor` directive , and conditional rendering with the `ngIf` directive). HTML is a prerequisite in any web development and one of the three pillars of the web along with JavaScript (or compiled TypeScript) and CSS.

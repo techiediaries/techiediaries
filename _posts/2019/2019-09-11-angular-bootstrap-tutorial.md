@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 Tutorial: Build an Example UI with Bootstrap 4"
 image: "images/content/learn-django.png"
 excerpt: "In this Angular 8 tutorial we'll learn how to use Bootstrap 4 to build professional UIs." 
-tags : [ angular, angular8, bootstrap ]
+tags : [ angular, angular8, bootstrap, angular-9-tutorials ]
 ---
 
 In this tutorial we'll learn, by example, how to use **Bootstrap 4** with **Angular 7/8** to build professional UIs. 

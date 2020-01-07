@@ -3,7 +3,7 @@ layout: post
 title: "Adding Routing to your Angular 8 App"
 image: "images/content/angular.png"
 excerpt: "Adding Angular Routing to your Angular 8 App" 
-tags : [ angular , angular8, angular-9-router-examples ]
+tags : [ angular , angular8, angular-9-router-examples, angular-9-tutorials ]
 ---
 
 In the previous [tutorial](https://www.techiediaries.com/angular-tutorial), we’ve created our Angular 8 CRM application using Angular CLI, let’s now see how we can add routing and navigation to our application.

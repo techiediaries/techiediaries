@@ -3,7 +3,7 @@ layout: post
 title: "CSS Grid Layout Tutorial: Holy Grail Angular 7/8 UI"
 image: "images/content/angular.png"
 excerpt: "This CSS Grid layout tutorial is designed for Angular 7/8 developers that want to learn how to build responsive layouts with modern CSS. We'll first start with a general introduction to learn about the basic concepts and then we'll see how to use it within an Angular 7/8 app to create the famous holy grail layout." 
-tags : [angular, angular8, css] 
+tags : [angular, angular8, css, angular-9-tutorials] 
 ---
 
 

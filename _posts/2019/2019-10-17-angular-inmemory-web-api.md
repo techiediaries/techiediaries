@@ -3,7 +3,7 @@ layout: post
 title: "Backendless Angular 7/8 Tutorial: Mocking HttpClient Using an In-Memory CRUD API Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll see, by example, how to use the in-memory web api module with Angular 8 to create a fake REST API back-end with CRUD operations. This is very useful for front-end developers that don't have a back-end yet or for testing your front-end app." 
-tags : [angular, angular-9-ngfor-examples, angular-9-httpclient-examples]
+tags : [angular, angular-9-ngfor-examples, angular-9-httpclient-examples, angular-9-tutorials]
 ---
 
 In this tutorial, you'll see, by example, how to use the in-memory web api module with Angular 8 to create a backend-less application by mocking a REST API back-end with common CRUD operations. This is very useful for Angular developers that don't have a back-end ready yet for their front-end app.

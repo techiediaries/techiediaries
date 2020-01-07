@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 Tutorial: Installing Angular CLI on Windows 10, Linux and macOS"
 image: "images/content/angular.png"
 excerpt: "In this tutorial you'll be learning how to use Angular CLI 9 (the latest version as of this writing) on Windows, Linux and macOS to create Angular applications and different constructs like modules, services, components and pipes etc." 
-tags : [angular, angular9]
+tags : [angular, angular9, angular-9-tutorials]
 ---
 
 In this tutorial, you'll be learning how to install and use Angular CLI 9 (the latest pre-release version as of this writing) on Windows 10, Linux and macOS to create Angular applications and different constructs like modules, services, components and pipes etc.

@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7|6 with PHP and MySQL RESTful CRUD Example & Tutorial"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll learn to create an example Angular 7 application with a PHP REST API on top of a MySQL database." 
-tags : [php , angular, mysql, angular-fullstack-examples]
+tags : [php , angular, mysql, angular-fullstack-examples, angular-9-tutorials]
 ---
  
 In this tutorial, you'll create an example REST API CRUD Angular 7 application with PHP and MySQL back-end.

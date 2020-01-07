@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 SEO: Rendering Your App on Server-side with Angular Universal"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll see in a 3 easy steps how you can render your Angular 8 application on the server to make it SEO-friendly and boost its performance using the Angular Universal technology" 
-tags : [angular , angular8] 
+tags : [angular , angular8, angular-9-tutorials] 
 ---
 
 

@@ -4,7 +4,7 @@ title: "Angular 9 Tutorial: Build an Example App with Angular CLI, Angular Route
 image: "images/content/angular.png"
 excerpt: "Throughout this Angular 9 tutorial, we’ll learn to build an example web application using APIs like HttpClient, Angular Router, and Material Design. We'll learn to generate components and services using Angular CLI and depoly your final app to the cloud (Firebase)."
 canonical: "https://www.shabang.dev/angular-tutorial-build-an-example-app-with-angular-cli-router-httpclient-and-angular-material/"  
-tags : [angular, angular9, angular-9-ngfor-examples, angular-9-material-examples]
+tags : [angular, angular9, angular-9-ngfor-examples, angular-9-material-examples, angular-9-tutorials]
 ---
  
 

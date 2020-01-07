@@ -3,7 +3,7 @@ layout: post
 title: "Lazy Loaded Module Example in Angular 8|7 with loadChildren & Dynamic Imports"
 image: "images/content/angular.png"
 excerpt: "" 
-tags : [ angular , angular8 ] 
+tags : [ angular , angular8, angular-9-router-examples ] 
 ---
 
 Lazy loading is the process of loading some features of your Angular application only when you navigate to their routes for the first time. This can be useful for increasing your app performance and decreasing the initial size of the bundle transmitted to the user's browser. 

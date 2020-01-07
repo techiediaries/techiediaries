@@ -3,7 +3,7 @@ layout: post
 title: "Angular 8 Tutorial: Build your First Angular App"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you will learn to build your first Angular 8 application from scratch." 
-tags : [  angular , angular8]
+tags : [  angular , angular8, angular-9-tutorials]
 ---
 
 In this tutorial, you will learn to build your first Angular 8 application from scratch.
