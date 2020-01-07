@@ -3,7 +3,7 @@ layout: post
 title: "Angular 8/9 Firebase CRUD Tutorial with Firestore"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll be using Angular 8 with Firebase and Firestore to create a app that implements the common CRUD operations." 
-tags : [angular]
+tags : [angular, angular-9-ngfor-examples]
 ---
 
 In this tutorial, you'll be using Angular 8/9 with Firebase and Firestore to create an app that implements the common CRUD operations.

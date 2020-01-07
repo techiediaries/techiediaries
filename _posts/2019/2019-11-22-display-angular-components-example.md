@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 Examples: 2 Ways To Display A Component (Selector & Router)"
 image: "images/content/angular.jpg"
 excerpt: "In this quick example, we'll see two ways of displaying a component in Angular 9 - using selectors or the router" 
-tags : [angular, angular9] 
+tags : [angular, angular9, angular-9-ngfor-examples, angular-9-ngif-examples] 
 ---
  
 

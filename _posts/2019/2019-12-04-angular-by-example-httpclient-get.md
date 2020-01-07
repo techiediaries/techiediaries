@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 By Example with HttpClient, Async Pipe and Observables"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "How to use HttpClient to make HTTP GET requests in Angular 7/8" 
-tags : [angular, angular8 ] 
+tags : [angular, angular8, angular-9-ngfor-examples ] 
 ---
 
 In this tutorial, we'll learn by example how to send GET requests to REST API servers in your Angular 7/8 application using `Httplient`. We'll also see how to use Angular services, RxJS Observables, models and the `async` pipe.

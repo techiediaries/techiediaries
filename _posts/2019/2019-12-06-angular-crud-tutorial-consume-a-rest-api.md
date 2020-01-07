@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 CRUD Tutorial: Consume a Python/Django CRUD REST API"
 image: "images/content/learn-django.png"
 excerpt: "Throughout this tutorial for beginners, we'll learn to build a full-stack example web application with Angular 9, the latest version of the most popular framework/platform for building mobile and desktop client side applications created and used internally by Google." 
-tags : [ python , django , mysql, angular, angular9 ]
+tags : [ python , django , mysql, angular, angular9, angular-9-ngfor-examples]
 ---
   
 

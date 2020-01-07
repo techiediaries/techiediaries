@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 ngIf Tutorial & Example"
 image: "images/content/angular.png"
 excerpt: "Throughout this quick tutorial, you'll be learning about how you can use ngIf in your Angular 6 applications." 
-tags : [angular, angular8]
+tags : [angular, angular8, angular-9-ngfor-examples, angular-9-ngif-examples]
 ---
 
 

@@ -5,7 +5,7 @@ image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll learn how to upload files in Angular 8. For the backend we'll be using Nest.JS.
 We'll see how to use HttpClient to send POST request with multipart form data which is used for file uploading. We'll also see how to use reactive forms and progress bar." 
 date: 2020-1-2
-tags : [angular, angular8 ] 
+tags : [angular, angular8, angular-9-ngif-examples ] 
 ---
 
 

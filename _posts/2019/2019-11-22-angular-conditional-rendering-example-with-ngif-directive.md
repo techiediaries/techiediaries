@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 Examples: Conditional Rendering  With *ngIf & Else"
 image: "images/content/angular.jpg"
 excerpt: "In this example, we'll see how to conditionally render a component or HTML element in Angular 9 using the *ngIf directive" 
-tags : [angular, angular9] 
+tags : [angular, angular9, angular-9-ngif-examples] 
 ---
 
 

@@ -4,7 +4,7 @@ title: "Angular 9/8 Tutorial & Example — Upload files with FormData, HttpClien
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we’ll see by example how to upload multiple image files using  FormData,  HttpClient (for posting  multipart/form-data), Angular 9/8 and TypeScript" 
 canonical: "https://www.ahmedbouchefra.com/blog/angular-tutorial-example-upload-files-with-formdata-httpclient-rxjs-and-material-progressbar/"
-tags : [angular , angular9] 
+tags : [angular , angular9, angular-9-ngfor-examples] 
 ---
 
 In this tutorial, we’ll see by example how to upload multiple image files using  **FormData**,  **HttpClient** (for posting  **multipart/form-data**), Angular 9/8 and TypeScript.

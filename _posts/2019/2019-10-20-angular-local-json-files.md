@@ -3,7 +3,7 @@ layout: post
 title: "3 Methods for Reading Local JSON Files in Angular 7/8"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll present you 3 ways to read local JSON files in your Angular 8 application with examples" 
-tags : [angular, angular8]
+tags : [angular, angular8, angular-9-ngfor-examples]
 ---
 
 

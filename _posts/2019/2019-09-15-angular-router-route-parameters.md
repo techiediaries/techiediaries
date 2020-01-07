@@ -3,7 +3,7 @@ layout: post
 title: "The Angular 7/8 Router: Accessing Route Parameters with Snapshot and Observables (ParamMap)"
 image: "images/content/angular.png"
 excerpt: "In this tutorial we're going to see how to handle route parameters with the Angular 8 Router using different methods: Snapshot and ParamMap Observable." 
-tags : [angular, angular8] 
+tags : [angular, angular8, angular-9-ngfor-examples] 
 ---
 
 
