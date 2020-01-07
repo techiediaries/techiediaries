@@ -39,8 +39,10 @@ module Jekyll
         dir = site.config['tag_dir'] || 'topics'
         site.tags.keys.each do |tag|
           if site.layouts.key? tag
+            dir = ''
             site.pages << SpecificTagPage.new(site, site.source, File.join(dir, tag), tag)
           else
+            dir = site.config['tag_dir'] || 'topics'
             site.pages << TagPage.new(site, site.source, File.join(dir, tag), tag)
           end
 
