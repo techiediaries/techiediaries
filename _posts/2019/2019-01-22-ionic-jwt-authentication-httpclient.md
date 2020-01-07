@@ -3,7 +3,7 @@ layout: post
 title: "Ionic 4 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server"
 image: "images/content/angular-httpclient.png"
 excerpt: "In this tutorial, we'll learn to implement JWT authentication with Ionic 4, Angular 7 and Express.js" 
-tags : [ionic] 
+tags : [ionic, angular-9-httpclient-examples] 
 ---
 
 Ionic 4 is the latest version of Ionic which is as of this writing in RC. In this tutorial, we'll be learning how to use Ionic 4 and Angular 7 to build a login & registration module for authenticating users. We'll learn about using Angular modules, services, forms (via `FormsModule`) and HTTP (via `HttpClient`) among other features.

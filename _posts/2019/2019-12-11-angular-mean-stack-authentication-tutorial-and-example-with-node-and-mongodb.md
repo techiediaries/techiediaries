@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 MEAN Stack Authentication Tutorial & Example: Node and MongoDB Backend"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this step by step tutorial, we'll be building an example app with JWT authentication and REST APIs based on the MEAN stack. We'll be using Angular 9 for the frontend and Node.js along with Express and MongoDB in the backend" 
-tags : [angular, angular9, angular-9-ngif-examples] 
+tags : [angular, angular9, angular-9-ngif-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-fullstack-examples, angular-9-form-examples] 
 ---
 
 In this step by step tutorial, we'll be building an example app with JWT authentication and REST APIs based on the MEAN stack. We'll be using Angular 9 for the frontend and Node.js along with Express and MongoDB in the backend.  

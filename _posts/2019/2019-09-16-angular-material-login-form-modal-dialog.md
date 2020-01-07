@@ -4,7 +4,7 @@ title: "Angular 9/8 Popup Modal Example with Angular Material Form and Modal Dia
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll build an example login UI with a form and modal dialog styled with Angular Material 9." 
 date: 2020-1-02
-tags : [angular]
+tags : [angular, angular-9-router-examples, angular-9-material-examples]
 ---
 
 In this tutorial, you'll learn about Angular Popup Modals and forms by example. We'll be using Angular Material with an Angular 9 example.

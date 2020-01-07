@@ -3,7 +3,7 @@ layout: post
 title: "Angular Material 8 Tutorial: Build Navigation UI with Toolbar and Side Navigation Menu"
 image: "images/content/angular.png"
 excerpt: "Angular Material 8 Tutorial: Build Navigation UI with Toolbar and Side Navigation Menu" 
-tags : [  angular , angular8]
+tags : [  angular ,  angular-9-material-examples]
 ---
 
 In the previous [tutorial](https://www.techiediaries.com/angular-tutorial) we’ve seen how to create an Angular 8 application for consuming a simple CRM REST API. We’ve also added component routing to our application in this [tutorial](https://www.techiediaries.com/angular-routing-tutorial). Now, let’s build on those tutorials to create the UI using Angular Material 8.

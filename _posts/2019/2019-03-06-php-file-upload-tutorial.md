@@ -5,7 +5,7 @@ image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, you'll learn how you can upload files in your PHP web application. We'll not use any framework but plain PHP.
 
 Next, we'll see how we can use Angular 7 to create a frontend that provides a form for uploading an image file to the backend using FormData and HttpClient. We'll be also looking at how to create a reactive form with Angular." 
-tags : [angular , php] 
+tags : [angular , php, angular-9-httpclient-examples, angular-9-fullstack-examples , angular-9-formdata-examples] 
 ---
 
 In this tutorial, you'll learn how you can upload files in your PHP web application. We'll not use any framework but plain PHP.

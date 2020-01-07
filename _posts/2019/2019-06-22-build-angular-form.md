@@ -3,7 +3,7 @@ layout: post
 title: "Building an Example Contact Form in Angular 8"
 image: "images/content/angular.png"
 excerpt: "n this tutorial, we'll learn how to build and work with forms in Angular 8 by creating a simple contact form example" 
-tags : [angular, angular8 ] 
+tags : [angular, angular8, angular-9-form-examples ] 
 ---
 
 In this tutorial, we'll learn how to build and work with forms in Angular 8 by creating a simple contact form example. 

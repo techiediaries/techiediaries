@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 HttpClient Interceptors: Mocking HTTP Requests Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll learn by example to use HttpClient Interceptors to mock a back-end for your Angular 8 app. This way you can develop your Angular 8 app without a back-end" 
-tags : [angular , angular8] 
+tags : [angular , angular8, angular-9-httpclient-examples] 
 ---
 
 

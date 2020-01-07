@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 Authentication with JWT Tutorial"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll learn, by example, how you can  implement JWT authentication in your Angular 7/8 application." 
-tags : [angular, angular8]
+tags : [angular, angular8, angular-9-httpclient-examples]
 ---
 
 In this tutorial, you'll learn to implement JWT authentication in your Angular 7/8 applications by creating an example Angular service that can be used to handle authentication with JWT.

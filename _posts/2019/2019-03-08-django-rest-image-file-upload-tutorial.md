@@ -3,7 +3,7 @@ layout: post
 title: "Django REST Framework Image File Upload Tutorial & Example [FormData & Angular 7 UI]"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "Throughout this tutorial, we'll see how you can implement file upload in Django and Django REST Framework with a step by step example. Our application will expose an /upload endpoint that accepts POST requests that contain the file posted with a multipart/form-data content type using FormData. For the frontend, we'll be using Angular 7 to create a simple interface that allows the user to select a file and upload it to the server via a POST request and FormData." 
-tags : [ python , django , angular ] 
+tags : [ python , django , angular, angular-9-httpclient-examples, angular-fullstack-examples, angular-9-formdata-examples ] 
 author: omar
 ---
 

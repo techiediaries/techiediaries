@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7|6 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes (for Login Redirects)"
 image: "images/content/angular.png"
 excerpt: "We'll be learning how to use Router Guards and UrlTree data structures to protect the UI if the user is not logged in and redirect them to the login interface if they don't have access to a specific route." 
-tags : [angular]
+tags : [angular, angular-9-router-examples]
 ---
 
 In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 7. Let's now secure the UI with router guards.

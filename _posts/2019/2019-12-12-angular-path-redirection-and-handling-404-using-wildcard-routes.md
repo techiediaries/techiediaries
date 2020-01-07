@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 How-To: Path Redirection and Handling 404 Paths Using Router Wildcard Routes"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this quick example, we'll see how to redirect users to a new URL path or component using the Angular router and how to deal with not found pages and redirect to a 404 component if no match is found using wildcard paths" 
-tags : [angular, angular-how-tos, angular9] 
+tags : [angular, angular-how-tos, angular9, angular-9-router-examples] 
 ---
  
 In this quick example, we'll see how to redirect users to a new URL path or component using the Angular router and how to deal with not found pages and redirect to a 404 component if no match is found using wildcard paths.

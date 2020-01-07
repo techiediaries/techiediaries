@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 Http - How to Use HttpClient Module with Examples"
 image: "images/content/angular-httpclient.png"
 excerpt: "In this how-to tutorial, we'll learn what is the HttpClient API available from HttpClientModule and how to use it in Angular 9 by example with request timeout, responsetype, query parameters, http headers, custom http headers, interceptors, typed and full responses, and error handling." 
-tags : [angular, angular-how-tos, angular9, angular-9-ngfor-examples, angular-9-ngif-examples] 
+tags : [angular, angular-how-tos, angular9, angular-9-ngfor-examples, angular-9-ngif-examples, angular-9-httpclient-examples, angular-9-router-examples] 
 ---
 
 

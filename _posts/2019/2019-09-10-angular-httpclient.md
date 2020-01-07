@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 HttpClient — Building a Service for Sending API Calls and Fetching Data"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll be learning, by example, how to use Angular 7/8 and HttpClient to send HTTP requests to remote servers for fetching, creating and updating data." 
-tags : [angular, angular8]
+tags : [angular, angular8, angular-9-httpclient-examples]
 ---
 
 Throughout this tutorial, you'll learn, by example, to use Angular 7/8 and `HttpClient` to send HTTP requests or make API calls to RESTful endpoints of remote servers in order to fetch data.

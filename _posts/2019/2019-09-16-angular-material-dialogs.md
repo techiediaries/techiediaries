@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 Material Dialog with Example"
 image: "images/content/angular.jpg"
 excerpt: "This tutorial shows you how you can use Angular 7/8 Material to build Material UI dialogs for your web application" 
-tags : [angular] 
+tags : [angular, angular-9-material-examples] 
 date: 2020-1-2
 author: ahmed
 ---

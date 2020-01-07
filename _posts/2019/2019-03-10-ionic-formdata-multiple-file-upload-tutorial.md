@@ -3,7 +3,7 @@ layout: post
 title: "Multiple Image/File Upload with Django, Ionic 4 and FormData"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, you'll learn to implement multiple file upload with Ionic 4, Django and FormData" 
-tags : [ python , django , ionic ] 
+tags : [ python , django , ionic, angular-9-httpclient-examples, angular-fullstack-examples, angular-9-formdata-examples ] 
 author: omar
 ---
 

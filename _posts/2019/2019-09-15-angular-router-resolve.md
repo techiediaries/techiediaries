@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 Router: Resolve & Route Resolvers Example"
 image: "images/content/angular.png"
 excerpt: "The Angular 8 Router provides a resolve property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data)" 
-tags : [angular, angular8] 
+tags : [angular, angular8, angular-9-router-examples] 
 ---
 
 The Angular 8 Router provides a `resolve` property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data). 

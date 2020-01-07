@@ -3,7 +3,7 @@ layout: post
 title: "Build an Angular 9/8 CRUD Example & Tutorial"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll learn to build an Angular CRUD example from scratch using the latest version which is as the time of this writing Angular 9" 
-tags : [angular, angular9, angular-9-ngfor-examples] 
+tags : [angular, angular9, angular-9-ngfor-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-9-form-examples] 
 ---
 
 In this tutorial, we'll learn to build an Angular CRUD example from scratch using the latest version which is as the time of this writing **Angular 9**.

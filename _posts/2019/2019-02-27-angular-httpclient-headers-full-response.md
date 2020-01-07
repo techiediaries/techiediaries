@@ -3,7 +3,7 @@ layout: post
 title: "Typed and Full Responses and Headers in Angular 7 HttpClient: Link Header Pagination Example"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll learn how to get headers and full responses with HttpClient in Angular 7" 
-tags : [angular ] 
+tags : [angular, angular-9-httpclient-examples ] 
 ---
 
 In this tutorial, we'll see how you can get the full response when sending HTTP requests with HttpClient in Angular 7.

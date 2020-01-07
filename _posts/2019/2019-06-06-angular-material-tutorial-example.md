@@ -3,7 +3,7 @@ layout: post
 title: "Angular 8 Material Design Tutorial & Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll be learning how to use Angular 8 Material Design to build a beautiful and professional grade UI interface for our Angular front-end application" 
-tags : [ python, django, javascript, angular, angular8 ]
+tags : [ angular, angular-9-material-examples ]
 ---
  
 Throughout this tutorial, we'll learn about using [Angular Material](https://material.angular.io/) 8 to create professional UIs. 

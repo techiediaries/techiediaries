@@ -3,7 +3,7 @@ layout: post
 title: "The Angular 7/8 Router: Using RouterLink, Navigate or NavigateByUrl"
 image: "images/content/angular.png"
 excerpt: "In this tutorial we're going to see how to navigate with the Angular Router using routerLink, Router.navigate() and Router.navigateByUrl()." 
-tags : [javascript , angular, angular-9-ngfor-examples] 
+tags : [javascript , angular, angular-9-ngfor-examples, angular-9-router-examples] 
 ---
 
 In the previous [tutorial of the Angular 8 Router](https://www.techiediaries.com/angular-router-route-parameters/), we've seen how to use basic routing between components then how to handle route parameters using different methods. We've also seen how to use the `RouterLink` directive to create route links. This tutorial continues from the previous tutorials with other methods to implement navigation.

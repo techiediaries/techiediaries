@@ -4,7 +4,7 @@ title: "Angular 9/8 Material Data-Table Tutorial & Example"
 image: "images/content/angular.png"
 excerpt: "Angular 9 Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering." 
 date: 2020-1-02
-tags : [angular]
+tags : [angular, angular-9-material-examples]
 ---
 
 Angular Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering. 

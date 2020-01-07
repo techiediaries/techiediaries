@@ -3,7 +3,7 @@ layout: post
 title: "The Angular 7/8 Router: Named and Multiple Router-Outlets (Auxiliary Routes)"
 image: "images/content/angular.png"
 excerpt: " In this tutorial, we'll see advanced uses of the `<router-outlet>` component such as how to create named, multiple outlets and auxiliary routing." 
-tags : [angular, angular8] 
+tags : [angular, angular8, angular-9-router-examples] 
 ---
 
 Throughout this tutorial we'll learn to use named and multiple Router Outlets and auxiliary routes in Angular 7/8

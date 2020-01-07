@@ -3,7 +3,7 @@ layout: post
 title: "Angular Http — Angular 7/8 HttpClient Tutorial"
 image: "images/content/angular-httpclient.png"
 excerpt: "How to use HttpClient to make HTTP Requests in Angular 4.3+" 
-tags : [angular, angular8] 
+tags : [angular, angular8, angular-9-httpclient-examples] 
 ---
 
 What is `HttpClient` in Angular?  

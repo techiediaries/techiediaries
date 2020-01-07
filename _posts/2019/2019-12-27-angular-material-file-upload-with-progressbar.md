@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 How-To: Build a Material File Upload UI with MatProgressBar, MatButton , MatIcon and MatCard "
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this quick how-to tutorial, we'll see how to build a file/image uploading UI with Angular 9 Material components such as MatProgressBar, MatIcon, MatCard, and MatButton" 
-tags : [angular, angular-how-tos, angular9, angular-9-ngfor-examples] 
+tags : [angular, angular-how-tos, angular9, angular-9-ngfor-examples, angular-9-material-examples, angular-9-formdata-examples] 
 ---
 
 

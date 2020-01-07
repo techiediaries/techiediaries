@@ -3,7 +3,7 @@ layout: post
 title: "Angular 7/8 Router: Route Animations Tutorial and Example"
 image: "images/content/angular.png"
 excerpt: "The Angular 8 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application." 
-tags : [angular, angular8] 
+tags : [angular, angular8, angular-9-router-examples] 
 ---
 
 The Angular 7/8 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application.

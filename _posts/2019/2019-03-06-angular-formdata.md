@@ -4,7 +4,7 @@ title: "How to Post FormData (multipart/form-data) with Angular 9/8, TypeScript 
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this quick tutorial, you'll learn how to work with FormData in Angular 9/8 and how to post it to a web server via a POST request and HttpClient" 
 date: 2020-1-3
-tags : [angular, angular9, angular-how-tos] 
+tags : [angular, angular9, angular-how-tos, angular-9-httpclient-examples, angular-9-formdata-examples] 
 ---
 
 

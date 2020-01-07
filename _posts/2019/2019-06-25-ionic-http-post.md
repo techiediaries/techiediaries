@@ -3,7 +3,7 @@ layout: post
 title: "Ionic 4 HTTP POST with Angular by Example"
 image: "images/content/angular-httpclient.png"
 excerpt: "How to use HttpClient to make example HTTP Post Requests in Ionic 3" 
-tags : [ionic] 
+tags : [ionic, angular-9-httpclient-examples] 
 ---
 
 In this Ionic 4/Angular tutorial, we'll learn how to send an example HTTP post request to a server (or post data to a server). Usually the POST data is submitted using a form by the user. In this example we'll be sending a simple JSON object. You can see how to post multipart form data in this [tutorial](https://www.techiediaries.com/ionic-formdata-multiple-file-upload-tutorial/). 

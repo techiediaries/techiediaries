@@ -4,7 +4,7 @@ title: "Angular 9/8 Tutorial By Example: (REST API, HttpClient GET, Components, 
 image: "images/angular.png"
 excerpt: "In this tutorial, you'll learn by example how to send GET requests to REST API servers in your Angular 8 application using HttpClient. We’ll also learn how to use the basic concepts of Angular like components and services and how to use the ngFor directive to display collections of data." 
 date: 2020-01-03
-tags : [angular , angular9] 
+tags : [angular , angular9, angular-9-httpclient-examples, angular-9-ngfor-examples, angular-9-router-examples] 
 ---
 
 In this tutorial, you'll learn by example how to send GET requests to REST API servers in your Angular 9 application using [`HttpClient`](https://www.techiediaries.com/angular-httpclient/). We’ll also learn how to use the basic concepts of Angular like components and services and how to use the [`ngFor`](https://www.techiediaries.com/angular-ngfor/) directive to display collections of data. 

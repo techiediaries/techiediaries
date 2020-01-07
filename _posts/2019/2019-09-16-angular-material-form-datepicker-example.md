@@ -4,7 +4,7 @@ title: "Angular 9/8 Material Examples: Date Picker, Input, CheckBox, Radio Butto
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 9/8 web app." 
 date: 2020-1-02
-tags : [angular]
+tags : [angular, angular-9-material-examples]
 ---
 
 In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 9 web application. We'll use common components like form fields, input, label, date pickers, radio buttons and select.
