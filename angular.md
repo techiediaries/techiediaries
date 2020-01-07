@@ -18,15 +18,15 @@ Our Angular learning path will offer the necessary tutorials, PDF books, for beg
 
 ## Our Angular 9/8/7/6 Articles By Topic
 
-<a href="https://www.techiediaries.com/topics/angular-9-httpclient-examples/">Angular 9 HttpClient Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-router-examples/">Angular 9 Router Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-formdata-examples/">Angular 9 FormData Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-material-examples/">Angular 9 Material Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-form-examples/">Angular 9 Form Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-ngfor-examples/">Angular 9 ngFor Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-ngif-examples/">Angular 9 ngIf Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-fullstack-examples/">Angular 9 Fullstack Examples</a>
-<a href="https://www.techiediaries.com/topics/angular-9-tutorials/">Angular 9 Step by Step Tutorials</a>
-<a href="https://www.techiediaries.com/topics/angular-how-tos/">Angular 9 How-tos</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-httpclient-examples/">Angular 9 HttpClient Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-router-examples/">Angular 9 Router Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-formdata-examples/">Angular 9 FormData Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-material-examples/">Angular 9 Material Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-form-examples/">Angular 9 Form Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-ngfor-examples/">Angular 9 ngFor Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-ngif-examples/">Angular 9 ngIf Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-fullstack-examples/">Angular 9 Fullstack Examples</a>
+- <a href="https://www.techiediaries.com/topics/angular-9-tutorials/">Angular 9 Step by Step Tutorials</a>
+- <a href="https://www.techiediaries.com/topics/angular-how-tos/">Angular 9 How-tos</a>
 
 ## All Angular 9/8/7/6 Articles

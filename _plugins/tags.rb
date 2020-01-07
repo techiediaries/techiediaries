@@ -36,6 +36,7 @@ module Jekyll
       safe true
   
       def generate(site)
+        dir = site.config['tag_dir'] || 'topics'
         site.tags.keys.each do |tag|
           if site.layouts.key? tag
             site.pages << SpecificTagPage.new(site, site.source, File.join(dir, tag), tag)
