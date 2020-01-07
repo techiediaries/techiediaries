@@ -24,7 +24,7 @@ module Jekyll
         @name = 'index.html'
   
         self.process(@name)
-        self.read_yaml(File.join(base, '_layouts'), '#{tag}.html')
+        self.read_yaml(File.join(base, '_layouts'), "#{tag}.html")
         self.data['tag'] = tag
   
         tag_title_prefix = site.config['tag_title_prefix'] || 'Tag: '
