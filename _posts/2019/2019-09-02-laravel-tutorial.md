@@ -23,7 +23,7 @@ In this tutorial, we'll see the new features of Laravel 6, we'll learn how to ge
 
 You'll also learn about the basic concepts of Laravel such as routing, controllers, models and views, etc.
 
-- 
+
 ## The new features of Laravel 6
 
 So, what is new with Laravel 6?

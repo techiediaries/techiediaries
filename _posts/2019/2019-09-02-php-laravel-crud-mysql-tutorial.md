@@ -1,17 +1,41 @@
 ---
 layout: post
-title: "Laravel 5.8 Tutorial: Build your First CRUD App with Laravel and MySQL (PHP 7.1+)"
+title: "Laravel 6 Tutorial: Build your First CRUD App with Laravel and MySQL"
 image: "images/content/php.png"
-excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 5.8 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
-tags : [php , laravel, mysql] 
+excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
+tags : [php , laravel, laravel-6-tutorials-and-examples, mysql]
+date: 2020-01-08 
 ---
 
-Throughout this tutorial for beginners you'll learn to use Laravel 5.8 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
+Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
 
 
-> **Note**: Laravel 5.8 is recently released and this tutorial is upgraded to the latest version.
+> **Note**: Laravel 6 is recently released and this tutorial is upgraded to the latest version.
 
-> Also read: [Laravel 5.8 REST CRUD API Tutorial - Build a CRM [PART 1]: Eloquent Models and Relationships](https://www.techiediaries.com/laravel-tutorial-rest-crud-api-models-relationships/)
+## What is CRUD?
+
+CRUD stands for Create, Read, Update and Delete which are operations needed in most data-driven apps that access and work with data from a database.
+
+In this example, we'll see how to impelement the CRUD operations in Laravel 6 against a MySQL database.
+
+> Also read: [Laravel 6 REST CRUD API Tutorial - Build a CRM [PART 1]: Eloquent Models and Relationships](https://www.techiediaries.com/laravel-tutorial-rest-crud-api-models-relationships/)
+
+## The new features of Laravel 6
+
+So, what is new with Laravel 6?
+
+As mentionned, Laravel 6 comes with a bunch of new features and enhancements such as:
+
+- The support of [Semantic Versioning](https://semver.org/),
+- Compatibility with [Vapor](https://vapor.laravel.com/), a serverless deployment platform for Laravel,
+- Improved Authorization Responses,
+- Job Middleware: A new feature that allows you wrap custom logic around the execution of queued jobs,
+- Lazy Collections: A new feature that leverages PHP's [generators](https://www.php.net/manual/en/language.generators.overview.php) to enable you to efficently work with very large datasets,
+- Eloquent Subquery Enhancements,
+- Laravel UI: UI scaffolding logic such as Bootstrap or Vue, is extracted in its own `laravel/ui` package.
+- Ignition: A new and smart error page.
+
+Check out the [docs](https://laravel.com/docs/6.0/releases) for more details.
 
 ## Laravel 5.8 New Features
 
@@ -25,9 +49,11 @@ Let's start our tutorial by going through the most important features introduced
 - Added support for [Carbon 2.0](https://carbon.nesbot.com/), an easy to use  PHP API extension for DateTime,
 - Added support [Pheanstalk 4.0](https://github.com/pheanstalk/pheanstalk/releases): a pure PHP 5.3+ client for the [beanstalkd workqueue](http://xph.us/software/beanstalkd/ "http://xph.us/software/beanstalkd/"), etc.
 
-The Laravel 5.8 version has also corrected numeroous bugs and introduced many improvements of the `Artisan` CLI.
+The Laravel 6 version has also corrected numeroous bugs and introduced many improvements of the `Artisan` CLI.
 
-Check out the [official docs](https://laravel.com/docs/5.8/releases#laravel-5.8) for details features of Laravel 5.8
+Check out the [official docs](https://laravel.com/docs/5.8/releases) for details features of Laravel 5.8
+
+
  
 
 ## Prerequisites
@@ -40,9 +66,11 @@ Familiarly with PHP is required since Laravel is based on PHP.
 
 For development I will be using a Ubuntu 16.04 machine so the commands in this tutorial are targeting this system but you should be able to follow this tutorial in any operating system you use.
 
-## Installing PHP 7.1
+Laravel 6 PHP >= 7.2.0
 
-Laravel v5.8 requires PHP 7.1 or above so you need the latest version of PHP installed on your system. The process is straightforward on most systems.
+## Installing PHP 7.2
+
+Laravel v6 requires PHP 7.2 or above so you need the latest version of PHP installed on your system. The process is straightforward on most systems.
 
 On Ubuntu, you can follow these instructions.
 
@@ -53,10 +81,10 @@ $ sudo add-apt-repository ppa:ondrej/php
 $ sudo apt-get update
 ```
 
-Next, install PHP 7.1 using the following command:
+Next, install PHP 7.2 using the following command:
 
 ```bash
-$ sudo apt-get install php7.1
+$ sudo apt-get install php7.2
 ```
 
 If you are using Ubuntu 18.04, PHP 7.2 is included in the default Ubuntu repository for 18.04 so you should be able to install it using the following command:
@@ -65,14 +93,14 @@ If you are using Ubuntu 18.04, PHP 7.2 is included in the default Ubuntu reposit
 $ sudo apt-get install php
 ```
 
-> This tutorial is tested with PHP 7.1 but you can also use more recent versions like PHP 7.2 or PHP 7.3
+> This tutorial is tested with PHP 7.2 but you can also use more recent versions like PHP 7.3
  
-### Installing the Required PHP 7.1 Modules
+### Installing the Required PHP 7.2 Modules
 
 Laravel requires a bunch of modules. You can install them using the following command:
 
 ```bash
-$ sudo apt-get install php7.1 php7.1-cli php7.1-common php7.1-json php7.1-opcache php7.1-mysql php7.1-mbstring php7.1-mcrypt php7.1-zip php7.1-fpm php7.1-xml
+$ sudo apt-get install php7.2 php7.2-cli php7.2-common php7.2-json php7.2-opcache php7.2-mysql php7.2-mbstring php7.2-mcrypt php7.2-zip php7.2-fpm php7.2-xml
 ```
  
 ## Installing PHP Composer
@@ -128,11 +156,11 @@ Options:
 
 For more information check out this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04).
 
-If you've successfully installed Composer in your system, you are ready to create a Laravel 5.8 project.
+If you've successfully installed Composer in your system, you are ready to create a Laravel 6 project.
 
-## Installing and Creating a Laravel 5.8  Project
+## Installing and Creating a Laravel 6  Project
 
-In this section we'll introduce Laravel and then proceed it to install and create a Laravel 5.8 project. 
+In this section we'll introduce Laravel and then proceed it to install and create a Laravel 6 project. 
 
 ### About Laravel
 
@@ -150,22 +178,22 @@ In this section we'll introduce Laravel and then proceed it to install and creat
 
 >Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
-Generating a Laravel 5.8 project is easy and straightforward. In your terminal, run the following command:
+Generating a Laravel 6 project is easy and straightforward. In your terminal, run the following command:
 
 ```bash
 $ composer create-project  --prefer-dist  laravel/laravel laravel-first-crud-app
 ```
 
-This will install `laravel/laravel` **v5.8.3**.
+This will install `laravel/laravel` **v6**.
 
-> **Note**: Make sure you have PHP 7.1 installed on your system. Otherwise, composer will use Laravel 5.5 for your project.
+> **Note**: Make sure you have PHP 7.2 installed on your system. Otherwise, composer will use a previous version of Laravel for your project.
 
 You can verify the installed version in your project using:
 
 ```bash
 $ cd laravel-first-crud-app
 $ php artisan -V
-Laravel Framework 5.8.19
+Laravel Framework 6
 ```
 
 ## Installing the Front-End Dependencies
@@ -191,7 +219,7 @@ In your generated project, you can see that a `package.json` file is generated w
 >
 >It also includes `bootstrap` to help you get started with Bootstrap for styling your UI.
 >
-> It include [Laravel Mix](https://laravel.com/docs/5.8/mix#working-with-stylesheets) to help you compile your SASS files to plain CSS.
+> It include [Laravel Mix](https://laravel.com/docs/6/mix#working-with-stylesheets) to help you compile your SASS files to plain CSS.
  
 You need to use `npm` to install the front-end dependencies:
 
@@ -547,7 +575,7 @@ Open the `resources/views/base.blade.php` file and add the following blade templ
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laravel 5.8 & MySQL CRUD Tutorial</title>
+  <title>Laravel 6 & MySQL CRUD Tutorial</title>
   <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -632,7 +660,7 @@ Open the `resources/views/contacts/create.blade.php` file and add the following 
 
 This is a screenshot of our create form!
 
-![Laravel 5.8 CRUD Tutorial](https://www.diigo.com/file/image/bbccosoazescrcabbqzdqddeqdq/Laravel+5.7+CRUD+Tutorial.jpg)
+![Laravel 6 CRUD Tutorial](https://www.diigo.com/file/image/bbccosoazescrcabbqzdqddeqdq/Laravel+5.7+CRUD+Tutorial.jpg)
 
 Fill out the form and click on the **Add contact** button to create a contact in the database. You should be redirected to /contacts route which doesn't have a view associated to it yet.
 
@@ -853,10 +881,10 @@ We also need to add a button to takes us to the create form. Add this code below
 
 This is a screenshot of the page after we created a contact:
 
-![Laravel 5.8 CRUD Example](https://www.diigo.com/file/image/bbccosoazescrcppsbzdqddocre/Laravel+5.7+CRUD+Tutorial.jpg)
+![Laravel 6 CRUD Example](https://www.diigo.com/file/image/bbccosoazescrcppsbzdqddocre/Laravel+5.7+CRUD+Tutorial.jpg)
 
 ## Conclusion
 
-We've reached the end of this tutorial. We created a CRUD application with Laravel 5.8, PHP 7.1 and MySQL.
+We've reached the end of this tutorial. We created a CRUD application with Laravel 6, PHP 7 and MySQL.
 
 Hope you enjoyed the tutorial and see you in the next one!
