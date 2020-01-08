@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "Laravel 6 Tutorial: Build your First CRUD App with Laravel and MySQL"
+title: "Laravel 6 Tutorial: Build your First CRUD App with Laravel, Bootstrap 4 and MySQL"
 image: "images/content/php.png"
 excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
 tags : [php , laravel, laravel-6-tutorials-and-examples, mysql]
 date: 2020-01-08 
 ---
 
-Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
+Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database and Bootstrap 4 styles from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
 
 
 > **Note**: Laravel 6 is recently released and this tutorial is upgraded to the latest version.
+
+## What is Bootstrap 4?
+
+Bootstrap 4 is the latest version of Twitter Bootstrap which is a CSS framework that allows web developers to professionally style their web interfaces without being experts in CSS.
+
+Bootstrap 4 is based on Flexbox and allows you to build responsive layouts with easy classes and utilities. 
 
 ## What is CRUD?
 
