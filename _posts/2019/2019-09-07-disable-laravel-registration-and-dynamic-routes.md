@@ -3,7 +3,7 @@ layout: post
 title: "Disable Laravel 6 Registration & Dynamic Routes"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll see how we can disable and remove the register route and view from the authentication system of our application if there is at least one admin user in our database. We'll achieve that by dynamically adding the register route to the routes/web.php file after querying the database to check for the absence of users with the admin role" 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 In this tutorial, we'll see how we can disable and remove the register route and view from the authentication system of our application if there is at least one admin user in our database. We'll achieve that by dynamically adding the register route to the `routes/web.php` file after querying the database to check for the absence of users with the admin role. 

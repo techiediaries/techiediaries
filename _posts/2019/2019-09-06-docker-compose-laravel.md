@@ -3,7 +3,7 @@ layout: post
 title: "Using Laravel 6 with Docker and Docker-Compose"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial we'll learn how we can use Docker/Docker-compose to develop and run Laravel 6 applications locally" 
-tags : [laravel, laravel6, docker] 
+tags : [laravel, laravel6, laravel-6-tutorials-and-examples, docker] 
 ---
 
 In this tutorial, we'll learn how we can use Docker and Compose to develop and run Laravel 6 applications locally. Following this tutorial you'll learn:

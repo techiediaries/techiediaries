@@ -5,7 +5,7 @@ image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll learn about migrations in Laravel 6 including the Schema builder comprised of the Schema and Blueprint facades. 
 
 Next, we'll continue building our CRM application by updating the users' table using migrations to add users with different roles (admin and user) in our app." 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 

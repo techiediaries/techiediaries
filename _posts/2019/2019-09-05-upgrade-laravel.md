@@ -3,7 +3,7 @@ layout: post
 title: "Upgrade to Laravel 6 from Laravel 5.8"
 image: "images/content/laravel.png"
 excerpt: "Laravel 6 is finally released. It's the new LTS version of Laravel instead of Laravel 5.5. If you have created your project with Laravel 5.8 or you have an existing project that was already upgraded to v5.8, these are the changes that you need to perform to upgrade it to the latest Laravel 6 version." 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 Laravel 6 is finally released. It's the new LTS version of Laravel instead of Laravel 5.5. 

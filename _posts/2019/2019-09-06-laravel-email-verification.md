@@ -3,7 +3,7 @@ layout: post
 title: "Laravel 6 Email Verification Tutorial"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll see how to add email verification to our Laravel 6 application using the MustEmailVerify contract" 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 In the previous tutorial, we've added login and registration to our Laravel 6 example app. Let's now see how to add email verification.

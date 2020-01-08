@@ -3,7 +3,7 @@ layout: post
 title: "Laravel 6 Model Events Tutorial"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll learn about Model events in Laravel 6 for using them in our CRM application to update the role of the user to an admin before saving it to the database." 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 In this tutorial, we'll learn about model events in Laravel 6 for using them in our CRM application to update the role of the user to an admin before saving it to the database.

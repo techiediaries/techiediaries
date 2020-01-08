@@ -3,7 +3,7 @@ layout: post
 title: "Laravel 6 Auth Tutorial: Login/Register/Password Reset UI"
 image: "images/content/laravel.png"
 excerpt: "In the previous tutorial, we've introduced Laravel and seen the new features of the latest Laravel 6 version. In this tutorial, we'll see how to add authentication with login, registration, logout and password reset example." 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 In the previous [tutorial](https://www.techiediaries.com/laravel-tutorial), we've introduced Laravel and seen the new features of the latest Laravel 6 version. In this tutorial, we'll see how to add authentication with login, registration, logout and password reset example.

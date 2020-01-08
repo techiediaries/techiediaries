@@ -3,7 +3,7 @@ layout: post
 title: "Laravel 6 Auth Redirection Using redirectTo"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll learn how to customize the auth system in our Laravel 6 CRM app to redirect users after they register or login to a different route depending on their role" 
-tags : [laravel, laravel6] 
+tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 

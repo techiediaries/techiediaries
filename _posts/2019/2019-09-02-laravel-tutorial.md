@@ -3,7 +3,7 @@ layout: post
 title: "Laravel 6 Tutorial & New Features - Build a CRM [PART 1]"
 image: "images/content/php.png"
 excerpt: "Laravel 6 is recently released with many enhancements so we'll be learning, throughout this tutorial how to create an example CRUD application from scratch. The application we'll be building is a simple CRM with a MySQL database." 
-tags : [php , laravel, mysql, laravel6] 
+tags : [php , laravel, mysql, laravel-6-tutorials-and-examples, laravel6] 
 ---
  
 
