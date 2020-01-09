@@ -1,6 +1,6 @@
 ---
 layout: bpost
-title: "Angular 9/8 Http Get and Post Requests Example"
+title: "Angular 9/8 Ajax Get and Post Requests Example"
 image: "images/content/angular.jpg"
 excerpt: "In this post, we'll create a simple example with Angular 9/8 and HttpClient that sends Get and Post requests to fetch and post data from/to a backend server" 
 skipRss: true
@@ -16,6 +16,8 @@ In our case, we'll be using a third-party server.
 We assume you already have a project ready and Angular CLI installed.
 
 You can also simply use the online Stackblitz IDE if you just want to experiment with the code and don't want to set up a development environment for Angular, yet!
+
+## What is Ajax?
 
 ## Http GET and POST Requests?
 
