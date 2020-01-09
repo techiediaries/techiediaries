@@ -327,7 +327,7 @@ With Angular data bindings, you don't need to manually push data from your compo
 
 Angular provides four types of data binding depending on how data flows i.e from the component to the DOM, from the DOM to the component or both ways:
 
-- `{{ }}` or interpolation which is used when you want to display data from the component in the associated view. For example, if you defined a foobar variable in your component, you can display its value using `{{ foobar }}`.
+- `{{}}` or interpolation which is used when you want to display data from the component in the associated view. For example, if you defined a foobar variable in your component, you can display its value using `{{ foobar }}`.
 
 - `[ ]` or property binding which is used when you want to push data to a property of an element in the DOM. It binds a variable in the component to an attribute of a DOM such as the value attribue of an `<input>` tag. For example: `<input type="text" [value]="foobar">`.
 
@@ -340,7 +340,7 @@ Now let's apply this knowledge to make a functional Angular app.
 
 ## Angular 9 Tutorial, Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
 
-Basically, we want to the values associated with the clicked buttons wich can be either a number or a type of an operation. After calculating the result, we want to display the result element.
+Basically, we want to get the values associated with the clicked buttons which can be either a number or a type of an operation. After calculating the result, we want to display it in the result element.
 
 In the template, we have four sets of keys: 
 
@@ -398,7 +398,7 @@ Next, define the `getDecimal()` method which appends the decimal point to the cu
   }
 ```
 
-Next define the `doCalculation()` method which performs the calculation depending on the operator type:
+Next, define the `doCalculation()` method which performs the calculation depending on the operator type:
 
 ```ts
   private doCalculation(op , secondOp){

@@ -7,7 +7,7 @@ skipRss: true
 tags : [drafts] 
 ---
 
-In this post, we'll create a simple example with Angular 9/8 and `HttpClient` that sends Get and Post requests to fetch and post data from/to a backend server.
+In this post, we'll create a simple example with Angular 9/8 and `HttpClient` that sends Ajax Get and Post requests to fetch and post data from/to a backend server.
 
 The server can be either your own server or a third-party server.
 

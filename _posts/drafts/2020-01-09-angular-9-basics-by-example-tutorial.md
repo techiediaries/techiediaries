@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 Basics Tutorial by Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you will learn to build your first Angular 8 application from scratch." 
-tags : [  angular , angular-9, angular-9-tutorials]
+tags : [  drafts]
 ---
 
 In this tutorial, we'll build a web application with Angular 9. Meanwhile, we'll learn about the fundamental concepts which you will need to know to do front-end web development with Angular, such as:
