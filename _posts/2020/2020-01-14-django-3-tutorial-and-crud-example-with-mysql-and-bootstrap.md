@@ -1,20 +1,22 @@
 ---
 layout: post
-title: "Django 3 Tutorial & CRUD Example [2020]"
+title: "Django 3 Tutorial & CRUD Example with MySQL and Bootstrap"
 image: "images/content/learn-django.png"
 excerpt: "A Complete step by step tutorial to learn Django from scratch" 
 tags : [ python , django, mysql ]
-date: 2020-1-3
-next : /django-tutorial/introduction
+date: 2020-1-14
 ---
 
 Django 3 is released with full async support! In this tutorial, we'll see by example how to create a CRUD application from scratch and step by step. We'll see how to configure a MySQL database, enable the admin interface, and create the django views. 
+
+We'll be using Bootstrap 4 for styling.
 
 You'll learn how to:
 
 - Implement CRUD operations, 
 - Configure and access a MySQL database, 
-- Create django views, templates and urls.
+- Create django views, templates and urls,
+- Style the UI with Bootstrap 4
 
 
 ## Django 3 Features
@@ -329,12 +331,12 @@ Next, add:
 def create(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
-    if form.is_valid():
-        form.save()
-        return redirect('index')
-        form = ContactForm()
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+    form = ContactForm()
 
-    return render(request,'crudapp/contact.html',{'form': form})
+    return render(request,'crudapp/create.html',{'form': form})
 
 def edit(request, pk, template_name='crudapp/edit.html'):
     contact = get_object_or_404(Contact, pk=pk)
@@ -497,6 +499,180 @@ Next, open the `crudapp/templates/index.html` file and the add:
 {% endraw %}
 
 
+Next, open the `crudapp/templates/create.html` file and the add:
+
+
+{% raw %}
+
+```
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Posts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+        <style>
+    </style>
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1"></div>
+
+            <div class="col-md-10 col-xs-10 col-sm-10 ">
+                <br />
+                <h6 style="text-align:center;">
+                    <font color="red"> All fields are required</font>
+                </h6>
+            </div>
+            <div class="col-md-1 col-xs-1 col-sm-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1 col-xs-1 col-sm-1"></div>
+            <div class="col-md-10 col-xs-10 col-sm-10">
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {% for hidden_field in form.hidden_fields %}
+                    {{ hidden_field }}
+                    {% endfor %}
+                    {% for field in form.visible_fields %}
+                    <div class="form-group">
+                        {{ field.label_tag }}
+                        {% render_field field class="form-control" %}
+                        {% if field.help_text %}
+                        <small class="form-text text-muted">{{ field.help_text }}</small>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary">post</button>
+                </form>
+                <br>
+            </div>
+            <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+```
+{% endraw %}
+
+Next, open the `crudapp/templates/edit.html` file and the add:
+
+{% raw %}
+
+```html
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style type="text/css">
+        <style>
+    </style>
+    </style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10 ">
+            <br />
+            <h6 style="text-align:center;">
+                <font color="red"> All fields are required</font>
+            </h6>
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10">
+            <form method="post" novalidate>
+                {% csrf_token %}
+                {% for hidden_field in form.hidden_fields %}
+                {{ hidden_field }}
+                {% endfor %}
+                {% for field in form.visible_fields %}
+                <div class="form-group">
+                    {{ field.label_tag }}
+                    {% render_field field class="form-control" %}
+                    {% if field.help_text %}
+                    <small class="form-text text-muted">{{ field.help_text }}</small>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary">submit</button>
+            </form>
+            <br>
+        </div>
+        <div class="col-md-1 col-xs-1 col-sm-1"></div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+```
+{% endraw %}
+
+Next, open the `crudapp/templates/confirm_delete.html` file and the add:
+
+{% raw %}
+
+```html
+{% extends 'crudapp/base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row"></div>
+    <br />
+    <div class="row">
+        <div class="col-md-2 col-xs-2 col-sm-2"></div>
+        <div class="col-md-10 col-xs-10 col-sm-10">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="alert alert-warning">
+                        Are you sure you want to delete {{ object }}?
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+```
+{% endraw %}
 
 ## Django 3 Tutorial, Step 12 - Creating URLs
 
@@ -534,4 +710,4 @@ Next, go to the `http://localhost:8000/` address with a web browser.
 
 ## Conclusion 
 
-To conclude this django 3 tutorial, let's summarize what we have done. We have created a new Django project, created and migrated a MySQL database, built a simple CRM REST API with Django REST framework and started a local development server.
+In this django 3 tutorial, we have initialized a new django project, created and migrated a MySQL database, and built a simple CRUD interface.
