@@ -337,12 +337,12 @@ The ngClass Directive is an Angular Attribute Directive, which allows us to add 
 
   
 
-1.  [**Angular Directives**](https://www.tektutorialshub.com/angular/angular-directives/)
-2.  [**ngFor**](https://www.tektutorialshub.com/angular/angular-ngfor-directive/)
-3.  [**ngSwitch**](https://www.tektutorialshub.com/angular/angular-ngswitch-directive/)
-4.  [**ngIf**](https://www.tektutorialshub.com/angular/angular-ngif-directive/)
-5.  [**ngClass**](https://www.tektutorialshub.com/angular/angular-ngclass-directive/)
-6.  [**ngStyle**](https://www.tektutorialshub.com/angular/angular-ngstyle-directive/)
+1.  [**Angular Directives**]()
+2.  [**ngFor**]()
+3.  [**ngSwitch**]()
+4.  [**ngIf**]()
+5.  [**ngClass**]()
+6.  [**ngStyle**]()
 
   
 
@@ -354,5 +354,5 @@ The ngClass Directive is an Angular Attribute Directive, which allows us to add 
 
 The Angular pipes are used to Transform the Data. For Example, the Date pipe formats the date according to locale rules. We can pass arguments to pipe and chain pipes. The Angular also allows us to create the Custom Pipe
 
-1.  [**Angular Pipes**](https://www.tektutorialshub.com/angular/angular-pipes/)
-2.  [**Angular Custom Pipes**](https://www.tektutorialshub.com/angular/angular-custom-pipes/)
+1.  [**Angular Pipes**]()
+2.  [**Angular Custom Pipes**]()
