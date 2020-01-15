@@ -3,6 +3,7 @@ layout: post
 title: "Angular 8 Tutorial: Build your First Angular App"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you will learn to build your first Angular 8 application from scratch." 
+canonical: https://www.techiediaries.com/angular-9-tutorial-and-example/
 tags : [  angular , angular8, angular-9-tutorials]
 ---
 

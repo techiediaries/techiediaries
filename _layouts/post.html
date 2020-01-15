@@ -8,7 +8,7 @@ post_class: post-template
 <div class="container">
     <div id="main-content" class="row main">
 
-        
+
         <div class="mainheading col-xs-12 col-md-12">
 
 
@@ -32,36 +32,36 @@ post_class: post-template
 
             <div class="article-post">
                 <div style="margin: 10px;" id="share">
-                    
-                </div>
-                    
-                                
-                                {% include subscribe.html %}
 
-                                
+                </div>
+
+
+                {% include subscribe.html %}
+
+
 
                 {{content}}
-</hr>
-<blockquote>
-<b>Note</b>: We also publish our tutorials on  <a href="https://medium.com/techiediaries-com">Medium</a> and <a href="https://dev.to/techiediaries">DEV.to</a>. If you prefer reading in these platforms, you can follow us there to get our newest articles.
- 
-</blockquote>
-</hr>
+                </hr>
+                <blockquote>
+                    <b>Note</b>: We also publish our tutorials on <a
+                        href="https://medium.com/techiediaries-com">Medium</a> and <a
+                        href="https://dev.to/techiediaries">DEV.to</a>. If you prefer reading in these platforms, you
+                    can follow us there to get our newest articles.
+
+                </blockquote>
+                </hr>
 
 
-</hr>
+                </hr>
 
-</hr>
+                </hr>
 
 
-{% include author-widget.html %}
+                {% include author-widget.html %}
 
                 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-format="autorelaxed"
-                    data-ad-client="ca-pub-9293763250492023"
-                    data-ad-slot="9249041598"></ins>
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                    data-ad-client="ca-pub-9293763250492023" data-ad-slot="9249041598"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
@@ -74,7 +74,7 @@ post_class: post-template
             <p>
                 <small>
                     <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">
-                        {{page.date | date_to_string }}</time></span>
+                            {{page.date | date_to_string }}</time></span>
                     {% if page.last_modified_at %}
                     (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{
                         page.last_modified_at | date: "%b %-d, %Y" }}</time>)
@@ -100,7 +100,8 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation">
                 {% if page.previous.url %}
-                <a class="btn btn-primary" href="{{page.previous.url | absolute_url}}">&laquo; {{page.previous.title}}</a>
+                <a class="btn btn-primary" href="{{page.previous.url | absolute_url}}">&laquo;
+                    {{page.previous.title}}</a>
                 {% endif %}
                 {% if page.next.url %}
                 <a class="btn btn-primary" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
@@ -112,30 +113,30 @@ post_class: post-template
         </div>
         <div class="col-xs-12 col-md-4 col-xs-offset-1">
             <div>
-                    
-    <img src="https://www.techiediaries.com/angular-book3d.png" />
-  
-    <p>Get our <b>Learn Angular 8 in 15 Easy Steps</b> ebook in pdf, epub and mobi formats, plus a new Angular 8 tutorial every 3 days.</p>
-    
-    
-    <form action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0" method="post"
-    id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 
-    <input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
-    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-      <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
-  </div>      
-    <input class="submit-btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-    </form>
-  
+                <img src="https://www.techiediaries.com/angular-book3d.png" />
+
+                <p>Get our <b>Learn Angular 8 in 15 Easy Steps</b> ebook in pdf, epub and mobi formats, plus a new
+                    Angular 8 tutorial every 3 days.</p>
+
+
+                <form
+                    action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+
+                    <input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
+                    </div>
+                    <input class="submit-btn" type="submit" value="Subscribe" name="subscribe"
+                        id="mc-embedded-subscribe" class="button">
+                </form>
+
             </div>
             <div>
- 
-                {% include topics.html %}
-                
-             
-             
 
+                {% include topics.html %}
 
             </div>
             <div class="related-posts">
@@ -144,16 +145,29 @@ post_class: post-template
 
                 {% include related.html %}
             </div>
- 
-<!-- Ezoic - middlesidead - sidebar_middle -->
-<div id="ezoic-pub-ad-placeholder-154"></div>
-<!-- End Ezoic - middlesidead - sidebar_middle -->
-<div>
+
+            <div>
+                <br>
+                <h2 style="color:aliceblue; background-color:darkblue; padding: 10px;">Online Tools</h2>
+<a href="https://www.techiediaries.com/svg-url-encoder/">
+SVG URL Encoder
+</a>
+
+<a href="https://www.techiediaries.com/bootstrap-navbar-generator/">
+    Bootstrap Navbar Generator
+    </a>
+    
+            </div>
+
+            <!-- Ezoic - middlesidead - sidebar_middle -->
+            <div id="ezoic-pub-ad-placeholder-154"></div>
+            <!-- End Ezoic - middlesidead - sidebar_middle -->
+            <div>
                 <div>
                     <br>
-                    
+
                     {% include youtube.html %}
-            
+
                 </div>
                 <div style="margin-top:10px;">
                 </div>
@@ -184,14 +198,15 @@ post_class: post-template
                             (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>  -->
                 </div>
-                <!-- End Ezoic - SidebarMiddle1 - sidebar_middle -->                
+                <!-- End Ezoic - SidebarMiddle1 - sidebar_middle -->
                 <div id="stickybar">
-                    
+
                     {% include social.html %}
 
-                    <div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full" data-count="hidden"></div>
+                    <div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full"
+                        data-count="hidden"></div>
                     <div id="carbon-block">
-                        
+
                     </div>
 
                     <!-- Ezoic - long_sidebar_float - sidebar_floating_1 -->
@@ -210,8 +225,10 @@ post_class: post-template
     <div class="col-md-8">
         <h2>Get our books</h2>
         <ul>
-        <li><a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/">Practical Angular: Build your first web apps with Angular 8</a></li>
-                <li><a href="https://www.techiediaries.com/react-native-for-beginners-book/">React Native for Beginners [2019]</a></li>
+            <li><a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/">Practical Angular: Build
+                    your first web apps with Angular 8</a></li>
+            <li><a href="https://www.techiediaries.com/react-native-for-beginners-book/">React Native for Beginners
+                    [2019]</a></li>
 
 
         </ul>
@@ -219,34 +236,36 @@ post_class: post-template
 </div>
 
 <div class="row mb-5">
-<div class="col-md-8">
-    <h2>Read our other tutorials</h2>
-    <ul>
+    <div class="col-md-8">
+        <h2>Read our other tutorials</h2>
+        <ul>
 
-        <li><a href="https://www.techiediaries.com/angular-tutorial">Angular Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/laravel-tutorial">Laravel 6 Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/react-tutorial">React Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/react-hooks">React Hooks Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/react-native-tutorial-example">React Native Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/webpack-tutorial">Webpack Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/php-tutorial">PHP Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/javascript-tutorial">JavaScript Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/django-tutorial">Django Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/java-spring-boot-rest-api-tutorial">Java Spring Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/ruby-on-rails-tutorial-build-first-rails-application">Rails 6 Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/ionic-tutorial">Ionic 4 Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/typescript-tutorial">TypeScript Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/bootstrap-tutorial">Bootstrap 4 Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/electron-tutorial">Electron Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/cordova-tutorial">Cordova Tutorial</a></li>
-        <li><a href="https://www.techiediaries.com/html-tutorial">HTML Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/graphql-tutorial">GraphQL Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/css-grid-layout-tutorial">CSS Grid Layout Tutorial</a></li>
-  <li><a href="https://www.techiediaries.com/pwa-tutorial">PWA Tutorial</a></li>
-  
-  
-        </ul>      
-</div>
+            <li><a href="https://www.techiediaries.com/angular-tutorial/">Angular Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/laravel-tutorial/">Laravel 6 Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/react-tutorial/">React Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/react-hooks/">React Hooks Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/react-native-tutorial-example/">React Native Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/webpack-tutorial/">Webpack Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/php-tutorial/">PHP Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/javascript-tutorial/">JavaScript Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/django-tutorial/">Django Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/java-spring-boot-rest-api-tutorial/">Java Spring Tutorial</a>
+            </li>
+            <li><a href="https://www.techiediaries.com/ruby-on-rails-tutorial-build-first-rails-application/">Rails 6
+                    Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/ionic-tutorial/">Ionic 4 Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/typescript-tutorial/">TypeScript Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/bootstrap-tutorial/">Bootstrap 4 Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/electron-tutorial/">Electron Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/cordova-tutorial/">Cordova Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/html-tutorial/">HTML Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/graphql-tutorial/">GraphQL Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/css-grid-layout-tutorial/">CSS Grid Layout Tutorial</a></li>
+            <li><a href="https://www.techiediaries.com/pwa-tutorial/">PWA Tutorial</a></li>
+
+
+        </ul>
+    </div>
 </div>
 
 <!-- Begin Comments
@@ -256,7 +275,11 @@ post_class: post-template
         {% include disqus.html %}
     </div>
 </div>
-<a href="//www.dmca.com/Protection/Status.aspx?ID=dfbd6797-0920-4722-a279-1be28f0f669f" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=dfbd6797-0920-4722-a279-1be28f0f669f"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+<a href="//www.dmca.com/Protection/Status.aspx?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
+    title="DMCA.com Protection Status" class="dmca-badge"> <img
+        src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
+        alt="DMCA.com Protection Status" /></a>
+<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
 
 <!--End Comments
 
