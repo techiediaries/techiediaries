@@ -1,14 +1,14 @@
-# Build your First Django 3 Example App
+# Build Your First Django 3 Example App
 
 [Django](https://www.djangoproject.com/)  is a Python web framework. It is free and open source and has been around since 2005. It is very mature and comes with excellent documentation and awesome features included by default. Some excellent tools it provides are:
 
-1.  Excellent lightweight server for development and testing.
-2.  Good templating language.
-3.  Security features like CSRF included right out of the box.
+1. Excellent lightweight server for development and testing.
+2. Good templating language.
+3. Security features like CSRF included right out of the box.
 
 There are a myriad of other useful things included in Django but you shall probably discover them as you go along. We are going to be using Django to build our website in this tutorial.
 
-## [Setting Up](https://scotch.io/tutorials/build-your-first-python-and-django-application#toc-setting-up)
+## Setting up
 
 In this tutorial, I will show you how to get a Django website up and running. Before we get there though, first grab a copy of the latest Python from the  [Python website](https://www.python.org/).
 
@@ -33,7 +33,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 This is the interactive Python shell. Hit  `CTRL + D`  to exit it for now
 
-## [Setting Up the Environment](https://scotch.io/tutorials/build-your-first-python-and-django-application#toc-setting-up-the-environment)
+## Setting Up the Environment
 
 To avoid polluting our global scope with unecessary packages, we are going to use a virtual environment to store our packages. One excellent virtual environment manager available for free is  `virtualenv`. We will be using Python's package manager  `pip`  to install this and other packages like Django which we will require later on. First, let's get  `virtualenv`  installed.
 
