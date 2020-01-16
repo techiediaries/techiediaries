@@ -1,6 +1,6 @@
 ---
 layout: bpost
-title: "Angular 9/8/7 Realtime Chat Example with with Node.js, Socket.io and WebSocket"
+title: "Angular 9/8/7 Realtime Chat Example with Node.js, Socket.io and WebSocket"
 image: "images/content/angular.jpg"
 excerpt: "In this tutorial, we'll learn how to build a real-time app with Angular 9/8, Socket.IO, WebSocket, and Node.js" 
 skipRss: true
