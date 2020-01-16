@@ -3,7 +3,7 @@ layout: bpost
 title: "Laravel 6 Ajax CRUD Tutorial with Bootstrap 4 Modal and Pagination Example"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, you will learn to build a CRUD example with Laravel 6 and Ajax" 
-tags : [ laravel, laravel-6-examples  ]
+tags : [ laravel, laravel-6-tutorials-and-examples  ]
 ---
 
 In this tutorial, we'll learn to build a CRUD example with Laravel 6, Bootstrap 4, jQuery, and Ajax.
