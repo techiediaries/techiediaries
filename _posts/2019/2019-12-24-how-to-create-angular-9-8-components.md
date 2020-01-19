@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angular 9 How-To: Create Angular Components?"
+title: "Angular 9/8 How-To: Create Angular Components?"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this quick how-to post, we'll learn how to use the  ng generate component  command of Angular CLI, or its  ng g c shortcut command, for creating Angular components in your project." 
 tags : [angular, angular-how-tos, angular9] 
