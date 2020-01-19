@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angular 9/8 How-To: Handle HttpClient Errors with RxJS' catchError() and throwError()"
+title: "Angular 9/8/7 How-To: Handle HttpClient Errors with RxJS' catchError() and throwError()"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this quick how-to article, we'll see by example how to handle Http errors in Angular 9 apps" 
 tags : [angular, angular-how-tos, angular9] 

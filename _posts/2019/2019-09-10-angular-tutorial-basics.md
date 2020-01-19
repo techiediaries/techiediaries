@@ -292,7 +292,7 @@ Now let's see how we can start using the latest Angular 8 version.
 Prior knowledge of Angular is not required for this tutorial series but you'll need to have a few requirements:
 
 * Prior working experience or understanding of HTML and CSS.
-* Familiarity with of TypeScript/JavaScript.
+* Familiarity with TypeScript/JavaScript.
 
 ### <a name="Updating_Angular_7">Updating to Angular 8 from Angular 7</a>
 
