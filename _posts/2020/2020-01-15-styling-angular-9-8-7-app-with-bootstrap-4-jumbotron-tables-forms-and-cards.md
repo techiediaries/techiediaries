@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Styling your Angular 9 App with Bootstrap 4 Jumbotron, Tables, Forms and Cards"
+title:  "Styling your Angular 9/8/7 App with Bootstrap 4 Jumbotron, Tables, Forms and Cards"
 date:   2020-1-15
 canonical: "https://www.ahmedbouchefra.com/blog/styling-angular-9-app-with-bootstrap-4-jumbotron-tables-forms-and-cards/"
 ---
