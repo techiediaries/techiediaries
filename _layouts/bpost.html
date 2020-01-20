@@ -40,6 +40,8 @@ skipNavigation: true
 
 
 	{% include bpost-css.html %}
+	{% include newcss.html %}
+	
 
 
 
@@ -143,9 +145,14 @@ skipNavigation: true
 						</div>
 						<div id="sidebar" class="col-xs-12 col-md-4 col-xs-offset-1 sidebar-outer">
 							<aside class="widget">
+								{% include related.html %}
 							</aside>
 						</div>
-						<!-- End Post -->
+						<div id="stickybar">
+
+							{% include social.html %}
+						</div>
+
 
 					</div>
 				</div>
