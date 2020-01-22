@@ -4,15 +4,17 @@ title: "Angular 9/8 Router Tutorial: Learn Routing & Navigation by Example"
 excerpt: "In this tutorial part, we’ll learn about Angular Router by example and will teach you everything you need to start using Angular routing to build Single Page Applications." 
 img: "https://www.techiediaries.com/images/angular-router.png"
 tags : [angular , angular9, angular-9-httpclient-examples, angular-9-router-examples] 
-date : 2019-12-29
+date : 2020-1-22
 author: ahmed
 ---
 
-In this tutorial part, we’ll learn about the Angular Router 9 by example and will teach you everything you need to start using routing to build Single Page Applications.
+In this tutorial, we’ll learn about the Angular Router by building an Angular 9 example and will teach you everything you need to start using routing to build Single Page Applications.
 
 You can also check out [this article](https://www.techiediaries.com/angular-routing-tutorial/) for how to add routing to a CRM application by example.
 
 > **Note**: This tutorial is compatible with both Angular 6/7/8 and the new Angular 9 version.
+
+## What You'll Learn in This Angular 9 Router Tutorial
 
 In this tutorial, you'll learn about:
 
@@ -44,65 +46,8 @@ These are the steps of our tutorial:
 - Angular Routing, Step 9: Adding Navigation Links
 
 
-Before diving in practical routing with Angular 8 and Angular Router we’ll be introducing some basic concepts such as client side routing and SPAs. If you are familiar with these concepts, feel free to skip to [Angular routing section](https://www.techiediaries.com/angular-router/#Angular-Routing).
 
-
-## What is Client Side Routing
-
-Routing is an important feature for any frontend framework just like in traditional backend frameworks. It allows developers to build modern Single Page Applications (SPAs) that can be loaded once by the browser and provide multiple views that the user can navigate between them using the browser’s address bar and navigation buttons or hyperlinks in the application interface.
-
-
-> Routing is the process of driving the UI of an application using URLs.
-
-### What About an SPA
-
-Here is the definition of an [SPA from Wikipedia](https://en.wikipedia.org/wiki/Single-page_application):
-
-
-> A **single-page application** (**SPA**) is a web **application** or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. 
-
-So in a SPA, only one page is requested from the server. The multiple views that you can transition to are rendered dynamically by the browser not fetched as new pages from the server.
- 
-Client side routing is similar in concept to server side routing but uses different mechanisms for implementation. In a traditional web application, you will mostly have multiple pages. Each page maps to a different URL which you can use to access it either directly by entering the URL in the browser’s address bar or via clicking a navigation link or hyperlink in the application UI which has the URL in its `href` attribute (e.g `<a href=``"``/page1``"``>Page 1</a>`).
-
-In server side routing, when the user navigates to a specific page, the browser sends a request to get the page from the server and display it. In client side routing, the browser has already retrieved all the application in the first place and the logic to show the requested view will be done in the browser with JavaScript.
-
-### What is a Client Side Router
-
-Here comes the role of the client side (or JavaScript) router.
-
-A client side router is an essential entity in Angular and most frontend frameworks and libraries. It is the code responsible for organizing the application into multiple views (also called screens or states) and navigating between them on user request. 
-
-For example, the router will display the home view when the application is first loaded, and then allow the user to navigate to other views like contact or about screens via a navigation menu.
-
-
-
-> The client side router lets you dynamically display different content depending on the current URL.   
-> 
-> Popular client side routers include the Angular Router, [React Router](https://github.com/ReactTraining/react-router) and [Vue Router](https://github.com/vuejs/vue-router).
-> 
-> See this 
-[GitHub repository](https://github.com/tildeio/router.js/) for an example implementation of a JavaScript Router.
-
-
-### What is a URL
-
-URL stands for **Uniform Resource Locator** and in its simplest definition it’s a web address that references a web page.
-
-Here is the definition of a [URL from Wikipedia](https://en.wikipedia.org/wiki/URL):
-
-
-> A **Uniform Resource Locator** (**URL**), colloquially termed a **web address**,[[1]](https://en.wikipedia.org/wiki/URL#cite_note-FOOTNOTEW3C2009-1) is a reference to a [web resource](https://en.wikipedia.org/wiki/Web_resource) that specifies its location on a [computer network](https://en.wikipedia.org/wiki/Computer_network) and a mechanism for retrieving it. A URL is a specific type of [Uniform Resource Identifier](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) (URI),[[2]](https://en.wikipedia.org/wiki/URL#cite_note-2)[[3]](https://en.wikipedia.org/wiki/URL#cite_note-FOOTNOTERFC_39862005-3) although many people use the two terms interchangeably.[[4]](https://en.wikipedia.org/wiki/URL#cite_note-FOOTNOTEJoint_W3C/IETF_URI_Planning_Interest_Group2002-4)[[a]](https://en.wikipedia.org/wiki/URL#cite_note-7) URLs occur most commonly to reference web pages ([http](https://en.wikipedia.org/wiki/Http)), but are also used for file transfer ([ftp](https://en.wikipedia.org/wiki/File_Transfer_Protocol)), email ([mailto](https://en.wikipedia.org/wiki/Mailto)), database access ([JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity)), and many other applications.   
-
-
-Also watch this video for more information about how URLs work:
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OvF_pnJ6zrY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-## <a name="Angular-Routing">Angular 9 Routing</a>
+## <a name="Angular-Routing">Angular 9 Routing Concepts</a>
 
 Now let’s get started with Angular routing. In this section, we’ll learn the basic concepts behind routing in Angular 9. We’ll introduce the Angular Router and then we’ll proceed to create a simple single page application with Angular 9 that demonstrates the commonly used features of the router. 
 

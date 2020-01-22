@@ -1,5 +1,5 @@
 
-If you have just started with Angular, you'll notice some new syntax like for example: 
+If you have just started with Angular, you'll notice some new syntax like hashtags, for example let's take this one: 
 
 ```html
 <input #searchBox (keyup)="search(searchBox.value)"
