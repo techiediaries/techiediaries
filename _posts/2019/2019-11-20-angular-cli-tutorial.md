@@ -6,7 +6,13 @@ excerpt: "In this tutorial you'll be learning how to use Angular CLI 9 (the late
 tags : [angular, angular9, angular-9-tutorials]
 ---
 
-In this tutorial, you'll be learning how to install and use Angular CLI 9 (the latest pre-release version as of this writing) on Windows 10, Linux and macOS to create Angular applications and different constructs like modules, services, components and pipes etc.
+Angular CLI is a powerful at the hand of Angular developers. In this tutorial, you'll be learning how to install and use Angular CLI 9 (the latest pre-release version as of this writing) on Windows 10, Linux and macOS to create Angular applications and different constructs like modules, services, components and pipes etc.
+
+## Introducing Angular CLI 9
+
+[Angular CLI](https://github.com/angular/angular-cli) is a tool developed by the Angular team to enable developers to quickly create Angular projects without wasting time setting up complex build tools like Webpack. It's the official tool for Angular development and it's buit on top of Node.js and can be installed from NPM.
+
+As the time of this writing **Angular CLI 9** is the latest pre-release version.
 
 > **Note**: This tutorial is a part of our Angular 9 examples series we'll see various examples of using the features of Angular with quick tutorials.
 
@@ -33,14 +39,7 @@ You can check the available version of Node.js in your system using:
 $ node -v
 ```
 
-
-## What's Angular CLI?
-
-[Angular CLI](https://github.com/angular/angular-cli) is a tool developed by the Angular team to enable developers to quickly create Angular projects without wasting time setting up complex build tools like Webpack. It's the official tool for Angular development and it's buit on top of Node.js and can be installed from NPM.
-
-As the time of this writing **Angular CLI 9** is the latest pre-release version.
-
-## How to install Angular CLI 9?
+## How to install Angular CLI 9 on Windows, Linux and Mac?
 
 In this section, you'll start by installing the Angular CLI 9 which is, as we mentionned before, the latest prerelease version as of this writing. 
 
@@ -84,7 +83,7 @@ It provides a CRUD interface for handling operations to create, get, update and 
 
 Let's see how we can use Angular CLI 9 to quickly bootstrap our project.
 
-##  Step 1 - Generating a New Angular 9 Project
+##  Step 1 - Generating a New Angular 9 Project With Angular CLI
 
 Now that you have Angular CLI installed and you understand what web application you are going to develop. You need to generate a project by running the following command:
 
@@ -98,7 +97,7 @@ This will set up routing in our project and set CSS as the stylesheets format fo
 
 Wait for the CLI to generate the project structure and install the dependencies.  
 
-## Step 2 - Serving the Project
+## Step 2 - Serving the Project With Angular CLI Server
 
 Angular CLI provides a development server that you can use to serve your projects locally when your developing them with many features like live code reloading which allows you to change your code and see the results without manually re-starting the development server to reloading the application in the browser.
   
