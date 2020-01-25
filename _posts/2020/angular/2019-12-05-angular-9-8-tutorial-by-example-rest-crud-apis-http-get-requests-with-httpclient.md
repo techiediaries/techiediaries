@@ -4,6 +4,8 @@ title: "Angular 9/8 Tutorial By Example: REST CRUD APIs & HTTP GET Requests with
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this Angular 9 tutorial, we'll learn to build an Angular 9 example application going through all the required steps from creating/simulating a REST API, scaffolding
  a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud" 
+date: 2020-01-25 
+categories: angular
 tags : [angular, angular8, angular9, angular-9-ngfor-examples, angular-9-ngif-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-9-material-examples, angular-9-tutorials ] 
 ---
 

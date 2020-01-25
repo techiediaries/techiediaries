@@ -188,5 +188,5 @@ algolia:
 
 # 2134bbefb10a162dc13128b237692010
 
-include: ["_headers"]
+include: [_redirects , _headers ]
 
