@@ -18,22 +18,7 @@ Angular is developed and maintained by Google. It has a large community which me
 
 Our Angular learning path will offer the necessary tutorials, PDF books, for beginners, and examples to get started using this framework in your next project.
 
-## <a id="What_Is_JavaScript_Framework" name="What_Is_JavaScript_Framework">What's a Framework and Why Using it</a>
-
-A JavaScript or client-side framework is an abstraction that provides developers with a set of tools to easily and efficiently develop front-end web applications. Most frameworks dictate many aspects of your web projects like directory structure and configuration files and different tools that can be used for adding essential functionalities like testing.
-
-A client-side framework is built on top of a client side programming language to help abstract the low level APIs of programming languages and client APIs and makes developers more productive. In fact there is only one client-side language which is JavaScript; the plethora of the web and the only language that web browsers understand but there also more sophisticated and modern programming languages that compile to JavaScript such as TypeScript and CoffeeScript. Which means they can also be the base of a client side framework.
-
-Frameworks are all the rage nowadays and most serious JS developers use a framework for building front-end apps and interfaces instead of using plain JavaScript or jQuery.
-
-Most JavaScript frameworks are said to be **opinionated** which means their creators enforce their opinions or their own philosophy of how web projects should be configured and organized. This also means, developers should learn the new abstractions provided by the framework and any new concepts besides learning the base programming language.
-
-Frameworks provide abstractions for working with many aspects like for example DOM manipulation and Ajax/HTTP. if the technology deals with only one aspect, it's mostly called a library. For example popular libraries like React or Vue.js deal only with the view or the UI of an application by using a virtual DOM and diffing with the real DOM which provides better performance.
-
-Nowadays powerful and modern JavaScript frameworks have emerged and taken the web by storm. Instead of websites with poorly structured JS or jQuery code we have now complete web apps with best practices and code structure with complex and rich UIs. These modern client-side web apps use heavy JavaScript which impacts performance and by result the user experience; and as such even if web browsers became more powerful we still need to follow best practices and battle tested tools and patterns which client-side frameworks try to help with.
-
-
-## <a name="Introducing_Angular"> Introducing Angular</a>
+## <a name="Introducing_Angular"> Introducing Angular 9</a>
 
 [AngularJS](https://angularjs.org/) was the most popular client-side framework among JavaScript developers for many years. Google introduced AngularJS in 2012. It's based on a variation of the very popular [Model-View-Controller pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) which is called Model-View-*.
 
@@ -51,7 +36,7 @@ The concept of [directives](https://docs.angularjs.org/guide/directive) was also
 
 The other introduced concept is [Dependency Injection](https://docs.angularjs.org/guide/di), which allows developers to inject what's called services (singletons that encapsulates a unique and re-usable functionality within an application) into other components which encourages re-usability of the code.
 
-## Why Learning Angular?
+## Why Learning Angular 9?
 
 By learning Angular, you'll have more chances of finding a job as a front-end developer! So in this learning path, will teach you the framework through building several examples from scratch.
 
@@ -69,7 +54,7 @@ You'll learn about:
 - Using Bootstrap with Angular,
 - Deployment.
 
-## How Long Will it Take to Learn Angular?
+## How Long Will it Take to Learn Angular 9?
 
 This depends of what you mean by learning Angular. If you want to be able to build and deploy a production-ready Angular application in a reasonable timeframe, this will probably take byou etween 6 and 12 months depending on your background and existing skills.
 
@@ -124,6 +109,20 @@ And this is our TypeScript tutorial(s):
 - <a href="https://www.techiediaries.com/angular-9-fullstack-examples/">Angular 9 Fullstack Examples</a>
 - <a href="https://www.techiediaries.com/angular-9-tutorials/">Angular 9 Step by Step Tutorials</a>
 - <a href="https://www.techiediaries.com/angular-how-tos/">Angular 9 Quick How-tos</a>
+
+## <a id="What_Is_JavaScript_Framework" name="What_Is_JavaScript_Framework">What's a Framework and Why Using it</a>
+
+A JavaScript or client-side framework is an abstraction that provides developers with a set of tools to easily and efficiently develop front-end web applications. Most frameworks dictate many aspects of your web projects like directory structure and configuration files and different tools that can be used for adding essential functionalities like testing.
+
+A client-side framework is built on top of a client side programming language to help abstract the low level APIs of programming languages and client APIs and makes developers more productive. In fact there is only one client-side language which is JavaScript; the plethora of the web and the only language that web browsers understand but there also more sophisticated and modern programming languages that compile to JavaScript such as TypeScript and CoffeeScript. Which means they can also be the base of a client side framework.
+
+Frameworks are all the rage nowadays and most serious JS developers use a framework for building front-end apps and interfaces instead of using plain JavaScript or jQuery.
+
+Most JavaScript frameworks are said to be **opinionated** which means their creators enforce their opinions or their own philosophy of how web projects should be configured and organized. This also means, developers should learn the new abstractions provided by the framework and any new concepts besides learning the base programming language.
+
+Frameworks provide abstractions for working with many aspects like for example DOM manipulation and Ajax/HTTP. if the technology deals with only one aspect, it's mostly called a library. For example popular libraries like React or Vue.js deal only with the view or the UI of an application by using a virtual DOM and diffing with the real DOM which provides better performance.
+
+Nowadays powerful and modern JavaScript frameworks have emerged and taken the web by storm. Instead of websites with poorly structured JS or jQuery code we have now complete web apps with best practices and code structure with complex and rich UIs. These modern client-side web apps use heavy JavaScript which impacts performance and by result the user experience; and as such even if web browsers became more powerful we still need to follow best practices and battle tested tools and patterns which client-side frameworks try to help with.
 
 ## All Angular 9/8/7/6 Articles
 
