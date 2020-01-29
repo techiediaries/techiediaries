@@ -40,7 +40,7 @@ skipNavigation: true
 
 
 	{% include bpost-css.html %}
-	
+
 
 
 
@@ -87,7 +87,6 @@ skipNavigation: true
 							<!-- Post Content -->
 
 							<div class="article-post">
-								<div style="margin: 10px;" id="share"></div>
 								{{content}}
 							</div>
 
@@ -117,39 +116,32 @@ skipNavigation: true
 							</div>
 							<!-- End Categories -->
 							<!-- Author Box -->
-							{% if page.author %}
-							<div class="row post-top-meta">
-								<div class="col-md-12">
-									<a target="_blank" class="link-dark"
-										href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank"
-										href="{{ author.twitter }}" class="btn follow">Follow</a>
-									<span class="author-description">{{ author.description }}</span>
-								</div>
-							</div>
-							{% endif %}
+
 							<!-- Prev/Next -->
 							<div class="row PageNavigation">
 								{% if page.previous.url %}
 								<a class="col-md-6 prev" href="{{page.previous.url | absolute_url}}">&laquo;
-									{{page.previous.title}}</a>
+									Previous</a>
 								{% endif %}
 								{% if page.next.url %}
-								<a class="col-md-6 text-right next"
-									href="{{page.next.url | absolute_url}}">{{page.next.title}}
-									&raquo;</a>
+								<a class="col-md-6 text-right next" href="{{page.next.url | absolute_url}}">
+									Next
+								</a>
 								{% endif %}
 							</div>
 
 
 						</div>
-						<div id="sidebar" class="col-xs-12 col-md-4 col-xs-offset-1 sidebar-outer">
-							<aside class="widget">
-								{% include related.html %}
-							</aside>
-						</div>
-						<div id="stickybar">
+						<div class="col-xs-12 col-md-4 col-xs-offset-1">
+							<div id="sidebar" class="col-xs-12 col-md-4 col-xs-offset-1 sidebar-outer">
+								<aside class="widget">
+									{% include related.html %}
+								</aside>
+							</div>
+							<div id="stickybar">
 
-							{% include social.html %}
+								{% include social.html %}
+							</div>
 						</div>
 
 
@@ -183,11 +175,11 @@ skipNavigation: true
 	{% include disqusscript.html %}
 
 	{% endcomment %}
-	
+
 
 	{% include sw.html %}
 
-    <!--
+	<!--
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
 	-->
 
