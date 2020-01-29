@@ -1,0 +1,1 @@
+A nullish coalescing operator, an upcoming ECMAScript feature that is paired with operational chaining, that provides a way to fall back to a default value when working with null or undefined, via a ?? operator.
