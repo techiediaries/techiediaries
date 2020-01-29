@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Angular 9/8 Router Tutorial: Learn Routing & Navigation by Example"
 excerpt: "In this tutorial part, we’ll learn about Angular Router by example and will teach you everything you need to start using Angular routing to build Single Page Applications." 
 img: "https://www.techiediaries.com/images/angular-router.png"

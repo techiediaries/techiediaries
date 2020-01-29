@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Angular 9/8 Material Dialog with Example"
 image: "images/content/angular.jpg"
 excerpt: "This tutorial shows you how you can use Angular 7/8 Material to build Material UI dialogs for your web application" 

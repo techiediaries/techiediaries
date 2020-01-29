@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Angular 8 Upgrade: Using Ng-Update & Angular CLI v8"
 image: "images/content/updating-angular-cli-projects.png"
 excerpt: "In this short guide we'll see how to update Angular core framework and Angular CLI 6 to the latest Angular 7 version and upgrading existing projects to use v7" 

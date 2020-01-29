@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Angular 9/8 Popup Modal Example with Angular Material Form and Modal Dialog Components"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll build an example login UI with a form and modal dialog styled with Angular Material 9." 
