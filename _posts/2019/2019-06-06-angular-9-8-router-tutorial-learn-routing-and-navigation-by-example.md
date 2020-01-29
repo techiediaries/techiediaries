@@ -15,9 +15,9 @@ You can also check out [this article](https://www.techiediaries.com/angular-rout
 
 > **Note**: This tutorial is compatible with both Angular 6/7/8 and the new Angular 9 version.
 
-## What You'll Learn in This Angular 9 Router Tutorial
+## What You'll Learn in This Tutorial
 
-In this tutorial, you'll learn about:
+You'll learn about:
 
 
 - How to import the necessary Angular built-in APIs to implement component routing and navigation,
@@ -31,20 +31,20 @@ In this tutorial, you'll learn about:
 
 These are the steps of our tutorial:
 
-- Angular Routing, Step 1: Creating a Project
-- Angular Routing, Step 2: Understanding what the CLI Automatically Did For You
-- Angular Routing, Step 2.1: Adding `<base href>` 
-- Angular Routing, Step 2.2: Creating a Routing Module
-- Angular Routing, Step 2.2: Importing the Router and Setting up Routing
-- Angular Routing, Step 2.3: Adding the Router-Outlet
-- Angular Routing, Step 2.4: Importing the Routing Module in the Main Application Module
-- Angular Routing, Step 3: Setting up a Service for Getting Data
-- Angular Routing, Step 4: Creating a Model
-- Angular Routing, Step 5: Creating Components
-- Angular Routing, Step 6: Implementing The Product List Component
-- Angular Routing, Step 7: Implementing the Product Details Component
-- Angular Routing, Step 8: Defining the Routes
-- Angular Routing, Step 9: Adding Navigation Links
+-    Step 1: Creating an Angular 9 Project
+-    Step 2: Understanding what the CLI Automatically Did For You
+-    Step 2.1: Adding `<base href>` 
+-    Step 2.2: Creating a Routing Module
+-    Step 2.2: Importing the Router and Setting up Routing
+-    Step 2.3: Adding the Router-Outlet
+-    Step 2.4: Importing the Routing Module in the Main Application Module
+-    Step 3: Setting up a Service for Getting Data
+-    Step 4: Creating a Model
+-    Step 5: Creating Components
+-    Step 6: Implementing The Product List Component
+-    Step 7: Implementing the Product Details Component
+-    Step 8: Defining the Routes
+-    Step 9: Adding Navigation Links
 
 
 
@@ -224,7 +224,7 @@ Angular Router provides two directives for navigation: The `routerLink` directiv
     <a [routerLink]="'/products'">Products</a>
 {% endraw %}
 
-## Angular Routing, Step 1: Creating a Project
+##    Step 1: Creating a Angular 9 Project
 
 To show you how to use Angular routing to build a frontend application with multiple screen views, we’ll create an Angular 8 project from scratch using Angular CLI 8.
 
@@ -254,13 +254,13 @@ The CLI will generate the directory structure and the necessary files and will a
 
 > **Note**: You can also pass a `--``routing` option to the `ng new angular-routing-demo`  command to tell to add routing in your project without prompting you. This option is also helpful  if you are creating apps with `ng new app` or modules with `ng new module` and want to automatically setup routing and include a routing module file. 
 
-## Angular Routing, Step 2: Understanding what the CLI Automatically Did For You
+##    Step 2: Understanding what the CLI Automatically Did For You
 
 Angular CLI has configured routing in your project and all you have to add is to define route-component mappings after your create your application components but it helps to understand how what steps the CLI has done to setup routing.
 
 If you would like to manually add routing in your application or module, these are the necessary steps you would need to follow:
 
-## Angular Routing, Step 2.1: Adding `<base href>` 
+##    Step 2.1: Adding `<base href>` 
 
 First, you would need to open the `src/index.html` file and add a `<base>` tag as a child of the `<head>` tag ****which allows the router to figure out how to compose navigation paths. This is how the `index.html` looks like:
 
@@ -282,7 +282,7 @@ First, you would need to open the `src/index.html` file and add a `<base>` tag a
 
 The `<base href>` tag is not specific to Angular Router. It’s an [HTML tag](https://www.w3schools.com/tags/tag_base.asp) which specifies the base URL for all relative URLs in the page. 
 
-## Angular Routing, Step 2.2: Creating a Routing Module
+##    Step 2.2: Creating a Routing Module
 
 Next, you would need to create a routing module inside the main application module and in its own file using a command like this:
 
@@ -307,7 +307,7 @@ This is a regular module decorated by the `NgModule` decorator and imports `Comm
 
 > **Note**: `CommonModule` is a built-in Angular module that exports all the basic Angular directives and pipes, such as [`NgIf`](https://angular.io/api/common/NgIf), [`NgForOf`](https://angular.io/api/common/NgForOf), [`DecimalPipe`](https://angular.io/api/common/DecimalPipe), etc.
 
-## Angular Routing, Step 2.2: Importing the Router and Setting up Routing
+##    Step 2.2: Importing the Router and Setting up Routing
 
 Next, you would need to open the `src/app/app-routing.module.ts` file **and update it as follows:**
 
@@ -343,7 +343,7 @@ In some situations (for submodules and lazy loaded submodules), you would need t
 
 For more details about the difference between the two methods check out [RouterModule.forRoot(ROUTES) vs RouterModule.forChild(ROUTES)](https://stackoverflow.com/questions/40498081/routermodule-forrootroutes-vs-routermodule-forchildroutes)
 
-## Angular Routing, Step 2.3: Adding the Router-Outlet
+##    Step 2.3: Adding the Router-Outlet
 
 After setting up the routing module, next you would need to add the router outlet in your main application component. Open the `src/app/app.component.html`, this is how it looks like:
 
@@ -364,7 +364,7 @@ The [`RouterOutlet`](https://angular.io/api/router/RouterOutlet) is a built-in A
 > **Note**: The component that contains the router outlet acts like a shell of your application.
 
 
-## Angular Routing, Step 2.4: Importing the Routing Module in the Main Application Module
+##    Step 2.4: Importing the Routing Module in the Main Application Module
 
 Finally, you would need to import  `AppRoutingModule` in your main application module which resides in the `src/app/app.module.ts` file. If you open that file, this is how it looks:
 
@@ -391,7 +391,7 @@ We import `AppRoutingModule` from `./app-routing.module` and add it the `imports
 That’s it! We’ve seen all the steps that you would need to do by yourself if routing isn’t automatically setup by Angular CLI when you generated your project.
 
 
-## Angular Routing, Step 3: Setting up a Service for Getting Data
+##    Step 3: Setting up a Service for Getting Data
 
 This is not part of how routing works in Angular but for the purpose of our demo application we’ll need to create a service that can be used to get some data to display in our application components. Since we don’t have a backend project which supplies us with data, we can a very useful feature of Angular —  the In-Memory Web API available from the [`angular-in-memory-web-api`](https://github.com/angular/in-memory-web-api) package.
 
@@ -506,7 +506,7 @@ We added the `API_URL` string that holds the address of the API server.
 Next, we imported and injected `HttpClient`  and finally we defined the two `getProducts()` and `getProduct(productId)` methods.
 
 
-## Angular Routing, Step 4: Creating a Model
+##    Step 4: Creating a Model
 
 Next, let’s create a `P`roduct class that will act as a data model for the product type. In your terminal, run:
 
@@ -525,7 +525,7 @@ Open the  `src/app/product.ts` file and add the following code:
         }
     }
 
-## Angular Routing, Step 5: Creating Components
+##    Step 5: Creating Components
 
 Now that you have a project with routing setup and data services created, you need to create the components of your application. You can easily generate components using the Angular CLI. 
 
@@ -537,7 +537,7 @@ Head back to your terminal and run the following commands:
 
 We create two components. The product list component which displays a list of products. When you click on a specific product you'll be taken to the product detail component which displays that single product.
 
-## Angular Routing, Step 6: Implementing The Product List Component
+##    Step 6: Implementing The Product List Component
 
 Now let's add an implementation for `ProductListComponent`. 
 
@@ -591,7 +591,7 @@ Now let's display the list of products in the `src/app/product-list/product-list
 
 We simply use an Angular  `ngFor` directive to iterate over the `products` array and display each product’s name.
 
-## Angular Routing, Step 7: Implementing the Product Details Component
+##    Step 7: Implementing the Product Details Component
 
 Let's also implement the product detail component. 
 
@@ -639,7 +639,7 @@ Now open the  `src/app/product-detail/product-detail.component.html` and add the
     </div>
 {% endraw %}
 
-## Angular Routing, Step 8: Defining the Routes
+##    Step 8: Defining the Routes
 
 After creating and implementing the components of our application, now you need to add them to the router.
 
@@ -675,7 +675,7 @@ We can also add this route which will redirect the empty route to `/products` so
 **pathMatch** is used to specify the matching strategy **full** or **prefix**. **full** means that the whole URL's path needs to match by the matching algorithm. **prefix** means the first route where path matches the start of the URL will be chosen. In the case of empty paths if we don't set the **full** matching strategy then we won't get the desired behavior as any path starts with an empty string.
 
 
-## Angular Routing, Step 9: Adding Navigation Links
+##    Step 9: Adding Navigation Links
 
 The last thing you need to do is to add the navigation links that take you from one component to another. 
 
@@ -709,22 +709,6 @@ Next, open the `src/app/product-list/product-list.component.html` file and add a
     </div> 
 {% endraw %}
 
-These are the steps of this tutorial:
-
-- Angular Routing, Step 1: Creating a Project
-- Angular Routing, Step 2: Understanding what the CLI Automatically Did For You
-- Angular Routing, Step 2.1: Adding `<base href>` 
-- Angular Routing, Step 2.2: Creating a Routing Module
-- Angular Routing, Step 2.2: Importing the Router and Setting up Routing
-- Angular Routing, Step 2.3: Adding the Router-Outlet
-- Angular Routing, Step 2.4: Importing the Routing Module in the Main Application Module
-- Angular Routing, Step 3: Setting up a Service for Getting Data
-- Angular Routing, Step 4: Creating a Model
-- Angular Routing, Step 5: Creating Components
-- Angular Routing, Step 6: Implementing The Product List Component
-- Angular Routing, Step 7: Implementing the Product Details Component
-- Angular Routing, Step 8: Defining the Routes
-- Angular Routing, Step 9: Adding Navigation Links
 
 ## Conclusion
 

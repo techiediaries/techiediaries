@@ -26,13 +26,13 @@ You'll learn from this tutorial:
 
 These are the steps:
 
-- Angular 9 Tutorial, Step 1 - Installing Angular CLI 9
-- Angular 9 Tutorial, Step 2 - Initializing our Project
-- Angular 9 Tutorial, Step 3 - Understanding Angular Modules & Components
-- Angular 9 Tutorial, Step 4 - Adding our HTML Template and Styles
-- Angular 9 Tutorial, Step 5 - Understanding Angular Template Syntax
-- Angular 9 Tutorial, Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
-- Angular 9 Tutorial, Step 7 - Displaying the Value of Variables in the Template  
+-    Step 1 - Installing Angular CLI 9
+-    Step 2 - Initializing our Project
+-    Step 3 - Understanding Angular Modules & Components
+-    Step 4 - Adding our HTML Template and Styles
+-    Step 5 - Understanding Angular Template Syntax
+-    Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
+-    Step 7 - Displaying the Value of Variables in the Template  
 
 
 ## Prerequisites
@@ -46,7 +46,7 @@ You'll need to have the following prerequisites for a better understanding of th
 You can check out this [tutorial](https://www.techiediaries.com/ubuntu-install-nodejs-npm/) for how to set up a development environment for Angular on Ubuntu.
 
   
-## Angular 9 Tutorial, Step 1 - Installing Angular CLI 9
+##    Step 1 - Installing Angular CLI 9
 
 Let's start our journey by installing the latest version of Angular CLI in our development machine.
 
@@ -59,7 +59,7 @@ $ npm install -g @angular/cli@next
 At the time of this writing, we need to add the `@next` tag to install the latest pre-release version of Angular CLI.
 
 
-## Angular 9 Tutorial, Step 2 - Initializing our Project
+##    Step 2 - Initializing our Angular 9 Project
 
 If you have installed Angular CLI in your machine, let's use it to initialize a new project. Head back to your terminal or command prompt and simply run the following command:
 
@@ -80,7 +80,7 @@ $ ng serve
 The server will be running at the `http://localhost:4200` address.
 
 
-## Angular 9 Tutorial, Step 3 - Understanding Angular Modules & Components
+##    Step 3 - Understanding Angular Modules & Components
 
 Angular adheres to the **modular** and **component-based** architectures. 
 
@@ -163,7 +163,7 @@ Go ahead and open the `src/app/app.component.html` file, which is the template a
 <app-calculator></app-calculator>
 ```   
 
-## Angular 9 Tutorial, Step 4: Adding our HTML Template and Styles
+##    Step 4: Adding our HTML Template and Styles
 
 Let's now implement our component.
 
@@ -313,7 +313,7 @@ At this point, this is a regular HTML file which doesn't include any Angular cod
 If you are building your app with plain JavaScript, you'll need to query the DOM elements and attach your defined functions to various events to implement your calculator but you don't need to do that in our case thanks to the Angular template syntax. 
 
 
-## Angular 9 Tutorial, Step 5 - Understanding Angular Template Syntax
+##    Step 5 - Understanding Angular Template Syntax
 
 Angular provides a powerful syntax that extends regular HTML with various constructs for interpolating variables, binding methods to events, or [iterating over arrays of data](https://www.techiediaries.com/angular-ngfor/).   
 
@@ -338,7 +338,7 @@ Angular provides four types of data binding depending on how data flows i.e from
 Now let's apply this knowledge to make a functional Angular app.
 
 
-## Angular 9 Tutorial, Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
+##    Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
 
 Basically, we want to get the values associated with the clicked buttons which can be either a number or a type of an operation. After calculating the result, we want to display it in the result element.
 
@@ -507,7 +507,7 @@ Next, let's bind the `getOperation()`, `getDecimal()` and `clear()` methods to t
 </div>    
 ```
 
-## Angular 9 Tutorial, Step 7 - Displaying the Value of the Variable in the Template  
+##    Step 7 - Displaying the Value of the Variable in the Angular Template  
 
 Now let's display the value of the `currentNumber` variable that contains the value of the typed number by binding to variable to the `value` attribute of the `<input>` element:
 

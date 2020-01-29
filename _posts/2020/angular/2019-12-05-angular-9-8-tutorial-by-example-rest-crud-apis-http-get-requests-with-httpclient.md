@@ -52,21 +52,21 @@ We'll cover:
 
 The steps of this Angular 9 tutorial are as follows:
 
-- Angular Tutorial, Step 1 — Setting up Angular CLI v9
-- Angular Tutorial, Step 2 — Initializing a New Angular 9 Example Project
-- Angular Tutorial, Step 3 — Setting up a (Fake) JSON REST API
-- Angular Tutorial, Step 4 — Setting up Angular HttpClient v9 in our Example Project 
-- Angular Tutorial, Step 5 — Creating Angular 9 Components
-- Angular Tutorial, Step 6 — Adding Angular 9 Routing
-- Angular Tutorial, Step 7 — Styling the UI with Angular Material v9
-- Angular Tutorial, Step 8 — Consuming the JSON REST API with Angular HttpClient v9
-- Angular Tutorial, Step 9 — Adding HTTP Error Handling with RxJS `catchError()` & `HttpClient`
-- Angular Tutorial, Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
-- Angular Tutorial, Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
-- Angular Tutorial, Step 12 — Adding URL Query Parameters to the HttpClient get() Method
-- Angular Tutorial, Step 13 — Getting the Full HTTP Response with Angular HttpClient v9
-- Angular Tutorial, Step 14 — Requesting a Typed HTTP Response with Angular HttpClient v9
-- Angular Tutorial, Step 15 — Building and Deploying your Angular 9 Application to Firebase Hosting
+-   Step 1 — Setting up Angular CLI v9
+-   Step 2 — Initializing a New Angular 9 Example Project
+-   Step 3 — Setting up a (Fake) JSON REST API
+-   Step 4 — Setting up Angular HttpClient v9 in our Example Project 
+-   Step 5 — Creating Angular 9 Components
+-   Step 6 — Adding Angular 9 Routing
+-   Step 7 — Styling the UI with Angular Material v9
+-   Step 8 — Consuming the JSON REST API with Angular HttpClient v9
+-   Step 9 — Adding HTTP Error Handling with RxJS `catchError()` & `HttpClient`
+-   Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
+-   Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
+-   Step 12 — Adding URL Query Parameters to the HttpClient get() Method
+-   Step 13 — Getting the Full HTTP Response with Angular HttpClient v9
+-   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient v9
+-   Step 15 — Building and Deploying your Angular 9 Application to Firebase Hosting
 
 
 Let's get started by introducing Angular HttpClient, its features and why using it.
@@ -107,7 +107,7 @@ If you have the previous prerequisites, you are ready for the next steps of our 
 In the first step(s) of our tutorial, we'll see how to install Angular CLI 9 and create an example project from scratch.
 
 
-## Angular Tutorial, Step 1 — Setting up Angular CLI v9
+##   Step 1 — Setting up Angular CLI v9
 
 In this step, we'll install the latest Angular CLI 9 version (at the time of writing this tutorial).
 
@@ -146,7 +146,7 @@ rxjs                         6.5.3
 
 In the next step, we'll learn how to intialize a new example project from the command-line.
 
-## Angular Tutorial, Step 2 — Initializing a New Angular 9 Example Project
+##   Step 2 — Initializing a New Angular 9 Example Project
 
 In this step, we'll proceed to create our example project. Head back to your command-line interface and run the following commands:
 
@@ -201,7 +201,7 @@ You should now leave the development server running and start a new command-line
 In the next step, we'll learn how to create a fake JSON REST API that we'll be consuming in our Angular example application.
 
 
-## Angular Tutorial, Step 3 — Setting up a (Fake) JSON REST API
+##   Step 3 — Setting up a (Fake) JSON REST API
 
 Before we proceed to develop our Angular application, we'll need to prepare a JSON REST API that we can consume using `HttpClient`. 
 
@@ -320,7 +320,7 @@ Leave the JSON REST API server running and open a new command-line interface for
 As a summary of what we have done — We installed Angular CLI and initialized a new project based on the latest Angular 9 version. Then, we created a REST API using `json-server` based on a JSON file. In the next step of our Angular 9 tutorial, we'll learn how to set up `HttpClient` in our Angular 9 project.
 
 
-## Angular Tutorial, Step 4 — Setting up Angular 9 HttpClient in our Example Project 
+##   Step 4 — Setting up Angular 9 HttpClient in our Example Project 
 
 In this step, we'll proceed to set up the `HttpClient` module in our example.
 
@@ -397,7 +397,7 @@ We'll update the home component in the following steps.
 In the next step of our Angular 9 tutorial, we'll add these components to the router.
 
 
-## Angular Tutorial, Step 6 — Adding Angular 9 Routing
+##   Step 6 — Adding Angular 9 Routing
 
 In this step, we'll proceed to add routing to our example.
 
@@ -428,7 +428,7 @@ We first imported the home and about components, next we added three routes incl
 In the next step of our example, we'll set up Angular Material in our project for styling our UI.
 
 
-## Angular Tutorial, Step 7 — Styling the UI with Angular Material v9
+##   Step 7 — Styling the UI with Angular Material v9
 
 In this step of our Angular 9 tutorial, we'll proceed to add Angular Material to our project and style our application UI.
 
@@ -518,7 +518,7 @@ As a summary of what we did until this point of our tutorial — We have setup H
 In the next step of our tutorial, we'll learn how to fetch the JSON data from our REST API server using `HttpClient` v9.
 
 
-## Angular Tutorial, Step 8 — Consuming the JSON REST API with Angular HttpClient 9
+##   Step 8 — Consuming the JSON REST API with Angular HttpClient 9
 
 In this step, we'll proceed to consume JSON data from our REST API server in our example application.
 
@@ -650,7 +650,7 @@ This is a screenshot of the home page after JSON data is fetched:
 Next, we'll see how to add error handling to our service.
 
 
-## Angular Tutorial, Step 9 — Adding HTTP Error Handling with RxJS `catchError()` & `HttpClient`
+##   Step 9 — Adding HTTP Error Handling with RxJS `catchError()` & `HttpClient`
 
 In this step, we'll proceed to add error handling in our example application.
 
@@ -710,7 +710,7 @@ This is a screenshot of an error on the console if the server is unreachable:
 In the next step, we'll see how to improve our data service by automatically retry sending the failed HTTP requests.
 
 
-## Angular Tutorial, Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
+##   Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
 
 In this step of our Angular 9 tutorial, we'll see how to use the `retry()` operator of RxJS with HttpClient to automatically resubscribing to the returned Observable which results in resending the failed HTTP requests.
 
@@ -739,7 +739,7 @@ This will retry sending the failed HTTP request three times.
 In the next step, we'll see how to unsubscribe from RxJS Observables in our example home component.
 
 
-## Angular Tutorial, Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
+##   Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
 
 In this step of our Angular 9 tutorial, we'll learn about why we need and how to unsubscribe from Observables in our code using the `takeUntil()` operator.
 
@@ -809,7 +809,7 @@ That's it. In this step, we have added the logic to cancel any pending HTTP requ
 In the next step of our Angular 9 tutorial, we'll see how to use URL query parameters with the `get()` method of `HttpClient`. 
 
 
-## Angular Tutorial, Step 12 — Adding URL Query Parameters to the HttpClient get() Method
+##   Step 12 — Adding URL Query Parameters to the HttpClient get() Method
 
 In this step, we'll start adding the logic for implementing pagination in our example application. We'll see how to use URL query parameters via [`fromString` and `HttpParams`](https://angular.io/guide/http#use-fromstring-to-create-httpparams) to provide the appropriate values for the the `_page` and `_limit` parameters of the `/products`  endpoint of our JSON REST API server for getting paginated data. 
 
@@ -837,7 +837,7 @@ In the Link header you’ll get first, prev, next and last links. In the next st
 
 
 
-## Angular Tutorial, Step 13 — Getting the Full HTTP Response with Angular HttpClient 9
+##   Step 13 — Getting the Full HTTP Response with Angular HttpClient 9
 
 In this ste, we'll proceed by implementing the logic for retrieving pagination information from the Link header contained in the HTTP response received from the JSON REST API server.
 
@@ -1011,7 +1011,7 @@ This is a screenshot of our application:
 ![](https://www.diigo.com/file/image/rscqpoqzoceparbdpzdspbsdra/Angular+8+HTTP+Example.jpg?k=143b81257774810f9369004fda4c1f4c)
 
 
-## Angular Tutorial, Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 9
+##   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 9
 
 In this step, we'll see how to use typed HTTP responses in our example application.
 
@@ -1096,7 +1096,7 @@ Next change the type of the HTTP response in the `sendGetRequest()` call:
 You also need to do the same for the other `firstPage()`, `previousPage()`, `nextPage()` and `lastPage()` methods.
 
 
-## Angular Tutorial, Step 15 — Building and Deploying your Angular 9 Application to Firebase Hosting
+##   Step 15 — Building and Deploying your Angular 9 Application to Firebase Hosting
 
 In this step, we'll see how to build and deploy our example application to Firebase hosting using the ng deploy command available in Angular 8.3+.
 
