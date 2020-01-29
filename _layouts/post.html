@@ -95,10 +95,10 @@ post_class: post-template
             <div class="row PageNavigation">
                 {% if page.previous.url %}
                 <a class="btn btn-primary" href="{{page.previous.url | absolute_url}}">&laquo;
-                    {{page.previous.title}}</a>
+                    Previous </a>
                 {% endif %}
                 {% if page.next.url %}
-                <a class="btn btn-primary" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo;</a>
+                <a class="btn btn-primary" href="{{page.next.url | absolute_url}}">Next</a>
                 {% endif %}
             </div>
 
@@ -110,21 +110,7 @@ post_class: post-template
 
                 <!--<img src="https://www.techiediaries.com/angular-book3d.png" />-->
 
-                <p>Get our Angular posts in your inbox</p>
 
-
-                <form
-                    action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0"
-                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                    target="_blank" novalidate>
-
-                    <input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                        <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
-                    </div>
-                    <input class="submit-btn" type="submit" value="Subscribe" name="subscribe"
-                        id="mc-embedded-subscribe" class="button">
-                </form>
 
             </div>
             <div>
@@ -162,6 +148,21 @@ post_class: post-template
 
                     <div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full"
                         data-count="hidden"></div>
+                        <p>Get our Angular posts in your inbox</p>
+
+
+                        <form
+                            action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0"
+                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                            target="_blank" novalidate>
+        
+                            <input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
+                            </div>
+                            <input class="submit-btn" type="submit" value="Subscribe" name="subscribe"
+                                id="mc-embedded-subscribe" class="button">
+                        </form>
 
                 </div>
             </div>
