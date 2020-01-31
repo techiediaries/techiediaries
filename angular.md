@@ -95,21 +95,6 @@ And this is our TypeScript tutorial(s):
 - <a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/">Practical Angular: Build your first web apps with Angular 8</a>
 - <a href="https://www.techiediaries.com/angular-6-tutorial-pdf/">Learn Angular: Full-Stack & CRUD Angular 7/8 PDF Tutorial</a>
 
-
-
-## Our Angular 9/8/7/6 Articles By Topic
-
-- <a href="https://www.techiediaries.com/angular-9-httpclient-examples/">Angular 9 HttpClient Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-router-examples/">Angular 9 Router Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-formdata-examples/">Angular 9 FormData Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-material-examples/">Angular 9 Material Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-form-examples/">Angular 9 Form Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-ngfor-examples/">Angular 9 ngFor Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-ngif-examples/">Angular 9 ngIf Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-fullstack-examples/">Angular 9 Fullstack Examples</a>
-- <a href="https://www.techiediaries.com/angular-9-tutorials/">Angular 9 Step by Step Tutorials</a>
-- <a href="https://www.techiediaries.com/angular-how-tos/">Angular 9 Quick How-tos</a>
-
 ## <a id="What_Is_JavaScript_Framework" name="What_Is_JavaScript_Framework">What's a Framework and Why Using it</a>
 
 A JavaScript or client-side framework is an abstraction that provides developers with a set of tools to easily and efficiently develop front-end web applications. Most frameworks dictate many aspects of your web projects like directory structure and configuration files and different tools that can be used for adding essential functionalities like testing.
