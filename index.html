@@ -350,31 +350,3 @@ title: Home
     </div>
 </section>
 
-
-<!-- Posts Loop
-================================================== -->
-
-
-<!-- Pagination
-================================================== -->
-
-<div class="jumbotron fortags">
-	<div class="row">
-		<div class="col-md-4 align-self-center text-center">
-			<h2 class="hidden-sm-down">Explore →</h2>
-		</div>
-		<div class="col-md-8 align-self-center text-center">
-          {% assign tags_list = site.tags %}  
-          {% if tags_list.first[0] == null %}
-            {% for tag in tags_list %} 
-              <a href="{{ site.baseurl }}/topics/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
-            {% endfor %}
-          {% else %}
-            {% for tag in tags_list %} 
-              <a href="{{ site.baseurl }}/topics/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
-            {% endfor %}
-          {% endif %}
-        {% assign tags_list = nil %}
-		</div>
-	</div>
-</div>
