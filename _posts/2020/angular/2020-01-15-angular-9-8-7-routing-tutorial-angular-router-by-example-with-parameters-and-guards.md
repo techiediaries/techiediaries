@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8/7 Routing Tutorial: Angular Router by Example with Parameters and Guards"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you will learn to implement routing in Angular 9/8/7" 
-tags : [  drafts ]
+tags : [  angular, angular-9 ]
 ---
 
 Angular provides a powerful router for creating apps with multiple views, parameters, guards, and navigation etc. In this tutorial, we'll see how to implement routing by example in Angular 9 but this also valid for previous versions such as Angular 7/8.

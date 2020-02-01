@@ -4,7 +4,7 @@ title: "Angular 9/8/7 Realtime Chat Example with Node.js, Socket.io and WebSocke
 image: "images/content/angular.jpg"
 excerpt: "In this tutorial, we'll learn how to build a real-time app with Angular 9/8, Socket.IO, WebSocket, and Node.js" 
 skipRss: true
-tags : [] 
+tags : [angular, angular-9] 
 ---
 
 In this tutorial, we'll learn how to build a real-time app with Angular 9/8, Socket.IO, and Node.js.
