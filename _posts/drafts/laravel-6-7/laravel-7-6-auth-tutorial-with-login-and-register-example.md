@@ -1,40 +1,16 @@
 ---
 layout: post
-title: Laravel 6 Login and Registration with Authentication 
+title: "Laravel 7/6 Auth Tutorial with Login and Registration Example" 
 date: 2020-01-19 22:39
-category: 
+categories: laravel 
 author: 
-tags: []
-summary: 
+tags: [laravel, laravel-7]
+excerpt: "In this tutorial, we'll learn to implement authentication with login and registration in Laravel 7/6 by example"
 ---
 
+In this tutorial, we'll learn to implement authentication with login and registration in Laravel 7/6 by example
 
-User authentication and data security access are the most important key for any database system. If you are creating an application and the login access of that application is not much secure and authentic. Then someone can manipulate or access your data. So, to prevent these types of un-authentic access, we will need to create proper authentication. Today, in this Laravel 6 tutorial series, I will be dealing with the  **Laravel 6 Login and Registration**  with the proper authentication. In Laravel, there is an inbuilt functionality for authentication. So, we don’t need to put extra effort and code for creating auth.
-
-Contents
-
--   [1  Prerequisites](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Prerequisites)
--   [2  Laravel 6 Login and Registration](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Laravel_6_Login_and_Registration)
--   [3  Install Front end Dependencies](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Install_Front_end_Dependencies)
--   [4  Create a Database and Configure](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Create_a_Database_and_Configure)
--   [5  Create User Migration](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Create_User_Migration)
--   [6  Laravel 6 User Registration](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Laravel_6_User_Registration)
--   [7  User Dashboard in Laravel 6](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#User_Dashboard_in_Laravel_6)
--   [8  Laravel 6 User Login](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Laravel_6_User_Login)
--   [9  Conclusion](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Conclusion)
-    -   [9.1  Share this:](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Share_this)
-    -   [9.2  Like this:](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Like_this)
-    -   [9.3  Related](https://www.programmingfields.com/laravel-6-login-and-registration-with-authentication/#Related)
-
-## Prerequisites
-
-For creating this project, I have the latest version of  **PHP (7.3.9)**,  [MySQL (8.0.17).](https://dev.mysql.com/downloads/mysql/)  You can check the MySQL version in Windows using the below command.
-
-1
-
-`mysqld --version`
-
-For editor, I am using Visual Studio code. You can use PHP Storm, Atom, etc.
+You need to have PHP and MySQL installed on your system.
 
 ## Laravel 6 Login and Registration
 
