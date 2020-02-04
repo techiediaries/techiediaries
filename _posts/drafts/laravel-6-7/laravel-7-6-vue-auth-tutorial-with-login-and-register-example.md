@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Laravel 7/6 Auth Tutorial with Login and Registration Example" 
+title: "Laravel 7/6 Vue.JS Auth Tutorial with Login and Registration Example" 
 date: 2020-01-19 22:39
 categories: laravel 
 author: 
@@ -12,210 +12,81 @@ In this tutorial, we'll learn to implement authentication with login and registr
 
 You need to have PHP and MySQL installed on your system.
 
-## Laravel 6 Login and Registration
+## Creating a Laravel 7/6 Project with a Vue.JS Interface
 
-Before creating this project, I am assuming that your system is ready for creating the Laravel 6 project. If not then  [Install Laravel 6 in Windows and Ubuntu](https://www.programmingfields.com/laravel-install-with-composer/). Open the command prompt or terminal and create a new Laravel 6 project.
+Let's get started by creating a Laravel 7 project.
 
-1
+Open a command-line interface and run the following command to generate a project based on the latest Laravel 7 version:
 
-`composer create-project --prefer-dist laravel/laravel user-registration-app`
+```bash
+$ composer create-project --prefer-dist laravel/laravel laravel-auth-example
+```
 
-![](https://i1.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/Composer-create-project.png?ssl=1)
 
-**Create Laravel 6 Project**
+## Serving the Laravel 7 Project
 
-It will take some time to create the project. After creating the project just run it by the php artisan command.
+Navigate inside your Laravel project and run the following command to serve it locally:
 
-1
+```bash
+$ php artisan serve
+```
 
-`php artisan serve`
 
 As a result, you will see the default homepage of the Laravel is running.
 
-![Laravel homepage](https://i0.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/Laravel.png?ssl=1)
 
-**Laravel 6 Homepage**
+## Adding the Laravel 7 Vue.JS Auth Scaffolding
 
--   In the next step, I will install the auth in Laravel 6.
--   But, before adding auth, we need to add frontend scaffolding in the project.
--   In Laravel 6, this frontend scaffolding has been moved to the **ui –dev**  package.
--   Firstly, we will require to add this package.
 
-1
+```bash
+$ composer require laravel/ui --dev
+```
 
-`composer` `require` `laravel/ui --dev`
+Next, run the following command:
 
-![Laravel 6 ui --dev](https://i1.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/Add-Auth-Package-in-Laravel-6.png?ssl=1)
 
-**Laravel 6 ui –dev**
+```bash
+$ php artisan ui vue --auth
+```
 
-Secondly, we’ll add the auth using the  **ui vue –auth** command.
 
-1
 
-`php artisan ui vue --auth`
+Next, install the front-end dependencies using the following command:
 
-![Laravel 6 Auth](https://i2.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/Add-Auth-in-Laravel-6.png?ssl=1)
 
-**Laravel 6 Auth**
 
-[How to Integrate Laravel 6 Application with Firebase Realtime Database](https://www.programmingfields.com/integrate-laravel-6-application-with-firebase/)
+```bash
+$ npm install
+```
 
-After adding the authentication scaffolding, run your project again. Now, you can see, the Laravel auth has been added Login and Register functionalities on the Homepage.
+## Creating and Configuring a MySQL Database
 
-![Laravel 6 Auth Added](https://i1.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/Laravel-6-Auth-Added.png?ssl=1)
-
-**Laravel 6 Homepage with Auth**
-
-Next, I will install the front end dependencies in the application so that we will not be required to add the Bootstrap CSS and js file. Laravel will add these necessary files automatically inside the project.
-
-[Laravel 6 RESTful APIs with Passport Authentication](https://www.programmingfields.com/laravel-6-rest-api-with-passport-auth/)
-
-## Install Front end Dependencies
-
-Laravel 6 comes with the default CSS, JS, and pre-processor. Therefore, we can create our application by using these dependencies.
-
-So, install  **npm** inside the project directory.
-
-1
-
-`npm install`
-
-![Laravel 6 npm install](https://i0.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/Laravel-6-npm-install.png?ssl=1)
-
-**Laravel 6 npm install**
-
-After adding these packages, we’ll need to run the development of these packages. So, It can add the Asset files in the public directory of the project.
-
-Navigate to the public folder of the project, You will see the Asset files like  **CSS**  and  **js** files.
-
-![Laravel 6 npm run dev](https://i0.wp.com/www.programmingfields.com/wp-content/uploads/2019/10/npm-run-dev.png?ssl=1)
-
-**npm run dev**
-
-## Create a Database and Configure
 
 Open the MySQL database and create a database. In my case, my database name is  **registration**.
 
-1
 
-`create` `database` `registration;`
 
-You no need to create any table here. Now, open the  **.env**  file and change the database credentials with below snippet. Replace database username and password with yours.
+```
+create database mydb;
+```
 
-1
+Next, open the  `.env`  file and change the database credentials as follows:
 
-2
 
-3
-
-4
-
-5
-
-6
-
-`DB_CONNECTION=mysql`
-
-`DB_HOST=127.0.0.1`
-
-`DB_PORT=3306`
-
-`DB_DATABASE=registration`
-
-`DB_USERNAME=root`
-
-`DB_PASSWORD=root`
-
-The next step will move for migrating the migration file for the table which has been created by default.
-
-[How to Upload Files and Images in Laravel 6 with Validation](https://www.programmingfields.com/upload-files-and-images-in-laravel-6/)
+```txt
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=mydb
+DB_USERNAME=root
+DB_PASSWORD=root
+```
 
 ## Create User Migration
 
 Laravel 6 provides a default Model for the User. So, you don’t need to create a  **User model**. Rather than, just need to add the fillable data that you want to add to the database table. This will be the default code of the  **User.php**  file.
 
-1
 
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
-
-11
-
-12
-
-13
-
-14
-
-15
-
-16
-
-17
-
-18
-
-19
-
-20
-
-21
-
-22
-
-23
-
-24
-
-25
-
-26
-
-27
-
-28
-
-29
-
-30
-
-31
-
-32
-
-33
-
-34
-
-35
-
-36
-
-37
-
-38
-
-39
-
-40
-
-41
 
 `// User.php`
 
