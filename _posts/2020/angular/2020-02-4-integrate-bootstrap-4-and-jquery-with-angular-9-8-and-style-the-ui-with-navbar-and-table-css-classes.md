@@ -1,30 +1,31 @@
 ---
 layout: post
-title: "Angular 9 Tutorial: Build an Example UI with Bootstrap 4"
+title: "Integrating Bootstrap 4 and jQuery with Angular 9/8 and Styling the UI With Navbar and Table CSS Classes"
 image: "images/content/learn-django.png"
 excerpt: "In this Angular 8 tutorial we'll learn how to use Bootstrap 4 to build professional UIs." 
+categories: angular
 tags : [ angular, angular8, bootstrap, angular-9-tutorials ]
 ---
 
-In this tutorial we'll learn, by example, how to use **Bootstrap 4** with **Angular 7/8** to build professional UIs. 
+In this tutorial we'll learn, by example, how to use **Bootstrap 4** with **Angular 9/8** to build professional UIs. 
 
-Angular 8 is the latest version of Angular, when writing this tutorial, and Bootstrap 4 is the latest version of Bootstrap — the most popular CSS framework. You can use Bootstrap to create professional looking interfaces without being a CSS designer. 
+Angular 9 is the latest version of Angular, when writing this tutorial, and Bootstrap 4 is the latest version of Bootstrap — the most popular CSS framework. You can use Bootstrap to create professional looking interfaces without being a CSS designer. 
  
-In this tutorial, we'll particularly look at how to add Bootstrap 4 to Angular projects generated using **Angular CLI 8**.
+In this tutorial, we'll particularly look at how to add Bootstrap 4 to Angular projects generated using **Angular CLI 9**.
 
-In the previous [tutorial](https://www.techiediaries.com/angular-tutorial), we've built a web application with Angular 8 and Django. In this part, we're going to style the UI interface with Bootstrap 4, after installing and setting up the framework in the Angular 8 front-end.
+In this part, we're going to style an example UI interface with Bootstrap 4, after installing and setting up the framework in the Angular 9 front-end.
 
 In the previous tutorial we’ve:
 
 - Installed Angular CLI 8.
-- Generated a new front-end application using Angular CLI 8.
+- Generated a new front-end application using Angular CLI 9.
 - Created some UI components.
 
 
 
-## Different Ways to Integrate Bootstrap 4 with Angular 8
+## Different Ways to Integrate Bootstrap 4 with Angular 9
 
-There are many ways to add Bootstrap 4 to Angular 8 projects:
+There are many ways to add Bootstrap 4 to Angular 9 projects:
 
 - Installing  **bootstrap** and **jquery** via *npm* and add adding scripts and styles to `angular.json`.
 - Importing **bootstrap** style and script files in `src/index.html`. You can use a bootstrap 4 [CDN](https://getbootstrap.com/docs/4.0/getting-started/download/#bootstrapcdn).
@@ -36,13 +37,13 @@ npm install --save @ng-bootstrap/ng-bootstrap`: It's a library that contains nat
 
 To complete this tutorial,  you'll need to, either:
 
-- Start with the previous tutorial, which takes you from installing the Angular CLI 8 to calling the Django RESTful API 
+- Start with the previous tutorial, which takes you from installing the Angular CLI 9 to calling the RESTful API 
 - Clone the [font-end project](https://github.com/techiediaries/ng-crm) from GitHub and follow the steps in the previous tutorial for setting up the project.
--  Directly follow the steps to integrate Bootstrap 4 in your own Angular 8 project.
+-  Directly follow the steps to integrate Bootstrap 4 in your own Angular 9 project.
 
-## How to add Bootstrap 4 to your Angular 8 Front-End?
+## How to add Bootstrap 4 to your Angular 9 Front-End?
  
-After seeing different ways to add Bootstrap 4 to Angular 8, let's now style our Angular 8 front-end UI, built in the previous tutorial, with Bootstrap. We'll use the first approach i.e we'll install **bootstrap** from *npm* and then we'll include `bootstrap.css` CSS file, *jQuery* and *Popover.js*   
+After seeing different ways to add Bootstrap 4 to Angular 9, let's now style our Angular 9 front-end UI, built in the previous tutorial, with Bootstrap. We'll use the first approach i.e we'll install **bootstrap** from *npm* and then we'll include `bootstrap.css` CSS file, *jQuery* and *Popover.js*   
 
 ### Installing Bootstrap 4 and jQuery
 
@@ -58,7 +59,7 @@ Next, install **bootstrap** and **jquery** from npm using:
 $ npm install --save bootstrap jquery
 ```
 
-### Adding Bootstrap 4 to Angular CLI 8
+### Adding Bootstrap 4 to Angular CLI 9
 
 Next, open `angular.json`. You should similar content to the following:
 
@@ -194,10 +195,10 @@ My Contacts
 
 This is a screen-shot of the result after adding Bootstrap 4 classes:
 
-![Angular 8 and Bootstrap 4 tutorial](https://i.imgur.com/B2YrOmv.png)
+![Angular 9/8 and Bootstrap 4 tutorial](https://i.imgur.com/B2YrOmv.png)
 
 ## Conclusion
 
-In this tutorial, we've seen different ways you can use if you want to add Bootstrap 4 to your project and then we have seen by example how to add Bootstrap 4 to our Angular 8 front-end application generated with Angular CLI 8 in the previous tutorial. 
+In this tutorial, we've seen different ways you can use if you want to add Bootstrap 4 to your project and then we have seen by example how to add Bootstrap 4 to our Angular 9/8 front-end application generated with Angular CLI. 
 
 

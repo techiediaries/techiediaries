@@ -8,11 +8,14 @@ tags: [angular]
 
 In this tutorial, we'll learn how to integrate and use bootstrap 4 with Angular 9.
 
-We'll see how to initialize an Angular 9 project and integrate it with Bootstrap 4. Next, we'll use the various Bootstrap 4 CSS utilities to create a responsive layout with tables, forms, buttons, cards and jumbotrons.
+We'll see how to initialize an Angular 9 project and integrate it with Bootstrap 4. Next, we'll use the various Bootstrap 4 CSS utilities to create a responsive layout with navbars, tables, forms, buttons, cards and jumbotrons.
 
 
 [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) is a free and open-source CSS framework for creating responsive layouts, it's mobile-first and contains ready CSS utilities for typography, forms, buttons, and navigation, etc.
 
+> This tutorial works with all recent versions of Angular i.e v7/v8 and v9.
+
+## Angular 9/8 and Bootstrap 4 by Example
 
 There are various ways of [integrating Bootstrap 4 with your Angular 9](https://www.techiediaries.com/angular-bootstrap/) application. Let's see a possible solution by example. 
 
