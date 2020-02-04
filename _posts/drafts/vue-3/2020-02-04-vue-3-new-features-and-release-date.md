@@ -3,7 +3,7 @@ layout: post
 title: "Vue 3 New Features and Release Date"
 date: 2020-02-04 03:32
 categories: vue-js 
-tags: [vue-3]
+tags: [vue-3, vuejs]
 excerpt: "The new features in Vue.js 3" 
 ---
 

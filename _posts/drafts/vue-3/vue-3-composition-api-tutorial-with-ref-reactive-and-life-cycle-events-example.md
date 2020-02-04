@@ -3,7 +3,7 @@ layout: post
 title: "Vue 3 Composition API Tutorial with Ref, Reactive and Life-Cycle Events Example"
 date: 2020-02-04 03:32
 categories: vue-js 
-tags: [vue-3]
+tags: [vue-3, vuejs]
 excerpt: "In this tutorial, we will learn about the Vue 3 Composition API by example" 
 ---
 
