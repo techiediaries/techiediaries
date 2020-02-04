@@ -11,7 +11,7 @@ post_class: post-template
 
         <div class="mainheading col-xs-12 col-md-12">
 
-            
+
 
             <!-- Post Title -->
             <h1 class="posttitle">{{ page.title }}</h1>
@@ -20,22 +20,24 @@ post_class: post-template
                 <li>
                     {% if page.author %}
                     {% assign author = site.authors[page.author] %}
-        
+
                     {% else %}
                     {% assign author = site.authors["ahmed"] %}
                     {% endif %}
-        
+
                     <p>Author: {{author.display_name}}</p>
-                    
+
                 </li>
                 <li>
                     <!-- Post Date -->
                     <p>
                         <small>
-                            <span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">
+                            <span class="post-date"><time class="post-date"
+                                    datetime="{{ page.date | date:"%Y-%m-%d" }}">
                                     {{page.date | date_to_string }}</time></span>
                             {% if page.last_modified_at %}
-                            (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{
+                            (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+                                itemprop="dateModified">{{
                                 page.last_modified_at | date: "%b %-d, %Y" }}</time>)
                             {% endif %}
                         </small>
@@ -72,7 +74,7 @@ post_class: post-template
                         </svg> </a></li>
             </ul>
 
-    
+
         </div>
         <div id="content" class="col-xs-12 col-md-8 content">
 
@@ -111,7 +113,7 @@ post_class: post-template
             <p style="font-size:40px;padding: 10px;">Sponsored Links</p>
 
             <div style="margin-top:10px;">
-                
+
 
 
 
@@ -149,8 +151,10 @@ post_class: post-template
                 </form>
 
                 <!-- Ezoic - sticky-sidebar-ad - sidebar_floating_1 -->
-<div style="margin-top: 30px;" id="ezoic-pub-ad-placeholder-163"></div>
-<!-- End Ezoic - sticky-sidebar-ad - sidebar_floating_1 -->
+                <div style="margin-top: 30px;" id="ezoic-pub-ad-placeholder-163"></div>
+                <!-- End Ezoic - sticky-sidebar-ad - sidebar_floating_1 -->
+                <div id="carbon-block"></div>
+
 
             </div>
         </div>
