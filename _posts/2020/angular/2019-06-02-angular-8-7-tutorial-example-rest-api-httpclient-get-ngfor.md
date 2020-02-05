@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Angular 9/8 Tutorial By Example: (REST API, HttpClient GET, Components, Services & ngFor)"
+title: "Angular 8/7 Tutorial By Example: (REST API, HttpClient GET, Components, Services & ngFor)"
 image: "images/angular.png"
 excerpt: "In this tutorial, you'll learn by example how to send GET requests to REST API servers in your Angular 8 application using HttpClient. We’ll also learn how to use the basic concepts of Angular like components and services and how to use the ngFor directive to display collections of data." 
 date: 2020-01-03
+categories: angular 
 tags : [angular , angular9, angular-9-httpclient-examples, angular-9-ngfor-examples, angular-9-router-examples, angular-9-tutorials] 
 ---
 
-In this tutorial, you'll learn by example how to send GET requests to REST API servers in your Angular 9 application using [`HttpClient`](https://www.techiediaries.com/angular-httpclient/). We’ll also learn how to use the basic concepts of Angular like components and services and how to use the [`ngFor`](https://www.techiediaries.com/angular-ngfor/) directive to display collections of data. 
+In this Angular 8/7 tutorial, you'll learn by example how to send GET requests to REST API servers in your application using [`HttpClient`](https://www.techiediaries.com/angular-httpclient/). We’ll also learn how to use the basic concepts of Angular 8 like components and services and how to use the [`ngFor`](https://www.techiediaries.com/angular-ngfor/) directive to display collections of data. 
 
 We’ll be consuming a JSON API available from [NewsAPI.org](https://newsapi.org/)
 
@@ -17,7 +18,7 @@ Throughout this tutorial, we are going to build a simple example from scratch us
 In more  details, we'll learn:
 
 
-- How to [create an Angular 9 project using Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/),
+- How to [create an Angular 8 project using Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/),
 - How to quickly [set up routing in our project](https://www.techiediaries.com/angular-router/),
 - How to create [Angular components](https://www.techiediaries.com/angular-components/) and services,
 - How to subscribe to Observables,
@@ -34,22 +35,22 @@ Before getting started, you need a few requirements. You need to have the follow
 
 
 - Node.js and npm. You can install both of them from the [official website](https://www.nodejs.org/).
-- Angular CLI 9 (You can install it from npm using: `npm install -g @angular/cli`)
+- Angular CLI 8 (You can install it from npm using: `npm install -g @angular/cli`)
 
 
-## Creating an Angular 9 Project
+## Creating an Angular 8/7 Project
 
 Now let’s create our Angular 9 project. Open a new terminal and run the following command:
 
 
-    $ ng new angular-httpclient-demo
+    $ ng new angular-8-httpclient-demo
 
 The CLI will prompt you if **Would you like to add Angular routing? (y/N)**, type **y**. And **Which stylesheet format would you like to use?** Choose CSS and type **Enter**.
 
 Next, you can serve your application locally using the following commands:
 
 
-    $ cd ./angular-httpclient-demo
+    $ cd ./angular-8-httpclient-demo
     $ ng serve
 
 Your application will be running from `http://localhost:4200`.
@@ -60,17 +61,17 @@ Your application will be running from `http://localhost:4200`.
 Before you can fetch the news data from [NewsAPI.org](https://newsapi.org/) which offers a free plan for open source and development projects, you first need to go the [register](https://newsapi.org/register) page for getting an API key.
 
 
-![Angular 9 Example](https://paper-attachments.dropbox.com/s_E3944A4BADD8D4A1A0BAEF79D0155DCFCC540F80217BBCA2EB544F3AC4737BC0_1559441719482_Screenshot+from+2019-03-05+15-34-07.png)
+![Angular 8 Example](https://paper-attachments.dropbox.com/s_E3944A4BADD8D4A1A0BAEF79D0155DCFCC540F80217BBCA2EB544F3AC4737BC0_1559441719482_Screenshot+from+2019-03-05+15-34-07.png)
 
 
-## Adding an Angular Service
+## Adding an Angular 8 Service
 
 Next, let’s create a service that will take care of getting data from the news API. Open a new terminal and run the following command:
 
 
     $ ng generate service api
 
-### Setting up HttpClient
+### Setting up Angular 8 HttpClient
 
 Next, open the `src/app/app.module.ts` file then import `HttpClientModule` and add it to the `imports` array:
 
@@ -91,7 +92,7 @@ Next, open the `src/app/app.module.ts` file then import `HttpClientModule` and a
 
 That's all, we are now ready to use the `HttpClient` in our project.
 
-### Injecting HttpClient in The Angular Service
+### Injecting HttpClient in The Angular 8 Service
 
 Next, open the `src/app/api.service.ts` file and inject `HttpClient` via the service constructor:
 
@@ -143,9 +144,9 @@ The HttpClient `get()` method is designed to send HTTP GET requests. The syntax 
 It takes a REST API endpoint and an optional `options` object and returns an Observable instance.
 
 
-## Creating an Angular 9 Component
+## Creating an Angular 8 Component
 
-Now, let's create an Angular 9 component for displaying the news data. Head back to your terminal and run the following command:
+Now, let's create an Angular 8 component for displaying the news data. Head back to your terminal and run the following command:
 
 
     $ ng generate component news
@@ -238,7 +239,7 @@ You can now access your component from the `/news` path.
 
 ## Conclusion
 
-In this tutorial, we used Angular 9 to build a simple news application that retrieves data from a JSON REST API using the `get()` method of `HttpClient`. We’ve seen how to subscribe to the RxJS Observable returned by the `get()` method and how to use the `*ngFor` directive to iterate over fetched data in the template. Finally, we’ve seen how we can create an Angular 9 project using Angular CLI v9, how to generate components and services and [how to configure routing](https://www.techiediaries.com/angular-router/) for the component.
+In this tutorial, we used Angular 8 to build a simple news application that retrieves data from a JSON REST API using the `get()` method of `HttpClient`. We’ve seen how to subscribe to the RxJS Observable returned by the `get()` method and how to use the `*ngFor` directive to iterate over fetched data in the template. Finally, we’ve seen how we can create an Angular 8 project using Angular CLI v8, how to generate components and services and [how to configure routing](https://www.techiediaries.com/angular-router/) for the component.
 
 
 
