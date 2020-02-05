@@ -3,6 +3,7 @@ layout: post
 title: "Build an Angular 9/8 CRUD Example & Tutorial"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll learn to build an Angular CRUD example from scratch using the latest version which is as the time of this writing Angular 9" 
+categories: angular
 tags : [angular, angular9, angular-9-ngfor-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-9-form-examples, angular-9-tutorials] 
 ---
 
@@ -12,15 +13,15 @@ We'll be using a CRUD REST API mocked using `json-server` which lets you generat
 
 We'll not be learning how to use `json-server` but you can see the complete instructions from this [tutorial](https://www.techiediaries.com/angular-mock-backend/) after generating the Angular project.
 
-- Angular CRUD Example, Step 1 — Mocking the Backend Using `json-server`
-- Angular CRUD Example, Step 2 — Creating a Module 
-- Angular CRUD Example, Step 3 — Importing `HttpClientModule` and `FormsModule`
-- Angular CRUD Example, Step 4 — Creating Component(s)
-- Angular CRUD Example, Step 5 — Adding Routing 
-- Angular CRUD Example, Step 6 — Creating a Service 
-- Angular CRUD Example, Step 7 — Creating a Model 
-- Angular CRUD Example, Step 8 — Implementing the CRUD Methods 
-- Angular CRUD Example, Step 9 — Calling the CRUD Methods 
+- Step 1 — Mocking the Backend Using `json-server`
+- Step 2 — Creating an Angular 9 Module 
+- Step 3 — Importing Angular `HttpClientModule` and `FormsModule`
+- Step 4 — Creating Angular Component(s)
+- Step 5 — Adding Angular Routing 
+- Step 6 — Creating an Angular Service 
+- Step 7 — Creating a Model 
+- Step 8 — Implementing the CRUD Methods 
+- Step 9 — Calling the CRUD Methods 
 
  
 ## Prerequisites
@@ -51,7 +52,7 @@ You can simply follow the linked tutorial to quickly build a server that will be
 ![Angular CRUD](https://www.techiediaries.com/ezoimgfmt/cdn-images-1.medium.com/max/800/0*0EZg8Lxtit7x_Ty6?ezimgfmt=rs:710x225/rscb1/ng:webp/ngcb1)
 
 
-## Angular CRUD Example, Step 2 — Creating a Module 
+## Step 2 — Creating an Angular 9 Module 
 
 We'll encapsulate the code for our CRUD interface inside a module called **crud**.  Open a new command-line interface and generate a module using the following command:
 
@@ -79,7 +80,7 @@ import { CrudRoutingModule } from './crud-routing.module';
 export class CrudModule { }
 ```
 
-## Angular CRUD Example, Step 3 — Importing `HttpClientModule` and `FormsModule`
+## Step 3 — Importing Angular 9 `HttpClientModule` and `FormsModule`
 
 In this step, we'll proceed to add  `HttpClientModule`  and `FormsModule` in our project so we can use `HttpClient` and forms to implement the CRUD operations against the API server.
 
@@ -108,7 +109,7 @@ export class CrudModule { }
 ```
 
 
-## Angular CRUD Example, Step 4 — Creating Component(s)
+## Step 4 — Creating Angular 9 Component(s)
 
 In this step, we'll create the [Angular components](https://www.techiediaries.com/angular-components/). that compose the UI of our CRUD application:
 
@@ -151,7 +152,7 @@ import { UpdateComponent } from './update/update.component';
 export class CrudModule { }
 ```
 
-## Angular CRUD Example, Step 5 — Adding Routing 
+## Step 5 — Adding Angular 9 Routing 
 
 In this step, we'll [add routing](https://www.techiediaries.com/angular-router/). to our CRUD module.
 
@@ -185,7 +186,7 @@ We first imported the CRUD components, next we added five routes for each compon
 
 In the next step of our example, we'll a service for crud methods.
 
-## Angular CRUD Example, Step 6 — Creating a Service 
+## Step 6 — Creating an Angular 9 Service 
 
 
 In this step, we'll create an an [Angular service](https://www.techiediaries.com/angular-services-and-dependency-injection-via-providedin-tutorial/) that encapsulates the CRUD operations and make them available to the various UI components.
@@ -215,7 +216,7 @@ export class CrudService {
 
 We imported and injected the  `HttpClient`  service. We also defined the  `apiServer`  variable that contains the address of our REST API server.
 
-## Angular CRUD Example, Step 7 — Creating a Model 
+## Step 7 — Creating an Angular 9 Model 
 
 In this step, we'll see how to create a model for using typed HTTP responses in our example.
 
@@ -237,7 +238,7 @@ export interface Product {
 }
 ```
 
-## Angular CRUD Example, Step 8 — Implementing the CRUD Methods 
+## Step 8 — Implementing the CRUD Methods 
 
 Let's now implement the CRUD operations for creating, reading. updating and deleting products using a [service](https://www.techiediaries.com/angular-services/).
 
@@ -313,7 +314,7 @@ export class CrudService {
 }
 ```
 
-## Angular CRUD Example, Step  9 — Calling the CRUD Methods 
+## Step  9 — Calling the Angular 9 CRUD Methods 
 
 Next, let's see how to make CRUD operations in our components. Open the  `src/app/crud/home/home.component.ts`  file, import and inject the Angular service as follows:
 
