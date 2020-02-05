@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Django Authentication with a MySQL Database— Login, Logout and Password Change/Reset"
+title: "Django 3 Authentication with a MySQL Database— Login, Logout and Password Change/Reset"
 image: "images/content/django.png"
-excerpt: "In this tutorial, you'll learn how to easily add a complete authentication system to your Django application with login, logout and password change and reset functionalities." 
-tags : [ mysql ]
+excerpt: "In this tutorial, you'll learn how to easily add a complete authentication system to your django 3 application with login, logout and password change and reset functionalities" 
+categories: django
+author: kaima
+tags : [ django, mysql ]
 ---
 
-In this tutorial, you'll learn how to easily add a complete authentication system to your Django application with login, logout and password change and reset functionalities.
+In this tutorial, you'll learn how to easily add a complete authentication system to your django 3 application with login, logout and password change and reset functionalities.
 
-We'll be using Django with a MySQL database.
+We'll be using django 3 with a MySQL database.
 
 We'll also be using `django-crispy-forms` and Bootstrap 4 for styling the application UI.
 
@@ -26,7 +28,7 @@ We will be using `pip` and `venv` which are bundled as modules in recent version
 
 If you are ready, lets go started!
 
-##  Creating a Virtual Environment
+##  Creating a Virtual Environment for Your Django 3 Project
 
 A virtual environment allows you to isolate your current project dependencies from the rest of packages installed globally on your system or in the other virtual environments. You can either  use `virtualenv` which needs to be installed on your system or the `venv` module available as a module in recent versions of Python 3.
 
@@ -58,7 +60,7 @@ We'll also need to install mysql-client using:
 $ pip install mysqlclient
 ```
 
-## Creating a MySQL Database
+## Creating a MySQL Database for Storing Authentication Info 
 
 We'll be using a MySQL database. In your terminal invoke the `mysql` client using the following command:
 
@@ -75,7 +77,7 @@ mysql> create database mydb;
 ```
 
 
-## Creating a Django Project
+## Creating a Django 3 Project
 
 Let's now create the project using `django-admin.py`. In your terminal, run the following command:
 
@@ -128,7 +130,7 @@ Next, add the following setting which sets Bootstrap 4 as the default styling fr
 CRISPY_TEMPLATE_PACK =  'bootstrap4'
 ```
 
-## Creating the `accounts` Application
+## Creating the `accounts` Application for User Authentication
 
 Apps are the Django way of organizing a project. Think of them as modules. 
 
@@ -450,6 +452,6 @@ Now, go ahead and start your development server. You can use your authentication
 
 ## Conclusion
 
-Throughout this tutorial we've seen how we can easily add the login, logout and password reset and change features in our Django apps using the `auth` application without re-inventing the wheel.
+Throughout this tutorial we've seen how we can easily add the login, logout and password reset and change features in our django 3 apps using the `auth` application without re-inventing the wheel.
 
 We've also used Bootstrap 4 and `django-crispy-forms` to style the various forms for login, password change and reset.
