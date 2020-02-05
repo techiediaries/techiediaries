@@ -31,6 +31,11 @@ In more details, these are some of the new features of Vue 3:
 3. Portals, which allows you to render content outside of Vue’s mount element,
 4. The Composition API, which is similar to React Hooks, a new syntax that allows you to use functions for organizing your code by feature not operation, 
 6. TypeScript support, Vue 3 is built-in TypeScript and allows you to optionally use TS for development.
-
+7. Modularity
+8. Virtual DOM rewrite for faster performance
+9. Slots Generation optimization (separate rendering for parent & child components)
+10. Static props hoisting
+11. Hooks API (experimental)
+12. Time Slicing Support (experimental)
 
 
