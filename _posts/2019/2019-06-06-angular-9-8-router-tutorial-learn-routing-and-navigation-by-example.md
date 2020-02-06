@@ -15,7 +15,7 @@ You can also check out [this article](https://www.techiediaries.com/angular-rout
 
 > **Note**: This tutorial is compatible with both Angular 6/7/8 and the new Angular 9 version.
 
-## What You'll Learn in This Tutorial
+## Learn Navigation and Routing Using the Angular 9 Router With Example
 
 You'll learn about:
 

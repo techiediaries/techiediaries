@@ -12,6 +12,7 @@ Let's assume you already have Angular CLI installed on your machine and an Angul
 
 f you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
 
+## Building a Table with Angular 9 ngFor 
 
 You can do this example in two steps:
 
@@ -80,7 +81,7 @@ export class App implements OnInit {
 }
 ```
 
-## Step 2 - Displaying the Table Using `ngFor`
+## Step 2 - Displaying the Table Using Angular 9 `ngFor`
 
 
 Next, open the `src/app/app.component.html` file and update it as follows:

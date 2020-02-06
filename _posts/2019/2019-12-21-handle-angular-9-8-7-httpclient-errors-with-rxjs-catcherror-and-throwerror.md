@@ -6,9 +6,12 @@ excerpt: "In this quick how-to article, we'll see by example how to handle Http 
 tags : [angular, angular-how-tos, angular9] 
 ---
 
-In this quick how-to article, we'll see by example how to handle Http errors in Angular 9 apps.
+In this quick how-to article, we'll see by example how to handle Http errors in Angular 9 apps with HttpClient 9 and RxJS `catchError()`.
 
 If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
+
+
+## Handling Errors in Angular 9 HttpClient with RxJS catchError
 
 RxJS provides the `catchError()`  operator which as its name suggests can be used to catch errors but how it works?
 
@@ -30,7 +33,7 @@ This is an example of  a server error on the console if the server is unreachabl
 
 Before, we can see an example, we assume we have an Angular project with a `HttpClient` module imported. 
 
-## Step 1 - Generating & Implementing an Angular Service
+## Step 1 - Generating & Implementing an Angular 9/8 Service
 
 Open a new terminal, navigate to your project's folder and let's generate a service using the following command:
 

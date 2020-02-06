@@ -11,11 +11,13 @@ In this quick how-to tutorial, we'll see how to build a file/image uploading UI 
 
 If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
 
-`ProgressBar` is a material component for displaying progress and activity. In our example, we'll use it to indicate the activity for uploading images with HttpClient. 
+## Angular 9 Material Progressbar
+
+`ProgressBar` is a material component for displaying progress and activity. In our Angular 9 example, we'll use it to indicate the activity for uploading images with HttpClient. 
 
 We'll only build the UI in this article, for building the service for actually uploading files, check out this [how-to tutorial]() instead.
  
-## Step 1 — Generating an Angular Component
+## Step 1 — Generating an Angular 9 Component
 
 In the first step, run the following command to generate a component named home:
 
@@ -24,7 +26,7 @@ $ ng generate component home
 ```
 
 
-## Step 2 — Importing Angular Material Components
+## Step 2 — Importing Angular 9 Material Components
 
 In the second step, we need to import the modules of the required Angular Material components i.e `MatProgressBar`, `MatIcon`, `MatCard`, and `MatButton`. 
  
@@ -65,7 +67,7 @@ Next, you need to add the imported modules to the  `imports`  array as follows:
 export class AppModule { }
 ```
 
-## Step 3 — Calling the Upload Service 
+## Step 3 — Calling the Angular 9 Upload Service 
  
 In this step, let’s implement the UI for uploading images to a server.
 
@@ -186,4 +188,4 @@ We [loop over the files using the `ngFor` directive](https://www.techiediaries.c
 
 ## Conclusion
 
-In this how-to post, we've seen how to build an UI for uploading multiple files with Angular Material components such as `MatProgressBar`, `MatIcon`, `MatCard`, and `MatButton`.
+In this how-to post, we've seen how to build an UI for uploading multiple files with Angular 9 Material components such as `MatProgressBar`, `MatIcon`, `MatCard`, and `MatButton`.

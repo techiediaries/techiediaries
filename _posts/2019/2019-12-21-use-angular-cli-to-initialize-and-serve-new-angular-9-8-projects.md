@@ -10,7 +10,7 @@ In this quick how-to tutorial, we'll see how to use Angular CLI v9, as of this w
 
 ## Step 1  — Checking the Angular CLI Version
  
-After installing Angular CLI, you can run many commands. Let’s start by checking the version of the installed CLI:
+After installing Angular 9 CLI, you can run many commands. Let’s start by checking the version of the installed CLI:
 
 ```bash
 $ ng version
@@ -41,7 +41,7 @@ typescript                      3.6
 
 ```
 
-## Step 2  — Displaying the Help of Angular CLI
+## Step 2  — Displaying the Help of Angular 9 CLI
 
 A second command that you might need to run is the  **_help_**  command:
 

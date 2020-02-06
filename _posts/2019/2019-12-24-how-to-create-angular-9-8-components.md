@@ -7,11 +7,11 @@ tags : [angular, angular-how-tos, angular9]
 ---
 
 
-In this quick how-to post, we'll learn how to use the  `ng generate component`  command of Angular CLI, or its  `ng g c` shortcut command, for creating Angular components in your project.
+In this quick how-to post, we'll learn how to use the  `ng generate component`  command of Angular 9 CLI, or its  `ng g c` shortcut command, for creating Angular 9 components in your project.
 
 If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
 
-## How to Use `ng generate component`  or  `ng g c`
+## How to Use `ng generate component`  or  `ng g c` with Angular 9 CLI
 
 Let's assume we want to create a Angular component named home.
 
@@ -52,7 +52,7 @@ export class AppModule { }
 This will allow `HomeComponent`  in any component in the `AppModule`. 
 
 
-## How to Customize the Output of  `ng generate component`
+## How to Customize the Output of  `ng generate component` in Angular 9
 
 By default the `ng generate component` or  `ng g c` commands, generate a folder and four files for the component. But you can change the default behavior if you want in two ways:
 
@@ -90,11 +90,11 @@ $ ng generate component components/contact
 
 This will create the contact component inside the components folder which will also be created if it doesn't exist inside the  `src/app`  folder of the project. 
 
-## Manually Creating Components  
+## Manually Creating Angular 9 Components  
 
 You can also create Angular components manually by creating the necessary files and add the component's class to the `declarations` array of the module where it should be used.
 
-## Angular CLI Naming Conventions
+## Angular 9 CLI Naming Conventions
 
 When you create an Angular component with Angular CLI, it will follow these conventions:
 
@@ -104,4 +104,4 @@ When you create an Angular component with Angular CLI, it will follow these conv
 
 ## Conclusion
 
-In this howto post, we have seen how to create components in Angular using the `ng generate component`  command or its  `ng g c` shortcut command.
+In this howto post, we have seen how to create components in Angular 9 using the `ng generate component`  command or its  `ng g c` shortcut command.

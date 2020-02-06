@@ -10,7 +10,7 @@ In this tutorial, we'll be learning about **Angular services** using the latest 
 
 The `any` value of `provideIn` is introduced in Angular 9.
 
-## What is an Angular service?
+## What is an Angular 9 Service?
 
 An Angular service is simply a TypeScript class that encapsulates the various methods for completing a certain task in your app such as getting and sending data from and to a server.
 
@@ -26,7 +26,7 @@ According to the Angular docs:
 
 > Dependency injection (DI), is an important application design pattern. Angular has its own DI framework, which is typically used in the design of Angular applications to increase their efficiency and modularity. Dependencies are services or objects that a class needs to perform its function. DI is a coding pattern in which a class asks for dependencies from external sources rather than creating them itself.
 
-## Why do you need to use Angular services?
+## Why do you need to use Angular 9 Services?
 
 Angular services are mostly useful in the following scenarios:
 
@@ -37,7 +37,7 @@ Angular services are mostly useful in the following scenarios:
 
 Now that we have learned about Angular services and dependency injection, let's see that by example.
 
-## Step 1 - Creating an Angular service by example using Angular CLI 
+## Step 1 - Creating an Angular 9 Service by example using Angular CLI 
 
 Provided that you have Angular CLI installed on your machine and that you have an Angular 9 project generated:
 
@@ -91,7 +91,7 @@ Thanks to the `providedIn` property the service can specify where it can be prov
  
 Angular services can be provided in the `root` or in any of the available modules using `any` or a specific module. The `root` value is an alias for the `AppModule`, `any` is added starting with Angular 9.  
 
-## Step 2 - Implementing the method(s) of our example Angular service 
+## Step 2 - Implementing the method(s) of our example Angular 9 service 
 
 Now, let's see by example how to implement our Angular service. 
 
@@ -132,7 +132,7 @@ export class DataService {
 }
 ```
 
-## Step 3 - Accessing the Angular service methods from components
+## Step 3 - Accessing the Angular 9 service methods from components
 
 After defining and implementing the service, you need to inject it into the component(s) where you need to use it.
 
@@ -180,4 +180,4 @@ Since the `get()` method of `HttpClient` returns an RxJS observable which gets r
 
 ## Conclusion
 
-In this tutorial, we've seen by example how Angular services work alongside with the other corner concepts like dependency injection, the `@Injectable` decorator for creating a service from a TypeScrit class and the `providedIn` property for declaring where the service should be provided in our Angular application which could take the `root`, `any` (new in Angular 9) values or a specific Angular module. 
+In this tutorial, we've seen by example how Angular 9 services work alongside with the other corner concepts like dependency injection, the `@Injectable` decorator for creating a service from a TypeScrit class and the `providedIn` property for declaring where the service should be provided in our Angular application which could take the `root`, `any` (new in Angular 9) values or a specific Angular module. 

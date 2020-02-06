@@ -8,11 +8,15 @@ tags : [angular, angular-how-tos, angular9, angular-9-router-examples]
 
 The router-outlet is a directive that's available from the `@angular/router` package and is used by the router to mark where in a template, a matched component should be inserted.
 
-If you have generated your project with Angular CLI and instructed the CLI to [add routing](https://www.techiediaries.com/angular-router/) to your project either using the `--routing` flag or answered with **Yes** when prompted if **Would you like to add routing?**, you'll automatically have a `<router-outlet>` added to the main application template that exists in the `src/app/app.component.html` file associated with the root `App` component.
+## Tell Angular 9 to Add Routing
+
+If you have generated your project with Angular 9 CLI and instructed the CLI to [add routing](https://www.techiediaries.com/angular-router/) to your project either using the `--routing` flag or answered with **Yes** when prompted if **Would you like to add routing?**, you'll automatically have a `<router-outlet>` added to the main application template that exists in the `src/app/app.component.html` file associated with the root `App` component.
+
+## Angular 9 Router Outlet
 
 Thanks to the router outlet, your app will have multiple views/pages and the app template acts like a shell of your application. Any element, you add to the shell will be rendered in each view, only the part marked by the router outlet will be changed between views.
 
-## Now, how do you create Angular Views?
+## Now, how do you create Angular 9 Views?
 
 It's quite easy, especially that you have routing already set up in your project thanks to Angular CLI.
 
@@ -63,7 +67,7 @@ Routes that are mapped to the primary outlet are called primary routes.
 
 ## Conclusion
 
-In this quick post we have seen what a router outlet is in Angular, and how to name and create multiple outlets. We have also seen the difference between the primary and auxiliary routes.
+In this quick post we have seen what a router outlet is in Angular 9, and how to name and create multiple outlets. We have also seen the difference between the primary and auxiliary routes.
 
 
 

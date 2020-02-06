@@ -6,14 +6,14 @@ excerpt: "In this quick example, we'll see how to redirect users to a new URL pa
 tags : [angular, angular-how-tos, angular9, angular-9-router-examples] 
 ---
  
-In this quick example, we'll see how to redirect users to a new URL path or component using the Angular router and how to deal with not found pages and redirect to a 404 component if no match is found using wildcard paths.
+In this quick example, we'll see how to redirect users to a new URL path or component using the Angular 9 router and how to deal with not found pages and redirect to a 404 component if no match is found using wildcard paths.
 
 If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
 
 
 We'll be using the latest Angular 9 version.
 
-## Why redirecting to new paths?
+## Why redirecting to new paths in Angular 9?
 
 Redirection is common technique in web development where a specific URL path is redirected to a new one for many reasons such as migrating a legacy application or if the requested page is not available, etc.
 

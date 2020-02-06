@@ -11,11 +11,11 @@ In this how-to article, we'll learn how to use [`fromString`  and  `HttpParams`]
 
 Here, we assume we have a REST API endpoint named `server.com/api/products` with  `_page`  and  `_limit`  parameters.
 
-We also assume, you have an Angular project with the `HttpClientModule` imported in the main module or the module where you are implementing the requirement. 
+We also assume, you have an Angular 9 project with the `HttpClientModule` imported in the main module or the module where you are implementing the requirement. 
 
 If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
 
-## Step 1 - Generating and Implementing an Angular Example Service
+## Step 1 - Generating and Implementing an Angular 9 Example Service
 
 Head back to your terminal, navigate to your project's directory and run the following command to generate a service:
 
@@ -41,7 +41,7 @@ export class ExampleService {
 
 We import `HttpClient` and inject it via the service constructor.
 
-## Step 2 - Importing the HttpParams  Interface
+## Step 2 - Importing the Angular 9 HttpParams  Interface
 
 Next, import  `HttpParams`  in the `src/app/example.service.ts` file as follows:
 
