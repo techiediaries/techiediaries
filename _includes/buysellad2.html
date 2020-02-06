@@ -12,3 +12,22 @@ try {
   console.log(error);
 }
 </script>
+
+<script>
+  (function() {
+    if (typeof _bsa !== 'undefined' && _bsa) {
+      _bsa.init('custom', 'CK7D523E', 'placement:wwwtechiediariescom',
+      {
+        target: '#custom-inline',
+        template: `
+    <a href="##link##" class="native-link">
+      <img src="##image##" style="background-color: ##backgroundColor##" class="native-img">
+      <div class="native-text"><span class="native-company">##company##</span> ##description##</div>
+    </a>
+    <a href="##adViaLink##" class="native-ad">AD</a>
+      `
+          }
+        );
+    }
+  })();
+  </script>

@@ -1,0 +1,1 @@
+https://vueschool.io/articles/vuejs-tutorials/suspense-new-feature-in-vue-3/
