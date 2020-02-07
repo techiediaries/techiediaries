@@ -1,14 +1,20 @@
 ---
 layout: post
-title: "Angular 7/8 HttpClient — Building a Service for Sending API Calls and Fetching Data"
+title: "Angular HttpClient v9/8 — Building a Service for Sending API Calls and Fetching Data"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll be learning, by example, how to use Angular 7/8 and HttpClient to send HTTP requests to remote servers for fetching, creating and updating data." 
+categories: angular
+date: 2020-02-07
 tags : [angular, angular8, angular-9-httpclient-examples]
 ---
 
 Throughout this tutorial, you'll learn, by example, to use Angular 7/8 and `HttpClient` to send HTTP requests or make API calls to RESTful endpoints of remote servers in order to fetch data.
 
+ 
+
 You can use the example code to either send requests to third-party API servers, provided that they have CORS enabled or to your back-end server as a part of a full-stack web application that has a client and server tiers.
+
+## Other Angular HttpClient Tutorials
 
 -   [Importing  `HttpClient`  and sending Http get, post, put and delete requests to the server](https://www.techiediaries.com/angular-http-client),
 -   Building a service to encapsulate the  `HttpClient`  code interfacing with the server (this part),
@@ -26,7 +32,7 @@ You can use the example code to either send requests to third-party API servers,
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lZAP871qYDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Prerequisites
+## Angular 9/8 HttpClient by Example
 
 To be able to complete this tutorial, you first need to have a few requirements:
 
