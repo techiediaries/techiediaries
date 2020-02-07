@@ -1,0 +1,1 @@
+http://www.angulartutorial.net/2018/03/responsive-image-using-html-5-srcset.html
