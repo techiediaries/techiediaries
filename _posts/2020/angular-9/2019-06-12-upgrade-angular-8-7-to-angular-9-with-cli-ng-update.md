@@ -2,18 +2,20 @@
 layout: bpost
 title: "Upgrade Angular 8/7 to Angular 9 With Ng Update & Angular CLI v9"
 image: "images/content/updating-angular-cli-projects.png"
-excerpt: "In this short guide we'll see how to update Angular core framework and Angular CLI 6 to the latest Angular 7 version and upgrading existing projects to use v7" 
+excerpt: "In this short guide we'll see how to update Angular core framework and Angular CLI 8/7 to the latest Angular 9 version and upgrading existing projects to use v9" 
+date: 2020-02-07
 categories: angular
 tags : [angular , angular-8, angular-9] 
 ---
  
 Updating Angular CLI to v9 and upgrading your project to Angular 9 from v8/7 is now easier than ever before, thanks to all the work that has been done in version 9 and the `ng update` command which allows you to update specific versions and dependencies. 
 
-- [Updating from Angular 7/8 to Latest Angular 9 Version With Step By Step Example](https://www.techiediaries.com/updating-to-latest-angular-version-with-example/)
-- [How to Check Installed Angular CLI Version & Update to Latest Angular 9 Version Globally](https://www.techiediaries.com/check-angular-cli-version-and-update-to-latest-angular-version/)
+> See also: [How to Check Installed Angular CLI Version & Update to Latest Angular 9 Version Globally](https://www.techiediaries.com/check-angular-cli-version-and-update-to-latest-angular-version/)
+
+## How to Update to Angular 9 by Example?
+
 
 In this tutorial, you'll learn about the required steps that you need to follow to appropriately migrate your existing apps to Angular 9 — The latest version of the framework at the time of this writing. 
-
 
 
 ## Angular 9 is Released!
@@ -26,7 +28,7 @@ In this tutorial, you'll learn about the required steps that you need to follow 
 
 `Ng update` is a command available in Angular CLI which is used to update your application and its dependencies. You can use it to update all packages in the `package.json` file via the `--all` option that could take `true` or `false` or specific versions via the `--packages` option. You can see all the available commands from the official [docs](https://angular.io/cli/update).
 
-## Updating Angular to v9
+## Updating Angular to v9 
 
 In this tutorial, we'll see step by step how to upgrade an example Angular 7 project to the latest Angular 9 version. 
 

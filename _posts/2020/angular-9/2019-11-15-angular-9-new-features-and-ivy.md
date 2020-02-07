@@ -1,18 +1,22 @@
 ---
 layout: post
-title: "Angular 9 New Features: Ivy"
+title: "Angular 9 New Features and Ivy"
 image: "images/content/angular.png"
 excerpt: "Angular 9 new features: better performance and smaller bundle size thanks to Ivy!" 
-tags : [angular , angular8, angular9] 
+date: 2020-02-07
+categories: angular
+tags : [angular , angular-8, angular-9] 
 ---
+
+In this post, we'll see the new features of Angular 9 with the most new feature being the default use of the Ivy renderer, so what's new with the Angular 9 version? And what changes Ivy bring to the framework?
+
+## What're the Angular 9 New Features?
 
 Angular is one of the three most popular JavaScript frameworks for building client-side web and mobile applications. It's built and backed by Google and has been developed over the years into a fully-fledged platform with integrated libraries required for front-end web development.   
  
-Since developers and companies all over the world are depending on Angular for building their frontend apps, the team behind the framework follows a strict plan for updates with a new major version released every six months. The next major version will be **Angular 9** which is, as the time of this writing, in RC (Release Candidate).
+Since developers and companies all over the world are depending on Angular for building their frontend apps, the team behind the framework follows a strict plan for updates with a new major version released every six months. The current major version is **Angular 9**.
 
 This means we can already use the new version! But before, let's see some of the new features of Angular 9.  
-
-## What Are the New Features of Angular 9
 
 Compared to React or Vue, performance and file size are big downsides of Angular.
 
