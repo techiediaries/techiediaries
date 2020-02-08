@@ -11,25 +11,26 @@ tags : [angular, angular8, angular9, angular-9-ngfor-examples, angular-9-ngif-ex
 
 
 In this Angular 9 tutorial, we'll learn to build an Angular 9 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding
- a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.   
+ a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
+
+ ## What We'll Learn in this Angular 9 Tutorial? 
 
 - We'll learn by example how to send GET requests with URL query strings and parameters and process HTTP responses from REST API servers in your Angular 9/8 application using `Httplient` for fetching and consuming JSON data, how to do error handling for HTTP errors using the RxJS `throwError()` and `catchError()` operators, how to retry failed HTTP requests in poor network connections and cancel pending requests using the RxJS `retry()` and `takeUntil()` operators, and finally how to deploy the application to Firebase hosting using the latest Angular 8.3+ features. 
 - We'll also see how to use Angular services and RxJS Observables, and learn how to set up Angular Material in our project and style the UI with Material Design components.
 - We'll see how to use the new `ng deploy` feature in Angular 8.3+ to easily deploy your Angular 9 application from the command-line to Firebase hosting. 
 
-Angular 9 is currently in RC version, and comes with various [new features](https://www.techiediaries.com/angular-features) and improvements particularly the new Ivy renderer.
-
-This tutorial is now updated to the latest Angular 9 version. 
-
+Angular 9 is finally released, and comes with various [new features](https://www.techiediaries.com/angular-features/) and improvements particularly the new Ivy renderer.
 
 > **Note**: Please note that we are using HttpClient which is an improved version of the HTTP Client API, available starting 
 from Angular version [4.3.0-rc.0](https://github.com/angular/angular/blob/master/CHANGELOG.md#430-rc0-2017-07-08). The old HTTP client is not available in Angular 9. 
 
-You can also check out how to use HttpClient with Angular 9 to build a news application that fetches JSON data from a third-party REST API [in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor). 
+You can also check out how to use HttpClient with Angular 8/9 to build a news application that fetches JSON data from a third-party REST API [in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor/). 
 
 
 Throughout this step by step Angular 9 tutorial, we are going to see a practical CRUD example of how to use the HttpClient that's available from the
 `@angular/common/http` package, to make HTTP GET requests using the `get()` method.
+
+## What We'll Cover in this Tutorial?
 
 We'll cover:
 
@@ -46,6 +47,8 @@ We'll cover:
 - How to retry failed HTTP requests using the RxJS `retry()` operator,
 - How to unsubscribe from RxJS Observables returned from HttpClient methods using the `takeUntil()` operator when requests are concelled,
 - How to build your application for production and deploy it to Firebase hosting using the new `ng deploy` command available from Angular 8.3+ 
+
+## The Steps of this Tutorial
 
 The steps of this Angular 9 tutorial are as follows:
 
