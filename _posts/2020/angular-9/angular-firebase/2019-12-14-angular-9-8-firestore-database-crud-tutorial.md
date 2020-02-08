@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Angular 8/9 Firebase CRUD Tutorial with Firestore"
+title: "Angular 9/8 Firestore Database CRUD Tutorial"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll be using Angular 8 with Firebase and Firestore to create a app that implements the common CRUD operations." 
-tags : [angular, angular-9-ngfor-examples]
+excerpt: "In this tutorial, you'll be using Angular 9 with Firebase and Firestore to create am app that implements the common CRUD operations" 
+date: 2020-02-08 
+categories: angular-firebase
+tags : [angular, angular-9, angular-9-ngfor-examples]
 ---
 
-In this tutorial, you'll be using Angular 8/9 with Firebase and Firestore to create an app that implements the common CRUD operations.
+In this tutorial, you'll be using Angular 9/8 with Firebase and Firestore database to create an app that implements the common CRUD operations.
 
-We'll see setp by step how to set up Firebase in our Angular 8 project, and create a service for implementing Firebase CRUD operations using the Firestore realtime database.
+We'll see step by step how to set up Firebase in our Angular 9 project, and create a service for implementing Firebase CRUD operations using the Firestore realtime database.
 
-These are the steps of our Angular Firebase CRUD tutorial:
+## Angular 9 CRUD with Firebase and Firestore Database 
+
+These are the steps of our Angular 9 Firebase CRUD tutorial:
 
 - Step 1 - Creating your Angular 8 Project
 - Step 2 - Creating a Firebase Project and a Firestore Database

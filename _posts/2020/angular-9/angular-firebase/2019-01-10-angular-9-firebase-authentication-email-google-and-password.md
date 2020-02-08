@@ -1,44 +1,48 @@
 ---
 layout: post
-title: "Angular 7|6 Authentication with Firebase (Google | Email & Password): Login, Register, Email Verification and Password Recovery"
+title: "Angular 9/8 Authentication with Firebase (Google, Email & Password): Login, Register, Email Verification and Password Recovery"
 image: "images/content/angular.png"
-excerpt: "In this tutorial you will add email and social (Google) authentication with Firebase." 
-tags : [angular]
+excerpt: "In this tutorial, you will learn to add email and social authentication with login, register, email verification and password recovery to your Angular 9 app using Firebase and Google" 
+date: 2020-02-08 
+categories: angular-firebase
+tags : [angular, angular-9]
 ---
 
-> This tutorial works with Angular 6 & Angular 7.
 
-In this tutorial you will add email and social (Google) authentication with Firebase. 
+In this tutorial, you will learn to add email and social authentication with login, register, email verification and password recovery to your Angular 9 app using Firebase and Google. 
 
-In this tutorial, we'll be adding the following functionalities:
+## Angular 9 Firebase Authentication by Example
 
-- Email and password authentication with Firebase,
+We'll be adding the following functionalities:
+
+- Angular 9 email and password authentication with Firebase,
 - Social authentication with Firebase and Google,
 - Password recovery,
 - Verification emails,
-- Storing and accessing the authentication state using the browser's localStorage and Angular Observables
+- Storing and accessing the authentication state using the browser's localStorage and Angular 9 Observables
 
+> This tutorial also works with Angular 6, Angular 7 and Angular 8.
 
 ## Prerequisites
 
 You must have the following prerequisites for this tutorial:
 
 - Recent versions of Node.js and NPM. You can install them from their official [website](https://nodejs.org/en/download/),
-- Angular CLI v7 installed (`npm install @angular/cli -g`)
+- Angular CLI 9 installed (`npm install @angular/cli -g`)
 
 
-## Creating the Angular 7 Project
+## Creating the Angular 9 Project
 
-Let's start by creating an Angular 7 project:
+Let's start by creating an Angular 9 project:
 
 ```bash
-$ ng new angular-auth-demo
+$ ng new angular-firebase-auth
 ```
 
 Next, navigate inside the project's folder:
 
 ```bash
-$ cd angular-auth-demo
+$ cd angular-firebase-auth
 ```
 
 Finally, you can serve your web application to make sure it properly works:
@@ -114,15 +118,15 @@ Enter your user's credentials and click on the **Add user** button:
  
 ## Installing AngularFire2
 
-Head back to your terminal, make sure your are inside your project's root folder and run the following command to install Firebase SDK and AngularFire2 from npm:
+Head back to your terminal, make sure your are inside your Angular 9 project's root folder and run the following command to install Firebase SDK and AngularFire2 from npm:
 
 ```bash
 $ npm install firebase @angular/fire --save
 ```
 
-As of this writing **firebase v5.7.1** and **angular/fire v5.1.1** will be installed.
+Once the library is installed, you need to add it to your application main module. 
 
-Once the library is installed, you need to add it to your application main module. Open the `src/app/app.module.ts`file and update it accordingly:
+Open the `src/app/app.module.ts`file and update it accordingly:
 
 ```typescript
 // [...]
@@ -146,9 +150,9 @@ var config = {
 })
 ``` 
 
-## Creating the Login & Register UI Components
+## Creating the Angular Login & Register UI Components
 
-After setting up Firebase authentication in our project using AngularFire2 v5, we'll now proceed to create a register and login UI.
+After setting up Firebase authentication in our project using AngularFire2, we'll now proceed to create a register and login UI.
 
 Previously, we have created the `admin` module with a bunch of components to create, update and list the developer's portfolio projects. Now, let's create four more components for user registration and login. In your terminal, run these commands:
 
@@ -188,9 +192,9 @@ All these routes are children of the admin route. So, for example, you can acces
 
 ![Firebase login](https://www.diigo.com/file/image/rscqpoqzerraeesqszdpsrrboe/Angular7Demo.jpg)
 
-## Creating the Firebase Authentication Service
+## Creating the Firebase Authentication Angular 9 Service
 
-To abstract all the interactions with Firebase authentication, we will create an Angular service using this command:
+To abstract all the interactions with Firebase authentication, we will create an Angular 9 service using this command:
 
 ```bash
 $ ng g s auth/auth
@@ -315,7 +319,7 @@ async  loginWithGoogle(){
 
 We are done with the authentication service. Next, we need to create the login and register UIs.
 
-### Implementing the Login UI
+### Implementing the Angular 9 Login UI
 
 Open the `src/app/admin/login/login.component.ts` file and import then inject the authentication service:
 

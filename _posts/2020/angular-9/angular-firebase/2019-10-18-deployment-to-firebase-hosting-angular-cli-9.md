@@ -1,12 +1,22 @@
 ---
 layout: post
-title: "Deployment to Firebase Using Angular CLI 8.3+ in 5 Easy Steps"
+title: "Deployment to Firebase Hosting with Angular CLI 9 in 5 Easy Steps"
 image: "images/content/angular.png"
-excerpt: "You have finally developed your Angular application and you are ready to deploy it to a hosting provider and show it to the world! But, you think, you still have to do so much work to host the application. Fortunately for you, that's not true any more thanks to the latest 8.3+ version of Angular CLI which added a new command to the Angular developer arsenal" 
-tags : [angular, angular8]
+excerpt: "You have finally developed your Angular 9 application and you are ready to deploy it to a hosting provider and show it to the world! But, you think, you still have to do so much work to host the application. Fortunately for you, that's not true any more thanks to the latest 8.3+ version of Angular CLI which added a new command to the Angular developer arsenal"
+date: 2020-02-08 
+categories: angular-firebase
+tags : [angular, angular-9]
 ---
 
-You have finally developed your Angular application and you are ready to deploy it to a hosting provider and show it to the world! But, you think, you still have to do so much work to host the application. Fortunately for you, that's not true any more thanks to the latest 8.3+ version of Angular CLI which added a new command to the Angular developer arsenal, just like the `ng add` command introduced in Angular 7. 
+In this post, we'll learn how to deploy Angular 9/8 apps to Firebase Hosting.
+
+You have finally developed your Angular 9 application and you are ready to deploy it to a hosting provider and show it to the world! But, you think, you still have to do so much work to host the application. 
+
+
+## Angular CLI 8.3+ Ng Deploy Command
+
+Fortunately for you, that's not true any more thanks to the latest Angular 8.3+ version of Angular CLI which added a new command to the Angular developer arsenal, just like the `ng add` command introduced in Angular 7. 
+
 
 The command is `ng deploy` and as you can guess, it allows you to deploy your Angular application from the command-line using Angular CLI. The command doesn't work out of the box as you need to use it with the `ng add` command to install a |CLI builder](https://angular.io/guide/cli-builder) that gives your project the required deployment capability to work with a specific hosting provider. This is quite expected since there are various providers, each one with its own configuration.
 
@@ -16,11 +26,15 @@ The command is `ng deploy` and as you can guess, it allows you to deploy your An
 - For [Netlify](https://www.netlify.com/) add [`@netlify-builder/deploy`](https://npmjs.org/package/@netlify-builder/deploy)
 - For [GitHub pages](https://pages.github.com/) add [`angular-cli-ghpages`](https://npmjs.org/package/angular-cli-ghpages)
 
-In this tutorial, we’ll create the production bundles of our Angular application and deploy it to Firebase using Angular CLI 8.3+.
+## Deploying your Angular 9 Bundles to Firebase in Five Steps
 
-We assume that you already have initialized a project with Angular CLI and that you have installed or updated your project to the latest version of Angular CLI.
+In this tutorial, we’ll create the production bundles of our Angular 9 application and deploy it to Firebase using Angular CLI.
 
-How to automatically deploy your Angular project to Firebase? This can be done in 5 easy steps:
+We assume that you already have initialized a project with Angular CLI 9 and that you have installed or updated your project to the latest version of Angular CLI.
+
+How to automatically deploy your Angular project to Firebase? 
+
+This can be done in 5 easy steps:
 
 - Step 0 - Setting up your Firebase account and creating a project
 - Step 1 - Adding the Firebase deployment capability to your Angular project
@@ -38,7 +52,7 @@ Once you have created a Firebase account, you need to create a project in Fireba
 
  
 
-![](https://screenshots.firefoxusercontent.com/images/d0ea922a-1591-4dd8-8080-3b8f186f0c79.png)
+![Angular 9 deploy to firebase](https://screenshots.firefoxusercontent.com/images/d0ea922a-1591-4dd8-8080-3b8f186f0c79.png)
 
  
 
@@ -51,9 +65,9 @@ A box will show up asking you to provide some information about your project. Pr
 
 That's it! You have successfully created a Firebase account and project. Let's now head back to the Angular project.
 
-## Step 1 - Adding the Firebase deployment capability to your Angular project
+## Step 1 - Adding the Firebase deployment capability to your Angular 9 project
 
-The first step is to navigate to your Angular project and add the deployment capability for your target hosting provider. In our case, it's Firebase.
+The first step is to navigate to your Angular 0 project and add the deployment capability for your target hosting provider. In our case, it's Firebase.
 
 Go to your terminal, and run the following command from the root of your project:
 
@@ -79,7 +93,7 @@ Next, you’ll be asked: **Please select a project: (Use arrow keys or type to s
 
 The CLI will create the `firebase.json` and `.firebaserc` files and update the `angular.json` file accordingly.
 
-## Step 4 - Building & deploying your Angular project to Firebase
+## Step 4 - Building & deploying your Angular 9 project to Firebase
 
 Finally, you can deploy your application to Firebase, using the following command:
 
@@ -91,4 +105,6 @@ The command will build your application (similarly to the `ng deploy --prod` com
 
 ## Conclusion
 
-Thanks to Angular CLI 8.3+, it's now easier than ever to deploy your Angular project to popular hosting and cloud platforms such as Firebase, GitHub, Now and Netlify. You can also search npm for the required package to target your platform, if one doesn't exist or if you're deploying to a self-managed server, you can either create a builder that allows you to use the `ng deploy` command or manually deploy your app. Check out [the official docs](https://angular.io/guide/deployment) for more information.
+Thanks to Angular CLI 8.3+, it's now easier than ever to deploy your Angular 8/9 app to popular hosting and cloud platforms such as Firebase, GitHub, Now and Netlify. 
+
+You can also search npm for the required package to target your platform, if one doesn't exist or if you're deploying to a self-managed server, you can either create a builder that allows you to use the `ng deploy` command or manually deploy your app. Check out [the official docs](https://angular.io/guide/deployment) for more information.
