@@ -2,13 +2,18 @@
 layout: post
 title: "Angular 9 Tutorial and Example: Build your First Angular App"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you will learn to build your first Angular 8 application from scratch" 
-tags : [  angular , angular-9, angular-9-tutorials]
+excerpt: "In this tutorial, you will learn to build your first Angular 9 application from scratch" 
+date: 2020-02-08
+categories: angular,
+tags : [  angular , mysql, angular-9, angular-9-tutorials]
 ---
 
 In this tutorial, we will learn by example to create a first application with Angular 9 from scratch.
 
 > This is an [updated version of this Angular 8 tutorial](https://www.techiediaries.com/angular-8-tutorial-build-first-angular-calculator-app/) and this [second part](https://www.techiediaries.com/angular-data-event-property-binding/).
+
+
+## Angular 9 Tutorial Learning Outcomes
 
 We'll learn about concepts like Angular modules, components and directives.
 
@@ -16,13 +21,17 @@ We'll also learn about Angular template syntax which includes interpolation, eve
 
 For the example that we'll be building, it's a simple calculator application that implements the basic calculus operations.
 
+
 You'll learn from this tutorial:
 
-- How to install the latest version of Angular CLI,
-- How to initialize a new project,
+- How to install the latest version of Angular 9 CLI,
+- How to initialize a new Angular 9 project,
 - Understand and work with modules and components,
 - Understand Angular template syntax, particularly event and property bindings,
 - Listen for click events and update the UI when data changes. 
+
+## Angular 9 Tutorial Steps
+
 
 These are the steps:
 
