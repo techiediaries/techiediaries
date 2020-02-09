@@ -1,0 +1,1 @@
+build a stack management and inventory tracking app with flutter

@@ -3,8 +3,9 @@ layout: post
 title: "Django 3 Tutorial & CRUD Example with MySQL and Bootstrap"
 image: "images/content/learn-django.png"
 excerpt: "A Complete step by step tutorial to learn Django from scratch" 
+categories: django
 tags : [ python , django, mysql ]
-date: 2020-1-14
+date: 2020-2-09
 ---
 
 Django 3 is released with full async support! In this tutorial, we'll see by example how to create a CRUD application from scratch and step by step. We'll see how to configure a MySQL database, enable the admin interface, and create the django views. 

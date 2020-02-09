@@ -1,0 +1,1 @@
+Build the qr code library and ng add schamatic
