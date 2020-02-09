@@ -4,7 +4,7 @@ title: "Angular 9 Tutorial and Example: Build your First Angular App"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you will learn to build your first Angular 9 application from scratch" 
 date: 2020-02-08
-categories: angular,
+categories: angular
 tags : [  angular , mysql, angular-9, angular-9-tutorials]
 ---
 
