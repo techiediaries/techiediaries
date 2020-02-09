@@ -6,15 +6,16 @@ excerpt: "The router-outlet is a directive that's available from the @angular/ro
 tags : [angular, angular-how-tos, angular9, angular-9-router-examples] 
 ---
 
+## What's the Router Outlet in Angular?
+
 The router-outlet is a directive that's available from the `@angular/router` package and is used by the router to mark where in a template, a matched component should be inserted.
+
+Thanks to the router outlet, your app will have multiple views/pages and the app template acts like a shell of your application. Any element, you add to the shell will be rendered in each view, only the part marked by the router outlet will be changed between views.
 
 ## Tell Angular 9 to Add Routing
 
 If you have generated your project with Angular 9 CLI and instructed the CLI to [add routing](https://www.techiediaries.com/angular-router/) to your project either using the `--routing` flag or answered with **Yes** when prompted if **Would you like to add routing?**, you'll automatically have a `<router-outlet>` added to the main application template that exists in the `src/app/app.component.html` file associated with the root `App` component.
 
-## Angular 9 Router Outlet
-
-Thanks to the router outlet, your app will have multiple views/pages and the app template acts like a shell of your application. Any element, you add to the shell will be rendered in each view, only the part marked by the router outlet will be changed between views.
 
 ## Now, how do you create Angular 9 Views?
 

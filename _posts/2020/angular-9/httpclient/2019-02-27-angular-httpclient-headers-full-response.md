@@ -1,26 +1,31 @@
 ---
 layout: post
-title: "Typed and Full Responses and Headers in Angular 7 HttpClient: Link Header Pagination Example"
+title: "Angular 9 HttpClient Headers and Typed/Full Responses: Pagination Example"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this tutorial, we'll learn how to get headers and full responses with HttpClient in Angular 7" 
-tags : [angular, angular-9-httpclient-examples ] 
+excerpt: "In this tutorial, we'll learn how to get Angular 9 HttpClient headers and full responses" 
+tags : [angular, angular-9, angular-9-httpclient-examples ]
 ---
 
-In this tutorial, we'll see how you can get the full response when sending HTTP requests with HttpClient in Angular 7.
+In this Angular 9 HttpClient tutorial, we'll see how you can get headers and the full response when sending Http requests with HttpClient and how to use typed responses.
 
 We'll see an example of getting paginated data from our API server by using the `Link` header. We'll see how to retrieve the full response and how to get an HTTP header from the response.
+
 
 Wikipedia defines the [Link header](https://www.w3.org/wiki/LinkHeader) as:
 
 >The Link: header in HTTP allows the server to point an interested client to another resource containing metadata about the requested resource.
 
+## How to Get Headers and Full Responses with HttpClient in Angular 9?
+
 We'll only build the Angular service of our example pagination demo so you should know how to create a project and other artifacts like components. Otherwise, you can follow the other tutorials in our website that show how to get started with Angular. 
+
+### How to Obtain the Full Http Response
 
 You can obtain the full response using the `observe` property and specifying the `response`  value. This way Angular will hand you the full [`HttpResponse`](https://angular.io/api/common/http/HttpResponse) object.
 
 Let's see this with an example.
 
-In your Angular 7 project, run the following command to generate a new model:
+In your Angular 9/8 project, run the following command to generate a new model:
 
 ```bash
 $ ng generate class contact
@@ -41,7 +46,7 @@ export class Contact {
 }
 ```
 
-Next, run the following command to generate a new service:
+Next, run the following command to generate a new Angular service:
 
 ```bash
 $ ng generate service api
@@ -101,6 +106,8 @@ Next, add the following CRUD methods:
 ```
 
 We use Angular `HttpClient` to send POST, PUT and DELETE request to our API server.
+
+## Getting the Full Http Response in Angular 9
 
 Now, let's see how to retrieve the full HTTP response with pagination information from the API server.
 
@@ -169,4 +176,4 @@ It has the same implementation of the previous method except that we provide the
 
 ## Conclusion
 
-In this quick tutorial, you have seen how you can use typed and full responses and how to retrieve headers in `HttpClient` to create a pagination service that retrieves pages of data from a server. 
+In this quick tutorial, you have seen how you can use typed and full Http responses in Angular 9 and how to retrieve headers in `HttpClient` to create a pagination service that retrieves pages of data from a server. 
