@@ -1,16 +1,18 @@
 ---
 layout: post
-title: "Mocking a REST API Back-End for Your Angular App with JSON-Server and Faker.js"
+title: "Mock a REST API Back-End for Your Angular 9/8 App with JSON-Server and Faker.js"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 8 application which you can consume using Angular HttpClient even before your real back-end is ready" 
 tags : [angular] 
 ---
 
-In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 8 application which you can consume using Angular HttpClient even before your real back-end is ready.
+In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 9/8 application which you can consume using Angular 9 HttpClient even before your real back-end is ready.
+
+
 
 We'll use two powerful open source packages, [json-server](https://github.com/typicode/json-server) and [faker.js](https://github.com/marak/Faker.js/) and we assume that you have an Angular project ready.
 
-Please note that both json-server and faker.js are framework agnostic i.e you can use them with any JavaScript framework such as Vue.js or React but in this example we'll use them in the context of an Angular project.
+Please note that both `json-server` and `faker.js` are framework agnostic i.e you can use them with any JavaScript framework such as Vue.js or React but in this example we'll use them in the context of an Angular project.
   
 
 ## Why Mocking a REST API Back-End?
