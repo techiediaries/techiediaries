@@ -1,4 +1,12 @@
-# How to Fix Git Always Asking for Username and Password 
+---
+layout: bpost
+title: "How to Stop Git Always Asking for Username and Password When Using HTTPS"
+image: "images/content/updating-angular-cli-projects.png"
+excerpt: "If Git is always asking you for your username and password when pushing or pulling from a GitHub repository, This is a common problem if you use HTTPS clone URL for cloning the repository" 
+date: 2020-02-11
+categories: git
+tags : [git] 
+---
 
 
 If Git is always asking you for your username and password when pushing or pulling from a GitHub repository, This is a common problem if you use HTTPS clone URL for cloning the repository. 
