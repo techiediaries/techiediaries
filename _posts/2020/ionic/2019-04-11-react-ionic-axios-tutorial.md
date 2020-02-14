@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ionic 4 React Tutorial: Build a Mobile App with Ionic 5, Axios and React"
+title: "Ionic 5 React Tutorial: Build a Mobile App with Ionic 5, Axios and React"
 image: "images/content/react.png"
 excerpt: "In this tutorial we'll look at how to use React with Ionic 5 and Axios to build a mobile application" 
 date: 2020-02-14

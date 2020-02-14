@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "Multiple Image/File Upload with Django, Ionic 5 and FormData"
+title: "Multiple Image/File Upload with Django 3, Ionic 5 and FormData"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this tutorial, you'll learn to implement multiple file upload with Ionic 5, Django and FormData" 
+excerpt: "In this tutorial, you'll learn to implement multiple file upload with Ionic 5, django 3 and FormData" 
 tags : [ python , django , ionic, angular-9-httpclient-examples, angular-fullstack-examples, angular-9-formdata-examples ] 
 date: 2020-02-14
 author: omar
 ---
 
-In this tutorial, you'll learn to implement multiple file upload with Ionic 5, Django and FormData.
+In this tutorial, you'll learn to implement multiple file upload with Ionic 5, django 3 and FormData.
 
-In a [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/), we've created a django RESTful application for uploading files using Django REST framework and Ionic 5.
+In a [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/), we've created a django 3 RESTful application for uploading files using django 3 REST framework and Ionic 5.
 
 ![Ionic 5 upload example](https://i.imgur.com/TW1UOOz.png)
 
-Since the backend code will be the same as we only need an `/upload` endpoint that accepts POST requests we'll simply clone the previous and start our django REST API server using the following command:
+Since the backend code will be the same as we only need an `/upload` endpoint that accepts POST requests we'll simply clone the previous and start our django 3 REST API server using the following command:
 
 ```bash
 $ cd ~/demos
@@ -46,7 +46,7 @@ $ python manage.py migrate
 $ python manage.py runserver
 ```
 
- Your RESTful django server will be available from the `127.0.0.1:8000` address.
+ Your RESTful django 3 server will be available from the `127.0.0.1:8000` address.
 
 Here is some information about our restful server:
 
@@ -114,7 +114,7 @@ export class AppModule {}
 
 ## Generating an Uploading Service
 
-After creating the project, let's start our journey by creating a service that encapsulates the code for uploading files to the django server. In your terminal, navigate to your project's root folder and and generate the service using the following commands:
+After creating the project, let's start our journey by creating a service that encapsulates the code for uploading files to the django 3 server. In your terminal, navigate to your project's root folder and and generate the service using the following commands:
 
 ```bash
 $ cd ./fileuploadapp

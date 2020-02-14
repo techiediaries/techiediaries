@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ionic 4 SQLite Data Pagination"
+title: "Ionic 5 SQLite Data Pagination"
 image: "images/content/inventory-manager-ionic-sqlite.png"
 excerpt: "In this tutorial, we'll add pagination to our Ionic 5 app built using Angular and SQlite." 
 date: 2020-02-13

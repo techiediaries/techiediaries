@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ionic 4 Modals and SQLite Tutorial: Build a Product Manager App"
+title: "Ionic 5 Modals and SQLite Tutorial: Build a Product Manager App"
 image: "images/content/inventory-manager-ionic-sqlite.png"
 excerpt: " Using Ionic 5 with Cordova SQLite and Barcode scanner plugins to build a simple product stock manager mobile application for Android and iOS" 
 date: 2020-02-13

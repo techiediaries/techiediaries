@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ionic 4 Storage Tutorial and Example"
+title: "Ionic 5 Storage Tutorial and Example"
 image: "images/content/ionic.jpg"
 excerpt: "This tutorial will cover how to use Ionic 5/Angular local/native storage to easily store and persist key-value pairs and JSON objects. Ionic Storage abstracts all the available mechansims for data storage such as native Cordova SQLite and browser storage APIs like IndexedDB, WebSQL or localStorage."
 date: 2020-02-13
