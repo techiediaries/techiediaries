@@ -5,7 +5,7 @@ image: "images/content/ionic.png"
 excerpt: "In this tutorial, you'll learn to develop your first Ionic 5 application. You'll be using the latest Ionic CLI 5 version for generating and working with your project" 
 date: 2020-02-13 
 categories: ionic
-tags : [ionic-5]
+tags : [ionic, ionic-5]
 ---
 
 Ionic 5 allows you to create cross-platform mobile applications for Android & iOS and Progressive Web Apps with one codebase. You can target the most popular native platforms using the front-end web tools and languages i.e HTML, CSS, TypeScript and JavaScript.

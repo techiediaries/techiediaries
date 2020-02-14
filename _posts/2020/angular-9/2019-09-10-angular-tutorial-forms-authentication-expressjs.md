@@ -1,19 +1,22 @@
 ---
 layout: post
-title: "Angular 7/8 Tutorial: Building and Submitting an Authentication Form (ngModel/ngForm/ngSubmit)"
+title: "Angular 9/8 Tutorial: Building and Submitting an Authentication Form (ngModel/ngForm/ngSubmit)"
 image: "images/content/angular-httpclient.png"
 excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 7/8 to work with forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
 tags : [angular, angular8, angular-9-form-examples, angular-9-fullstack-examples, angular-9-tutorials] 
 ---
 
-In this tutorial, we'll learn to use the template-driven approach in Angular 7/8 to work with forms. We'll learn about the `NgForm`, `ngModel` and `ngSubmit` directives which are the essential concepts in template-based forms and how to create an authentication system with Node and Express.js
+In this tutorial, we'll learn to use the template-driven approach in Angular 9/8 to work with forms. We'll learn about the `NgForm`, `ngModel` and `ngSubmit` directives which are the essential concepts in template-based forms and how to create an authentication system with Node and Express.js
 
-> **Note**: This tutorial works with Angular 7 and 8.
+> **Note**: This tutorial also works with Angular 7 and 8.
+
+## Why Using Forms in Angular 9?
  
 Forms and authentication are common features in every Angular app or generally any web application. A form is used to collect and submit information to web servers which will usually be persisted in a database while authentication is used to verify the identity of users before allowing them to access protected resources on the server. 
 
+## Creating Forms in Angular 9 by Example
 
-In this tutorial, you will create an Angular 8 application with two forms that send user information to a RESTful server to save it in the database (registration) and then allow users to authenticate themselves. You'll create a login and register components with two forms to register and login users. 
+In this tutorial, you will create an Angular 9 application with two forms that send user information to a RESTful server to save it in the database (registration) and then allow users to authenticate themselves. You'll create a login and register components with two forms to register and login users. 
 
 Since Angular is only for the front-end, we'll also need a back-end server. We'll quickly create a server with Node and Express.js that exposes two endpoints for registering and authenticating users.
  
@@ -176,7 +179,7 @@ $ npm start
 
 Your server will be served from `http://localhost:3000`. Since our server exposes a GET route, you can visit it with your web browser. You should see a blank page with the **This is an authentication server** message. That means your authentication server is working! 
 
-You can also use a REST API client like Postman or cURL to send POST requests to the `/register` and `/login` endpoints to create in the SQLite database and authenticate users before we create the Angular 8 UI. 
+You can also use a REST API client like Postman or cURL to send POST requests to the `/register` and `/login` endpoints to create in the SQLite database and authenticate users before we create the Angular 9 UI. 
 
 For example, this is how you send a POST request with cURL:
 
@@ -192,9 +195,9 @@ For example, this is how you send a POST request with cURL:
 
 If the POST requests are successful you should get a JSON object with your user information, the access token and the expiration date otherwise you will get an error with a status code.
 
-That's it for the server part! You should leave this terminal open with your server running and let's start creating the Angular 8 application.
+That's it for the server part! You should leave this terminal open with your server running and let's start creating the Angular 9 application.
 
-## Creating the Angular 8 Application
+## Creating the Angular 9 Application
 
 Open a new terminal and navigate to your project's folder then run the following command to generate the frontend project using Angular CLI 7:
 
@@ -212,7 +215,7 @@ $ ng serve
 
 You can access your application from `http://localhost:4200` in your preferred web browser. You will be presented with the following page:
 
-## Creating an Angular 8 Module
+## Creating an Angular 9 Module
 
 We'll add the code for this tutorial in its own Angular module which will encapsulate authentication. Head back to your terminal and run the following command:
 
@@ -222,7 +225,7 @@ $ ng generate module auth --routing
 
 This will create a module called `auth` with routing (thanks to the `--routing` switch). Two  `src/app/auth/auth-routing.module.ts` (the routing module for the `auth` module) and `src/app/auth/auth.module.ts` files will be created. 
 
-## Generating Angular 8 Components
+## Generating Angular 9 Components
 
 Next, we'll generate two components for the login and registration inside the `auth` module. In your terminal, run the following command:
 
@@ -424,7 +427,7 @@ Open the `src/app/auth/register/register.component.css` file and add the followi
 
 This is the screenshot of our register page:
 
-![Angular 8 form| Register component](https://www.diigo.com/file/image/bbccosoazescdcpoqezdqdabbdo/Frontend.jpg)
+![Angular 9 form| Register component](https://www.diigo.com/file/image/bbccosoazescdcpoqezdqdabbdo/Frontend.jpg)
 
 ## Creating the Login Form: Using Template-based Forms with the `ngModel`, `ngForm` and `ngSubmit` Directives
 
@@ -479,7 +482,7 @@ Next, let's add some CSS styles. open the `src/app/login/login.component.css` fi
 
 This is a screenshot of the login page:
 
-![Angular 8 form - login example](https://www.diigo.com/file/image/bbccosoazescdcsdadzdqdabdbr/Frontend.jpg)
+![Angular 9 form - login example](https://www.diigo.com/file/image/bbccosoazescdcsdadzdqdabdbr/Frontend.jpg)
 
 
 If you fill the login form and click on the login button, you should see the form values displayed on the console.
@@ -488,7 +491,7 @@ If you fill the login form and click on the login button, you should see the for
 
 In this tutorial, we've created two login and register forms that will be used to send authentication details to a Node and Express.js authentication server.
 
-We've seen how to use the template-driven approach in Angular 8 to work with forms. We've seen how we can get a reference to the `NgForm` instance of a form which is created automatically by Angular when you import `FormsModule` in your project.  And how to use `ngModel` to register individual form tags with the `NgForm` instance of the HTML form and finally how we submit the form using the `ngSubmit` event and how to access the form values inside the bound method.
+We've seen how to use the template-driven approach in Angular 9 to work with forms. We've seen how we can get a reference to the `NgForm` instance of a form which is created automatically by Angular when you import `FormsModule` in your project.  And how to use `ngModel` to register individual form tags with the `NgForm` instance of the HTML form and finally how we submit the form using the `ngSubmit` event and how to access the form values inside the bound method.
 
 In the next tutorial titled [Using Angular HttpClient with Node & Express.js -- Example POST Request](), we'll see how to submit the form content to the Express.js authentication server with `HttpClient` POST request  
 

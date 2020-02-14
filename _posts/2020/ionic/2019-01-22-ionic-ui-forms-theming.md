@@ -1,27 +1,28 @@
 ---
 layout: post
-title: "Ionic 4 Forms Tutorial: Login & Register UI Example with Theming"
+title: "Ionic 5 Forms Tutorial: Login & Register UI Example with Theming"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn to build a login and register UI with Ionic 4 and Angular forms" 
+excerpt: "In this tutorial, we'll learn to build a login and register UI with Ionic 5 and Angular forms" 
 tags : [ionic] 
 ---
 
-In this tutorial, we'll learn how to use Angular forms in Ionic 4 by building a simple login and registration example with theming.
+In this tutorial, we'll learn how to use Angular forms in Ionic 5 by building a simple login and registration example with theming.
 
-In the previous tutorial, we've created a JWT authentication server with Node and Express.js and implemented an authentication service with Angular services and `HttpClient` in our Ionic 4 application.
+In the previous tutorial, we've created a JWT authentication server with Node and Express.js and implemented an authentication service with Angular services and `HttpClient` in our Ionic 5 application.
 
-Check out the previous tutorial: [Ionic 4 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server](https://www.techiediaries.com/ionic-jwt-authentication-httpclient)
+Check out the previous tutorial: [Ionic 5 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server](https://www.techiediaries.com/ionic-jwt-authentication-httpclient)
 
+## Creating an Ionic 5 UI by Example
 
-In this part, we'll create the actual UI with built-in Ionic 4 components and Angular forms.
+In this part, we'll create the actual UI with built-in Ionic 5 components and Angular forms.
 
-We'll be using Ionic 4 components such as the Ionic Grid, Input fields and Buttons.
+We'll be using Ionic 5 components such as the Ionic Grid, Input fields and Buttons.
 
 We'll also see how to use some CSS variables like `--background` and `--color` for custom theming the UI components and the color property of Ionic components to assign different types of standard Ionic colors such as the primary and secondary colors to the components.
 
-We'll see how to use Angular routing to navigate between different pages of our Ionic 4 application.
+We'll see how to use Angular routing to navigate between different pages of our Ionic 5 application.
 
-We've created an Ionic 4 project, created a module that encapsulates authentication and created a service that implements the `register()`, `login()`, `logout()` and `isLoggedIn()` methods. Let's now create the UI pages and components.
+We've created an Ionic 5 project, created a module that encapsulates authentication and created a service that implements the `register()`, `login()`, `logout()` and `isLoggedIn()` methods. Let's now create the UI pages and components.
 
 ## Creating the Register Page
 
@@ -140,7 +141,7 @@ We use the `--background` and `--color` variables to change the colors of `<ion-
 
 This is the screenshot our registration page:
 
- ![Ionic 4 Page](https://www.diigo.com/file/image/bbccosoazescacspaezdqcrcsop/localhost_8100_register%28Galaxy+S5%29.jpg?k=deb688765fefe2d0f4e0300ff17bd641)
+ ![Ionic 5 Page](https://www.diigo.com/file/image/bbccosoazescacspaezdqcrcsop/localhost_8100_register%28Galaxy+S5%29.jpg?k=deb688765fefe2d0f4e0300ff17bd641)
 
 ## Creating a Login Page
 
@@ -266,8 +267,8 @@ a{
 
 This is a screenshot of the login page:
 
-![Ionic 4 login page](https://www.diigo.com/file/image/bbccosoazescadpqoqzdqcrdqbc/localhost_8100_login%28Galaxy+S5%29+%281%29.jpg?k=494c78f6765776a5d76d17f1d212aaf5)
+![Ionic 5 login page](https://www.diigo.com/file/image/bbccosoazescadpqoqzdqcrdqbc/localhost_8100_login%28Galaxy+S5%29+%281%29.jpg?k=494c78f6765776a5d76d17f1d212aaf5)
 
 ## Conclusion
 
-That's it we have created our login and registration system using Ionic 4 and Angular 7 in the front-end and Node, Express.js in the backend.
+That's it we have created our login and registration system using Ionic 5 and Angular 7 in the front-end and Node, Express.js in the backend.

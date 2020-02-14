@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Angular 7/8 Tutorial: Login & Reactive Form Example with Validation"
+title: "Angular 9/8 Tutorial: Login & Reactive Form Example with Validation"
 image: "images/content/angular-httpclient.png"
-excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 7/8 to work with forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
+excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 9/8 to work with forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
 tags : [angular, angular8, angular-9-form-examples, angular-9-tutorials] 
 ---
 
 
-Reactive forms are one approach (alongside with the template-driven approach) of working with forms in Angular 7/8. 
+Reactive forms are one approach (alongside with the template-driven approach) of working with forms in Angular 9. 
 
 In this tutorial, we'll build a login form example with validation using the reactive or the model-driven approach.
 
@@ -15,9 +15,9 @@ In this tutorial, we'll build a login form example with validation using the rea
 
 You need to have Node.js and npm installed on your system. 
 
-You also need Angular CLI 8 installed otherwise, you can simply run the `npm install -g @angular/cli` command to install it.
+You also need Angular CLI 9 installed otherwise, you can simply run the `npm install -g @angular/cli` command to install it.
 
-## Generating a New Angular 8 Project
+## Generating a New Angular 9 Project
 
 Let's start our tutorial by generating a project from scratch. You can skip this part if you already have a project.
 
@@ -210,9 +210,9 @@ export class AppRoutingModule { }
 
 We use the `canActivate` array of the `admin` route to apply `AuthGuard` to the route which protects it from users that are not logged in.
 
-## Creating the Login Form using Angular 8 Reactive Forms
+## Creating the Login Form using Angular 9 Reactive Forms
 
-Before using reactive forms in Angular we need to import `FormsModule` and `ReactiveFormsModule` in the application module.
+Before using reactive forms in Angular 9 we need to import `FormsModule` and `ReactiveFormsModule` in the application module.
 
 Open the `src/app/app.module.ts` file and update it accordingly:
 
@@ -315,7 +315,7 @@ Let's now create the HTML form. Open the `src/app/login.component.html` file and
 
 ```html
 <h1 style="text-align:center">
-  Angular Login Example
+  Angular 9 Login Example
 </h1>
 <div class="login">
   <h2 class="login-header">Log in</h2>
@@ -436,10 +436,10 @@ button{
 
 This is the screenshot of our admin page:
 
-![Angular 7/8 form example](https://www.diigo.com/file/image/bbccosoazescoqceqozdqdboqpo/Login.jpg)
+![Angular 9/8 form example](https://www.diigo.com/file/image/bbccosoazescoqceqozdqdboqpo/Login.jpg)
 
 You can log out from the admin page and you will be redirected to the login form.
 
 ## Conclusion
 
-We reached the end of this tutorial in which we have created a login from with Angular reactive forms. We've also seen how to do form validation. 
+We reached the end of this tutorial in which we have created a login from with Angular 9 reactive forms. We've also seen how to do form validation. 

@@ -5,7 +5,7 @@ image: "images/content/ionic.png"
 excerpt: "In this post, we'll learn how to upgrade an existing Ionic 4 project to the latest Ionic 5 version but before that let's see the new features brought with this version of Ionic" 
 date: 2020-02-13 
 categories: ionic
-tags : [ionic-5]
+tags : [ionic, ionic-5]
 ---
 
 

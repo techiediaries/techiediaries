@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Ionic 4 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server"
+title: "Ionic 5/Angular JWT Authentication Tutorial: Node & Express.js Server"
 image: "images/content/angular-httpclient.png"
-excerpt: "In this tutorial, we'll learn to implement JWT authentication with Ionic 4, Angular 7 and Express.js" 
-tags : [ionic, angular-9-httpclient-examples] 
+excerpt: "In this tutorial, we'll learn to implement JWT authentication with Ionic 5, Angular and Express.js" 
+categories: angular
+date: 2020-02-13
+tags : [ionic, ionic-5, angular-9-httpclient-examples] 
 ---
 
-Ionic 4 is the latest version of Ionic which is as of this writing in RC. In this tutorial, we'll be learning how to use Ionic 4 and Angular 7 to build a login & registration module for authenticating users. We'll learn about using Angular modules, services, forms (via `FormsModule`) and HTTP (via `HttpClient`) among other features.
+Ionic 5 is the latest version of Ionic. In this tutorial, we'll be learning how to use Ionic 5 and Angular 7 to build a login & registration module for authenticating users. We'll learn about using Angular modules, services, forms (via `FormsModule`) and HTTP (via `HttpClient`) among other features.
 
 We'll learn how to use `HttpClient` to send POST requests to a back-end authentication server created with Node and Express.js and the `BehaviorSubject` type of RxJS Observable to track the authentication state.
 
@@ -16,9 +18,9 @@ Before your proceed, you need to make sure you have Node.js and NPM installed on
 
 Now, let's get started!
 
-## Setting up Ionic CLI 4
+## Setting up Ionic CLI 5
 
-Our first step is installing the Ionic CLI 4. Open your terminal and run this command:
+Our first step is installing the Ionic CLI 5. Open your terminal and run this command:
 
 ```bash
 $ npm install -g ionic
@@ -26,9 +28,9 @@ $ npm install -g ionic
 
 This will install the ionic package globally on your system. If you get any permission errors simply use `sudo` before your command. If you are in Windows, use a CMD prompt with administrator access.
 
-## Creating an Ionic 4 Project
+## Creating an Ionic 5 Project
 
-Let's now proceed by creating an Ionic 4 project. Head back to your terminal and run the following command:
+Let's now proceed by creating an Ionic 5 project. Head back to your terminal and run the following command:
 
 ```bash
 $ ionic start ionic-auth-demo blank --type=angular   
@@ -73,7 +75,7 @@ export class AuthModule { }
 
 Our `auth` module only imports the [`CommonModule`](https://angular.io/api/common/CommonModule) which is a built in Angular module that exports all the basic Angular directives and pipes, such as `[NgIf](https://angular.io/api/common/NgIf)`, `[NgForOf](https://angular.io/api/common/NgForOf)`, `[DecimalPipe](https://angular.io/api/common/DecimalPipe)`, and so on.
 
-You need to import the `auth` module in the root application module of our Ionic 4 application. Open the `src/app/app.module.ts` file and import `AuthModule` then add it to the `imports` array:
+You need to import the `auth` module in the root application module of our Ionic 5 application. Open the `src/app/app.module.ts` file and import `AuthModule` then add it to the `imports` array:
 
 ```ts
 import { AuthModule } from  './auth/auth.module';
@@ -344,9 +346,9 @@ We simply return `authSubject` variable casted to an Observable  using the `asOb
 
 ## Creating Ionic Pages
 
-Now that we've created the service for authenticating users. Let's create the user interface with Ionic 4 UI components.
+Now that we've created the service for authenticating users. Let's create the user interface with Ionic 5 UI components.
 
-Check out this second tutorial: [Ionic 4 Tutorial: Build a Login & Register UI]().  
+Check out this second tutorial: [Ionic 5 Tutorial: Build a Login & Register UI]().  
 
 ## Creating and Running an Express.js Authentication Server 
 
@@ -484,7 +486,7 @@ $ npm start
 
 Your server will be running from `http://localhost:3000`.
 
-You can use cURL to send POST requests to the authentication endpoints before creating the Ionic 4 UI. First run this command in a new terminal to register a user:
+You can use cURL to send POST requests to the authentication endpoints before creating the Ionic 5 UI. First run this command in a new terminal to register a user:
 
 ```bash
  curl -H "Content-Type: application/json" -d '{"email":"test@test.com","name":"test", "password":"test"}' http://localhost:3000/register
@@ -498,4 +500,4 @@ You can use cURL to send POST requests to the authentication endpoints before cr
 
 ## Conclusion
 
-In this tutorial, we've learned how to implement JWT authentication with Ionic 4, Angular 7 on the front-end and Node and Express.js in the back-end. We've seen how to send POST requests using `HttpClient` and how to persist values on the local storage using the Ionic Storage module. 
+In this tutorial, we've learned how to implement JWT authentication with Ionic 5, Angular 7 on the front-end and Node and Express.js in the back-end. We've seen how to send POST requests using `HttpClient` and how to persist values on the local storage using the Ionic Storage module. 

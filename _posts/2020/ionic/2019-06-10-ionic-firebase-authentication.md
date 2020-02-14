@@ -1,19 +1,21 @@
 ---
 layout: post
-title: "Ionic 4 Firebase Tutorial: Adding Authentication to your Ionic 4 & Angular App"
+title: "Ionic 5 Firebase Authentication Tutorial"
 image: "images/content/ionic.jpg"
-excerpt: "This tutorial will cover how to add Email/Password authentication to Ionic 4/Angular apps using Firebase and angularfire2" 
-tags : [ionic , firebase, angular] 
+excerpt: "This tutorial will cover how to add Email/Password authentication to Ionic 5/Angular apps using Firebase and angularfire2" 
+tags : [ionic , ionic-5, firebase] 
 ---
 
-In this tutorial, you will learn how to add authentication to your Ionic 4 app (based on Angular) using Firebase.
+In this tutorial, you will learn how to add authentication to your Ionic 5 app (based on Angular) using Firebase.
 
-The majority of production-ready web applications require some sort of user authentication (with the traditional email and password or the social Single Sign On via Facebook or Google etc.). In this blog post, we’ll learn how we can easily add user login and registration to Ionic 4/Angular  (mobile or web) applications with Google's Firebase, using the official *angularFire2* library for integration.
+## Adding Authentication to Ionic 5 Apps with Firebase
+
+The majority of production-ready web applications require some sort of user authentication (with the traditional email and password or the social Single Sign On via Facebook or Google etc.). In this blog post, we’ll learn how we can easily add user login and registration to Ionic 5/Angular  (mobile or web) applications with Google's Firebase, using the official *angularFire2* library for integration.
 
 
 We are going to cover Email/Password authentication and Facebook social Sign In, in details. For the other methods such us Twitter, Google and GitHub or SMS and Anonymous login, we will cover them in details in other tutorials.
 
-Before you can add authentication with Firebase to your Ionic 4/Angular or Angular 4+ app, you need to sign up for an account, create a Firebase app then get the app's URL for integrating your app with Firebase.
+Before you can add authentication with Firebase to your Ionic 5/Angular or Angular 4+ app, you need to sign up for an account, create a Firebase app then get the app's URL for integrating your app with Firebase.
 
 ## Create a New Firebase Project
 
@@ -35,7 +37,7 @@ Then copy the information in the configuration object
 
 ![](https://screenshots.firefoxusercontent.com/images/ff1d8348-e9bc-4fca-ab17-66c7f23355a5.png)
 
-At this point, you'll want to wire your Firebase back-end with your Ionic 4/Angular or Angular 4 app. See [Linking Ionic 4/Angular and Angular 4 with Firebase Using AngularFire2](/#ionic-firebase-connection)
+At this point, you'll want to wire your Firebase back-end with your Ionic 5/Angular or Angular 4 app. See [Linking Ionic 5/Angular and Angular 4 with Firebase Using AngularFire2](/#ionic-firebase-connection)
  
 Close the page to return to *Project Overview*.
 
@@ -100,7 +102,7 @@ Next you'll need to add your application *API key* and *API Secret* in your Fire
 That's it. Now you can add third-party social authentication with Google, Twitter, Github and Facebook, with Firebase, to your web application.
 
 
-### <a id="ionic-firebase-connection">Linking Ionic 4/Angular and Angular 4 with Firebase Using AngularFire2 </a>
+### <a id="ionic-firebase-connection">Linking Ionic 5/Angular and Angular 4 with Firebase Using AngularFire2 </a>
 
 There are many ways to integrate Firebase with Ionic and Angular. Let's cover one of them--- AngularFire2.
 
@@ -113,17 +115,17 @@ There are many ways to integrate Firebase with Ionic and Angular. Let's cover on
 > * AngularFirestore. ngrx friendly - Integrate with ngrx using
 > * AngularFire's action based APIs.--[https://github.com/angular/angularfire2](https://github.com/angular/angularfire2)
 
-Now let's see an example of how to use **AngularFire2** with Ionic 4/Angular.
+Now let's see an example of how to use **AngularFire2** with Ionic 5/Angular.
 
 ## Email and Password Authentication with Firebase
 
 In this application, I’m going to use the traditional Email and Password Authentication scheme.
 
-### Create an Ionic 4/Angular Application
+### Create an Ionic 5/Angular Application
 
 So make sure you’ve got the newest Ionic CLI. If not, either update or install the latest version of Ionic CLI then follow these steps:
 
-Let's start by generating a new Ionic 4/Angular project. Head over to your terminal or command prompt (on Windows) then run the following:
+Let's start by generating a new Ionic 5/Angular project. Head over to your terminal or command prompt (on Windows) then run the following:
 
 ```bash
 $ ionic start firebaseAuthExample blank --type=angular
@@ -558,7 +560,7 @@ You can watch the authentication state by subscribing to `this.fAuth.authState` 
 
 ## Conclusion
 
-In this tutorial we have seen how to add traditional email/password authentication and social sign in with Facebook to Ionic 4/Angular using Firebase and *angularfire2*. You can also authenticate your users with the other third party services and methods such as Twitter, Google, GitHub, SMS and Firebase Anonymous which we will cover in details in the next tutorials.     
+In this tutorial we have seen how to add traditional email/password authentication and social sign in with Facebook to Ionic 5/Angular using Firebase and *angularfire2*. You can also authenticate your users with the other third party services and methods such as Twitter, Google, GitHub, SMS and Firebase Anonymous which we will cover in details in the next tutorials.     
 
 
 

@@ -1,19 +1,23 @@
 ---
 layout: post
-title: "Angular 7/8 Authentication with JWT Tutorial"
+title: "Angular 9/8 JWT Authentication Tutorial with Example"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll learn, by example, how you can  implement JWT authentication in your Angular 7/8 application." 
-tags : [angular, angular8, angular-9-httpclient-examples]
+excerpt: "In this tutorial, you'll learn, by example, how you can  implement JWT authentication in your Angular 9/8 application" 
+categories: angular
+date: 2020-02-14
+tags : [angular, angular-9, angular-9-httpclient-examples]
 ---
 
-In this tutorial, you'll learn to implement JWT authentication in your Angular 7/8 applications by creating an example Angular service that can be used to handle authentication with JWT.
+In this tutorial, you'll learn to implement JWT authentication in your Angular 9/8 applications by creating an example Angular 9 service that can be used to handle authentication with JWT.
+
+## How to Implement JWT by Example in Angular 9?
 
 In this tutorial:
 
-- You'll start by installing the requirements of your project like Node.js, npm and the Angular CLI 8,
-- Next, you'll create your Angular 8 application,
+- You'll start by installing the requirements of your project like Node.js, npm and the Angular CLI 9,
+- Next, you'll create your Angular 9 application,
 - You'll setup `HttpClient` into your application,
-- You'll create an Angular 8 service than handles the JWT authentication,
+- You'll create an Angular 9 service than handles the JWT authentication,
 - Finally, you'll install and configure `angular-jwt` to attach JWT access tokens to requests. 
 
 > **Note**: For a more detailed tutorial that implements JWT authentication with Angular 8, Express and Node.js check out these tutorials: 
@@ -21,7 +25,7 @@ In this tutorial:
 >- [Angular 7/8 Tutorial: Building and Submitting a Login Form to a Node and Express.js JWT Authentication Server](/angular-tutorial-forms-authentication-expressjs.md)
 >- [Angular 7/8 Tutorial: Using Angular HttpClient with Node & Express.js - Example POST Requests](/angular-tutorial-httpclient-post)
 
-## Understanding JWT
+### Understanding JWT
 
 Before diving into practice, let's briefly understand what JWT is. 
 
@@ -41,9 +45,9 @@ To be able to complete this tutorial, you'll need to have a few requirements:
 - Next, you need to have Angular CLI 8 installed. If it's not installed, you simply need to run the `npm install -g @angular/cli` command to install the CLI globally on your system.
 - Finally, you need to have an Angular 8 project or simply run the `ng start angular-authentication-example` command and answer the CLI questions to generate your project.
 
-With these requirements installed, you should be ready to start creating your Angular 8 service that encapsulates all the code for implementing JWT authentication in your Angular application.
+With these requirements installed, you should be ready to start creating your Angular 9 service that encapsulates all the code for implementing JWT authentication in your Angular application.
 
-## Setting up `HttpClient`
+## Setting up Angular 9 `HttpClient`
 
 You need to setup `HttpClient` before being able to send HTTP requests to the server. We have previously done that in a previous [tutorial](https://www.techiediaries.com/angular-httpclient). You can either follow that tutorial for more information about using `HttpClient` or simply setup `HttpClient` by importing `HttpClientModule` from the `@angular/common/http` package and include it in the `imports` array of the application module.
 
@@ -75,9 +79,9 @@ Next, you simply need to import and inject `HttpClient` in your services and com
 
 In the next section, you'll create the JWT service.
 
-## Building the Authentication Service
+## Building the Angular 9 Authentication Service
 
-In this section, you'll create an Angular 8 service that encapsulates the logic for JWT authentication.
+In this section, you'll create an Angular 9 service that encapsulates the logic for JWT authentication.
 
 In your terminal, run the following command to generate a service with Angular CLI:
 
@@ -118,7 +122,7 @@ You server side app needs to implement JWT authentication and exposes a few endp
 
 Now, after creating the JWT service in your Angular 8 application, you need to implement the necessary methods that will be used to handle the authentication in your application.
 
-### Adding the `.login` Method
+## Adding the `.login` Method
 
 Let' start by defining the `.login` method. It should take an email and password parameters and return and RxJS `Observable`.
  
@@ -138,11 +142,11 @@ Next, you used the `.pipe` method which is a member of the RxJS `Observable` for
 
 > Make sure to import the `tap` operator using `import { tap } from 'rxjs/operators';`
 
-### Adding the `.register` Method
+## Adding the `.register` Method
 
 Just like the `.login` method, you also need to add a `.register` method that send a request to the server to register a user for the first time:
 
-In your Angular 8 service, add the following method:
+In your Angular 9 service, add the following method:
 
 ```ts
 register(email:string, password:string) {
@@ -154,7 +158,7 @@ register(email:string, password:string) {
 
 Again, you've used the `HttpClient.post` method to send a POST request to the server with the registration information (email and password) then used the `.pipe` and `tap` function to run a side effect that calls the `.login` method to logs the user in once the registration is done. 
 
-### Adding the `.logout` Method
+## Adding the `.logout` Method
 
 Next, you need to implement a `.logout` method that logs out the user. This method doesn't need to send any request to the server, all it needs to do is removing the JWT access token from the user's local storage. For example:
 
@@ -228,5 +232,5 @@ You also black-listed the `localhost:3000/auth/login` URL because it doesn't nee
 
 ## Conclusion
 
-In this tutorial, you learned how to implement JWT authentication in your Angular 8 application.
+In this tutorial, you learned how to implement JWT authentication in your Angular 9 application.
 
