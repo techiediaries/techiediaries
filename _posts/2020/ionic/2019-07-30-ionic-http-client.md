@@ -1,32 +1,35 @@
 ---
 layout: post
-title: "Building an Ionic 4/Angular HTTP Service to Communicate with A REST API"
+title: "Building an Ionic 5/Angular HTTP Service to Communicate with A REST API"
 image: "images/content/ionic3.jpg"
-excerpt: "In this tutorial, we'll see by example how to send HTTP (Ajax) requests to REST API servers (for calling APIs and consuming data) in Ionic 3 and Angular 4.3+ then how to mock requests using the HttpTestingController provider for unit-testing your apps without making real API calls." 
+excerpt: "In this tutorial, we'll see by example how to send HTTP (Ajax) requests to REST API servers (for calling APIs and consuming data) in Ionic 5 and Angular then how to mock requests using the HttpTestingController provider for unit-testing your apps without making real API calls." 
 tags : [ionic] 
+date: 2020-02-12
 featured: true
 ---
 
 
-This tutorial is part of a tutorial series titled ¨Ionic 4, Angular and RxJS Observables: Building an HTTP Service to Communicate with A REST API¨  that contains the following tutorials:
+This tutorial is part of a tutorial series titled ¨Ionic 5, Angular and RxJS Observables: Building an HTTP Service to Communicate with A REST API¨  that contains the following tutorials:
 
-* [Introduction and Building the API Back-End](https://www.techiediaries.com/ionic-http) 
+* [Introduction and Building the API Back-End](https://www.techiediaries.com/ionic-http/) 
 * Building an HTTP Service to Communicate with A REST API (this one) 
-* [Unit Testing Angular Services with HttpTestingController](https://www.techiediaries.com/angular-testing-httptestingcontroller)
+* [Unit Testing Angular Services with HttpTestingController](https://www.techiediaries.com/angular-testing-httptestingcontroller/)
 
 **In this tutorial we'll see how to create an Angular service/provider to encapsulate the code to communicate with The REST API back-end.**
 
 > **Note**: For a complete and detailed tutorial, check out:
 >
-> - [Ionic 4 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server](https://www.techiediaries.com/ionic-jwt-authentication-httpclient)
-> - [Ionic 4 Tutorial: Building and Theming a Login & Register UI with Angular Forms](https://www.techiediaries.com/ionic-ui-forms-theming)
+> - [Ionic 5 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server](https://www.techiediaries.com/ionic-jwt-authentication-httpclient)
+> - [Ionic 5 Tutorial: Building and Theming a Login & Register UI with Angular Forms](https://www.techiediaries.com/ionic-ui-forms-theming)
 
+
+## Sending API Calls in Ionic 5
 
 API calls, using *HttpClient* module, are asynchronous by nature since you need to wait for the response to come from the remote servers without blocking the app when still waiting.
 
 An HTTP Request will take some time to reach the API server and also the HTTP Response will need time to arrive so this needs to be running in the background before the data can be ready to be consumed.
 
-With Ionic 4/Angular you can make use of modern JavaScript APIs: **Promises** and **Observables** which provide high level abstractions to handle the asynchronous nature of data fetching and API consuming operations or any other operation that takes time to finish.
+With Ionic 5/Angular you can make use of modern JavaScript APIs: **Promises** and **Observables** which provide high level abstractions to handle the asynchronous nature of data fetching and API consuming operations or any other operation that takes time to finish.
 
 ### What's a Promise?
 
@@ -68,7 +71,7 @@ A service provider is an Angular abstraction which can be used in any other comp
 
 By following the DRY principle you place the code which interfaces with your back-end API in one place which makes the app easy maintainable.
 
-Now let's generate our API-interfacing service using the Ionic CLI. Head back to your terminal or command prompt then run the following command to generate a service provider
+Now let's generate our API-interfacing service using the Ionic CLI 5. Head back to your terminal or command prompt then run the following command to generate a service provider
 
   
 
@@ -119,7 +122,7 @@ export  class  AppModule {}
 
 The new Angular *HttpClient* API was introduced in Angular 4.3+. It is a better alternative to the existing HTTP API that lives in its own package `@angular/common/http`.
 
-In Angular 5, the old HTTP client which lives in `@angular/http` is deprecated so Angular and Ionic 3 developers need to migrate their existing apps to use the new *HttpClient* API.
+In Angular 5, the old HTTP client which lives in `@angular/http` is deprecated so Angular and Ionic 5 developers need to migrate their existing apps to use the new *HttpClient* API.
 
   
 
@@ -402,7 +405,7 @@ To subscribe to an Observable, we need to use the `.subscribe()` method, which t
 
 ### Adding the Products Page
 
-Use the Ionic CLI to generate a page for adding CRUD (Create, Read, Update and Delete) operations which will call the corresponding methods in the previously create service.
+Use the Ionic CLI 5 to generate a page for adding CRUD (Create, Read, Update and Delete) operations which will call the corresponding methods in the previously create service.
 
 So first we need to import the service using:
 
@@ -519,4 +522,4 @@ this.products = this.products.filter((e) =>  e.id !== product.id);
 
 ## Concluion
 
-This is the end of this tutorial where we have seen how to make HTTP requests in your Ionic 4/Angular app. The next tutorial in this tutorial series is: [Unit Testing Angular Services with HttpTestingController](https://www.techiediaries.com/angular-testing-httptestingcontroller)
+This is the end of this tutorial where we have seen how to make HTTP requests in your Ionic 5/Angular app. The next tutorial in this tutorial series is: [Unit Testing Angular Services with HttpTestingController](https://www.techiediaries.com/angular-testing-httptestingcontroller)

@@ -2,7 +2,8 @@
 layout: post
 title: "Ionic 4 SQLite Data Pagination"
 image: "images/content/inventory-manager-ionic-sqlite.png"
-excerpt: "In this tutorial, we'll add pagination to our Ionic 4 app built using Angular and SQlite." 
+excerpt: "In this tutorial, we'll add pagination to our Ionic 5 app built using Angular and SQlite." 
+date: 2020-02-13
 tags: ionic
 ---
 
@@ -10,7 +11,7 @@ tags: ionic
 
 In the previous part(s) we have: 
 
-- Created a new Ionic 4 project, 
+- Created a new Ionic 5 project, 
 - Added the Cordova SQLite plugin and its Ionic Native wrapper, 
 - Created a data service for interfacing with the SQLite database,
 - And implemented the various CRUD methods to create, read, update and delete data from the SQLite database.
@@ -218,7 +219,7 @@ Next, modify the `list(tableName)` method to return a pager object instead of th
 
 ## Conclusion 
 
-That's all we need for adding SQL pagination to our Ionic 4 application.
+That's all we need for adding SQL pagination to our Ionic 5 application.
 
 In the next tutorial, we will see how to use our data service to actually create, update, read and delete data from our SQLite database tables that we have previously created.
 

@@ -2,13 +2,13 @@
 layout: post
 title: "Ionic 4 Storage Tutorial and Example"
 image: "images/content/ionic.jpg"
-excerpt: "This tutorial will cover how to use Ionic 4/Angular local/native storage to easily store and persist key-value pairs and JSON objects. Ionic Storage abstracts all the available mechansims for data storage such as native Cordova SQLite and browser storage APIs like IndexedDB, WebSQL or localStorage."
-
+excerpt: "This tutorial will cover how to use Ionic 5/Angular local/native storage to easily store and persist key-value pairs and JSON objects. Ionic Storage abstracts all the available mechansims for data storage such as native Cordova SQLite and browser storage APIs like IndexedDB, WebSQL or localStorage."
+date: 2020-02-13
 tags : [ ionic] 
 ---
 
 
-This tutorial will cover how to use Ionic 4/Angular local/native storage to easily store and persist key-value pairs and JSON objects. Ionic Storage abstracts all available mechansims for data storage such as native Cordova SQLite and browser storage APIs like IndexedDB, WebSQL or localStorage.
+This tutorial will cover how to use Ionic 5/Angular local/native storage to easily store and persist key-value pairs and JSON objects. Ionic Storage abstracts all available mechansims for data storage such as native Cordova SQLite and browser storage APIs like IndexedDB, WebSQL or localStorage.
 
 The most convenient way will be automatically chosen depending on your use case or the underlying platform, for example for native apps running on mobile devices SQLite will be used for storage but for Progressive Web Apps running on the browser platform, where there is no native storage, either localStorage or IndexedDB will be used.
 
@@ -35,11 +35,11 @@ Next, just like any module you need to add it to the list of imports in `src/app
     })
     export class AppModule {}
 
-Now you are ready to use the Storge API in any component by simply injecting it via the component constructor. So let's create a full demo showing how you can use Storage API inside an Ionic 4/Angular application (either native app or progressive web app).
+Now you are ready to use the Storge API in any component by simply injecting it via the component constructor. So let's create a full demo showing how you can use Storage API inside an Ionic 5/Angular application (either native app or progressive web app).
 
-## Create an Ionic 4/Angular Project 
+## Create an Ionic 5/Angular Project 
 
-Open your terminal or command prompt and create an Ionic 4 project using the following command:
+Open your terminal or command prompt and create an Ionic 5 project using the following command:
 
     ionic start ionic-storage-example blank --type=angular
     
@@ -99,7 +99,7 @@ Values can be simple values such as strings and numbers or complex JSON objects.
 
 ## Conclusion
 
-That's all for this tutorial where we have seen how to use Ionic 4/Angular Storage class to persist key-value pairs and JSON objects. For advanced CRUD you may want to consider using Ionic Native SQLite or PouchDB.
+That's all for this tutorial where we have seen how to use Ionic 5/Angular Storage class to persist key-value pairs and JSON objects. For advanced CRUD you may want to consider using Ionic Native SQLite or PouchDB.
 
 
 

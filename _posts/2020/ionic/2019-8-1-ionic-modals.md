@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "Ionic 4/Angular Modals "
+title: "Ionic 5/Angular Modals "
 image: "images/content/ionic-modals.png"
-excerpt: "Understanding how to use Ionic 2/3 modals" 
+excerpt: "Understanding how to use Ionic 5/4 modals"
+date: 2020-02-12 
 tags : [ionic]
 ---
 
@@ -11,16 +12,16 @@ tags : [ionic]
     title="Ionic 2/3 modals " 
 %}
 
-In this tutorial, we are going to see how to use modals in Ionic 4/Angular apps by creating a simple demo app 
+In this tutorial, we are going to see how to use modals in Ionic 5/Angular apps by creating a simple demo app 
 so let's get started!
 
-First of all, We need to mention that we are using the Ionic CLI 4 so if you didn't yet upgrade to this release 
+First of all, We need to mention that we are using the Ionic CLI 5 so if you didn't yet upgrade to this release 
 make sure to use the equivalent commands for Ionic CLI prior versions.
 
 
-## Generating a New Ionic 4/Angular Project 
+## Generating a New Ionic 5/Angular Project 
 
-Before implementing our modal example, let's first generate a brand new Ionic 4 project based on Angular.
+Before implementing our modal example, let's first generate a brand new Ionic 5 project based on Angular.
 
 Go ahead and open your terminal window then type the following command: 
 
@@ -168,5 +169,5 @@ Now let's get the passed parameters using `NavParams`:
       
 ## Conclusion 
 
-This is the end of this tutorial. We have seen how to use modals in Ionic 4/Angular.
+This is the end of this tutorial. We have seen how to use modals in Ionic 5/Angular.
 

@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Ionic 4/Angular Tutorial: HTTP and RxJS Observables"
+title: "Ionic 5/Angular Tutorial: HTTP and RxJS Observables"
 image: "images/content/ionic3.jpg"
-excerpt: "In this tutorial, we'll see by example how to send HTTP (Ajax) requests to REST API servers (for calling APIs and consuming data) in Ionic 3 and Angular 4.3+ then how to mock requests using the HttpTestingController provider for unit-testing your apps without making real API calls." 
+excerpt: "In this tutorial, we'll see by example how to send HTTP (Ajax) requests to REST API servers (for calling APIs and consuming data) in Ionic 5 and Angular then how to mock requests using the HttpTestingController provider for unit-testing your apps without making real API calls." 
 tags : [ionic] 
+date: 2020-02-12
 featured: true
 ---
 
-**In this Ionic 4/Angular tutorial, we'll see by example how to send HTTP (AJAX) requests to REST API servers (for calling APIs and consuming data) in Ionic 4 and Angular.**
+**In this Ionic 5/Angular tutorial, we'll see by example how to send HTTP (AJAX) requests to REST API servers (for calling APIs and consuming data) in Ionic 5 and Angular.**
 
 
 > **Note**: For a complete and detailed tutorial, check out:

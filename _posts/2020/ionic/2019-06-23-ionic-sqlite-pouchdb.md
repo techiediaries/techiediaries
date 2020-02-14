@@ -1,20 +1,21 @@
 ---
 layout: post
-title: "Using NoSQL PouchDB and SQLite with Ionic 4 & Angular: A CRUD Example"
+title: "Using NoSQL PouchDB and SQLite with Ionic 5 & Angular: A CRUD Example"
 image: "images/content/ionic-sqlite-pouchdb2.jpg"
-excerpt: "In this tutorial we will learn how to create a CRUD (short for: Create, Read, Update and Delete) mobile application with Ionic 4/Angular (previously Ionic 3) using PouchDB and SQLite." 
+excerpt: "In this tutorial we will learn how to create a CRUD (short for: Create, Read, Update and Delete) mobile application with Ionic 5/Angular (previously Ionic 3) using PouchDB and SQLite"
+date: 2020-02-13 
 tags : [ionic]
 ---
 
 
 ![Ionic 4 PouchDB and SQLite](images/content/ionic-sqlite-pouchdb2.jpg)
 
-In this tutorial we will learn how to create a CRUD (Short for Create, Read, Update and Delete) mobile application with Ionic 4 and Angular (previously Ionic 3) using PouchDB and SQLite.
+In this tutorial we will learn how to create a CRUD (Short for Create, Read, Update and Delete) mobile application with Ionic 5 and Angular (previously Ionic 3) using PouchDB and SQLite.
 
 We will cover these points:
 
 * What is  PouchDB?
-* How to create a new Ionic 4/Angular project using the Ionic CLI 5?
+* How to create a new Ionic 5/Angular project using the Ionic CLI 5?
 * How to install the SQLite 2 Cordova plugin?
 * How to add the PouchDB library?
 * How to add the SQLite adapter for PouchDB?
@@ -35,7 +36,7 @@ So if you are ready! let's get started.
 
 PouchDB in an open source NoSQL (Not only SQL) browser database based on CouchDB. It's created for the sake of enabling developers to build offline first web applications i.e apps which are capable of working offline when there is no network connection, by storing data locally on the browser's databases such as the local storage or IndexedDB and also SQLite in case of mobile apps. And syncing data with a CouchDB server when the user is back online.
 
-For Ionic 4, you can either use local storage, IndexedDB or SQLite. The first two options have storage limits but they are faster. For an unlimited storage on mobile devices, either Android or iOS, you can use SQLite.   
+For Ionic 5, you can either use local storage, IndexedDB or SQLite. The first two options have storage limits but they are faster. For an unlimited storage on mobile devices, either Android or iOS, you can use SQLite.   
 
 PouchDB has many features. Let's see them briefly:
 
@@ -44,9 +45,9 @@ PouchDB has many features. Let's see them briefly:
 * It has a short learning curve: the PouchDB API is easy to learn and use.
 * It has syncing capabilities with a CouchDB server out of the box.
 
-## Create a New Ionic 4/Angular Project
+## Create a New Ionic 5/Angular Project
 
-Let's start by creating a new Ionic 4 project based on Angular, using Ionic CLI 5 (The latest version as of this writing). So go ahead and open the terminal on Mac/Linux or the command prompt in Windows the run the following command to generate a new project.
+Let's start by creating a new Ionic 5 project based on Angular, using Ionic CLI 5 (The latest version as of this writing). So go ahead and open the terminal on Mac/Linux or the command prompt in Windows the run the following command to generate a new project.
 
 ```bash
 $ ionic start ionic-pouchdb-sqlite blank --type=angular
@@ -62,9 +63,9 @@ Next, you need to add a bunch of dependencies for enabling PouchDB and SQLite to
 
 ### Installing SQLite Cordova Plugin
 
-On Ionic 4, the native SQLite database is the most adequate choice when it comes to storing data locally, because it allows you to have unlimited storage which is, unfortunately, not the case for localStorage or IndexedDB. Also SQLite is a file based and portable database.
+On Ionic 5, the native SQLite database is the most adequate choice when it comes to storing data locally, because it allows you to have unlimited storage which is, unfortunately, not the case for localStorage or IndexedDB. Also SQLite is a file based and portable database.
 
-You can add SQLite support to your Ionic 4 application using various Cordova plugins such as:
+You can add SQLite support to your Ionic 5 application using various Cordova plugins such as:
 
 * Cordova-sqlite-storage: The original Cordova plugin for SQLite.
 * cordova-plugin-sqlite-2: A fork of the previous plugin with extra features.
@@ -404,4 +405,4 @@ $ ionic run android
  
 ## Conclusion
 
-Throughout this tutorial, we have seen step by step how create an Ionic 4 and Angular mobile application from scratch using the Ionic CLI 5 and added the essential CRUD methods for creating, reading, updating and deleting items from a SQLIte database using PouchDB.  
+Throughout this tutorial, we have seen step by step how create an Ionic 5 and Angular mobile application from scratch using the Ionic CLI 5 and added the essential CRUD methods for creating, reading, updating and deleting items from a SQLIte database using PouchDB.  

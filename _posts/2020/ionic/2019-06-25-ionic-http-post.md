@@ -1,21 +1,24 @@
 ---
 layout: post
-title: "Ionic 4 HTTP POST with Angular by Example"
+title: "Ionic 5 HTTP POST with Angular by Example"
 image: "images/content/angular-httpclient.png"
-excerpt: "How to use HttpClient to make example HTTP Post Requests in Ionic 3" 
+excerpt: "How to use HttpClient to make example HTTP Post Requests in Ionic 5" 
+date: 2020-02-12
 tags : [ionic, angular-9-httpclient-examples] 
 ---
 
-In this Ionic 4/Angular tutorial, we'll learn how to send an example HTTP post request to a server (or post data to a server). Usually the POST data is submitted using a form by the user. In this example we'll be sending a simple JSON object. You can see how to post multipart form data in this [tutorial](https://www.techiediaries.com/ionic-formdata-multiple-file-upload-tutorial/). 
+In this Ionic 5/Angular tutorial, we'll learn how to send an example HTTP post request to a server (or post data to a server). Usually the POST data is submitted using a form by the user. In this example we'll be sending a simple JSON object. You can see how to post multipart form data in this [tutorial](https://www.techiediaries.com/ionic-formdata-multiple-file-upload-tutorial/). 
 
 > **Note**: For a complete and detailed tutorial, check out:
 >
-> - [Ionic 4 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server](https://www.techiediaries.com/ionic-jwt-authentication-httpclient)
-> - [Ionic 4 Tutorial: Building and Theming a Login & Register UI with Angular Forms](https://www.techiediaries.com/ionic-ui-forms-theming)
+> - [Ionic 5 JWT Authentication Tutorial: Using Angular HttpClient with Node & Express.js Server](https://www.techiediaries.com/ionic-jwt-authentication-httpclient)
+> - [Ionic 5 Tutorial: Building and Theming a Login & Register UI with Angular Forms](https://www.techiediaries.com/ionic-ui-forms-theming)
 
-In the [previous tutorial](https://www.techiediaries.com/ionic-http/), we've seen what's a REST API and RxJS. We also configured our Ionic 4/Angular application to use `HttpClient` and created (mocked) a REST server for testing. Now let's see how to send a POST request to our server.
+In the [previous tutorial](https://www.techiediaries.com/ionic-http/), we've seen what's a REST API and RxJS. We also configured our Ionic 5/Angular application to use `HttpClient` and created (mocked) a REST server for testing. Now let's see how to send a POST request to our server.
 
-> **Note**: This tutorial was originally created for Ionic 3. Ionic 4 is now framework agnostic but provides support for Angular via the `ionic/angular` package. Ionic 4/Angular is considered the next version of Ionic 3.
+> **Note**: This tutorial was originally created for Ionic 3. Ionic 5 is now framework agnostic but provides support for Angular via the `ionic/angular` package. Ionic 5/Angular is considered the next version of Ionic 3.
+
+## Adding an Ionic 5 Buttom for Sending Post Requests
 
 Start by opening the `src\app\home\home.page.html` file and update it by adding a button which will be used to call the method to send the post request:
 
@@ -23,18 +26,21 @@ Start by opening the `src\app\home\home.page.html` file and update it by adding 
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic 4/Angular POST Request Example
+      Ionic 5/Angular POST Request Example
     </ion-title>
   </ion-navbar>
 </ion-header>
  
 <ion-content padding>
   <p>
-      Sending a POST Request Example
+      Sending a POST Request Example with Ionic 5
   </p>
    <button ion-button (click)="sendPostRequest()">Post Data</button>
 </ion-content>
 ```
+
+
+## Sending Post Requests with Ionic 5 HttpClient
 
 Next, open the `src\app\home\home.page.ts` file and add the following changes:
 
@@ -84,4 +90,4 @@ Next, we define the `sendPostRequest()` method which will be called when the but
 
 ## Conclusion
 
-In this quick tutorial, we've seen to use the *HttpClient* service to send http POST data in Ionic 4/Angular applications.
+In this quick tutorial, we've seen to use the *HttpClient* service to send http POST data in Ionic 5/Angular applications.

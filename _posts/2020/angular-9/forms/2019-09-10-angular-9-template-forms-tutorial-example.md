@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Angular 9/8 Tutorial: Building and Submitting an Authentication Form (ngModel/ngForm/ngSubmit)"
+title: "Angular 9/8 Template Forms Tutorial: Example Authentication Form (ngModel/ngForm/ngSubmit)"
 image: "images/content/angular-httpclient.png"
 excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 7/8 to work with forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
-tags : [angular, angular8, angular-9-form-examples, angular-9-fullstack-examples, angular-9-tutorials] 
+categories: angular
+date: 2020-02-14
+tags : [angular, angular-9, angular-9-form-examples, angular-9-fullstack-examples, angular-9-tutorials] 
 ---
 
 In this tutorial, we'll learn to use the template-driven approach in Angular 9/8 to work with forms. We'll learn about the `NgForm`, `ngModel` and `ngSubmit` directives which are the essential concepts in template-based forms and how to create an authentication system with Node and Express.js

@@ -2,29 +2,30 @@
 layout: post
 title: "Ionic 4 Modals and SQLite Tutorial: Build a Product Manager App"
 image: "images/content/inventory-manager-ionic-sqlite.png"
-excerpt: " Using Ionic 4 with Cordova SQLite and Barcode scanner plugins to build a simple product stock manager mobile application for Android and iOS" 
+excerpt: " Using Ionic 5 with Cordova SQLite and Barcode scanner plugins to build a simple product stock manager mobile application for Android and iOS" 
+date: 2020-02-13
 tags: [ionic]
 ---
 
-In this tutorial, we'll use Ionic 4 and Angular to build a simple mobile application for managing stock products.
+In this tutorial, we'll use Ionic 5 and Angular to build a simple mobile application for managing stock products.
 
 We'll be using the SQLite plugin to persist data and the Barcode scanner plugin for scanning barcodes. We'll also make use of Ionic Modals to create our UI.
 
-Our example app can be used to manage an inventory of products. It's convenient for demonstarting various features of Ionic 4 that allows you to build real life apps for your clients.
+Our example app can be used to manage an inventory of products. It's convenient for demonstarting various features of Ionic 5 that allows you to build real life apps for your clients.
 
 In this tutorial, we are going to learn how to use the Cordova SQLite plugin to create and populate SQL database tables and how to use the Barcode Cordova plugin to scan product barcodes. 
 
-We are also going to see basic Ionic 4/Angular concepts such as components, providers, pages and modals.
+We are also going to see basic Ionic 5/Angular concepts such as components, providers, pages and modals.
 
 
-## Starting a New Ionic 4/Angular Project 
+## Starting a New Ionic 5/Angular Project 
 
 
-Let's start our journey by generating a blank Ionic 4/Angular app. 
+Let's start our journey by generating a blank Ionic 5/Angular app. 
 
 If this is your first time using Ionic, make sure you first setup your local development environment and install Ionic CLI 5 (The latest version as of this writing). 
 
-We'll be using Ionic 4 with Angular and TypeScript which is a superset of JavaScript with OOP concepts and strong types.
+We'll be using Ionic 5 with Angular and TypeScript which is a superset of JavaScript with OOP concepts and strong types.
 
 Now, open your terminal under Linux/MAC or command prompt under Windows and run the following command:
 
@@ -42,9 +43,9 @@ $ ionic serve
 
 Let's understand what we have done.
 
-We first generated a new Ionic 4 app based on Angular and the `blank` template, next we navigated inside the folder hosting the app files and we served the app using the `ionic serve` command. 
+We first generated a new Ionic 5 app based on Angular and the `blank` template, next we navigated inside the folder hosting the app files and we served the app using the `ionic serve` command. 
 
-You'll be able to play with your Ionic 4 app using a web browser from the `http://localhost:8100` address. 
+You'll be able to play with your Ionic 5 app using a web browser from the `http://localhost:8100` address. 
 
 ## Adding a target platform 
 
@@ -317,7 +318,7 @@ Open the `src/pages/home/home.page.html` and the following code:
 
 We are adding an Ionic List with four buttons which calls the `openModal()` method to open the specified page.
 
-## Creating Ionic 4 Modals
+## Creating Ionic 5 Modals
 
 Next, open the `src/pages/home/home.page.ts` file and add the `openModal()` method which opens a modal with the specified page passed as a parameter: 
 
@@ -350,7 +351,7 @@ export class HomePage {
 }
 ```
 
-## Creating Ionic 4 Pages
+## Creating Ionic 5 Pages
 
 Using Ionic CLI 5 create the following pages: 
 
@@ -374,6 +375,6 @@ That's the end of this tutorial!
 
 We have installed and configured Cordova SQlite plugin and created required database tables and diffrent pages of our app. We also added a simple UI with which four Ionic buttons to navigate in our application using Ionic modals.  
 
-See you on the next part to continue building our product stock management app with Ionic 4, Angular and SQLite.
+See you on the next part to continue building our product stock management app with Ionic 5, Angular and SQLite.
 
 

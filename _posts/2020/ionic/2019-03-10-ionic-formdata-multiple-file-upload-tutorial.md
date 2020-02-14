@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "Multiple Image/File Upload with Django, Ionic 4 and FormData"
+title: "Multiple Image/File Upload with Django, Ionic 5 and FormData"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this tutorial, you'll learn to implement multiple file upload with Ionic 4, Django and FormData" 
+excerpt: "In this tutorial, you'll learn to implement multiple file upload with Ionic 5, Django and FormData" 
 tags : [ python , django , ionic, angular-9-httpclient-examples, angular-fullstack-examples, angular-9-formdata-examples ] 
+date: 2020-02-14
 author: omar
 ---
 
-In this tutorial, you'll learn to implement multiple file upload with Ionic 4, Django and FormData.
+In this tutorial, you'll learn to implement multiple file upload with Ionic 5, Django and FormData.
 
-In a [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/), we've created a django RESTful application for uploading files using Django REST framework and Ionic 4.
+In a [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/), we've created a django RESTful application for uploading files using Django REST framework and Ionic 5.
 
-![Ionic 4 upload example](https://i.imgur.com/TW1UOOz.png)
+![Ionic 5 upload example](https://i.imgur.com/TW1UOOz.png)
 
 Since the backend code will be the same as we only need an `/upload` endpoint that accepts POST requests we'll simply clone the previous and start our django REST API server using the following command:
 
@@ -54,7 +55,7 @@ Here is some information about our restful server:
 
 ## Prerequisites
 
-This tutorial makes use of Ionic 4 with Angular and TypeScript so you need to the following prerequisites:
+This tutorial makes use of Ionic 5 with Angular and TypeScript so you need to the following prerequisites:
 
 - Node.js and npm installed on your system. You can simply head to the official website and get the binaries for your operating system. 
 - Working knowledge of TypeScript and Angular.
@@ -64,7 +65,7 @@ Now, let's get started!
 
 ## Installing Ionic CLI v4
 
-Let's install Ionic CLI 4 which is required to generate Ionic 4 projects. Open a new terminal and run the following command:
+Let's install Ionic CLI 4 which is required to generate Ionic 5 projects. Open a new terminal and run the following command:
 
 ```bash
 $ npm install -g @ionic/cli
@@ -72,7 +73,7 @@ $ npm install -g @ionic/cli
 
 > **Note**: You many need to add `sudo` before your command in linux (debian-based) and macOS systems to install npm modules globally. Otherwise you simply to fix your [npm permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally).  
 
-## Generating your Ionic 4 Project
+## Generating your Ionic 5 Project
 
 Next, you can generate a project based on Angular by running the following command:
 
@@ -336,7 +337,7 @@ Next, open the `src/app/upload/upload.page.scss` file and add these styles:
 
 This is a screenshot of the page:
 
-![Ionic 4 upload example](https://i.imgur.com/TW1UOOz.png)
+![Ionic 5 upload example](https://i.imgur.com/TW1UOOz.png)
 
 Finally, start your development server using:
 
@@ -346,4 +347,4 @@ $ ionic serve
 
 Head over to the `127.0.0.1:8100` address then select and drop some files and click on the **UPLOAD FILES** button:
 
-![Ionic 4 file upload example](https://i.imgur.com/pb4jsBW.png)
+![Ionic 5 file upload example](https://i.imgur.com/pb4jsBW.png)

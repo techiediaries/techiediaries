@@ -2,15 +2,16 @@
 layout: post
 title: "Ionic 4 SQLite Database CRUD Tutorial"
 image: "images/content/inventory-manager-ionic-sqlite.png"
-excerpt: " Part 2 of using Ionic 4 with SQLite and Barcode scanner to build a simple product management mobile application" 
+excerpt: " Part 2 of using Ionic 5 with SQLite and Barcode scanner to build a simple product management mobile application"
+date: 2020-02-13 
 tags: [ionic]
 ---
  
-In this second part of our tutorila series for building a simple real world products management app with Ionic 4, Angular and SQLite, we'll proceed by implementing our database CRUD operations ofr creating, reading, updating and deleting products from the database.
+In this second part of our tutorila series for building a simple real world products management app with Ionic 5, Angular and SQLite, we'll proceed by implementing our database CRUD operations ofr creating, reading, updating and deleting products from the database.
 
 Here is a summary of we have done on the previous part.
 
-- We created a new project based on Ionic 4 and Angular,
+- We created a new project based on Ionic 5 and Angular,
 - We installed both Cordova SQLite plugin and its Ionic Native wrapper,
 - We created and configured our data service to encapsulate SQLite operations.
 - We created our SQLite database and the various SQL tables (Products, Families, Locations and Transactions).
@@ -142,7 +143,7 @@ For now, we just use a `select *` SQL statement and we build the query with Type
 
 ## Conclusion 
 
-In this tutorial, we continued building our simple real world cross platform mobile application for managing products stock with Ionic 4 by implementing the SQLite CRUD (Create, Read, Update and Delete) operations.  
+In this tutorial, we continued building our simple real world cross platform mobile application for managing products stock with Ionic 5 by implementing the SQLite CRUD (Create, Read, Update and Delete) operations.  
 
 In the next part, we are going to improve the data read operation by adding pagination so we can 
 retrieve data from the SQLite database in small chuncks. This is a required step if you want to create a performant application that doesn't block your UI if the database contains large amounts of data.

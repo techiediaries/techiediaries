@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Ionic 4 React Tutorial: Build a Mobile App with Ionic 4, Axios and React"
+title: "Ionic 4 React Tutorial: Build a Mobile App with Ionic 5, Axios and React"
 image: "images/content/react.png"
-excerpt: "In this tutorial we'll look at how to use React with Ionic 4 and Axios to build a mobile application" 
+excerpt: "In this tutorial we'll look at how to use React with Ionic 5 and Axios to build a mobile application" 
+date: 2020-02-14
 tags : [react , ionic]
 ---
 
-In this tutorial we'll be using Ionic 4, Axios and React to build a news application. We'll be making use of [NewsAPI.org](www.newsapi.org) for getting news data and we'll be using the Axios client to send API calls to the News REST API.
+In this tutorial we'll be using Ionic 5, Axios and React to build a news application. We'll be making use of [NewsAPI.org](www.newsapi.org) for getting news data and we'll be using the Axios client to send API calls to the News REST API.
 
 ## Prerequisites
 
@@ -53,14 +54,14 @@ $ npm install @ionic/react react-router react-router-dom --save
 
 > **Note**:  At the time of this writing, `@ionic/react` **v0.0.5**(beta), `react-router` **v5.0.0** and `react-router-dom` **v5.0.0** will be installed.
 
-## How to Use Ionic 4 Components in React
+## How to Use Ionic 5 Components in React
 
-Open the `src/App.js` file and import Ionic 4 styles:
+Open the `src/App.js` file and import Ionic 5 styles:
 
 ```js
 import React, { Component } from 'react';
 
-// Import Ionic 4 styles
+// Import Ionic 5 styles
 import '@ionic/core/css/core.css';
 import '@ionic/core/css/ionic.bundle.css';
 
@@ -86,7 +87,7 @@ import {
 } from '@ionic/react';
 ```
 
-Next, change the `render()` method to create to create an Ionic 4 UI with a card:
+Next, change the `render()` method to create to create an Ionic 5 UI with a card:
 
 ```js
 class App extends Component {
@@ -211,7 +212,7 @@ class App extends Component {
 export default App;
 ```
 
-We store the articles in the `items` state variable after we fetch them with Axios. In the `render()` method we loop through the items state and display information related to each news article using an Ionic 4 card component.
+We store the articles in the `items` state variable after we fetch them with Axios. In the `render()` method we loop through the items state and display information related to each news article using an Ionic 5 card component.
 
 This is a screenshot of our app at this point:
 
@@ -219,7 +220,7 @@ This is a screenshot of our app at this point:
 
 ## Conclusion
 
-In this tutorial we used Ionic 4 with React and Axios to build a simple news application with a mobile UI. At this time, Ionic/React is still at beta, we'll be adding more tutorials later when it reaches a stable release.
+In this tutorial we used Ionic 5 with React and Axios to build a simple news application with a mobile UI. At this time, Ionic/React is still at beta, we'll be adding more tutorials later when it reaches a stable release.
 
 
 

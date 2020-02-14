@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "Build a CRM App with Ionic 4/Angular and TypeORM:  Custom Webpack Configuration [Part 1]"
+title: "Build a CRM App with Ionic 5/Angular and TypeORM:  Custom Webpack Configuration [Part 1]"
 image: "images/content/ionic.png"
-excerpt: "Throughout this tutorial series, we'll be building a CRM application with Ionic 4 and TypeORM. In this first tutorial we'll learn to integrate TypeORM with Ionic 4/Angular and a custom Webpack configuration" 
+excerpt: "Throughout this tutorial series, we'll be building a CRM application with Ionic 5 and TypeORM. In this first tutorial we'll learn to integrate TypeORM with Ionic 5/Angular and a custom Webpack configuration" 
+date: 2020-02-14
 tags : [ionic] 
 ---
 
 
-Throughout this tutorial series, we'll be building a CRM application with Ionic 4/Angular and TypeORM.
+Throughout this tutorial series, we'll be building a CRM application with Ionic 5/Angular and TypeORM.
 
 In this first part tutorial, we'll see how to:
 
-- Install the Ionic CLI v4,
-- Generate a new Ionic 4 project,
+- Install the Ionic CLI 5,
+- Generate a new Ionic 5 project,
 - Serve your application in development and use the browser to test it,
 - Install TypeORM from `npm`,
-- Set up and integrate TypeORM with your Ionic 4 project.
-- Use a custom webpack configuration with Ionic 4/Angular.
+- Set up and integrate TypeORM with your Ionic 5 project.
+- Use a custom webpack configuration with Ionic 5/Angular.
   
 Let's get started with the prerequisites!
 
@@ -27,7 +28,7 @@ In order to complete this tutorial, you will need a few requirements:
 - Node.js and NPM installed on your system;
 - Basic knowledge of TypeScript.
 
-## Installing Ionic CLI 4
+## Installing Ionic CLI 5
 
 [The Ionic command-line interface](https://ionicframework.com/docs/cli/) or CLI is the official tool for generating Ionic projects and work with them.
 
@@ -37,7 +38,7 @@ If you have Node and NPM installed in your machine, open a new terminal and run 
 $ npm install -g @ionic/cli
 ```
 
-## Creating an Ionic 4 Project
+## Creating an Ionic 5 Project
 
 After installing the Ionic CLI, you can now proceed to create a new project. Navigate to your working directory and run the following commands:
 
@@ -198,7 +199,7 @@ Next, change the `builder` property under the `serve` property to `@angular-buil
 
 Now, if you serve your application again, the custom Webpack configuration will be used and you should see **The custom config is used** message displayed in your terminal.
 
-![Ionic 4 custom webpack configuration](https://i.imgur.com/VGTVtcj.png)
+![Ionic 5 custom webpack configuration](https://i.imgur.com/VGTVtcj.png)
 
 
 

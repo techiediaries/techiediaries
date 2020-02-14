@@ -1,9 +1,11 @@
 ---
 layout: post
-title: "Angular 9/8 Tutorial: Login & Reactive Form Example with Validation"
+title: "Angular 9/8 Reactive Forms with Validation Tutorial by Example"
 image: "images/content/angular-httpclient.png"
 excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 9/8 to work with forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
-tags : [angular, angular8, angular-9-form-examples, angular-9-tutorials] 
+categories: angular
+date: 2020-02-14
+tags : [angular, angular-9, angular-9-form-examples, angular-9-tutorials] 
 ---
 
 
@@ -11,7 +13,7 @@ Reactive forms are one approach (alongside with the template-driven approach) of
 
 In this tutorial, we'll build a login form example with validation using the reactive or the model-driven approach.
 
-## Prerequisites
+## Prerequisites for Working with Reactive Forms in Angular 9
 
 You need to have Node.js and npm installed on your system. 
 
