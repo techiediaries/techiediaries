@@ -1,15 +1,18 @@
 ---
 layout: post
-title: "Multiple File/Image Upload with Django, Angular 7 and FormData"
+title: "Multiple File/Image Upload with Django 3, Angular 9 and FormData"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "Throughout this tutorial, we'll see how you can implement multiple file upload in Django and Django REST Framework with a step by step example. Our application will expose an /upload endpoint that accepts POST requests that contain the file posted with a multipart/form-data content type using FormData. For the frontend, we'll be using Angular 7 to create a simple interface that allows the user to select multiple files and upload them to the server via POST requests and FormData." 
+excerpt: "Throughout this tutorial, we'll see how you can implement multiple file upload in Django 3. We'll be using Angular 9 to create a simple interface that allows the user to select multiple files and upload them to the server via POST requests and FormData"
+date: 2020-02-14 
 tags : [ python , django , angular, angular-9-httpclient-examples, angular-fullstack-examples, angular-9-formdata-examples, angular-9-tutorials ] 
 author: omar
 ---
 
-In the [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/) we have seen how to implement file uploading in Django and Angular 7. In this tutorial, we'll see how to implement multiple file uploading.
+In the [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/) we have seen how to implement file uploading in Django and Angular 9. In this tutorial, we'll see how to implement multiple file uploading.
 
-It's recommended that you start from the previous tutorial to see detailed steps of how to create a django project, how to install Angular CLI and generate a new Angular 7 project along with services and components as we won't cover those basics in this part.
+It's recommended that you start from the previous tutorial to see detailed steps of how to create a django project, how to install Angular CLI and generate a new Angular 9 project along with services and components as we won't cover those basics in this part.
+
+## Cloning Angular 9 Django Upload App
 
 If you don't want to follow the steps from the previous part, you first need to get the project we've built. Open a new terminal and run the following command:
 
@@ -31,6 +34,8 @@ $ ng serve
 ```
 
 Your Angular application will be available from the `127.0.0.1:4200` address.
+
+## Running the Django 3 Upload Server
 
 Open a new terminal window and create a virtual environment using the following command:
 
@@ -63,7 +68,7 @@ Open your web browser and navigate to the `127.0.0.1:4200/profile` page where yo
 ![Django REST API File Upload with Angular 7](https://i.imgur.com/kg8YApY.png)
 
 
-## Adding Multiple File Upload with Angular 7
+## Adding Multiple File Upload with Angular 9
 
 Now, let's proceed to implement multiple file uploading. 
 
@@ -74,11 +79,16 @@ MEDIA_URL  =  '/media/'
 MEDIA_ROOT  =  os.path.join(BASE_DIR,  'media')
 ```
 
-We will be using the `ng2-file-upload` library which provides easy to use directives for working with file upload in Angular: 
+## Installing `ng2-file-upload`
+
+We will be using the `ng2-file-upload` library which provides easy to use directives for working with file upload in Angular 9: 
 
 ```bash
 $ npm install --save ng2-file-upload
 ```
+
+
+## Importing the File Upload Angular Module
 
 After installing this package, you will need to import `FileUploadModule` in your application module. Open the `src/app/app.module.ts` file and the following changes:
 
@@ -106,11 +116,13 @@ After adding `FileUploadModule` you'll be able to use the following directives i
 - The `ng2FileDrop` directive which will enable you to add an area where users can drag and drop multiple files, 
 - The `ng2FileSelect` directive which will enable you to add an input button for selecting multiple files.
 
+## Adding the Upload Input 
+
 Open the `src/app/profile/profile.component.html` file and the following content:
 
 {% raw %}
 ```html
-<h1>Django REST API with Angular 7 File Upload Example</h1>
+<h1>Django REST API with Angular 9 File Upload Example</h1>
 
 <div ng2FileDrop
 [ngClass]="{'drop-file-over': hasBaseDropZoneOver}"
@@ -184,6 +196,8 @@ Next, define the `getFiles()` method which return the array of files in the `upl
   }
 ```
 
+## Adding the Upload Method
+
 Finally, add the `upload()` method that will be called to actually upload the files to the Django server using `HttpClient` and `FormData`:
 
 ```ts
@@ -256,4 +270,4 @@ HTML5 provides the `FormData` interface which is equivalent to using a `multipar
 
 ## Conclusion
 
-In this tutorial, we've seen an example of multiple file upload with Angular 7 and Django. 
+In this tutorial, we've seen an example of multiple file upload with Angular 9 and Django 3. 
