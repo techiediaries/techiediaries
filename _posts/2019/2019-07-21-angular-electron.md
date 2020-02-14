@@ -1,51 +1,51 @@
 ---
 layout: post
-title: "Electron with Angular 8|7 Tutorial"
+title: "Electron with Angular 9/8 Tutorial"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn how to seamlessly integrate Angular 8 with Electron to build cross-platform desktop apps with the most powerful web technologies" 
-tags : [ angular , angular8 ] 
+excerpt: "In this tutorial, we'll learn how to integrate Angular 9 with Electron to build cross-platform desktop apps with the most powerful web technologies"
+date: 2020-02-13 
+tags : [ angular , angular-9] 
 ---
 
-In this tutorial, we'll learn how to easily integrate Angular 8 or 7 with Electron to build cross-platform desktop apps with the most powerful web technologies.
+In this tutorial, we'll learn how to easily integrate Angular 9/8 with Electron to build cross-platform desktop apps with the most powerful web technologies.
 
 ## Prerequisites
 
-You will need to have recent versions of Node and NPM installed on your machine and you'll also need Angular CLI 8 for creating the Angular project.
+You will need to have recent versions of Node and NPM installed on your machine and you'll also need Angular CLI 9 for creating the Angular project.
 
-## Creating an Angular Project
+## Creating an Angular 9 Project
 
-Let's start by creating an Angular 8 project. Open a new terminal and run the following command:
+Let's start by creating an Angular 9 project. Open a new terminal and run the following command:
 
 ```bash
-$ ng new angular-electron-demo
+$ ng new angular-9-electron-demo
 ``` 
 
-You'll be prompted for a couple questions about the routing and stylesheets format. You can choose the convenient answers for your project. Both answers won't actually affect how we integrate Electron with Angular. 
+You'll be prompted for a couple questions about the routing and stylesheets format. You can choose the convenient answers for your project. Both answers won't actually affect how we integrate Electron with Angular 9. 
 
 You optionally can see you app up and running in a web browser by executing the following commands:
 
 ```bash
-$ cd angular-electron-demo
+$ cd angular-9-electron-demo
 $ ng serve
 ```
 
 Next, simply go to the `http://localhost:4200` address.
 
-![Electron + Angular 8](https://www.diigo.com/file/image/badcbccczobedbqocdzdrrcspad/ElectronApp.jpg)
+![Electron + Angular 9](https://www.diigo.com/file/image/badcbccczobedbqocdzdrrcspad/ElectronApp.jpg)
 
 Now, let's see how we can integrate this app with Electron.
 
 
-## Installing Electron
+## Installing Electron in your Angular 9 Project
 
-Make sure you are inside your Angular project and run the following command to install Electron as a development dependency:
+Make sure you are inside your Angular 9 project and run the following command to install Electron as a development dependency:
 
 ```bash
 $ cd angular-electron-demo
 $ npm install --save-dev electron@latest
 ```
 
-At this time, **electron v5.0.6** will be installed. 
 
 ## Creating the Electron App
 
@@ -99,7 +99,7 @@ Go to the  `angular.json`  file in your project's folder,  and change the value 
 
 ```javascript
       "projects": {
-        "electron-angular-demo": {
+        "electron-angular-9-demo": {
           "root": "",
           "sourceRoot": "src",
           "projectType": "application",
@@ -118,16 +118,16 @@ Next, in the  `package.json`  file, add the  `main`  key with the value set to  
 
 ```json
     {
-      "name": "angular-electron-demo",
+      "name": "angular-9-electron-demo",
       "version": "0.0.0",
       "main": "main.js",
       // [...]
     }
 ```
 
-## Integrating Angular & Electron 
+## Integrating Angular 9 & Electron 
 
-Next, add a script for conveniently starting the Electron app after building the Angular project:
+Next, add a script for conveniently starting the Electron app after building the Angular 9 project:
 
 ```json
     {
@@ -158,13 +158,13 @@ $ npm run start:electron
 
 Your app should be compiled and started as the following screenshot:
 
-![Electron + Angular 8](https://www.diigo.com/file/image/badcbccczobpbrrarrzdrsospbd/Electron+and+Angular+8.jpg)
+![Electron + Angular 9](https://www.diigo.com/file/image/badcbccczobpbrrarrzdrsospbd/Electron+and+Angular+8.jpg)
 
-## Solving the "Failed to load module script" Issue with Angular 8 
+## Solving the "Failed to load module script" Issue with Angular 9 
 
-If you are using the latest Angular 8 version, your Electron app will be started but without the Angular app due to a **Failed to load module script** error:
+If you are using the latest Angular 9 version, your Electron app will be started but without the Angular app due to a **Failed to load module script** error:
 
-This is because Angular 8 uses [differential loading](https://web.dev/codelab-serve-modern-code)  which basically means we'll get two builds, a modern es2015 build and an ES5 legacy build. The web browser will load the right build based on its capabilities.
+This is because Angular 8+ uses [differential loading](https://web.dev/codelab-serve-modern-code)  which basically means we'll get two builds, a modern es2015 build and an ES5 legacy build. The web browser will load the right build based on its capabilities.
 
 You can solve this issue in many ways by telling the TypeScript compiler to output a legacy ES5 build. 
 
@@ -181,4 +181,4 @@ That's it. This should resolve the problem and load the Angular 8 app inside the
 
 ## Conclusion
 
-In this quick tutorial, we've seen how to integrate Angular 8 with Electron. 
+In this quick tutorial, we've seen how to integrate Angular 9 with Electron. 
