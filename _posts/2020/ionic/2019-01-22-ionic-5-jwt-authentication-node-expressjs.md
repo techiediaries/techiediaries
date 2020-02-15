@@ -3,7 +3,7 @@ layout: post
 title: "Ionic 5/Angular JWT Authentication Tutorial: Node & Express.js Server"
 image: "images/content/angular-httpclient.png"
 excerpt: "In this tutorial, we'll learn to implement JWT authentication with Ionic 5, Angular and Express.js" 
-categories: angular
+categories: ionic
 date: 2020-02-13
 tags : [ionic, ionic-5, angular-9-httpclient-examples] 
 ---
