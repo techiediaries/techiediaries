@@ -1,14 +1,20 @@
 ---
 layout: post
-title: "Angular 7|6 with PHP and MySQL RESTful CRUD Example & Tutorial"
+title: "Angular 9/8 with PHP and MySQL Database: REST CRUD Example & Tutorial"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll learn to create an example Angular 7 application with a PHP REST API on top of a MySQL database." 
-tags : [php , angular, mysql, angular-fullstack-examples, angular-9-tutorials]
+excerpt: "In this tutorial, you'll learn to create an example Angular 9/8 application with a PHP REST API on top of a MySQL database" 
+date: 2020-02-15
+categories: angular
+tags : [php , angular, angular-9, mysql, angular-fullstack-examples, angular-9-tutorials]
 ---
  
-In this tutorial, you'll create an example REST API CRUD Angular 7 application with PHP and MySQL back-end.
+In this tutorial, you'll learn to create an example REST API CRUD app with Angular 9/8, PHP and a MySQL database.
 
-You will be creating a simple RESTful API that supports GET, POST, PUT and DELETE requests and allow you to perform CRUD operations against a MySQL database to create, read, update and delete records from a database.
+## Building a Backend with PHP and MySQL Database
+
+You will be creating a simple REST API that supports GET, POST, PUT and DELETE requests and allow you to perform CRUD operations against a MySQL database to create, read, update and delete records from a database.
+
+## The Design of the MySQL Database
 
 For the application design, It's a simple interface for working with vehicle insurance policies. For the sake of simplicity, you are only going to add the following attributes to the `policies` database table:
 
@@ -18,21 +24,21 @@ For the application design, It's a simple interface for working with vehicle ins
 
 This is of course far from being a complete database design for a fully working insurance system. Because at least you need to add other tables like employees, clients, coverage, vehicles and drivers etc. And also the relationships between all these entities. 
 
-## Prerequisites 
+## Building a Full-Stack PHP/Angular 9 App: Prerequisites 
 
 In this tutorial we assume you have the following prerequisites:
 
 - The MySQL database management system installed on your development machine,
 - PHP installed on your system (both these first requirements are required by the back-end project),
-- Node.js 8.9+ and NPM installed in your system. This is only required by your Angular project.
+- Node.js 8.9+ and NPM installed in your system. This is only required by your Angular 9 project.
 
 You also need to have a working experience with PHP and the different functions that will be used to create the SQL connection, getting the GET and POST data and returning JSON data in your code.
 
-You need to be familiar with TypeScript, a superset of JavaScript that's used with Angular.
+You need to be familiar with TypeScript, a superset of JavaScript that's used with Angular 9.
  
-A basic knowledge of Angular is preferable but not required since you'll go from the first step until your create a project that communicates with a PHP server. 
+A basic knowledge of Angular 9 is preferable but not required since you'll go from the first step until your create a project that communicates with a PHP server. 
 
-> Also read [PHP Image/File Upload Tutorial and Example [FormData and Angular 7 Front-End]](https://www.techiediaries.com/php-file-upload-tutorial) 
+> Also read [PHP Image/File Upload Tutorial and Example [FormData and Angular 9 Front-End]](https://www.techiediaries.com/php-file-upload-tutorial) 
 
 ## Creating the PHP Application
 
@@ -41,12 +47,12 @@ Let's start by creating a simple PHP script that connects to a MySQL database an
 Create a folder for your project:
  
 ```bash
-$ mkdir angular-php-app
-$ cd angular-php-app
+$ mkdir angular-9-php-app
+$ cd angular-9-php-app
 $ mkdir backend
 ```
 
-You create the `angular-php-app` that will contain the full front-end and back-end projects. Next, you navigate inside it and create the `backend` folder that will contain a simple PHP script that implements a simple CRUD REST API against a MySQL database.
+You create the `angular-9-php-app` that will contain the full front-end and back-end projects. Next, you navigate inside it and create the `backend` folder that will contain a simple PHP script that implements a simple CRUD REST API against a MySQL database.
 
 Next, navigate into your `backend` project and create an `api` folder. 
 
@@ -78,7 +84,7 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 
 These lines are used to add response headers such as CORS and the allowed methods (PUT, GET, DELETE and POST). 
 
-Setting CORS to `*` will allow your PHP server to accept requests from another domain where the Angular 7 server is running from without getting blocked by the browser by reason of the **Same Origin Policy**. In development, you'll be running the PHP server from `localhost:8080` port and Angular from `localhost:4200` which are considered as two distinct domains.
+Setting CORS to `*` will allow your PHP server to accept requests from another domain where the Angular 9  server is running from without getting blocked by the browser by reason of the **Same Origin Policy**. In development, you'll be running the PHP server from `localhost:8080` port and Angular from `localhost:4200` which are considered as two distinct domains.
 
 Next, add:
  
@@ -312,14 +318,14 @@ For sending test requests, you can use REST clients such as Postman or cURL befo
 
 Leave your server running and open a new terminal.
 
-## Creating the Angular 7 Project
+## Creating the Angular 9  Project
 
-Now that you've created the RESTful API with a PHP script, you can proceed to create your Angular 7 project.
+Now that you've created the RESTful API with a PHP script, you can proceed to create your Angular 9  project.
 
-Read the second part: [Angular 7|6 with PHP: Consuming a RESTful CRUD API with HttpClient and Forms](https://www.techiediaries.com/php-angular-crud-api-httpclient-forms)
+Read the second part: [Angular 9 with PHP: Consuming a RESTful CRUD API with HttpClient and Forms](https://www.techiediaries.com/php-angular-crud-api-httpclient-forms)
 
 ## Conclusion
 
 In this tutorial, you have created a PHP RESTful API that can be used to execute CRUD operations against a MySQL database to create, read, update and delete insurance policies. 
 
-You have enabled CORS so you can use two domains `localhost:8000` and `localhost:4200` for respectively serving PHP and Angular 7 and being able to send requests from Angular to PHP without getting blocked by the Same Origin Policy rule in web browsers. 
+You have enabled CORS so you can use two domains `localhost:8000` and `localhost:4200` for respectively serving PHP and Angular 9 and being able to send requests from Angular to PHP without getting blocked by the Same Origin Policy rule in web browsers. 

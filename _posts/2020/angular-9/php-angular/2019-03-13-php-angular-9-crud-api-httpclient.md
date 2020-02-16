@@ -1,35 +1,39 @@
 ---
 layout: post
-title: "Angular 7|6 with PHP: Consuming a RESTful CRUD API with HttpClient and Forms"
+title: "Angular 9/8 with PHP: Consuming a RESTful CRUD API with HttpClient and Forms"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll learn to create an example Angular 7 application with a PHP REST API on top of a MySQL database." 
+excerpt: "In this tutorial, you'll learn to create an example Angular 7 application with a PHP REST API on top of a MySQL database"
+date: 2020-02-15
+categories: angular 
 tags : [php , angular, mysql, angular-9-httpclient-examples, angular-9-form-examples,  angular-fullstack-examples]
 author: kaima
 ---
 
-In the [previous tutorial](https://www.techiediaries.com/php-angular), you have implemented the PHP and MySQL backend that exposes a REST API for working with an insurance database. Let's now create the Angular 7 backend.
+In the [previous tutorial](https://www.techiediaries.com/angular/angular-9-php-mysql-database/), you have implemented the PHP and MySQL backend that exposes a REST API for working with an insurance database. Let's now create the Angular 9 backend.
 
-In this tutorial, you'll learn how to use `HttpClient` to make HTTP calls to a REST API and use template-based forms to submit data. 
+## Connecting with a PHP Backend with Angular 9 HttpClient
 
-Now that you've created the RESTful API with a PHP script, you can proceed to create your Angular 7 project.
+In this tutorial, you'll learn how to use `HttpClient` in Angular 9 to make HTTP calls to a REST API and use template-based forms to submit data. 
 
-## Installing Angular CLI 7
+Now that you've created the RESTful API with a PHP script, you can proceed to create your Angular 9 project.
 
-The recommended way of creating Angular projects is through using Angular CLI, the official tool created by the Angular team. The latest and best version yet is Angular CLI 7 so head back to another terminal window and run the following command to install the CLI:
+## Installing Angular CLI 9
+
+The recommended way of creating Angular projects is through using Angular CLI, the official tool created by the Angular team. The latest and best version yet is Angular CLI 9 so head back to another terminal window and run the following command to install the CLI:
 
 ```bash
 $ npm install -g @angular/cli
 
 ```
 
-> **Note**: This will install Angular CLI globally so make sure you have configured npm to install packages globally without adding  `sudo`  in Debian systems and macOS or using an administrator command prompt on Windows. You can also just fix your [npm permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) if you get any issues
+> **Note**: This will install Angular CLI 9 globally so make sure you have configured npm to install packages globally without adding  `sudo`  in Debian systems and macOS or using an administrator command prompt on Windows. You can also just fix your [npm permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) if you get any issues
 
-## Generating a New Project
+## Generating a Angular 9 New Project
 
-That's it! You can now use the CLI to create an Angular 7 project using the following command:
+That's it! You can now use the CLI to create an Angular 9 project using the following command:
 
 ```bash
-$ cd angular-php-app
+$ cd angular-9-php-app
 $ ng new frontend
 
 ```
@@ -46,7 +50,7 @@ $ ng serve
 
 You can access the frontend application by pointing your browser to the  [`http://localhost:4200`](http://localhost:4200/)  address.
 
-## Setting up `HttpClient` & Forms
+## Setting up Angular `HttpClient` & Forms
 
 Angular provides developers with a powerful HTTP client for sending HTTP requests to servers. It's based on the `XMLHttpRequest` interface supported on most browsers and has a plethora of features like the use of RxJS Observable instead of callbacks or promises, typed requests and responses and interceptors.  
 
@@ -82,9 +86,9 @@ export class AppModule { }
 ```
 That's it! You can now use `HttpClient` in your components or services via dependency injection.
 
-## Creating an Angular Service
+## Creating an Angular 9 Service
 
-Let's now, create an Angular service that will encapsulate all the code needed for interfacing with the RESTful PHP backend. 
+Let's now, create an Angular 9 service that will encapsulate all the code needed for interfacing with the RESTful PHP backend. 
 
 Open a new terminal window, navigate to your `frontend` project and run the following command:
 
@@ -184,9 +188,9 @@ Finally, add the `deletePolicy()` to delete policies from the SQL database:
 
 That's all for the service.
 
-## Creating the Angular Component
+## Creating the Angular 9 Component
 
-After creating the service that contains the CRUD operations, let's now create an Angular component that will call the service methods and wil contain the table to display policies and a form to submit a policy to the PHP backend.
+After creating the service that contains the CRUD operations, let's now create an Angular 9 component that will call the service methods and wil contain the table to display policies and a form to submit a policy to the PHP backend.
 
 head back to your terminal and run the following command:
 
@@ -399,4 +403,4 @@ This is a screenshot of the page after adding some minimal styling:
 
 ## Conclusion
 
-In this tutorial, we learned how to create a RESTful CRUD application with PHP, MySQL and Angular 7.
+In this tutorial, we learned how to create a RESTful CRUD application with PHP, MySQL and Angular 9.
