@@ -9,7 +9,13 @@ tags : [angular , angular-9, angular-9-tutorials]
 
 In this tutorial, we'll be learning about Angular 9 SEO and we'll see by example in a 3 easy steps how you can render your Angular 9 application on the server to make it SEO friendly and boost its performance using the Angular Universal technology.
 
-Let's get started!
+## Why you Need SEO in Angular 9?
+
+Search Engine Optimization or SEO is an important feature in any web application because they allow your app to be discovered by search engines and social media networks. 
+
+You can build SEO-friendly Angular apps by server-rendering your apps with Angular Universal.
+
+Let's see how to do that by example!
 
 ## Step 1 - Setting up Angular 9 CLI and Initializing a Project
 
