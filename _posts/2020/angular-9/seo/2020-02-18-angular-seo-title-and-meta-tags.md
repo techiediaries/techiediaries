@@ -1,19 +1,22 @@
 ---
 layout: post
-title: "Angular 7/8 SEO: Adding Title and Meta Tags to Your Universal App"
+title: "Angular 9/8 SEO: Adding Title and Meta Tags to Your Universal App"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll see in a 3 easy steps how you can render your Angular 8 application on the server to make it SEO-friendly and boost its performance using the Angular Universal technology" 
 tags : [angular , angular8] 
 ---
 
-In the previous tutorial, we've seen how to do server-side rendering of our Angular 8 application to make our app SEO friendly and increase the performance. Let's now learn how to add  meta tags to our app which is also important for SEO.
+In the previous tutorial, we've seen how to do server-side rendering of our Angular 9 application to make our app SEO friendly and increase the performance. Let's now learn how to add  meta tags to our app which is also important for SEO.
+
+
+## Setting Meta and Title Tags in Angular 9 for SEO Purposes
 
 Angular provides the `Meta` and `Title` services that allows you to either get or set the HTML meta tags and title.
 
 In the previous tutorial, we've performed the following steps:
 
-- Step 1 - Setting up Angular CLI and Initializing a Project
-- Step 2 - Setting up Angular Universal 
+- Step 1 - Setting up Angular 9 CLI and Initializing a Project
+- Step 2 - Setting up Angular 9 Universal 
 - Step 3 - Building and Serving the App with Express Server
 
 Now, let's do one more step!
@@ -28,7 +31,7 @@ import { Title, Meta } from '@angular/platform-browser';
 
 ```
 
-Next, inject both services via the component constructor:
+Next, inject both Angular 9 services via the component constructor:
 
 ```ts
 @Component({
@@ -37,7 +40,7 @@ Next, inject both services via the component constructor:
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Universal Example';
+  title = 'Angular 9 Universal Example';
 
   constructor(private titleService: Title, private metaService: Meta) {}
 }
@@ -71,9 +74,9 @@ Next, add the `ngOnInit()` method:
   }
 ```
 
-## Step 5 - Rebuild and Serve your App
+## Step 5 - Rebuild and Serve your Angular 9 App
 
-Head back to your terminal, rebuild and serve the app using the following commands:
+Head back to your terminal, rebuild and serve your Angular 9 app using the following commands:
 
 ```bash
 $ npm run build:ssr 
