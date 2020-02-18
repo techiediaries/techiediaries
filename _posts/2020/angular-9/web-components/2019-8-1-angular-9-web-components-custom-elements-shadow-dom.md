@@ -1,51 +1,58 @@
 ---
 layout: post
-title: "Web Components: Custom Elements & Shadow DOM with Angular 7/8"
+title: "Angular 9 Web Components: Custom Elements & Shadow DOM"
 author: team
-excerpt: "Throughout this tutorial, we’ll teach you to create a native web component using the latest Angular 8 version. Part of standard web components are custom elements and shadow DOM which provide a way to extend HTML by creating your custom HTML tags and encapsulating the DOM tree and CSS styles behind other elements. " 
-tags : [angular, angular8, javascript]
+excerpt: "Throughout this tutorial, we’ll teach you to create a native web component using the latest Angular 9 version. Part of standard web components are custom elements and shadow DOM which provide a way to extend HTML by creating your custom HTML tags and encapsulating the DOM tree and CSS styles behind other elements"
+date: 2020-02-18
+categories: angular 
+tags : [angular, angular-9, javascript]
 ---
 
-Throughout this tutorial, we’ll teach you to create a native web component using the latest Angular 8 version. Part of standard web components are custom elements and shadow DOM which provide a way to extend HTML by creating your custom HTML tags and encapsulating the DOM tree and CSS styles used inside your components behind your custom elements. 
+Throughout this tutorial, we’ll teach you to create a native web component using the latest Angular 9 version. 
+
+## What is a Custom Element and Shadow DOM?
+
+Part of standard web components are custom elements and shadow DOM which provide a way to extend HTML by creating your custom HTML tags and encapsulating the DOM tree and CSS styles used inside your components behind your custom elements. 
 
 
-> **Note**: This tutorial is intended for Angular developers. If you want to build a web component using plain JavaScript, you need to use the native APIs for custom elements and Shadow DOM. Instead of the native JavaScript APIs, we’ll be using Angular Elements and the ViewEncapsulation API which provide an easy way to build web components.  
+> **Note**: This tutorial is intended for Angular 9 developers. If you want to build a web component using plain JavaScript, you need to use the native APIs for custom elements and Shadow DOM. Instead of the native JavaScript APIs, we’ll be using Angular 9 Elements and the ViewEncapsulation API which provide an easy way to build web components.  
 
+## How to Create a Custom Elements with Angular 9?
 
 We’ll be building a simple contact form as a reusable custom element that you can include in any JavaScript app to provide a way for users to contact you. We’ll use [FormSpree](https://formspree.io/), a form backend that will allow you to connect your form to their endpoint and email you the submissions. No P*HP, Javascript or sign up required.*
 
 
-Thanks to the [Custom Elements](https://html.spec.whatwg.org/multipage/scripting.html#custom-elements) spec which is implemented in modern browsers, web developers can **create their own HTML tags**, improve and customize the existing HTML tags, or build reusable components that can be used in vanilla JavaScript or in other libraries or frameworks like Angular, React or Vue etc. 
+Thanks to the [Custom Elements](https://html.spec.whatwg.org/multipage/scripting.html#custom-elements) spec which is implemented in modern browsers, web developers can **create their own HTML tags**, improve and customize the existing HTML tags, or build reusable components that can be used in vanilla JavaScript or in other libraries or frameworks like Angular 9, React or Vue etc. 
 
 Custom Elements is a part of [web components](http://webcomponents.org/) and it simply provides a native and standards-based way to build reusable components using vanilla JavaScript, HTML and CSS.
 
-In this tutorial, we’ll follow another approach, we’ll be creating a web component but with Angular instead of vanilla JavaScript. This will allow you to use your Angular components as standard web components and as a result they can be reused not just inside an Angular project but in any JavaScript app.
+In this tutorial, we’ll follow another approach, we’ll be creating a web component but with Angular 9 instead of vanilla JavaScript. This will allow you to use your Angular 9 components as standard web components and as a result they can be reused not just inside an Angular 9 project but in any JavaScript app.
 
 
 > **Note**: Building your web app using web components and custom elements will make it future-proof since it will use standardized native browser APIs that are guaranteed to exist for decades and not depend on one framework or library.
 > Popular high profile websites like YouTube are built completely with web components. 
 
  
-Using Angular to build your web components or custom HTML tags has some benefits over using vanilla JavaScript since you’ll have many advanced features like data binding and dependency injection to build your component and finally export it as a reusable web component. 
+Using Angular 9 to build your web components or custom HTML tags has some benefits over using vanilla JavaScript since you’ll have many advanced features like data binding and dependency injection to build your component and finally export it as a reusable web component. 
 
-So, you’ll have the advantages of both worlds, the advanced patterns and features of Angular and the native usability of the web components across web browsers without a framework runtime.   
-
-
-> **Note**: If you are coming from a class-based OOP language like Java and want to build web components, you might find it easier to use Angular with TypeScript than using JavaScript and native browser APIs.  
+So, you’ll have the advantages of both worlds, the advanced patterns and features of Angular 9 and the native usability of the web components across web browsers without a framework runtime.   
 
 
-
-## Angular Components
-
-At the heart of Angular is the concept of a component. 
-
-An Angular component can be defined as a piece of code that controls a part of the UI. It can have inputs, outputs, and life cycle events but can be only interpreted by the Angular runtime. 
-
-Luckily for us, Angular also provides a core package called `elements` that can be used to easily export the Angular component to a native web component or custom element.
+> **Note**: If you are coming from a class-based OOP language like Java and want to build web components, you might find it easier to use Angular 9 with TypeScript than using JavaScript and native browser APIs.  
 
 
 
-# Defining Web Components 
+## Angular 9 Components
+
+At the heart of Angular 9 is the concept of a component. 
+
+An Angular 9 component can be defined as a piece of code that controls a part of the UI. It can have inputs, outputs, and life cycle events but can be only interpreted by the Angular 9 runtime. 
+
+Luckily for us, Angular 9 also provides a core package called `elements` that can be used to easily export the Angular 9 component to a native web component or custom element.
+
+
+
+## Defining Web Components 
 
 Web components are a set of native browser standards that include:
 
@@ -68,48 +75,48 @@ The `@angular/elements` package provides a `[createCustomElement](https://angula
 Let’s get started with the prerequisites of this tutorial:
 
 
-- Working knowledge of TypeScript and Angular is necessary since we are using Angular to create our web component,
-- You also need to have Node.js and NPM installed on your system along with Angular CLI. You can simply run `npm install -g @angular/cli` to install the CLI.
+- Working knowledge of TypeScript and Angular is necessary since we are using Angular 9 to create our web component,
+- You also need to have Node.js and NPM installed on your system along with Angular 9 CLI. You can simply run `npm install -g @angular/cli` to install the CLI.
 
 
-## Generating a project with Angular CLI
+## Generating a project with Angular 9 CLI
 
 Open a new terminal and run the following command:
 
 
-    $ ng new angular-custom-element
+    $ ng new angular-9-custom-element
 
 This will prompt you if you **Would you like to add Angular routing?** Answer with **No** and **Which stylesheet format would you like to use?** Let’s keep it simple and pick **CSS**.
 
-The CLI will generate the basic files and install the dependencies and you’ll have an Angular project ready to be served using the following commands:
+The CLI will generate the basic files and install the dependencies and you’ll have an Angular 9 project ready to be served using the following commands:
 
 
-    $ cd angular-custom-element
+    $ cd angular-9-custom-element
     $ ng serve
 
 Your web application will be available from the http://localhost:4200 address.
 
 
 
-## Adding Angular Elements
+## Adding Angular 9 Elements
 
 
-Angular Elements takes care of transforming your Angular component(s) to custom elements that can be used to extend HTML with new tags without knowing anything about the low level API.
+Angular 9 Elements takes care of transforming your Angular 9 component(s) to custom elements that can be used to extend HTML with new tags without knowing anything about the low level API.
 
 
-> **Note**: You don’t have to know anything about the Custom Elements API to build custom elements and your component users don’t have to know anything about Angular to use your custom element or web component.
+> **Note**: You don’t have to know anything about the Custom Elements API to build custom elements and your component users don’t have to know anything about Angular 9 to use your custom element or web component.
 
  
 
-Now let’s add Angular Elements to our our project. Open a new terminal and run the following command:
+Now let’s add Angular 9 Elements to our our project. Open a new terminal and run the following command:
 
 
-    $ cd angular-custom-element
+    $ cd angular-9-custom-element
     $ ng add @angular/elements
 
 
 
-## How to create an Angular component?
+## How to create an Angular 9 Component?
 
 In Angular, you can create a component by defining a TypeScript class and decorate it with the `@Component` decorator, where you can provide the necessary metadata for your component such as the the HTML template that will be rendered as the view (and which you’ll need to create) and the stylesheets that contain the styles.
 
@@ -220,7 +227,7 @@ This is a screenshot of our form:
 
 
 
-## Angular View Encapsulation and Shadow DOM
+## Angular 9 View Encapsulation and Shadow DOM
 
 Shadow DOM is a part of web components and allows us to encapsulate and a DOM tree and CSS styles behind other elements. As a result, it allows us to apply **scoped styles** to elements without them bleeding out and affecting the styles of the containing page. You might guess why this is useful in our case. Since our component can be reusable and included in the context of any other page we don’t want the CSS styles of the form component itself to interfere with the styles of the hosting app.
 
@@ -239,7 +246,7 @@ Scoped CSS means:
 - The CSS styles defined in the host page don't apply affect the look of HTML elements in the web component,
 - Also the CSS styles defined inside the component are scoped to the component and don’t affect HTML elements outside the component.
 
-Angular makes it easy to create a shadow DOM and scoped styles via the [ViewEncapsulation](https://angular.io/api/core/ViewEncapsulation) API    
+Angular 9 makes it easy to create a shadow DOM and scoped styles via the [ViewEncapsulation](https://angular.io/api/core/ViewEncapsulation) API    
 Simply, open the `src/app/form-contact.component.ts` file and apply the `ShadowDom` encapsulation to the component as follows:
 
 
@@ -262,7 +269,7 @@ The other encapsulation types are None, Emulated and Native.
 
 ## Make it a Custom Element
 
-At this point, our Angular component can only be used inside an Angular project, let’s transform it to a custom element so we can use it with vanilla JavaScript.
+At this point, our Angular 9 component can only be used inside an Angular 9 project, let’s transform it to a custom element so we can use it with vanilla JavaScript.
   
 Open the `src/app.module.ts` file and import the `Injector` and `createCustomElement` APIs:
 
@@ -293,7 +300,7 @@ Next, inject `Injector` as a dependency:
       constructor(private injector: Injector) {}
     }
 
-Next, invoke the `createCustomElement()` method to transform the Angular component to a custom element:
+Next, invoke the `createCustomElement()` method to transform the Angular 9 component to a custom element:
 
 
     export class AppModule {
@@ -322,7 +329,7 @@ This will output a `dist/angular-custom-element` folder with a set of JavaScript
 
 Now, every time we need to use our custom element, we’ll need to include all the previous JavaScript files. A better solution is to concatenate all these files into one JavaScript file using a Node.js script.
 
-In your Angular project, let’s install the `concat`  and `fs-extra` modules:
+In your Angular 9 project, let’s install the `concat`  and `fs-extra` modules:
 
 
     $ npm install --save-dev concat fs-extra
@@ -335,11 +342,11 @@ Next, create a `concatenate.js` file and add the following code:
     
     concatenate = async () =>{
         const files = [
-            './dist/angular-custom-element/runtime.js',
-            './dist/angular-custom-element/polyfills.js',
-            './dist/angular-custom-element/es2015-polyfills.js',
-            './dist/angular-custom-element/scripts.js',
-            './dist/angular-custom-element/main.js'
+            './dist/angular-9-custom-element/runtime.js',
+            './dist/angular-9-custom-element/polyfills.js',
+            './dist/angular-9-custom-element/es2015-polyfills.js',
+            './dist/angular-9-custom-element/scripts.js',
+            './dist/angular-9-custom-element/main.js'
           ];
         
           await fs.ensureDir('output');
@@ -356,7 +363,7 @@ Now, let’s add a script to the `package.json` file to run this file after we b
         "build:component": "ng build --prod --output-hashing none && node concatenate.js",  
       },
 
- In your terminal run the following command to build the Angular project and concatenate the files into one `output/contact-form.js` file:
+ In your terminal run the following command to build the Angular 9 project and concatenate the files into one `output/contact-form.js` file:
  
 
     $ npm run build:component
@@ -404,8 +411,8 @@ Next, make sure you are inside the folder where you have created the `index.html
 
 ## Conclusion
 
-Web components with their custom elements, shadow dom, html imports and html templates are the future of the web platform and how we’ll build apps in the future. By combining these APIs with powerful frameworks like Angular, we can build apps that reusable components that are future-proof without fear of the used technologies becoming legacy.
+Web components with their custom elements, shadow dom, html imports and html templates are the future of the web platform and how we’ll build apps in the future. By combining these APIs with powerful frameworks like Angular 9, we can build apps that reusable components that are future-proof without fear of the used technologies becoming legacy.
 
-Angular makes it easy to work with custom elements and shadow DOM by providing an easy to use API on top of the low level APIs like the Angular elements package and the `ViewEncapsulation` API.
+Angular 9 makes it easy to work with custom elements and shadow DOM by providing an easy to use API on top of the low level APIs like the Angular 9 elements package and the `ViewEncapsulation` API.
 
-In this tutorial, we’ve seen an Angular 8 example where we’ve built a reusable contact form as an Angular component and export it as a custom element that can be used with vanilla JavaScript.
+In this tutorial, we’ve seen an Angular 9 example where we’ve built a reusable contact form as an Angular component and export it as a custom element that can be used with vanilla JavaScript.
