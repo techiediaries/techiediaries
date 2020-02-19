@@ -1,20 +1,24 @@
 ---
 layout: post
-title: "Jasmine Unit Testing Tutorial"
+title: "Jasmine Unit Testing Angular 9 Tutorial"
 image: "images/content/javascript.png"
-excerpt: "In this tutorial, we'll present you with a quick and complete guide to testing with Jasmine. You'll get introduced to Jasmine, a popular behavior-driven testing framework for JavaScript. We'll also see a simple practical example on how to write unit tests with Jasmine which can help you easily check for bugs in your code" 
-tags : [javascript]
+excerpt: "In this tutorial, we'll present you with a quick and complete guide to testing with Jasmine in Angular 9"
+date: 2020-02-19
+categories: angular 
+tags : [angular, angular-9, javascript]
 ---
 
-Jasmine is the most pupular JS library for unit testing web apps. In this tutorial, designed for beginners we'll help you to easily get started with unit testing using Jasmine. 
+Jasmine is the most popular JavaScript library for unit testing web apps. It's used by default as the default testing framework in Angular projects generated using Angular CLI.
 
-In this tutorial, we'll present you with a quick and complete guide to testing with Jasmine. You'll get introduced to Jasmine, a popular behavior-driven testing framework for JavaScript. We'll also see a simple practical example on how to write unit tests with Jasmine which can help you easily check for bugs in your code.
+In this tutorial, designed for beginners we'll help you to easily get started with unit testing using Jasmine in Angular 9. 
 
-In nutshell, we'll see how to write test suites, specifications and expectations and how to apply built-in Jasmine matchers or build your own custom matchers
+In this first part of our Jasmine Unit Testing in Angular 9 tutorial, we'll present you with a quick and complete guide to testing with Jasmine. You'll get introduced to Jasmine, a popular behavior-driven testing framework for JavaScript. We'll also see a simple practical example on how to write unit tests with Jasmine which can help you easily check for bugs in your code.
+
+In nutshell, we'll see how to write test suites, specifications and expectations and how to apply built-in Jasmine matchers or build your own custom matchers before we apply these concepts in our Angular 9 example.
 
 We'll also see how you can group suites for the sake of organizing your tests for more complex code bases.
 
-## Introducing Jasmine
+## Introducing Jasmine for Angular 9 Developers
 
 [Jasmine](http://jasmine.github.io/) is a very popular JavaScript behavior-driven development (In BDD, you write tests before writing actual code) framework for unit testing JavaScript applications. It provides utilities that can be used to run automated tests for both synchronous and asynchronous code.
 
@@ -30,10 +34,12 @@ Jasmine has many features such as:
 
 Jasmine is an open source tool that's available under the permissive MIT license. As of this writing the latest major version is *Jasmine 3.0* which provides new features and some breaking changes.
 The *2.99* release of Jasmine will provide different deprecation warnings for suites that have different behavior in version *3.0* which will make it easy for developers to migrate to the new version.
+
+Jasmine is not tied to Angular as you can use it with any JavaScript framework. 
  
 You can read about the new features and breaking changes from this [document](https://github.com/jasmine/jasmine/blob/v3.0.0/release_notes/3.0.md).
  
-## Using Jasmine
+## Using Jasmine without Angular 9
 
 You can use Jasmine in many different ways: 
 
@@ -46,7 +52,9 @@ You can also use Jasmine for testing your Python code with [jasmine-py](https://
 
 Jasmine is also available for Ruby projects via [jasmine-gem](https://github.com/jasmine/jasmine-gem) which can be installed by adding `gem 'jasmine'` to your Gemfile and running `bundle install`. It includes a server for serving and running tests, a CLI script and also generators for Ruby on Rails projects.
 
-Now let's focus on how to use Jasmine with JavaScript:
+In Angular 9 projects generated with Angular CLI, you don't need to configure Jasmine in your project as it's automatically installed and configured by default.
+
+Now let's first see how to use Jasmine with JavaScript.
 
 ### Using Standalone Jasmine
 
@@ -174,9 +182,9 @@ If you don't use the default location for the `jasmine.json` configuration file,
 You can find more CLI options from the official [docs](https://jasmine.github.io/setup/nodejs.html).
 
 
-## Understanding Jasmine 
+## Understanding Jasmine for Angular 9 Developers
 
-In this section we'll learn about the basic elements of Jasmine testing such as suites, specs, expectations, matchers and spies etc.
+In this section we'll learn about the basic elements of Jasmine testing such as suites, specs, expectations, matchers and spies etc. before we can see them by example in Angular 9.
 
 In your project's folder run the following command to initialize a new Node module:
 
@@ -770,5 +778,7 @@ Jasmine also provides way you can use if you need to explicitly fail your specs:
 
 ## Conclusion
 
-In this guide we've introduced Jasmine and seen how to get started using Jasmine to unit test your JavaScript code.
+In this guide we've introduced Jasmine for Angular 9 devs and seen how to get started using Jasmine to unit test your JavaScript code.
+
+In the next [tutorial](https://www.techiediaries.com/unit-testing-angular-9-apps-tutorial-jasmine-karma-example/), we'll see how to use Jasmine for unit testing an Angular 9 app.
 
