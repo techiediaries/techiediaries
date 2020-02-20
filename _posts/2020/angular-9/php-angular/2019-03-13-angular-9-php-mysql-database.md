@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 with PHP and MySQL Database: REST CRUD Example & Tutorial"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll learn to create an example Angular 9/8 application with a PHP REST API on top of a MySQL database" 
-date: 2020-02-15
+date: 2020-02-20
 categories: angular
 tags : [php , angular, angular-9, mysql, angular-fullstack-examples, angular-9-tutorials]
 ---

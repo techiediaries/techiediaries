@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9/8 with PHP: Consuming a RESTful CRUD API with HttpClient and Forms"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll learn to create an example Angular 7 application with a PHP REST API on top of a MySQL database"
-date: 2020-02-15
+date: 2020-02-20
 categories: angular 
 tags : [php , angular, mysql, angular-9-httpclient-examples, angular-9-form-examples,  angular-fullstack-examples]
 author: kaima
