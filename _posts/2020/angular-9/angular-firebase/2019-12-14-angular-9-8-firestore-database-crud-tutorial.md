@@ -26,7 +26,7 @@ These are the steps of our Angular 9 Firebase CRUD tutorial:
 
 ## What is CRUD?
 
-CRUD stands for Create, Read, Update and Delete and refer to the operations that we run against a database to createn retrieve and update data. In this example, the database is a Firestore database that exists on the cloud.
+CRUD stands for Create, Read, Update and Delete and refer to the operations that we run against a database to create, retrieve, update and delete data. In this example, the database is a Firestore database that exists on the cloud.
 
 > **Note**: This tutorial works with Angular 9.
  
@@ -35,7 +35,7 @@ CRUD stands for Create, Read, Update and Delete and refer to the operations that
 Before starting this tutorial, you first need to make sure, you have:
 
 - A recent version of Node.js (v10+) and NPM installed on your system,
-- The latest Angular CLI 8 installed on your system.
+- The latest Angular CLI 9 installed on your system.
 
 If you have the prerequisites, you are ready to start creating your project!
   
@@ -199,7 +199,7 @@ deletePolicy(policyId: string){
 
 After creating the model and service for creating, reading, updating and deleting insurance policies, you now need to create the component for testing our methods:
 
-Using Angular CLI 8 run the following command to generate a component:
+Using Angular CLI 9 run the following command to generate a component:
 
 ```bash
 $ ng g c policy-list
