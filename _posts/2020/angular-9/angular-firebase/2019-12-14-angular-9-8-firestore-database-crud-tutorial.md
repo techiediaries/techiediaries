@@ -16,11 +16,11 @@ We'll see step by step how to set up Firebase in our Angular 9 project, and crea
 
 These are the steps of our Angular 9 Firebase CRUD tutorial:
 
-- Step 1 - Creating your Angular 8 Project
+- Step 1 - Creating your Angular 9 Project
 - Step 2 - Creating a Firebase Project and a Firestore Database
-- Step 3 - Installing and Adding Firebase to your Angular 8 Project.
-- Step 4 - Create an Angular 8 Model 
-- Step 5 - Creating an Angular 8 Service
+- Step 3 - Installing and Adding Firebase to your Angular 9 Project.
+- Step 4 - Create an Angular 9 Model 
+- Step 5 - Creating an Angular 9 Service
 - Step 6 - Creating a Component for Making CRUD Operations
 
 
@@ -39,9 +39,9 @@ Before starting this tutorial, you first need to make sure, you have:
 
 If you have the prerequisites, you are ready to start creating your project!
   
-## Step 1 - Creating your Angular 8 Project
+## Step 1 - Creating your Angular 9 Project
 
-The first step in this tutorial is creating a new Angular 8 project using the CLI. 
+The first step in this tutorial is creating a new Angular 9 project using the CLI. 
 
 Head over to your terminal and run the following command:
 
@@ -59,7 +59,7 @@ Now that your project is generated, you need to proceed with creating a Firebase
 
 Next head to the `Project Overview >Develop >Database` page and create a new Firestore database. For now, make sure you enable test mode so you don't need any permissions to access the database.
 
-## Step 3 - Installing and Adding Firebase to your Angular 8 Project.
+## Step 3 - Installing and Adding Firebase to your Angular 9 Project.
 
 After creating your Firebase project and your Firestore database you next need to install the `firebase` and `@angular/fire` packages as follows:
 
@@ -70,7 +70,7 @@ $ npm install --save firebase @angular/fire
 
 Next go to your Firebase project overview then click on *web* and copy the *config* data.
 
-Next, open the `environments/environment.ts` file in your Angular 8 project and add the `firebaseConfig` object inside the `environment` object.
+Next, open the `environments/environment.ts` file in your Angular 9 project and add the `firebaseConfig` object inside the `environment` object.
 
 ```ts
 export const environment = {
@@ -106,9 +106,9 @@ You simply import `AngularFireModule` and `AngularFireDatabaseModule` and you ad
 
 You also call the `initializeApp()` method of `AngularFireModule` to pass the configuration object that you added earlier to the `environments/environment.ts` file.
 
-That's it, you now have added Firebase and Firestore to your Angular 8 project. 
+That's it, you now have added Firebase and Firestore to your Angular 9 project. 
 
-## Step 4 - Create an Angular 8 Model 
+## Step 4 - Create an Angular 9 Model 
 
 After setting up Firestore in your project, you can proceed with creating a model class. In the simple example, we suppose that you are creating an insurance app where we need to manage a set of policies.
 
@@ -137,7 +137,7 @@ export class Policy {
 
 This is an example of an insurance policy with many fields and relationships with other entities omitted for the sake of simplicity.
 
-## Step 5 - Creating an Angular 8 Service
+## Step 5 - Creating an Angular 9 Service
 
 An Angular service allows you to encapsulate the code that could be repeated in many places in your project. Using the Angular CLI, run the following command to generate a service:
 
@@ -282,4 +282,4 @@ Below the `<table>` markup,  you can also add a form to create an insurance poli
 
 ## Conclusion
 
-In this tutorial, we've seen by example how to add Firebase CRUD operations to your Angular 8 project that allow you to create, read, update and delete data from a Firestore database.
+In this tutorial, we've seen by example how to add Firebase CRUD operations to your Angular 9 project that allow you to create, read, update and delete data from a Firestore database.
