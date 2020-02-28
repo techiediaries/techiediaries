@@ -1,7 +1,7 @@
 ---
 layout: bpost
 title: "Top Programming Languages you Need to Learn in 2020"
-image: "images/content/programming.png"
+image: "https://www.techiediaries.com/top-programming-languages-2020.png"
 excerpt: "Top programming languages you need to learn in 2020"
 date: 2020-02-28
 tags : [programming]
