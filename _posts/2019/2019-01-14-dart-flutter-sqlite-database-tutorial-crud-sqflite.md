@@ -1,20 +1,27 @@
 ---
 layout: post
-title: "Flutter & SQLite Tutorial: CRUD Operations with sqflite"
+title: "Dart and Flutter SQLite Database Tutorial: CRUD Operations with sqflite"
 image: "images/content/flutter.png"
 excerpt: "Throughout this tutorial, you will learn how to create a CRUD example with Flutter and SQLite" 
-tags : [flutter]
+categories: flutter
+tags : [dart, flutter]
 ---
 
-In this tutorial, we'll learn how to run example CRUD operations against a SQLite database in a Flutter mobile application using  the `sqflite` plugin.
+In this tutorial, we'll learn how to run example CRUD operations against a SQLite database in a flutter mobile application using  the `sqflite` plugin.
+
+## SQLite Database CRUD with Dart and Flutter
 
 Flutter is a cross-platform mobile SDK for building Android and iOS apps with Dart. Both Dart and Flutter are created by Google and getting more popular everyday.
 
+### What's CRUD?
+
 CRUD stands for Create, Read, Update and Delete and it's a set of common operations that most data-driven apps use to create and manipulate data in databases.
+
+## Why Using a SQLite Database?
 
 For mobile applications, SQLite is a very popular database that fits in a single file and provides features similar to fully-fledged databases like MySQL.
 
-Since Flutter is a mobile SDK, you'll mostly need to have access to SQLite in many of your apps. The `sqflite` plugin let's you access SQLite in Flutter using Dart.
+Since flutter is a mobile SDK, you'll mostly need to have access to SQLite in many of your apps. The `sqflite` plugin let's you access SQLite in flutter using dart.
 
 Now after the introduction, let's see how to use SQLite in your Flutter app with a CRUD example.
 
@@ -22,10 +29,10 @@ In the following example, we'll suppose we are creating a customer management ap
 
 ## Prerequisites
 
-Before, you can follow this tutorial, you will need to have a development environment setup for Flutter development.
+Before, you can follow this tutorial, you will need to have a development environment setup for flutter development.
 
 
-## Steps For Using SQLite in Flutter
+## Steps For Using SQLite in Dart's Flutter
 
 In nutshell, these are the steps required to use SQLite in your Flutter application.
 

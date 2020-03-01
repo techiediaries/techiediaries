@@ -1,29 +1,38 @@
 ---
 layout: post
-title: "Async Programming in Flutter Using API Calls"
+title: "Flutter REST API Example With Dart's Async/Await and Future API"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll learn how to get started with async programming in Dart and Flutter with an API call example." 
+excerpt: "In this tutorial, you'll learn how to get started with async programming in Dart and Flutter with a REST API call example." 
 tags : [ flutter ] 
+categories: flutter
+date: 2020-03-01
 author: apoorvo
 ---
 
 
-In this tutorial, you'll learn how to get started with async programming in Dart and Flutter with an API call example. 
+In this tutorial, you'll learn how to get started with async programming in Dart and Flutter with a REST API call example. 
+
+We'll learn about asynchronous programming and how Dart deals with async operations either using the `async/await` keywords or the Future API.
+
+Finally, we implemented a simple example of a REST API call to an Open API with Flutter and `ListView.builder`.
+
 
 We'll be using an [Open API](http://api.open-notify.org/) which returns the number of people currently in space, their names and respective craft.
 
-## What is Async Programming?
+## Async Programming in Flutter Using Aync/Await and Future
 
 [Asynchronous programming](https://stackify.com/when-to-use-asynchronous-programming/) is a form of parallel programming that allows a unit of work to run on a different thread than the main application. The thread runs independently from the main app thread and notifies it when it reaches completion or ends in a failure.
 
 This approach allows us to do time heavy jobs that if executed on the main thread would bog down the application performance. 
 
-We are using API calls in this tutorial as an example for async programming for two reasons:
+## Flutter REST API Example
 
-- API calls are a very common use case and have a variety of applications.
-- API calls can take up time for various reasons like network issues on the client or server ends which makes it ideal to deal with asynchronous programming and highlight its benefits.
+We are using REST API calls in this tutorial as an example for async programming for two reasons:
 
-## Dart’s Support for Async Programming
+- REST API calls are a very common use case and have a variety of applications.
+- REST API calls can take up time for various reasons like network issues on the client or server ends which makes it ideal to deal with asynchronous programming and highlight its benefits.
+
+## Dart’s Support for Async Programming with Futures
 
 Dart code runs in a single thread of execution. Hence tasks that take time to complete (typically more than 10ms) are generally running on a different thread.
 
@@ -44,19 +53,19 @@ Dart provides two ways to implement Futures in your code:
 
 For this tutorial, we will be using the async and await approach. 
 
-### Async
+### Dart's Async
 
 The `async` keyword is used before the body of a function to define it as an asynchronous operation with a return type of `Future<T>`. 
 
-### Await
+### Dart's Await
 
 The `await` keyword can only be used inside of an async function. Inside an async function, the code runs synchronously until it encounters an await upon which it suspends execution until the statement’s completion.
 
 We will understand this better through our API call example.
 
-## The API Call Example
+## The REST API Call Example
 
-API calls are generally made by making GET and POST requests to a server that typically responds with a JSON file.
+REST API calls are generally made by making GET and POST requests to a server that typically responds with a JSON file.
 
 To keep this article focused on Flutter, we will take a simple open API to which we will make a GET request.
 
@@ -96,7 +105,7 @@ class Post {
 
 Most of the code is fairly simple. We just declared the variables we want to use and add a constructor. The interesting part is the used `fromJson()` factory method. 
 
-This factory method is used to initialize the class with the parameter values of a JSON file. 
+This factory method is used to initialize the class with the parameter values of a JSON file:
 
 ```dart
   factory Post.fromJson(Map<String, dynamic> json) {
@@ -288,5 +297,5 @@ Hope that helped and you enjoyed this tutorial. Flutter is an amazing upcoming f
 
 ## Conclusion
 
-In this tutorial, we've learned about asynchronous programming and how Dart deals with async operations either using the async/await keywords or the Future API. Finally, we implemented a simple example of an API call to an Open API with Flutter and `ListView.builder`.
+In this tutorial, we've learned about asynchronous programming and how Dart deals with async operations either using the async/await keywords or the Future API. Finally, we implemented a simple example of a RESR API call to an Open API with Flutter and `ListView.builder`.
 
