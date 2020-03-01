@@ -4,6 +4,7 @@ title: "Dart and Flutter SQLite Database Tutorial: CRUD Operations with sqflite"
 image: "images/content/flutter.png"
 excerpt: "Throughout this tutorial, you will learn how to create a CRUD example with Flutter and SQLite" 
 categories: flutter
+date: 2020-03-01
 tags : [dart, flutter]
 ---
 
@@ -13,7 +14,7 @@ In this tutorial, we'll learn how to run example CRUD operations against a SQLit
 
 Flutter is a cross-platform mobile SDK for building Android and iOS apps with Dart. Both Dart and Flutter are created by Google and getting more popular everyday.
 
-### What's CRUD?
+### What's Database CRUD?
 
 CRUD stands for Create, Read, Update and Delete and it's a set of common operations that most data-driven apps use to create and manipulate data in databases.
 
