@@ -3,6 +3,8 @@ layout: post
 title: "Angular 9 Examples: 2 Ways To Display A Component (Selector & Router)"
 image: "images/content/angular.jpg"
 excerpt: "In this quick example, we'll see two ways of displaying a component in Angular 9 - using selectors or the router" 
+categories: angular
+date: 2020-03-02
 tags : [angular, angular9, angular-9-ngfor-examples, angular-9-ngif-examples] 
 ---
  
@@ -13,9 +15,9 @@ In this quick example, we'll see two ways of displaying a component in Angular 9
 
 After creating a component in Angular using Angular CLI, it will be added to the `NgModule.declarations` array of the module where it's used. By default it's the `app` module.
 
-Let's see the two ways of displaying a component in your Angular apps.
+Let's see the two ways of displaying a component in your Angular 9 apps.
 
-## Creating a Component with Angular CLI
+## Creating a Component with Angular CLI 9
 
 Open your terminal and run the following command to create a component:
 
@@ -30,7 +32,7 @@ Now that our component is created, we'll need to display it in our app. There ar
 - Using the component's selector,
 - Using the router.
 -   
-### Using the component's selector
+## Using the component Selector
 
 You can display a component inside an HTML template using its selector:
 

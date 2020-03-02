@@ -1,12 +1,18 @@
 ---
 layout: post
-title: "Angular 7|8 Components"
+title: "Angular 9/8 Components by Example"
 image: "images/content/angular.jpg"
-excerpt: "This tutorial explains Angular components, what are they? And how to create them?" 
+excerpt: "This tutorial explains Angular 9/8 components, what are they? And how to create them?" 
+categories: angular
+date: 2020-03-02
 tags : [angular] 
 ---
 
-Now, let’s get to other piece of the puzzle - **components**.  Simply put, a component controls a part of the UI of your application. For example, the header, footer, or whole page can all be components. Depending on how much reusability, you want in your code. 
+This tutorial explains Angular 9/8 components by example, what are they? And how to create them?
+
+## What's an Angular Component?
+
+Simply put, an Angular component controls a part of the UI of your application. For example, the header, footer, or whole page can all be components. Depending on how much reusability, you want in your code. 
 
 Technically, an Angular component is a **TypeScript class decorated with the** `@Component` decorator which is part of the Angular core.
 
@@ -14,7 +20,9 @@ A component has an associated view which is simply an HTML file (but can also co
 
 A component has also one or more associated stylesheet files for adding styles to the component view. These files can be in many formats like CSS, Stylus, Sass or Less.
 
-Head back to your project in Stackblitz, open the `src/app/app.component.ts` file, you should find the following code:
+## Components with Angular 9 Example 
+
+Head back to your Angular project in Stackblitz, open the `src/app/app.component.ts` file, you should find the following code:
 
 
     import { Component } from '@angular/core';
@@ -25,7 +33,7 @@ Head back to your project in Stackblitz, open the `src/app/app.component.ts` fil
       styleUrls: [ './app.component.css' ]
     })
     export class AppComponent  {
-      name = 'Angular';
+      name = 'Angular 9';
     }
 
 In this file, we export the `AppComponent` class, and we decorate it with the `@Component` decorator, imported from the `@angular/core` package, which takes a few metadata, such as:
@@ -37,7 +45,7 @@ In this file, we export the `AppComponent` class, and we decorate it with the `@
 
 `AppComponent` is the **root** component of our application. It’s the base of the tree of components of our application and it’s the first component that gets inserted in the browser DOM. Read [The](https://angular.io/guide/bootstrapping#the-bootstrap-array) `[bootstrap](https://angular.io/guide/bootstrapping#the-bootstrap-array)` [array](https://angular.io/guide/bootstrapping#the-bootstrap-array).
 
-An Angular application is composed of a tree of components, in which each Angular component has a specific purpose and responsibility.
+An Angular 9 application is composed of a tree of components, in which each Angular component has a specific purpose and responsibility.
 
 
 A component is comprised of three things:
@@ -53,15 +61,19 @@ Currently, our app has three components:
 - `app-root` (orange box) is the application shell. This is the first component to load, and the parent of all other components. You can think of it as the base page.
 - `app-top-bar` (blue background) is the store name and checkout button.
 
-## Working with Angular 8 Components
+## Working with Angular 9 Components
 
-Most work you do with Angular relates to components. Basically an Angular application is a tree of components with a root component. A component controls a part of the web application screen. It consists of JavaScript (or precisely TypeScript) code, HTML code and CSS. If you are familiar with the MVC  (Model-View-Controller) architecture or design pattern, each component actually uses the same architecture: the component's code represents the controller and the HTML code (with CSS) represents the view.
+Most work you do with Angular relates to components. Basically an Angular application is a tree of components with a root component. 
 
-### How to Create an Angular 8 Component?
+A component controls a part of the web application screen. It consists of JavaScript (or precisely TypeScript) code, HTML code and CSS. If you are familiar with the MVC  (Model-View-Controller) architecture or design pattern, each component actually uses the same architecture: the component's code represents the controller and the HTML code (with CSS) represents the view.
 
-You can create a component in Angular 6using the `@Component()` decorator which can be imported from  `@angular/core`. You simply decorate a TypeScript class with the `@Component()` decorator that takes information about the HTML view to use for the component and the CSS styles. For the code which controls the component, it's encapsulated inside the class. 
+### How to Create an Angular 9 Component?
 
-Here is an example of a simple Angular component
+You can create a component in Angular using the `@Component()` decorator which can be imported from  `@angular/core`. 
+
+You simply decorate a TypeScript class with the `@Component()` decorator that takes information about the HTML view to use for the component and the CSS styles. For the code which controls the component, it's encapsulated inside the class. 
+
+Here is an example of a simple Angular 9 component
 
 ```typescript
 import { Component } from "@angular/core";
@@ -175,7 +187,7 @@ The AppComponent has a variable *title* which has a string value. If you look in
 You can notice that we are using the curly braces `{{` and `}}` to display the value of *title*. This is what's called **data binding** (we'll look at the concept in depth in next tutorials).
 
 
-## Creating Angular Components Using Angular CLI
+## Creating Angular 9 Components Using Angular CLI v9
 
 You can create a component by manually creating the necessary files or you can also use the Angular CLI to automatically generate the bare minimum code for a a basic component. The Angular CLI takes care, also, of adding the component to the module definition.
 
