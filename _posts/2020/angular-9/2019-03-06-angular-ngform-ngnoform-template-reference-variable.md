@@ -1,35 +1,38 @@
 ---
 layout: post
-title: "Angular 7 ngForm, ngNoForm and Template Reference Variables"
+title: "Angular 9/8 ngForm, ngNoForm and Template Reference Variables"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this quick tutorial, you'll learn how to use NgForm in Angular 7 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular built-in directives (such as ngForm) in your templates." 
-tags : [angular ] 
+excerpt: "In this quick tutorial, you'll learn how to use NgForm in Angular 9/8 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular built-in directives (such as ngForm) in your templates"
+date: 2020-03-02 
+tags : [angular, angular-9 ] 
 ---
 
-In this quick tutorial, you'll learn how to use NgForm in Angular 7 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular built-in directives (such as `ngForm`) in your templates.
+In this quick tutorial, you'll learn how to use NgForm in Angular 9/8 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular 9 built-in directives (such as `ngForm`) in your templates.
 
-## What is NgForm
+## What is Angular NgForm
 
-So, what is [NgForm](https://angular.io/api/forms/NgForm)?
+So, what is [Angular NgForm](https://angular.io/api/forms/NgForm)?
 
 It's simply a directive exported from `FormsModule` which gets automatically added to all `<form>` tags in your Angular templates once you import the module.  
 
 Behind the curtains, the `ngForm` directive creates a top-level `FormGroup` instance and binds it to your `<form>` tag to enable you to work with the form. For example to access the aggregate form value or check validation status.
 
-## How to Access NgForm
+## How to Access Angular NgForm Using Template Reference Variables
 
 Since the `ngForm` directive is implicitly added in your `<form>` tag when you import its parent module (`FormsModule`) in your application, you don't need to do any configuration to start working with template-based forms. 
 
 You can simply get a reference to your form' `ngForm` directive by exporting it into a local template variable and by using the `ngForm` directive as the value of the variable (`#myForm=ngForm`).   
 
 
-## Using ngNoForm
+## Using Angular ngNoForm
 
 If you you want to import `FormsModule` in your application but want to skip a specific form, you can use the `ngNoForm` directive which will prevent `ngForm` from being added to the form.
  
-## How to Use NgForm in Your Angular Application
+## How to Use NgForm in Your Angular 9 Application by Example
 
-Provided that you have generated a project with Angular CLI and you are ready to start developing your application. Let's see how you can use the `ngForm` directive.
+Provided that you have generated an Angular 9  project with Angular CLI and you are ready to start developing your application. 
+
+Let's see how you can use the `ngForm` directive.
 
 First, open the `src/app/app.module.ts` file and import `FormsModule` from the `@angular/forms` package then add it in the `imports` array of the module metadata (or `@NgModule`):
 
@@ -64,7 +67,7 @@ Now, you have NgForm implicitly active in all `<form>` tags (unless you add the 
 
 Next, you need to get a reference to the created `ngForm` directive in the form you are working with. For this matter, you can use a  template reference variable.
 
-## What is a Template Reference Variable 
+## What is an Angular Template Reference Variable 
 
 Here is the definition of a template reference variables from the [official docs](https://angular.io/guide/template-syntax#ref-vars):
 
@@ -135,7 +138,7 @@ The `.value` property provides the value of all fields of the form but you can a
 
 > Note: Don't forget to import `NgForm` from the `@angular/forms` package in your component.
 
-## Resetting a Form
+## Resetting an Angular 9 Form
 
 You can also reset the form using the template variable to the `ngForm` directive. In you component, add the following method:
 
@@ -149,6 +152,6 @@ We simply call the `resetForm()` of the `ngForm` variable.
 
 ## Conclusion
 
-In this quick tutorial, you have seen how you can use the `ngForm` directive and template reference variables to work with forms in Angular 7.
+In this quick tutorial, you have seen how you can use the Angular `ngForm` directive and template reference variables to work with forms in Angular 9.
 
 

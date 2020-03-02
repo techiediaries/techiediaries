@@ -1,20 +1,36 @@
 ---
 layout: post
-title: "Angular 8|7 ngTemplate & ngTemplateOutlet Example"
+title: "Angular 9/8 ngTemplate & ngTemplateOutlet Example: Dynamic and Reusable Templates"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll see how to use ng-template and ngTemplateOutlet for creating dynamic and reusable template partials in Angular." 
-tags : [ angular, angular8 ] 
+excerpt: "In this tutorial, we'll see how to use ng-template and ngTemplateOutlet for creating dynamic and reusable template partials in Angular 9" 
+date: 2020-03-02
+tags : [ angular, angular-9 ] 
 ---
 
-In this tutorial, we'll see how to use `ng-template` and `ngTemplateOutlet` for creating dynamic and reusable template partials in Angular.
+In this tutorial, we'll see how to use `ng-template` and `ngTemplateOutlet` for creating dynamic and reusable template partials in Angular 9/8.
+
+We'll see how to build a reusable component with an Angular 9 example using `<ng-template>` and we'll see what a template partial is.
+
+We'll also see how to pass properties to our Angular 9 partial templates using the `let-` syntax.
+
+Next, we'll see how to render a template partial using Angular `ngtemplateoutlet` in our Angular 9 example.
+
+
+## Build Reusable Components With Angular `<ng-template>` 
 
 In development, code reuse is essential for building complex apps. You can reuse  something if it's appropriatly decoupled from the rest of your code. Angular provides many components that make building reusable code possible, among them it's `<ng-template>`. 
 
-Let's see a quick Angular 8 example that makes use of `<ng-template>`.
+## Angular 9 Example with `<ng-template>`
+
+Let's see a quick Angular 9 example that makes use of `<ng-template>`.
 
 `ng-template` allows you to declare template partials. If you are familiar with template engines like Handlebars, you may have used template partials before.
 
+### What's an Template Partial?
+
 A template partial refers to an Angular/HTML template that can be declared once and re-used in many places in your application. We can use template reference variables (`#reference`) to identify the template so we can reference it from other places.
+
+## Rendering of a Template Partial with Angular `ngtemplateoutlet`
 
 This is an example template:
 
@@ -35,6 +51,8 @@ You can render this template in your app using `ngtemplateoutlet`:
 </div> 
 ``` 
 
+## Passing Properties to Angular Partial Templates 
+
 We can also pass properties to our template using the `let-` syntax. First, let's change our ngTemplate to accept a `message` property:
 
 ```html
@@ -51,6 +69,8 @@ In the same way, we can render the template using `ngTemplateOutlet` but this ti
 <div *ngTemplateOutlet="myTemplateRef; context:{message: 'This is a partial template'}">
 </div> 
 ``` 
+
+## Accessing Angular Template Partials in the DOM Using `ViewChild`
 
 You can also access your template from the component class like you would access any DOM element using `ViewChild`: 
 
@@ -73,5 +93,8 @@ export class AppComponent  implements AfterViewInit{
 
 ## Conclusion
 
-As a wrap-up, we've seen how to create template partials using `ngTemplate` and `ngTemplateOutlet` in a simple Angular 8 example.
+As a wrap-up, we've seen how to create template partials using `ngTemplate` and `ngTemplateOutlet` in a simple Angular 9 example.
 
+We have leraned how to create a reusable component with an Angular 9 example using `<ng-template>` and seen what a template partial is.
+
+We' learned to pass properties to our Angular 9 partial templates using the `let-` syntax and how to render a template partial using Angular `ngtemplateoutlet` in our Angular 9 example.

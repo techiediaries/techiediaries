@@ -1,20 +1,23 @@
 ---
 layout: post
-title: "The Angular 7/8 Router: Named and Multiple Router-Outlets (Auxiliary Routes)"
+title: "The Angular 9/8 Router-Outlets: Named and Multiple Outlets (Auxiliary Routes) Example"
 image: "images/content/angular.png"
-excerpt: " In this tutorial, we'll see advanced uses of the `<router-outlet>` component such as how to create named, multiple outlets and auxiliary routing." 
-tags : [angular, angular8, angular-9-router-examples] 
+excerpt: " In this tutorial, we'll see advanced uses of the `<router-outlet>` component such as how to create named, multiple outlets and auxiliary routing" 
+date: 2020-03-03
+tags : [angular, angular-9, angular-9-router-examples] 
 ---
 
-Throughout this tutorial we'll learn to use named and multiple Router Outlets and auxiliary routes in Angular 7/8
+Throughout this tutorial we'll learn to use named and multiple Router Outlets and auxiliary routes in Angular 9/8
 
 <div id="toc_container">
-<p class="toc_title">The Angular 7/8 Router: Named and Multiple Router-Outlets (Auxiliary Routes)</p>
+<p class="toc_title">
+The Angular 9/8 Router-Outlets: Named and Multiple Outlets (Auxiliary Routes) Example
+</p>
 <ul class="toc_list">
-<li><a href="#Angular_6_Router_Outlet">Angular 8 Router Outlet</a></li>
+<li><a href="#Angular_9_Router_Outlet">Angular 9 Router Outlet</a></li>
 <li><a href="#Create_Named_Router_Outlet">How to Create a Named Router Outlet?</a></li>
 <li><a href="#Create_Multiple_Router_Outlets">How to Create Multiple Router Outlets?</a></li>
-<li><a href="#Adding_Multiple_Outlets_Demo_Application">Adding Multiple Outlets to Our Demo Application</a></li>
+<li><a href="#Adding_Multiple_Outlets_Demo_Application">Adding Multiple Outlets to Our Angular 9 Application</a></li>
 <li><a href="#Angular_Auxiliary_Routes">What is An Auxiliary Route?</a></li>
 <li> <a href="#Navigating_Inside_Angular_Auxiliary_Outlets">Navigating Inside Auxiliary Outlets</a></li>
 <li>
@@ -24,21 +27,21 @@ Throughout this tutorial we'll learn to use named and multiple Router Outlets an
 </ul>
 </div>
 
-In the previous tutorials, we've seen the basics of the Angular 8 Router. We've seen how to configure the Angular router and how to add routes. If you are just starting with Angular routing then you should first check the following tutorials:
+In the previous tutorials, we've seen the basics of the Angular 9 Router. We've seen how to configure the Angular router and how to add routes. If you are just starting with Angular routing then you should first check the following tutorials:
 
 
-- [Angular 7/8 Tutorial: Components Explained](https://www.techiediaries.com/angular-components/)
+- [Angular 9/8 Tutorial: Components Explained](https://www.techiediaries.com/angular-components/)
 
-- [The Angular 7/8 Router: Component Routing](https://www.techiediaries.com/angular-router/)
+- [The Angular 9/8 Router: Component Routing](https://www.techiediaries.com/angular-router/)
 
-- [The Angular 7/8 Router: Handling Route Parameters with Snapshot and Observables (ParamMap)](https://www.techiediaries.com/angular-router-route-parameters/)
+- [The Angular 9/8 Router: Handling Route Parameters with Snapshot and Observables (ParamMap)](https://www.techiediaries.com/angular-router-route-parameters/)
 
-- [The Angular 7/8 Router: Using RouterLink, Navigate or NavigateByUrl](https://www.techiediaries.com/angular-router-routerlink-navigate-navigatebyurl/)
+- [The Angular 9/8 Router: Using RouterLink, Navigate or NavigateByUrl](https://www.techiediaries.com/angular-router-routerlink-navigate-navigatebyurl/)
 
-So, you now understand how to add routing to your Angular application to create an SPA (Single Page Application) and also how to link to different routes using `RouterLink` and `RouterLinkActive`. You also understand how to use the router outlet (`<router-outlet>`). 
+So, you now understand how to add routing to your Angular 9 application to create an SPA (Single Page Application) and also how to link to different routes using `RouterLink` and `RouterLinkActive`. You also understand how to use the router outlet (`<router-outlet>`). 
 
 
-## <a name="Angular_6_Router_Outlet">Angular 8 Router Outlet</a>
+## <a name="Angular_9_Router_Outlet">Angular 9 Router Outlet</a>
 
 The Router outlet is a placeholder that gets filled dynamically by Angular, depending on the current router state. In the previous tutorials, we've used the Router outlet to create basic routing. In this tutorial, we'll see advanced uses of the `<router-outlet>` component such as named, multiple outlets and auxiliary routing.
 
@@ -117,7 +120,7 @@ Or also using the `routerLink` directive
 </a>
 ```
 
-## <a name="Primary_Auxiliary_Angular_Router_Outlets_example">Primary and Auxiliary Angular Router Outlets by Example</a>
+## <a name="Primary_Auxiliary_Angular_Router_Outlets_example">Primary and Auxiliary Angular 9 Router Outlets by Example</a>
 
 So let's say, we want to render a different sidebar component when the user navigates to the `/products` URL. This way, the `ProductListComponent` will be rendered in the primary outlet and in the same time the `ProductListSidebarComponent` will be rendered in the auxiliary sidebar outlet. 
 
@@ -172,5 +175,5 @@ You need to specify all the outlets where you want the navigation to take place 
  
 By having primary and auxiliary named outlets, you can implement advanced scenarios by independently rendering multiple components in the same time. You can find the source code of this and previous tutorials in this [repository](https://github.com/techiediaries/angular-router-demo).
 
-In this tutorial we have learned how to use named and multiple Router-Outlets and auxiliary routes in Angular 8.
+In this tutorial we have learned how to use named and multiple Router-Outlets and auxiliary routes in Angular 9.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Angular 9/8 How-To: Services & Dependency Injection via providedIn, root & any Tutorial"
+title: "Angular 9/8 Services & Dependency Injection via providedIn, root & any Tutorial"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll be learning about Angular services using the latest Angular 9 version. We'll also learn about dependency injection and its mechanisms such as the `@Injectable` decorator and the providedIn property which can take the root and any values or a specific module that will be explaining next." 
 tags : [angular, angular-how-tos, angular9] 
@@ -15,6 +15,8 @@ The `any` value of `provideIn` is introduced in Angular 9.
 An Angular service is simply a TypeScript class that encapsulates the various methods for completing a certain task in your app such as getting and sending data from and to a server.
 
 A service is decorated using the `@Injectable()` decorator available from the Angular core package which means the service can be injected in the components and the other services.
+
+## Injecting an Angular 9 Service
 
 But what does mean when a service is injected?
 
@@ -37,12 +39,12 @@ Angular services are mostly useful in the following scenarios:
 
 Now that we have learned about Angular services and dependency injection, let's see that by example.
 
-## Step 1 - Creating an Angular 9 Service by example using Angular CLI 
+## Step 1 - Creating an Angular 9 Service by example using Angular CLI 9
 
 Provided that you have Angular CLI installed on your machine and that you have an Angular 9 project generated:
 
 ```bash
-$ ng new angular-service-example
+$ ng new angular-9-service-example
 ```
 
 Let's see how to use Angular CLI to generate a service. 
@@ -89,7 +91,7 @@ With  Angular 6+ we have the new provideIn property for specifying where the dep
 Thanks to the `providedIn` property the service can specify where it can be provided without resorting to use the `providers` array of the module/component.
  
  
-Angular services can be provided in the `root` or in any of the available modules using `any` or a specific module. The `root` value is an alias for the `AppModule`, `any` is added starting with Angular 9.  
+Angular 9 services can be provided in the `root` or in any of the available modules using `any` or a specific module. The `root` value is an alias for the `AppModule`, `any` is added starting with Angular 9.  
 
 ## Step 2 - Implementing the method(s) of our example Angular 9 service 
 
