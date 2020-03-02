@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "Angular 7|6 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes (for Login Redirects)"
+title: "Angular 9/8 Router CanActivate Guards and UrlTree Parsed Routes"
 image: "images/content/angular.png"
 excerpt: "We'll be learning how to use Router Guards and UrlTree data structures to protect the UI if the user is not logged in and redirect them to the login interface if they don't have access to a specific route." 
+categories: angular
+date: 2020-03-02
 tags : [angular, angular-9-router-examples]
 ---
 
-In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 7. Let's now secure the UI with router guards.
+In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 9. Let's now secure the UI with router canactivate guards.
+
+## Using Angular Guards and UrlTree Interface for Protecting UIs
 
 We'll be learning how to use `Router` Guards and `UrlTree` data structures to protect the UI if the user is not logged in and redirect them to the login interface if they don't have access to a specific route.
   
 The admin interface can be only accessed by the website owner so we need to use Guards to protect the components of the admin module and only allow access to them if the user is logged in.
+
+## Creating a CanActivate Guard with Angular CLI 9
 
 First, you need to create a guard. Run the following command in your terminal to generate a guard service:
 
@@ -77,6 +83,8 @@ The `canActivate()` method is passed many arguments which makes it easy to detrm
 
 1.  `next: ActivatedRouteSnapshot`which is the next route that will be activated if the guard is allowing access,
 2.  `state: RouterStateSnapshot`which is the next  router state  if the guard is allowing access.
+
+## Applying the Angular Guard
 
 Now, you need to apply the guard to the routes you need to protect using the `canActivate` property of the path object. Open the `src/app/admin/admin-routing.module.ts` file and update it accordingly:
 
@@ -177,16 +185,16 @@ Now, go to your application, if you visit any protected route without logging in
 
 Check out all parts:
 
-- [Angular 7|6 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
-- [Angular 7|6 Tutorial Course: Angular NgModules (Feature and Root Modules)](https://www.techiediaries.com/angular-course-modules),
-- [Angular 7|6 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()](https://www.techiediaries.com/angular-course-child-routes),
-- [Angular 7|6 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
-- Angular 7|6 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes
+- [Angular 9/8 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
+- [Angular 9/8  Tutorial Course: Angular NgModules (Feature and Root Modules)](https://www.techiediaries.com/angular-course-modules),
+- [Angular 9/8 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()](https://www.techiediaries.com/angular-course-child-routes),
+- [Angular 9/8 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
+- Angular 9/8 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes
 
 
 ## Conclusion
 
-As a recap, we’ve seen how to use route guards some new features introduced in Angular v7.1 enables you to redirect to another route by using a `UrlTree` parsed route. 
+As a recap, we’ve seen how to use route guards some new features introduced in Angular v7.1+ enables you to redirect to another route by using a `UrlTree` parsed route. 
 
 In this tutorial, we've used Angular Guards and `UrlTree` structures that correspond to parsed routes to disallow access to certain routes if users are not logged in. In the next tutorial, we'll proceed by implementing the CRUD operations of the admin interface which allows the portfolio owner to add projects to their website. We'll be using Firestore as our persistence layer.
 
