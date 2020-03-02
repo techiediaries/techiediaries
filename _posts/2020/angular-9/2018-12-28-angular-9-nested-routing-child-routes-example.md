@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "Angular 7|6 Tutorial Course:  Nested Router-Outlet, Child Routes & forChild()"
+title: "Angular 9/8 Nested Routing and Child Routes by Example"
 image: "images/content/angular.png"
-excerpt: "In this course, you'll learn to develop your first Angular 7 application with routing, CRUD operations and Bootstrap 4 UI" 
+excerpt: "In this tutorial, you'll learn to add Angular 9 routing to our module using a routing module, a nested router-outlet and child routes"
+categories: angular
+date: 2020-03-02 
 tags : [angular]
 ---
 
-In the previous [tutorial](https://www.techiediaries.com/angular-course-modules) , you have seen what NgModules are and you created the `admin` module of your developer's portfolio web application. Now, let's add routing to our module using a routing module, a nested router-outlet and child routes.
+In the previous [tutorial](https://www.techiediaries.com/angular-course-modules/) , you have seen what NgModules are and you created the `admin` module of your developer's portfolio web application. Now, let's add Angular routing to our module using a routing module, a nested router-outlet and child routes.
+
+## How to Create Nested Routes with Angular 9 Child Routes?
 
 You can create a nested routing by defining child routes using the children property of a route (alongside a `path` and `component` properties). You also need to add a nested `router-outlet` in the HTML template related to the component linked to the parent route (In our case it's the `admin` route).
 
 To create nested routing, you need to create a routing submodule for the module you want to provide routing, you next need to define a parent route and its child routes and provide them to the router configuration via a `forChild()` method.
+
+## Creating an Angular 9 Routing Module
 
 Let's see this step by step. First, inside the `admin` module, create an `admin-routing.module.ts` file and add a submodule for implementing child routing in our `admin` module:
 
@@ -54,6 +60,8 @@ This is an example of a module which has `imports` and `exports` meta informatio
 
 - The `imports` array which contains the modules that we need to import and use in the current module. In this case it's `RouterModule.forChild(routes)`,
 -  The `exports` array which contains what we need to export.
+
+## Adding Child Routes to the Angular 9 Router Module
 
 In order to provide our child routes to the router module, we use the `forChild()` method of the module because we want to add routing in the `admin` submodule. if this is used in root module you need to use the `forRoot()` method instead. See more differences of `forChild()` vs `forRoot()` from the [official docs](https://angular.io/api/router/RouterModule).
 
@@ -105,15 +113,15 @@ At this point, if you click on the admin link in the header, you should see the 
 
 Check out all parts:
 
-- [Angular 7|6 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
-- [Angular 7|6 Tutorial Course: Angular NgModules (Feature and Root Modules)](https://www.techiediaries.com/angular-course-modules),
-- Angular 7|6 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()
-- [Angular 7|6 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
-- [Angular 7|6 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes](https://www.techiediaries.com/angular-course-router-guards)
+- [Angular 9/8 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
+- [Angular 9/8 Tutorial Course: Angular NgModules (Feature and Root Modules)](https://www.techiediaries.com/angular-course-modules),
+- Angular 9/8 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()
+- [Angular 9/8 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
+- [Angular 9/8 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes](https://www.techiediaries.com/angular-course-router-guards)
 
 
 ## Conclusion
 
-In this tutorial, you have created nested routing in your Angular 7 application by creating a routing submodule for the admin module and adding a nested router-outlet and child routes for the `/admin` parent route.
+In this tutorial, you have created nested routing in your Angular 9 application by creating a routing submodule for the admin module and adding a nested router-outlet and child routes for the `/admin` parent route.
 
-In the next [tutorial](https://www.techiediaries.com/angular-course-firebase-authentication), you'll secure the admin interface using Firebase authentication with email and password.
+In the next [tutorial](https://www.techiediaries.com/angular-course-firebase-authentication/), you'll secure the admin interface using Firebase authentication with email and password.

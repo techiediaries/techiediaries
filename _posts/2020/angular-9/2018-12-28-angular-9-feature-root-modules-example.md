@@ -1,10 +1,16 @@
 ---
 layout: post
-title: "Angular 7|6 Tutorial Course: Angular NgModules (Feature and Root Modules)"
+title: "Angular 9/8 Feature and Root Modules by Example"
 image: "images/content/angular.png"
-excerpt: "In this course, you'll learn to develop your first Angular 7 application with routing, CRUD operations and Bootstrap 4 UI" 
+excerpt: "In this tutorial we will learn about Angular 9 modules by example" 
+categories: angular
+date: 2020-03-02
 tags : [angular]
 ---
+
+In this tutorial, we'll learn about modules with an Angular 9 example.
+
+## What Are Angular Modules?
 
 Angular modules are containers of code parts that implement related domain requirements. They let developers create apps with modular architectures and reusable code just like components. Angular uses NgModules to create modules and submodules which are different from JavaScript/ES6 modules.
 
@@ -13,6 +19,8 @@ Angular modules are containers of code parts that implement related domain requi
 NgModules are simply TypeScript classes decorated with the `@NgModule` decorator  imported from the `@angular/core` package.
 
 Modules provide a way for developers to  organize their code and they are particularly helpful for managing large apps. 
+
+## Angular Built-In Modules
 
 You can either create your own modules or use the built-in modules for importing the various Angular APIs such as:
 
@@ -24,7 +32,7 @@ Each Angular module can contain components, directives, pipes and services and m
 
 You Angular application has at least one module which is called the **root** module. You need to bootstrap the root module to start your application.
 
-## Creating the Admin Feature Sub-Module & CRUD Interface
+## Creating an Angular 9 Module by Example
 
 Now, let's create the admin CRUD interface for listing, creating, updating and deleting the portfolio projects.
 
@@ -121,15 +129,15 @@ This is the main module of our application. In the imports array we added `Admin
 
 Check out all parts:
 
-- [Angular 7|6 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
-- Angular 7|6 Tutorial Course: Angular NgModules (Feature and Root Modules)
-- [Angular 7|6 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()](https://www.techiediaries.com/angular-course-child-routes),
-- [Angular 7|6 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
-- [Angular 7|6 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes](https://www.techiediaries.com/angular-course-router-guards)
+- [Angular 9/8 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
+- Angular 9/8 Tutorial Course: Angular NgModules (Feature and Root Modules)
+- [Angular 9/8 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()](https://www.techiediaries.com/angular-course-child-routes),
+- [Angular 9/8 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
+- [Angular 9/8 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes](https://www.techiediaries.com/angular-course-router-guards)
 
 
 ## Conclusion
 
-In this tutorial, you have grasped the concept of NgModules in Angular , you have created the `admin` submodule of your portfolio web application and the various components of the submodule which are needed to create a CRUD interface for creating and manipulating your portfolio's projects.
+In this tutorial, you have grasped the concept of NgModules in Angular 9, you have created the `admin` submodule of your portfolio web application and the various components of the submodule which are needed to create a CRUD interface for creating and manipulating your portfolio's projects.
 
-In your next [tutorial](https://www.techiediaries.com/angular-course-child-routes), you'll be adding routing in your `admin` module using a nested router outlet and child routes.
+In your next [tutorial](https://www.techiediaries.com/angular-course-child-routes/), you'll be adding Angular routing in your `admin` module using a nested router outlet and child routes.
