@@ -10,15 +10,15 @@ tags : [angular, angular-9-router-examples]
 
 In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 9. Let's now secure the UI with router canactivate guards.
 
-## Using Angular Guards and UrlTree Interface for Protecting UIs
+## Using Angular 9 Guards and UrlTree Interface for Protecting UIs
 
 We'll be learning how to use `Router` Guards and `UrlTree` data structures to protect the UI if the user is not logged in and redirect them to the login interface if they don't have access to a specific route.
   
 The admin interface can be only accessed by the website owner so we need to use Guards to protect the components of the admin module and only allow access to them if the user is logged in.
 
-## Creating a CanActivate Guard with Angular CLI 9
+## Creating a CanActivate Route Guard with Angular CLI 9
 
-First, you need to create a guard. Run the following command in your terminal to generate a guard service:
+First, you need to create a route guard. Run the following command in your terminal to generate a guard service:
 
 ```bash
 $ ng g guard admin/admin
