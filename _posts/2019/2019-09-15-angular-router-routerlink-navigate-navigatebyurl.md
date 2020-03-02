@@ -1,12 +1,15 @@
 ---
 layout: post
-title: "The Angular 7/8 Router: Using RouterLink, Navigate or NavigateByUrl"
+title: "The Angular 9/8 RouterLink, Navigate and NavigateByUrl"
 image: "images/content/angular.png"
-excerpt: "In this tutorial we're going to see how to navigate with the Angular Router using routerLink, Router.navigate() and Router.navigateByUrl()." 
-tags : [javascript , angular, angular-9-ngfor-examples, angular-9-router-examples] 
+excerpt: "In this tutorial we're going to see how to navigate with the Angular Router using routerLink, Router.navigate() and Router.navigateByUrl()"
+date: 2020-03-02 
+tags : [angular, angular-9-router-examples] 
 ---
 
-In the previous [tutorial of the Angular 8 Router](https://www.techiediaries.com/angular-router-route-parameters/), we've seen how to use basic routing between components then how to handle route parameters using different methods. We've also seen how to use the `RouterLink` directive to create route links. This tutorial continues from the previous tutorials with other methods to implement navigation.
+In the previous [tutorial of the Angular 9 Router](https://www.techiediaries.com/angular-router-route-parameters/), we've seen how to use basic routing between components then how to handle route parameters using different methods. We've also seen how to use the `RouterLink` directive to create route links. This tutorial continues from the previous tutorials with other methods to implement navigation.
+
+## RouterLink Example with Angular 9
 
 Let's give a second look at how we used the `RouterLink` directive in the previous tutorial(s). 
 
@@ -28,13 +31,13 @@ We then created a link with a parameter using:
 <a [routerLink]="['/product/',product.id]">{{product.name}}</a>
 ```
 
-## Navigating Programatically Using Router.navigate() and Router.navigateByUrl()
+## Navigating Programatically Using Angular 9 `Router.navigate()` and `Router.navigateByUrl()`
 
-The Angular 8 Router provides two methods that you can use to navigate to other components in your component class instead of using the `RouterLink` directive in the template. The two methods are `navigate()` and `navigateByUrl()` and they can be useful in multiple situations where you need to trigger navigation via code. They return a promise that resolves to true or false.
+The Angular 9 Router provides two methods that you can use to navigate to other components in your component class instead of using the `RouterLink` directive in the template. The two methods are `navigate()` and `navigateByUrl()` and they can be useful in multiple situations where you need to trigger navigation via code. They return a promise that resolves to true or false.
 
 `navigateByUrl()`  takes a string as a parameter.  `navigate()`  takes an array of URL segments.
 
-So let's modify our previous demo application to navigate using one of these methods. Go ahead and open `src/app/product-list/product-list.component.ts` then first import and inject the Router class:
+So let's modify our previous Angular application to navigate using one of these methods. Go ahead and open `src/app/product-list/product-list.component.ts` then first import and inject the Router class:
 
 ```ts
 import { Component } from "@angular/core";
@@ -116,4 +119,4 @@ This is the whole template:
 
 ## Conclusion
 
-In this tutorial, we've seen different methods to implement navigation with the Angular 8 Router i.e using the `routerLink` directive with the anchor tags in components HTML template or using `Router.navigate()` and `Router.navigateByUrl()` methods in situations where you want to navigate in the component class. You can find the complete code for the Angular Router tutorials in this [repository](https://github.com/techiediaries/angular-router-demo).
+In this tutorial, we've seen different methods to implement navigation with the Angular 9 Router i.e using the `routerLink` directive with the anchor tags in components HTML template or using `Router.navigate()` and `Router.navigateByUrl()` methods in situations where you want to navigate in the component class. You can find the complete code for the Angular Router tutorials in this [repository](https://github.com/techiediaries/angular-router-demo).
