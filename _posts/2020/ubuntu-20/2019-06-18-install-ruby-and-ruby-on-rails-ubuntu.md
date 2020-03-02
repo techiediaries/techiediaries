@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "How to Install Ruby 2.6 & Rails 6 on Ubuntu 19.04"
+title: "How to Install Ruby 2.6 & Rails 6 on Ubuntu 20.04"
 image: "images/content/ruby.png"
-excerpt: "In this tutorial, we'll see how we can install the latest version of Ruby v2.6 on Ubuntu 19.04 Disco Dingo. and next we'll see how to set up a development environment for Ruby on Rails 6." 
+excerpt: "In this tutorial, we'll see how we can install the latest version of Ruby v2.6 on Ubuntu 20.04 Disco Dingo. and next we'll see how to set up a development environment for Ruby on Rails 6." 
 tags : [ ruby, rails, ubuntu] 
 ---
 
-In this tutorial, we'll see how we can install the latest version of Ruby v2.6 on Ubuntu 19.04 Disco Dingo. and next we'll see how to set up a development environment for Ruby on Rails 6.
+In this tutorial, we'll see how we can install the latest version of Ruby v2.6 on Ubuntu 20.04 Disco Dingo. and next we'll see how to set up a development environment for Ruby on Rails 6.
 
 As of this writing, the current stable version of Ruby is **v2.6.3**.
 
-## How to Install Ruby 2.6 on Ubuntu 19.04?
+## How to Install Ruby 2.6 on Ubuntu 20.04?
 
-You can install Ruby 2.6 on Ubuntu 19.04 using three different methods:
+You can install Ruby 2.6 on Ubuntu 20.04 using three different methods:
 
 - Using `rbenv`
 - Using RVM or Ruby Version Manager
@@ -94,7 +94,7 @@ After installing `bundler`, you need to run:
 $ rbenv rehash
 ``` 
 
-## Installing Ruby on Rails 6 on Ubuntu 19.04
+## Installing Ruby on Rails 6 on Ubuntu 20.04
 
 After installing Ruby 2.6, let's now see how we can install Ruby on Rails 6.
 

@@ -1,25 +1,27 @@
 ---
 layout: post
-title: "How to Install Android Studio 3.4 on Ubuntu 19.04 | 18.04"
+title: "How to Install Android Studio 3.4 on Ubuntu 20.04/19.04"
 image: "images/content/how-to-install-java-8-jdk-8u101-on-ubuntu-via-ppa/titleimage.png"
-excerpt: "This post shows you how you can install Android Studio v3.4 on Ubuntu 19.04 and Ubuntu 18.04"
+excerpt: "This post shows you how you can install Android Studio v3.4 on Ubuntu 19.04 and Ubuntu 20.04"
+categories: ubuntu
+date: 2020-03-02
 tags : [ ubuntu , android ] 
 ---
 
-[Android Studio](https://developer.android.com/studio) is the official IDE for  developing and building Android apps. It's built by Google on top of the JetBrains IntelliJ IDEA IDE. It comes with all what you need to write apps for Android with Java and Kotlin and build the final production APK. 
+[Android Studio](https://developer.android.com/studio) is the official IDE for developing and building Android apps. It's built by Google on top of the JetBrains IntelliJ IDEA IDE. It comes with all what you need to write apps for Android with Java and Kotlin and build the final production APK. 
 
 Android Studio works across all major operating systems like Windows and Linux/Ubuntu. In this post, we'll be looking at how you can install the latest version of Android Studio (v3.4 as of this writing) in your Ubuntu 19.04 system. 
 
->**Note**: The instructions to install Android Studio v3.4 are also valid for Ubuntu 18.04 LTS (Long Time Support).
+>**Note**: The instructions to install Android Studio v3.4 are also valid for Ubuntu 20.04 LTS (Long Time Support).
 
 ## Prerequisites
 
 You need to have:
 
-- A machine with Ubuntu 19.04 or Ubuntu 18.04 installed,
-- OpenJDK 8 installed on your system. You can follow this post on how to [install OpenJDK 8 on your Ubuntu 19.04 system](https://www.techiediaries.com/ubuntu-install-java-openjdk) or simply run the `sudo apt install openjdk-8-jdk` command.
+- A machine with Ubuntu 19.04 or Ubuntu 20.04 installed,
+- OpenJDK 11 installed on your system. You can follow this post on how to [install OpenJDK 8 on your Ubuntu 19.04 system](https://www.techiediaries.com/ubuntu-install-java-openjdk) or simply run the `sudo apt install openjdk-11-jdk` command.
 
-You can check if you have Java 8 installed on your system using the following command:
+You can check if you have Java 11 installed on your system using the following command:
 
 ```bash
 $ java -version
@@ -86,7 +88,7 @@ Happy Coding!
 
 ## Conclusion
 
-In this post, we've seen how we can install Android Studio 3.4 on our Ubuntu 19.04 system and how we can launch and set up Android Studio after installing it. The instructions are also valid for Ubuntu 18.04 LTS.
+In this post, we've seen how we can install Android Studio 3.4 on our Ubuntu 19.04 system and how we can launch and set up Android Studio after installing it. The instructions are also valid for Ubuntu 20.04 LTS.
 
 
 

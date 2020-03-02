@@ -1,14 +1,48 @@
 ---
 layout: post
-title: "How to Install JAVA 8 (OpenJDK 8) on Ubuntu 19.04"
+title: "How to Install JAVA 14/13 (OpenJDK) on Ubuntu 20.04/19.04"
 image: "images/content/how-to-install-java-8-jdk-8u101-on-ubuntu-via-ppa/titleimage.png"
-excerpt: "This post shows you how you can install Java 8 on Ubuntu 19.01"
+excerpt: "This post shows you how you can install Java 14/Java 13 on Ubuntu 19.04/Ubuntu 20.04"
+categories: ubuntu
+date: 2020-03-02
 tags : [ ubuntu , java ] 
 ---
 
-The stable version of Java 8 (1.8) has been released on 18 2014.You can download it from the [official website](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).Java 8 has new features(like lambdas and functional programming) and security updates, you can get more information of [what's new in Java 8 from this link](http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html).
 
-If you are under Ubuntu 19.04, you can install Java 8 using OpenJDK 8. 
+Java 14 has new features and security updates, you can get more information of [what's new in Java 14 from this link](http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html)
+
+
+If you are under Ubuntu 20.04 or Ubuntu 19.04, you can easily install Java 13 or Java 14 using OpenJDK.
+
+## Installing OpenJDK Java 13/14 on Ubuntu 20.04
+
+By default the Ubuntu 20.04 LTS Focal Fossa Linux offers multiple versions of Java OpenJDK from a standard Ubuntu repository.
+
+### Step 1: Getting the Available Versions of OpenJDK
+
+Let's get started by listing all the available packages. Open your terminal and run the following command:
+
+```bash
+$ apt search openjdk
+```
+
+### Step 2: Installing OpenJDK/Java 13
+
+
+Next, you can install OpenJDK 13 using the following command:
+
+```bash
+$ sudo apt install openjdk-13-jdk
+```
+
+### Step 2: Installing OpenJDK/Java 14
+
+If you want to install OpenJDK 14 using the following command:
+
+
+```bash
+$ sudo apt install openjdk-14-jdk
+```
 
 
 ## Installing Java 8 on Ubuntu 19.04

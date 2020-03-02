@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Installing Node.js v10/v12 & NPM on Ubuntu 19.04 for Angular 8 Development"
+title: "Installing Node.js v10/v12 & NPM on Ubuntu 19.04 for Angular 9 Development"
 image: "images/content/how-to-install-java-8-jdk-8u101-on-ubuntu-via-ppa/titleimage.png"
-excerpt: "This post shows you how you can install Node.js on Ubuntu 19.01 and Ubuntu 18.04 for Angular 8 development"
+excerpt: "This post shows you how you can install Node.js on Ubuntu 19.01 and Ubuntu 20.04 for Angular 9 development"
+categories: ubuntu
+date: 2020-03-02
 tags : [ ubuntu , nodejs, angular ] 
 ---
 
-Node.js is a platform for building server side applications and command line tools using JavaScript. In this post, we'll be looking at how to install Node.js 12, Node.js 11 and Node.js 10 LTS in our Ubuntu 19.04 system. Node.js makes use of NPM to install and manage packages which will be also installed when you install Node.
+Node.js is a platform for building server side applications and command line tools using JavaScript. In this post, we'll be looking at how to install Node.js 12, Node.js 11 and Node.js 10 LTS in our Ubuntu 20.04 system. Node.js makes use of NPM to install and manage packages which will be also installed when you install Node.
 
-> **Note**: These instructions are also valid for Ubuntu 18.04
+> **Note**: These instructions are also valid for Ubuntu 19.04
 
 ## Why Do we Use Node.JS for Angular?
 
@@ -28,7 +30,7 @@ Besides being a server-side platform, Node has also emerged as a convenient plat
 $ npm install -g @angular/cli
 ```
 
-## How to Install Node.js 10 LTS and NPM v5.8 on Ubuntu 19.04?
+## How to Install Node.js 10 LTS and NPM v5.8 on Ubuntu 20.04?
 
 You can install Node 10 LTS using the official PPA, so you don't need to add anything except running the following command in your terminal:
 
@@ -48,7 +50,7 @@ You should get **v10.15.2**.
 
 
 
-![Install Node.js 10 On Ubuntu 19.04](https://www.diigo.com/file/image/badcbccczobbpcpscszdrpcaood/Screenshot+from+2019-06-15+03-48-33.jpg?k=e242dffd28c10b2d1eb4b878b2bf2f71)
+![Install Node.js 10 On Ubuntu 20.04](https://www.diigo.com/file/image/badcbccczobbpcpscszdrpcaood/Screenshot+from+2019-06-15+03-48-33.jpg?k=e242dffd28c10b2d1eb4b878b2bf2f71)
 
 NPM doesn't come installed with Node so you'll need to separately install it. In your terminal, run the following command:
 
@@ -65,9 +67,9 @@ $ npm -v
 You should get **v5.8.0**.
 
 
-## How to Install Node.js 11 & NPM 6.7 on Ubuntu 19.04?
+## How to Install Node.js 11 & NPM 6.7 on Ubuntu 20.04?
 
-With the official Ubuntu 19.04 PPA, you'll get Node 10.x LTS version installed but what if you want a newer version? You simply need to add the PPA for the version you want to install.
+With the official Ubuntu 20.04 PPA, you'll get Node 10.x LTS version installed but what if you want a newer version? You simply need to add the PPA for the version you want to install.
 
 In you terminal, run the following command:
 
@@ -140,7 +142,7 @@ Next, you can choose a specific version and install it using the following comma
 $ nvm install 10.15.2
 ```
 
-This will install Node.js 10 LTS on your Ubuntu system.
+This will install Node.js 10 LTS on your Ubuntu 20.04 system.
 
 ## Installing Node.js from the Official Website
 
@@ -152,7 +154,7 @@ You can refer to the [official docs](https://nodejs.org/en/download/package-mana
 
 ## Conclusion
 
-Throughout this post, we have seen why we need to use Node.js for Angular 8 development and how we can install Node v10 LTS, Node v11 and Node v12 and NPM (Node Package Manager) on our Ubuntu 19.04 system. These instructions also work on Ubuntu 18.04 LTS.
+Throughout this post, we have seen why we need to use Node.js for Angular 9 development and how we can install Node v10 LTS, Node v11 and Node v12 and NPM (Node Package Manager) on our Ubuntu 20.04 system. These instructions also work on Ubuntu 19.04 LTS.
 
 
 
