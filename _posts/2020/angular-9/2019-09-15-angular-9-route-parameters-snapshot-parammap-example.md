@@ -1,23 +1,27 @@
 ---
 layout: post
-title: "The Angular 7/8 Router: Accessing Route Parameters with Snapshot and Observables (ParamMap)"
+title: "The Angular 9/8 Router: Route Parameters with Snapshot and ParamMap by Example"
 image: "images/content/angular.png"
-excerpt: "In this tutorial we're going to see how to handle route parameters with the Angular 8 Router using different methods: Snapshot and ParamMap Observable." 
+excerpt: "In this tutorial we're going to see how to handle route parameters with the Angular 9/8 Router using different methods: Snapshot and ParamMap Observable" 
+categories: angular
+date: 2020-03-02
 tags : [angular, angular8, angular-9-ngfor-examples, angular-9-router-examples] 
 ---
 
+In this tutorial we're going to see how to handle route parameters with the Angular 9/8 Router example using different methods: Snapshot and ParamMap Observable.
 
-The Angular 7/8 Router is a powerful router library that allows developers to implement advanced functionality in their Angular applications, beside basic component routing, such as:
+Angular provides a powerful router library that allows developers to implement advanced functionality in their Angular applications, beside basic component routing, such as:
 
 - Route protection using guards,
 - Route parameters, 
 - Child routes,
 - Auxiliary routes etc.
 
+## Handling Route Parameters with Angular 9
  
-In the previous [tutorial](https://www.techiediaries.com/angular-router), we have created a basic routing between components with the Angular Router. In this tutorial we're going to see how to handle route parameters in Angular 8.
+In the previous [tutorial](https://www.techiediaries.com/angular-router), we have created a basic routing between components with the Angular Router. In this tutorial we're going to see how to handle route parameters in Angular 9.
 
-We are going to start from the simple Angular application we've build in the previous Router tutorial which you can find from this [repository](https://github.com/techiediaries/angular-router-demo) or in [CodeSandBox](https://codesandbox.io/s/github/techiediaries/angular-router-demo). 
+We are going to start from the simple Angular application we've build in the previous tutorial which you can find from this [repository](https://github.com/techiediaries/angular-router-demo) or in [CodeSandBox](https://codesandbox.io/s/github/techiediaries/angular-router-demo)
 
 This is the implementation of the `ProductDetailComponent`:
 
@@ -49,6 +53,8 @@ export class ProductDetailComponent implements OnInit {
   }
 }
 ```  
+
+## An Angular Route with a Parameter Example
 
 In the previous tutorial, we've added this route object in our router configuration:
 
@@ -136,4 +142,4 @@ You can also use the *snapshot* object of the `ActivatedRoute` instance: `this.r
 
 The Angular Router allows you to easily retrieve parameters from the URL which is an essential functionality that's required by most web applications. You can use both ways: the `paramMap` observable or the snapshot way but the latter requires you to be careful when re-using components. You can find the code in this [repository](https://github.com/techiediaries/angular-router-demo).
 
-In this tutorial, we have seen an Angular 8 example that demonstrates how to retrieve route paramters.
+In this tutorial, we have seen an Angular 9/8 example that demonstrates how to retrieve route paramters.
