@@ -1,37 +1,49 @@
 ---
 layout: post
-title: "Angular 7/8 Tutorial: HttpClient POST to Node/Express.js Example"
+title: "Angular 9/8 Tutorial: Http POST to Node/Express.js Example"
 image: "images/content/angular-httpclient.png"
-excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 7/8 to work with HTML forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
-tags : [angular, angular8, angular-9-httpclient-examples] 
+excerpt: "In this tutorial, we'll learn to use the template-driven approach in Angular 9/8 to work with HTML forms. We'll learn about the NgForm, ngModel and ngSubmit and how to create an authentication system with Node and Express.js" 
+categories: angular
+date: 2020-03-02
+tags : [angular, angular-9, angular-9-httpclient-examples] 
 ---
 
-In the previous [tutorial](https://www.techiediaries.com/angular-tutorial-forms-authentication-expressjs), we've created authentication (login and register) forms with Angular 7/8 and a RESTful API server for handing authentication with Node and Express.js.
+In this post, we'll learn how to send an Http POST request with Angular 9 HttpClient to a Node/Express server for authenticating users.
+
+## Adding Angular 9 Authentication Forms for Sending Post Requests
+
+In the previous [tutorial](https://www.techiediaries.com/angular-tutorial-forms-authentication-expressjs), we've created authentication (login and register) forms with Angular 9/8 and a REST API server for handing authentication with Node and Express.js.
 
 >Also read:
 >
-> [Typed and Full Responses and Headers in Angular 7 HttpClient: Link Header Pagination Example](https://www.techiediaries.com/angular-httpclient-headers-full-response)
+> [Typed and Full Responses and Headers in Angular 9 HttpClient: Link Header Pagination Example](https://www.techiediaries.com/angular-httpclient-headers-full-response/)
 
-We've created the `Login` and `Register` components with the necessary forms to collect the user's credentials (name, email and password) and display them on the browser's console. In this tutorial, we'll add the code for actually submitting user's information to the authentication server in order to register or authenticate the user. 
+We've created the `Login` and `Register` components with the necessary forms to collect the user's credentials (name, email and password) and display them on the browser's console. 
+
+## Posting User Credentials to a Node Authentication Server with Angular 9 HttpClient
+
+In this tutorial, we'll add the code for actually submitting user's information to the authentication server via a POST request in order to register or authenticate the user. 
 
 This is the screenshot of the registration component:
-  ![Angular 8 form| Register component](https://www.diigo.com/file/image/bbccosoazescdcpoqezdqdabbdo/Frontend.jpg)
+  ![Angular 9 form| Register component](https://www.diigo.com/file/image/bbccosoazescdcpoqezdqdabbdo/Frontend.jpg)
  
  This is the screenshot of the login component:
     
-![Angular 8 form - login example](https://www.diigo.com/file/image/bbccosoazescdcsdadzdqdabdbr/Frontend.jpg)
+![Angular 9 form - login example](https://www.diigo.com/file/image/bbccosoazescdcsdadzdqdabdbr/Frontend.jpg)
 
 When you click on the login and register buttons, the values your entered on the form will be only displayed on the console but in actual web applications these values need to be sent to the authentication server (in our case it's a Node and Express.js server that's running locally on the `http://localhost:3000 address`).
+
+## Sending a POST Request with Angular 9 HttpClient
 
 Let's change that! 
 
 Basically what you need to do it to change the `register()` and `signIn()` methods to send an HTTP POST request to the authentication server with Angular `HttpClient`. 
 
-But, we are not going to call the `HttpClient` methods directly from the `register()` and `login()` methods because that's usually considered bad practice in Angular. Instead we'll create an Angular service that encapsulates all the communication with the authentication server. 
+But, we are not going to call the Angular `HttpClient` methods directly from the `register()` and `login()` methods because that's usually considered bad practice in Angular. Instead we'll create an Angular 9 service that encapsulates all the communication with the Node authentication server. 
 
 In nutshell, these are the steps that we are going to follow throughout this tutorial:
 
-- First, we need to setup `HttpClient` in our project (exactly in our `auth` module),
+- First, we need to setup `HttpClient` in our Angular 9 project (exactly in our `auth` module),
 - Next, we generate an `AuthService` and we implement methods such as `signIn()`, `register()` and `signOut()` etc.
 - Finally, we inject `AuthService` in out `Login` and `Register` components and we call the appropriates service methods to register and authenticate users.
 
@@ -39,11 +51,11 @@ So let's get started!
 
 ## Prerequisites
 
-As a prerequisite, this tutorial assumes you have followed the previous tutorial where we have created the authentication server with Node and Express.js and created the Angular 8 project with the necessary modules and components.
+As a prerequisite, this tutorial assumes you have followed the previous tutorial where we have created the authentication server with Node and Express.js and created the Angular 9 project with the necessary modules and components.
 
-## Setting up `HttpClient`
+## Setting up Angular 9 `HttpClient`
 
-Previously we've created the `auth` module. This module encapsulate the authentication logic in our application. Let's import `HttpClient` in this module. 
+Previously we've created the `auth` module. This module encapsulate the authentication logic in our Angular 9 application. Let's import `HttpClient` in this module. 
 
 Open the `src/app/auth/auth.module.ts` file and add the following changes:
 
@@ -71,13 +83,13 @@ export class AuthModule { }
 
 We simply import `HttpClientModule` from `@angular/common/http` and we add it in the `imports` array of `AuthModule`.
 
-That's it! You are ready to send HTTP requests in your application.
+That's it! You are ready to send HTTP POST requests in your application.
 
 ## Creating `AuthService` and Injecting `HttpClient`
 
-Next, let's create an Angular service that's responsible for sending authentication requests to the backend server.
+Next, let's create an Angular service that's responsible for sending authentication POST requests to the backend server.
 
-In your terminal, navigate to your Angular project's root folder and run the following command:
+In your terminal, navigate to your Angular 9 project's root folder and run the following command:
 
 ```bash
 $ ng generate service auth/auth
@@ -86,6 +98,8 @@ $ ng generate service auth/auth
 > **Note**: We add the `auth/` path before the name of our service (which is also `auth`) to make the service a part of the `auth` module.
 
 The command will generate two `src/app/auth/auth.service.spec.ts` and `src/app/auth/auth.service.ts` files. 
+
+### Importing Angular 9 HttpClient
 
 Open the `src/app/auth/auth.service.ts` file, import `HttpClient` and inject it via the service's constructor:
 
@@ -231,7 +245,7 @@ isAuthenticated() {
 }
 ```
 
-## Calling `AuthService` Methods in The Components
+## Calling `AuthService` Methods in The Angular 9 Components
 
 After fully implementing `AuthService`, let's now call these methods in the `Login` and `Register` components.
 
@@ -306,5 +320,5 @@ Please note that we don't do any error checking here. Subscribing to the Observa
 
 ## Conclusion
 
-In this tutorial, we've seen how to send POST requests to a Node/Express.js authentication server using Angular `HttpClient` by building a simple Angular 8 example.
+In this tutorial, we've seen how to send POST requests to a Node/Express.js authentication server using Angular 9 `HttpClient` by building a simple Angular 9 example.
  

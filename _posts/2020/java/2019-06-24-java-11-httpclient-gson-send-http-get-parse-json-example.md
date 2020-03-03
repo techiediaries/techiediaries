@@ -4,12 +4,16 @@ title: "Java 11 HttpClient & Gson Tutorial: Send HTTP GET Requests and Parse JSO
 image: "images/java.png"
 excerpt: "In this tutorial, we'll learn about the HttpClient library introduced Java 11 for sending HTTP requests. We'll also see how to use the Gson library from Google to parse JSON data. 
 " 
+categories: java
+date: 2020-03-02
 tags : [java]
 ---
 
-In this tutorial, we'll learn about the `HttpClient` library introduced Java 11 for sending HTTP requests. We'll also see how to use the `Gson` library from Google to parse JSON data. 
+In this tutorial, we'll learn about the `HttpClient` library introduced in Java 11 for sending HTTP requests. We'll also see how to use the `Gson` library from Google to parse JSON data. 
 
 We'll be using a single source file for our app which can be executed in Java 11 using the `java` command without first compiling it (using `javac`)just like a script file.
+
+## Sending Http Requests Prior to Java 11
 
 Prior to Java 11, developers had to use [URLConnection](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/net/URLConnection.html) to send HTTP requests. This package doesn't have an easy to use API and doesn't support the newer HTTP/2 protocol - As a result developers resorted to use third-party libraries like [Apache HTTP Client](https://hc.apache.org/httpcomponents-client-ga/) 
 
@@ -21,7 +25,7 @@ You will need to have Java 11 LTS version installed on your system. You can simp
 
 You will also need some working knowledge of Java.
 
-## How to Use HttpClient in Java 11 
+## How to Use HttpClient in Java 11? 
 
 `HttpClient` is available from the `java.net.http` package. 
 
@@ -141,7 +145,7 @@ $ java NewsScript.java
 
 If  you have Java 11, that should run the file and display the message on the console.
 
-## Sending HTTP GET Requests with HttpClient
+## Sending HTTP GET Requests with Java 11+ HttpClient
 
 Now, let's actually get the news. In your source file add the following code:
 
@@ -184,7 +188,7 @@ Make sure your replace  `<YOUR_API_KEY_HERE>` with your actual API key from the 
 
 If your run this code, you should get the news data printed as a JSON string with news entries. 
 
-## Parsing JSON Data with Gson
+## Parsing JSON Data with Gson in Java 11
 
 We need to parse the JSON string as a Java object so we can work with it. 
 
