@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Angular 8 DOM Queries: ViewChild and ViewChildren Example"
+title: "Angular 9/8 DOM Queries: ViewChild and ViewChildren Example"
 image: "images/content/angular.png"
 excerpt: "The @ViewChild and @ViewChildren decorators in Angular provide  a way to access and manipulate DOM elements, directives and components. In this tutorial, we'll see an Angular 8 example of how to use to use the two decorators" 
-tags : [angular , angular8] 
+date: 2020-03-03
+categories: angular
+tags : [angular , angular-9] 
 ---
 
-The `@ViewChild` and `@ViewChildren` decorators in Angular provide  a way to access and manipulate DOM elements, directives and components. In this tutorial, we'll see an Angular 8 example of how to use the two decorators.
+The `@ViewChild` and `@ViewChildren` decorators in Angular provide  a way to access and manipulate DOM elements, directives and components. In this tutorial, we'll see an Angular 9 example of how to use the two decorators.
 
 You can use `ViewChild` if you need to query one element from the DOM and `ViewChildren` for multiple elements.  
 
@@ -18,9 +20,11 @@ Head over to Stackblitz, sign in with your GitHub account and choose an Angular 
 
 You should be presented with an online IDE with an Angular 8 project:
 
-![Angular 8 ViewChild Example](https://www.diigo.com/file/image/badcbccczobcaepdsrzdrpoescs/angular-hcnsej+-+StackBlitz.jpg)
+![Angular 9 ViewChild Example](https://www.diigo.com/file/image/badcbccczobcaepdsrzdrpoescs/angular-hcnsej+-+StackBlitz.jpg)
 
-Our Angular project contains the usual `App` component and a child component called `HelloComponent`  and defined in the `src/app/hello.component.ts` file with the followign code:
+## ViewChild and ViewChildren Angular 9 Example
+
+Our Angular 9 project contains the usual `App` component and a child component called `HelloComponent`  and defined in the `src/app/hello.component.ts` file with the followign code:
 
 ```ts
 import { Component, Input } from '@angular/core';
@@ -94,7 +98,7 @@ export class AppComponent implements AfterViewInit {
 
 In the console, you should get **Hello Angular**:
 
-![](https://www.diigo.com/file/image/badcbccczobcaoaaaazdrpoobqo/angular-hcnsej+-+StackBlitz.jpg)
+![Angular 9 ViewChild](https://www.diigo.com/file/image/badcbccczobcaoaaaazdrpoobqo/angular-hcnsej+-+StackBlitz.jpg)
 
 Now, let's explain the code.
 
@@ -111,7 +115,7 @@ Next, we create a query called `hello` that takes `HelloComponent` as the select
 @ViewChild(HelloComponent, {static: false}) hello: HelloComponent;
 ```
 
-In Angular 8, timing for  `ContentChild`  and  `ViewChild`  needs to be specified explicitly. 
+In Angular 9, timing for  `ContentChild`  and  `ViewChild`  needs to be specified explicitly. 
 
 See: ​[Why do I have to specify  `{static: false}`? Isn't that the default?](https://angular.io/guide/static-query-migration#why-do-i-have-to-specify-static-false-isnt-that-the-default )
 
@@ -127,7 +131,7 @@ Next, in the `ngAfterViewInit()` life-cycle hook, we can use the query to access
  
 > **Note**: View queries are set before the `ngAfterViewInit` callback is called.
 
-## Querying Standard HTML Elements with Template References
+## Querying Standard HTML Elements with Angular Template References
 
 We can also query standard HTML elements using `ViewChild` and template reference variables. Let's go back to our `src/app/app.component.html` file and change it as follows:
 
@@ -181,7 +185,7 @@ Next, in the `ngAfterViewInit()` method we can access and modify the native DOM 
   }
 ```
 
-![](https://www.diigo.com/file/image/badcbccczobcaorpcazdrpoorep/angular-hcnsej+-+StackBlitz.jpg)
+![Angular 9 ViewChild](https://www.diigo.com/file/image/badcbccczobcaorpcazdrpoorep/angular-hcnsej+-+StackBlitz.jpg)
 
 This is the live example from this [link](https://stackblitz.com/edit/angular-8-viewchild-example).
 
@@ -193,6 +197,8 @@ According to the [docs](https://angular.io/api/core/ViewChildren):
 
 >You can use ViewChildren to get the QueryList of elements or directives from the view DOM. Any time a child element is added, removed, or moved, the query list will be updated, and the changes observable of the query list will emit a new value.
 
+## Angular 9 ViewChildren by Example
+
 Let's see an example. 
 
 Go to the `src/app/app.component.html` file and update it as follows:
@@ -201,9 +207,10 @@ Go to the `src/app/app.component.html` file and update it as follows:
 <hello  name="Angular 6"  ></hello>
 <hello  name="Angular 7"  ></hello>
 <hello  name="Angular 8"  ></hello>
+<hello  name="Angular 9"  ></hello>
 ```
 
-We are simply diplsaying the hello component three times. Let's now query the DOM. Open the `src/app/app.component.ts` file and change it as follows:
+We are simply displaying the hello component three times. Let's now query the DOM. Open the `src/app/app.component.ts` file and change it as follows:
 
 
 ```ts
@@ -230,7 +237,7 @@ export class AppComponent implements AfterViewInit {
 
 You should this output in the console:
 
-![Angular 5 ViewChildren Example](https://www.diigo.com/file/image/badcbccczobcapaodrzdrpoospd/angular-8-viewchildren-example+-+StackBlitz.jpg)
+![Angular 9 ViewChildren Example](https://www.diigo.com/file/image/badcbccczobcapaodrzdrpoospd/angular-8-viewchildren-example+-+StackBlitz.jpg)
 
 Now, let's explain the code. 
 
@@ -256,4 +263,4 @@ You can find the live example from this [link](https://stackblitz.com/edit/angul
 
 ## Conclusions
 
-In this tutorial, we've seen how we can access and modify the DOM in Angular 8 using `ViewChild` and `ViewChildren` decorators and a couple of other APIs like `QueryList` and `ngAfterViewInit()`
+In this tutorial, we've seen how we can access and modify the DOM in Angular 9 using `ViewChild` and `ViewChildren` decorators and a couple of other APIs like `QueryList` and `ngAfterViewInit()`
