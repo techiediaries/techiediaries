@@ -1,17 +1,19 @@
 ---
 layout: post
-title: "Laravel 6 REST API CRUD Tutorial - Build a CRM [PART 2]: Eloquent Models and Relationships"
+title: "Laravel 7/6 REST API CRUD Tutorial - Build a CRM [PART 2]: Eloquent Models and Relationships"
 image: "images/content/php.png"
 excerpt: "Laravel 6 is recently released with many enhancements so we'll be learning, throughout this tutorial how to create an example CRUD application from scratch. The application we'll be building is a simple CRM with a MySQL database." 
+categories: laravel
+date: 2020-03-04 
 tags : [php , laravel, mysql, laravel-6-tutorials-and-examples, laravel6] 
 ---
  
-**Laravel 6** is recently released with many enhancements, so we'll be learning, throughout this tutorial series how to create an example REST API CRUD application from scratch. The application we'll be building is a simple CRM with a MySQL database that exposes a set of RESTful API endpoints.
+**Laravel 7** is recently released with many enhancements, so we'll be learning, throughout this tutorial series how to create an example REST API CRUD application from scratch. The application we'll be building is a simple CRM with a MySQL database that exposes a set of REST API endpoints.
 
-You can see this [Upgrade Guide](https://laravel.com/docs/6/upgrade) for instructions on how to upgrade an existing web application from Laravel 5.8 to Laravel 6.
+You can see this [Upgrade Guide](https://laravel.com/docs/7/upgrade) for instructions on how to upgrade an existing web application from Laravel 6 to Laravel 7.
 
 
-## Introducing REST APIs
+## Laravel 7 REST APIs
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer):
 
@@ -46,7 +48,7 @@ These are example HTTP methods mapped to the CRUD actions that can by performed 
 - HTTP PATCH: This REST API method can be mapped to an action to make partial update on a resource.
 
 
-## Creating Laravel 6 Models of our REST API 
+## Creating Laravel 7 Models of our REST API 
 
 According to the database structure above, we'll need to create the followng Eloquent models:
 
@@ -82,18 +84,18 @@ You will get the following output:
 
 ```bash
 Migration table created successfully.
-Migrating: 2019_09_02_223818_create_contacts_table
-Migrated:  2019_09_02_223818_create_contacts_table
-Migrating: 2019_09_02_223832_create_accounts_table
-Migrated:  2019_09_02_223832_create_accounts_table
-Migrating: 2019_09_02_223841_create_activities_table
-Migrated:  2019_09_02_223841_create_activities_table
-Migrating: 2019_09_02_223855_create_contact_statuses_table
-Migrated:  2019_09_02_223855_create_contact_statuses_table
-Migrating: 2019_09_02_223904_create_contact_sources_table
-Migrated:  2019_09_02_223904_create_contact_sources_table
-Migrating: 2019_09_02_223912_create_activity_statuses_table
-Migrated:  2019_09_02_223912_create_activity_statuses_table
+Migrating: 2020_03_04_223818_create_contacts_table
+Migrated:  2020_03_04_223818_create_contacts_table
+Migrating: 2020_03_04_223832_create_accounts_table
+Migrated:  2020_03_04_223832_create_accounts_table
+Migrating: 2020_03_04_223841_create_activities_table
+Migrated:  2020_03_04_223841_create_activities_table
+Migrating: 2020_03_04_223855_create_contact_statuses_table
+Migrated:  2020_03_04_223855_create_contact_statuses_table
+Migrating: 2020_03_04_223904_create_contact_sources_table
+Migrated:  2020_03_04_223904_create_contact_sources_table
+Migrating: 2020_03_04_223912_create_activity_statuses_table
+Migrated:  2020_03_04_223912_create_activity_statuses_table
 ```
 
 In Laravel, you can specify the structure (table fields) in the migration files. Let's start with the `contacts` table. Open the `database/migrations/2019_09_02_223818_create_contacts_table.php` file (the date prefix for the file will be different for you) and add the following changes:
@@ -249,13 +251,13 @@ Now, run the following command to migrate your database:
 $ php artisan migrate
 ```
 
-## Implementing the REST API Models
+## Implementing the Laravel 7 REST API Models
 
 >The Eloquent ORM included with Laravel provides a beautiful, simple ActiveRecord implementation for working with your database. Each database table has a corresponding "Model" which is used to interact with that table. Models allow you to query for data in your tables, as well as insert new records into the table. [The official docs](https://laravel.com/docs/5.8/eloquent#introduction)
 
 We can interact with our database tables using the corresponding Eloquent models so we need implement the required methods in each model.
 
-## Defining the Relationships between Models
+## Defining the Relationships between Laravel 7 Models
 
 - A contact belongs to a source, a status, an account and to a user and has many activities.
 - An account belongs to a user (i.e created by a user) and has many contacts.

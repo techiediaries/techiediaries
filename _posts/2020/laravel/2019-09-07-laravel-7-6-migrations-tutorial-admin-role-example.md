@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "Laravel 6 Database Migrations Tutorial: Add Admin Role to Users"
+title: "Laravel 7/6 Database Migrations Tutorial with Admin Roles Example"
 image: "images/content/laravel.png"
-excerpt: "In this tutorial, we'll learn about migrations in Laravel 6 including the Schema builder comprised of the Schema and Blueprint facades. 
-
-Next, we'll continue building our CRM application by updating the users' table using migrations to add users with different roles (admin and user) in our app." 
+excerpt: "In this tutorial, we'll learn about migrations in Laravel 7/6 including the Schema builder comprised of the Schema and Blueprint facades" 
+categories: laravel
+date: 2020-03-04
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 
-In this tutorial, we'll learn about migrations in Laravel 6 including the Schema builder comprised of the Schema and Blueprint facades. 
+In this tutorial, we'll learn about migrations in Laravel 7/6 including the Schema builder comprised of the Schema and Blueprint facades. 
 
 Next, we'll continue building our CRM application by updating the users' table using migrations to add users with different roles (admin and user) in our app.  
 
+## Laravel 7/6 Migrations by Example
 
 We'll learn:
 
@@ -20,6 +21,8 @@ We'll learn:
 - How to create a migration for adding fields to existing database tables  
   
 Since our CRM app will be hosted on the web and would be accessed by anyone who has the URL, we need to add some restrictions, so only users that belong to the owner company or organization can register for an account and log in. 
+
+## Adding User Roles to your Laravel 7/6 App
 
 There are certainly some advanced solutions for this kind of situations, but we can also use simple tricks such as:
 
@@ -32,13 +35,15 @@ We can add a user manually to our database (In fact this will be the task of the
 
 > **Note**: You can also solve this by providing a configuration interface for our application that gets started when the app is launched for the first time.
 
+## How to Provide Users with Admin Role?
+
 Now, how we can mark users as admins? We can do that by simply adding a `role` field in the users' table that takes either a `user` or `admin` values indicating if the user is an admin or not. This simple role system is enough for us at this point of the tutorial but we'll see later how we add an advanced role and permissions system in our app.   
 
 After that, users can be created by the admin(s) using a form where we can supply the email and the role of the user. When saved, an email should be sent to users, so they can continue their registration by adding their name and password for their account.  
 
 We'll start by adding a `role` field to the users' table using a migration. But first, let's learn about migrations a little bit.
 
-## Laravel 6 Migrations
+## Introducing Laravel 7/6 Migrations
 
 Migrations are PHP files that contain a class with the `up()` and  `down()` methods. The `up()` method is invoked when the migration is applied for adding changes to the database while the `down()` method is used to revert the applied changes.
 
@@ -194,6 +199,6 @@ Migrated:  2019_09_07_121249_add_role_field_to_users_table (0.71 seconds)
 
 ## Conclusion
 
-In this tutorial, we've learned about Laravel migrations and we've seen how to use them in our Laravel 6 CRM application.
+In this tutorial, we've learned about Laravel migrations and we've seen how to use them in our Laravel 6/7 CRM application.
 
 We have seen how to use the Schema builder comprised of the Schema and Blueprint facades and the various Artisan commands to create, apply and roll back migrations. 

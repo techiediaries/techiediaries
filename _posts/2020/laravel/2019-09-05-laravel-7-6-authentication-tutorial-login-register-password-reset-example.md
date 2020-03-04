@@ -1,16 +1,23 @@
 ---
 layout: post
-title: "Laravel 6 Auth Tutorial: Login/Register/Password Reset UI"
+title: "Laravel 7/6 Auth Tutorial: Login/Register/Password Reset Example"
 image: "images/content/laravel.png"
-excerpt: "In the previous tutorial, we've introduced Laravel and seen the new features of the latest Laravel 6 version. In this tutorial, we'll see how to add authentication with login, registration, logout and password reset example." 
+excerpt: "In the previous tutorial, we've introduced Laravel and seen the new features of the latest Laravel 6 version. In this tutorial, we'll see how to add authentication with login, registration, logout and password reset example"
+categories: laravel
+date: 2020-03-04  
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
-In the previous [tutorial](https://www.techiediaries.com/laravel-tutorial), we've introduced Laravel and seen the new features of the latest Laravel 6 version. In this tutorial, we'll see how to add authentication with login, registration, logout and password reset example.
+In the previous [tutorial](https://www.techiediaries.com/laravel-tutorial/), we've introduced Laravel and seen the new features of the latest Laravel 7 version. In this tutorial, we'll see how to add authentication with login, registration, logout and password reset example.
+
+## Bootstrapping a Laravel 7/6 Project
 
 First, make sure you have followed the previous tutorial and that you have started your development server on the `http://localhost:8000` address.
 
-Laravel 6 has moved the auth scaffolding into a separate Laravel/UI package that you need to install in your project using the following command from a new terminal:
+
+## Adding Authentication to your Laravel 7/6 App
+
+Laravel 6+ has moved the auth scaffolding into a separate Laravel/UI package that you need to install in your project using the following command from a new terminal:
 
 ```bash
 $ cd crmapp
@@ -43,7 +50,7 @@ Please run "npm install && npm run dev" to compile your fresh scaffolding.
 Authentication scaffolding generated successfully.
 ```
 
-You should run the previous command on new Laravel 6 projects for generating a complete layout with registration, login, and password reset views and routes for adding authentication. This will also generate a `HomeController` for handling the requests after login.
+You should run the previous command on new Laravel 6+ projects for generating a complete layout with registration, login, and password reset views and routes for adding authentication. This will also generate a `HomeController` for handling the requests after login.
 
 The `php artisan ui vue --auth` command will create the necessary views for authentication and put them in the `resources/views/auth` folder.
 
@@ -51,19 +58,21 @@ The `ui` command will also generate a `resources/views/layouts` folder that cont
 
 Now that you have added the routes and views for the existing authentication controllers, users can register and authenticate. 
 
+## Laravel 7/6 Authentication Controllers
+
 The authentication controllers contain the required logic for authenticating users and create new users in the database so you don't need to add anything else to enable auth in your application except if you want to customize the look or behavior which we'll see later.
 
 In your web browser head to the [http://localhost:8000/register](http://localhost:8000/register) address, you should see the following interface:
 
-![Laravel 6 Register UI](https://www.diigo.com/file/image/rscqpoqzocbqqdarezdseaprda/Laravel+6+Register+UI.jpg)
+![Laravel 7/6 Register UI](https://www.diigo.com/file/image/rscqpoqzocbqqdarezdseaprda/Laravel+6+Register+UI.jpg)
 
 In the same way, you can see the login UI by visiting the [http://localhost:8000/login](http://localhost:8000/login) URL:
 
-![Laravel 6 Login Example](https://www.diigo.com/file/image/rscqpoqzocbqqdodpzdseaproa/Laravel+6+Login+UI.jpg)
+![Laravel 7/6 Login Example](https://www.diigo.com/file/image/rscqpoqzocbqqdodpzdseaproa/Laravel+6+Login+UI.jpg)
 
 You can also access the password reset page from the [http://localhost:8000/password/reset](http://localhost:8000/password/reset) URL:
 
-![Laravel 6 Password Reset Example ](https://www.diigo.com/file/image/rscqpoqzocbqqecpqzdseaprsa/Laravel+6+Password+Reset.jpg)
+![Laravel 7/6 Password Reset Example ](https://www.diigo.com/file/image/rscqpoqzocbqqecpqzdseaprsa/Laravel+6+Password+Reset.jpg)
 
 The views have no styling. You can change that by installing and building the frontend dependencies using the following commands from the root of your project:
 
@@ -81,11 +90,13 @@ $ sudo npm run dev
 
 We now have a better looking UI. This is a screenshot of the login page:
 
-![Laravel 6 & Bootstrap Login UI](https://www.diigo.com/file/image/rscqpoqzocbqqeoabzdseapsba/Laravel+6+Bootstrap+Login+Example.jpg)
+![Laravel 7/6 & Bootstrap Login UI](https://www.diigo.com/file/image/rscqpoqzocbqqeoabzdseapsba/Laravel+6+Bootstrap+Login+Example.jpg)
 
 If you register for an account, you'll be logged in and redirected to the /home path which is mapped to a `HomeController` where you can also invoke the logout method:
 
 ![](https://www.diigo.com/file/image/rscqpoqzocbqqoqaezdseaqado/Laravel+6+Logout+Example.jpg)
+
+## Laravel 7/6 Authentication Routes
 
 Open the `routes/web.php`, you should find the following code:
 
@@ -104,13 +115,13 @@ Route::get('/home', 'HomeController@index')->name('home');
 The `Auth::routes()` method includes the routes for login, registration, logout, and password reset. This method along with the home route was added when added the auth scaffolding in the previous section.
 
 
-## `LoginController`, `RegisterController`, and `ResetPasswordController`.
+## Laravel `LoginController`, `RegisterController`, and `ResetPasswordController`.
 
 Laravel provides the `LoginController`, `RegisterController`, and `ResetPasswordController` controllers out of the box and you can also provide your implementations if you have special requirements.
 
 The authentication controllers are located in the `app/Http/Controllers/Auth` folder. 
 
-## How to Protect Routes 
+## How to Protect Routes in your Laravel 7/6 App
 
 In a web application, you add authentication for primarily protecting some pages or routes for unauthorized access.
 
@@ -153,7 +164,7 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 ## Conclusion
 
-In this tutorial, we have added authentication to our CRM app built with Laravel 6.
+In this tutorial, we have added authentication to our CRM app built with Laravel 7/6.
 
 Adding authentication is Laravel is a breeze as you have seen since the framework provides a complete auth system with register, login, logout and password reset out of the box that can be sufficient in many cases. But if you want to handle special requirements you can also provide your custom auth controllers but you don't need to implement the base functionalities from scratch, you can use the various authentication services available from the `Auth` facade. 
 

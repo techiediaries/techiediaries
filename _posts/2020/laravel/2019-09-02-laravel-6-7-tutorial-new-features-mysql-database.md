@@ -1,32 +1,38 @@
 ---
 layout: post
-title: "Laravel 6 Tutorial & New Features - Build a CRM [PART 1]"
+title: "Laravel 6/7 Tutorial & New Features - Creating and Migrating a MySQL Database"
 image: "images/content/php.png"
-excerpt: "Laravel 6 is recently released with many enhancements so we'll be learning, throughout this tutorial how to create an example CRUD application from scratch. The application we'll be building is a simple CRM with a MySQL database." 
+excerpt: "Laravel 7 is recently released with many enhancements so we'll be learning, throughout this tutorial how to create an example CRUD application from scratch. The application we'll be building is a simple CRM with a MySQL database"
+categories: laravel
+date: 2020-03-04 
 tags : [php , laravel, mysql, laravel-6-tutorials-and-examples, laravel6] 
 ---
  
 
-![Laravel 6 tutorial with MySQL](https://www.diigo.com/file/image/rscqpoqzocbdscabdzdsdprqap/Laravel.jpg)
+![Laravel 6/7 tutorial with MySQL](https://www.diigo.com/file/image/rscqpoqzocbdscabdzdsdprqap/Laravel.jpg)
 
-Laravel 6 is the latest version of the most popular PHP framework for web development. It comes with a bunch of a new features and enhancements and will be the next LTS (Long Time Support) version instead of Laravel 5.5.
+Laravel 7 is the latest version of the most popular PHP framework for web development. It comes with a bunch of a new features and enhancements.
 
-Laravel 6 is released on the date of **September 3rd, 2019**. 
+Note: Laravel 6 is the current LTS (Long Time Support) version instead of Laravel 5.5.
 
-For v5.5, bug fixes will end on **August 30th, 2019** but security updates will be made until **August 30th, 2020**.
+Laravel 6 is released on the date of **September 3rd, 2019** whereas Laravel 7 is released on **March 3rd, 2020**. 
+
+<s>For v5.5, bug fixes will end on **August 30th, 2019** but security updates will be made until **August 30th, 2020**.</s>
 
 This is a table from the [official docs](https://laravel.com/docs/6.0/releases) that displays the release dates and other important dates for the various versions of Laravel:
 
 ![Laravel 6 Release Date](https://www.diigo.com/file/image/rscqpoqzocbdopscczdsdppodb/Release+Notes+-+Laravel+-+The+PHP+Framework+For+Web+Artisans.jpg)
+
+## Laravel 6/7 Tutorial Summary
 
 In this tutorial, we'll see the new features of Laravel 6, we'll learn how to generate a Laravel 6 project using Composer and how to build a CRM web application from scratch. We'll see how to configure a MySQL database for our app, create models, migrate our database and create controllers for exposing a REST API that will then be consumed from a Vue.js interface.
 
 You'll also learn about the basic concepts of Laravel such as routing, controllers, models and views, etc.
 
 
-## The new features of Laravel 6
+## The New Features of Laravel 6/7
 
-So, what is new with Laravel 6?
+So, what is new with Laravel 6 and 7?
 
 As mentionned, Laravel 6 comes with a bunch of new features and enhancements such as:
 
@@ -41,7 +47,17 @@ As mentionned, Laravel 6 comes with a bunch of new features and enhancements suc
 
 Check out the [docs](https://laravel.com/docs/6.0/releases) for more details.
 
-## Laravel basic concepts
+For Laravel 7:
+
+- Laravel Airlock: An official package for API authentication,
+- Custom Eloquent Casts: They allow you add your won custom casts,
+- CORS support by default i.e without third-party plugins, 
+- Blade Component Tags & Improvements: Allows you to create class-less components,
+- HTTP Client: An API for making HTTP requests, 
+- Route Caching Speed Improvements, etc.
+
+
+## Laravel 6/7 Basic Concepts
 
 If this is your first time working with Laravel, let's get started by learning about the basic Laravel concepts. In fact, these concepts are common between most web development frameworks so if you are famiiar with other frameworks you shoud be able to easily grasp them:
 
@@ -53,7 +69,7 @@ If this is your first time working with Laravel, let's get started by learning a
 - Middlewares
 - Eloquent ORM
 
-### Laravel routing 
+### Laravel 6/7 Routing 
 
 Routing is an important feature in any web application and allows your app to route HTTP requests to the appropriate handler whcih sends an appropriate response be it an HTML view or a JSON response.
 
@@ -78,7 +94,7 @@ Route::get('/', function () {
 });
 ```
 
-### Laravel controllers
+### Laravel 6/7 Controllers
 
 A Laravel controller reresents the C part in the MVC architecture which is reponsible for orchistering the oerations between the View and Model and passing information from the model to the view for rendering it.
   
@@ -88,7 +104,7 @@ You can use the following command to generate a controller:
 $ php artisan controller:make [Name]Controller
 ```
 
-### Laravel views
+### Laravel 6/7 Views
 
 A Laravel view represents the V part of the MVC architecture. They are simply HTML pages (with CSS and JavaScript) composing the UI of the application that are sent to the client once they are processed and rendered. Views are merely presentationel i.e they don't contain business logic . 
 
@@ -112,7 +128,7 @@ The request object can have various information like user input.
 
 A response is created and sent from the controller mapped to the route which received the request. 
 
-### Laravel models and migrations
+### Laravel 6/7 Models and Migrations
 
 In Laravel, the Model from the MVC pattern represents the part that contains the business/domain logic. It corresnponds to a table in the database and allow you to interact with the database with high level APIs. 
 
@@ -139,9 +155,9 @@ In Laravel, each database table is mapped to its corresponding Eloquent model wh
 
 Laravel is web development framework for building web applications with PHP. It's created and maintained by Taylor Otwell. It's based on modern and powerful design patterns like MVC, dependeny injection and ORMs.
 
-Since v1 which was released in **June 2011**, the framework has been groing since then to become one of the most powerful and popular framework in the PHP community. It's now in version 6.  
+Since v1 which was released in **June 2011**, the framework has been groing since then to become one of the most powerful and popular framework in the PHP community. It's now in version 7.  
 
-## How does Laravel framework works?
+## How Does Laravel Framework Work?
 
 Laravel works by providing a set of abtractions on top of PHP and Symfony that make it easy to listen for requests and send the right responses either JSON data in the case of REST or a rendered HTML document in a tradiotional web application. It also provides a powerful ORM which abtracts away all the complexities of dealing with SQL databases ease database migrations. 
 
@@ -173,12 +189,12 @@ You'll need to have a few prerequisites to be able to successfully complete this
 
 If you have these prerequisites, let's get started by creating our first web project with Laravel 6.
 
-## Creating a new Laravel 6 project
+## Creating a New Laravel 7 Project
 
 You can create a new Laravel 6 project using the following command from your terminal:
   
 ```bash
-$ composer create-project --prefer-dist laravel/laravel crmapp dev-develop
+$ composer create-project --prefer-dist laravel/laravel crmapp 
 ```
 
 
@@ -348,7 +364,7 @@ The `activity_status` table has the following fields:
 
 ## Conclusion
 
-As a wrap-up of the first part of our Laravel 6 tutorial, we've introduced Laravel framework, seen the new features of Laravel 6, seen the the basic concepts required for beginners, created a project using Composer based on the latest v6 and configured our MySQL database.
+As a wrap-up of the first part of our Laravel 6/7 tutorial, we've introduced Laravel framework, seen the new features of Laravel 6/7, seen the the basic concepts required for beginners, created a project using Composer based on the latest v7 and configured our MySQL database.
 
 We have also seen the requirements of the CRM application we'll be building throughout this tutorial series. If you are ready, let's continue with the second [tutorial](https://www.techiediaries.com/laravel-tutorial-rest-crud-api-models-relationships/) where we'll create models and migrations for our app.
   
