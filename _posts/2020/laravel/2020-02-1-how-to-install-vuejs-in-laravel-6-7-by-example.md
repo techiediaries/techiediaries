@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Install Vue.JS in Laravel 6/7 By Example"
+title: "How to Install Vue.JS in Laravel 7/6 By Example"
 date: 2020-02-1 05:44
 categories: laravel
 author: ahmed
@@ -10,6 +10,8 @@ excerpt: "Learn how to Install Vue.JS in Laravel 6/7 By Example"
 
 In this quick tutorial, we'll learn how to install and use the Vue.js library in your Laravel 6 or Laravel 7 project using the `laravel/ui` package. 
 
+## A Separate Laravel 7/6 Package for Vue.js Scaffolding
+
 The `laravel/ui` is a separate package that provides the UI scaffoldings for bootstrap, vue and react. Alongside with the auth scaffold for login and registration. 
 
 
@@ -18,6 +20,8 @@ Provided that you already have a Laravel project setup. Head over to your comman
 ```bash
 $ composer require laravel/ui
 ```
+
+## Adding Vue to your Laravel 7/6 Project
 
 After successfully installing the `laravel/ui` package, we can now add vue to our application.
 
@@ -34,6 +38,8 @@ If you also need to add the auth scaffolding, add the `--auth` switch to the com
 ```bash
 $ php artisan ui vue --auth
 ```
+
+## Installing Vue.js Dependencies
 
 Now, you also need to install the Vue.js dependencies from npm using the following command:
 

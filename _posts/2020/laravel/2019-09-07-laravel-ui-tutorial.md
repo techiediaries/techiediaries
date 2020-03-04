@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Laravel UI Scaffolding Tutorial: make:auth removed in Laravel 6"
+title: "Laravel UI Scaffolding Tutorial: make:auth removed in Laravel 6/7"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll learn about the new laravel/ui package for UI scaffolding" 
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
-If you have already tried Laravel 6 and particularly the auth scaffolding you will find out that the `php artisan make:auth` command doesn't work anymore. This is simply because it's now removed in Laravel 6 and the UI scaffolding is moved to a separate package called `laravel/ui`.
+If you have already tried Laravel 6/7 and particularly the auth scaffolding you will find out that the `php artisan make:auth` command doesn't work anymore. This is simply because it's now removed in Laravel 6 and the UI scaffolding is moved to a separate package called `laravel/ui`.
 
 The `laravel/ui` package provides the login and registration scaffolding with React, Vue, jQuery and Bootstrap layouts.
 

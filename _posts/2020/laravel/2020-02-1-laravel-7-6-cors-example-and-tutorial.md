@@ -1,14 +1,127 @@
 ---
 layout: post
-title: "Laravel 6/7 CORS Tutorial and Example"
+title: "Laravel 7/6 CORS Tutorial and Example"
 date: 2020-02-1 05:44
 categories: laravel
 author: ahmed
 tags: [ laravel ]
-excerpt: "Learn how to enable cors in Laravel 6/7"
+excerpt: "Learn how to enable cors in Laravel 7/6"
 ---
 
 In this tutorial, we'll show you how to work with CORS (Cross-Origin Resource Sharing) in Laravel 6/7.
+
+This tutorial shows you how to implement CORS in both Laravel 6 using a third-party package and Laravel 7 which includes a first-party package for CORS support. 
+
+## Laravel 7 CORS Support
+
+Laravel 7 has been released on March and provides built-in support for CORS so developers don't need to use third party packages to enable CORS in their laravel apps.
+
+According to the [official docs](https://laravel.com/docs/7.x/releases):
+
+>Laravel 7 includes first-party support for configuring Cross-Origin Resource Sharing (CORS) OPTIONS request responses by integrating the popular Laravel CORS package written by Barry vd. Heuvel. A new cors configuration is included in the default Laravel application skeleton.
+
+For Laravel 6, make sure to continue reading below for a step by step example on how to enable CORS in your REST API backend.
+  
+
+## Laravel 7 CORS by Example
+
+Let's now see how CORS is handled in Laravel 7. In fact, you don't need to do much. Open a new command-line interface and start by generating a [new Laravel 7 project](https://www.techiediaries.com/how-to-install-laravel-7/):
+
+```bash
+composer create-project --prefer-dist laravel/laravel laravel-7-cors-example
+```
+
+You'll notice that a package called `fruitcake/laravel-cors` is installed in your project.
+
+Laravel 7 can automatically respond to CORS HTTP `OPTIONS` requests with values that you can configure. 
+
+All CORS settings can be configured in your `cors` configuration file. 
+
+Open the `config/cors.php` file:
+
+```php
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Cross-Origin Resource Sharing (CORS) Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure your settings for cross-origin resource sharing
+    | or "CORS". This determines what cross-origin operations may execute
+    | in web browsers. You are free to adjust these settings as needed.
+    |
+    | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+    |
+    */
+
+    'paths' => ['api/*'],
+
+    'allowed_methods' => ['*'],
+
+    'allowed_origins' => ['*'],
+
+    'allowed_origins_patterns' => [],
+
+    'allowed_headers' => ['*'],
+
+    'exposed_headers' => false,
+
+    'max_age' => false,
+
+    'supports_credentials' => false,
+
+];
+
+```
+
+As you can see you can configure the various aspects of your app such as:
+
+- The paths that will have CORS configured, 
+- The allowed methods.
+- The allowed origins,
+- the allowed heades.
+- The max age,
+- The credentials support.
+
+If you are using custom headers, such as `X-Auth-Token`, you need to  add these headers in the `allowed_headers` array. You can also use ['*'] to allow all custom headers.
+
+`allowed_origins`, `allowed_headers` and `allowed_methods` can be set to ['*'] to accept any value.
+
+
+> Note: Because of http method overriding in Laravel, If you enable POST methods, users can also send PUT and DELETE requests withour any CORS issues.
+
+The HTTP `OPTIONS` requests will automatically be handled. Open the `App/Http/Middleware/Kernel.php` file:
+
+```php
+<?php
+
+namespace App\Http;
+
+use Illuminate\Foundation\Http\Kernel as HttpKernel;
+
+class Kernel extends HttpKernel
+{
+    /**
+     * The application's global HTTP middleware stack.
+     *
+     * These middleware are run during every request to your application.
+     *
+     * @var array
+     */
+    protected $middleware = [
+        \App\Http\Middleware\TrustProxies::class,
+        \Fruitcake\Cors\HandleCors::class,
+        \App\Http\Middleware\CheckForMaintenanceMode::class,
+        \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+        \App\Http\Middleware\TrimStrings::class,
+        \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    ];
+```
+
+The `HandleCors` middleware is added by default in project's gloabl middlewares.
 
 
 ## Laravel 6/7 API  Example

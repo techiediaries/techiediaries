@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How to Install Bootstrap 4 in Laravel 6/7 Tutorial and Example"
+title: "How to Install Bootstrap 4 in Laravel 7/6 Tutorial and Example"
 date: 2020-02-1 05:44
 categories: laravel
 author: ahmed
 tags: [ laravel ]
-excerpt: "Learn how to Install Bootstrap 4 in Laravel 6/7 By Example"
+excerpt: "Learn how to Install Bootstrap 4 in Laravel 7/6 By Example"
 ---
 
 
 
-In this tutorial, we'll see how  to install Bootstrap 4 in our Laravel 6/7 application by example. 
+In this tutorial, we'll see how  to install Bootstrap 4 in our Laravel 7/6 application by example. 
 
 We simply need to install the `laravel/ui` package using Composer and installing the Bootstrap 4 package from npm. 
 

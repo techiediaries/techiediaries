@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Laravel 6 Tutorial: Build your First CRUD App with Laravel, Bootstrap 4 and MySQL"
+title: "PHP Laravel 7/6 Tutorial: CRUD Example App with Bootstrap 4 and MySQL Database"
 image: "images/content/php.png"
-excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
+excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
 tags : [php , laravel, laravel-6-tutorials-and-examples, mysql]
-date: 2020-01-08 
+categories: laravel
+date: 2020-03-04 
 ---
 
-Throughout this tutorial for beginners you'll learn to use Laravel 6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database and Bootstrap 4 styles from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
+Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database and Bootstrap 4 styles from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
 
 
-> **Note**: Laravel 6 is recently released and this tutorial is upgraded to the latest version.
+> **Note**: Laravel 7 is recently released and this tutorial is upgraded to the latest version.
 
 ## What is Bootstrap 4?
 
@@ -22,11 +23,23 @@ Bootstrap 4 is based on Flexbox and allows you to build responsive layouts with 
 
 CRUD stands for Create, Read, Update and Delete which are operations needed in most data-driven apps that access and work with data from a database.
 
-In this example, we'll see how to impelement the CRUD operations in Laravel 6 against a MySQL database.
+In this example, we'll see how to impelement the CRUD operations in Laravel 7/6 against a MySQL database.
 
-> Also read: [Laravel 6 REST CRUD API Tutorial - Build a CRM [PART 1]: Eloquent Models and Relationships](https://www.techiediaries.com/laravel-tutorial-rest-crud-api-models-relationships/)
+> Also read: [Laravel 7/6 REST CRUD API Tutorial - Build a CRM [PART 1]: Eloquent Models and Relationships](https://www.techiediaries.com/laravel-tutorial-rest-crud-api-models-relationships/)
 
-## The new features of Laravel 6
+## Laravel 7 New Features
+
+Laravel 7 brings many new features such as:
+
+- Laravel Airlock: An official package for API authentication,
+- Custom Eloquent Casts: They allow you add your won custom casts,
+- CORS support by default i.e without third-party plugins, 
+- Blade Component Tags & Improvements: Allows you to create class-less components,
+- HTTP Client: An API for making HTTP requests, 
+- Route Caching Speed Improvements, etc.
+
+
+## The New Features of Laravel 6
 
 So, what is new with Laravel 6?
 
@@ -68,15 +81,16 @@ This tutorial assumes you have PHP and MySQL installed on your system. Follow th
 
 You also need to be familiar with Linux/macOS bash where we'll be executing the commands in this tutorial.
 
-Familiarly with PHP is required since Laravel is based on PHP. 
+Familiarly with PHP is required since Laravel 7 is based on PHP. 
 
-For development I will be using a Ubuntu 16.04 machine so the commands in this tutorial are targeting this system but you should be able to follow this tutorial in any operating system you use.
+For development I will be using a Ubuntu 16.04+ machine so the commands in this tutorial are targeting this system but you should be able to follow this tutorial in any operating system you use.
 
-Laravel 6 PHP >= 7.2.0
+Laravel 6 requires PHP >= 7.2.0
+Laravel 7 requires PHP >= 7.2.5
 
-## Installing PHP 7.2
+## Installing PHP 7.2.5+
 
-Laravel v6 requires PHP 7.2 or above so you need the latest version of PHP installed on your system. The process is straightforward on most systems.
+Laravel 7 requires PHP 7.2.5+ or above so you need the latest version of PHP installed on your system. The process is straightforward on most systems.
 
 On Ubuntu, you can follow these instructions.
 
@@ -162,11 +176,11 @@ Options:
 
 For more information check out this [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-18-04).
 
-If you've successfully installed Composer in your system, you are ready to create a Laravel 6 project.
+If you've successfully installed Composer in your system, you are ready to create a Laravel 7 project.
 
-## Installing and Creating a Laravel 6  Project
+## Installing and Creating a Laravel 7 Project
 
-In this section we'll introduce Laravel and then proceed it to install and create a Laravel 6 project. 
+In this section we'll introduce Laravel and then proceed it to install and create a Laravel 7 project. 
 
 ### About Laravel
 
@@ -184,22 +198,22 @@ In this section we'll introduce Laravel and then proceed it to install and creat
 
 >Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
-Generating a Laravel 6 project is easy and straightforward. In your terminal, run the following command:
+Generating a Laravel 7 project is easy and straightforward. In your terminal, run the following command:
 
 ```bash
-$ composer create-project  --prefer-dist  laravel/laravel laravel-first-crud-app
+$ composer create-project  --prefer-dist  laravel/laravel laravel-7-crud-app
 ```
 
-This will install `laravel/laravel` **v6**.
+This will install `laravel/laravel` **v7**.
 
-> **Note**: Make sure you have PHP 7.2 installed on your system. Otherwise, composer will use a previous version of Laravel for your project.
+> **Note**: Make sure you have PHP 7.2.5+ installed on your system. Otherwise, composer will use a previous version of Laravel for your project.
 
 You can verify the installed version in your project using:
 
 ```bash
-$ cd laravel-first-crud-app
+$ cd laravel-7-crud-app
 $ php artisan -V
-Laravel Framework 6
+Laravel Framework 7
 ```
 
 ## Installing the Front-End Dependencies
@@ -581,7 +595,7 @@ Open the `resources/views/base.blade.php` file and add the following blade templ
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laravel 6 & MySQL CRUD Tutorial</title>
+  <title>Laravel 7 & MySQL CRUD Tutorial</title>
   <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -666,7 +680,7 @@ Open the `resources/views/contacts/create.blade.php` file and add the following 
 
 This is a screenshot of our create form!
 
-![Laravel 6 CRUD Tutorial](https://www.diigo.com/file/image/bbccosoazescrcabbqzdqddeqdq/Laravel+5.7+CRUD+Tutorial.jpg)
+![Laravel 7 CRUD Tutorial](https://www.diigo.com/file/image/bbccosoazescrcabbqzdqddeqdq/Laravel+5.7+CRUD+Tutorial.jpg)
 
 Fill out the form and click on the **Add contact** button to create a contact in the database. You should be redirected to /contacts route which doesn't have a view associated to it yet.
 
@@ -887,10 +901,10 @@ We also need to add a button to takes us to the create form. Add this code below
 
 This is a screenshot of the page after we created a contact:
 
-![Laravel 6 CRUD Example](https://www.diigo.com/file/image/bbccosoazescrcppsbzdqddocre/Laravel+5.7+CRUD+Tutorial.jpg)
+![Laravel 7 CRUD Example](https://www.diigo.com/file/image/bbccosoazescrcppsbzdqddocre/Laravel+5.7+CRUD+Tutorial.jpg)
 
 ## Conclusion
 
-We've reached the end of this tutorial. We created a CRUD application with Laravel 6, PHP 7 and MySQL.
+We've reached the end of this tutorial. We created a CRUD application with Laravel 7/6, PHP 7 and MySQL.
 
 Hope you enjoyed the tutorial and see you in the next one!
