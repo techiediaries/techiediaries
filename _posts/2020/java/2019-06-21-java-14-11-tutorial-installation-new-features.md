@@ -1,24 +1,42 @@
 ---
 layout: post
-title: "Java 11 Tutorial: Introduction & New Features"
+title: "Java 14/11 Tutorial: Installation & New Features"
 image: "images/content/java-tutorial.png"
 excerpt: "A quick introduction tutorial to learn Java 11 for beginners"
+categories: java
+date: 2020-03-05
 tags: [java]
 ---
 
-![Java 11 Tutorial](https://www.techiediaries.com/images/content/java-tutorial.png)
+![Java 14 Tutorial](https://www.techiediaries.com/images/content/java-tutorial.png)
 
 Java is one of the most popular languages for building enterprise applications and all 
 sort of apps for web, desktop and mobile.
 
-Java 11 is the current LTS version which has many improvements. Java 12 is also available but not yet recommended for production. 
+Java 11 is the current LTS version which has many improvements. 
 
-> **Note**: Java 11 Oracle JDK is paid for commercial use.
+> **Note**: Java 11+ Oracle JDK is paid for commercial use.
 >
 > A new version is released in each six months.
 > If you want to use it for free in production, you can You can [download the OpenJDK version](https://jdk.java.net/11/). 
 
-## What's new with Java 11?
+## What's New with Java 14?
+
+Java 14 is due to be released on March 17, 2020. Let's look at Java 14 major features:
+
+- Switch Expressions (Standard)
+- Pattern Matching for instanceof (Preview)
+- JFR Event Streaming
+- Helpful NullPointerExceptions
+- Records (Preview)
+- Text Blocks (Second Preview)
+
+## How to Install Java 14?
+
+You can install Java 14 by going to this [page](https://jdk.java.net/14/) and download JDK 14.
+
+
+## What's New with Java 11?
 
 Java 11 has many new features. Let's see some of them:
 
@@ -105,7 +123,7 @@ We can build multiple types of applications using Java such as
 - Web applications,
 - 3D applications and games etc.
 
-## Should you learn Java in 2019? 
+## Should you learn Java in 2020? 
 
 When you want to decide if you should learn a programming language, you need to consider a few things:
 
