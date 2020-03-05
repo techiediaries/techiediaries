@@ -4,6 +4,8 @@ title: "How You Can Upgrade Clojure Projects to use Java 11"
 image: "images/content/ionic-modals.png"
 excerpt: "How You Can Upgrade Clojure Projects to use Java 11" 
 tags : [ closure, java]
+categories: java
+date: 2020-03-05
 author: kibo
 ---
 
@@ -11,9 +13,11 @@ author: kibo
 
 ![Upgrade Clojure Projects to use Java 11 ](https://lh6.googleusercontent.com/K5nhyW02eVEtXMVUJIZIfDgnkwQBGjLg6HXI2NYpBbexLReOyq72y7yVABUv4XzbNlxqLEYWVl7ObT3I-OCdzbhH5EWkL2asvKn5O3brG1UizZjT26tmBiTTyK_WZYTUcrLtomm3BBfBjyU6lw)
 
+## Closure with Java JDK 11
+
 Are you a Java developer? Have you ever dealt with the project Clojure along with the other deliverables? In the past, with the severe changes in JDK 8, the java developers need to update their dependencies or building tools. A few number of open source projects have resolved their queries by adding support for JDK 9 and 10. But, with the new version release of JDK 11, things seem to be going much simpler and upgrading to java 11 is not tough.
 
-  
+## Upgaring your Closure Project to JDK 11  
 
 In this article, we will be looking at a few simple ways to how you can upgrade your Clojure projects to the latest JDK 11. Let us begin with some basic terms.
 
