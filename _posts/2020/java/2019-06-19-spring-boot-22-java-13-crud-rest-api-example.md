@@ -1,20 +1,24 @@
 ---
 layout: post
-title: "Spring Boot 2.2 with Java 11 REST API Tutorial: Using JPA Hibernate & MySQL"
+title: "Spring Boot 2.2 with Java 13 CRUD REST API Tutorial: Using JPA Hibernate & MySQL"
 image: "images/content/java.jpg"
-excerpt: "Throughout this tutorial, we'll learn to build a Java 11 web application using Spring 5 and JPA. We'll build the REST API using the Spring Boot 2.2 rapid development platform." 
-tags : [java , spring] 
+excerpt: "Throughout this tutorial, we'll learn to build a Java 13 web application using Spring 5 and JPA. We'll build the REST API using the Spring Boot 2.2 rapid development platform"
+categories: java
+date: 2020-03-05 
+tags : [java , spring, mysql] 
 ---
 
-Throughout this tutorial, we'll learn to build a Java 11 web application using Spring 5 and JPA. We'll build the REST API using the Spring Boot 2.2 rapid development platform.
+Throughout this tutorial, we'll learn to build a Java 13 web application using Spring 5 and JPA. We'll build the CRUD REST API using the Spring Boot 2.2 rapid development platform.
 
-In this first tutorial, you’ll learn step by step how to build a REST API back-end, using Java 11, Spring 5, Spring Boot 2.2, JPA (Java Persistence API), Hibernate (the ORM implementation for JPA) and MySQL, for a simple customer management application. 
+## Build a REST API Example with Java 13, Spring Boot 2.2 and JPA Hibernate
+
+In this first tutorial, you’ll learn step by step how to build a REST API back-end, using Java 13, Spring 5, Spring Boot 2.2, JPA (Java Persistence API), Hibernate (the ORM implementation for JPA) and MySQL, for a simple customer management application. 
 
 We'll first start by generating a zero-configuration project using *Spring Initializr*.  Next we'll configure the MySQL database and create the `Customer` model (business domain class), finally we'll build the API endpoints to create, read, update and delete customers data.
 
 ## Prerequisites
 
-You need to have a development environment with Java 11 installed and some working knowledge of Java.
+You need to have a development environment with Java 13 installed and some working knowledge of Java.
 
 ## Summary
 
@@ -35,7 +39,7 @@ Spring Boot 2.2 is a rapid application platform that helps you accelerate and fa
 
 Before you can use Sprint Boot 2.2, you need a few pre-requisites:
 
-- Java 11 or later,
+- Java 13 or later,
 - Gradle 4.1+ 
 - Maven 
 
@@ -51,7 +55,7 @@ After filling the details, you need to click on `Generate Project` to generate y
 
 ![Spring Initializr](https://www.diigo.com/file/image/badcbccczobbprqooqzdrpcpaqo/Spring+Initializr.jpg)
 
-Make sure to select **Spring Boot 2.2.0 M3** and Java 11 and to add the **Spring Web Starter** dependency which includes Spring MVC and an embedded Tomcat web server to our project.
+Make sure to select **Spring Boot 2.2** and Java 13 and to add the **Spring Web Starter** dependency which includes Spring MVC and an embedded Tomcat web server to our project.
 
 Now, make sure you have MySQL installed on your system and proceed to the next section. 
 
@@ -292,4 +296,4 @@ $ gradle bootRun
 
 Your REST API will be available at   `localhost:8080/api/customers`.
 
-In this tutorial, we've used Java 11, Spring 5, Spring Boot 2.2 and JPA to create a REST API web application. In the next tutorial we'll learn how to consume this API from an Angular 8 front-end. Stay tunned!
+In this tutorial, we've used Java 13, Spring 5, Spring Boot 2.2 and JPA to create a REST API web application. In the next tutorial we'll learn how to consume this API from an Angular 8 front-end. Stay tunned!

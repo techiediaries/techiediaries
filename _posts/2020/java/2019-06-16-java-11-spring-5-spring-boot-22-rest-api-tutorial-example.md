@@ -1,21 +1,30 @@
 ---
 layout: post
-title: "Java 11 & Spring Boot 2.2 Tutorial: Build your First REST API App"
+title: "Java 11, Spring 5 & Spring Boot 2.2 REST API Tutorial by Example"
 image: "images/spring.png"
-excerpt: "In this tutorial, you will learn to build your first web application with Java 11, Spring 5 and Spring Boot 2. We'll also use NetBeans 11 as IDE. 
-"
+excerpt: "In this tutorial, you will learn to build your first web application with Java 11, Spring 5 and Spring Boot 2. We'll also use NetBeans 11 as IDE"
+categories: java
+date: 2020-03-05
 tags : [ java , spring, mysql ] 
 ---
 
-In this tutorial, you will learn to build your first REST API web application with Java 11, Spring 5 and Spring Boot 2.2. We'll also use NetBeans 11 as the IDE. 
+In this tutorial, you will learn to build your first REST API web application with Java 11, Spring 5 and Spring Boot 2.2. We'll also use NetBeans 11 as the IDE.
+
+## Initializing our Spring Boot 2.2 REST API Example with Spring Initializr
 
 For quickly initializing our Spring Boot application, we'll use Spring Initializr.
 
 In our example, we'll be using Spring MVC and an embedded Tomcat server to serve our application locally by inlcuding the Spring Web Starter as a dependency of our project.
 
+## Introducing Spring 5 
+
 [Spring]([https://docs.spring.io/spring/docs/5.2.0.M3/spring-framework-reference/overview.html#overview](https://docs.spring.io/spring/docs/5.2.0.M3/spring-framework-reference/overview.html#overview)) is an open source Java EE (Enterprise Edition) framework that makes developing Java EE applications less complex by providing support for a comprehensive infrastructure and allowing developers to build their applications from Plain Old Java Objects or POJOS. Spring relieves you from directly dealing with the underlying and complex APIs such as transaction, remote, JMX and JMS APIs.
 
+### Spring Dependency Injection
+
 Spring framework provides Dependency Injection and Inversion of Control out of the box which helps you avoid the complexities of managing objects in your application.
+
+### Spring 5 JDK Requirements
 
 As of Spring Framework 5.1, Spring requires JDK 8+ (Java SE 8+) and provides out of the box support for JDK 11 LTS.
 
@@ -54,6 +63,8 @@ We'll add the **Spring Web Starter** dependency which includes Spring MVC and To
 
 ![Spring 5 tutorial](https://www.diigo.com/file/image/badcbccczobbqabbedzdrpcqbec/Screenshot+from+2019-06-15+19-18-06.jpg?k=08ceb99fb141af71fe6f79a2b8501c91)
 
+## Spring Boot 2.2 Starters for Building REST APIs
+
 Spring Boot starters help you quickly create Spring Boot projects without going through tedious dependency management.
 
 If you want to build a REST API web app, you would need to add various dependencies such as Spring MVC, Tomcat and Jackson. A starter allows you to add a single dependency instead of manually adding all these required dependencies. In this example, we added the Web starter (`spring-boot-starter-web`) via the UI.
@@ -73,6 +84,8 @@ In the files pane of the IDE, let's browse to the `src/main/java/com/firstspring
 ![](https://www.diigo.com/file/image/badcbccczobbpsbpddzdrpcpedc/Screenshot+from+2019-06-15+17-29-06.jpg?k=d4728c8d003829a0139fac0919ae5f42)
 
 > **Note**: The path and name of the bootstrapping file may be different for you depending on your chosen Package and Artifact names when you initialized the project.
+
+## Understanding our Spring 5 Application
  
 Our Spring 5 application is bootstrapped from the `DemoApplication.java` file. Let's understand the code in this file:
 
