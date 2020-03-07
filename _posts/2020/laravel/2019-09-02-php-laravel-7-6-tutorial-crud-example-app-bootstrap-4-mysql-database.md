@@ -13,6 +13,8 @@ Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the lat
 
 > **Note**: Laravel 7 is recently released and this tutorial is upgraded to the latest version.
 
+> Also check out [PHP Laravel 7 Tutorial By Example: Build Your CRUD App With MySQL And CSS Bootstrap](https://shabang.dev/php-laravel-7-tutorial-by-example-build-your-crud-app-with-mysql-and-css-bootstrap/)
+
 ## What is Bootstrap 4?
 
 Bootstrap 4 is the latest version of Twitter Bootstrap which is a CSS framework that allows web developers to professionally style their web interfaces without being experts in CSS.
