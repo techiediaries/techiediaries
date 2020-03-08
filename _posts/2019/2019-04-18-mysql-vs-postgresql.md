@@ -7,7 +7,7 @@ author: gilad
 tags : [ mysql , postgresql ]
 ---
 
-[Relational Database Management Systems (RDBMS)](https://searchdatamanagement.techtarget.com/definition/RDBMS-relational-database-management-system) are based on the relational model developed by Edgar F. Codd. These databases store data as tables. The model creates a relationship between the tables which permits linking of the data. Data can thus be referenced from different places in the database.
+[Relational Database Management Systems <a rel="nofollow" href="https://searchdatamanagement.techtarget.com/definition/RDBMS-relational-database-management-system">RDBMS</a> are based on the relational model developed by Edgar F. Codd. These databases store data as tables. The model creates a relationship between the tables which permits linking of the data. Data can thus be referenced from different places in the database.
 
 In this article, we compare two of the most popular open-source RDBMS on the market. The comparison looks at the difference in features, governance, SQL compliance, supported platforms, performance, security, and cloud hosting so you can make an informed decision when choosing a database system for your application.
 
@@ -86,7 +86,7 @@ PostgreSQL and MySQL are supported by all major cloud service providers, such as
 
 ## Migrating from Oracle to PostgreSQL
 
-3 reasons to [migrate from Oracle to PostgreSQL](https://www.enterprisedb.com/blog/no-time-waste-migrate-oracle-postgres-minutes):
+3 reasons to <a rel="nofollow" href="https://www.enterprisedb.com/blog/no-time-waste-migrate-oracle-postgres-minutes">migrate from Oracle to PostgreSQL</a>:
 
 - **Cost**—Oracle license cost is expensive and there are additional costs for features like high availability and partitioning.
 - **Flexibility**—flexible open source licensing and availability from public cloud providers like AWS.

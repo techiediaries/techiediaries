@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Java 14/13 Switch Expressions by Example"
 image: "images/content/java.png"
 excerpt: "We'll learn about the new Java 14/13 switch expressions by Example" 

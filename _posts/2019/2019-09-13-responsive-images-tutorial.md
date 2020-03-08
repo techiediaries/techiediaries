@@ -44,7 +44,7 @@ This change of effect can be obtained through two methods: resolution switching 
 
 ### Resolution switching 
  
-It is the most common use case, when you want to provide different sizes of an image without making modifications to the content or aspect of the image. The resolution switching also involves scenarios when you want to provide different image sources based on the display density, such as [retina images](https://responsivedesign.is/resources/images/retina-images/).
+It is the most common use case, when you want to provide different sizes of an image without making modifications to the content or aspect of the image. The resolution switching also involves scenarios when you want to provide different image sources based on the display density, such as <a  rel="nofollow" href="https://responsivedesign.is/resources/images/retina-images/">retina images</a>.
 
 ### Art direction  
 
@@ -73,7 +73,7 @@ While talking about resizing, displaying a large image on a screen much smaller 
 
 One possible solution might be to use vector images. However, while these are useful, they are not suitable for all image types. For example, you cannot create a vector-based image of a photo. For that matter, other image formats such as JPEG are more suitable.
 
-Resizing and compatibility weren’t an issue until recently, with the widespread adoption of smartphones, tablets and other devices. Therefore, [responsive image technologies](https://cloudinary.com/features/responsive_images) and solutions are implemented by allowing you offer the browser a number of image files, with two options: showing the same thing but containing different numbers of pixels (resolution switching), or different images suitable for different display formats (art direction).
+Resizing and compatibility weren’t an issue until recently, with the widespread adoption of smartphones, tablets and other devices. Therefore, responsive image <a rel="nofollow" href="https://cloudinary.com/features/responsive_images">technologies</a>  and solutions are implemented by allowing you offer the browser a number of image files, with two options: showing the same thing but containing different numbers of pixels (resolution switching), or different images suitable for different display formats (art direction).
 
 ## What are Image Breakpoints?
 
