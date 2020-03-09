@@ -5,7 +5,7 @@ image: "images/content/php.png"
 excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
 tags : [php , laravel, laravel-6-tutorials-and-examples, mysql]
 categories: laravel
-date: 2020-03-04 
+date: 2020-03-09
 ---
 
 Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database and Bootstrap 4 styles from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
@@ -21,13 +21,15 @@ Bootstrap 4 is the latest version of Twitter Bootstrap which is a CSS framework 
 
 Bootstrap 4 is based on Flexbox and allows you to build responsive layouts with easy classes and utilities. 
 
+> Also read [How to Install Bootstrap 4 in Laravel 7/6 Tutorial and Example](https://www.techiediaries.com/laravel/how-to-install-bootstrap-in-laravel-6-7-by-example/)
+
 ## What is CRUD?
 
 CRUD stands for Create, Read, Update and Delete which are operations needed in most data-driven apps that access and work with data from a database.
 
 In this example, we'll see how to impelement the CRUD operations in Laravel 7/6 against a MySQL database.
 
-> Also read: [Laravel 7/6 REST CRUD API Tutorial - Build a CRM [PART 1]: Eloquent Models and Relationships](https://www.techiediaries.com/laravel-tutorial-rest-crud-api-models-relationships/)
+> Also read: [Laravel 7/6 REST CRUD API - Eloquent Models and Relationships](https://www.techiediaries.com/laravel/laravel-7-6-rest-api-eloquent-models-relationships/)
 
 ## Laravel 7 New Features
 
@@ -41,6 +43,7 @@ Laravel 7 brings many new features such as:
 - Route Caching Speed Improvements, etc.
 
 
+> Also read [Laravel 7/6 Auth Tutorial: Login/Register/Password Reset Example](https://www.techiediaries.com/laravel/laravel-7-6-authentication-tutorial-login-register-password-reset-example/)
 ## The New Features of Laravel 6
 
 So, what is new with Laravel 6?
@@ -303,6 +306,7 @@ Laravel uses the MVC architectural pattern to organize your application in three
 
 >**Model–view–controller** is an [architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern "Architectural pattern") commonly used for developing [user interfaces](https://en.wikipedia.org/wiki/User_interface "User interface")that divides an application into three interconnected parts. This is done to separate internal representations of information from the ways information is presented to and accepted from the user.
 
+> See [Laravel 7/6 Database Migrations Tutorial with Admin Roles Example](https://www.techiediaries.com/laravel/laravel-7-6-migrations-tutorial-admin-role-example)
 
 Now, let's create our first Laravel Model. In your terminal, run the following command:
 
@@ -360,6 +364,8 @@ class CreateContactsTable extends Migration
 ```
 
  We added the `first_name`, `last_name`, `email`, `job_title`, `city` and `country` fields in the `contacts` table.
+
+ > Also see, [Laravel 7/6 Email Verification Tutorial and Example](https://www.techiediaries.com/laravel/laravel-7-6-email-verification-tutorial-example/)
 
 
 You can now create the `contacts` table in the database using the following command:

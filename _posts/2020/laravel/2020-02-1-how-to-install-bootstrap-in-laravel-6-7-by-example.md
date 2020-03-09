@@ -12,14 +12,15 @@ excerpt: "Learn how to Install Bootstrap 4 in Laravel 7/6 By Example"
 
 In this tutorial, we'll see how  to install Bootstrap 4 in our Laravel 7/6 application by example. 
 
-We simply need to install the `laravel/ui` package using Composer and installing the Bootstrap 4 package from npm. 
+## How to Install Bootstrap in Laravel 7?
 
+We simply need to install the `laravel/ui` package using Composer and installing the Bootstrap 4 package from npm. 
 
 The `laravel/ui` package provides the scaffoldings for bootstrap, vue and react. And the auth scaffold for login and registration.
 
 ## Installing Bootstrap
 
-Head over to your terminal, navigate to your Laravel project and run the following command:
+Head over to your terminal, navigate to your Laravel 7 project and run the following command:
 
 ```bash
 $ composer require laravel/ui

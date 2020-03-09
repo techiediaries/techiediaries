@@ -1,32 +1,35 @@
 ---
 layout: bpost
-title: "Laravel 6 Ajax CRUD Tutorial with Bootstrap 4 Modal and Pagination Example"
+title: "Laravel 7/6 Ajax CRUD Tutorial with Bootstrap 4 Modal and Pagination Example"
 image: "images/content/laravel.png"
-excerpt: "In this tutorial, you will learn to build a CRUD example with Laravel 6 and Ajax" 
+excerpt: "In this tutorial, you will learn to build a CRUD example with Laravel 6/7 and Ajax" 
+date: 2020-03-09
 tags : [ laravel, laravel-6-tutorials-and-examples  ]
 ---
 
-In this tutorial, we'll learn to build a CRUD example with Laravel 6, Bootstrap 4, jQuery, and Ajax.
+In this tutorial, we'll learn to build a CRUD example with Laravel 7/6, Bootstrap 4, jQuery, and Ajax.
 
-We'll see by example how to perform Ajax CRUD operations in Laravel 6 with a bootstrap modal, datatable and pagination. 
+We'll see by example how to perform Ajax CRUD operations in Laravel 6/7 with a bootstrap modal, datatable and pagination. 
+
+## Using Ajax with Laravel 7/6 for CRUD Operations
 
 We'll be using the jQuery `ajax()` method for sending Ajax requests. 
 
 We'll be using `yajra` datatable for creating a datatable. 
 
-- Step 1 - Installing Laravel 6
+- Step 1 - Installing Laravel 7
 - Step 2 - Installing Yajra Datatable
 - Step 3 - Configuring a MySQL Database
-- Step 4 - Creating a Laravel 6 Migration 
-- Step 5 - Adding a Laravel 6 Route
-- Step 6 - Adding a Laravel 6 Controller and Model
+- Step 4 - Creating a Laravel 7 Migration 
+- Step 5 - Adding a Laravel 7 Route
+- Step 6 - Adding a Laravel 7 Controller and Model
 - Step 7 - Adding a Blade Template View
-- Step 8 - Serving the Laravel 6 Application
+- Step 8 - Serving the Laravel 7 Application
 
 
-## Step 1 - Installing Laravel 6
+## Step 1 - Installing Laravel 7
 
-Let's get started by installing Laravel 6 in our development machine.
+Let's get started by installing Laravel 7 in our development machine.
 
 Head to a new command-line interface and run the following command:
 
@@ -37,7 +40,7 @@ $ composer create-project --prefer-dist laravel/laravel ajax-crud-example
 
 ## Step 2 - Installing Yajra Datatable
 
-Next, let's install the `yajra` datatable package using following command:
+Next, let's install the `yajra` datatable package in our Laravel 7 project using following command:
 
 ```bash
 $ composer require yajra/laravel-datatables-oracle
@@ -60,7 +63,7 @@ Next, you need to  add it to the `providers` and `aliases` arrays:
 
 ## Step 3 - Configuring a MySQL Database
 
-Next, let's configure a MySQL database for our project. Make sure you have created a database then go to the `.env` file and add the information for connecting to your database:
+Next, let's configure a MySQL database for our Laravel 7 project. Make sure you have created a database then go to the `.env` file and add the information for connecting to your database:
 
 ```text
 DB_CONNECTION=mysql
@@ -71,7 +74,7 @@ DB_USERNAME= root
 DB_PASSWORD= root
 ```
 
-## Step 4 - Creating a Laravel 6 Migration 
+## Step 4 - Creating a Laravel 7 Migration 
 
 Let's now create a migration file for a `customers` table. Head back to your terminal and run the following command:
 
@@ -135,9 +138,9 @@ Next, you can create the table in the database by running the following command:
 $ php artisan migrate
 ```
 
-## Step 5 - Adding a Laravel 6 Route
+## Step 5 - Adding a Laravel 7 Route
 
-Let's now create a Laravel route for accessing the 
+Let's now create a Laravel 7 route for accessing the view.
 
 Go to the `routes/web.php` file and add following resource route:
 
@@ -145,7 +148,7 @@ Go to the `routes/web.php` file and add following resource route:
 Route::resource('customers','CustomerController');
 ```
 
-## Step 6 - Adding a Laravel 6 Controller and Model
+## Step 6 - Adding a Laravel 7 Controller and Model
 
 
 Head back to your terminal and run the following command to generate a controller: 
@@ -233,6 +236,8 @@ class CustomerController extends Controller
     }
 }
 ```
+
+## Generating a Laravel 7 Database Model
 
 Next, let's generate a `Customer` database model using the following command:
 
@@ -420,7 +425,7 @@ Next, inside the `resources/views/` folder, create `customer.blade.php` file and
 </html>
 ```
 
-## Step 8 - Serving the Laravel 6 Application
+## Step 8 - Serving the Laravel 7 Application
 
 Head back to your terminal and run the following command:
 
@@ -431,3 +436,5 @@ $ php artisan serve
 
 Next open your web browser and navigate to the `http://localhost:8000/customers` file.
 
+
+That's it, we have finished our Laravel 7/6 Ajax CRUD app where we have seen how to use jQuery to send Ajax requests and implement a CRUD interface for working with a MySQL database.
