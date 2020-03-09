@@ -2,7 +2,7 @@
 layout: post
 title: "PHP Laravel 7/6 Tutorial: CRUD Example App with Bootstrap 4 and MySQL Database"
 image: "images/content/php.png"
-excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
+excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 7/6 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
 tags : [php , laravel, laravel-6-tutorials-and-examples, mysql]
 categories: laravel
 date: 2020-03-09
