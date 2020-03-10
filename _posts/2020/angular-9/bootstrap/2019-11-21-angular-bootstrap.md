@@ -44,12 +44,12 @@ Let's get started by installing [Angular CLI v9](https://cli.angular.io/) if it 
 Head over to a new command-line interface and run the following command to install the latest version of the Angular CLI:
 
 ```bash
-$ npm install -g @angular/cli@next
+$ npm install -g @angular/cli
 ```
 
-At the time of writing this tutorial, Angular 9 is still in pre-release, so we need to use the `next` tag to install it. Angular **v9.0.0-rc.2** is installed. 
+<s>At the time of writing this tutorial, Angular 9 is still in pre-release, so we need to use the `next` tag to install it. Angular **v9.0.0-rc.2** is installed.</s> 
 
->**Note**: This will install the Angular CLI globally on your system so depending on your npm configuration you may need to add `sudo` (for superuser access) in macOS and Linux or use a command prompt with admin access in Windows.
+>**Note**: This will [install the Angular 9 CLI](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) globally on your system so depending on your npm configuration you may need to add `sudo` (for superuser access) in macOS and Linux or use a command prompt with admin access in Windows.
 
 After the installation, you'll have at your disposal the *ng* utility. Let's use it to generate a new Angular 9 project.
 

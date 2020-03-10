@@ -57,7 +57,7 @@ You can check out this [tutorial](https://www.techiediaries.com/ubuntu-install-n
   
 ##    Step 1 - Installing Angular CLI 9
 
-Let's start our journey by installing the latest version of Angular CLI in our development machine.
+Let's start our journey by [installing the latest version of Angular CLI](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) in our development machine.
 
 Open a new terminal on Ubuntu/macOS or a command prompt on Windows and run the following command:
 

@@ -109,7 +109,7 @@ In the first step(s) of our tutorial, we'll see how to install Angular CLI 9 and
 
 ##   Step 1 — Setting up Angular CLI v9
 
-In this step, we'll install the latest Angular CLI 9 version (at the time of writing this tutorial).
+In this step, we'll [install the latest Angular CLI 9](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) version (at the time of writing this tutorial).
 
 > **Note**: These instructions are also valid for Angular 8.
 
