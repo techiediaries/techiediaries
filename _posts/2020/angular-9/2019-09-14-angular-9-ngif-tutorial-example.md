@@ -1,16 +1,20 @@
 ---
 layout: post
-title: "Angular 7/8 ngIf Tutorial & Example"
+title: "Angular 9/8 ngIf Tutorial & Example"
 image: "images/content/angular.png"
-excerpt: "Throughout this quick tutorial, you'll be learning about how you can use ngIf in your Angular 6 applications." 
+excerpt: "Throughout this quick tutorial, you'll be learning about how you can use ngIf in your Angular 6 applications"
+categories: angular
+date: 2020-03-10 
 tags : [angular, angular8, angular-9-ngfor-examples, angular-9-ngif-examples]
 ---
 
+Throughout this quick tutorial, you'll be learning about how you can use `ngIf` in your Angular 9/8 applications.
 
-The `ngIf` directive in Angular allows you to do conditional rendering of template parts i.e you can show or hide an HTML element on your Angular HTML template based on some condition.
+## What's the `ngIf` Directive?
+
+The `ngIf` directive in Angular allows you to do conditional rendering of template parts i.e you can show or hide an HTML element on your Angular 9 HTML template based on some condition.
 
   
-Throughout this quick tutorial, you'll be learning about how you can use `ngIf` in your Angular 7/8 applications.  
 
 > **Note**: In this Angular 8 [tutorial](https://www.techiediaries.com/html-tutorial), we'll see the `ngIf` directive in a complete example that consumes data from a third-party API and render it in the HTML template. 
 
@@ -22,13 +26,13 @@ See this Stackblitz example of how to use `ngFor` and `ngIf` in your Angular HTM
 <iframe src="https://stackblitz.com/edit/angular-html-template-syntax?embed=1&file=src/app/home/home.component.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
 
   
-## `ngIf` by example 
+## `ngIf` with Angular 9 Example 
   
-The `ngIf` directive can be very useful in scenarios where you want to show a part of your Angular 8 application UI.  
+The `ngIf` directive can be very useful in scenarios where you want to show a part of your Angular 9 application UI.  
   
 Let's see a simple example.  
   
-Let's suppose, we have the following Angular component that lives in the `src/app/contact-list/contact-list.component.ts`:
+Let's suppose, we have the following Angular 9 component that lives in the `src/app/contact-list/contact-list.component.ts`:
 
 ```ts
 import { Component } from '@angular/core';  
@@ -54,7 +58,9 @@ Typically, in this kind of applications, you only want to let users to update or
 
 This means, that you either need to disable or hide the delete and update buttons if users are not logged in.
 
-One way of achieving this in Angular 8 applications is through using the `ngIf` directive.
+## Using `ngIf` in Angular 9
+
+One way of achieving this in Angular 9 applications is through using the `ngIf` directive.
  
 On the `ContactListComponent ` component, we have added the Boolean `showActions` variable. You can then listen for the authentication state and set the `showActions` accordingly.   
 
@@ -91,6 +97,6 @@ This will only show the table cells that contains the actions buttons when  `sho
 
 ## Conclusion
 
-In this quick tutorial, we learned about the `ngIf` directive in Angular.
+In this quick tutorial, we learned about the `ngIf` directive in Angular 9.
 
 If you would like to see a complete example. Read this Angular 8 [tutorial](https://www.techiediaries.com/html-tutorial) where we used `ngIf` to conditionaly render an HTML fragment while data is being fetched from the API.

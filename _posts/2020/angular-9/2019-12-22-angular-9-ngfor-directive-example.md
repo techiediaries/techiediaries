@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Angular 9/8 How-To: Display Data Arrays with ngFor by Example"
+title: "Angular 9/8 ngFor Directive: Render Arrays with ngFor by Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll learn about the ngFor directive by example in Angular 9" 
+categories: angular
+date: 2020-03-10
 tags : [angular, angular-how-tos, angular9, angular-9-ngfor-examples]
 ---
 
