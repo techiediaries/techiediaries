@@ -23,6 +23,7 @@ We'll learn about these things:
 
 Let's get started with our tutorial to master  `ngFor`  in Angular! 
 
+> Check out [How to repeat an HTML element or component multiple times in Angular 9/8?](https://shabang.dev/question/how-to-repeat-an-html-element-or-component-multiple-times-in-angular-9-8/)
 
 ## What  `ngFor`  does in Angular and how it's used?
 

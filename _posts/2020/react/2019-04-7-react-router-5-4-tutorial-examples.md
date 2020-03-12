@@ -1,83 +1,86 @@
 ---
 layout: post
-title: "React Router 4 Tutorial (with Examples)"
+title: "React Router 5/4 Tutorial with Examples"
 image: "images/content/react.jpg"
-excerpt: "In this tutorial we are going to get you started with react-router-dom (React Router 4) using an example React application showing you how to use different concepts such as Link and NavLink for creating links (instead of anchors) in the React way, Switch and exact for enabling exclusive routing and browser routing history."
+excerpt: "In this tutorial we are going to get you started with react-router-dom (React Router 5/4) using an example React application showing you how to use different concepts such as Link and NavLink for creating links (instead of anchors) in the React way, Switch and exact for enabling exclusive routing and browser routing history"
+categories: react
+date: 2020-03-12
 tags : react 
 ---
 
-In this tutorial we are going to get you started with **react-router-dom** (**React Router 4**) using an example React application showing you how to use different concepts such as **Link** and **NavLink** for creating links (instead of anchors) in the React way, **Switch** and **exact** for enabling exclusive routing and **browser routing history**.
+In this tutorial we are going to get you started with **react-router-dom** (**React Router 5**) using an example React application showing you how to use different concepts such as **Link** and **NavLink** for creating links (instead of anchors) in the React way, **Switch** and **exact** for enabling exclusive routing and **browser routing history**.
 
 
-In a previous tutorial, we've seen how to [integrate React with Django](https://www.techiediaries.com/django-react-rest/) to make it simple to serve the React application from Django (and also make the React application more closer to Django so we can take advantage of built in Django features such as authentication). Now let's see how to use **React Router 4** to add client side routing to our application.
+let's see how to use **React Router 5/4** to add client side routing to our application.
 
-**React Router 4** is latest version of the official routing library for React. When building Single Page Applications or SPAs, you need client side routing so you can navigate through your React application UI which usually contains multiple pages or views. 
+## What's the React Router 5? 
 
-**React Router 4** allows you to keep your application UI and the URL in synchronization -- so in this tutorial we'll teach you how to use React Router 4 and what you can achieve with the declarative routing approach.
+React Router 5.1 is latest version of the official routing library for React. When building Single Page Applications or SPAs, you need client side routing so you can navigate through your React application UI which usually contains multiple pages or views. 
 
-> Also read [React Routing Tutorial: Using React Router 4](https://www.techiediaries.com/react-routing-tutorial)
+React Router 5 allows you to keep your application UI and the URL in synchronization -- so in this tutorial we'll teach you how to use React Router 5 and what you can achieve with the declarative routing approach.
 
-![React Router 4](https://i.imgur.com/1StuS4H.png)
 
-## <a name="Introduction_to_React_Router_4">Introduction to React Router 4</a> 
+![React Router 5](https://i.imgur.com/1StuS4H.png)
+
+## <a name="Introduction_to_React_Router_5">Introduction to React Router 5</a> 
 
 <div id="toc_container">
-<p class="toc_title">React Router DOM v4 Tutorial (with Examples)</p>
+<p class="toc_title">React Router DOM v5 Tutorial (with Examples)</p>
 <ul class="toc_list">
 <li>
-<a href="#Introduction_to_React_Router_4">Introduction to React Router 4</a>
+<a href="#Introduction_to_React_Router_5">Introduction to React Router 5</a>
 </li>
 <li>
-<a href="#React_Router_v4_vs_React_Router_v3">React Router v4 vs React Router v3</a> </li>
+<a href="#React_Router_v5_vs_React_Router_v3">React Router v5/4 vs React Router v3</a> </li>
 <li>
 <a href="#react-router_vs_react-router-dom_vs_react-router-native">react-router vs react-router-dom vs react-router-native</a> 
 </li>
 <li>
-<a href="#Installing_React_Router_4">Installing React Router 4</a></li>
+<a href="#Installing_React_Router_5">Installing React Router 5</a></li>
 <li>
-<a href="#React_Router_4_Routers_BrowserRouter_vs_HashRouter">Understanding and Using React Router 4 Routers (BrowserRouter vs HashRouter)</a></li>
+<a href="#React_Router_5_Routers_BrowserRouter_vs_HashRouter">Understanding and Using React Router 5 Routers (BrowserRouter vs HashRouter)</a></li>
 <li>
-<a href="#React_Router_4_Routes">Understanding and Using React Router 4 Routes</a> 
+<a href="#React_Router_5_Routes">Understanding and Using React Router 5 Routes</a> 
 </li>
 <li>
-<a href="#Understanding_React_Router_4_URL_Path_Route_Parameters">Understanding React Router 4 URL/Path/Route Parameters</a>
+<a href="#Understanding_React_Router_5_URL_Path_Route_Parameters">Understanding React Router 5 URL/Path/Route Parameters</a>
 </li>
 <li>
-<a href="#Understanding_Using_Links_React_Router_4">Understanding and Using Links in React Router 4</a>
+<a href="#Understanding_Using_Links_React_Router_5">Understanding and Using Links in React Router 5</a>
 </li>
 <li>
-<a href="#React_Router_4 Link_vs_NavLink">React Router 4 Link vs. NavLink</a>
+<a href="#React_Router_5 Link_vs_NavLink">React Router 5 Link vs. NavLink</a>
 </li>
 <li>
 <a href="#Writing_First_Example_React_Router_DOM">Writing our First Example with React Router DOM</a>
 </li>
 <li>
-<a href="#Understanding_React_Router_4_Inclusive_Routing">Understanding React Router 4 Inclusive Routing</a> 
+<a href="#Understanding_React_Router_5_Inclusive_Routing">Understanding React Router 5 Inclusive Routing</a> 
 </li>
 <li>
-<a href="#Understanding_React_Router_4_Exclusive_Routing">Understanding React Router 4 Exclusive Routing</a> </li>
+<a href="#Understanding_React_Router_5_Exclusive_Routing">Understanding React Router 5 Exclusive Routing</a> </li>
 <li>
-<a href="#React_Router_4_Browser_History">React Router 4 Browser History</a></li>
+<a href="#React_Router_5_Browser_History">React Router 5 Browser History</a></li>
 <li>
-<a href="#React_Router_4_Redirect_Component">How to Redirect with Redirect Component</a></li>
+<a href="#React_Router_5_Redirect_Component">How to Redirect with Redirect Component</a></li>
 <li><a href="#Conclusion">Conclusion</a></li>
 </ul>
 </div>
 
-Perhaps the most suitable way to see how **React Router v4** works is by writing a simple multiple-page React app using the new router concepts. Our example app will have routes to home, about, contact, login, register and profile components/pages. But first let's have a tour of React Router v4 concepts and how they differ from React Router v3? 
+Perhaps the most suitable way to see how **React Router v5/4** works is by writing a simple multiple-page React app using the new router concepts. Our example app will have routes to home, about, contact, login, register and profile components/pages. But first let's have a tour of React Router v5/4 concepts and how they differ from React Router v3? 
 
-## <a name="React_Router_v4_vs_React_Router_v3">React Router v4 vs React Router v3</a> 
+## <a name="React_Router_v4_vs_React_Router_v3">React Router v5 vs React Router v3</a> 
 
-Before v4 there was **React Router v3**, **React router v4** is a complete re-write so what's the difference between these two React routers? here is a summary list of most differences: 
+Before v5 there was **React Router v3**, **React router v5** is a complete re-write so what's the difference between these two React routers? here is a summary list of most differences: 
 
-* With **React router v4**, routing is not centralized anymore instead it becomes a part of the rest of the app layout and UI.
+* With **React router v5**, routing is not centralized anymore instead it becomes a part of the rest of the app layout and UI.
 * Browser specific routing components live in **react-router-dom** instead of **react-router** so imports need to be changed to be from **react-router-dom** package.
 * Introducing new components such as **BrowserRouter** and **HashRouter** for specific use cases (see below).
-* No more use of **{props.children}** for nesting components in v4 React Router.  
-* React Router v3 routing rules were exclusive meaning only one route will be matched at one time. For v4, routing rules are inclusive meaning multiple routes can be matched and then rendered.
+* No more use of **{props.children}** for nesting components in v5 React Router.  
+* React Router v3 routing rules were exclusive meaning only one route will be matched at one time. For v5, routing rules are inclusive meaning multiple routes can be matched and then rendered.
 
 
-**React-router-dom** is the version of React Router v4 designed for web applications, React Router v4 was divided into three packages:
+**React-router-dom** is the version of React Router v5 designed for web applications, React Router v5 was divided into three packages:
 
 * **react-router**: common core components between dom and native versions.
 * **react-router-dom**: the dom version designed for browsers or web apps.
@@ -87,14 +90,14 @@ Before v4 there was **React Router v3**, **React router v4** is a complete re-wr
 
 react-router hosts the core components for routing for React applications, react-router-dom provides browser specific components for routing web apps and react-router-native provides specific components for react-native or mobile apps created with React Native. So you should either install **react-router-dom** or **react-router-native** as both export their corresponding environments components plus what **react-router** exports.
 
-## <a name="Installing_React_Router_4">Installing React Router 4</a>
+## <a name="Installing_React_Router_5">Installing React Router 5</a>
 
 Since we are building a web application not a native mobile app we need to install **react-router-dom** package, so inside your React project run the following command using your terminal (Linux or MAC) or command prompt (Windows):
 
     npm install --save react-router-dom
     
 
-## <a name="React_Router_4_Routers_BrowserRouter_vs_HashRouter">Understanding and Using React Router 4 Routers (BrowserRouter vs HashRouter)</a>
+## <a name="React_Router_5_Routers_BrowserRouter_vs_HashRouter">Understanding and Using React Router 5 Routers (BrowserRouter vs HashRouter)</a>
 
 * BrowserRouter: This is a sub-class or a concrete implementation of Router interface that makes use of HTML5 history API to sync your UI with the current browser's url or actually the url's path i.e window.location.  
 * HashRouter: Just like the previous router but only uses the hash part of the URL i.e window.location.hash.
@@ -106,9 +109,9 @@ Since we are building a web application not a native mobile app we need to insta
 
 There are many types of Router components, among them **< BrowserRouter >** and **< HashRouter >** for client side React apps. If you are using a dynamic server that can handle dynamic URLs then you need to use the **BrowserRouter** component but if you are using a server that only serves static files then a **HashRouter** component is what to be used in this case.
 
-## <a name="React_Router_4_Routes">Understanding and Using React Router 4 Routes</a> 
+## <a name="React_Router_5_Routes">Understanding and Using React Router 5 Routes</a> 
 
-The **< Route >** component is one of the most useful components of React Router v4 and the idea behind it is simple, wherever you want to render something when only there is a match with the location's path you can use a Route component.
+The **< Route >** component is one of the most useful components of React Router v5 and the idea behind it is simple, wherever you want to render something when only there is a match with the location's path you can use a Route component.
 
 The **Route** component takes many properties such as:
 
@@ -169,9 +172,9 @@ Using children:
       )}/>
     )
 
-For more information about how React Router v4 matchs paths see [path-to-regexp](https://github.com/pillarjs/path-to-regexp) the module used for matching paths.
+For more information about how React Router v5 matchs paths see [path-to-regexp](https://github.com/pillarjs/path-to-regexp) the module used for matching paths.
 
-## <a name="Understanding_React_Router_4_URL_Path_Route_Parameters">Understanding React Router 4 URL/Path/Route Parameters</a>
+## <a name="Understanding_React_Router_5_URL_Path_Route_Parameters">Understanding React Router 5 URL/Path/Route Parameters</a>
 
 Usually there are variable parts of the pathname used to pass information between diffrent routes of an application so how do we capture these variables and pass them to components?
 We can just append the name to be used for the variable plus a colon **:** to the end of the route's path, for example:
@@ -190,9 +193,9 @@ When there is a path match an object which has the following properties will be 
 * isExact: equals **True** if path equals exacly the current location's path-name.
 * params: an object containing URL parameters.
 
-## <a name="Understanding_Using_Links_React_Router_4">Understanding and Using Links in React Router 4</a>
+## <a name="Understanding_Using_Links_React_Router_5">Understanding and Using Links in React Router 5</a>
 
-Links are React Router v4 components designed as a replacment of anchor links to create navigation elements which enable users to navigate between differenet pages of React apps. Unlike anchors ,which reloads the whole page, Links only reload the portion(s) of the UI that match(s) the browser's location path.   
+Links are React Router v5 components designed as a replacment of anchor links to create navigation elements which enable users to navigate between differenet pages of React apps. Unlike anchors ,which reloads the whole page, Links only reload the portion(s) of the UI that match(s) the browser's location path.   
 
 A **Link** component takes a **to** property which tells React Router the destination to navigate to. For example:
 
@@ -214,7 +217,7 @@ the **to** prop can either take a string or a location (pathname, hash, search, 
 
 **Link** can take also another property: **replace** if **True**, when clicked the link entry will be replaced in the history.
 
-## <a name="React_Router_4 Link_vs_NavLink">React Router 4 Link vs. NavLink</a>
+## <a name="React_Router_5 Link_vs_NavLink">React Router 5 Link vs. NavLink</a>
 
 **NavLink** is a subclass of **Link** which adds styling information to the rendered element(s), for example:
 
@@ -238,12 +241,12 @@ First we import the necessary routing components such as **Route** and **Browser
     import { BrowserRouter } from 'react-router-dom'
     import { Route } from 'react-router-dom'
 
-Next we create the base layout component, besides common HTML tags we also use React Router v4 components **Link** and **Route**:
+Next we create the base layout component, besides common HTML tags we also use React Router v5 components **Link** and **Route**:
 
     const BaseLayout = () => (
       <div className="base">
         <header>
-          <p>React Router v4 Browser Example</p>
+          <p>React Router v5 Browser Example</p>
             <nav>
               <ul>
                 <li><Link to='/'>Home</Link></li>
@@ -265,7 +268,7 @@ Next we create the base layout component, besides common HTML tags we also use R
           <Route path="/me" component={ProfilePage} />
         </div>
         <footer>
-            React Router v4 Browser Example (c) 2017
+            React Router v5 Browser Example (c) 2017
         </footer>
       </div>
     )
@@ -288,15 +291,15 @@ And finally we create the App component which **BrowserRouter** component to hol
     )
     render(<App />, document.getElementById('root'))
 
-As you can see, it's very easy to use the React Router v4 components to create apps with routing.
+As you can see, it's very easy to use the React Router v5 components to create apps with routing.
 
-## <a name="Understanding_React_Router_4_Inclusive_Routing">Understanding React Router 4 Inclusive Routing</a> 
+## <a name="Understanding_React_Router_5_Inclusive_Routing">Understanding React Router 5 Inclusive Routing</a> 
 
 In our example app we used the prop **exact** in the Route for component HomePage 
 
     <Route path="/" exact component={HomePage} />
     
-That's because React Router v4 uses inclusive routing instead of exclusive routing used by React Router v3 so without exact property the home component will be rendered with all other components, for example when the user visits `/login` path both `/` and `/login` paths will be matched and their corresponding components `LoginPage` and `HomePage` will be rendered. But that's not the behavior we are looking for, that's why we need to add the exact prop which tells the Route component to match exactly the `/` path.
+That's because React Router v5 uses inclusive routing instead of exclusive routing used by React Router v3 so without exact property the home component will be rendered with all other components, for example when the user visits `/login` path both `/` and `/login` paths will be matched and their corresponding components `LoginPage` and `HomePage` will be rendered. But that's not the behavior we are looking for, that's why we need to add the exact prop which tells the Route component to match exactly the `/` path.
 
 > See how to [set state](https://www.techiediaries.com/react-setstate) and use [context api in React](https://www.techiediaries.com/react-context-api-tutorial).
 
@@ -306,7 +309,7 @@ We can easily change our basic layout to add this requirment:
     const BaseLayout = () => (
       <div className="base">
         <header>
-          <p>React Router v4 Browser Example</p>
+          <p>React Router v5 Browser Example</p>
             <nav>
               <ul>
                 <li><Link to='/'>Home</Link></li>
@@ -320,9 +323,9 @@ We can easily change our basic layout to add this requirment:
 
 So as you can see all Routes with path '/me' will be rendered when we visit '/me' path not just the first match, that's **inclusive routing**.
 
-## <a name="Understanding_React_Router_4_Exclusive_Routing">Understanding React Router 4 Exclusive Routing</a> 
+## <a name="Understanding_React_Router_5_Exclusive_Routing">Understanding React Router 5 Exclusive Routing</a> 
 
-Exclusive routing is the inverse of inclusive routing, it was the default routing in React Router v3 where only the first match is rendered so what if you want exlusive routing back? that also can be done using v4 router using the **Switch** component. In a **Switch** component only the first child **< Route >** or **< Redirect >**, that matches the location, will be rendered. For example:
+Exclusive routing is the inverse of inclusive routing, it was the default routing in React Router v3 where only the first match is rendered so what if you want exlusive routing back? that also can be done using v5 router using the **Switch** component. In a **Switch** component only the first child **< Route >** or **< Redirect >**, that matches the location, will be rendered. For example:
     
     import { Switch, Route } from 'react-router'    
       
@@ -333,9 +336,9 @@ Exclusive routing is the inverse of inclusive routing, it was the default routin
       <Route component={NotFound}/>
     </Switch>
 
-## <a name="React_Router_4_Browser_History">React Router 4 Browser History</a>
+## <a name="React_Router_5_Browser_History">React Router 5 Browser History</a>
 
-**React Router v4** provides a **history** object that exposes a simple API with different implementations (HTML5 history API for dom, legacy hash history for dom, in-memory history for react-native) to manage/manipulate browser history.
+**React Router v5** provides a **history** object that exposes a simple API with different implementations (HTML5 history API for dom, legacy hash history for dom, in-memory history for react-native) to manage/manipulate browser history.
 
 You can also navigate inside your React application using methods from the **history** object, for example:
 
@@ -347,7 +350,7 @@ Which are equivalent to:
     <Link to="/my-path"/>
     <Redirect to="/my-path"/>
 
-## <a name="React_Router_4_Redirect_Component">How to Redirect with Redirect Component</a>
+## <a name="React_Router_5_Redirect_Component">How to Redirect with Redirect Component</a>
 
 Whenever you want to redirect to another location, you can place **<Redirect >** component which is when rendered will redirect to the location specified in **to** prop that can either be a string or a location object, for example:
 
@@ -363,7 +366,7 @@ Or simply:
 
 ## <a name="Conclusion">Conclusion</a>
 
-**React Router v4** makes it dead easy to create React apps with complex UIs that has routing between different portions, you can simply declare a **Router** component such as **BrowserRouter** or **HashRouter** and put,inside of that, a bunch of child **Route**s components that has props which indicate the **path** to be matched and the **component** to be rendered inclusively whenever there is a match (i.e all matched **Route**s will be rendered). In case you need to do exclusive rendering (Just like React Router v3: i.e only the first matched **Route** will rendered) then you can simply use a **Switch** component where only one child (the first found) will be rendered. You can also pass different information between routes using parameters that can be captured and retrieved from the **match** object which gets created once a match is established and then passed to the current rendered component. Finally all building blocks or components of **React Router v4** designed for web apps routing are available and can be imported from **react-router-dom**. 
+**React Router v5** makes it dead easy to create React apps with complex UIs that has routing between different portions, you can simply declare a **Router** component such as **BrowserRouter** or **HashRouter** and put,inside of that, a bunch of child **Route**s components that has props which indicate the **path** to be matched and the **component** to be rendered inclusively whenever there is a match (i.e all matched **Route**s will be rendered). In case you need to do exclusive rendering (Just like React Router v3: i.e only the first matched **Route** will rendered) then you can simply use a **Switch** component where only one child (the first found) will be rendered. You can also pass different information between routes using parameters that can be captured and retrieved from the **match** object which gets created once a match is established and then passed to the current rendered component. Finally all building blocks or components of **React Router v5** designed for web apps routing are available and can be imported from **react-router-dom**. 
 
 
 
