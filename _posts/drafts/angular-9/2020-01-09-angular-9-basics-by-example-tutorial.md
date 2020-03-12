@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: bpost
 title: "Angular 9 Basics Tutorial by Example"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you will learn to build your first Angular 8 application from scratch." 
+excerpt: "In this tutorial, you will learn to build your first Angular 8 application from scratch"
+date:  2020-03-12
 categories: angular
-tags : [  drafts ]
+tags : [  angular ]
 ---
 
 In this tutorial, we'll build a web application with Angular 9. Meanwhile, we'll learn about the fundamental concepts which you will need to know to do front-end web development with Angular, such as:
@@ -32,6 +33,41 @@ We'll use the online [StackBlitz](https://stackblitz.com/) IDE, so head over the
 -   **_Note_**_: It's officially recommended to use_ [_Angular CLI_](https://angular.io/cli) _to create and build Angular projects. You'll need to have a recent version of Node and NPM installed on your machine before you can install the CLI from npm using the_ _npm install -g @angular/cli_  _command. But since this is our first app with Angular, let's keep it simple and use the online IDE._ You can then export an app from StackBlitz to your local environment, simply refer to the Deployment section below.
 
   
+## What is Angular?
+
+Let's get started by defining Angular, what is it and what its advantages?
+
+Angular is a JavaScript framework written in a language called  typescript (a compiled, typed and super language of JavaScript), used to create user interfaces or frontend apps, and was created by Google on October 20, 2010.
+
+Angular is used to build web and mobile applications (Together with the Ionic framework).
+
+Also, Angular is based on the SPA concept, i.e. it is used to build a single page application where the modules are loaded all at once from the browser and there is no need to load the page again while moving between pages, because inside Angular there is a client-side router abstraction, that works as a mediator that directs the browser during any process of moving from one page to another page.
+
+Among the advantages of Angular is that it has very impressive micro services and fundamentals in terms of controlling the http services and methods where you can control the way to communicate with any external or internal API and allows a granular control of the request and the return response, and also there is a library called rxjs (reactive extensions for JavaScript)-
+This library and the operations inside it are used to control the creation of the asynchronous operations, whether inside Angular or in another API, such as  observable, carchError, of, and many other operators.
+
+Angular uses a command-line tool called the Angular cli, which is a very important tool. Without it, things can be difficult. One of its benefits is that you can generate components, services, models, modules, and many files only via a specific command. For example:
+
+```bash
+ng generate component myComponent
+```
+
+This command will generate a component with an html file, typescript file, css/sass file and unit testing file,
+ all with just one command.
+
+Angular uses a design pattern called the Singleton, meaning that there is a root module which is the basic module in the app and is called `app.module` by convention, and sub-modules that are used depending on the need of the system and are added in order to provide a commonly required functionality like routing, form processing, http requests, etc. These sub-modules must be defined inside the root module so the system can identify them.
+
+Angular enables an RBA system, i.e role based authorization system.
+
+You can create various artifacts with services, guards, and pipes, in order to create "guards" on each route in your user interface in order to make sure that the user has the  the authorization to access a view.
+
+Angular provides a great methodology of connecting data between html templates and typescript via something called property binding so that you can link data easily without the need for libraries like the jquery or native JavaScript APIs for directly accessing the DOM.
+
+Angular also provides a very powerful method for creating and validating forms, and it has two methodologies for creating forms, the first methodology is called template-driven forms and the other one  is called reactive forms which is built using an API called the form builder. 
+
+Angular services are classes that can be shared between more than one module and component and can encapsulate several methods, It can be used for common functionalities such as data retrieval, modification or deletion or other things. Services use the `@Injectable` decorator so they can be injected in any component or service via the Angular dependency injector. 
+
+Angular provides more than that, and with its multiple versions, more features are being added. With the latest Angular 9 version, a next generation compilation and rendering pipeline called Ivy is used by default. The final bundles are smaller and runtime performance is better than it was previously during the production process.
 
 ## Who’s this Tutorial for?
 
