@@ -3,7 +3,7 @@ layout: bpost
 title: "React Router 5.1+ Hooks"
 image: "images/content/react.jpg"
 author: ahmed
-excerpt: "In this tutorial, you will learn about routing in React using React Router 5.1+ hooks."
+excerpt: "In this tutorial, you will learn about routing in React using React Router 5.1+ hooks"
 tags : react 
 categories: react
 ---
