@@ -1,14 +1,38 @@
 ---
 layout: post
-title: "Angular 9 New Features and Ivy"
+title: "Angular 9.1 New Features and Ivy: Angular 10 is Coming"
 image: "images/content/angular.png"
 excerpt: "Angular 9 new features: better performance and smaller bundle size thanks to Ivy!" 
-date: 2020-02-07
+date: 2020-03-26
 categories: angular
 tags : [angular , angular-8, angular-9] 
 ---
 
-In this post, we'll see the new features of Angular 9 with the most new feature being the default use of the Ivy renderer, so what's new with the Angular 9 version? And what changes Ivy bring to the framework?
+In this post, we'll see the new features of Angular 9.1 with the support of TypeScript 3.8, so what's new with the Angular 9.1 version? 
+
+
+## What's New with Angular 9.1?
+
+Angular 9.1 is released! This is a minor version of both the framework and the CLI which brings many new features such as:
+
+
+- Support for TypeScript 3.8: This new version of TS brings many new language features that you can use in your Angular project,
+- Build Speed Improvements,
+- New CLI Component Generator Option `displayBlock` which enables you to generate components using the CLI with the `display: block` style for displaying components instead of the default inline style used by default,
+- End-to-End tests now support `grep` and `invertGrep` which enable you to more easily pich the test you want to run,
+- Improved HTML & Expression Syntax Highlighting: Using  VSCode with the Language Service Extension, it will enable the IDE to syntax highlight expressions in the templates,
+- Directionality Query API which allows you to query for the current local direction at runtime,
+- TSLint 6.1 by default.
+
+You can update to this latest version of Angular using the following command:
+
+```bash
+ng update @angular/cli @angular/core
+```
+
+This will make sure you can have all these new features and bug fixes in your project.
+
+This is the last planned minor release for 9.x. The team will now start working on Angular 10.0, by making prereleases once per week, even though they will contain only minimal changes at first.
 
 ## What're the Angular 9 New Features?
 
