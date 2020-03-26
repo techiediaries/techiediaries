@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "How to Use FormData in TypeScript 3.6"
+title: "How to Use FormData in TypeScript 3.8"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll learn to use FormData in TypeScript 3" 
 categories: angular
 tags : [typescript] 
 ---
 
-In this post, we'll learn how to use FormData in TypeScript 3 to send an HTML form.
+In this post, we'll learn how to use FormData in TypeScript 3.8 to send an HTML form.
 
 ```ts
 const form = document.querySelector('form')
