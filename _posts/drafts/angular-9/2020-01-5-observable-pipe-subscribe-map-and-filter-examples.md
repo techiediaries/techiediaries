@@ -4,7 +4,7 @@ title: "RxJS Observable Pipe, Subscribe, Map and Filter Examples with Angular 9/
 image: "images/content/angular.jpg"
 excerpt: "In this tutorial we'll learn by example to use the RxJS pipe() function, the map() and filter() operators in Angular 9. And how to use the subscribe() method to subscribe to Observables" 
 skipRss: true
-tags : [drafts] 
+tags : [angular] 
 ---
 
 

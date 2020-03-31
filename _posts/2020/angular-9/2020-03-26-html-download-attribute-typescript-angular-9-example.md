@@ -40,3 +40,17 @@ When the user triggers the download link, the file will be downloaded with the f
 
 This attribute can be useful when the generated file names are used in the server-side so the download attribute enables the file name to be meaningful to users.
 
+
+> Note: For older web browsers such as Internet Explorer, the  `download`  attribute may not be available. In this cas, you can open the downloaded resource in a new browser tab/window with the  `target`  attribute set to  `_blank`. 
+
+## The Download Attribute in Angular by Example
+
+You can bind the `href` and `download` attributes in Angular to set the URL and filename dynamically as follows:  
+
+```ts
+<a [href]="url" [download]="filename">
+  {{ download.filename }}
+</a>
+```
+
+
