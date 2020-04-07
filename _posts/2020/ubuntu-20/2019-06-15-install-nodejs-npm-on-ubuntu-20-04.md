@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Installing Node.js v10/v12 & NPM on Ubuntu 19.04 for Angular 9 Development"
-image: "images/content/how-to-install-java-8-jdk-8u101-on-ubuntu-via-ppa/titleimage.png"
+title: "Installing Node.js v10/12 & NPM on Ubuntu 20.04/19.04"
+image: "images/content/
+how-to-install-java-8-jdk-8u101-on-ubuntu-via-ppa/titleimage.png"
 excerpt: "This post shows you how you can install Node.js on Ubuntu 19.01 and Ubuntu 20.04 for Angular 9 development"
 categories: ubuntu
 date: 2020-03-02
