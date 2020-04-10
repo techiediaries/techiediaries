@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Vue 3 New Features and Release Date"
 date: 2020-02-04 03:32
 categories: vue-js 
