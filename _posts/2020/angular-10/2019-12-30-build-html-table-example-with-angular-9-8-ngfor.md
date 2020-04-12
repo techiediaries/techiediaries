@@ -1,18 +1,29 @@
 ---
 layout: post
-title: "Build an HTML Table Example Dynamically with Angular 9/8 and ngFor"
+title: "Build an HTML Table Example Dynamically with Angular 10/9 and ngFor"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this quick example, let's see how to build an HTML table dynamically with Angular 9 and the ngFor directive." 
+excerpt: "In this quick example, let's see how to build an HTML table dynamically with Angular 10 and the ngFor directive" 
+date: 2020-04-12
 tags : [angular, angular-how-tos, angular-9-ngfor-examples, angular-9-httpclient-examples] 
 ---
 
-In this quick example, let's see how to build an HTML table dynamically with Angular 9 and the `ngFor` directive.
+In this quick example, we'll see how to build an HTML table dynamically with Angular 10/9 and the `ngFor` directive.
 
-Let's assume you already have Angular CLI installed on your machine and an Angular project ready.
+Let's assume you already have Angular CLI 10 installed on your machine and an Angular 10 project ready.
 
-f you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
+> Note: Angular 10 is currently in beta version.
 
-## Building a Table with Angular 9 ngFor 
+You can install Angular CLI 10 using the following command:
+
+```bash
+$ npm install --global @angular/cli@next
+```
+
+We need to use the `@next` tag at this time till the final release of Angular 10. 
+
+If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
+
+## Building a Table with Angular 10 ngFor 
 
 You can do this example in two steps:
 
@@ -21,9 +32,9 @@ You can do this example in two steps:
 
 Before we can use [`ngFor`](https://www.techiediaries.com/angular-ngfor/) for displaying data in a table, we need the data. In a real-world example, we'll need to [get data from a server database](https://www.techiediaries.com/angular-http-client/). 
 
-## Step 1 - Getting Table Data
+## Step 1 - Getting Table Data with Angular 10 Service and `HttpClient`
 
-This is better done using an Angular service and the `HttpClient` API, so let's suppose we have the following service:
+This is better done using an Angular 10 service and the `HttpClient` API, so let's suppose we have the following service:
 
 ```ts
 import { Injectable } from '@angular/core';
@@ -81,7 +92,7 @@ export class App implements OnInit {
 }
 ```
 
-## Step 2 - Displaying the Table Using Angular 9 `ngFor`
+## Step 2 - Displaying the Table Using Angular 10/9 `ngFor`
 
 
 Next, open the `src/app/app.component.html` file and update it as follows:
@@ -115,3 +126,9 @@ Next, open the `src/app/app.component.html` file and update it as follows:
 {% endraw %}
 
 We use the `ngFor` directive to iterate over the customers data fetched from the server using the `ApiService` and we build the HTML table dynamically by displaying each row of the table in each `ngFor` iteration.
+
+As a wrap-up, `ngFor` is a powerful Angular Core directive that allows developers to loop or iterate over arrays and collections of data in templates. 
+
+`ngFor` and `ngIf` are called structural directives.
+
+We've seen a simple Angular 10/9 example of building a simple HTML table inside an Angular template using `ngFor`.  

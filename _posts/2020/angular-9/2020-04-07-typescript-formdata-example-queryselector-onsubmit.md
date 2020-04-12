@@ -6,15 +6,20 @@ excerpt: "In this tutorial, we'll learn to use FormData in TypeScript 3.8"
 tags : [typescript] 
 ---
 
-In this post, we'll learn how to use FormData in TypeScript 3.8 to submit an HTML form. We'll also see how to:
+In this post, we'll learn how to use FormData in TypeScript 3.8 to submit an HTML form. We'll also see how to use:
 
 - `querySelector` to query for a DOM element,
 - `onsubmit` for handling the form's submit event. 
 
 
+## Creating a TypeScript App
+
 We'll be using Stackblitz for quickly creating a TypeScript app without setting up a local development in our machine.
 
 Head to [https://stackblitz.com](https://stackblitz.com) and create a new TypeScript app.
+
+
+## Creating an HTML Form
 
 Next, open the `index.html` file and update it as follows:
 
@@ -34,6 +39,8 @@ Next, open the `index.html` file and update it as follows:
 ```
 
 We created a form with `myform` ID and two `label` and `input` elements.
+
+## Submitting the Form from TypeScript 
 
 Now, let's see how we can submit this form from TypeScript.
 

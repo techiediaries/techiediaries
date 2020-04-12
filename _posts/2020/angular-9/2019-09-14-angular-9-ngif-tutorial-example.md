@@ -4,7 +4,7 @@ title: "Angular 9/8 ngIf Tutorial & Example"
 image: "images/content/angular.png"
 excerpt: "Throughout this quick tutorial, you'll be learning about how you can use ngIf in your Angular 6 applications"
 categories: angular
-date: 2020-03-10 
+date: 2020-04-12 
 tags : [angular, angular8, angular-9-ngfor-examples, angular-9-ngif-examples]
 ---
 

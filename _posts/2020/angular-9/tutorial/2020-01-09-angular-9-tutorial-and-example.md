@@ -3,7 +3,7 @@ layout: post
 title: "Angular 9 Tutorial and Example: Build your First Angular App"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you will learn to build your first Angular 9 application from scratch" 
-date: 2020-02-08
+date: 2020-04-12
 categories: angular
 tags : [  angular , mysql, angular-9, angular-9-tutorials]
 ---
@@ -62,7 +62,7 @@ Let's start our journey by [installing the latest version of Angular CLI](https:
 Open a new terminal on Ubuntu/macOS or a command prompt on Windows and run the following command:
 
 ```bash
-$ npm install -g @angular/cli@next
+$ npm install -g @angular/cli
 ```
 
 At the time of this writing, we need to add the `@next` tag to install the latest pre-release version of Angular CLI.
