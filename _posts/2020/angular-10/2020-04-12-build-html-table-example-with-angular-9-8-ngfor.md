@@ -1,10 +1,10 @@
 ---
-layout: post
+layout: bpost
 title: "Build an HTML Table Example Dynamically with Angular 10/9 and ngFor"
-image: "images/content/angular-by-example-httpclient-get.png"
+image: "images/content/angular.png"
 excerpt: "In this quick example, let's see how to build an HTML table dynamically with Angular 10 and the ngFor directive" 
 date: 2020-04-12
-tags : [angular, angular-how-tos, angular-9-ngfor-examples, angular-9-httpclient-examples] 
+tags : [angular, angular-10] 
 ---
 
 In this quick example, we'll see how to build an HTML table dynamically with Angular 10/9 and the `ngFor` directive.
