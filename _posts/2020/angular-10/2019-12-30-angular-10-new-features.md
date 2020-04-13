@@ -1,6 +1,6 @@
 ---
 layout: bpost
-title: ""
+title: "Angular 10 New Features"
 image: "images/content/angular.png"
 excerpt: "Angular 10, the next version of one of the most popular front-end frameworks is in beta version at this time. This means we are moving toward the final release of this new version" 
 date: 2020-04-12
