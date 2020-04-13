@@ -5,7 +5,9 @@ comments: false
 tag: angular
 ---
 
-# Angular 9/8/7/6 Learning Path
+Angular 10 beta has been released, check out the [new features](https://www.techiediaries.com/angular/angular-10-new-features/)
+ 
+# Angular 10/9/8 Learning Path
 
 Throughout this tutorial series and learning path you'll learn Angular--the most popular platform for building front-end web applications 
 
