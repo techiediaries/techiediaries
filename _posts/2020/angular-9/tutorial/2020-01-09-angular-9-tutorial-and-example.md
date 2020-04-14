@@ -1,45 +1,45 @@
 ---
 layout: post
-title: "Angular 9 Tutorial and Example: Build your First Angular App"
+title: "Angular 10/9 Tutorial and Example: Build your First Angular App"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you will learn to build your first Angular 9 application from scratch" 
-date: 2020-04-12
+excerpt: "In this tutorial, you will learn to build your first Angular 10/9 application from scratch" 
+date: 2020-04-14
 categories: angular
-tags : [  angular , mysql, angular-9, angular-9-tutorials]
+tags : [  angular , mysql, angular-10, angular-9-tutorials]
 ---
 
-In this tutorial, we will learn by example to create a first application with Angular 9 from scratch.
+In this tutorial, we will learn by example to create a first application with Angular 10/9 from scratch.
 
 > This is an [updated version of this Angular 8 tutorial](https://www.techiediaries.com/angular-8-tutorial-build-first-angular-calculator-app/) and this [second part](https://www.techiediaries.com/angular-data-event-property-binding/).
 
 
-## Angular 9 Tutorial Learning Outcomes
+## Angular 10 Tutorial Learning Outcomes
 
-We'll learn about concepts like Angular modules, components and directives.
+We'll learn about concepts like Angular 10 modules, components and directives.
 
-We'll also learn about Angular template syntax which includes interpolation, event binding and property binding, etc.
+We'll also learn about Angular 10 template syntax which includes interpolation, event binding and property binding, etc.
 
 For the example that we'll be building, it's a simple calculator application that implements the basic calculus operations.
 
 
 You'll learn from this tutorial:
 
-- How to install the latest version of Angular 9 CLI,
-- How to initialize a new Angular 9 project,
+- How to install the latest version of Angular 10 CLI,
+- How to initialize a new Angular 10 project,
 - Understand and work with modules and components,
-- Understand Angular template syntax, particularly event and property bindings,
+- Understand Angular 10 template syntax, particularly event and property bindings,
 - Listen for click events and update the UI when data changes. 
 
-## Angular 9 Tutorial Steps
+## Angular 10 Tutorial Steps
 
 
 These are the steps:
 
--    Step 1 - Installing Angular CLI 9
+-    Step 1 - Installing Angular CLI 10
 -    Step 2 - Initializing our Project
--    Step 3 - Understanding Angular Modules & Components
+-    Step 3 - Understanding Angular 10 Modules & Components
 -    Step 4 - Adding our HTML Template and Styles
--    Step 5 - Understanding Angular Template Syntax
+-    Step 5 - Understanding Angular 10 Template Syntax
 -    Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
 -    Step 7 - Displaying the Value of Variables in the Template  
 
@@ -55,25 +55,25 @@ You'll need to have the following prerequisites for a better understanding of th
 You can check out this [tutorial](https://www.techiediaries.com/ubuntu-install-nodejs-npm/) for how to set up a development environment for Angular on Ubuntu.
 
   
-##    Step 1 - Installing Angular CLI 9
+##    Step 1 - Installing Angular CLI 10
 
 Let's start our journey by [installing the latest version of Angular CLI](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) in our development machine.
 
 Open a new terminal on Ubuntu/macOS or a command prompt on Windows and run the following command:
 
 ```bash
-$ npm install -g @angular/cli
+$ npm install -g @angular/cli@next
 ```
 
 At the time of this writing, we need to add the `@next` tag to install the latest pre-release version of Angular CLI.
 
 
-##    Step 2 - Initializing our Angular 9 Project
+##    Step 2 - Initializing our Angular 10 Project
 
-If you have installed Angular CLI in your machine, let's use it to initialize a new project. Head back to your terminal or command prompt and simply run the following command:
+If you have installed Angular CLI v10 in your machine, let's use it to initialize a new project. Head back to your terminal or command prompt and simply run the following command:
 
 ```bash
-$ ng new angular-9-example-calculator
+$ ng new angular-10-example-calculator
 ```
 
 Before generating your project, the CLI will prompt you if you would like to add routing to your project - You can answer **N**o because we'll not be using the [router](https://www.techiediaries.com/angular-router/) in this example. For the stylesheets format, let's go with **CSS**.
@@ -82,28 +82,28 @@ Before generating your project, the CLI will prompt you if you would like to add
 Next, let's start a live-reload development server using the following commands: 
 
 ```bash
-$ cd ./angular-9-example-calculator
+$ cd ./angular-10-example-calculator
 $ ng serve
 ```
 
 The server will be running at the `http://localhost:4200` address.
 
 
-##    Step 3 - Understanding Angular Modules & Components
+##    Step 3 - Understanding Angular 10 Modules & Components
 
-Angular adheres to the **modular** and **component-based** architectures. 
+Angular 10 adheres to the **modular** and **component-based** architectures. 
 
-The modular architecture allows you to organize your Angular application in modules. 
+The modular architecture allows you to organize your Angular 10 application in modules. 
 
 From the [Angular docs](https://angular.io/guide/architecture-modules), this is how a module is defined:
 
->Angular apps are modular and Angular has its own modularity system called NgModules. NgModules are containers for a cohesive block of code dedicated to an application domain, a workflow, or a closely related set of capabilities. They can contain components, service providers, and other code files whose scope is defined by the containing NgModule. They can import functionality that is exported from other NgModules, and export selected functionality for use by other NgModules.
+>Angular 10 apps are modular and Angular has its own modularity system called NgModules. NgModules are containers for a cohesive block of code dedicated to an application domain, a workflow, or a closely related set of capabilities. They can contain components, service providers, and other code files whose scope is defined by the containing NgModule. They can import functionality that is exported from other NgModules, and export selected functionality for use by other NgModules.
 
-The Angular platform itself is comprised of a set of  built-in modules such as the core module, `FormsModule`, and `HttpClientModule`, etc. 
+The Angular 10 platform itself is comprised of a set of  built-in modules such as the core module, `FormsModule`, and `HttpClientModule`, etc. 
 
 A simple rule is creating a module for each feature of your application. For example, authentication can be isolated in each own module. 
 
-> **Note**: In our Angular 9 project generated with the CLI, we already have a root module which, by convention, named `AppModule`.
+> **Note**: In our Angular 10 project generated with the CLI, we already have a root module which, by convention, named `AppModule`.
 
 Open the `src/app/app.module.ts` file, you should see the following code which creates an `NgModule`:
 
@@ -112,12 +112,12 @@ Open the `src/app/app.module.ts` file, you should see the following code which c
 Since this is our first example, let's keep it simple and use the root module for encapsulating our calculator code.
 
 
-### What About Angular Components?
+### What About Angular 10 Components?
 
 
 The component-based architecture allows you to use components to compose your application.
 
-> **Note**: In our Angular 9 project generated with the CLI, we already have a root component which is, by convention, named `AppComponent`.
+> **Note**: In our Angular 10 project generated with the CLI, we already have a root component which is, by convention, named `AppComponent`.
 
 
 A component controls a part of the screen of your application. In terms of code, it is simply a TypeScript class (decorated with `@Component`) with an HTML template for rendering the view and a stylesheets file for presentation.  
@@ -159,11 +159,11 @@ export class CalculatorComponent implements OnInit {
 
 We first define a TypeScript class and decorate it with the `@Component()` decorator which provides the following metadata:
 
-- `selector` which is used to provide a tag name for the component,just like regular HTML tags except that they are only available in your Angular app.
+- `selector` which is used to provide a tag name for the component,just like regular HTML tags except that they are only available in your Angular 10 app.
 - `templateUrl` which is used to link an HTML template for rendering the view of the component. You can also use an inline template with the `template` property instead.
 - `styleUrls` which is used to assign stylesheets files for styling the view of the component.
 
-Here is the magic of Angular! We can invoke our component using the `<app-calculator>` tag. It's like HTML tags but these are custom tags that are only available inside your Angular application.
+Here is the magic of Angular 10! We can invoke our component using the `<app-calculator>` tag. It's like HTML tags but these are custom tags that are only available inside your Angular 10 application.
 
 
 Go ahead and open the `src/app/app.component.html` file, which is the template associated with the root component of our application which means it gets first rendered when the app is bootstrapped, remove the existing markup and add:
@@ -218,7 +218,7 @@ Open the `src/app/calculator/calculator.component.html` file and add:
 </div>
 ```
 
-Angular allows you to use most of the regular HTML tags to build the views of your app. We have a set of divisions with input and button elements.
+Angular 10 allows you to use most of the regular HTML tags to build the views of your app. We have a set of divisions with input and button elements.
 
 Next, open the `src/app/calculator/calculator.component.css` file and add the following CSS styles:
 
@@ -315,16 +315,16 @@ Global styles will be applied to all the components of our app where component s
 
 Go to your app in your web browser, you'll see the following UI:
 
-![Angular 9 Example Calculator](https://www.diigo.com/file/image/bbccosoazobaoooccdzdrocqebd/Ngcalculator.jpg)
+![Angular 10 Example Calculator](https://www.diigo.com/file/image/bbccosoazobaoooccdzdrocqebd/Ngcalculator.jpg)
 
 At this point, this is a regular HTML file which doesn't include any Angular code. 
 
 If you are building your app with plain JavaScript, you'll need to query the DOM elements and attach your defined functions to various events to implement your calculator but you don't need to do that in our case thanks to the Angular template syntax. 
 
 
-##    Step 5 - Understanding Angular Template Syntax
+##    Step 5 - Understanding Angular 10 Template Syntax
 
-Angular provides a powerful syntax that extends regular HTML with various constructs for interpolating variables, binding methods to events, or [iterating over arrays of data](https://www.techiediaries.com/angular-ngfor/).   
+Angular 10 provides a powerful syntax that extends regular HTML with various constructs for interpolating variables, binding methods to events, or [iterating over arrays of data](https://www.techiediaries.com/angular-ngfor/).   
 
 We'll be particularly learning about event and property bindings. 
 
@@ -332,9 +332,9 @@ We'll be particularly learning about event and property bindings.
 
 Data binding is a mechansim implemented in most modern frameworks that establishes a connection between the component view and the data in the component's class in such a way that when the data variables changes, the elements that are bound to the data reflect changes automatically and vice versa. 
 
-With Angular data bindings, you don't need to manually push data from your component to the DOM and back. This means you don't need to call methods like `querySelector()` or `querySelectorAll()` and listenning for events to synchronize the views with data changes and vice versa. This is done automatically for you! 
+With Angular 10 data bindings, you don't need to manually push data from your component to the DOM and back. This means you don't need to call methods like `querySelector()` or `querySelectorAll()` and listenning for events to synchronize the views with data changes and vice versa. This is done automatically for you! 
 
-Angular provides four types of data binding depending on how data flows i.e from the component to the DOM, from the DOM to the component or both ways:
+Angular 10 provides four types of data binding depending on how data flows i.e from the component to the DOM, from the DOM to the component or both ways:
 
 - `{{}}` or interpolation which is used when you want to display data from the component in the associated view. For example, if you defined a foobar variable in your component, you can display its value using `{{ foobar }}`.
 
@@ -344,7 +344,7 @@ Angular provides four types of data binding depending on how data flows i.e from
 
 - `[( )]` or two-way data binding which is used if you want data to flow in both ways. For example:  `<input type="text" [(ngModel)]="foobar">`. The input element and `foobar` will have the same value and when one changes, the other one changes to the same value accordingly. We use the banana in the box syntax which combines brackets and parentheses for two-way data binding. `ngModel` is a special directive that binds to the `value` attribute of the `<input>` and `<textarea>` elements but you can constrcut two-way data binding for any property in the DOM or component. 
   
-Now let's apply this knowledge to make a functional Angular app.
+Now let's apply this knowledge to make a functional Angular 10 app.
 
 
 ##    Step 6 - Listenning for Click Events on the Buttons and Get their Associated Values
@@ -358,7 +358,7 @@ In the template, we have four sets of keys:
 - a decimal point (.) 
 - and a reset key. 
 
-Let's use Angular event binding to listen for clicks on the buttons and determine what type of key was clicked.
+Let's use Angular 10 event binding to listen for clicks on the buttons and determine what type of key was clicked.
 
 
 ### Defining Some Needed Variables 
@@ -461,7 +461,7 @@ Finally, define the `clear()` method that will be used to clear the result area 
 
 Now, you need to use event binding to bind these methods to the template.
 
-We need to use Angular event binding to bind the `getNumber()` method to the `click` event of buttons. Changte your component template as follows:
+We need to use Angular 10 event binding to bind the `getNumber()` method to the `click` event of buttons. Changte your component template as follows:
 
 ```html
 <div class="calculator">
@@ -516,7 +516,7 @@ Next, let's bind the `getOperation()`, `getDecimal()` and `clear()` methods to t
 </div>    
 ```
 
-##    Step 7 - Displaying the Value of the Variable in the Angular Template  
+##    Step 7 - Displaying the Value of the Variable in the Angular 10 Template  
 
 Now let's display the value of the `currentNumber` variable that contains the value of the typed number by binding to variable to the `value` attribute of the `<input>` element:
 
@@ -535,9 +535,9 @@ The `currentNumber` variable will also contain the final result of the operation
 
 ## Conclusion
 
-In this tutorial, we have barely scratched the surface of what we can do with Angular. As a re-wrap:
+In this tutorial, we have barely scratched the surface of what we can do with Angular 10. As a re-wrap:
 
-We've installed Angulae CLI v9 and initialized a new project. Next we learned about modules and components, created a component, added global and component styles and seen the various types of data bindings.
+We've installed Angulae CLI v10 and initialized a new project. Next we learned about modules and components, created a component, added global and component styles and seen the various types of data bindings.
 
 
 
