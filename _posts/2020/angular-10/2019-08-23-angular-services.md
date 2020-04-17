@@ -1,13 +1,18 @@
 ---
-layout: post
-title: "Angular 7|8 Services"
+layout: bpost
+title: "Angular 10/9 Services"
 image: "images/content/html.png"
-excerpt: "Learn about Angular services"
+excerpt: "Learn about Angular 10/9 services"
+date: 2020-04-15
 tags: [ angular ] 
 ---
 
 
-After understanding modules and components, let’s see what services are. 
+In this post, we'll look at services with Angular 10/9.
+
+After understanding modules and components, let’s see what Angular services are. 
+
+## What's an Angular Service?
 
 In Angular, a service is a singleton that can be wired with components or other services via **Dependency Injection**.
  
@@ -25,6 +30,8 @@ According to the [Angular docs:](https://angular.io/guide/architecture-services)
 > DI is wired into the Angular framework and used everywhere to provide new components with the services or other things they need. Components consume services; that is, you can inject a service into a component, giving the component access to that service class.
 
 
+## Why Using Angular Services?
+
 You can use **services** to organize and share code across your app
 
 Typically, a component's job is to enable the user experience and nothing more. A component should present properties and methods for data binding, in order to mediate between the view (rendered by the template) and the application logic.
@@ -41,3 +48,5 @@ You need to provide a service before it can be available. This can be done in th
 - Via the service’s metadata passed to the `@Injectable()` decorator (The service will be available everywhere),
 - Via the `providers` array, in a specific module (The service is available only to the components and services of the module),
 - Via the `providers` array in a specific component (The service is available only to the component).
+
+We have seen what are Angular services and when we use them. Currently Angular 10 beta is released. Angular 9 has been released before with may enhancements to services and dependency injection.

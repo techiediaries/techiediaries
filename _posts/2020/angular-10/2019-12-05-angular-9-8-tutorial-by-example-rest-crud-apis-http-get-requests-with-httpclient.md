@@ -1,25 +1,26 @@
 ---
 layout: post
-title: "Angular 9/8 Tutorial By Example: REST CRUD APIs & HTTP GET Requests with HttpClient"
+title: "Angular 9/10 Tutorial By Example: REST CRUD APIs & HTTP GET Requests with HttpClient"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this Angular 9 tutorial, we'll learn to build an Angular 9 example application going through all the required steps from creating/simulating a REST API, scaffolding
- a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud" 
-date: 2020-01-25 
+excerpt: "In this Angular 9/10 tutorial, we'll learn to build an Angular 9 example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud" 
+date: 2020-04-17 
 categories: angular
-tags : [angular, angular8, angular9, angular-9-ngfor-examples, angular-9-ngif-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-9-material-examples, angular-9-tutorials ] 
+tags : [angular, angular-10, angular-9, angular-9-tutorials ] 
 ---
 
 
-In this Angular 9 tutorial, we'll learn to build an Angular 9 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding
+In this Angular 9/10 tutorial, we'll learn to build an Angular 9/10 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding
  a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
 
- ## What We'll Learn in this Angular 9 Tutorial? 
+ ## What We'll Learn in this Angular 9/10 Tutorial? 
 
-- We'll learn by example how to send GET requests with URL query strings and parameters and process HTTP responses from REST API servers in your Angular 9/8 application using `Httplient` for fetching and consuming JSON data, how to do error handling for HTTP errors using the RxJS `throwError()` and `catchError()` operators, how to retry failed HTTP requests in poor network connections and cancel pending requests using the RxJS `retry()` and `takeUntil()` operators, and finally how to deploy the application to Firebase hosting using the latest Angular 8.3+ features. 
+- We'll learn by example how to send GET requests with URL query strings and parameters and process HTTP responses from REST API servers in your Angular 9/10 application using `Httplient` for fetching and consuming JSON data, how to do error handling for HTTP errors using the RxJS `throwError()` and `catchError()` operators, how to retry failed HTTP requests in poor network connections and cancel pending requests using the RxJS `retry()` and `takeUntil()` operators, and finally how to deploy the application to Firebase hosting using the latest Angular 8.3+ features. 
 - We'll also see how to use Angular services and RxJS Observables, and learn how to set up Angular Material in our project and style the UI with Material Design components.
-- We'll see how to use the new `ng deploy` feature in Angular 8.3+ to easily deploy your Angular 9 application from the command-line to Firebase hosting. 
+- We'll see how to use the new `ng deploy` feature in Angular 8.3+ to easily deploy your Angular 9/10 application from the command-line to Firebase hosting. 
 
-Angular 9 is finally released, and comes with various [new features](https://www.techiediaries.com/angular-features/) and improvements particularly the new Ivy renderer.
+> At the time of this update, [Angular 10 beta is released with new features and fixes](https://www.techiediaries.com/angular/angular-10-new-features/) and the final release is due soon.
+
+Angular 9 is released, and comes with various [new features](https://www.techiediaries.com/angular-features/) and improvements particularly the new Ivy renderer.
 
 > **Note**: Please note that we are using HttpClient which is an improved version of the HTTP Client API, available starting 
 from Angular version [4.3.0-rc.0](https://github.com/angular/angular/blob/master/CHANGELOG.md#430-rc0-2017-07-08). The old HTTP client is not available in Angular 9. 
@@ -27,7 +28,7 @@ from Angular version [4.3.0-rc.0](https://github.com/angular/angular/blob/master
 You can also check out how to use HttpClient with Angular 8/9 to build a news application that fetches JSON data from a third-party REST API [in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor/). 
 
 
-Throughout this step by step Angular 9 tutorial, we are going to see a practical CRUD example of how to use the HttpClient that's available from the
+Throughout this step by step Angular 9/10 tutorial, we are going to see a practical CRUD example of how to use the HttpClient that's available from the
 `@angular/common/http` package, to make HTTP GET requests using the `get()` method.
 
 ## What We'll Cover in this Tutorial?
@@ -35,8 +36,8 @@ Throughout this step by step Angular 9 tutorial, we are going to see a practical
 We'll cover:
 
 - How to create a fake and complete working CRUD REST API,
-- How to install Angular CLI v9,
-- How to create an Angular 9 project using Angular CLI,
+- How to install Angular CLI v10,
+- How to create an Angular 10 project using Angular CLI,
 - How to set up Angular Material and style your application with Material Design,
 - How to create Angular components, routing and navigation between them,
 - How to create and inject Angular services, 
@@ -50,23 +51,23 @@ We'll cover:
 
 ## The Steps of this Tutorial
 
-The steps of this Angular 9 tutorial are as follows:
+The steps of this Angular 9/10 tutorial are as follows:
 
--   Step 1 — Setting up Angular CLI v9
--   Step 2 — Initializing a New Angular 9 Example Project
+-   Step 1 — Setting up Angular CLI 9/10
+-   Step 2 — Initializing a New Angular 10 Example Project
 -   Step 3 — Setting up a (Fake) JSON REST API
 -   Step 4 — Setting up Angular HttpClient v9 in our Example Project 
--   Step 5 — Creating Angular 9 Components
--   Step 6 — Adding Angular 9 Routing
+-   Step 5 — Creating Angular 9/10 Components
+-   Step 6 — Adding Angular 9/10 Routing
 -   Step 7 — Styling the UI with Angular Material v9
 -   Step 8 — Consuming the JSON REST API with Angular HttpClient v9
 -   Step 9 — Adding HTTP Error Handling with RxJS `catchError()` & `HttpClient`
 -   Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
 -   Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
 -   Step 12 — Adding URL Query Parameters to the HttpClient get() Method
--   Step 13 — Getting the Full HTTP Response with Angular HttpClient v9
--   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient v9
--   Step 15 — Building and Deploying your Angular 9 Application to Firebase Hosting
+-   Step 13 — Getting the Full HTTP Response with Angular HttpClient v9/10
+-   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient v9/10
+-   Step 15 — Building and Deploying your Angular 9/10 Application to Firebase Hosting
 
 
 Let's get started by introducing Angular HttpClient, its features and why using it.
@@ -107,9 +108,9 @@ If you have the previous prerequisites, you are ready for the next steps of our 
 In the first step(s) of our tutorial, we'll see how to install Angular CLI 9 and create an example project from scratch.
 
 
-##   Step 1 — Setting up Angular CLI v9
+##   Step 1 — Setting up Angular CLI v9/10
 
-In this step, we'll [install the latest Angular CLI 9](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) version (at the time of writing this tutorial).
+In this step, we'll [install the latest Angular CLI 9/10](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) version (at the time of writing this tutorial).
 
 > **Note**: These instructions are also valid for Angular 8.
 
@@ -118,35 +119,42 @@ In this step, we'll [install the latest Angular CLI 9](https://www.ahmedbouchefr
 [Angular CLI](https://cli.angular.io/) is the official tool for initializing and working with Angular projects. To install it, open a new command-line interface and run the following command:
 
 ```bash
-$ npm install -g @angular/cli@next 
+$ npm install -g @angular/cli
 ```
 
-At the time of writing this tutorial, **angular/cli v9.0.0-rc.2** will be installed on your system.
+At the time of writing this tutorial, **angular/cli v9** will be installed on your system.
 
-Please note that until Angular 9 is officialy released, you need to use the `@next` tag to install the latest pre-release version.
+Please note that until Angular 10 is officialy released, you can use the `@next` tag to install the latest pre-release version:
+
+```bash
+$ npm install -g @angular/cli@next
+```
 
 If you run the `ng version` command, you should get a similar output:
 
 ```bash
-Angular CLI: 9.0.0-rc.2
-Node: 10.16.3
-OS: win32 ia32
-Angular:
-...
+Angular CLI: 10.0.0-next.0
+Node: 12.14.0
+OS: linux x64
+
+Angular: 
+... 
+Ivy Workspace: 
 
 Package                      Version
 ------------------------------------------------------
-@angular-devkit/architect    0.900.0-rc.2
-@angular-devkit/core         9.0.0-rc.2
-@angular-devkit/schematics   9.0.0-rc.2
-@schematics/angular          9.0.0-rc.2
-@schematics/update           0.900.0-rc.2
-rxjs                         6.5.3
+@angular-devkit/architect    0.1000.0-next.0
+@angular-devkit/core         10.0.0-next.0
+@angular-devkit/schematics   10.0.0-next.0
+@angular/cli                 10.0.0-next.0
+@schematics/angular          10.0.0-next.0
+@schematics/update           0.1000.0-next.0
+rxjs                         6.5.4
 ```
 
 In the next step, we'll learn how to intialize a new example project from the command-line.
 
-##   Step 2 — Initializing a New Angular 9 Example Project
+##   Step 2 — Initializing a New Angular 9/10 Example Project
 
 In this step, we'll proceed to create our example project. Head back to your command-line interface and run the following commands:
 
@@ -162,24 +170,31 @@ This will instruct the CLI to automatically set up routing in our project so we'
 If you run the `ng version` command inside your project's folder, you should get a similar output:
 
 ```bash
-Angular CLI: 9.0.0-rc.2
-Node: 10.16.3
-OS: win32 ia32
-Angular: <error>
-... animations, cli, common, compiler, compiler-cli, core, forms
+Angular CLI: 9.0.2
+Node: 12.14.0
+OS: linux x64
+
+Angular: 9.0.1
+... animations, common, compiler, compiler-cli, core, forms
 ... language-service, platform-browser, platform-browser-dynamic
 ... router
+Ivy Workspace: Yes
 
-Package                         Version
----------------------------------------------------------
-@angular-devkit/architect       0.900.0-rc.2 (cli-only)
-@angular-devkit/build-angular   <error>
-@angular-devkit/core            9.0.0-rc.2 (cli-only)
-@angular-devkit/schematics      9.0.0-rc.2 (cli-only)
-@schematics/angular             9.0.0-rc.2 (cli-only)
-@schematics/update              0.900.0-rc.2 (cli-only)
-rxjs                            6.5.3 (cli-only)
-typescript                      3.6
+Package                           Version
+-----------------------------------------------------------
+@angular-devkit/architect         0.900.2
+@angular-devkit/build-angular     0.900.2
+@angular-devkit/build-optimizer   0.900.2
+@angular-devkit/build-webpack     0.900.2
+@angular-devkit/core              9.0.2
+@angular-devkit/schematics        9.0.2
+@angular/cli                      9.0.2
+@ngtools/webpack                  9.0.2
+@schematics/angular               9.0.2
+@schematics/update                0.900.2
+rxjs                              6.5.4
+typescript                        3.7.5
+webpack                           4.41.2
 ```
 
 Next, navigate to you project’s folder and run the local development server using the following commands:
@@ -320,7 +335,7 @@ Leave the JSON REST API server running and open a new command-line interface for
 As a summary of what we have done — We installed Angular CLI and initialized a new project based on the latest Angular 9 version. Then, we created a REST API using `json-server` based on a JSON file. In the next step of our Angular 9 tutorial, we'll learn how to set up `HttpClient` in our Angular 9 project.
 
 
-##   Step 4 — Setting up Angular 9 HttpClient in our Example Project 
+##   Step 4 — Setting up Angular 9/10 HttpClient in our Example Project 
 
 In this step, we'll proceed to set up the `HttpClient` module in our example.
 
@@ -356,7 +371,7 @@ export class AppModule { }
 That's all, we are now ready to use the `HttpClient` service in our project but before that we need to create a couple of components — The home and about components. This is what we'll learn to do in the next step.
 
 
-## Step 5 — Creating Angular 9 Components
+## Step 5 — Creating Angular 9/10 Components
 
 In this step, we'll proceed to create the Angular components that control our application UI. 
 
@@ -397,7 +412,7 @@ We'll update the home component in the following steps.
 In the next step of our Angular 9 tutorial, we'll add these components to the router.
 
 
-##   Step 6 — Adding Angular 9 Routing
+##   Step 6 — Adding Angular 9/10 Routing
 
 In this step, we'll proceed to add routing to our example.
 
@@ -428,7 +443,7 @@ We first imported the home and about components, next we added three routes incl
 In the next step of our example, we'll set up Angular Material in our project for styling our UI.
 
 
-##   Step 7 — Styling the UI with Angular Material v9
+##   Step 7 — Styling the UI with Angular Material v9/10
 
 In this step of our Angular 9 tutorial, we'll proceed to add Angular Material to our project and style our application UI.
 
@@ -518,7 +533,7 @@ As a summary of what we did until this point of our tutorial — We have setup H
 In the next step of our tutorial, we'll learn how to fetch the JSON data from our REST API server using `HttpClient` v9.
 
 
-##   Step 8 — Consuming the JSON REST API with Angular HttpClient 9
+##   Step 8 — Consuming the JSON REST API with Angular HttpClient 9/10
 
 In this step, we'll proceed to consume JSON data from our REST API server in our example application.
 
@@ -741,7 +756,7 @@ In the next step, we'll see how to unsubscribe from RxJS Observables in our exam
 
 ##   Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
 
-In this step of our Angular 9 tutorial, we'll learn about why we need and how to unsubscribe from Observables in our code using the `takeUntil()` operator.
+In this step of our Angular 9/10 tutorial, we'll learn about why we need and how to unsubscribe from Observables in our code using the `takeUntil()` operator.
 
 First of all, do you need to unsubscribe from the Observables returned by the `HttpClient` methods?
 
@@ -837,7 +852,7 @@ In the Link header you’ll get first, prev, next and last links. In the next st
 
 
 
-##   Step 13 — Getting the Full HTTP Response with Angular HttpClient 9
+##   Step 13 — Getting the Full HTTP Response with Angular HttpClient 9/10
 
 In this ste, we'll proceed by implementing the logic for retrieving pagination information from the Link header contained in the HTTP response received from the JSON REST API server.
 
@@ -1011,7 +1026,7 @@ This is a screenshot of our application:
 ![](https://www.diigo.com/file/image/rscqpoqzoceparbdpzdspbsdra/Angular+8+HTTP+Example.jpg?k=143b81257774810f9369004fda4c1f4c)
 
 
-##   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 9
+##   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 9/10
 
 In this step, we'll see how to use typed HTTP responses in our example application.
 
@@ -1096,7 +1111,7 @@ Next change the type of the HTTP response in the `sendGetRequest()` call:
 You also need to do the same for the other `firstPage()`, `previousPage()`, `nextPage()` and `lastPage()` methods.
 
 
-##   Step 15 — Building and Deploying your Angular 9 Application to Firebase Hosting
+##   Step 15 — Building and Deploying your Angular 9/10 Application to Firebase Hosting
 
 In this step, we'll see how to build and deploy our example application to Firebase hosting using the ng deploy command available in Angular 8.3+.
 
@@ -1150,7 +1165,7 @@ The command will produce an optimized build of your application (equivalent to t
 
 ## Conclusion
 
-Throughout this Angular 9 tutorial, we've built a complete working Angular application example using the latest version.
+Throughout this Angular 9/10 tutorial, we've built a complete working Angular application example using the latest version.
 
 As a recap, we've particularly seen by example how to set up `HttpClient` and send HTTP GET requests with parameters using the `HttpClient.get()` method, how to handle HTTP errors using the RxJS `throwError()` and `catchError()` operators, unsubscribe from RxJS Observables for the cancelled HTTP requests using the `takeUntil()` operator and retry failed requests with the `retry()` operator and finally how to deploy our application to Firebase hosting using the latest `ng deploy` feature available from Angular 8.3+.
 
