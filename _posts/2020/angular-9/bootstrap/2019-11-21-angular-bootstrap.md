@@ -3,7 +3,7 @@ layout: post
 title: "3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial"
 image: "images/content/angular.jpg"
 excerpt: "In this tutorial we will see how to use Bootstrap 4 to style websites built using the Angular 9 framework. We'll see how we can easy integrate both of them, using ng-bootstrap vs. ngx-bootstrap packages  and using the Angular CLI 9 for generating a brand new project." 
-tags : [angular, angular9, bootstrap] 
+tags : [angular, angular-9, bootstrap] 
 ---
 
 In this tutorial, we will see how to use Bootstrap to style apps built using Angular 9. 

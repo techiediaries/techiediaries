@@ -1,47 +1,49 @@
 ---
 layout: post
-title:  "Styling An Angular 9/8/7 Example App with Bootstrap 4 Navbar, Jumbotron, Tables, Forms and Cards"
-date:   2020-2-4
+title:  "Styling An Angular 10 Example App with Bootstrap 4 Navbar, Jumbotron, Tables, Forms and Cards"
+date:   2020-04-20
 categories: angular 
-canonical: "https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/"
-tags: [angular, angular-9, bootstrap]
+tags: [angular, angular-10, bootstrap]
 ---
 
-In this tutorial, we'll learn how to integrate and use bootstrap 4 with Angular 9.
+In this tutorial, we'll learn how to integrate and use bootstrap 4 with Angular 10.
 
-We'll see how to initialize an Angular 9 project and integrate it with Bootstrap 4. Next, we'll use the various Bootstrap 4 CSS utilities to create a responsive layout with navbars, tables, forms, buttons, cards and jumbotrons.
+We'll see how to initialize an Angular 10 project and integrate it with Bootstrap 4. Next, we'll use the various Bootstrap 4 CSS utilities to create a responsive layout with navbars, tables, forms, buttons, cards and jumbotrons.
 
 
 [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/) is a free and open-source CSS framework for creating responsive layouts, it's mobile-first and contains ready CSS utilities for typography, forms, buttons, and navigation, etc.
 
 > This tutorial works with all recent versions of Angular i.e v7/v8 and v9.
 
-## Angular 9/8 and Bootstrap 4 by Example
+## Angular 10 and Bootstrap 4 by Example
 
 There are various ways of [integrating Bootstrap 4 with your Angular 9](https://www.techiediaries.com/angular-bootstrap/) application. Let's see a possible solution by example. 
 
-- Step 1 -- Installing Angular CLI v9
-- Step 2 -- Initializing your Angular 9 Project
+- Step 1 -- Installing Angular CLI 10
+- Step 2 -- Initializing your Angular 10 Project
 - Step 3 -- Installing Bootstrap 4
 - Step 4 -- Creating Angular Components and Setting up Routing
-- Step 5 -- Adding A Bootstrap 4 Jumbotron 
+- Step 5 -- Adding a Bootstrap 4 Jumbotron 
 - Step 6 -- Creating an Angular Bootstrap 4 Table
-- Step 7 -- Adding A Bootstrap 4 Form Component
+- Step 7 -- Adding a Bootstrap 4 Form Component
 
-## Step 1 -- Installing Angular CLI v9
+## Step 1 -- Installing Angular CLI 10
 
 Let’s start by installing the latest version of Angular CLI. In your terminal, run the following command:
 
 ```bash
-$ npm install -g @angular/cli
+$ npm install -g @angular/cli@next
 ```
 
-## Step 2 -- Initializing your Angular 9 Project
+At the time of writing this tutorial, Angular 10 is in beta version so you need to add the `next` tag to install it via npm. After it's released you don't need to use the `next` tag.
 
-After installing Angular CLI, let’s initialize an Angular 9 project by running the following command:
+
+## Step 2 -- Initializing your Angular 10 Project
+
+After installing Angular CLI, let’s initialize an Angular 10 project by running the following command:
 
 ```bash
-$ ng new angular-9-bootstrap-example
+$ ng new angular10bootstrapexample
 ```
 
 
@@ -61,7 +63,7 @@ Which stylesheet format would you like to use?
 
 Choose “CSS”.
 
-Next, we need to set up Angular forms.
+Next, we need to set up Angular 10 forms.
 
 Go to the `src/app/app.module.ts` file, import `FormsModule` from `@angular/forms`, and include it in the `imports` array as follows:
 
@@ -90,12 +92,12 @@ export class AppModule { }
 
 ## Step 3 -- Installing Bootstrap 4
 
-After initializing your Angular 9 project, let's proceed to install Bootstrap 4 and integrate it with Angular.
+After initializing your Angular 10 project, let's proceed to install Bootstrap 4 and integrate it with Angular.
 
 Go to your project’s folder:
 
 ```bash
-$ cd angular-9-bootstrap-example
+$ cd angular10bootstrapexample
 ```
 
 
@@ -123,10 +125,10 @@ Next, go the `angular.json` file and add the paths of Bootstrap CSS and JS files
     },
 ```
 
-## Step 4 -- Creating Angular Components and Setting up Routing
+## Step 4 -- Creating Angular 10 Components and Setting up Routing
 
 
-After installing and integrating Bootstrap 4 with your Angular 9 project, let's create some components to test various Bootstrap styles. 
+After installing and integrating Bootstrap 4 with your Angular 10 project, let's create some components to test various Bootstrap styles. 
 
 Go to your command-line interface and run the following commands:
 
@@ -171,16 +173,16 @@ Head to the `src/app/jumbotron/jumbotron.component.html` file and add the follow
 
 ```html
 <div class="jumbotron" style="height: calc(95vh);">
-  <h1>Angular 9 Bootstrap 4 Demo</h1>
+  <h1>Angular 10 Bootstrap 4 Demo</h1>
   <p class="lead">
-    This tutorial teaches you how to integrate Bootstrap 4 with Angular 9  
+    This tutorial teaches you how to integrate Bootstrap 4 with Angular 10  
   </p>
 </div>
 ```
 
 Wu use the built-in `.jumbotron` class to create a Bootstrap Jumbotron.
 
-## Step 6 -- Creating an Angular Bootstrap 4 Table
+## Step 6 -- Creating an Angular 10 and Bootstrap 4 Table
 
 Let’s now see how to use a Bootstrap 4 table to display tabular data.
 
@@ -267,7 +269,7 @@ Next, go the `src/app/bootstrap-table/bootstrap-table.component.html` file and u
 We use the built-in `.table` and `.table-hover` classes to create Bootstrap tables, the `.card`, `.card-block`, `.card-title` and `.card-text` classes to create cards. 
 
 
-## Step 7 -- Adding A Bootstrap 4 Form Component
+## Step 7 -- Adding A Bootstrap 4 Form Component to your Angular 10 App
 
 Let’s proceed by adding a Bootstrap-styled form to the `bootstrap-form` component. 
 
@@ -339,7 +341,7 @@ Next, go to the `src/app/bootstrap-form/bootstrap-form.component.html` file and 
 
 We make use of the `.form-group` and `.form-control` classes to create a Bootstrap form.
 
-## Step 8 -- Serving your Angular 9 Application
+## Step 8 -- Serving your Angular 10 Application
 
 Head over to your command-line interface, and run the following command from the folder of your project:
 
@@ -351,4 +353,5 @@ A development server will be started at the `http://localhost:4200` address.
 
 ## Conclusion
 
-As a recap, we have seen how to initialize an Angular 9 project and integrate it with Bootstrap 4. Next, we used various Bootstrap CSS utilities to create a responsive layout with tables, forms, buttons, cards and jumbotrons.
+As a recap, we have seen how to initialize an Angular 10 project and integrate it with Bootstrap 4. Next, we used various Bootstrap CSS utilities to create a responsive layout with tables, forms, buttons, cards and jumbotrons.
+
