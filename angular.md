@@ -1,6 +1,6 @@
 ---
 layout: bytag
-title: Angular 9/8/7/6 Tutorials & Learning Path
+title: Angular 10/9/8 Tutorials & Learning Path
 comments: false
 tag: angular
 ---
@@ -20,7 +20,7 @@ Angular is developed and maintained by Google. It has a large community which me
 
 Our Angular learning path will offer the necessary tutorials, PDF books, for beginners, and examples to get started using this framework in your next project.
 
-## <a name="Introducing_Angular"> Introducing Angular 9</a>
+## <a name="Introducing_Angular"> Introducing Angular 10</a>
 
 [AngularJS](https://angularjs.org/) was the most popular client-side framework among JavaScript developers for many years. Google introduced AngularJS in 2012. It's based on a variation of the very popular [Model-View-Controller pattern](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) which is called Model-View-*.
 
@@ -38,7 +38,7 @@ The concept of [directives](https://docs.angularjs.org/guide/directive) was also
 
 The other introduced concept is [Dependency Injection](https://docs.angularjs.org/guide/di), which allows developers to inject what's called services (singletons that encapsulates a unique and re-usable functionality within an application) into other components which encourages re-usability of the code.
 
-## Why Learning Angular 9?
+## Why Learning Angular 10?
 
 By learning Angular, you'll have more chances of finding a job as a front-end developer! So in this learning path, will teach you the framework through building several examples from scratch.
 
@@ -56,7 +56,7 @@ You'll learn about:
 - Using Bootstrap with Angular,
 - Deployment.
 
-## How Long Will it Take to Learn Angular 9?
+## How Long Will it Take to Learn Angular 10?
 
 This depends of what you mean by learning Angular. If you want to be able to build and deploy a production-ready Angular application in a reasonable timeframe, this will probably take byou etween 6 and 12 months depending on your background and existing skills.
 
@@ -111,5 +111,5 @@ Frameworks provide abstractions for working with many aspects like for example D
 
 Nowadays powerful and modern JavaScript frameworks have emerged and taken the web by storm. Instead of websites with poorly structured JS or jQuery code we have now complete web apps with best practices and code structure with complex and rich UIs. These modern client-side web apps use heavy JavaScript which impacts performance and by result the user experience; and as such even if web browsers became more powerful we still need to follow best practices and battle tested tools and patterns which client-side frameworks try to help with.
 
-## All Angular 9/8/7/6 Articles
+## All Angular 10/9/8/7/6 Articles
 
