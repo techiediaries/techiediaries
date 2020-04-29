@@ -17,6 +17,8 @@ Updating Angular CLI to v9 and upgrading your project to Angular 9 from v8/7 is 
 
 In this tutorial, you'll learn about the required steps that you need to follow to appropriately migrate your existing apps to Angular 9 — The latest version of the framework at the time of this writing. 
 
+> Also check out [Angular 10 Update Guide with Examples](https://www.ahmedbouchefra.com/angular-10-9-update-guide-examples/)
+
 
 ## Angular 9 is Released!
 
