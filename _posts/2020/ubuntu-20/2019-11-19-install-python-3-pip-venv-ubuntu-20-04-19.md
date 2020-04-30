@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Ubuntu 18.04: Install Python 3.8/3.7/3.6, Pip and Venv"
+title: "Ubuntu 20.04/19.04: Install Python 3.8/3.7/3.6, Pip and Venv"
 image: "images/content/ubuntu.png"
-excerpt: "Throughout this tutorial, you’ll learn to install Python 3.8 — the latest major version of Python— on Ubuntu 18.04 — the latest version of Ubuntu." 
+excerpt: "Throughout this tutorial, you’ll learn to install Python 3.8 — the latest major version of Python— on Ubuntu 20.04 — the latest version of Ubuntu"
+categories: ubuntu
+date: 2020-04-30
 tags : [ubuntu, python]
 ---
 
-Throughout this tutorial, you’ll learn to install Python 3.8 — the latest major version of Python — on Ubuntu 18.04 — the latest version of Ubuntu and you’ll install `pip` — the official tool for installing Python packages from PyPI (**Python Package Index**)— then you’ll create a virtual environment using `venv`.
+Throughout this tutorial, you’ll learn to install Python 3.8 — the latest major version of Python — on Ubuntu 20.04 LTS — the latest version of Ubuntu and you’ll install `pip` — the official tool for installing Python packages from PyPI (**Python Package Index**)— then you’ll create a virtual environment using `venv`.
 
-
+## Introducing Python and PIP 
 
 Python is a general purpose programming language that’s used nowadays in various areas such as server-side web applications, data science and scientific calculations etc.
  
@@ -20,12 +22,64 @@ Python 3.8 was released on [October 14th, 2019](https://www.python.org/dev/peps/
 - Simpler debugging with f-Strings
 - The Python steering council, etc.
 
+Pip is a utility that allows you to install Python packages. Thanks to pip, you can search, download, and install packages from Python Package Index (PyPI) and other package indexes.
 
-## How to Install Python 3.8 on Ubuntu 18.04
+In this post, we'll see how to install pip for Python 3 and Python 2 on Ubuntu 20.04. We will also show the basic concepts for installing and managing Python packages with pip.
 
-Python 3.8 is not available in the official Ubuntu 18.04 default repositories. 
+## How to Install Python 3.8 on Ubuntu 20.04
 
-You have two ways to install Python 3.8 on Ubuntu 18.04:
+Python has two major versions which are Python 2 and Python 3. In Ubuntu 20.04, Python 3 is included in the base system installation, and Python 2 is available for installation from the Universe repository. Python 2 is dead so it's recommended to use Python 3.
+
+When installing a Python package globally, make sure to install the package’s deb package with the apt utility because they are designed to work properly on Ubuntu systems. Python 3 packages are prefixed with `python3-` and Python 2 packages are prefixed with `python2-`.
+
+You can also utilize pip to install packages globally but ensure that first there is no deb package for the desired module.
+
+It's recommended to use pip inside a virtual environment only. Python Virtual Environments allow you to install Python modules inside an isolated location from your system-wide packages to avoid any conflicts between packages. 
+
+Ubuntu 20.04 and other versions of Debian Linux has Python 3 installed by default. In order to ensure that the installed versions are up-to-date, we can simply update and upgrade the system with the apt command as follows:
+
+```bash
+$ sudo apt update
+$ sudo apt -y upgrade
+```
+
+
+Once the process is complete, we can check the version of Python 3 that is installed in the system by running the following command:
+
+```bash
+$ python3 -V
+```
+You’ll get the following output displayed in your terminal window that shows the version number of the installed Python 3 binary:
+
+```bash
+Output
+Python 3.8.2
+```
+
+## How to Install pip for Python 3.8 on Ubuntu 20.04?
+
+You can install pip for Python 3 on Ubuntu 20.04 by using the following commands in your terminal as a sudo user:
+
+```bash
+$ sudo apt update
+$ sudo apt install python3-pip
+```
+
+This will also install all the required dependencies for building Python modules.
+
+You can check that the installation is successful by running the following command:
+
+```bash
+pip3 --version
+The version number may vary, but it will look something like this:
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+```
+
+## How to Install Python 3.8 on Ubuntu 19.04
+
+Python 3.8 is not available in the official Ubuntu 19.04 default repositories. 
+
+You have two ways to install Python 3.8 on Ubuntu 19.04:
 
 - Installing Python 3.8 via the deb package from the [deadsnakes](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa) PPA, 
 - Building Python 3.8 from the source code.
