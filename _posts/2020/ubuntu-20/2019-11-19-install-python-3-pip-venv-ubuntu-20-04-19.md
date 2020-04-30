@@ -111,6 +111,37 @@ Next, you can check if Python 3.8 is installed using the following command:
 $ python3.8 --version
 ```
 
+## Install the `venv` Tool
+
+`venv` lets you create virtual environments for your Python 3 projects. A virtual environment is an isolated environment for packages  
+`**venv**` is a module that belongs to the standard Python 3 SDK. If it’s not bundled with your Python 3 installation, it can be installed using the following command:
+
+
+    $ sudo apt install python3-venv
+
+
+## Creating your Python 3.8 Virtual Environment
+
+You can create a virtual environment using the `venv` module. In your terminal, run the following command:
+
+
+    $ python3 -m venv env
+    
+## Activating your Python 3 Virtual Environment
+
+Before, you can be able to install packages inside your virtual environment, you first need to activate it using the `source` command:
+
+
+    $ source env/bin/activate
+
+You can now install packages in your virtual environment using `pip`.
+
+You can deactivate the virtual environment using the following command in your terminal:
+
+
+    $ deactivate
+
+
 The section below is for Python 3.7.
 
 ## Updating & Upgrading your Ubuntu Packages
@@ -148,36 +179,6 @@ You can now install your Python 3 packages using the following command:
 
 
 > **Note:** Please note that if you don’t have Python 2 installed on your system, you can use `pip` instead of `pip3`.
-
-
-## Install the `venv` Tool
-
-`venv` lets you create virtual environments for your Python 3 projects. A virtual environment is an isolated environment for packages  
-`**venv**` is a module that belongs to the standard Python 3 SDK. If it’s not bundled with your Python 3 installation, it can be installed using the following command:
-
-
-    $ sudo apt install python3-venv
-
-
-## Creating your Python 3 Virtual Environment
-
-You can create a virtual environment using the `venv` module. In your terminal, run the following command:
-
-
-    $ python3 -m venv env
-## Activating your Python 3 Virtual Environment
-
-Before, you can be able to install packages inside your virtual environment, you first need to activate it using the `source` command:
-
-
-    $ source env/bin/activate
-
-You can now install packages in your virtual environment using `pip`.
-
-You can deactivate the virtual environment using the following command in your terminal:
-
-
-    $ deactivate
 
 
 ## Installing Python 3.7 
