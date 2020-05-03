@@ -1,62 +1,47 @@
 ---
-layout: post
-title: "Ionic 2 enableProdMode() "
+layout: bpost
+title: "Ionic 5/Angular enableProdMode() "
 image: "images/content/ionic2-enableprodmode.png"
-excerpt: "In this article we are going to see what does enableProdMode do and an example code on how to use it to enable production mode in Angular 2" 
+excerpt: "In this article we are going to see what does enableProdMode do and an example code on how to use it to enable production mode in Ionic 5/Angular"
+date: 2020-05-03
 tags : [ionic2 , ionic ]
 ---
 
-{% include image.html 
-    img="images/content/ionic2-enableprodmode.png" 
-    title="Ionic 2 enableprodmode " 
-%}
 
-Ionic 2 uses Angular 2 ,the next version of the popular Google client side framework .Angular 2 is more
-powerful than Angular.js and provides more performance and speed on mobile and desktop .
+Ionic 5 supports the latest version of Angular, the popular Google client side framework.
 
-In development phase ,Angular 2 works on development mode which has assertions and various necessary 
-framework checks turned on .
+In development phase, Angular works on development mode which has assertions and various necessary framework checks turned on.
 
-After serving your Ionic 2 app using the browser ,if you look on the console you are going to find 
-an Angular 2 message telling you that Angular 2 is running on development mode and that you need to enable
-the production mode using  enableProdMode() function .There is a good reason for this so if you just 
-enable Angular 2 production mode you are going to : 
+After serving your Ionic 5 app using the browser, if you look on the console you are going to find an Angular message telling you that Angular is running on development mode and that you need to enable the production mode using  the `enableProdMode()` function. There is a good reason for this so if you just enable Angular production mode you are going to: 
 <ul>
 <li>
-Have a good boost on performance and speed of your Ionic 2 app :the device ready event will fire much sooner 
+Have a good boost on performance and speed of your Ionic 5 app: The device ready event will fire much sooner. 
 </li>
 <li>
-Reduce the app size by half .
+Reduce the app size by half.
 </li>
 </ul>
 
-How to enable Angular 2 production mode ?
--------------------------------------------
--------------------------------------------
+## How to Enable Angular Production Mode in your Ionic 5 App?
 
-To enable Angular 2 production mode in Ionic 2 we use the enableProdMode() function .Here is a detailed example on how to 
-do it .
+To enable Angular production mode in Ionic 5, we use the `enableProdMode()` function. Here is a detailed example on how to do it.
 
-First of all, open src/app/main.ts 
+First of all, open the `src/app/main.ts` file. 
 
-Then import enableProdMode from Angular 2 core 
+Next, import `enableProdMode` from Angular  core: 
 
     import {enableProdMode} from '@angular/core';
  
     import { AppModule } from './app.module';
  
- Then call the enableProdMode() function before bootstraping your module
+Next, call the `enableProdMode()` function before bootstraping your module:
 
     enableProdMode();
  
     platformBrowserDynamic().bootstrapModule(AppModule);
 
 
-Conclusion
--------------
--------------
+## Conclusion
 
-So that is all for this short tip tutorial where I just showed you how to enable Angular 2 production mode
-on Ionic 2 when you are ready to build and publish your mobile app to increase performance and speed ,and
-reduce app size .
+So that is all for this short tip tutorial where I just showed you how to enable Angular  production mode in Ionic 5 when you are ready to build and publish your mobile app to increase performance and speed, and reduce app size.
  

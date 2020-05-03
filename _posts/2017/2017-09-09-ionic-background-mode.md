@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Keep Running Ionic 4/Angular Apps In Background Mode (With Example)"
+layout: bpost
+title: "Keep Running Ionic 5/Angular Apps In Background Mode (With Example)"
 image: "images/content/ionic.jpg"
-excerpt: "This tutorial will cover an example use case of the Cordova background mode plugin with Ionic 4/Angular (also Ionic 3). We'll see how you can keep your app running while it's in the background (minimized)."
+excerpt: "This tutorial will cover an example use case of the Cordova background mode plugin with Ionic 5/Angular (also Ionic 4). We'll see how you can keep your app running while it's in the background (minimized)"
+date: 2020-05-03
 tags : ionic 
 ---
 
@@ -12,11 +13,16 @@ tags : ionic
 %}
 
 
-This tutorial will cover an example use case of the Cordova background mode plugin with Ionic 4/Angular (previously Ionic 3). We'll see how you can keep your app running while it's in the background (minimized).
+This tutorial will cover an example use case of the Cordova background mode plugin with Ionic 5/Angular (previously Ionic 3). We'll see how you can keep your app running while it's in the background (minimized).
 
-But first what happens with your Ionic 4/Angular (or Ionic 3) app, once it's hidden or minimized, if it doesn't properly handle background mode? 
+
+## Why Handling the Background Mode in your Ionic 5 Apps?
+
+But first what happens with your Ionic 5/Angular (or Ionic 3) app, once it's hidden or minimized, if it doesn't properly handle background mode? 
 
 Well, simply execution will be interrupted or paused until it becomes in the foreground again so imagine if you have an app that plays music, do you want it to stop playing music when you run another app in the foreground? of course not! what about messaging apps? do you want your app to stop receiving messages once it's in the background? again of course not! How about a GPS tracking app? So I think you get the idea, many apps need to keep executing while it's in the background. So how do you properly handle background mode in your Ionic 2+ app?
+
+## How to Handle the Background Mode in Ionic 5
 
 We can solve the problem using the Cordova/Ionic Native background mode plugin which can be used in many cases such as:
 
@@ -25,33 +31,36 @@ We can solve the problem using the Cordova/Ionic Native background mode plugin w
 * Media streaming,
 * Real-time Messaging etc. 
 
-Now lets see an example for how to use this plugin. We are going to create an Ionic 2+ app that plays audio and keeps playing it even when it's in the background.
+Now let's see an example for how to use this plugin. We are going to create an Ionic 2+ app that plays audio and keeps playing it even when it's in the background.
 
-So go ahead and create a new Ionic 4/Angular (also Ionic 3) project.
+So go ahead and create a new Ionic 5/Angular (also Ionic 4) project.
 
-## Create Ionic 4/Angular Project
+## Create Ionic 5/Angular Project
 
 Using your terminal or command propmt (Windows) run the following command:
 
     ionic start bg-mode-example blank --type=angular
 
-Next navigate inside the project folder: 
+Next, navigate inside the project folder: 
 
     cd bg-mode-example
 
-Then install the required Cordova plugins and Ionic Native wrappers. 
+Next, install the required Cordova plugins and Ionic Native wrappers. 
 
-First let's install the background-mode plugin: 
+
+## Installing the Background Mode Cordova and Ionic Native Plugins
+
+First, let's install the background-mode plugin: 
 
     $ ionic cordova plugin add cordova-plugin-background-mode
     $ npm install --save @ionic-native/background-mode
 
-Then we need to install the Native Audio plugin: 
+Next, we need to install the Native Audio plugin: 
 
     $ ionic cordova plugin add cordova-plugin-nativeaudio
     $ npm install --save @ionic-native/native-audio
 
-Next open let's import and add these plugins to the list of providers in app main module.
+Next, let's import and add these plugins to the list of providers in app main module.
 
 Go ahead and open **src/app/app.module.ts**:
 
@@ -68,7 +77,7 @@ Go ahead and open **src/app/app.module.ts**:
     })
     export class AppModule { }
 
-Next open **src/pages/home/home.ts** then import and inject plugins:
+Next, open **src/pages/home/home.ts** then import and inject plugins:
 
     import { Component } from '@angular/core';
     import { NavController } from 'ionic-angular';
@@ -82,7 +91,7 @@ Next open **src/pages/home/home.ts** then import and inject plugins:
       }
     }  
 
-Next you need to preload the mp3 to be played before playing it:
+Next, you need to preload the mp3 to be played before playing it:
 
     this.nativeAudio.preloadSimple('audio1', 'audio/1.mp3').then((msg)=>{
       console.log("message: " + msg);
@@ -90,7 +99,7 @@ Next you need to preload the mp3 to be played before playing it:
       console.log("error: " + error);
     });
 
-Then you can add the method to play the audio 
+Next, you can add the method to play the audio: 
 
       public playAudio(){
         this.backgroundMode.enable();
@@ -102,7 +111,7 @@ Then you can add the method to play the audio
       
 As you can see we first enable the background mode before playing the audio and we also subscribe to the activate event of background-mode, once it's activated we play the audio file again.
 
-Finally you can add a button to trigger the playAudio() method:
+Finally, you can add a button to trigger the `playAudio()` method:
 
     <ion-header>
       <ion-navbar>
@@ -121,5 +130,5 @@ Finally you can add a button to trigger the playAudio() method:
     
 ## Conclusion 
 
-In this tutorial we have see a simple use case of the Cordova/Ionic Native Background Mode plugin to keep your Ionic 4/Angular (also Ionic 3) app  executing when it's in the background mode.
+In this tutorial, we have see a simple use case of the Cordova/Ionic Native 5 Background Mode plugin to keep your Ionic 5/Angular app executing when it's in the background mode.
 

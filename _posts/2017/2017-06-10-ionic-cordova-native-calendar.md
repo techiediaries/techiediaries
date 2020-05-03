@@ -1,47 +1,34 @@
 ---
-layout: post
-title: "Ionic 2+ - Open Native Calendar with Cordova and Ionic Native 3.x+"
+layout: bpost
+title: "Ionic 5 Native Calendar with Cordova and Ionic Native 5"
 image: "images/content/ionic-cordova-native-calendar.png"
-excerpt: "Ionic 2+ : Open Native Calendar with Cordova and Ionic Native 3.x+" 
+excerpt: "Open Ionic 5 Native Calendar with Cordova and Ionic Native 5"
+date: 2020-05-03
 tags: ionic 
 ---
 
-{% include image.html 
-    img="images/content/ionic-cordova-native-calendar.png" 
-    title="Ionic 2+ - Open Native Calendar with Cordova and Ionic Native 3.x+" 
-%}
+In this tutorial, we'll see how to use the device Native Calendar in Ionic 5 with Cordova and Ionic Native 5. We will create a simple Ionic 5 application example which demonstrates how to open or create native calendar, how to ask for read and write permissions to calendar and how to schedule or add events to calendar.
 
-Introduction 
------------------
------------------
+## Create a New Ionic 5/Angular Project
 
-In this tutorial ,we'll see how to use the device Native Calendar in Ionic 2+ with Cordova and Ionic Native 3.x+ .
+Let's get started by generating a new Ionic 5 application using the Ionic CLI 5.
 
-We will create a simple Ionic 2+ application example which demonstrates how to open or create native calendar ,how 
-to ask for read and write permissions to calendar and how to schedule or add events to calendar .
-
-Getting  started 
----------------------
----------------------
-
-Lets get started by generating a new Ionic 2+ application using the Ionic CLI v3+ :
-
-Open your terminal or command prompt then run :
+Open your terminal or command prompt and run the following command:
 
     ionic start IonicNativeCalendarExample 
 
-Navigate inside root folder :
+Next, navigate inside the project's folder using the following command:
 
     cd IonicNativeCalendarExample 
 
-Install the Cordova Calendar plugin and its Ionic Native wrapper . 
+## Installing the Cordova and Ionic Native 5 Calendar Plugins
+
+Next, install the Cordova Calendar plugin and its Ionic Native wrapper as follows: 
 
     ionic plugin add --save cordova-plugin-calendar
     npm install --save @ionic-native/calendar
 
-We need to add the Calendar provider to main module providers array :
-
-Open <em>src/app/app.module.ts</em> then add :
+Next, we need to add the Calendar provider to main module providers array. Open the <em>src/app/app.module.ts</em> file and add the following code:
 
 
     import { Calendar } from '@ionic-native/calendar';
@@ -70,9 +57,11 @@ Open <em>src/app/app.module.ts</em> then add :
     export class AppModule {}     
 
 
-Now we are ready to inject and use the native Calendar API .
+## Injecting and Using the Calendar Service in Ionic 5
 
-Open <em>src/pages/home/home.ts</em> then :
+Now we are ready to inject and use the native Calendar API.
+
+Open the <em>src/pages/home/home.ts</em> file and update it as follows:
 
     import { Calendar } from '@ionic-native/calendar';
 
@@ -94,19 +83,16 @@ Open <em>src/pages/home/home.ts</em> then :
 
     }
 
-We have injected Calendar via component constructor then used the instance to open a calendar with current 
-date .
+We have injected the Calendar service via the component constructor and used the instance to open a calendar with the current date.
 
-Open <em>src/pages/home/home.html</em> and add a button to open the native calendar :
+Open the <em>src/pages/home/home.html</em> file and add a button to open the native calendar as follows:
 
 
     <button ion-button (click)="openCalendar()">Open Calendar on Current Date</button>
 
-This is just a simple example to open a calendar .You can call more available methods for asking for 
-read and write permissions then scheduling or adding events to Calendar .
+This is just a simple example to open a calendar. You can call more available methods for asking for read and write permissions then scheduling or adding events to Calendar.
 
-Here is an example that ask for read/write permissions ,if they are granted an event will be added to 
-Calendar interactively ,If not permissions will be first requested and then the event will be added .
+Here is an example that ask for read/write permissions. If they are granted, an event will be added to the calendar interactively. If not, permissions will be first requested and then the event will be added:
 
     addEvent(){
         return this.calendar.createEventInteractively("event title");
@@ -127,12 +113,9 @@ Calendar interactively ,If not permissions will be first requested and then the 
         })     
 
 
-You can find more information about the methods you can call via <a href="https://ionicframework.com/docs/native/calendar/" target="_blank"> Ionic Native docs for this plugin </a> .
+You can find more information about the methods you can call via <a href="https://ionicframework.com/docs/native/calendar/" target="_blank"> Ionic Native docs for this plugin </a>.
 
 
-Conclusion 
---------------
---------------        
-
-You can add a target platform (Android and iOS only ) then run your Calendar app using an emulator or real 
-device .
+## Conclusion 
+    
+You can add a target platform (Android and iOS only) and run your Ionic 5 Calendar app using an emulator or real device.

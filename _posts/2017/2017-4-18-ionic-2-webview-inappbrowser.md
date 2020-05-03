@@ -1,12 +1,13 @@
 ---
-layout: post
-title: "Ionic 4/Angular and InAppBrowser Webview: Create a Cross Platform Mobile App for Your Responsive Website"
+layout: bpost
+title: "Ionic 5/Angular and InAppBrowser Webview: Create a Cross Platform Mobile App for Your Responsive Website"
 image: "images/content/mobile-app-ionic-2-inappbrowser.png"
-excerpt: "Create a cross platform (Android ,iOS and Windows ) mobile app for your responsive website with Ionic 4 and InAppBrowser" 
+excerpt: "Create a cross platform (Android ,iOS and Windows ) mobile app for your responsive website with Ionic 5 and InAppBrowser" 
+date: 2020-05-03
 tags : ionic
 ---
 
-![Create a mobile app for your responsive website with Ionic 4 and InAppBrowser](/images/content/mobile-app-ionic-2-inappbrowser.png)
+![Create a mobile app for your responsive website with Ionic 5 and InAppBrowser](/images/content/mobile-app-ionic-2-inappbrowser.png)
 
 {% include image.html 
     img="" 
@@ -54,12 +55,12 @@ Windows Phone
 
 
 We are not going to build an app from scratch since the tutorial supposes you already have a responsive 
-website so we are going to use Ionic 4 with Angular to create a webview (with Cordova InAppBrowser plugin ) or a web browser which loads your responsive 
+website so we are going to use Ionic 5 with Angular to create a webview (with Cordova InAppBrowser plugin ) or a web browser which loads your responsive 
 website when the user launches the app.
 
 ## Tutorial requirements 
 
-We are going to use the Ionic 4 framework which is the most popular hybrid framework for building cross platform
+We are going to use the Ionic 5 framework which is the most popular hybrid framework for building cross platform
 apps for Android, iOS and Windows so you don't need to reinvent the wheel or use different tools and languages
 to target multiple platforms but we need to have some requirements before we can proceed with building the 
 mobile app.
@@ -105,9 +106,9 @@ You can also follow this tutorial for [installing Java under Ubuntu](/howtoinsta
 
 
 You can also install an emulator and test on it if you don't have a real mobile device at hand when developing.  
-## Generating a New Ionic 4/Angular Project
+## Generating a New Ionic 5/Angular Project
 
-Now if you have both Node.js and Ionic CLI 4 installed,let's proceed by generating a new Ionic 4 project.
+Now if you have both Node.js and Ionic CLI 5 installed,let's proceed by generating a new Ionic 5 project.
 
 Open your terminal under Linux/MAC or your command prompt under Windows and run the following command: 
 
@@ -244,14 +245,14 @@ On Linux and MAC or its equivalent on Windows.
 ## Conclusion
 
 You can now wrap your existing responsive mobile website into a mobile app for major mobile platforms 
-with minimum efforts using Ionic 4, Angular and Cordova InAppBrowser plugin to reach millions of worldwide users 
+with minimum efforts using Ionic 5, Angular and Cordova InAppBrowser plugin to reach millions of worldwide users 
 on app stores.
 
-You have also other options if you need more features,you can build a full fledged Ionic 4 app which 
+You have also other options if you need more features,you can build a full fledged Ionic 5 app which 
 consumes RSS feeds of your website.
 
-You may have noticed a bit of performance downgrade (especially on an old mobile device ). That's because apps built with Ionic 4 or any Cordova based framework 
-are hybrid apps i.e not true 100% native mobile apps. If you want more performance you may want to check NativeScript which allows you to build truly native apps with native performance with the same features as Ionic 4 such as targeting cross platform devices with the same code base.
+You may have noticed a bit of performance downgrade (especially on an old mobile device ). That's because apps built with Ionic 5 or any Cordova based framework 
+are hybrid apps i.e not true 100% native mobile apps. If you want more performance you may want to check NativeScript which allows you to build truly native apps with native performance with the same features as Ionic 5 such as targeting cross platform devices with the same code base.
 
        
 

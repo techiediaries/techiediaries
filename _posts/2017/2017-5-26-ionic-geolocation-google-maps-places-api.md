@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Ionic 4 - Geolocation Plugin, Google Maps and Places API"
+layout: bpost
+title: "Ionic 5 - Geolocation Plugin, Google Maps and Places API"
 image: "images/content/ionic-geolocation-maps-location-api.png"
 excerpt: "Create an Ionic 3 app which uses the Geolocation Cordova plugin ,Google maps and the Google Places API" 
 tags: ionic 
+date: 2020-05-03
 ---
 
 {% include image.html 
@@ -11,13 +12,13 @@ tags: ionic
     title="Ionic 2/3 Geolocation, Google maps and Places API" 
 %}
 
-Throughout this tutorial, you'll learn to use Geolocation and Google Maps in Ionic 4/Angular.
+Throughout this tutorial, you'll learn to use Geolocation and Google Maps in Ionic 5/Angular.
 
-In this tutorial we are going to create a nearby restaurants mobile app using Ionic 4 and Angular. 
+In this tutorial we are going to create a nearby restaurants mobile app using Ionic 5 and Angular. 
 
 We are going to learn how to use: 
 
-- The Cordova Geolocation plugin and its Ionic 4 Native wrapper to get the current user position or GPS location,
+- The Cordova Geolocation plugin and its Ionic 5 Native wrapper to get the current user position or GPS location,
 
 - Google Maps to dispaly a map with a marker showing current user position,
 
@@ -26,12 +27,12 @@ We are going to learn how to use:
 Also, check out 
 
 
-[Ionic 4 - Create a Nearby Restaurants App with Geolocation Plugin ,Google Maps and Places API Part 2](/ionic-geolocation-google-maps-places-api-part-2)
+[Ionic 5 - Create a Nearby Restaurants App with Geolocation Plugin ,Google Maps and Places API Part 2](/ionic-geolocation-google-maps-places-api-part-2)
 
 
-## Generating a New Ionic 4/Angular Project
+## Generating a New Ionic 5/Angular Project
 
-Let's start by generating a new Ionic 4 project based on Angular using the Ionic CLI v4. Open your terminal or command prompt and run: 
+Let's start by generating a new Ionic 5 project based on Angular using the Ionic CLI v4. Open your terminal or command prompt and run: 
 
     ionic start nearby-restaurants blank --type=angular 
 
@@ -261,7 +262,7 @@ The map won't show up but it's there. All you need to do is to add some styles t
 
 ## Conclusion 
 
-That's the end of this tutorial part. We have seen how to get the current user position using the Cordova Geolocation plugin and how to display the user current position on a Google Map in our Ionic 4/Angular mobile application.
+That's the end of this tutorial part. We have seen how to get the current user position using the Cordova Geolocation plugin and how to display the user current position on a Google Map in our Ionic 5/Angular mobile application.
 
 On the next part, we'll continue building our app to display a list of nearby locations (restaurants) using the Google Location API.
 

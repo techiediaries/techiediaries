@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "Create Ionic 4/Angular  CRUD Application with Firestore and AngularFire2"
+layout: bpost
+title: "Create Ionic 5/Angular  CRUD Application with Firestore and AngularFire2"
 image: "images/content/ionic.jpg"
-excerpt: "In this tutorial we'll use the new Google's Firestore database to create a simple Ionic 4 mobile application with CRUD (Create, Read, Update and Delete) methods using Angularfire2. We'll start by introducing the Firestore database and its features vs the old Firebase real-time database then we'll scaffold a new Ionic 4/Angular project, setup our Firebase account and enable the Firestore database then we'll integrate the new database with our Ionic application and create the CRUD methods which can be used to create, read, update and delete simple products document from a collection in the database" 
-tags : [ionic , angular] 
+excerpt: "In this tutorial we'll use the new Google's Firestore database to create a simple Ionic 5 mobile application with CRUD (Create, Read, Update and Delete) methods using Angularfire2. We'll start by introducing the Firestore database and its features vs the old Firebase real-time database then we'll scaffold a new Ionic 5/Angular project, setup our Firebase account and enable the Firestore database then we'll integrate the new database with our Ionic application and create the CRUD methods which can be used to create, read, update and delete simple products document from a collection in the database" 
+date: 2020-05-03
+tags : [ionic] 
 ---
 
 
-**In this tutorial we'll use the new Google's Firestore database to create a simple Ionic 4/Angular mobile application with CRUD (Create, Read, Update and Delete) methods using Angularfire2. We'll start by introducing the Firestore database and its features vs the old Firebase real-time database then we'll scaffold a new Ionic 4/Angular project, setup our Firebase account and enable the Firestore database then we'll integrate the new database with our Ionic application and create the CRUD methods which can be used to create, read, update and delete simple products document from a collection in the database so let's get started!**
+**In this tutorial we'll use the new Google's Firestore database to create a simple Ionic 5/Angular mobile application with CRUD (Create, Read, Update and Delete) methods using Angularfire2. We'll start by introducing the Firestore database and its features vs the old Firebase real-time database then we'll scaffold a new Ionic 5/Angular project, setup our Firebase account and enable the Firestore database then we'll integrate the new database with our Ionic application and create the CRUD methods which can be used to create, read, update and delete simple products document from a collection in the database so let's get started!**
 
 ![](/images/content/ionic2.jpg)
 
@@ -19,7 +20,7 @@ Unlike SQL-based databases, the NoSQL Cloud Firestore allows developers to use d
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QcsAb2RR52c" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-Throughout this tutorial you will learn how to integrate Google's Cloud Firestore into your Ionic 4/Angular application using *AngularFire 5* by building an example CRUD (Create, Read, Update and Delete) mobile application from scratch.
+Throughout this tutorial you will learn how to integrate Google's Cloud Firestore into your Ionic 5/Angular application using *AngularFire 5* by building an example CRUD (Create, Read, Update and Delete) mobile application from scratch.
 
 ## Cloud Firestore Features vs. Firebase Realtime Database
 
@@ -52,7 +53,7 @@ npm install -g @ionic/cli
 
 You may need to add *sudo* before this command.
 
-Now you can create a new Ionic 4/Angular application by running the following command:
+Now you can create a new Ionic 5/Angular application by running the following command:
 
 ```bash
 ionic start ionic-firestore-crud blank --type=angular
@@ -70,12 +71,12 @@ So let's start with the first step.
 
 ## Integrating Cloud Firestore with Ionic 
 
-We are going to use *Angularfire2* to integrate Cloud Firestore with Ionic 4/Angular and since this is a new product you need the latest version of the Firebase JavaScript SDK and *AngularFire2* installed so head back to your terminal or command prompt and run the following command:
+We are going to use *Angularfire2* to integrate Cloud Firestore with Ionic 5/Angular and since this is a new product you need the latest version of the Firebase JavaScript SDK and *AngularFire2* installed so head back to your terminal or command prompt and run the following command:
 
 ```bash
 npm install firebase@latest angularfire2@latest promise-polyfill --save
 ```
-We have already configured our new Firestore database and enabled the anonymous authentication. Now we'll need to add our credentials to the Ionic 4/Angular application. So go ahead and grab the required credentials by clicking on your Firebase console' *Project Overview* menu item, then click on *Add Firebase to your webapp*.
+We have already configured our new Firestore database and enabled the anonymous authentication. Now we'll need to add our credentials to the Ionic 5/Angular application. So go ahead and grab the required credentials by clicking on your Firebase console' *Project Overview* menu item, then click on *Add Firebase to your webapp*.
 
 You should be able to see and you can copy your database credentials to your clipboard.
 
@@ -99,7 +100,7 @@ export const credentials = {
     }  
 };
 ```
-Next you'll need to wire Firebase and Firestore to your Ionic 4/Angular main module. You need to simply import *AngularFireModule*, *AngularFirestoreModule* and *AngularFireAuthModule* modules and add them to the *imports* array. Make sure also to import the *credentials* from `config.js` then pass the object *credentials.firebase* to the *initializeApp()* method of *AngularFireModule*: 
+Next you'll need to wire Firebase and Firestore to your Ionic 5/Angular main module. You need to simply import *AngularFireModule*, *AngularFirestoreModule* and *AngularFireAuthModule* modules and add them to the *imports* array. Make sure also to import the *credentials* from `config.js` then pass the object *credentials.firebase* to the *initializeApp()* method of *AngularFireModule*: 
 
 ```ts
 /* ... */
@@ -221,6 +222,6 @@ That's it we have created the four methods needed by any CRUD application.
 
 ## Conclusion
 
-In this tutorial we have seen how to build a simple CRUD application with Ionic 4/Angular and the new Google's Cloud Firestore database using *AngularFire2*.
+In this tutorial we have seen how to build a simple CRUD application with Ionic 5/Angular and the new Google's Cloud Firestore database using *AngularFire2*.
 
 

@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Ionic 4/Angular - Fingerprint Authentication with Android and iOS"
+layout: bpost
+title: "Ionic 5/Angular - Fingerprint Authentication with Android and iOS"
 image: "images/content/ionic-fingerprint-authentication.png"
 excerpt: "An Ionic demo app for showing how to use Fingerprint Authentication with Android and iOS if it is available" 
+date: 2020-05-03
 tags : [ionic]
 ---
 
@@ -12,28 +13,29 @@ tags : [ionic]
 %}
 
 
-In this tutorial, we are going to cover how to add Fingerprint authentication to Ionic 4/Angular apps for Android and iOS so let's get started .
+In this tutorial, we are going to cover how to add Fingerprint authentication to Ionic 5/Angular apps for Android and iOS so let's get started.
 
-We are going to use Ionic CLI 4 and Ionic 4 but the steps can be also applied to Ionic 3 projects.
+We are going to use Ionic CLI 5 and Ionic 5 but the steps can be also applied to Ionic 4 projects.
 
-## Generating a new Ionic project 
+## Generating a new Ionic 5 Project 
 
-Open up your terminal on Linux/MAC systems or command prompt on Windows and type the following to generate 
-a new Ionic 4/Angular project :
+Open up your terminal on Linux/MAC systems or command prompt on Windows and type the following to generate a new Ionic 5/Angular project:
 
     ionic start fingerprint-demo blank --type=angular 
 
-Next navigate inside project directory and add both the Cordova plugin for fingerprint authentication and 
-its Ionic native wrapper:
+## Installing the Cordova and Ionic Native Fingerprint Plugins
+
+Next navigate inside project directory and add both the Cordova plugin for fingerprint authentication and its Ionic Native 5 wrapper:
 
     cd fingerprint-demo 
     ionic cordova plugin add cordova-plugin-fingerprint-aio --save 
     npm install --save @ionic-native/fingerprint-aio
 
-Next lets add it the the list of providers. Go ahead open your project with a text editor. We are using 
-Visual Studio Code: 
+Next let's add it the the list of providers. Go ahead open your project with a text editor. We are using Visual Studio Code: 
 
     code .
+
+## Adding the Fingerprint Functionality
 
 Now open <em>src/app/app.module.ts</em> and import the native wrapper for fingerprint auth and add it: 
 
@@ -105,8 +107,7 @@ Open <em>src/pages/home/home.ts</em> and add:
     }
 
 
-So we first check if Fingerprint auth is available on our device if OK we call the show method with some
-required and optional options such as clientId,clientSecret and disableBackup.
+So we first check if Fingerprint auth is available on our device if OK we call the show method with some required and optional options such as clientId,clientSecret and disableBackup.
 
 Now let's add a button to trigger the Fingerprint auth dialog so open the <em>src/pages/home/home.html</em> file and add: 
 
@@ -130,3 +131,6 @@ Now let's add a button to trigger the Fingerprint auth dialog so open the <em>sr
 
 Make sure to attach a real mobile device with an USB cable before your run your app.
 
+## Conclusion
+
+We have seen how to use the Fingerprint plugin for authentication in your Ionic 5 app.

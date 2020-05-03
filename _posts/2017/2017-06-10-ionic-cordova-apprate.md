@@ -1,48 +1,41 @@
 ---
-layout: post
-title: "Ionic 2 / Ionic 3 - Adding App Rates (Review Stars) with Cordova and Ionic Native 3.x+"
+layout: bpost
+title: "Ionic 5/Angular - Adding App Rates (Review Stars) with Cordova and Ionic Native 5"
 image: "images/content/ionic-cordova-apprate.png"
-excerpt: "Ionic 2 / Ionic 3 - Adding App Rates (Review Stars) with Cordova and Ionic Native 3.x+" 
+excerpt: "Ionic 5/Angular - Adding App Rates (Review Stars) with Cordova and Ionic Native 5" 
 tags: ionic 
+date: 2020-05-03
 ---
 
-{% include image.html 
-    img="images/content/ionic-cordova-apprate.png" 
-    title="Ionic 2/3 App Rate" 
-%}
 
-Introduction 
-----------------
-----------------
-
-In this tutorial we will be covering how to add app rating to our mobile apps created with Ionic 2 / Ionic 3 
-framework .
-
-We are going to create a simple example app which prompts the user to rate the application .
-
-App rating allows users to rate your application .Rating is represented by stars which you can find when 
-your visit the app details page on app stores .
-
-As a rule on major app stores ,the more good stars and reviews you have the more your app will ranked high 
-in app stores search which will increases the downloads and earnings (Via sales ,ads etc .)
+In this tutorial we will be covering how to add app rating to our mobile apps created with Ionic 5/Angular and Cordova. 
 
 
-Getting started 
----------------------
----------------------
+We are going to create a simple example app which prompts the user to rate the application.
 
-So lets start by creating a new Ionic app ,to demonstrate how to add App Rating ,using The Ionic CLI (v3)
+## Why Using App Rating with Ionic 5
+
+App rating allows users to rate your application. Rating is represented by stars which you can find when your visit the app details page on app stores.
+
+As a rule on major app stores, the more good stars and reviews you have the more your app will be ranked high in the app stores search which will increase the downloads and earnings (Via sales, ads etc.)
+
+
+## Create a New Ionic 5/Angular Project
+
+So let's start by creating a new Ionic 5 app, to demonstrate how to add App Rating, using The Ionic CLI (v5):
 
     ionic start AppRateExample blank 
 
-Navigate inside your app root folder then install Cordova plugin for App Rating and its Ionic Native wrapper
+## Installing the App Rating Cordova and Ionic Native 5 Plugins
+
+Next, navigate inside your app folder and install Cordova plugin for App Rating and its Ionic Native 5 wrapper as follows:
 
     cd AppRateExample
     ionic plugin add --save cordova-plugin-apprate
     npm install --save @ionic-native/app-rate
 
 
-Open <em>src/app/app.module.ts</em> then add a provider for this plugin .
+Next, open the <em>src/app/app.module.ts</em> file and add a provider for this plugin:
 
     import { AppRate } from '@ionic-native/app-rate';
 
@@ -70,11 +63,11 @@ Open <em>src/app/app.module.ts</em> then add a provider for this plugin .
     export class AppModule {}
 
 
-Open <em>src/pages/home/home.html</em> then add a button which triggers app rating .
+Next, open the <em>src/pages/home/home.html</em> file and add a button which triggers app the rating functionlity:
 
     <button ion-button full large (click)="rateMe()">Rate Me</button>
 
-Open <em>src/pages/home/home.ts</em> then add rateMe() method :
+Next, open the <em>src/pages/home/home.ts</em> file and add the `rateMe()` method as follows:
 
     import { Component } from '@angular/core';
     import { AppRate } from '@ionic-native/app-rate';
@@ -100,16 +93,10 @@ Open <em>src/pages/home/home.ts</em> then add rateMe() method :
 
     }
  
-Replace < my_app_id > with your iOS app id .
-
-Replace < package_name > with Android package name .
-
-Replace < Store_ID > with your Windows store App ID .
+Make sure to replace `<my_app_id>` with your iOS app id and replace `<package_name>` with Android package name. Also replace `<Store_ID>` with your Windows store App ID.
 
 
-Conclusion
--------------
--------------
+## Conclusion
 
-You can now add a Cordova target platform (Andoroid ,iOS and Windows ) ,build and run your app using 
-an emulator or real device to test app rating In your Ionic 2/3 application . 
+You can now add a Cordova target platform (Andoroid or iOS), build and run your app using 
+an emulator or real device to test app rating in your Ionic 5/Angular application . 

@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Ionic 4/Angular - Lazy Loading Modules"
+layout: bpost
+title: "Ionic 5/Angular - Lazy Loading Modules"
 image: "images/content/ionic-lazy-loading.png"
-excerpt: "Ionic 3 - Lazy loading modules" 
+excerpt: "Ionic 5 - Lazy loading Angular modules"
+date: 2020-05-03
 tags : [ionic]
 ---
 
@@ -13,7 +14,9 @@ tags : [ionic]
 
 Lazy loading refers to the process of loading chunks of code (such as a component, directive or pipe) when it's requested not when the app is loading. The most obvious benefit of lazing loading is the increased performance especially when the app is starting.
 
-To demonstrate how we can lazy load a component or page,let's create a new Ionic 4 project based on Angular and the blank template:
+## Create an Ionic 5/Angular Project with Lazy Loading
+
+To demonstrate how we can lazy load a component or page, let's create a new Ionic 5 project based on Angular and the blank template:
 
     ionic start lazy-loading-demo blank 
 
@@ -45,8 +48,9 @@ Open the <em>src/app/app.module.ts</em> file:
     })
     export class AppModule {}
          
-You can see, there are two components in the declarations and entryComponents arrays. This means that 
-we are importing two components into our module.
+You can see, there are two components in the declarations and entryComponents arrays. This means that we are importing two components into our module.
+
+## Lazy Loading the Ionic 5/Angular Component
 
 Now let's lazy load the HomePage component so it can be loaded only when it's requested.
 
@@ -98,8 +102,7 @@ Remove the import statement of HomePage, then remove the reference to HomePage a
 ## Conclusion
 
 
-So we have seen the process of lazy loading a page in your Ionic 4/Angular app which is simply creating an NgModule for it and decorate 
-it with an IonicPage decorator, then reference it by a string of its name.
+So we have seen the process of lazy loading a component in your Ionic 5/Angular app which is simply creating an NgModule for it and decorate it with an IonicPage decorator, then reference it by a string of its name.
 
 
 

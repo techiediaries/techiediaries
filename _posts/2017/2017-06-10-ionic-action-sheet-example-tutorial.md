@@ -1,40 +1,29 @@
 ---
-layout: post
-title: "Ionic 2 - Action Sheet Example with Cordova and Ionic Native 3.x+ "
+layout: bpost
+title: "Ionic 5/Angular Action Sheet Example with Cordova and Ionic Native 5"
 image: "images/content/ionic-action-sheet.png"
-excerpt: " How to use Action Sheet in Ionic 2 / Ionic 3 apps " 
+excerpt: " How to use Action Sheet in Ionic 5 apps"
+date: 2020-05-03 
 tags: ionic 
 ---
 
-{% include image.html 
-    img="images/content/ionic-action-sheet.png" 
-    title="Ionic 2/3 Action Sheet with cordova plugin" 
-%}
+In this tutorial, we are going to cover how to create and display an Action Sheet with a detailed example using Ionic 5 (Ionic 4) framework.
 
-Introduction 
-----------------
-----------------
+Action Sheets are used to dispaly a set of buttons and actions for the user to choose from.
 
-In this tutorial we are going to cover how to create and display an Action Sheet with a detailed example using 
-Ionic 2 (Or Ionic 3) framework .
+## Create a New Ionic 5/Angular Project
 
-Action Sheets are used to dispaly a set of buttons and actions for the user to choose from .
-
-Steps 
---------------
---------------
-
-First create a new Ionic 2 project using the Ionic CLI (I'm using CLI v3).You can also use an existing app.
+First create a new Ionic 5 project using the Ionic CLI (I'm using CLI 5). You can also use an existing app:
 
     ionic start ActionSheetExample blank 
 
-Next install the ActionSheet Cordova plugin and Ionic Native wrapper .
+Next install the ActionSheet Cordova plugin and Ionic Native wrapper:
 
     ionic cordova plugin add --save cordova-plugin-actionsheet
     npm install --save @ionic-native/action-sheet
 
 
-Next open <em>src/app/app.module.ts</em> and add <em>ActionSheet</em> to the list of providers .
+Next, open the <em>src/app/app.module.ts</em> file and add <em>ActionSheet</em> to the list of providers as follows:
 
     import { ActionSheet } from '@ionic-native/action-sheet';
 
@@ -62,13 +51,11 @@ Next open <em>src/app/app.module.ts</em> and add <em>ActionSheet</em> to the lis
     export class AppModule {}
 
 
-Open <em>src/pages/home/home.html</em> then add a button .
+Next, open the <em>src/pages/home/home.html</em> file and add a button as follows:
 
     <button ion-button (click)="openActionSheet()" class="button">Open Action Sheet</button>
 
-Then in <em>src/pages/home/home.ts</em> :
-
-Import and inject ActionSheet 
+Next, in the <em>src/pages/home/home.ts</em> file, import and inject ActionSheet as follows:
 
     import { ActionSheet, ActionSheetOptions } from '@ionic-native/action-sheet';
 
@@ -80,7 +67,7 @@ Import and inject ActionSheet
     openActionSheet(){}
     /* ...*/ 
 
-Next implement openActionSheet() method 
+Next, implement the `openActionSheet()` method as follows:
 
     openActionSheet(){
         let buttonLabels = ['Button 0', 'Button 1'];
@@ -99,21 +86,16 @@ Next implement openActionSheet() method
         });
     }
 
-You can then implement the logic of each button on the promise returned by  this.actionSheet.show(options)
-based on the clicked button index .
+You can then implement the logic of each button on the Promise returned by  the `this.actionSheet.show(options)` method based on the clicked button index.
 
-Now add a target platform (Android ,iOS or Windows Phone) and run your app using an emulator or real device .
+Now, add a target platform (Android or iOS) and run your app using an emulator or real device:
 
     ionic cordova platform add android 
     ionic run android 
 
-Conclusion 
-------------------
-------------------
+## Conclusion 
 
-We have seen how to use a Cordova plugin to create and show the native ActionSheet UI component .We can also 
-use Ionic's own implementation of the Action Sheet ,check this tutorial:
+We have seen how to use a Cordova plugin to create and show the native ActionSheet UI component in our Ionic 5/Angular app. We can also 
+use Ionic's own implementation of the Action Sheet, check this tutorial:
 
-<a href="/ionic-action-sheet-controller">Ionic 2/Ionic 3 ActionSheet Component Controller</a>     
-
-
+<a href="/ionic-action-sheet-controller">Ionic 5/ ActionSheet Component Controller</a> 

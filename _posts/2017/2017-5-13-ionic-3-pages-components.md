@@ -1,23 +1,24 @@
 ---
-layout: post
-title: "Learn Ionic 4/Angular - what is a component and page? and how to use them?"
+layout: bpost
+title: "Learn Ionic 5/Angular - what is a component and page? and how to use them?"
 image: "images/content/learn-ionic-components.png"
-excerpt: "Learn Ionic 3 - what is a component and page ? and how to use them  ?" 
+excerpt: "Learn Ionic 5 - what is a component and page? and how to use them?"
+date: 2020-05-03 
 tags : [ionic]
 ---
 
 {% include image.html 
     img="images/content/learn-ionic-components.png" 
-    title="Learn Ionic 3 - what is a component ? and how to use it ?" 
+    title="Learn Ionic 5 - what is a component ? and how to use it ?" 
 %}
 
 Components are the basic constructs of Angular.
 
 A component is an independent construct which encapsulates the controller code, the view and styles,and has inputs and outputs.
 
-An Ionic 4/Angular app is a bunch of components(an app component + page components) and providers organized together using Angular modules.   
+An Ionic 5/Angular app is a bunch of components(an app component + page components) and providers organized together using Angular modules.   
 
-An Ionic 4/Angular app contains a root or app component and optionally 1 or more page components.
+An Ionic 5/Angular app contains a root or app component and optionally 1 or more page components.
 
 Here is an example of a main Ionic app component which lives in the <em>src/app/app.component.ts</em> file:
 
@@ -34,7 +35,7 @@ Here is an example of a main Ionic app component which lives in the <em>src/app/
     }
     }
 
-## How to create a page component in Ionic 4/Angular
+## How to Create a Page Component in Ionic 5/Angular
 
 
 You can create a page Ionic in two ways, without the CLI or using it the CLI page generator.
@@ -111,7 +112,7 @@ As you can see, we use different Ionic specific custom tags or UI components to 
 The names of tags are self explanatory.
 
 
-That is! You have created an Ionic 4 page using Angular components and decorators.
+That is! You have created an Ionic 5 page using Angular components and decorators.
 
 You can also use the Ionic CLI Page generator to create pages on the fly without repeating this boilerplate 
 every time.
@@ -122,7 +123,7 @@ Use your terminal to type:
 
 A new page will be created.
 
-## How to use pages in Ionic 4/Angular
+## How to use pages in Ionic 5/Angular
 
 You use pages to build apps in two ways:
 
@@ -235,4 +236,4 @@ Now you can use the HomePage using the string 'HomePage' without the need to imp
 
 ## Conclusion
 
-So that's it! We have seen how to create pages and how to use them inside an Ionic 4/Angular application.
+So that's it! We have seen how to create pages and how to use them inside an Ionic 5/Angular application.

@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Ionic 4/Angular: Consuming a WordPress Rest API"
+layout: bpost
+title: "Ionic 5/Angular: Consuming a WordPress Rest API"
 image: "images/content/wordpress-ionic2.png"
 tags: [wordpress,ionic]
-excerpt: "In this tutorial ,we are going to see how to build an Ionic 4 app for consuming WordPress rest API " 
+excerpt: "In this tutorial ,we are going to see how to build an Ionic 5 app for consuming WordPress rest API " 
+date: 2020-05-03
 ---
 
 {% include image.html 
@@ -11,10 +12,10 @@ excerpt: "In this tutorial ,we are going to see how to build an Ionic 4 app for 
     title="Consuming WordPress Rest API with Ionic 2" 
 %}
 
-![Ionic 4 WordPress](/images/content/wordpress-ionic2.png)
+![Ionic 5 WordPress](/images/content/wordpress-ionic2.png)
 
 In this tutorial, we are going to see how to build a cross platform mobile app and WordPress client
-for Android, iOS and Windows Universal Platform using Ionic 4/Angular.
+for Android, iOS and Windows Universal Platform using Ionic 5/Angular.
 
 If you have a WordPress website or blog and want to create a mobile version of it, just follow with us.
 We are going to cover all the required steps to build a mobile client which connects to and consumes the WordPress API. 
@@ -26,9 +27,9 @@ WordPress website installed either locally or remotely.
 
 Prior to WordPress 4.7, you need to install the WordPress API plugin - WP-API. For WordPress 4.7+ WP-API is integrated in the core so you don't have to do anything.
 
-## Generating a New Ionic 4 Project 
+## Generating a New Ionic 5 Project 
 
-Let's get started by generating a new Ionic 4 project based on Angular. Open your command prompt on Windows or your terminal on Linux/MAC and enter the following command:
+Let's get started by generating a new Ionic 5 project based on Angular. Open your command prompt on Windows or your terminal on Linux/MAC and enter the following command:
 
     ionic start wp-ionic blank --type=angular 
 
@@ -37,7 +38,7 @@ Wait until the command finishes and then navigate into your project's folder and
     cd wp-ionic 
     ionic serve 
 
-## Integrating WordPress with Ionic 4
+## Integrating WordPress with Ionic 5
 
 We are going to use a WordPress API client for JavaScript which is designed specifically to work with 
 WordPress 4.7+. If you are using WordPress 4.6 or a prior version with the old WP Rest API plugin some 
@@ -47,15 +48,15 @@ First of all, get the client from this <a href="https://wp-api.github.io/node-wp
 
 Next, unzip the content of the `wpapi.zip` file into the <em>app/assets</em> folder.
 
-Next, open the <em>index.html</em> file of your Ionic 4 project and include the library before Ionic scripts.
+Next, open the <em>index.html</em> file of your Ionic 5 project and include the library before Ionic scripts.
 
     <script src="assets/wpapi.js"></script>
 
-That is all we need to do, to be able to use the WordPress Rest API client in our Ionic 4/Angular project.
+That is all we need to do, to be able to use the WordPress Rest API client in our Ionic 5/Angular project.
 
 ## Generating a Service Provider 
 
-Now let's generate an Ionic 4/Angular service provider to encapsulate the WordPress Rest API client logic. Make sure you are under your project directory then run the following command:
+Now let's generate an Ionic 5/Angular service provider to encapsulate the WordPress Rest API client logic. Make sure you are under your project directory then run the following command:
 
     ionic generate service WPService 
 
@@ -243,7 +244,7 @@ You should see a console log printing the WPAPI object,if everything goes right.
 
 ## Displaying WordPress Posts
 
-After we have successfully integrated the WordPress Rest API client within our Ionic 4/Angular app, let's now 
+After we have successfully integrated the WordPress Rest API client within our Ionic 5/Angular app, let's now 
 fetch and display WordPress posts in our mobile app.
 
 So go ahead and open the <em>app/providers/wp-service.ts</em> file and let's add a method to fetch posts using the REST client API:
@@ -319,5 +320,5 @@ After fetching the posts, we need to display them, so open the <em>src/pages/pos
  ## Conclusion
 
  That is the end of this tutorial. It's just a basic demo showing how to use the WordPress Rest API 
- in Ionic 4 apps based on Angular but you can develop your app to include more advanced things such as fetching and displaying categories, posts pagination and many other features.
+ in Ionic 5 apps based on Angular but you can develop your app to include more advanced things such as fetching and displaying categories, posts pagination and many other features.
 

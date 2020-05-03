@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Ionic 4 Example App: Build an RSS/Atom Reader with Ionic 4/Angular and InAppBrowser"
+layout: bpost
+title: "Ionic 5 Example App: Build an RSS/Atom Reader with Ionic 5/Angular and InAppBrowser"
 image: "images/content/rss-atom-reader-ionic-3.png"
-excerpt: "Build an RSS/Atom Reader Application with Ionic 4 and InAppBrowser" 
+excerpt: "Build an RSS/Atom Reader Application with Ionic 5 and InAppBrowser" 
 tags : [ionic]
+date: 2020-05-03
 ---
 
 {% include image.html 
@@ -11,19 +12,19 @@ tags : [ionic]
     title="Build an RSS/Atom Reader Application with Ionic 3" 
 %}
 
-![Ionic 4/Angular RSS Reader](/images/content/rss-atom-reader-ionic-3.png)
+![Ionic 5/Angular RSS Reader](/images/content/rss-atom-reader-ionic-3.png)
 
-In this tutorial we'll be covering how to parse RSS and Atom feeds in Ionic 4/Angular applications and we'll demonstrate this by building an Ionic app to parse RSS feeds of a blog.
+In this tutorial we'll be covering how to parse RSS and Atom feeds in Ionic 5/Angular applications and we'll demonstrate this by building an Ionic app to parse RSS feeds of a blog.
 
 We will be using the Cordova plugin InAppBrowser via its Ionic Native wrapper to open URLs in the system browser. 
 
 I have gone through many tutorials on the web showing how to read RSS/Atom feeds but all of them either use the 
 deprecated Google Feeds API or the Yahoo Query API .In this tutorial we'll be taking another approach which is using 
-a JavaScript browser library to parse RSS feeds and display them using the Ionic 4 List component .
+a JavaScript browser library to parse RSS feeds and display them using the Ionic 5 List component .
 
 So let's get started.
 
-Let's start by creating a new fresh Ionic 4 project based on Angular. Open a new terminal and run the following commands:
+Let's start by creating a new fresh Ionic 5 project based on Angular. Open a new terminal and run the following commands:
 
 ```bash
 $ cd ~
@@ -50,7 +51,7 @@ Open the `src/app/home/home.page.html` file and add the following code:
     <ion-header>
 
     <ion-navbar>
-        <ion-title>Ionic 4 RSS/ATOM Reader</ion-title>
+        <ion-title>Ionic 5 RSS/ATOM Reader</ion-title>
     </ion-navbar>
 
     </ion-header>
@@ -281,7 +282,7 @@ Here is the complete code of <em>home.page.ts</em> component:
 ## Conclusion
 
 
-In this tutorial, we used Ionic 4 and Angular to build a simple example RSS reader application. We have demonstrated how to open RSS feeds in Ionic mobile apps and how to use the Cordova InAppBrowser native plugin to open external URLs in the system browser of mobile devices.
+In this tutorial, we used Ionic 5 and Angular to build a simple example RSS reader application. We have demonstrated how to open RSS feeds in Ionic mobile apps and how to use the Cordova InAppBrowser native plugin to open external URLs in the system browser of mobile devices.
 
 We have also seen how to convert a JavaScript callback to a JavaScript promise for better integration of any API with Ionic and Angular.
 

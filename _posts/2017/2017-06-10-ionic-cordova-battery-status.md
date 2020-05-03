@@ -1,45 +1,37 @@
 ---
-layout: post
-title: "Ionic 2+ - Check Device Battery Status with Cordova and Ionic Native 3.x+"
+layout: bpost
+title: "Ionic 5/Angular - Check Device Battery Status with Cordova and Ionic Native 5"
 image: "images/content/ionic-cordova-battery-status.png"
-excerpt: "Ionic 2+ - Check Device Battery Status with Cordova and Ionic Native 3.x+" 
-tags: ionic 
+excerpt: "Ionic 5 - Check Device Battery Status with Cordova and Ionic Native 5" 
+tags: ionic
+date: 2020-05-03
 ---
 
-{% include image.html 
-    img="images/content/ionic-cordova-battery-status.png" 
-    title="Ionic 2+ - Check Device Battery Status with Cordova and Ionic Native 3.x+" 
-%}
 
-Introduction 
------------------
------------------
+In this tutorial, we'll be covering how to check device battery status in Ionic 5/Angular apps using Cordova and Ionic Native 5.
 
-In this tutorial we'll be covering how to check device battery status in Ionic 2+ apps using Cordova and 
-Ionic Native 3.x+ .
+We'll see how to check the level of power and if the device is pluged to a power source.
 
-We'll see how to check the level of power and if the device is pluged to a power source .
+## Creating a New Ionic 5 Project
 
-Getting started 
------------------
------------------
+As always let's start by creating a new Ionic 5 application, based on Angular and the blank template, using the Ionic CLI 5.
 
-As always lets start by creating a new Ionic application ,based on the blank,using the Ionic CLI v3+ 
-
-Open your terminal or command propmt then run :
+Open your terminal or command prompt and run the following command:
 
     ionic start IonicBatteryStatus blank 
 
-Navigate inside your app root folder :
+Next, navigate inside your app folder using the following command:
 
     cd IonicBatteryStatus 
 
-Install both The Cordova plugin cordova-plugin-battery-status and its Ionic Native 3.x+ wrapper 
+## Installing the Battery Status Cordova and Ionic Native 5 Plugins
+
+Next, install both The Cordova plugin called `cordova-plugin-battery-status` and its Ionic Native 5 wrapper as follows:
 
     ionic plugin add --save cordova-plugin-battery-status
     npm install --save @ionic-native/battery-status
 
-Open <em>src/app/app.module.ts</em> and add BatteryStatus to module providers .
+Next, Open the <em>src/app/app.module.ts</em> file and add `BatteryStatus` to module providers as follows:
 
     import { BatteryStatus } from '@ionic-native/battery-status';                
 
@@ -66,16 +58,16 @@ Open <em>src/app/app.module.ts</em> and add BatteryStatus to module providers .
     })
     export class AppModule {}  
 
-Now we are ready to inject BatteryStatus and use it to check the battery status such as the level of power and if 
-the device is plugged to an power source .
+Now we are ready to inject `BatteryStatus` and use it to check the battery status such as the level of power and if the device is plugged to an power source.
 
-So go ahead and open <em>src/pages/home/home.ts</em>
+Go ahead and open the <em>src/pages/home/home.ts</em> file and add the following code:
 
-Import BatteryStatus and BatteryStatusResponse
+
+    Import BatteryStatus and BatteryStatusResponse
 
     import { BatteryStatus ,BatteryStatusResponse } from '@ionic-native/battery-status';
     
-Inject BatteryStatus then subscribe to changes to Battery Status
+Next, inject `BatteryStatus` and subscribe to the changes of the battery Status as follows:
 
     @Component({
     selector: 'home',
@@ -106,22 +98,14 @@ Inject BatteryStatus then subscribe to changes to Battery Status
     } 
 
 
-So using ionViewDidLoad life cycle event we suscribed to this.batteryStatus.onChange() event, when the page loads, so we can 
-get continuos battery status while it is changing .  
+Using the `ionViewDidLoad` life cycle event we suscribed to the `this.batteryStatus.onChange()` event, when the page loads, so we can 
+get continuos battery status while it's changing. When the page leaves (`ionViewWillLeave`) we unsubscribe.
 
-And when the page leaves (ionViewWillLeave) we unsubscribe .
+We printed to the console the `status.level` which holds the level of power remaining on the device battery, and `status.isPlugged` which can be either `true` or `false` depending if the device is plugged to a source of power or not.
 
-We just print to the console the status.level which holds the level of power remaining on the device battery .
-And status.isPlugged which can be either true or false depending on if the device is plugged to a source of 
-power .
+## Conclusion 
 
-Conclusion 
------------------
------------------
-
-Battery status is such important information about a mobile device .Being able to retrieve the level of 
-power , and if the device is plugged to a power source or not ,is an important thing that may be of good 
-help when developing battery consuming apps .
+Battery status is such important information about a mobile device. Being able to retrieve the level of power in our Ionic 5 apps, and if the device is plugged to a power source or not, is an important thing that may be of good help when developing battery consuming apps.
 
 
 

@@ -1,38 +1,39 @@
 ---
-layout: post
-title: "Ionic 2+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 4]"
+layout: bpost
+title: "Ionic 5+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 4]"
 image: "images/content/inventory-manager-ionic-sqlite.png"
-excerpt: "Using Ionic 2+ with Cordova SQLite and Barcode scanner to build a simple real world product inventory manager mobile application for Android and iOS :part 4" 
+excerpt: "Using Ionic 5+ with Cordova SQLite and Barcode scanner to build a simple real world product inventory manager mobile application for Android and iOS :part 4" 
+date: 2020-05-03
 tags: ionic
 ---
 
 {% include image.html 
     img="images/content/inventory-manager-ionic-sqlite.png" 
-    title="ionic 2+ SQLite and barcode scanner " 
+    title="Ionic 5+ SQLite and barcode scanner " 
 %}
 
-This is PART 4 of these series of tutorials to learn Ionic 2+ building a real world application which can be 
+This is PART 4 of these series of tutorials to learn Ionic 5+ building a real world application which can be 
 used by a small business to manage the inventory of products .
 
 These series of tutorials demonstrate the use of two Cordova and Ionic Native 3.x+ plugins for accessing native 
 features of mobile devices : The SQLite plugin and the Barcode scanner plugin .
 
 <a href="/ionic-cordova-sqlite-barcode-scanner-product-inventory-manager" target="_blank">
-Ionic 2+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 1]
+Ionic 5+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 1]
 </a>
 
 <a href="/mocking-native-sqlite-plugin"  target="_blank">How to Mock the SQLite Plugin to Develop Your App Entirely On the Browser</a>
 
 <a href="/ionic-cordova-sqlite-barcode-scanner-product-inventory-manager-part-2" target="_blank">
-Ionic 2+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 2]
+Ionic 5+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 2]
 </a>
 
 <a href="/ionic-cordova-sqlite-barcode-scanner-product-inventory-manager-part-3" target="_blank">
-Ionic 2+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 3]
+Ionic 5+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 3]
 </a>
 
 <a href="/ionic-cordova-sqlite-barcode-scanner-product-inventory-manager-part-4" target="_blank">
-Ionic 2+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 4]
+Ionic 5+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 4]
 </a>
 
 On the previous part we covered how to add pagination to our data service provider .
@@ -43,7 +44,7 @@ navigate to different pages of the app .
 But first lets do some bit of customization .
 
 On the first part we have generated different pages (products ,families ,locations and transactions )
-using the Ionic CLI .If you are still using Ionic 2 version then you don't have anything but if you are 
+using the Ionic CLI .If you are still using Ionic 5 version then you don't have anything but if you are 
 using Ionic 3 you need to modify the generated pages so they don't use lazy loading because it will cause 
 some problems with custom components we are going to create later in this tutorial .
 
@@ -637,7 +638,7 @@ On the next tutorial part we are going to see how to implement details pages for
 add ,view and modify items 
 
 <a href="/ionic-cordova-sqlite-barcode-scanner-product-inventory-manager-part-5" target="_blank">
-Ionic 2+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 5]
+Ionic 5+ : Using Cordova SQLite and Barcode Scanner to build a Product Inventory Manager [PART 5]
 </a>
 
 

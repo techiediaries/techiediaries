@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Ionic 4/Angular - Adding Cordova Android Platform "
+layout: bpost
+title: "Ionic 5/Angular - Adding Cordova Android Platform "
 image: "images/content/ionic-cordova-add-android-platform.png"
 excerpt: " We'll cover how to add a Cordova Android platform to an Ionic 2 / Ionic 3 project and needed requirements" 
 tags: ionic 
+date: 2020-05-03
 ---
 
 {% include image.html 
@@ -11,9 +12,9 @@ tags: ionic
     title="Ionic 2/3 add android platform" 
 %}
 
-In previous tutorial we created our first Ionic 4/Angular project. Ionic apps are cross platform which mean they can be used to target Android, iOS and Windows phone (UWP) devices but before you can actually target a specific device platform you need to add the platform to your Ionic project so lets cover how to do that for Android.
+In previous tutorial we created our first Ionic 5/Angular project. Ionic apps are cross platform which mean they can be used to target Android, iOS and Windows phone (UWP) devices but before you can actually target a specific device platform you need to add the platform to your Ionic project so lets cover how to do that for Android.
 
-First, before you can add an Android platform to your Ionic 4 project you need to have some requirements 
+First, before you can add an Android platform to your Ionic 5 project you need to have some requirements 
 installed on your development machine:   
 
 First install Java on your system if its not installed 
@@ -59,7 +60,7 @@ is a nice feature if you are developing and testing your app in a real device.
 
 ## Conclusion 
 
-We have covered how to add an Android platform to Ionic 4/Angular projects and all the requirements we need to 
+We have covered how to add an Android platform to Ionic 5/Angular projects and all the requirements we need to 
 have installed before we can do that.
             
 

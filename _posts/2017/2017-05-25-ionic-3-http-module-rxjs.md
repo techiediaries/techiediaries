@@ -1,16 +1,17 @@
 ---
-layout: post
-title: "Ionic 4/Angular - Retrieving Data from Remote REST API Servers with HTTP Module and RxJS"
+layout: bpost
+title: "Ionic 5/Angular - Retrieving Data from Remote REST API Servers with HTTP Module and RxJS"
 image: "images/content/ionic-3-http-module-rxjs.png"
-excerpt: "We'll cover how to create an Ionic 3 (2+) mobile app which makes use of HTTP module and RxJS library " 
+excerpt: "We'll cover how to create an Ionic 3 (2+) mobile app which makes use of HTTP module and RxJS library"
+date: 2020-05-03 
 tags : [ionic]
 ---
 
 
-**For an in-depth version of this tutorial check [Ionic 4/Angular and RxJS Observables: Building an HTTP Service to Communicate with A REST API](/ionic-http)**
+**For an in-depth version of this tutorial check [Ionic 5/Angular and RxJS Observables: Building an HTTP Service to Communicate with A REST API](/ionic-http)**
 
 
-In this Ionic 4 tutorial we will cover how to use the HTTP module to retrieve data or consume an API from some remote server.
+In this Ionic 5 tutorial we will cover how to use the HTTP module to retrieve data or consume an API from some remote server.
 
 As you know, when building apps, you can either store data locally with some SQLite database or local storage, use a remote server to store your data or use no data storage at all (in rare cases).
 
@@ -80,7 +81,7 @@ Ionic 3-Create and build first project or application (Android and iOS)
     
 </details>
 
-In this tutorial we'll cover the second case by building a simple Ionic 4 app based on Angular which connects to a remote server and retrieve data then display it using an Ionic List component.
+In this tutorial we'll cover the second case by building a simple Ionic 5 app based on Angular which connects to a remote server and retrieve data then display it using an Ionic List component.
 
 We will also see how to use the Reactive library RxJS to work with Observables.
 
@@ -109,19 +110,19 @@ If this was helpful for you, you need more details, the code is not properly wor
 
 </div>
 
-## Create a New Ionic 4/Angular Project 
+## Create a New Ionic 5/Angular Project 
 
 
-First of all, let's generate a new project based on Ionic 4, Angular and Ionic CLI v4. 
+First of all, let's generate a new project based on Ionic 5, Angular and Ionic CLI v4. 
 
-    ionic start ionic-3-rest-api --type=angular
+    ionic start ionic-rest-api --type=angular
 
 Wait for the CLI to do its job then 
 
     cd ionic-rest-api 
     ionic serve 
 
-## Generating an Ionic 4 Service/Provider 
+## Generating an Ionic 5 Service/Provider 
 
 Now let's generate a provider which will contain all code responsible for connecting to remote API and 
 retrieve data.
@@ -245,7 +246,7 @@ You can also use other HTTP methods such as post, put or delete methods.
 
 ## Conclusion 
 
-We have seen how we can use the HTTP module and RxJS library to retrieve data from a remote Rest API server.
+We have seen how we can use the HTTP module and RxJS library to retrieve data from a remote Rest API server in our Ionic 5/Angular project.
 
 
 

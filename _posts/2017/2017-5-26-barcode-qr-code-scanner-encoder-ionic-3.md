@@ -1,29 +1,30 @@
 ---
-layout: post
-title: "Ionic 3 - Build a Barcode/QR Code Scanner/Encoder App"
+layout: bpost
+title: "Ionic 5 - Build a Barcode/QR Code Scanner/Encoder App"
 image: "images/content/barcode-qr-code-scanner-ionic-3.png"
-excerpt: "Create a Barcode/QR code scanner application with Ionic Native and Ionic 3" 
+excerpt: "Create a Barcode/QR code scanner application with Ionic Native and Ionic 5" 
 tags : [ionic]
+date: 2020-05-03
 ---
 
 {% include image.html 
     img="images/content/barcode-qr-code-scanner-ionic-3.png" 
-    title="Build a Barcode/QR Code Scanner App with Ionic 3" 
+    title="Build a Barcode/QR Code Scanner App with Ionic 5" 
 %}
 
-In this tutorial, we are going to see how you can create your own Barcode/QR code scanner app with Ionic 3, Ionic Native 3.x+ and Cordova. 
+In this tutorial, we are going to see how you can create your own Barcode/QR code scanner app with Ionic 5, Ionic Native 5 and Cordova. 
 
 We are also going to learn how to encode your own barcodes from your data.
 
 So let's get started.
 
-## Create an Ionic 3 Project 
+## Create an Ionic 5 Project 
 
 First start by generating a new project. You can also skip this to use an existing project:
 
     ionic start CodeScanner blank 
 
-For more information see this tutorial about how to <a href="/ionic-3-create-first-project">create your first Ionic 3 project</a>     
+For more information see this tutorial about how to <a href="/ionic-3-create-first-project">create your first Ionic 5 project</a>     
 
 Navigate into your project root directory: 
 
@@ -31,7 +32,7 @@ Navigate into your project root directory:
 
 Next, follow the steps to install both the Cordova plugin and Ionic Native 3.x+ wrapper for scanning barcodes. 
 
-## Installing Cordova and Ionic Native 3.x+ Plugin for Barcode Scanning 
+## Installing Cordova and Ionic Native 5 Plugin for Barcode Scanning 
 
 Start by installing the Cordova Barcode scanner plugin: 
 
@@ -188,3 +189,5 @@ Next in the `home.ts` file, add a `encodeData` string member variable for holdin
 ## Conclusion
 
 Thanks to the Cordova Barcode Scanner plugin you can easily scan QR and barcode codes and also encode your own data (Text, email and phone numbers) in a barcode format.
+
+We have seen how to add the barcode scanner to our Ionic 5/Angular app with Cordova and Ionic Native 5.

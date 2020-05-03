@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "Printing with Ionic 4"
+layout: bpost
+title: "Printing with Ionic 5, Ionic Native 5 and Cordova"
 image: "images/content/ionic2-print.png"
 excerpt: "How to print to PDF or paper in Ionic 2 apps using Ionic Native and Cordova"
 categories : mobiledev
+date: 2020-05-03
 tags : [ionic2 , cordova , ionic  ]
 ---
 
@@ -12,33 +13,37 @@ tags : [ionic2 , cordova , ionic  ]
     title="Ionic 2 print" 
 %}
 
-Throughout this tutorial we are going to learn how to use printing in Ionic 4 apps based on Angular using Ionic Native and Cordova.
+Throughout this tutorial we are going to learn how to use printing in Ionic 5 apps based on Angular using Ionic Native and Cordova.
 
-If you need to build a mobile app for Android or iOS that needs to print data to PDF or papers using the Ionic
-framework then lucky for you printing to either of these mobile platforms is a matter of using a 
+If you need to build a mobile app for Android or iOS that needs to print data to PDF or papers using the Ionic framework v5 then lucky for you printing to either of these mobile platforms is a matter of using a 
 [Cordova plugin for printing](https://github.com/katzer/cordova-plugin-printer)
 
-Ionic 4 uses Ionic Native to wrap Cordova plugins so in this tutorial we are going to see an example project
-that shows you how to implement printing functionality to either print to PDF file or paper.
+Ionic 5 uses Ionic Native 5 to wrap Cordova plugins so in this tutorial we are going to see an example project that shows you how to implement printing functionality to either print to PDF file or paper.
 
-You need to know that printing is only available for Android 4.4.4 (or KiKat).
+You need to know that printing is only available for Android 4.4.4 or above.
 
 Make sure you have configured the settings to use the printer on both Android and iOS devices.
 
-Next open up your terminal under Linux/MAC systems or the command prompt under Windows and generate a new
-Ionic 3 project:
 
-    ionic start ionic4-printing-example blank --type=angular
-    cd ionic4-printing-example
+## Create an Ionic 5 Project and Add an Android Platform
+
+Next open up your terminal under Linux/MAC systems or the command prompt under Windows and generate a new Ionic 5 project:
+
+    ionic start ionic-printing-example blank --type=angular
+    cd ionic-printing-example
     ionic platform add android
 
 If you are developing your app under a MAC OS you can target iOS too using the following command:
 
     ionic platform add iOS
 
+## Adding the Cordova Printing Plugin 
+
 Now we need to add the Cordova plugin for printing so go ahead and run the following command:
 
     cordova plugin add https://github.com/katzer/cordova-plugin-printer.git
+
+## Using the Printing Plugin with Ionic 5
 
 Next use your favorite code editor to open the `src/pages/home.ts` and then add the following code to test printing:
 
@@ -84,7 +89,7 @@ Make sure you have plugged you real mobile device using an USB cable then build 
 
 ## Conclusion
 
-This is the end of this tutorial. For more information about this plugin visit its [GitHub repo](https://github.com/katzer/cordova-plugin-printer). You can also visit the Ionic Native documentation [here](https://ionicframework.com/docs/v2/native/printer/).
+This is the end of this tutorial, we have seen how to use the Cordova Printing plugin with Ionic 5, and Ionic Native. For more information about the printing plugin visit its [GitHub repo](https://github.com/katzer/cordova-plugin-printer). You can also visit the Ionic Native documentation [here](https://ionicframework.com/docs/v2/native/printer/).
 
 You can find this project in [GitHub](https://github.com/techiediaries/ionic2-printing-example).
 

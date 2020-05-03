@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Ionic 4/Angular and Cordova Audio Recording & Playing"
+title: "Ionic 5/Angular and Cordova Audio Recording & Playing"
 image: "images/content/ionic2-native-cordova-audio-playing-recording.png"
 excerpt: "Ionic 2 and Cordova audio recording/playing"
 categories : mobiledev
 tags : [ionic2 , cordova , ionic ]
 ---
 
-![Ionic 4/Angular and Cordova Audio Recording & Playing](/images/content/ionic2-native-cordova-audio-playing-recording.png)
+![Ionic 5/Angular and Cordova Audio Recording & Playing](/images/content/ionic2-native-cordova-audio-playing-recording.png)
 
-In this Ionic 4/Angular tutorial, we are going to teach you step by step how to create a hybrid mobile app for Android (And iOS and Windows Phone if you want too) using the latest version of the Ionic framework. 
+In this Ionic 5/Angular tutorial, we are going to teach you step by step how to create a hybrid mobile app for Android (And iOS and Windows Phone if you want too) using the latest version of the Ionic framework. 
 
 The cross platform application we are going to build an application that can be used as an audio player and recorder so it needs to access the device microphone and speaker
 which can be easily achieved using a Cordova plugin - [MediaPlugin](http://ionicframework.com/docs/v2/native/mediaplugin/){target:_blank}
@@ -22,8 +22,9 @@ The tutorial assumes you have already installed and configured your environment.
 - Java and Android SDK installed to be able to build your app APK.
 - Xcode and a MAC system for iOS .
 
-Now open up your terminal under Linux/MAC or command prompt/power shell under Windows and enter the following
-instructions to scaffold a new Ionic 4 project based on Angular:
+## Create a New Ionic 5/Angular Project
+
+Now open up your terminal under Linux/MAC or command prompt/power shell under Windows and enter the following instructions to scaffold a new Ionic 5 project based on Angular:
 
     ionic start ionic4-audio-recorder-player blank --type=angular
 

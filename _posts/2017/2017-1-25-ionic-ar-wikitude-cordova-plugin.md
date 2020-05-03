@@ -1,48 +1,50 @@
 ---
-layout: post
-title: "Building Augmented Reality Apps with Ionic 4 and Wikitude Cordova Plugin "
+layout: bpost
+title: "Building Augmented Reality Apps with Ionic 5/4 and Wikitude Cordova Plugin "
 image: "images/content/ionic-ar-wikitude-cordova-plugin.png"
-excerpt: "Building augmented reality apps with Ionic and wikitude Cordova plugin"
+excerpt: "Building augmented reality apps with Ionic 5 and wikitude Cordova plugin"
 categories : mobiledev
+date: 2020-05-03
 tags : ionic
 ---
 
-{% include image.html
-   img="images/content/ionic-ar-wikitude-cordova-plugin.png"
-       title="Building augmented reality apps with Ionic and wikitude Cordova plugin"
-%}
 
-In this post we are going to use Ionicitude to build augmented reality mobile apps using the hybrid Ionic 4 framework.
+In this post, we are going to use Ionicitude to build augmented reality mobile apps using the hybrid Ionic 5 framework.
+
+
+
+## What's Wikitude Cordova Plugin and Ionicitude?
 
 Ionicitude provides you with a simple to use API on top of the Cordova plugin wikitude for working with AR views.
 
-First of all, what is wikitude Cordova plugin?
+What is wikitude Cordova plugin?
 
-It's a plugin for Cordova container that allows developers to build augmented reality apps with Cordova based frameworks such as Ionic 4 in our case. 
+It's a plugin for Cordova container that allows developers to build augmented reality apps with Cordova based frameworks such as Ionic 5 in our case. 
 
 Using this plugin you have to the possibility to create augmented reality experiences based either on user's location or camera so you can build all sort of AR apps.
 
-If you have already an experience with Ionic 4 then you know that testing apps that relay on mobile hardware can't be done on the browser and since AR is all about using device hardware such as Camera and other sensors/detectors you have to be prepared to test the app on your own real device.
+If you have already an experience with Ionic 5 then you know that testing apps that relay on mobile hardware can't be done on the browser and since AR is all about using device hardware such as Camera and other sensors/detectors you have to be prepared to test the app on your own real device.
 
-It's just a matter of pluging in your device with your computer using an USB cable and then build and run your app with Ionic CLI 4.
+It's just a matter of pluging in your device with your computer using an USB cable and then build and run your app with Ionic CLI 5.
 
-Now lets get started.
+## Create an Ionic 5 Project
 
-The first thing you need to do is to scaffold a new Ionic project so open up your terminal/command prompt and enter the following command: 
+Now let's get started. The first thing you need to do is to scaffold a new Ionic 5 project.
+ 
+Open  your terminal/command prompt and enter the following command: 
 
     ionic start ionic-augmented-reality-project --type=angular
 
-Next add your target platform:
+Next, add your target platform as follows:
 
     cd ionic-augmented-reality-project
-    ionic platform add android@5.0.0
+    ionic platform add android
 
-Since we are using Ubuntu we can only target Android. You should be able to add an iOS target if you are using 
-A macOS for development.
+Since we are using Ubuntu we can only target Android. You should be able to add an iOS target if you are using a macOS for development.
 
-The Wikitude plugin works with at least version 5 of Android.
+The Wikitude plugin works with at least version of Android.
 
-Next you should add the plugin using the following command: 
+Next, you should add the plugin using the following command: 
 
     ionic plugin add https://github.com/Wikitude/wikitude-cordova-plugin.git
 
@@ -132,7 +134,7 @@ Next to launch myworld you need to add the following code inside your controller
             }
     });
 
-So these are the minimal steps required to build an AR app with Ionic ,Cordova and wikitude .
+So these are the minimal steps required to build an AR app with Ionic, Cordova and wikitude.
 
 For more information 
 

@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Ionic 4/Angular - Geolocation Plugin, Google Maps and Places API [Part 2]"
+layout: bpost
+title: "Ionic 5/Angular - Geolocation Plugin, Google Maps and Places API [Part 2]"
 image: "images/content/ionic-geolocation-maps-location-api.png"
 excerpt: "Create an Ionic 3 app which uses the Geolocation Cordova plugin ,Google maps and the Google Places API" 
+date: 2020-05-03
 tags: ionic 
 ---
 
@@ -11,11 +12,11 @@ tags: ionic
     title="Ionic 2/3 Geolocation ,Google maps and Places API" 
 %}
 
-On the previous part we have added a Google Map to our Ionic 4 application and used the Cordova Geolocation plugin and its Ionic native wrapper to get the current user position.
+On the previous part we have added a Google Map to our Ionic 5 application and used the Cordova Geolocation plugin and its Ionic native wrapper to get the current user position.
 
 Check out the first part: 
 
-[Ionic 4 - Geolocation Plugin, Google Maps and Places API](/ionic-geolocation-google-maps-places-api) 
+[Ionic 5 - Geolocation Plugin, Google Maps and Places API](/ionic-geolocation-google-maps-places-api) 
 
 
 On this part we are going to continue building our nearby restaurants mobile app so let's get started. 
@@ -150,7 +151,7 @@ The `places` variable holds the list of the nearby restaurants which are then di
 
 ## Conclusion 
 
-That is it! You have now created a nearby app with Ionic 4/Angular which gets the current user location using the Cordova Geolocation plugin and Ionic Native then uses the Google Places API to search for the nearby restaurants and display them in a Google Map.
+That is it! You have now created a nearby app with Ionic 5/Angular which gets the current user location using the Cordova Geolocation plugin and Ionic Native then uses the Google Places API to search for the nearby restaurants and display them in a Google Map.
 
 
 

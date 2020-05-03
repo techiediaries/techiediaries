@@ -1,43 +1,35 @@
 ---
-layout: post
-title: "Ionic 2+ - Make Phone Calls with Cordova and Ionic Native 3.x+"
+layout: bpost
+title: "Ionic 5 Phone Calls with Cordova and Ionic Native 5"
 image: "images/content/ionic-cordova-phone-call.png"
-excerpt: "Ionic 2+ : Make Phone Calls with Cordova and Ionic Native 3.x+" 
+excerpt: "Make Ionic 5 Phone Calls with Cordova and Ionic Native 5" 
+date: 2020-05-03
 tags: ionic 
 ---
 
-{% include image.html 
-    img="images/content/ionic-cordova-phone-call.png" 
-    title="Ionic 2+ - Make Phone Calls with Cordova and Ionic Native 3.x+" 
-%}
+The primary task of a phone device is to make calls so being able to make calls in Ionic 5 is a nice feature that can be leveraged to create awesome apps.
 
-Introduction 
------------------
------------------
+In this tutorial, we will be seeing how to use Cordova and Ionic Native 5 to make phone calls from within Ionic 5 mobile apps.
 
-The primary task of a phone device is to make calls so being able to make calls in Ionic framework is 
-a nice feature that can be leveraged to create awesome apps .
+## Create an Ionic 5/Angular Project
 
-In this tutorial we will be seeing how to use Cordova and Ionic Native 3.x+ to make phone calls from within 
-Ionic mobile apps .
+As always, you can start by scaffolding a new Ionic 5 application using the Ionic CLI 5.
 
-Getting started 
-------------------------
-------------------------
-
-As always you can start by scaffolding a new Ionic 2+ application using the Ionic CLI .
-
-So head over to your terminal/prompt and run :
+Head over to your terminal/prompt and run the following command:
 
     ionic start IonicPhoneCallExample blank 
     cd IonicPhoneCallExample 
 
-Now we need to install Cordova plugin for making phone call and its Ionic Native 3.x+ wrapper :
+## Installing the Cordova and Ionic Native 5 Phone Call Plugins
+
+Now, we need to install Cordova plugin for making phone call and its Ionic Native 5 wrapper as follows:
 
     ionic plugin add --save call-number
     npm install --save @ionic-native/call-number
 
-Head over to <em>src/app/app.module.ts</em> then add :
+## Using the Phone Call Plugin in Ionic 5
+
+Next, head over to the <em>src/app/app.module.ts</em> file and add the following code:
 
     import { BrowserModule } from '@angular/platform-browser';
     import { ErrorHandler, NgModule } from '@angular/core';
@@ -71,7 +63,7 @@ Head over to <em>src/app/app.module.ts</em> then add :
     export class AppModule {}
         
 
-Next open <em>src/pages/home/home.ts</em> and add a method to make a phone call .
+Next, open the <em>src/pages/home/home.ts</em> file and add a method to make a phone call as follows:
 
     import { Component } from '@angular/core';
     import { CallNumber } from '@ionic-native/call-number';
@@ -93,15 +85,13 @@ Next open <em>src/pages/home/home.ts</em> and add a method to make a phone call 
 
     }
 
-Open <em>src/pages/home/home.html</em> then add a button to launch the dialer .
+Finally, open the <em>src/pages/home/home.html</em> file and add a button to launch the dialer:
 
     <button ion-button (click)="launchDialer('00 00 00 00')">Call 00 00 00 00</button>
 
 
-Conclusion 
----------------
----------------
+## Conclusion 
 
-You can now add a target platform then test your app in a real mobile device .
+You can now add a target platform and test your Ionic 5 app in a real mobile device by making a phone call.
 
     

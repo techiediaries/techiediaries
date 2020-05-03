@@ -1,17 +1,18 @@
 ---
-layout: post
-title: "Ionic 3 - Create and build first project or application (Android ,iOS and Windows Univeral Platform)"
+layout: bpost
+title: "Ionic 5 - Create and build first project or application (Android ,iOS and Windows Univeral Platform)"
 image: "images/content/ionic-create-first-project-app.png"
-excerpt: "In this tutorial we'll see how to quickly create and build our first Ionic 3 project or app " 
+excerpt: "In this tutorial we'll see how to quickly create and build our first Ionic 5 project or app"
+date: 2020-05-03
 tags : [ionic]
 ---
 
 {% include image.html 
     img="images/content/ionic-create-first-project-app.png" 
-    title="Ionic 3 first project" 
+    title="Ionic 5 first project" 
 %}
 
-Throughout this quick tutorial ,we'll see how to create an Ionic 3 project or application using the Ionic CLI v3 .
+Throughout this quick tutorial ,we'll see how to create an Ionic 5 project or application using the Ionic CLI 5.
 
 This tutorial have a few requirements which are :
 <ul>
@@ -19,7 +20,7 @@ This tutorial have a few requirements which are :
 Node.js installed .
 </li>
 <li>
-Ionic CLI v3 installed .
+Ionic CLI 5 installed .
 </li>
 <li>
 Cordova installed .
@@ -37,7 +38,7 @@ Windows if you plan to target UWP .
 
 Lets first make sure we can undertsand a few things .
 
-You can create an Ionic 3 application if you just have Ionic CLI installed (and inevitably Node.js) then you can simply use the browser to serve 
+You can create an Ionic 5 application if you just have Ionic CLI installed (and inevitably Node.js) then you can simply use the browser to serve 
 it just like any normal web app .If you don't know it yet .An Ionic mobile app is just a web application with a mobile like UI ,wrapped by a 
 native Cordova container .On the browser we don't even need the Cordova container .
 
@@ -60,16 +61,16 @@ you want to build a UWP/Windows Phone app .And you need the three of them if you
 You can build iOS apps only on MAC .
 
 <div class="note">
-Actually ,you can test your Ionic 3 app entirely on the browser even if using native device features and related Cordova plugins by using plugin mocks
+Actually ,you can test your Ionic 5 app entirely on the browser even if using native device features and related Cordova plugins by using plugin mocks
 available since Ionic Native v3.x+ but with some added efforts ,you need to create a mock or a fake class which returns fake data or developer supplied 
 data and has the same API interface as the Ionic Native plugin you are testing .see this article for an <a href="">example mock of the Camera plugin</a>    
 </div> 
 
-Generating your first Ionic 3 project 
+Generating your first Ionic 5 project 
 ----------------------------------------
 ----------------------------------------
 
-After successfully installed Node.js and Ionic CLI v3 ,you can generate a new project using your terminal 
+After successfully installed Node.js and Ionic CLI 5, you can generate a new project using your terminal 
 or command prompt .
 
 So depending on your operating system ,open a terminal or command propmpt and enter the following command 
@@ -135,13 +136,13 @@ One important thing to mention to be able to test your app on real device ,you n
 the device with your computer and you need to enable the debug mode on your device .At least for Android ,I sincerely 
 don't know if this is the case for iOS . 
 
-For seeing all available commands at your disposal when using the Ionic CLI v3 .You can find an <a href="/ionic-cli-v3-commands-cheat-sheet">Ionic CLI v3 command cheat sheet here</a>         
+For seeing all available commands at your disposal when using the Ionic CLI 5.You can find an <a href="/ionic-cli-v3-commands-cheat-sheet">Ionic CLI v3 command cheat sheet here</a>         
 
 Conclusion
 --------------
 --------------
 
-By following this tutorial ,you should have generated a project based on Ionic 3 and using the Ionic CLI v3 .
+By following this tutorial ,you should have generated a project based on Ionic 5 and using the Ionic CLI 5.
 
 If you have installed and configured taget systems requirements ,you should also be able to test your app 
 on a real device or build your app for a target mobile system .   

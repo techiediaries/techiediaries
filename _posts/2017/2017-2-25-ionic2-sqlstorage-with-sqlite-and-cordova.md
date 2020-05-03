@@ -1,27 +1,28 @@
 ---
-layout: post
-title: "Quick Ionic SQLite Storage Example"
+layout: bpost
+title: "Ionic 5/Angular and Cordova SQLite Storage Example"
 image: "images/content/ionic2-sqlstorage-with-sqlite-and-cordova.png"
-excerpt: "In this tutorial ,you are going to learn how to use SQLite with Ionic 2 ,Cordova and Ionic Native for data storage on Android and iOS mobile apps"
+excerpt: "In this tutorial, you are going to learn how to use SQLite with Ionic 5, Cordova and Ionic Native for data storage on Android and iOS mobile apps"
 categories : mobiledev
+date: 2020-05-03
 tags : [ionic2 , ionic ]
 ---
 
-Ionic  is, nowadays, one of the most popular open source and free hybrid mobile frameworks for building hybrid mobile apps for Android, iOS and even Windows Universal Platform.
+Ionic 5 is, nowadays, one of the most popular open source and free hybrid mobile frameworks for building hybrid mobile apps for Android, iOS and even Windows Universal Platform.
 
-One of the key requirements of a mobile application is data storage. It's true that you can use local storage 
-just like any web app (Since hybrid apps are web apps in essence) but it has limitations such as query difficulties 
-(i.e you can't build complex data queries) and capacity - You can only store a maximum of 10MB of data.
+## Data Storage in Ionic 5 Apps
+
+One of the key requirements of a mobile application is data storage. It's true that you can use local storage just like any web app (Since hybrid apps are web apps in essence) but it has limitations such as query difficulties (i.e you can't build complex data queries) and capacity - You can only store a maximum of 10MB of data.
 
 So what solution do we have?
 
-In this tutorial, we are going to see how to use SQLite, a light version of SQL which has no capacity limitation 
-(Depends only your device storage capacity) and can execute complex SQL queries on data.
+## How to Use SQLite with Ionic 5 for Data Storage?
 
-Now let's see how we can use SQLite with Ionic  and Angular.
+In this tutorial, we are going to see how to use SQLite, a light version of SQL which has no capacity limitation (Depends only your device storage capacity) and can execute complex SQL queries on data. Now let's see how we can use SQLite with Ionic 5 and Angular.
 
-First, let's start by creating a new Ionic  project based on Angular. Open your terminal on Linux/MAC or your command prompt
-under Windows and type the following commands to scaffold a new project:
+## Create an Ionic 5/Angular Project
+
+First, let's start by creating a new Ionic  project based on Angular. Open your terminal on Linux/MAC or your command prompt under Windows and type the following commands to scaffold a new project:
 
     ionic start ionic-sqlite-example blank --type=angular 
 
@@ -35,11 +36,15 @@ the location of your Android SDK.
 
 If you want to target iOS you need to build your app under a MAC system.
 
+## Adding the Cordova SQLite Plugin
+
 Next let's add the Cordova plugin for using SQLite 
 
     ionic cordova plugin add cordova-sqlite-storage
 
 We are not going to build a fully fledged app but a simple example which shows how to use SQLite with Ionic.
+
+## Installing the Ionic Native 5 Plugin
 
 Next, you need to install the Ionic native plugin:
 
@@ -214,6 +219,6 @@ Next, in your home template file, you need to add the following code to call the
 
 ## Conclusion 
 
-As you can see, using SQLite with Ionic  and Angular is dead easy and straightforward. All you need to do is to install the Cordova plugin for SQLite and build the SQL queries and run them.
+As you can see, using SQLite with Ionic 5 and Angular is dead easy and straightforward. All you need to do is to install the Cordova plugin for SQLite and build the SQL queries and run them.
 
-For more advanced examples you just need to look for any tutorial about SQlite on the web. What you can do normally with SQlite, you can do here in the case of Ionic.       
+For more advanced examples you just need to look for any tutorial about SQlite on the web. What you can do normally with SQlite, you can do here in the case of Ionic 5.       

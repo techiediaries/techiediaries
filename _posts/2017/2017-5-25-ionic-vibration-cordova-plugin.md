@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Ionic 4/Angular - Use Vibration with Cordova and Ionic Native"
+layout: bpost
+title: "Ionic 5/Angular - Use Vibration with Cordova and Ionic Native"
 image: "images/content/ionic-vibration.png"
-excerpt: " How to use vibration in Ionic 2 / Ionic 3 apps " 
+excerpt: " How to use vibration in Ionic 5 apps"
+date: 2020-05-03
 tags: ionic 
 ---
 
@@ -12,7 +13,7 @@ tags: ionic
 %}
 
 In this tutorial, we will learn together how to use the Cordova Vibration plugin to vibrate apps built 
-using Ionic 4/Angular framework. The example which we are going to build is simple with a button when clicked 
+using Ionic 5/Angular framework. The example which we are going to build is simple with a button when clicked 
 vibrate our device but of course this is just to demonstrate how to use vibration. You can use it as a 
 base template for building a full featured real app with vibration and other features.
 
@@ -118,7 +119,7 @@ Conclusion
 -------------------
 -------------------
 
-We have seen how to use the Cordova vibration plugin and Ionic Native 3 to create an Ionic 4/Angular app that 
+We have seen how to use the Cordova vibration plugin and Ionic Native 3 to create an Ionic 5/Angular app that 
 uses vibration.
 
 Thanks for reading and see on the next tutorial.

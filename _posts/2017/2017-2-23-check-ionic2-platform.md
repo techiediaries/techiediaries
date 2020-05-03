@@ -1,20 +1,24 @@
 ---
-layout: post
-title: "checking Ionic 4 Platform: Device Information "
+layout: bpost
+title: "checking Ionic 5 Platform: Device Information "
 image: "images/content/check-ionic2-platform.png"
 excerpt: "How to check or detect the Ionic 4 platform where your mobile app is running"
 categories : mobiledev
+date: 2020-05-03
 tags : ionic2 ionic 
 ---
 
-![Ionic 4 platform](/images/content/check-ionic2-platform.png)
+![Ionic 5 platform](/images/content/check-ionic2-platform.png)
 
-Ionic 4 provides the `Platform` service which provides you with information about the current device.
+Ionic 5 provides the `Platform` service which provides you with information about the current device.
+
+## Using the Ionic 5 Platform Service
 
 You can use the `Platform` service to get a lot of information which will help you customize your application for a specific environment or OS such as the browser, Android or iOS etc.
 
-If you either want to check or detect the platform where your app is running or you want more information
-about the device such as the language direction or the device orientation you can use different methods available from the `Platform` service.
+If you either want to check or detect the platform where your app is running or you want more information about the device such as the language direction or the device orientation you can use different methods available from the `Platform` service.
+
+## How to Check the Host Platform in Ionic 5
 
 Now how to check for the host platform?
 
@@ -65,7 +69,8 @@ if your app is running on the browser or on the device you just need to use the 
         }
     }
 
-The `Platform` service has many more methods that you can use for customizing your app behavior depending 
-on platform type and device conditions but the most used method is the `ready()` method which is used
-to detect if the target platform is ready and all device native functionality can be accessed safely.
+
+## Conclusion
+
+The `Platform` service has many more methods that you can use for customizing your Ionic 5 app behavior depending on platform type and device conditions but the most used method is the `ready()` method which is used to detect if the target platform is ready and all device native functionality can be accessed safely in your Ionic 5 project.
 

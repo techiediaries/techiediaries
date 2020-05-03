@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Ionic 4 and ThemeableBrowser Webview: Create a cross platform mobile app for your responsive website"
+layout: bpost
+title: "Ionic 5 and ThemeableBrowser Webview: Create a cross platform mobile app for your responsive website"
 image: "images/content/mobile-app-ionic-2-inappbrowser.png"
-excerpt: "Create a cross platform (Android ,iOS and Windows ) mobile app for your responsive website with Ionic 2/3 and ThemeableBrowser" 
+excerpt: "Create a cross platform (Android ,iOS and Windows ) mobile app for your responsive website with Ionic 5 and ThemeableBrowser" 
+date: 2020-05-03
 tags : ionic
 ---
 
@@ -12,7 +13,7 @@ tags : ionic
 %}
 
 On the [previous part](/ionic-2-webview-inappbrowser) ,we have seen how to build an app that displays your website to your app users 
-using Ionic 4 and InAppBrowser plugin which can be a workaround solution for people who have already
+using Ionic 5 and InAppBrowser plugin which can be a workaround solution for people who have already
 a responsive website and don't want to invest time or money building an app from scratch for their business. 
 
 We have seen also that is not the best solution in terms of performance and also because of some 
@@ -35,10 +36,10 @@ hope that we don't find any bugs using the ThemeableBrowser to turn our responsi
 
 Now let's get started!
 
-## Generating a new Ionic 4/Angular project and installing ThemeableBrowser 
+## Generating a new Ionic 5/Angular project and installing ThemeableBrowser 
 
 If you are coming from the previous post, you can use the previous generated project. If not just 
-make sure you have all the requirements installed,Cordova and Ionic, then generate a new Ionic 4/Angular project 
+make sure you have all the requirements installed,Cordova and Ionic, then generate a new Ionic 5/Angular project 
 using:
 
     ionic start myWebsiteApp blank --type=angular
@@ -193,7 +194,7 @@ which are designed to show you how to turn your responsive hosted website to a m
 If you are happy with the performance of your app then good for you. You can also take another 
 approach which is building a true native app with a webview using NativeScript which is going to achieve
 the same requirement in this tutorial but with boosted performance since you'll have only one webview 
-instead of two webviews used in the Ionic 4/Cordova case.
+instead of two webviews used in the Ionic 5/Cordova case.
 
 
 

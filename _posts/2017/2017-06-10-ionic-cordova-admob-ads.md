@@ -1,57 +1,46 @@
 ---
-layout: post
-title: "Ionic 2 / Ionic 3 - Adding Admob Ads with Cordova and Ionic Native 3.x+"
+layout: bpost
+title: "Admob Ads with Ionic 5/Angular, Cordova and Ionic Native 5 by Example"
 image: "images/content/ionic-cordova-admob-ads.png"
-excerpt: " Ionic 2 / Ionic 3 - Adding Admob Ads with Cordova and Ionic Native 3.x+" 
+excerpt: " Ionic 5, adding Admob Ads with Cordova and Ionic Native 5" 
 tags: ionic 
+date: 2020-05-03
 ---
 
-{% include image.html 
-    img="images/content/ionic-cordova-admob-ads.png" 
-    title="Ionic 2/3 Admob Ads" 
-%}
 
-Introduction 
--------------------
---------------------
+In this tutorial we are going to see how to implement Google AdMob Ads In Ionic 5 to be able to monetize your apps using ads.
 
-In this tutorial we are going to see how to implement Google AdMob Ads In Ionic to be able to monetize 
-your apps using advertisement business model .
-
-We are going to cover how to add three types of Ads :
+We are going to cover how to add three types of Ads:
 <ul>
 <li>
-Banner Ads
+Banner Ads,
 </li>
 <li>
-Interstitial Ads
+Interstitial Ads,
 </li>
 <li>
-Reward Video Ads
+Reward Video Ads.
 </li>
 </ul>
 
 
-Getting started 
----------------------
----------------------
+## Create a New Ionic 5/Angular Project
 
-Lets start our tutorial by creating a new Ionic project from scratch (Optional) based on the blank template 
-using the Ionic CLI v3 .
+Let's start our tutorial by creating a new Ionic 5/Angular project from scratch (Optional) based on the blank template using the Ionic CLI 5:
 
     ionic start AdmobAdsExample blank 
 
-Next navigate inside your project root folder 
+Next, navigate inside your Ionic 5 project folder: 
 
     cd AdmobAdsExample 
 
-Then install the Cordova Admob plugin and its Ionic Native 3.x wrapper .
+Next, install the Cordova Admob plugin and its Ionic Native 5 wrapper as follows:
 
     ionic cordova plugin add --save cordova-plugin-admob-free        
 
     npm install --save @ionic-native/admob-free
 
-Open <em>src/app/app.module.ts</em> then import AdMobFree and add it to the list of providers 
+Next, open the <em>src/app/app.module.ts</em> file and import `AdMobFree` then add it to the list of providers: 
 
     import { AdMobFree } from '@ionic-native/admob-free';    
 
@@ -78,11 +67,10 @@ Open <em>src/app/app.module.ts</em> then import AdMobFree and add it to the list
     })
     export class AppModule {}
    
-Showing Banner Ads 
-----------------------
-----------------------
+## Showing Banner Ads in your Ionic 5 App
 
-Next open <em>src/app/app.component.ts</em> and add 
+
+Next, open the <em>src/app/app.component.ts</em> file and add the following code: 
 
     import { Component } from '@angular/core';
     import { Platform } from 'ionic-angular';
@@ -123,20 +111,16 @@ Next open <em>src/app/app.component.ts</em> and add
     
     }
 
-We have injected AdMobFree then created showAdmobBannerAds() method to show banner ads when Cordova is ready .
+We have injected `AdMobFree` and created the `showAdmobBannerAds()` method to show banner ads when Cordova is ready.
 
-We have passed two configuration options :
+We have passed two configuration options:
 
-isTesting : true to tell Admob plugin to use only test ads which is the recommended option which you are 
-still developing your app to avoid accidental clcks that may cause problems with your Google Admob account .
+- `isTesting` : true, which tells Admob plugin to use only test ads which is the recommended option when you are still developing your app to avoid accidental clcks that may cause problems with your Google Admob account.
+- `autoShow` : true, which shows banner ads immediately after creating them without using the `show()` method.
 
-autoShow : true to show banner ads immediately after creating them without using show() method .
+After developing your Ionic 5 app you need to create real ads, go to [AdMob portal](https://www.google.com/admob/), click "Monetize a new app" button to create a new ad unit.
 
-After developing your app you need to create real ads so 
-
-Go to [AdMob portal](https://www.google.com/admob/), click "Monetize a new app" button to create new ad unit.
-
-Next grab your ad pubisher id and add it to configuration options :
+Next grab your ad pubisher id and add it to configuration options as follows:
 
 
 
@@ -146,7 +130,7 @@ Next grab your ad pubisher id and add it to configuration options :
             autoShow: true
         };
 
-If you set autoShow to false then you need to call the show() method after preparing the banner : 
+If you set `autoShow` to `false` then you need to call the `show()` method after preparing the banner: 
 
         this.admobFree.banner.prepare()
         .then(() => {
@@ -157,23 +141,22 @@ If you set autoShow to false then you need to call the show() method after prepa
         }  
  
 
-You can also hide the banner with 
+You can also hide the banner using: 
 
 
         this.admobFree.banner.hide()
 
 
-Or completely remove it 
+Or you can completely remove it using:
 
 
         this.admobFree.banner.remove()        
 
 
-Showing Interstitial Ads 
-----------------------------
-----------------------------
+## Showing Interstitial Ads in your Ionic 5 App
 
-You can also show Admob Interstitial ads with :
+
+You can also show Admob Interstitial ads using the following method:
 
     showInterstitialAds(){
         const bannerConfig: AdMobFreeBannerConfig = {
@@ -190,13 +173,12 @@ You can also show Admob Interstitial ads with :
         .catch(e => console.log(e));    
         }  
 
-You can use the same configuration options and methods to add Interstitial Ads .
+You can use the same configuration options and methods to add Interstitial Ads.
 
-Showing Reward Video Ads 
--------------------------------
--------------------------------
+## Showing Reward Video Ads in your Ionic 5 App
 
-If you choose to display Reward Video Ads in your mobile app you can add and call this method 
+
+If you choose to display Reward Video Ads in your Ionic 5 mobile app, you can add and call the following method: 
 
     showRewardVideoAds(){
         const bannerConfig: AdMobFreeBannerConfig = {
@@ -213,10 +195,7 @@ If you choose to display Reward Video Ads in your mobile app you can add and cal
         .catch(e => console.log(e));    
         }
 
-Conclusion 
----------------
-----------------
+## Conclusion 
 
-We have covered how to monetize Ionic mobile apps with three types of Admob ads so you can earn some money 
-from your mobile apps if you decide not to sell them and make them available for free to all users .
+We have covered how to monetize Ionic 5/Angular mobile apps with three types of Admob ads so you can earn some money  from your mobile apps if you decide not to sell them and make them available for free to all users.
 

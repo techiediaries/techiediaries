@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "How to Open URLs in Browser with Ionic 4/Angular,Cordova InAppBrowser plugin and Ionic Native"
+layout: bpost
+title: "How to Open URLs in Browser with Ionic 5/Angular,Cordova InAppBrowser plugin and Ionic Native"
 image: "images/content/cordova-inappbrowser-example-ionic2-native.png"
 excerpt: "A simple example for how to open urls in browser with Ionic 2 final ,Cordova InAppBrowser plugin and Ionic Native"
 categories : mobiledev
+date: 2020-05-03
 tags : ionic 
 ---
  
@@ -12,13 +13,13 @@ tags : ionic
        title="Cordova InAppBrowser example with Ionic 2 final and Ionic Native"
 %}
 
-Throughout this tutorial, we are going to see a detailed example showing how to open external URLs in Ionic 4 mobile 
+Throughout this tutorial, we are going to see a detailed example showing how to open external URLs in Ionic 5 mobile 
 apps based on Angular using the Cordova plugin InAppBrowser and Ionic Native.
 
 
 SEE ALSO: 
 
-<a href="/ionic-2-3-inappbrowser" target="_blank">Full Ionic 4/Angular Mobile App with Ionic Native and InAppBrowser</a>
+<a href="/ionic-2-3-inappbrowser" target="_blank">Full Ionic 5/Angular Mobile App with Ionic Native and InAppBrowser</a>
 
 AND 
 
@@ -27,18 +28,20 @@ AND
 
 Now let's get started! 
 
-We will start by generating a new Ionic 4/Angular project with Ionic CLI 4 so open up your terminal if your are developing
+## Create a New Ionic 5/Angular Project
+
+We will start by generating a new Ionic 5/Angular project with Ionic CLI 4 so open up your terminal if your are developing
 under a Linux/MAC system or your command prompt under Windows and type!
 
-    ionic start ionic4-inappbrowser-example blank --type=angular 
+    ionic start ionic-inappbrowser-example blank --type=angular 
 
-> Note: Under Windows the recommended way to work with Ionic 4 is through visual studio.
+> Note: Under Windows the recommended way to work with Ionic 5 is through visual studio.
 
-Next navigate inside your project folder: 
+Next, navigate inside your project folder: 
 
-    cd ionic4-inappbrowser-example
+    cd ionic-inappbrowser-example
 
-Add your target platform using:
+Add your target platform using the following command:
 
     cordova platform add android 
 
@@ -49,6 +52,8 @@ We are developing with Ubuntu so we can only target Android devices. If you are 
 > Note : If you don't have Cordova already installed you can easilly install it via npm with
 
     npm install -g cordova 
+
+## Adding the InAppBrowser Cordova Plugin    
 
 Next, you just need to add the InAppBrowser plugin using the following command: 
 
@@ -105,14 +110,16 @@ Because it is deprecated with Ionic Native. Instead you should use the following
 
     let browser = new InAppBrowser('YOUR_URL', "_system");
 
-    
+
+## Serving your Ionic 5 App
+
 Next, just execute the following command: 
 
     ionic serve 
 
 You can the play with your demo on the browser by visiting the `http://localhost:8100/` address. 
 
-![Ionic 4 InAppBrowser Example](/images/content/cordova-inappbrowser-example-ionic2-native/example.png)
+![Ionic 5 InAppBrowser Example](/images/content/cordova-inappbrowser-example-ionic2-native/example.png)
 
 When you are finished testing, you can build your app for you target platform using the following command:
 

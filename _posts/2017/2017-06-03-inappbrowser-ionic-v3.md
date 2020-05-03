@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "How to use Cordova InAppBrowser Plugin with Ionic 4/Angular and Ionic Native to Open External URLs"
+layout: bpost
+title: "How to use Cordova InAppBrowser Plugin with Ionic 5/Angular and Ionic Native to Open External URLs"
 image: "images/content/inappbrowser-ionic-v3.png"
 excerpt: "How to use Cordova InAppBrowser Plugin with Ionic 2 (Or 3 ) and Ionic Native 3.x+ to Open External URLs " 
 tags : [ionic,android,ios,hybridmobiledev]
+date: 2020-05-03
 ---
 
 {% include image.html 
@@ -12,7 +13,7 @@ tags : [ionic,android,ios,hybridmobiledev]
 %}
 
 
-In this tutorial, we’ll be learning how you can use the Cordova InAppBrowser plugin to open external URLs in Ionic 4/Angular applications or implement services which require webviews apps built for Android, iOS or Universal Windows Platform (UWP).
+In this tutorial, we’ll be learning how you can use the Cordova InAppBrowser plugin to open external URLs in Ionic 5/Angular applications or implement services which require webviews apps built for Android, iOS or Universal Windows Platform (UWP).
 
 See a more detailed tutorial here: 
 
@@ -21,7 +22,7 @@ See a more detailed tutorial here:
 So lets get started.
 
 First head over to your terminal or command prompt, depending on which system you are using (Unix Like or Windows) 
-then create a new Ionic 4/Angular project using the Ionic CLI v4:
+then create a new Ionic 5/Angular project using the Ionic CLI v4:
  
     $ ionic start InAppBrowserExampleDemo blank --type=angular
 
@@ -29,7 +30,7 @@ We are creating a project based on the blank template and Angular which will giv
 
 Next install the Cordova InAppBrowser and Ionic Native wrapper for InAppBrowser. 
 
-The Ionic Native plugin or wrapper is the recommended way of using Cordova plugins since they provide us with a Promise based API, around the original Cordova plugins that make use of Callback function, which works seamlessly with Ionic 4/Angular.
+The Ionic Native plugin or wrapper is the recommended way of using Cordova plugins since they provide us with a Promise based API, around the original Cordova plugins that make use of Callback function, which works seamlessly with Ionic 5/Angular.
 
     $ ionic cordova plugin add cordova-plugin-inappbrowser --save
     $ npm install --save @ionic-native/in-app-browser 

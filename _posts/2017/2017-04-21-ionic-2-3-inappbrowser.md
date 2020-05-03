@@ -1,8 +1,9 @@
 ---
-layout: post
-title: "Full Ionic 4 Mobile App with Ionic Native and InAppBrowser"
+layout: bpost
+title: "Full Ionic 5 Mobile App with Ionic Native and InAppBrowser"
 image: "images/content/ionic-3-inappbrowser.png"
-excerpt: "Full Ionic 2/Ionic 3 mobile app with Ionic Native 3.x and InAppBrowser"
+excerpt: "Full Ionic 5 mobile app with Ionic Native 5 and InAppBrowser"
+date: 2020-05-03
 tags : ionic
 ---
 
@@ -13,10 +14,10 @@ tags : ionic
 
 In previous post(s), we have wrote about the Cordova InAppBrowser plugin and how to use it with Ionic framework.
 
-Since this is one of the most researched post in our website on Google, we have decided to write an updated tutorial showing you an example demo for how to use InAppBrowser with the latest Ionic 4 (released on 2019) and Ionic Native, which
+Since this is one of the most researched post in our website on Google, we have decided to write an updated tutorial showing you an example demo for how to use InAppBrowser with the latest Ionic 5 and Ionic Native 5, which
 has introduced some changes on how to use native plug-ins in order to increase performance and reduce the final app size.
 
-> Note: You can use either Ionic 3 or Ionic 4/Angular with this tutorial.   
+> Note: You can use either Ionic 4/Angular or Ionic 5/Angular with this tutorial.   
 
 
 As always we have to say that you need to have all development requirements installed and configured on your machine: 
@@ -45,7 +46,7 @@ The Ionic CLI installed.
 </li>
 </ul>
 
-We are going to cover how to install the Ionic CLI 4 and Cordova in this tutorial since it is a matter of entering some commands.
+We are going to cover how to install the Ionic CLI 5 and Cordova in this tutorial since it is a matter of entering some commands.
 
 ## What InAppBrowser plugin can be used for 
 
@@ -54,7 +55,7 @@ and you are looking for how to use it inside your project which is what we are g
 tutorial, but let's first see what is InAppBrowser? And the different situations where you may need to use it.
 
 InAppBrowser is a Cordova plugin that allows you to open an in app browser in your Cordova app or in our case 
-Ionic 4 app. This in app browser can be used to open external URLs just like any normal web browser from your app.
+Ionic 5 app. This in app browser can be used to open external URLs just like any normal web browser from your app.
 
 InAppBrowser can be used to open the system browser, an in app browser which uses its own web-view or even the same webview used by Cordova/Ionic. You can control this behavior by using parameters such as <em>_self ,_system and _blank</em>. 
 
@@ -78,9 +79,9 @@ Launch an in app browser that you can do what the hell you want with it.
 
 > Note: If you are looking for a more powerful, customizable and feature rich version of InAppBrowser then you may want to check the ThemeableBrowser which is a fork of InAppBrowser with more features.
 
-## Installing Cordova and Ionic CLI 4 
+## Installing Cordova and Ionic CLI 5
 
-Cordova and Ionic CLI 4 are both NPM modules so you can easily install using npm.
+Cordova and Ionic CLI 5 are both NPM modules so you can easily install using npm.
 
 Open your terminal on Linux/MAC OS or command on Windows and run the following commands:
 
@@ -90,9 +91,9 @@ Open your terminal on Linux/MAC OS or command on Windows and run the following c
 
 > Note: On MAC OS and Linux you may need to add sudo before npm install if you want to install modules globally.  
 
-## Generating a new Ionic 4 Project
+## Generating a new Ionic 5 Project
 
-After installing Cordova and Ionic CLI 4, you can generate a new Ionic 4 project with one command from your terminal/command prompt using the Ionic CLI:
+After installing Cordova and Ionic CLI 5, you can generate a new Ionic 5 project with one command from your terminal/command prompt using the Ionic CLI:
 
     ionic start myInAppBrowserExampleDemo blank --type=angular
 
@@ -119,7 +120,7 @@ Now you can add Cordova plugins. Let's add the InAppBrowser plugin using:
 
 ## Installing the Ionic Native Plugin for InAppBrowser 
 
-Now, let's install the Ionic native plug-in for interacting with the InAppBrowser inside Ionic 4/Angular 
+Now, let's install the Ionic native plug-in for interacting with the InAppBrowser inside Ionic 5/Angular 
 project. You can access any Cordova plug-in using the plain old way but using Ionic Native 
 allows your plugin to integrate seamlessly with Angular Promises and Observables since this is what an Ionic Native plug-in does - It wraps the Cordova plug-in API with a Promises and Observables interface instead of callbacks.
 
@@ -225,7 +226,7 @@ You can find a tutorial for [ThemeableBrowser here](/ionic-2-webview-themeablebr
 The InAppBrowser cordova plug-in can be very useful,especially for using third party services in your mobile app such as social authentication systems and payment processors. Also to open external URLs either with a built in browser or with the system browser.
 
 This tutorial was an updated version, for a previuosly written post, which shows you 
-how to use this plugin with Ionic 4 based on Angular.
+how to use this plugin with Ionic 5 based on Angular.
 
 
 
