@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Installing PostgreSQL 11 on Ubuntu 20.04"
+title: "Installing PostgreSQL 12 Server on Ubuntu 20.04"
 image: "images/content/ubuntu.png"
-excerpt: "In this post, you'll see how you can install PostgreSQL on Ubuntu 20.04" 
+excerpt: "In this post, you'll see how you can install PostgreSQL 12 on Ubuntu 20.04" 
 tags : [ubuntu , postgresql]
 ---
 
-PostgreSQL is a popular database used with many development stacks and languages. You can install PostgreSQL on your Ubuntu 20.04 system using the following steps.
+PostgreSQL is a popular database used with many development stacks and languages. You can install PostgreSQL 12 server on your Ubuntu 20.04 system using the following steps.
 
-## How to Install PostgreSQL 11 on Ubuntu 20.04?
+## How to Install PostgreSQL 12 Server on Ubuntu 20.04?
 
 PostgreSQL is included in the official repositories of Ubuntu 20.04 so you can simpy use the official `apt` package manager by running the following commands in your terminal:
 
@@ -19,9 +19,9 @@ $ sudo apt install postgresql postgresql-contrib
 
 You first update the cache in your system using the `apt update` command, next you install the `postgresql` and `postgresql-contrib` packages using the `apt install` command.
 
-![Install PostgreSQL 11 in Ubuntu 20.04](https://www.diigo.com/file/image/badcbccczobbosoreszdrpbrpbo/Screenshot+from+2019-06-14+20-01-05.jpg?k=f44553264235d5591536a09571675751)
+![Install PostgreSQL 12 in Ubuntu 20.04](https://www.diigo.com/file/image/badcbccczobbosoreszdrpbrpbo/Screenshot+from+2019-06-14+20-01-05.jpg?k=f44553264235d5591536a09571675751)
 
-## How to Use PostgreSQL 11 in Ubuntu 20.04?
+## How to Use PostgreSQL 12 in Ubuntu 20.04?
 
 By default a user account called **postgres** is created for you when setup is finished. You need to log into this default account to be able to run PostgreSQL commands using the following command:
 
@@ -78,4 +78,4 @@ CREATE TABLE test (
 
 ## Conclusion
 
-In this tutorial, you have installed and configured the PostgreSQL 11 database on your Ubuntu 20.04 system.
+In this tutorial, you have installed and configured the PostgreSQL 12 server database on your Ubuntu 20.04 system.
