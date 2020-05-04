@@ -1,27 +1,39 @@
 ---
 layout: post
-title: "Angular 7/8 RxJS 6 In-Depth Tutorial & Example"
+title: "JavaScript Reactive/Asynchronous Code with RxJS 6 & Angular 10: Callbacks, Promises and Observables"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn to use the RxJS 6 library with Angular 7/8. We'll learn about how to import the Observable class and the other operators. How to subscribe and unsubscribe from Observables, how to import and call operators and wrap them with the `pipe()` function. We'll also see how to use the async pipe to subscribe to Observables from templates" 
-tags : [angular] 
+excerpt: "In this tutorial, we'll learn to use the RxJS 6 library with Angular 10.9. We'll learn about how to import the Observable class and the other operators. How to subscribe and unsubscribe from Observables, how to import and call operators and wrap them with the `pipe()` function. We'll also see how to use the async pipe to subscribe to Observables from templates" 
+date: 2020-05-04
+tags : [angular, angular-10, javascript] 
 ---
 
+  
 
-In this tutorial, we'll learn to use the RxJS 6 library with Angular 7/8. We'll learn about:
+Throughout this tutorial, you'll be introduced to JavaScript reactive and asynchronous code, data streams and RxJS 6 used in Angular.
+
+You'll learn that reactive programming in JavaScript is about coding with asynchronous data streams and that RxJS is the most popular JavaScript implementation that implements Observables and the observer pattern.   
+
+You'll learne about RxJS operators, the methods that are used to compose Observables and work on their data streams.
+ 
+Next, you'll learn that Angular 10/9 uses RxJS v6 for working with asynchronous operations and APIs (instead of callbacks and Promises) in many of its commonly used modules such as HttpClient, Router and Reactive Forms.
+
+## Reactive eXtensions for JavaScript with Angular 10
+
+We'll learn to use the RxJS 6 library with Angular 10/9. We'll learn about:
 
 
 - How to import the Observable class and the other operators.
 - How to subscribe and unsubscribe from Observables.
 - How to import and call operators and chain them with the `pipe()` function.
-- We'll also see how to use the async pipe to subscribe to Observables from Angular templates. 
+- We'll also see how to use the async pipe to subscribe to Observables from Angular 10 templates. 
 - Finally we'll see how to use some popular pipeable operators such as `tap()`, `map()` and `filter()` and their new import paths in RxJS 6.
 
 
-> **Note**: This tutorial works with both Angular 7 and Angular 8.
+> **Note**: This tutorial works with both Angular 10 and Angular 9.
 
 This tutorial is divided in two parts. You can check out the second tutorial from this [link](https://www.techiediaries.com/observables-and-subjects-tutorial).
 
-Throughout this tutorial, we’ll start looking at what reactive programming, asynchronous operations and data streams are and how they are related to the RxJS library. We’ll then see the concept of an RxJS `Observable` with examples, the various types of Observables such as:
+We’ll start looking at what reactive programming, asynchronous operations and data streams are and how they are related to the RxJS library. We’ll then see the concept of an RxJS `Observable` with examples, the various types of Observables such as:
 
 
 - `Subject`, 
@@ -29,9 +41,9 @@ Throughout this tutorial, we’ll start looking at what reactive programming, as
 - unicast and multicast Observables, 
 - cold and hot Observables  etc.
 
-Next, we’ll see what RxJS operators are and examples of some popular operators such as `tap()`, `map()`, `filter()`, `share()`, etc. And finally we’ll see how Angular uses the RxJS Observable to do asynchronous programming. 
+Next, we’ll see what RxJS operators are and examples of some popular operators such as `tap()`, `map()`, `filter()`, `share()`, etc. And finally we’ll see how Angular 10 uses the RxJS Observable to do asynchronous programming. 
 
-## What is Reactive Programming
+## What is Reactive Programming in JavaScript?
 
 
 ![What is Reactive Programming](https://d2mxuefqeaa7sj.cloudfront.net/s_98CC91BB1D7ABCD50AC04362B7F541F3549A631A6219D02FE7AED5645CF1CAA7_1549549534749_use-reactive-programming-you-must.jpg)
@@ -56,7 +68,7 @@ This means reactive programming is a declarative (vs. a procedural) style of pro
 
 For a detailed guide on reactive programming and data streams, check out: [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754).
 
-## What is Stream
+## What is a Stream in JavaScript Reactive Programming?
 
 A stream is an essential concept in reactive programming so it's worth seeing the definition before we proceed further.
 
@@ -76,9 +88,9 @@ Simply put:
 
 We'll see later that Observables and streams are very related concepts.
 
-## What is RxJS
+## Introducing the RxJS Library (Reactive Extensions for JavaScript)
 
-Now, that we’ve seen the conceps of reactive programming and data streams, let’s see what RxJS is.
+Now, that we’ve seen the conceps of reactive programming and data streams, let’s see what's the JavaScript RxJS library.
 
 
 ![What is RxJS](https://d2mxuefqeaa7sj.cloudfront.net/s_98CC91BB1D7ABCD50AC04362B7F541F3549A631A6219D02FE7AED5645CF1CAA7_1549549625485_what-if-reactive-programming-is-just-a-myth-and-facebook-and-netflix-dont-exist.jpg)
@@ -101,11 +113,12 @@ RxJS 6 has many advantages over the previous RxJS 5 version(s), such as:
   - The latest version provides better debugability,
   - A better modular architecture,
   - It's backward compatible.
-## How to Install and Use RxJS
 
-RxJS is a JavaScript library which means you can install it in the same way you install other libraries:
+## How to Install and Use Reactive Extensions for JavaScript Library?
 
-## Using RxJS with ES6 via npm
+RxJS is a JavaScript library which means you can install it in the same way you install other libraries.
+
+## Using Reactive Extensions for JavaScript Using ES6 via npm
 
 In your project, you can run the following command to install RxJS:
 
@@ -120,9 +133,9 @@ You can then import the symbols you want to use from the `rxjs` package or a sub
 
 We imported the `Observable` and `Subscriber` symbols from `rxjs` and the `tap`, `map` and `filter` operators from `rxjs/operators`. 
 
-We'll see later what these symbols are and how to use them in your Angular application.
+We'll see later what these symbols are and how to use them in your Angular 10 application.
 
-## Using RxJS from a CDN
+## Using Reactive Extensions for JavaScript from a CDN
 
 You can also use RxJS from a [CDN](https://unpkg.com/rxjs/bundles/rxjs.umd.min.js) using a `<script>` in your HTML document:
 
@@ -130,10 +143,10 @@ You can also use RxJS from a [CDN](https://unpkg.com/rxjs/bundles/rxjs.umd.min.j
     <script src="https://unpkg.com/rxjs/bundles/rxjs.umd.min.js"></script>
 
 
-> **Note**: Please note that in Angular 7/8, RxJS 6 is already included in your project so you don't need to install it manually.
+> **Note**: Please note that in Angular 10/9, RxJS 6 is already included in your project so you don't need to install it manually.
 
 
-## What is an Observable, Observer and Subsription in RxJS 6
+## What is an Observable, Observer and Subsription in RxJS 
 
 RxJS uses the concept of Observables to handle and work with asynchronous and event-based code.
 
@@ -150,7 +163,9 @@ Let's make this simple!
 
 **Asynchronous** code is the inverse of **synchronous** code which is the original way of thinking about your code when you are first introduced to programming. 
 
-Your code is synchronous when it's running in sequences i.e instruction by instruction in the order they appear in the source code. 
+Your JavaScript code is synchronous when it's running in sequences i.e instruction by instruction in the order they appear in the source code. 
+
+## Example Synchronous JavaScript Code
 
 For example, let's consider this simple JavaScript code:
 
@@ -162,11 +177,13 @@ For example, let's consider this simple JavaScript code:
 
 The browser will run this synchronous code line by line from line 1 to 4 starting by assigning the `foo` and `bar` variables, concatenating them and displaying the `foobar` variable in the console.
 
+## JavaScript Supports the Asynchronous Way..
+
 JavaScript supports also the **asynchronous** approach of writing code which makes sense, since you need to respond to the user events in the browser but you don't actually know when the user interacts with your application (and in which order) when you are writing code.
 
-This was originally achieved using callbacks which you need to define in your code and specify when they will be called. 
+This was originally achieved using callbacks which you need to define in your JavaScript code and specify when they will be called. 
 
-For example, the following asynchronous code will display **You clicked the button!** when the user clicks the button identified by the `mybutton` identifier:
+For example, the following JavaScript asynchronous code will display **You clicked the button!** when the user clicks the button identified by the `mybutton` identifier:
 
 
     document.getElementById('mybutton').addEventListener('click', () => {
@@ -175,7 +192,9 @@ For example, the following asynchronous code will display **You clicked the butt
 
 The second argument of the `addEventListener()` method is the callback.
 
-You can also use callbacks to handle asynchronous operations which don't involve the DOM. For example, the following code can be used to send an HTTP POST request to a web server:
+## Handling Asynchronous Code in JavaScript Using Callbacks
+
+You can also use callbacks to handle asynchronous operations in JavaScript which don't involve the DOM. For example, the following code can be used to send an HTTP POST request to a web server:
 
 
     const xhr = new XMLHttpRequest()
@@ -198,6 +217,8 @@ If you have ever extensively worked with callbacks, you'll notice one problem wi
 
 When you write complex applications you usually end up writing nested callbacks (callbacks inside callbacks) with multiple nesting levels. This is what's known as the [callback hell](https://stackoverflow.com/questions/25098066/what-is-callback-hell-and-how-and-why-rx-solves-it). 
 
+## Using Promises and Async/Await Syntax for Handling JavaScript Asynchronous Code
+
 Modern JavaScript introduced other approaches or abstractions to deal with asynchronous operations (without using too much callbacks) such as [Promises](https://www.techiediaries.com/javascript-promises-tutorial-example/) and [Async/Await](https://www.techiediaries.com/javascript-async-await-tutorial/).
 
 Promises have been introduced in [ES6](https://www.ecma-international.org/ecma-262/6.0/) (JS 2015).
@@ -205,6 +226,9 @@ Promises have been introduced in [ES6](https://www.ecma-international.org/ecma-2
 Async/await has been introduced in ES8 (JS 2017) and it's actually a syntactic sugar on top of Promises which helps developers write asynchronous code with Promises in a way that looks synchronous.
 
 But Promises are actually similar to callbacks and have the same nesting problem at some degree.
+
+## Using Observables for Handling Handling JavaScript Asynchronous Code
+
 
 Since developers are always looking for better solutions we now have Observables which use the [observer](https://en.wikipedia.org/wiki/Observer_pattern) software pattern.
 
@@ -219,8 +243,6 @@ Observables are implemented in the [ReactiveX](http://reactivex.io/) project whi
 > Observables are not yet a builtin feature of JavaScript but there is a [proposal](https://tc39.github.io/proposal-observable/) to add them in EcmaScript. 
 
 
-
-
 ## RxJS Operators
 
 RxJS provides the implemenation of Observable concept but also a variety of operators that allows you to compose Observables. 
@@ -232,7 +254,7 @@ An operator works on a source Observable by observing its emitted values and app
 There many RxJS operators such as:
 
 
--  `tap()`, 
+- `tap()`, 
 - `map()`, 
 - `filter()`, 
 - `concat()`, 
@@ -243,7 +265,7 @@ There many RxJS operators such as:
 - and `flatMap()` etc.
 
 
-## Pipes: Combining Multiple Operators
+## RxJS Pipes: Combining Multiple Operators
 
 RxJS provides two versions of the `pipe()` function: A standalone function and a method on the `Observable` interface.
 
@@ -262,7 +284,7 @@ The `of()` method will create and return an Observable from the `1, 2, 3, 4, 5,6
 
 
 
-## Using the `map()` Operator
+## Using the RxJS `map()` Operator
 
 The `map()` operator is similar to the `Array.map()` method. It lets you map observable responses to other values. For example:
 
@@ -282,7 +304,7 @@ The operator enables us to map the response of the Observable stream to the `dat
 We import the pipeable operator `map()` from the `rxjs/operators` package and we use the `pipe()` method (which takes a variable number of pipeable operators) to wrap the operator.
 
 
-## Using the `filter()` Operator
+## Using the RxJS `filter()` Operator
 
 The `filter()` operator is similar to the `Array.filter()` method. It lets you filter the observable stream and returns another observable. For example:
 
@@ -307,8 +329,6 @@ In this tutorial, you have been introduced to reactive programming, data streams
 
 You have learned that reactive programming is about coding with asynchronous data streams and that RxJS is the most popular implementation that implements Observables and the observer pattern.
 
-   
-
 You learned about RxJS operators which are methods that are used to compose Observables and work on their data streams.
  
- Finally, you learned that Angular 6 & 7 uses RxJS v6 for working with asynchronous operations and APIs (instead of callbacks or Promises) in many of its commonly used modules such as `HttpClient`, `Router` and `ReactiveForms`.  
+Finally, you learned that Angular 10/9 uses RxJS v6 for working with asynchronous operations and APIs (instead of callbacks and Promises) in many of its commonly used modules such as `HttpClient`, `Router` and `ReactiveForms`.  

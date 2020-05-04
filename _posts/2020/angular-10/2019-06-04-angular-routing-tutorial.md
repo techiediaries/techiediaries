@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "Adding Routing to your Angular 8 App"
+title: "Adding Routing to your Angular 10 App by Example"
 image: "images/content/angular.png"
-excerpt: "Adding Angular Routing to your Angular 8 App" 
-tags : [ angular , angular8, angular-9-router-examples, angular-9-tutorials ]
+excerpt: "Adding Angular Routing to your Angular 10 App" 
+date: 2020-05-04
+tags : [ angular , angular-10 ]
 ---
 
-In the previous [tutorial](https://www.techiediaries.com/angular-tutorial), we’ve created our Angular 8 CRM application using Angular CLI, let’s now see how we can add routing and navigation to our application.
+In the previous [tutorial](https://www.techiediaries.com/angular-tutorial/), we’ve created our Angular 10 pplication using Angular CLI, let’s now see how we can add routing and navigation to our applications.
 
 We’ll learn how we can set up routing manually using a Router Module and outlet, how to add routes to our components to the Router configuration and how to use the `redirectTo` property to redirect users to different routes. We’ll also see the difference between the `prefix` and `full` matching strategies and how to use the `routerLink` directive to create navigation links.   
 
-## How to Set up Routing in Angular?
+## How to Set up Routing in Angular 10 by Example
 
-Routing can be easily added to a project. In fact, when we previously created our project using the CLI. We were prompted if we  **Would you like to add Angular routing? (y/N).** We answered by **y.** Angular router was setup in our project without having to add it manually.
+Routing can be easily added to an Angular 10 project. In fact, when you create your project using the CLI. You will be prompted if you  **Would you like to add Angular routing? (y/N).** If you answer with **y** for Yes, the Angular 10 router will be automatically setup in your project without having to add it manually.
 
-## The Routing Module
+## The Angular 10 Routing Module
 
-Basically, the CLI will create a `src/app/app-routing.module.ts` file with the following content:
+Basically, the CLI will create a `src/app/app-routing.module.ts` file with the following code:
 
 
     import { NgModule } from '@angular/core';
@@ -29,11 +30,13 @@ Basically, the CLI will create a `src/app/app-routing.module.ts` file with the f
     })
     export class AppRoutingModule { } 
 
-It’s an Angular module that imports a `RouterModule` with routes and exports a `RouterModule` . You only need to add your application routes in the `routes` array.
+It’s an Angular module that imports a `RouterModule` with routes and exports a `RouterModule`. You only need to add your application routes in the `routes` array.
 
-The `routes` array will contain all the routes of the application. After creating the components we'll now see how to add the routes to this array.
+The `routes` array will contain all the routes of the application. After creating the components, you'll need to add the corresponding routes to this array.
 
-## The Router Outlet
+> Please note that not all components should have routes, some components can be simply invoked from a parent component without being routed via the router.
+
+## The Angular 10 Router Outlet
 
 The CLI will also add a router outlet to the `src/app/app.component.html` file:
 
@@ -43,12 +46,21 @@ The CLI will also add a router outlet to the `src/app/app.component.html` file:
 The Router outlet is where the Router inserts the component that matches the current route.
 
 
-> **Note**: If you didn’t tell the CLI to automatically add routing to your project, you simply need to manually add routing module and the router outlet to your project to set up routing.   
+> **Note**: If you didn’t tell the CLI to automatically add routing to your Angular project, you simply need to manually add a routing module and router outlet to your project to set up routing.   
 
 
-## Adding Component Routes to The Router Configuration
+## Adding Angular 10 Component Routes to The Router Configuration
 
 Now, let's add components to our router configuration and navigation links in our template.
+
+Here, we'll assume we have already generated the following components using the `ng g component` command:
+
+- AccountListComponent
+- AccountCreateComponent
+- ContactListComponent 
+- ContactCreateComponent 
+- ActivityListComponent
+- ActivityCreateComponent
 
 Open the `src/app/app-routing.module.ts` file and start by adding the following imports to the components:
 
@@ -108,16 +120,16 @@ Next let's add the other paths:
 
 In these examples we used a combination of the `path` and `component` properties to create the routes.
 
-We didn’t specify  a matching strategy with the `pathMatch` property which means the router will use the default strategy which is the `prefix` strategy.
+We didn’t specify a matching strategy with the `pathMatch` property which means the router will use the default strategy which is the `prefix` strategy.
 
 This is a screenshot of our unstyled UI at ths point:
 
-![Angular 8 Routing Example](https://www.diigo.com/file/image/bbccosoazobaopbbopzdrocqpsb/Ngsimplecrm8.jpg)  
+![Angular 10 Routing Example](https://www.diigo.com/file/image/bbccosoazobaopbbopzdrocqpsb/Ngsimplecrm8.jpg)  
 
 In the next tutorial, we'll style this UI with Material Design.
 
 
-## Adding Navigation Using `routerLink`
+## Adding Angular 10 Navigation Using `routerLink`
 
 Let’s now see how we can add navigation using the `routerLink` directive 
 
@@ -137,7 +149,7 @@ Go ahead and open the `src/app/app.component.html` file where the router outlet 
 
 ## Conclusion
 
-In this tutorial, we’ve learned about Angular routing and we’ve added navigation to our simple CRM application.
+In this tutorial, we’ve learned about Angular 10 routing and we’ve added navigation to our simple CRM application.
 
 See you in the next part where we’ll be adding Angular Material to our application to build a professional-looking UI.
 

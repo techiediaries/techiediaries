@@ -2,19 +2,19 @@
 layout: bpost
 title: "Angular 10/9 Services"
 image: "images/content/html.png"
-excerpt: "Learn about Angular 10/9 services"
+excerpt: "Learn about services in Angular 10 and previous versions"
 date: 2020-04-15
 tags: [ angular ] 
 ---
 
 
-In this post, we'll look at services with Angular 10/9.
+In this post, we'll look at services in Angular 10 and previous versions.
 
 After understanding modules and components, let’s see what Angular services are. 
 
-## What's an Angular Service?
+## What's an Angular 10 Service?
 
-In Angular, a service is a singleton that can be wired with components or other services via **Dependency Injection**.
+In Angular 10 and previous versions, a service is a singleton that can be wired with components or other services via **Dependency Injection**.
  
 According to [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection):
 

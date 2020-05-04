@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "What is an Angular 6|7 Workspace?"
+title: "What is an Angular 10 Workspace?"
 image: "images/content/angular.png"
-excerpt: "What is an Angular 6|7 Workspace?" 
-tags : [angular] 
+excerpt: "What is an Angular 10 Workspace?" 
+date: 2020-05-04
+tags : [angular, angular-10] 
 ---
 
-An [Angular workspace](https://angular.io/guide/glossary#workspace) allows you to organize your whole web application into smaller and multiple projects. Most small Angular apps will only contain one or two projects per workspace. For example, when you generate an Angular project with Angular CLI, the workspace contains a project for the actual app and a project for e2e tests.    
+An [Angular workspace](https://angular.io/guide/glossary#workspace) allows you to organize your whole web application into smaller and multiple projects. Most small Angular apps will only contain one or two projects per workspace. For example, when you generate an Angular 10 project with Angular CLI, the workspace contains a project for the actual app and a project for e2e tests.    
 
 The [Angular docs](https://angular.io/guide/file-structure) describes a project as:
 
@@ -14,27 +15,27 @@ The [Angular docs](https://angular.io/guide/file-structure) describes a project 
 
 You can create two types of projects: **Application** or **Library**.
 
-Just like the typical concept of a library in software development, a library refers to a set of reusable code that can be shared between many projects.  Angular CLI also makes it easy to publish your library to a central registry like npm to be used by other developers.
+Just like the typical concept of a library in software development, a library refers to a set of reusable code that can be shared between many projects.  Angular CLI v10 also makes it easy to publish your library to a central registry like npm to be used by other developers.
 
 The **Application** type refers to standalone Angular application. 
 
-Workspaces are first introduced in Angular 6 and got some updates in Angular 7.
+Workspaces are first introduced in Angular 6.
 
-## Angular CLI 7: Create Empty Workspaces
+## Angular CLI 10: Create Empty Workspaces
 
-Angular CLI 7 introduced a new CLI option (`--create-application`) that you can add to your `ng new` command to create an empty workspace. This is especially useful if you only intend to create a library that you can import in other projects ot publish for other developers.
+Angular CLI 7+ provides a new CLI option (`--create-application`) that you can add to your `ng new` command to create an empty workspace. This is especially useful if you only intend to create a library that you can import in other projects ot publish for other developers.
 
-The `--create-application` option is used with the `ng new` command which can take either true or false. By default it's set true so whenever you create a new project it comes with the initial application. You can also set `--create-application` to **false** to instruct the CLI to not create the initial Angular application in the workspace. 
+The `--create-application` option is used with the `ng new` command which can take either true or false. By default it's set true so whenever you create a new project it comes with the initial application. You can also set `--create-application` to **false** to instruct the CLI to not create the initial Angular 10 application in the workspace. 
 
 Let's now see this in practice!
 
-Make sure you have Angular CLI 7 installed on your system then open your terminal and run the following command:
+Make sure you have Angular CLI 10 installed on your system then open your terminal and run the following command:
 
 ```bash
 $ ng new angular-apps --create-application=false
 ```
 
-Angular CLI will still prompt you if you ? **Would you like to add Angular routing?** and **Which stylesheet format would you like to use?** 
+Angular CLI 10 will still prompt you if you ? **Would you like to add Angular routing?** and **Which stylesheet format would you like to use?** 
 
 But will only generate these files:
  
@@ -46,9 +47,9 @@ But will only generate these files:
 - `angular-apps/.editorconfig` for the configuration of code editors. See [EditorConfig](https://editorconfig.org/),
 - `angular-apps/.gitignore` for specifying files that should be ignored by [Git](https://git-scm.com/). 
 
-The CLI will also install the Angular dependencies into a `node_modules` folder.
+The CLI will also install the Angular 10 dependencies into a `node_modules` folder.
 
-Head back to your terminal, navigate in your Angular workspace:
+Head back to your terminal, navigate in your Angular 10 workspace:
 
 ```bash
 $ cd angular-apps
@@ -82,7 +83,7 @@ Two `projects/admin/src/app/auth.service.spec.ts` and `projects/admin/src/app/au
 
 ## Serving Specific Apps in Your Workspace
 
-You can serve a specif application in your workspace using the following command:
+You can serve a specific application in your workspace using the following command:
 
 ```bash
 $ ng serve admin
@@ -93,4 +94,4 @@ Where `admin` is the name of the application that you want to serve.
 
 ##  Conclusion
 
-In this quick post, we've seen what is an Angular Workspace and how to create an empty workspace, how to create applications and libraries into the Workspace.
+In this quick post, we've seen what is an Angular Workspace and how to create an empty workspace with an Angular 10 example, then how to add applications and libraries in the Workspace.
