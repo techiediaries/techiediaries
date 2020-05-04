@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Building Django HTTP APIs with GraphQL and Graphene"
+title: "Building Django 3 HTTP APIs with GraphQL and Graphene"
 image: "images/content/django4.jpg"
-excerpt: "This tutorial will introduce you to GraphQL with Python, Django and Graphene. We'll see how to create a simple Django project to demonstrate how to build an API server based on GraphQL (instead of REST) then we'll see how to use graphiql_django, an interface for testing GraphQL queries and mutations before building your front-end application, to send GraphQL Queries (for getting data) and Mutations (for posting and updating data). In this part we'll be dealing with building the backend. In the next tutorials we will see how to use frameworks and libraries such as Angular and React to build a front-end application that consumes and updates our GraphQL server and advanced use cases such as user authentication, permissions and Relay" 
-
+excerpt: "This tutorial will introduce you to GraphQL with Python, Django 3 and Graphene. We'll see how to create a simple Django 3 project to demonstrate how to build an API server based on GraphQL (instead of REST) then we'll see how to use graphiql_django, an interface for testing GraphQL queries and mutations before building your front-end application, to send GraphQL Queries (for getting data) and Mutations (for posting and updating data). In this part we'll be dealing with building the backend. In the next tutorials we will see how to use frameworks and libraries such as Angular and React to build a front-end application that consumes and updates our GraphQL server and advanced use cases such as user authentication, permissions and Relay" 
+date: 2020-05-04
 tags : [django , graphql] 
 next : /django-graphql-tutorial/graphene
 ---
 
 ![](/images/content/django4.jpg)
 
-**This tutorial will introduce you to GraphQL with Python, Django and Graphene. We'll see how to create a simple Django project to demonstrate how to build an API server based on GraphQL (instead of REST) then we'll see how to use *graphiql_django*, an interface for testing GraphQL queries and mutations before building your front-end application, to send GraphQL Queries (for getting data) and Mutations (for posting and updating data). In this part we'll be dealing with building the backend. In the next tutorials we will see how to use frameworks and libraries such as Angular and React to build a front-end application that consumes and updates our GraphQL server and advanced use cases such as user authentication, permissions and Relay**
+**This tutorial will introduce you to GraphQL with Python, Django 3 and Graphene. We'll see how to create a simple Django 3 project to demonstrate how to build an API server based on GraphQL (instead of REST) then we'll see how to use *graphiql_django*, an interface for testing GraphQL queries and mutations before building your front-end application, to send GraphQL Queries (for getting data) and Mutations (for posting and updating data). In this part we'll be dealing with building the backend. In the next tutorials we will see how to use frameworks and libraries such as Angular and React to build a front-end application that consumes and updates our GraphQL server and advanced use cases such as user authentication, permissions and Relay**
 
 Make sure to follow me on twitter ([@techiediaries](https://twitter.com/techiediaries)) to be notified once the next tutorial parts are ready. 
 
@@ -66,7 +66,7 @@ Thanks to GraphQL, the client can exactly describe the shape of the requested da
 
 Let's take one more simple example to understand how GraphQL works.
 
-Suppose we have a Django web application with two models: *Products* and *Families*:
+Suppose we have a Django 3 web application with two models: *Products* and *Families*:
 
 ```python
 
@@ -106,7 +106,7 @@ The problem is: What if you need to build another front end app, maybe for mobil
 In the case of Rest-based APIs, the server API architecture is strongly coupled with the client implementation, as a result if you need to change the API implementation on the server, you'll definitely end up breaking the existing clients. And if you need to add another client for your API, which needs less or more data, that's served by some endpoint(s), you'll have to change the server code responsible for serving the API in a way that doesn't break the existing clients. That means, in many cases, conserving the old endpoints and adding new endpoints.            
 
 
-If you have ever developed an API with Django or any other framework then you certainly experienced one or all 
+If you have ever developed an API with Django 3 or any other framework then you certainly experienced one or all 
 of these issues we have talked about. Thanks to Facebook, GraphQL presents the solution for you!
 
 Continuing with the simple example above. In the case of GraphQL, we can send a query that may look like:
@@ -165,9 +165,9 @@ If you send this query to your GraphQL server, you'll get something similar to:
 
 Even if this example is fairly simple, you can see how powerful this new technology can be, for building Web APIs.
 
-## Building a GraphQL Django Application 
+## Building a GraphQL Django 3 Application 
 
-After the introduction to GraphQL vs. REST. Let's now learn how to build a simple real world example web application with Django and Graphene: the Python implementation for GraphQL.
+After the introduction to GraphQL vs. REST. Let's now learn how to build a simple real world example web application with Django 3 and Graphene: the Python implementation for GraphQL.
 
 This tutorial assumes you have already setup your development machine to work with Python. You need to have Python, PIP (Python package manager) and optionally *virtualenv* installed. Python can be easily installed by grabbing the binaries for your operating system from the [official website](http://www.python.org/download). 
 
@@ -184,7 +184,7 @@ For [virtualenv](https://pypi.python.org/pypi/virtualenv) you can use [virtualen
 pip install virtualenvwrapper
 ```   
 
-Let's start by creating a new virtual and isolated environment for our project dependencies and then install the required packages including django.
+Let's start by creating a new virtual and isolated environment for our project dependencies and then install the required packages including Django 3.
 
 Head over to your terminal in Linux/Mac or command prompt in Windows then run the following:
 
@@ -195,7 +195,7 @@ source graphqlenv/bin/activate
 
 This will create a new virtual environment and activate it.
 
-Next install django and graphene packages with pip: 
+Next install Django 3 and graphene packages with pip: 
 
 ```bash
 pip install django 
@@ -208,7 +208,7 @@ You can also install *graphiql_django* which provides a user interface for testi
 pip install graphiql_django
 ```
 
-Next let's create a Django project and add a single application:
+Next let's create a Django 3 project and add a single application:
 
 ```bash
 python django-admin.py startproject inventory . 
@@ -238,7 +238,7 @@ Next migrate the database with:
 python manage.py migrate 
 ```
 
-## Adding Django Models
+## Adding Django 3 Models
 
 Open `inventory/models.py` then add:
 
@@ -704,7 +704,7 @@ Inputs are the arguments that the Mutation *CreateProduct* needs for resolving, 
 
 ## Conclusion 
 
-GraphQL is a very powerful technology for building Web APIs and thanks to Django Graphene you can easily add the support for GraphQL to your django project.
+GraphQL is a very powerful technology for building Web APIs and thanks to Django 3 Graphene you can easily add the support for GraphQL to your Django 3 project.
 
 You can find the code in this [GitHub repository](https://github.com/techiediaries/django-graphql-graphene-example)
 
