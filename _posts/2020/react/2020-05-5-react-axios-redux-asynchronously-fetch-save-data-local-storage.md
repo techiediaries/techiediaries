@@ -2,7 +2,6 @@
 layout: post
 title:  "React, Axios and Redux: Asynchronously Fetch and Save Data to Local Storage"
 date:   2020-04-25
-canonical: "https://www.ahmedbouchefra.com/react-axios-redux-asynchronously-fetch-save-data-local-storage/"
 tags: [react , javascript]
 ---
 
