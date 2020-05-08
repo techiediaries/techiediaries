@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu 20.04/19.04: Install Python 3.8/3.7/3.6, Pip and Venv"
+title: "Ubuntu 20.04/19.04: Install Python 3.9/3.8/3.7/3.6, Pip and Venv"
 image: "images/content/ubuntu.png"
 excerpt: "Throughout this tutorial, you’ll learn to install Python 3.8 — the latest major version of Python— on Ubuntu 20.04 — the latest version of Ubuntu"
 categories: ubuntu
@@ -9,6 +9,8 @@ tags : [ubuntu, python]
 ---
 
 Throughout this tutorial, you’ll learn to install Python 3.8 — the latest major version of Python — on Ubuntu 20.04 LTS — the latest version of Ubuntu and you’ll install `pip` — the official tool for installing Python packages from PyPI (**Python Package Index**)— then you’ll create a virtual environment using `venv`.
+
+For installing Python 3.9 version, check out the next section.
 
 ## Introducing Python and PIP 
 
@@ -25,6 +27,30 @@ Python 3.8 was released on [October 14th, 2019](https://www.python.org/dev/peps/
 Pip is a utility that allows you to install Python packages. Thanks to pip, you can search, download, and install packages from Python Package Index (PyPI) and other package indexes.
 
 In this post, we'll see how to install pip for Python 3 and Python 2 on Ubuntu 20.04. We will also show the basic concepts for installing and managing Python packages with pip.
+
+
+## How to Install Python 3.9 on Ubuntu 20.04
+
+You can install Python 3.9 using the following instructions.
+
+```bash
+$ sudo apt update
+$ sudo apt install software-properties-common
+```
+
+Next, add the `ppa:deadsnakes/ppa` PPA to your sources list using: 
+
+```bash
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+```
+
+Press enter when asked.
+
+Next, install Python 3.9 version using the following command:
+
+```bash
+$ sudo apt install python3.9
+```
 
 ## How to Install Python 3.8 on Ubuntu 20.04
 
