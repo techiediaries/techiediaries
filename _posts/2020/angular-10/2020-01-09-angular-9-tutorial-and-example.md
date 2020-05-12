@@ -12,6 +12,8 @@ In this tutorial, we will learn by example to create a first application with An
 
 > This is an [updated version of this Angular 8 tutorial](https://www.techiediaries.com/angular-8-tutorial-build-first-angular-calculator-app/) and this [second part](https://www.techiediaries.com/angular-data-event-property-binding/).
 
+![Angular 10 tutorial](https://www.techiediaries.com/assets/angular-10-tutorial.png)
+
 
 ## Angular 10 Tutorial Learning Outcomes
 

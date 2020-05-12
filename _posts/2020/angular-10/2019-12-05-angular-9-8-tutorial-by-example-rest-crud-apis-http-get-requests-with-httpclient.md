@@ -12,6 +12,9 @@ tags : [angular, angular-10, angular-9, angular-9-tutorials ]
 In this Angular 9/10 tutorial, we'll learn to build an Angular 9/10 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding
  a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
 
+ ![Angular 10 tutorial](https://www.techiediaries.com/assets/angular-10-tutorial.png)
+
+
  ## What We'll Learn in this Angular 9/10 Tutorial? 
 
 - We'll learn by example how to send GET requests with URL query strings and parameters and process HTTP responses from REST API servers in your Angular 9/10 application using `Httplient` for fetching and consuming JSON data, how to do error handling for HTTP errors using the RxJS `throwError()` and `catchError()` operators, how to retry failed HTTP requests in poor network connections and cancel pending requests using the RxJS `retry()` and `takeUntil()` operators, and finally how to deploy the application to Firebase hosting using the latest Angular 8.3+ features. 

@@ -10,6 +10,9 @@ tags : [angular, angular-10]
 
 In this quick how-to tutorial, we'll see how to use Angular CLI 10 to generate a project and serve it locally using a live-reload development server.
 
+![Angular 10 tutorial](https://www.techiediaries.com/assets/angular-10-tutorial.png)
+
+
 Angular 10 beta is released so the final release is due soon. Let's see how to install the latest beta version and create a new project. 
 
 Throughout this tutorial, we’ll see how to install  Angular CLI 10 and initialize a new Angular 10 project with routing.

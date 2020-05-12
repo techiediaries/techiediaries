@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "React Router 5/4 Tutorial with Examples"
+title: "React Router 5/4 Tutorial [2020] with Examples"
 image: "images/content/react.jpg"
 excerpt: "In this tutorial we are going to get you started with react-router-dom (React Router 5/4) using an example React application showing you how to use different concepts such as Link and NavLink for creating links (instead of anchors) in the React way, Switch and exact for enabling exclusive routing and browser routing history"
 categories: react
@@ -8,7 +8,7 @@ date: 2020-03-12
 tags : react 
 ---
 
-In this tutorial we are going to get you started with **react-router-dom** (**React Router 5**) using an example React application showing you how to use different concepts such as **Link** and **NavLink** for creating links (instead of anchors) in the React way, **Switch** and **exact** for enabling exclusive routing and **browser routing history**.
+In this tutorial we are going to get you started with **react-router-dom** (**React Router 5**) in 2020 using an example React application showing you how to use different concepts such as **Link** and **NavLink** for creating links (instead of anchors) in the React way, **Switch** and **exact** for enabling exclusive routing and **browser routing history**.
 
 
 let's see how to use **React Router 5/4** to add client side routing to our application.
