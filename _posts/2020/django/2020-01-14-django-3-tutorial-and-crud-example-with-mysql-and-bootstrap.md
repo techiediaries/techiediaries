@@ -711,4 +711,4 @@ Next, go to the `http://localhost:8000/` address with a web browser.
 
 ## Conclusion 
 
-In this django 3 tutorial, we have initialized a new django project, created and migrated a MySQL database, and built a simple CRUD interface.
+In this django 3 tutorial, we have initialized a new django project, created and migrated a MySQL database, and built a simple CRUD interface. <a href=" https://jooble.org/jobs-django" rel="nofollow">You may also find Django developer jobs with Jooble</a>.
