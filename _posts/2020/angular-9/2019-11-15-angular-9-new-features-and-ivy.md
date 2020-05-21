@@ -10,7 +10,7 @@ tags : [angular , angular-8, angular-9]
 
 In this post, we'll see the new features of Angular 9.1 with the support of TypeScript 3.8, so what's new with the Angular 9.1 version? 
 
-> Note:  The next major beta of Angular is released, check out ][Angular 10 new features](https://www.techiediaries.com/angular-10-new-features/)
+> Note:  The next major beta of Angular is released, check out [Angular 10 new features](https://www.techiediaries.com/angular/angular-10-new-features/)
 
 ## What's New with Angular 9.1?
 
