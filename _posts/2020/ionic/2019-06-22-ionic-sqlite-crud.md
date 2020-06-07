@@ -29,6 +29,8 @@ SQLite database:
 - The `update(tableName , item)` method that will be used for updating data rows.
 - The `remove(tableName , item)` method that will be used for removing a specified row by its ID from the SQLite database.
 
+See also how to use [TypeORM with SQLite database and Ionic 5](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/)
+
 ### Creating SQLite Data 
 
 let's now see an implementation of the `create()` method which takes two parameters, `tableName` which refers to the name of the SQL table and `item` which holds the data to insert:

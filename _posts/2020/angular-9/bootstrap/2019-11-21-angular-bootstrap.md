@@ -21,6 +21,9 @@ These are the steps of our tutorial:
 - <a href="Adding_Bootstrap_4_to_Angular_Method_3">Step 3 (Method 3) - Adding Bootstrap 4 to Angular 9 Using `styles.css` </a>
 - <a href="Adding_Bootstrap_4_Using_ng-bootstrap_and_ngx-bootstrap"> Alternative Step - Adding Bootstrap 4 Using `ng-bootstrap` and `ngx-bootstrap`</a>
 
+> Note: You can also use Ionic UI components to create beautifull and professional Angular apps, read 
+[Building Chat App Frontend UI with JWT Auth Using Ionic 5/Angular 9](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/)
+
 ## What is Bootstrap
 
 [Bootstrap](https://www.techiediaries.com/bootstrap-tutorial) is the most popular HTML and CSS framework for building responsive layouts with ease and without having a deep knowledge of CSS (Still custom CSS is required to customize your design ane make it different from the other Bootstrap-styled websites unless you are using a BS theme developed specifically for you).

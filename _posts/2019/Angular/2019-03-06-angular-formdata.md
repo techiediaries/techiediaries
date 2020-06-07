@@ -8,7 +8,7 @@ tags : [angular, angular-9, angular-how-tos, angular-9-httpclient-examples, angu
 ---
 
 
-In this quick howto tutorial, you'll learn how to work with `FormData` in Angular 9 and TypeScript and how to post it to a web server via a POST request and `HttpClient`. 
+In this quick howto tutorial, you'll learn how to work with [`FormData` in Angular 9 and TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) and how to post it to a web server via a POST request and `HttpClient`. 
 
 One of the most important aspects of web development is forms as they allow you to collect data from users and send it to servers.
 
@@ -16,14 +16,14 @@ If you are new to these how-tos, check out how to [install and set up a project 
 
 There are various ways to work with forms in JavaScript and HTML. Also different frameworks (such as Angular) added other ways to handle forms. 
 
-In this tutorial, we'll be looking at `FormData`, A browser API for handling forms data just like its name suggests. This API provides methods and properties that enable to have access and work with form elements and their values in a straightforward way.
+In this tutorial, we'll be looking at `FormData`, A browser API for handling forms data just like its name suggests. This API provides methods and properties that enable you to have access and work with form elements and their values in a straightforward way.
 
 It's particularly helpful if you are working with client side frameworks like Angular as it allows you to easily prepare form data to be sent with POST HTTP requests.
  
 
-> **Note**: You can think of FormData as a reprsentation of an HTML form in JavaScript instead of HTML. 
+> **Note**: You can think of FormData as a representation of an HTML form in JavaScript instead of HTML. 
 >
-> You also can create a FormData instance from an HTML form 
+> You also can create a FormData instance from an HTML form. 
 
 
 The `FormData` API allows you to create a set of key/value elements that correspond to form fields and their values. This can be then sent to the server using Angular HttpClient. 
@@ -61,6 +61,8 @@ Open the `src/app/upload/upload.component.html` file and add the following form:
 </div>
 ```
 
+You can also check this example with [HTML textarea](https://www.techiediaries.com/angular/textarea-keydown-focusin-events/).
+
 Next, open the `src/app/upload/upload.component.ts` file and start by importing the necessary APIs:
 
 ```ts
@@ -92,7 +94,7 @@ export class UploadComponent implements OnInit {
 
 
 
-Next, create a reactive form in `ngOnInit()` method of the component which gets called when the component is initialized:
+Next, create a reactive form in [`ngOnInit()` method of the component](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) which gets called when the component is initialized:
 
 ```ts
   ngOnInit() {
@@ -102,7 +104,7 @@ Next, create a reactive form in `ngOnInit()` method of the component which gets 
   }
 ```
 
-Next, let's add the `onFileSelect()` method which gets called when a file is selected by the user:
+Next, let's add the `onFileSelect()` method which gets called when a [file is selected](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/) by the user:
 
 ```ts
   onFileSelect(event) {

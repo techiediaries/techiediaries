@@ -33,9 +33,9 @@ $ ng new mat-form-example # Create a project named mat-form-example
 
 > **Note**: You need to have recent versions of Node.js and NPM installed on your system.
 
-## Setting up Angular Material in your Project
+## Setting up Angular Material in your Angular Project
 
-After setting up an example project, you need to import and set up Angular Material in your project and import the individual Material modules that you want to use.
+After setting up an example Angular project, you need to import and set up Angular Material in your project and import the individual Material modules that you want to use using the [import statement of TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/).
 
 You can set up Angular Material in your Angular 9 project using the `ng add` command:
 
@@ -61,7 +61,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 ```
 
-Next, you need to add these modules in the `imports` array of the application module:
+Next, you need to add these modules in the `imports` [array](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/) of the application module:
 
 ```ts
 imports: [ /*...*/, MatInputModule, MatButtonModule, MatCardModule, MatFormFieldModule, MatCheckboxModule, MatDatepickerModule, MatRadioModule, MatSelectModule],

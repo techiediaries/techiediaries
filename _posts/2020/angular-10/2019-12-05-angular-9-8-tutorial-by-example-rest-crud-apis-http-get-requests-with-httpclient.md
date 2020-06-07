@@ -14,6 +14,8 @@ In this Angular 9/10 tutorial, we'll learn to build an Angular 9/10 Ajax CRUD ex
 
  ![Angular 10 tutorial](https://www.techiediaries.com/assets/angular-10-tutorial.png)
 
+> Also see: [Building a Chat App with TypeScript/Node.js, Ionic 5/Angular 9 & PubNub/Chatkit](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
+
 
  ## What We'll Learn in this Angular 9/10 Tutorial? 
 
@@ -216,7 +218,7 @@ Open your web browser and navigate to the `http://localhost:4200/` address to se
 
 You should now leave the development server running and start a new command-line interface for running the CLI commands of the next steps.
 
-In the next step, we'll learn how to create a fake JSON REST API that we'll be consuming in our Angular example application.
+In the next step, we'll learn how to create a fake [JSON REST API](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) that we'll be consuming in our Angular example application.
 
 
 ##   Step 3 — Setting up a (Fake) JSON REST API
@@ -822,12 +824,15 @@ The `takeUntil()` operator allows a notified Observable to emit values until a v
 
 When Angular destroys a component it calls the `ngOnDestroy()` lifecycle method which, in our case, calls the `next()` method to emit a value so RxJS completes all subscribed Observables.
 
-That's it. In this step, we have added the logic to cancel any pending HTTP request by unsubscribing from the returned Observable in case the user descides to navigate away from the component before the HTTP response is received.    
+That's it. In this step, we have added the logic to cancel any pending HTTP request by unsubscribing from the returned Observable in case the user descides to navigate away from the component before the HTTP response is received.   
+
+Also read how to [Unsubscribe from the RxJS subjects](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) when the Angular component is destroyed
+
 
 In the next step of our Angular 9 tutorial, we'll see how to use URL query parameters with the `get()` method of `HttpClient`. 
 
 
-##   Step 12 — Adding URL Query Parameters to the HttpClient get() Method
+##   Step 12 — Adding URL Query Parameters to the HttpClient `get()` Method
 
 In this step, we'll start adding the logic for implementing pagination in our example application. We'll see how to use URL query parameters via [`fromString` and `HttpParams`](https://angular.io/guide/http#use-fromstring-to-create-httpparams) to provide the appropriate values for the the `_page` and `_limit` parameters of the `/products`  endpoint of our JSON REST API server for getting paginated data. 
 
@@ -864,7 +869,7 @@ By default, HttpClient does only provide the response body but in our case we ne
 > The Link header in HTTP allows the server to point an interested client to another resource containing metadata about the requested resource.[Wikipedia](https://www.w3.org/wiki/LinkHeader)
 
 
-Go to the src/app/data.service.ts file and import the RxJS `tap()` operator: 
+Go to the `src/app/data.service.ts` file and import the RxJS `tap()` operator: 
 
 ```ts
 import { retry, catchError, tap } from 'rxjs/operators';

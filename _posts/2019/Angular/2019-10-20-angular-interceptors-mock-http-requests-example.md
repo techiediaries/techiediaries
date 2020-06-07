@@ -82,7 +82,7 @@ export class MockHttpCalIInterceptor implements HttpInterceptor {
 
 ## Step 4 - Registering the HTTP Interceptor 
 
-Next, you need to regsiter the interceptor so Angular can recognize it. Open the `src/app/app.module.ts` file 
+Next, you need to register the interceptor so Angular can recognize it. Open the `src/app/app.module.ts` file 
 
 ```
 import { BrowserModule } from '@angular/platform-browser';
@@ -131,6 +131,7 @@ Open the `tsconfig.json` file and add the `"resolveJsonModule": true` option und
 }
 ```
 
+Now, you can use [TypeScript `import` statement](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) to import JSON files in your Angular project.
 
 ## Step 6 - Intercepting URLs and Returning Mocked JSON Data
 

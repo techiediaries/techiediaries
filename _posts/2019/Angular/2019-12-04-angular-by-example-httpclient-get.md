@@ -9,14 +9,12 @@ tags : [angular, angular8, angular-9-ngfor-examples, angular-9-httpclient-exampl
 In this tutorial, we'll learn by example how to send GET requests to REST API servers in your Angular 7/8 application using `Httplient`. We'll also see how to use Angular services, RxJS Observables, models and the `async` pipe.
 
 
-
-
-> **Note**: Check out the how to use HttpClient with Angular 8 to build a news application from scratch[in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor) 
+> **Note**: Check out the how to use HttpClient with Angular 8 to build a news application from scratch[in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor) or this [tutorial for building a chat app](https://www.techiediaries.com/angular/typescript-node-ionic-chat/).
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lZAP871qYDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-Front end applications, built using frameworks like Angular communicate with backend servers through REST APIs (which are based on the HTTP protocol) using either the `XMLHttpRequest` interface or the `fetch()` API.
+Front end applications, built using frameworks like Angular communicate with [backend servers through REST APIs](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) (which are based on the HTTP protocol) using either the `XMLHttpRequest` interface or the `fetch()` API.
 
 Angular HttpClient makes use of the `XMLHttpRequest` interface which also supports old browsers.
 

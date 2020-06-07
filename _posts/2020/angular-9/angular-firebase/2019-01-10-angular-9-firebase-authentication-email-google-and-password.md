@@ -152,7 +152,7 @@ var config = {
 
 ## Creating the Angular Login & Register UI Components
 
-After setting up Firebase authentication in our project using AngularFire2, we'll now proceed to create a register and login UI.
+After setting up Firebase authentication in our project using AngularFire2, we'll now proceed to create a [register and login UI](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/).
 
 Previously, we have created the `admin` module with a bunch of components to create, update and list the developer's portfolio projects. Now, let's create four more components for user registration and login. In your terminal, run these commands:
 
@@ -241,7 +241,7 @@ export  class  AuthService {
 }
 ```
 
-Next, in the constructor, we subscribe to the authentication state; if the user is logged in, we  add the user's data to the browser's local storage; otherwise we store a null user: 
+Next, in the constructor, we [subscribe to the authentication state](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/); if the user is logged in, we  add the user's data to the browser's local storage; otherwise we store a null user: 
 
 ```typescript
     this.afAuth.authState.subscribe(user => {
@@ -318,6 +318,8 @@ async  loginWithGoogle(){
 ```
 
 We are done with the authentication service. Next, we need to create the login and register UIs.
+
+You can also read how to implement [authentication with TypeScript/Node](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) stack.
 
 ### Implementing the Angular 9 Login UI
 

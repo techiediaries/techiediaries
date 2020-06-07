@@ -8,7 +8,7 @@ date: 2020-03-02
 tags : [angular, angular-9-router-examples]
 ---
 
-In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 9. Let's now secure the UI with router canactivate guards.
+In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 9. Let's now [secure the UI with router canactivate guards](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/).
 
 ## Using Angular 9 Guards and UrlTree Interface for Protecting UIs
 

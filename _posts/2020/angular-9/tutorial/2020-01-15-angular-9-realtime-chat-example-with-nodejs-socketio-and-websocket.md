@@ -13,6 +13,9 @@ In this tutorial, we'll learn how to build a real-time app with Angular 9/8, Soc
 
 WebSocket is the internet protocol that allows for full duplex communication between a server and clients. The server may send data to a client without the client initiating a request. 
 
+You can also read how to build a complete chat app with a hosted service like Pusher Chatkit or PubNub Chat in [Building a Chat App with TypeScript/Node.js, Ionic 5/Angular 9 & PubNub/Chatkit](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
+
+
 Let's see how to create a simple chat server with socket.io and websockets.
 
 ## Step 1 -- Creating the Chat Server

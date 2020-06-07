@@ -7,7 +7,13 @@ tags : [angular, angular8, angular-9-ngfor-examples, angular-9-httpclient-exampl
 ---
 
 
-In this tutorial, we'll present you with 3 ways to read local JSON files in your Angular 8 application with examples.
+In this tutorial, we'll present you with 3 ways to read local JSON files in your Angular 8 application with examples:
+
+- Reading Local JSON Files Using [TypeScript 2.9+ `import` Statement](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/),
+- Reading Local JSON Files Using Angular `HttpClient`, 
+- Reading Local JSON Files in Offline Angular Apps Using ES6+ `import` Statement
+
+Let's see these methods by example.
 
 ## Method 1: Reading Local JSON Files Using TypeScript 2.9+ `import` Statement 
 
@@ -38,11 +44,13 @@ export class AppComponent implements OnInit {
 }
 ```
 
-This is a screenshot of the imported JSON file  in the console:
+We use the `ngOnInit()` life-cycle method of [Angular `OnInit` interface](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) to display the imported JSON file in the console.
 
-![](https://www.techiediaries.com/assets/images/angular-import-json-console.png)
+This is a screenshot of the imported JSON file in the console:
 
-This assumes, you have a `data.json` file in src/app folder of your project with the following values:
+![Import JSON in Angular and TypeScript](https://www.techiediaries.com/assets/images/angular-import-json-console.png)
+
+This assumes, you have a `data.json` file in the `src/app` folder of your project with the following values:
  
 ```json
 [
@@ -160,4 +168,4 @@ import * as data from "data.json";
 
 ## Conclusion
 
-In this article, we've seen three methods for reading local JSON files in Angular 8 and TypeScript.  
+In this article, we've seen three methods for importing and reading local JSON files in Angular 8 and TypeScript.  

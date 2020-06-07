@@ -51,7 +51,7 @@ export class DataService {
 }
 ```
 
-Next, add a new `products` property to the service which contains the data we want to serve as our mocked response and a `get()` method that returns `products` as an RxJS Observable using the `of()` operator:
+Next, add a new `products` property to the service which contains the data we want to serve as our mocked response and a `get()` method that returns `products` as an [RxJS Observable](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/) using the `of()` operator:
 
 ```ts
 @Injectable({
@@ -106,6 +106,8 @@ export class AppComponent implements OnInit{
 {% endraw %}
 
 That's you should see your products displyed in an HTML list.
+
+It's always a good habit to [unsubscribe from your RxJS observables](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) after you leave your components.
 
 ## Conclusion
 

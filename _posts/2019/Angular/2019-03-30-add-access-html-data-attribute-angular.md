@@ -100,6 +100,8 @@ According to [Angular docs](https://angular.io/guide/template-syntax):
 
 >Attribute binding syntax resembles property binding. Instead of an element property between brackets, start with the prefix attr, followed by a dot (.) and the name of the attribute. You then set the attribute value, using an expression that resolves to a string.
 
+> Check out how to use [HTML data attributes with TypeScript and Angular 9](https://www.techiediaries.com/angular/textarea-keydown-focusin-events/) for tracking the unread messages in a chat UI.
+
 Now, if you insepct your page DOM, you'll see that each `<li>` tag has a `data-message-id` attribute with the corresponding message ID from the array.
 
 ![Angular 7 Data Attribute Binding](https://www.diigo.com/file/image/bbccosoazoabpddbrbzdqscaqse/Screenshot+from+2019-03-31+00-09-35.jpg?k=264adb26f4590a693a87b4654470d0dc)

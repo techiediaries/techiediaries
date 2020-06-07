@@ -8,6 +8,8 @@ date: 2020-06-06
 tags : [angular]
 ---
 
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
+
 Throughout this tutorial, we'll be learning how to add one-to-one private chat rooms to a chat application built using Angular 9, Ionic 5 , Node and Nest.js. We'll be working with TypeScript Strings, Arrays, Promises, and RxJS Behavior/Replay Subjects. We'll see how to convert a TypeScript promise to an RxJS Observable/Subject, how to use the `async/await` syntax with the Angular `ngOnInit()` method and Observable `subscribe` method, use the Angular Router, ActivatedRoute, and Ionic Storage services and also how to unsubscribe from the RxJS Observables with Angular `OnDestroy` and `ngOnDestroy()`.
 
 You'll also be learning how to bind TypeScript methods to Ionic 5 buttons in a chat UI and also to the `keyup` event of the **Enter** key of the keyboard, and how to use the Ionic 5 back button.

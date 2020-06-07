@@ -8,6 +8,7 @@ date: 2020-06-06
 tags : [angular]
 ---
 
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
 
 In this tutorial part, we'll implement some changes in our Angular 9/Ionic 5 example app that will allow us to unsubscribe from the RxJS `usersSubject` and `messagesSubject` subjects defined in the `src/app/chat.service.ts` file and solve issues related to Angular Change Detection in development (The `ExpressionChangedAfterItHasBeenCheckedError` error) and duplicate messages displayed in the chat UI.
 

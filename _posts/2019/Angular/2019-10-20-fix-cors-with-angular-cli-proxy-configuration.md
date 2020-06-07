@@ -31,8 +31,10 @@ Now that we have learned why CORS issues may occur when developing your Angular 
 
 - Configure the server to send the appropriate CORS headers
 - Configure Angular CLI proxy
-- 
+
 The obvious solution is to configure the backend server properly but that's not possible all the time. For example, you may not have access to the server code.
+
+Also check out an example of how to configure [CORS with TypeScript and Node/Nest.js backend](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) 
 
 Most server languages and frameworks provide easy APIs to configure CORS. For example, in PHP, you can simply add the following lines to your PHP file:
 

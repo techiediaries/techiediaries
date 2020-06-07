@@ -17,7 +17,7 @@ In this tutorial:
 - You'll start by installing the requirements of your project like Node.js, npm and the Angular CLI 9,
 - Next, you'll create your Angular 9 application,
 - You'll setup `HttpClient` into your application,
-- You'll create an Angular 9 service than handles the JWT authentication,
+- You'll create an Angular 9 service that handles the [JWT authentication](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/),
 - Finally, you'll install and configure `angular-jwt` to attach JWT access tokens to requests. 
 
 > **Note**: For a more detailed tutorial that implements JWT authentication with Angular 8, Express and Node.js check out these tutorials: 

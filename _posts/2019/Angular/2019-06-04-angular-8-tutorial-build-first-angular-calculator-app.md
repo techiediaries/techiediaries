@@ -19,11 +19,11 @@ We'll be building a simple calculator application to demonstrate all the mention
 
 Let's get started with the prerequisites. You will need to have:
 
-- The knowledge of TypeScript, HTML and CSS.
+- The knowledge of [TypeScript](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/), HTML and CSS.
 - Node and NPM installed on your system.
 - Angular CLI 8 installed on your system.
 
-## Generating our Angular Calculator Project
+## Generating our Angular 8 Calculator Project
 
 After setting up your environment by installing Node and Angular CLI in your system, let's create a project. So open a terminal and execute the following command:
 

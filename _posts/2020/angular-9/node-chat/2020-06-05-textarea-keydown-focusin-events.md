@@ -1,23 +1,30 @@
 ---
 layout: post
-title: "Chat Read Cursors with Angular 9/Ionic 5 Chat App: Working with Textarea Keydown/Focusin Events"
+title: "Chat Read Cursors with Angular 9/Ionic 5 Chat App: Working with TypeScript Variables/Methods & Textarea Keydown/Focusin Events"
 image: "images/content/angular.png"
-excerpt: "In this tutorial part, we'll implement some changes in our Angular 9/Ionic 5 example app that will allow us to unsubscribe from the RxJS subjects and solve issues related to Angular Change Detection in development and duplicate messages displayed in the chat UI" 
+excerpt: "In this tutorial we'll implement chat read cursors in our Angular 9 and Ionic 5 Chat App using TypeScript basics like variables and methods, HTML textarea keydown/focusin events and data attributes" 
 categories: angular
 date: 2020-06-06
 tags : [angular]
 ---
 
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
+
+In this tutorial we'll implement chat read cursors in our Angular 9 and Ionic 5 Chat App using TypeScript basics like variables and methods, HTML textarea keydown/focusin events and HTML data attributes.
+
+We'll also see how to work with template reference variables in Angular and how to bind TypeScript methods to DOM events in Angular templates.
 
 Read cursors allow you to let users know how far they or other users have read the conversation. This means you can keep track of the most recently read message ID for each user of a room.
 
 We'll learn about:
  
-- Adding Chat Read Cursors to our Angular 9/Ionic 5 App
-- The `readPosition` variable will be used to store the position of the read cursor of the current user. The `userTyped` variable is a `boolean` which will  be used to track if the user has typed something in the message input area and the `unreadCount` variable will store the number of the unread messages.
-- Next, add the `getReadMessageId()` which returns the index in the `messageList` array of the message that was most recently read by the user
-- update the `onKeydown()` method (that gets called when the `keydown` event is fired in the message `textarea`) to send the typing event and set a `userTyped` boolean variable accordingly.
-- define the `onFocus()` method which gets called when the `focusin` event of the message `textarea` is fired. In this method, we set the position of the read cursor of the current user to the latest message that was received and we also call the `scrollToBottom()` method to scroll down the chat UI.
+- Adding Chat Read Cursors to our Angular 9/Ionic 5 App,
+- Using Angular template variables and HTML data attributes to track unread messages in the chat UI.
+- Defining TypeScript methods and bind them to DOM events in Angular templates.
+- Defining TypeScript variables such as the `readPosition` variable that will be used to store the position of the read cursor of the current user. The `userTyped` variable which is a `boolean` that will be used to track if the user has typed something in the message input area and the `unreadCount` variable which stores the number of the unread messages.
+- Defining the TypeScript `getReadMessageId()` method which returns the index in the `messageList` array of the message that was most recently read by the user.
+- Updating the `onKeydown()` method (that gets called when the `keydown` event is fired in the HTML `textarea`) to send the typing event and set a `userTyped` boolean variable accordingly.
+- Defining the TypeScript `onFocus()` method which gets called when the `focusin` event of the HTML `textarea` is fired. In this method, we set the position of the read cursor of the current user to the latest message that was received and we also call the TypeScript `scrollToBottom()` method to scroll down the chat UI.
 
 These are all the tutorial parts:
 
@@ -55,13 +62,13 @@ Let’s start with the chat service of the Angular 9/Ionic 5 frontend project. O
         }
       }
 
-The `setReadCursor()` calls the `setReadCursor()` of `currentUser` to set the position of the read cursor of the current user in the room.
+The TypeScript `setReadCursor()` method of our Angular service calls the `setReadCursor()` method of `currentUser` to set the position of the read cursor of the current user in the room.
 
-The `getReadCursor()` method calls the `readCursor()` method of `currentUser` to get the position of the read cursor of the current user in the room. If the read cursor is undefined, we return `-1`. 
+The TypeScript `getReadCursor()` method calls the `readCursor()` method of `currentUser` to get the position of the read cursor of the current user in the room. If the read cursor is undefined, we return `-1`. 
 
-In both methods, if you don’t specify the room ID, the ID of our general room will be used. 
+In our both defined TypeScript methods, if you don’t specify the room ID, the ID of our general room will be used. 
 
-Next, open the `src/app/chat/chat.page.ts`  and start by defining these variables:
+Next, open the `src/app/chat/chat.page.ts` file and start by defining these TypeScript variables:
 
 
     // src/app/chat/chat.page.ts
@@ -72,9 +79,9 @@ Next, open the `src/app/chat/chat.page.ts`  and start by defining these variable
       userTyped = false; 
       unreadCount = 0;
 
-The `readPosition` variable will be used to store the position of the read cursor of the current user. The `userTyped` variable is a `boolean` which will  be used to track if the user has typed something in the message input area and the `unreadCount` variable will store the number of the unread messages.
+The `readPosition` variable will be used to store the position of the read cursor of the current user. The `userTyped` variable is a `boolean` which will be used to track if the user has typed something in the message input area and the `unreadCount` variable will store the number of the unread messages.
 
-Next, add the `getReadMessageId()` which returns the index in the `messageList` array of the message that was most recently read by the user:   
+Next, add the `getReadMessageId()` method which returns the index in the `messageList` array of the message that was most recently read by the user:   
 
 
       // src/app/chat/chat.page.ts
@@ -91,7 +98,7 @@ Next, add the `getReadMessageId()` which returns the index in the `messageList` 
         return l;
       }
 
-We simply loop through the array and we compare the ID of the current message with the read cursor position that was previously stored in the `readPosition` variable.
+We simply loop through the TypeScript array and we compare the ID of the current message with the read cursor position that was previously stored in the `readPosition` variable.
 
 Next, update the `sendMessage()` method to set the read cursor position after the user sends a message:
 
@@ -161,7 +168,7 @@ We first get the last message in the `messageList` array, next we get the `data-
 This method will be applied on each message DOM element of the chat UI and will be used to determine if the message is the latest one read by the user.
 
 
-> **Note**: We’ll use the `isMostRecentReadMessage()` to determine whether we can display the **Un-Read Messages** DOM element on the chat UI that’s why we also check if the user has typed something on the message input field. This way, once the user has started typing, the **Un-Read Messages** element will disappear.
+> **Note**: We’ll use the `isMostRecentReadMessage()` to determine whether we can display the **Un-Read Messages** DOM element on the chat UI that’s why we also check if the user has typed something on the message input field. This way, once the user has started typing, the **Un-Read Messages** element will be removed.
 
 Now, open the `src/app/chat/chat.page.html` file and start by binding the `onFocus()` method to the  `focusin` event of the message `textarea`:
  
@@ -311,3 +318,11 @@ If you register a new user, their read cursor will be undefined so you will not 
 ## Conclusion
 
 In this tutorial, we’ve implemented chat read cursors that show users the position of the latest message they have read and the count of their unread messages in the room. You can get the source code from this [GitHub repository](https://github.com/techiediaries/chatkit-profiles-read-cursors).
+
+We have learned about:
+
+- Using Angular template variables and HTML data attributes for getting and displaying unread messages in our UI.
+- Defining and binding TypeScript methods to events in Angular templates supercharged with Ionic UI components.
+- Defining TypeScript number, boolean. and string TypeScript.
+- Defining the TypeScript `onFocus()` method which gets called when the `focusin` event of the HTML `textarea` is fired. 
+

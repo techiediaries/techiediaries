@@ -12,6 +12,9 @@ In this tutorial, you'll learn to implement multiple file upload with Ionic 5, d
 
 In a [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/), we've created a django 3 RESTful application for uploading files using django 3 REST framework and Ionic 5.
 
+Also check out how to [upload images to TypeScript/Node server using Ionic 5 and FormData](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/)
+
+
 ![Ionic 5 upload example](https://i.imgur.com/TW1UOOz.png)
 
 Since the backend code will be the same as we only need an `/upload` endpoint that accepts POST requests we'll simply clone the previous and start our django 3 REST API server using the following command:

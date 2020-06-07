@@ -17,6 +17,8 @@ We are going to cover Email/Password authentication and Facebook social Sign In,
 
 Before you can add authentication with Firebase to your Ionic 5/Angular or Angular 4+ app, you need to sign up for an account, create a Firebase app then get the app's URL for integrating your app with Firebase.
 
+You can also read how to implement [JWT authentication with TypeScript, Node and Ionic 5](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/).
+
 ## Create a New Firebase Project
 
 To create an account, head over to their [Getting started page](https://console.firebase.google.com/)  then follow the information there to setup your account.
@@ -197,7 +199,7 @@ If not done yet! make sure to enable Email and password Authentication by going 
 
 ### Adding Authentication
 
-Next you need to create the *Login* and *Register* pages by following these steps:
+Next you need to create the [Ionic Login and Register pages](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) by following these steps:
 
 * first inject **AngularFireAuth** into the component's constructor 
 * next use the injected instance (let's call it *fAuth*) to call *this.fAuth.auth.signInWithEmailAndPassword(user.email, user.password)* for authenticating a user with email and password and *this.fAuth.auth.createUserWithEmailAndPassword(user.email,user.password)* for registering users.
@@ -557,6 +559,8 @@ You can watch the authentication state by subscribing to `this.fAuth.authState` 
     });
 
 ```
+
+See how to use [RxJS BehaviorSubject to watch the auth state](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/) in your Ionic 5 app.
 
 ## Conclusion
 

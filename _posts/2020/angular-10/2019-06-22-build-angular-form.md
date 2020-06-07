@@ -2,7 +2,7 @@
 layout: post
 title: "Build an Example Angular 10 Form: ngForm/ngModel vs FormGroup/FormBuilder"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn how to build and work with forms in Angular 19 by creating a simple contact form example" 
+excerpt: "In this tutorial, we'll learn how to build and work with forms in Angular 10 by creating a simple contact form example" 
 date: 2020-05-04
 tags : [angular, angular-10 ] 
 ---

@@ -67,7 +67,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { MatDialogModule } from '@angular/material/dialog';
+import {MatDialogModule } from '@angular/material/dialog';
 
 ```
 
@@ -221,8 +221,8 @@ export  class  LoginComponent{
 }
 ```
 
-You import the `MatDialog` service and inject it via your component's constructor and then you call the `open()` method of the injected instance to open the message modal. The method takes a `config` object with a `data` attribute that contains data that you need to pass to the dialog's component. 
+You use the [TypeScript `import` keyword](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) to import the `MatDialog` service and inject it via your component's constructor and then you call the `open()` method of the injected instance to open the message modal. The method takes a `config` object with a `data` attribute that contains data that you need to pass to the dialog's component. 
 
 ## Conclusion
 
-In this tutorial, you have created a simple login UI example with Angular 9, an HTML form, a Modal popup dialog and Angular Material 9.
+In this tutorial, you have created a simple [login UI example](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) with Angular 9, an HTML form, a Modal popup dialog and Angular Material 9.

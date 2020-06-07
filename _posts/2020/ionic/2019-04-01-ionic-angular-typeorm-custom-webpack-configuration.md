@@ -19,6 +19,9 @@ In this first part tutorial, we'll see how to:
 - Set up and integrate TypeORM with your Ionic 5 project.
 - Use a custom webpack configuration with Ionic 5/Angular.
   
+
+You can also read how to use [Ionic 5 with Node and TypeORM](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) to build a full-stack chat application with front-end and back-end apps.
+
 Let's get started with the prerequisites!
 
 ## Prerequisites

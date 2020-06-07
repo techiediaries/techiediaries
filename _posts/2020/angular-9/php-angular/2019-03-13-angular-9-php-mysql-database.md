@@ -12,7 +12,7 @@ In this tutorial, you'll learn to create an example REST API CRUD app with Angul
 
 ## Building a Backend with PHP and MySQL Database
 
-You will be creating a simple REST API that supports GET, POST, PUT and DELETE requests and allow you to perform CRUD operations against a MySQL database to create, read, update and delete records from a database.
+You will be creating a simple REST API that supports GET, POST, PUT and DELETE requests and allow you to perform CRUD operations against a MySQL [database](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) to create, read, update and delete records from a database.
 
 ## The Design of the MySQL Database
 

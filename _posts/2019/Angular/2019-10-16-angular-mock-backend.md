@@ -20,7 +20,7 @@ Please note that both `json-server` and `faker.js` are framework agnostic i.e yo
 More often than not, modern web development involves multiple developers working in separate front-end and back-end applications. This approach has many advantages, such as the separation of concerns but also introduces a few challenges such as the difficulties in coordination between the front-end and back-end developers. Here comes the role of tools such as JSON-Server to ease these difficulties. As a front-end developer, JSON-Server is such a great tool that allows you to spin up a REST API server with a fully-working API with zero coding.
 
 
-Read this [tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor) for a real REST API example. But, as far as Angular concerned, there is no difference between consuming a mocked or real REST API.
+Read this [tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor) for a real REST API example or also this [tutorial which implements a TypeScript/Node.js REST API with JWT Auth](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). But, as far as Angular concerned, there is no difference between consuming a mocked or real REST API.
 
 ## How to Mock A REST API Back-End?
 
@@ -126,6 +126,6 @@ You can make use of the `_page` and `_limit` parameters to retrieve pages of dat
 
 ## Conclusion
 
-Thanks to json-server you can boost your productivity when developing your Angular front-end without waiting for the back-end features to be ready. Since json-server is based on Express.js, it's even possible to add advanced features to your mocked back-end such as authentication and route protection. Check out this [tutorial](https://www.techiediaries.com/fake-api-jwt-json-server) for an example with authentication or also this [npm package](https://www.npmjs.com/package/json-server-auth).
+Thanks to json-server you can boost your productivity when developing your [Angular front-end](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) without waiting for the back-end features to be ready. Since json-server is based on Express.js, it's even possible to add advanced features to your mocked back-end such as authentication and route protection. Check out this [tutorial](https://www.techiediaries.com/fake-api-jwt-json-server) for an example with authentication or also this [npm package](https://www.npmjs.com/package/json-server-auth).
   
 

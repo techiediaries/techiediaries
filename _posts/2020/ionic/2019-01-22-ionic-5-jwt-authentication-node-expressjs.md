@@ -16,6 +16,10 @@ We'll learn how to use the Ionic Storage module for persisting JWT information r
 
 Before your proceed, you need to make sure you have Node.js and NPM installed on your development machine. You should be able to install them by downloading the binaries for your system from the [official website](https://www.nodejs.org).
 
+> Also read 
+[Building Chat App Frontend UI with JWT Auth Using Ionic 5/Angular 9](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/)
+
+
 Now, let's get started!
 
 ## Setting up Ionic CLI 5
@@ -144,7 +148,7 @@ export class AuthModule { }
 
 ### Setting up Ionic Storage Module
 
-The Ionic team provides the Ionic Storage module that can be used to work with the browser's local storage in mobile devices but before we can use it in our application, we need to install it from npm and import it in our authentication module. Head back to your terminal and run the following command:
+The Ionic team provides the [Ionic Storage module](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) that can be used to work with the browser's local storage in mobile devices but before we can use it in our application, we need to install it from npm and import it in our authentication module. Head back to your terminal and run the following command:
 
 ```bash
 $ npm install --save @ionic/storage
@@ -260,7 +264,7 @@ AUTH_SERVER_ADDRESS:  string  =  'http://localhost:3000';
 authSubject  =  new  BehaviorSubject(false);
 ```
 
-The `AUTH_SERVER_ADDRESS` holds the address of the Express authentication server and `authSubject` is a type of Observable that will be used to subscribe to the authentication state.
+The `AUTH_SERVER_ADDRESS` holds the address of the Express authentication server and `authSubject` is a type of Observable that will be used to [subscribe to the authentication state](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/).
 
 Next, inject `HttpClient` and `Storage` services via the service's constructor:
 

@@ -17,6 +17,7 @@ In this tutorial, we are going to learn how to use the Cordova SQLite plugin to 
 
 We are also going to see basic Ionic 5/Angular concepts such as components, providers, pages and modals.
 
+You can also read how to use [Ionic 5 with a SQLite database in the server](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/)
 
 ## Starting a New Ionic 5/Angular Project 
 

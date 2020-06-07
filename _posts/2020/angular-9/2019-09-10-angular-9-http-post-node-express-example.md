@@ -12,7 +12,7 @@ In this post, we'll learn how to send an Http POST request with Angular 9 HttpCl
 
 ## Adding Angular 9 Authentication Forms for Sending Post Requests
 
-In the previous [tutorial](https://www.techiediaries.com/angular-tutorial-forms-authentication-expressjs), we've created authentication (login and register) forms with Angular 9/8 and a REST API server for handing authentication with Node and Express.js.
+In the previous [tutorial](https://www.techiediaries.com/angular-tutorial-forms-authentication-expressjs/), we've created authentication (login and register) forms with Angular 9/8 and a REST API server for handing authentication with Node and Express.js.
 
 >Also read:
 >
@@ -184,7 +184,7 @@ Finally, add a `authSubject` variable of type `BehaviorSubject` with initial val
 authSubject  =  new  BehaviorSubject(false);
 ```
 
-This variable tracks the user's authentication state. `false` means the user is not authenticated yet.
+This variable tracks the [user's authentication state](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/). `false` means the user is not authenticated yet.
 
 ### Adding the `register()` method: Sending a POST Request with  `HttpClient`
 

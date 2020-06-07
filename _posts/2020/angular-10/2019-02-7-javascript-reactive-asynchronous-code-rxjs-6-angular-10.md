@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavaScript Reactive/Asynchronous Code with RxJS 6 & Angular 10: Callbacks, Promises and Observables"
+title: "JavaScript Reactive/Asynchronous Code with RxJS 6, TypeScript & Angular 10: Callbacks, Promises and Observables"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll learn to use the RxJS 6 library with Angular 10.9. We'll learn about how to import the Observable class and the other operators. How to subscribe and unsubscribe from Observables, how to import and call operators and wrap them with the `pipe()` function. We'll also see how to use the async pipe to subscribe to Observables from templates" 
 date: 2020-05-04
@@ -9,27 +9,28 @@ tags : [angular, angular-10, javascript]
 
   
 
-Throughout this tutorial, you'll be introduced to JavaScript reactive and asynchronous code, data streams and RxJS 6 used in Angular.
+Throughout this tutorial, you'll be introduced to JavaScript reactive and asynchronous code, data streams and RxJS 6 used in TypeScript and Angular.
 
-You'll learn that reactive programming in JavaScript is about coding with asynchronous data streams and that RxJS is the most popular JavaScript implementation that implements Observables and the observer pattern.   
+You'll learn that reactive programming in JavaScript and TypeScript is about coding with asynchronous data streams and that RxJS is the most popular JavaScript implementation that implements Observables and the observer pattern. 
+
+RxJS is included by default in Angular 2+ which is based on TypeScript instead of plain JavaScript.
 
 You'll learne about RxJS operators, the methods that are used to compose Observables and work on their data streams.
  
-Next, you'll learn that Angular 10/9 uses RxJS v6 for working with asynchronous operations and APIs (instead of callbacks and Promises) in many of its commonly used modules such as HttpClient, Router and Reactive Forms.
+Next, you'll learn that Angular 10/9 uses RxJS v6 for working with asynchronous operations and APIs (instead of TypeScript callbacks and Promises) in many of its commonly used modules such as HttpClient, Router and Reactive Forms.
 
 ## Reactive eXtensions for JavaScript with Angular 10
 
-We'll learn to use the RxJS 6 library with Angular 10/9. We'll learn about:
+We'll learn to use the RxJS 6 library with Angular 10/9 and TypeScript. We'll learn about:
 
 
-- How to import the Observable class and the other operators.
+- How to import the Observable class and the other operators in TypeScript.
 - How to subscribe and unsubscribe from Observables.
-- How to import and call operators and chain them with the `pipe()` function.
+- How to import and call operators and chain them with the `pipe()` function in TypeScript.
 - We'll also see how to use the async pipe to subscribe to Observables from Angular 10 templates. 
 - Finally we'll see how to use some popular pipeable operators such as `tap()`, `map()` and `filter()` and their new import paths in RxJS 6.
 
-
-> **Note**: This tutorial works with both Angular 10 and Angular 9.
+> **Note**: This tutorial works with both Angular 10 and the previous versions of Angular.
 
 This tutorial is divided in two parts. You can check out the second tutorial from this [link](https://www.techiediaries.com/observables-and-subjects-tutorial).
 
@@ -37,13 +38,13 @@ We’ll start looking at what reactive programming, asynchronous operations and 
 
 
 - `Subject`, 
-- `BehaviorSubject` and `ReplaySubject`, 
+- [`BehaviorSubject` and `ReplaySubject`](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/), 
 - unicast and multicast Observables, 
 - cold and hot Observables  etc.
 
-Next, we’ll see what RxJS operators are and examples of some popular operators such as `tap()`, `map()`, `filter()`, `share()`, etc. And finally we’ll see how Angular 10 uses the RxJS Observable to do asynchronous programming. 
+Next, we’ll see what RxJS operators are and examples of some popular operators such as `tap()`, `map()`, `filter()`, `share()`, etc. And finally we’ll see how Angular 10 and TypeScript uses the RxJS Observable to do asynchronous programming. 
 
-## What is Reactive Programming in JavaScript?
+## What is Reactive Programming in JavaScript/TypeScript?
 
 
 ![What is Reactive Programming](https://d2mxuefqeaa7sj.cloudfront.net/s_98CC91BB1D7ABCD50AC04362B7F541F3549A631A6219D02FE7AED5645CF1CAA7_1549549534749_use-reactive-programming-you-must.jpg)
@@ -64,7 +65,7 @@ Now, this is the definition from [Wikipedia](https://en.wikipedia.org/wiki/React
 
 > In computing, reactive programming is a declarative programming paradigm concerned with data streams and the propagation of change.
 
-This means reactive programming is a declarative (vs. a procedural) style of programming  that works on streams of data.
+This means reactive programming is a declarative (vs. a procedural) style of programming that works on streams of data.
 
 For a detailed guide on reactive programming and data streams, check out: [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754).
 
@@ -96,11 +97,11 @@ Now, that we’ve seen the conceps of reactive programming and data streams, let
 ![What is RxJS](https://d2mxuefqeaa7sj.cloudfront.net/s_98CC91BB1D7ABCD50AC04362B7F541F3549A631A6219D02FE7AED5645CF1CAA7_1549549625485_what-if-reactive-programming-is-just-a-myth-and-facebook-and-netflix-dont-exist.jpg)
 
 
-[RxJS](https://github.com/ReactiveX/rxjs) is a popular library among web developers. It provides functional and reactive programming patterns for working with events and streams of data and has been integrated in many web development libraries and frameworks such as Angular.
+[RxJS](https://github.com/ReactiveX/rxjs) is a popular library among web developers. It provides functional and reactive programming patterns for working with events and streams of data and has been integrated in many web development libraries and frameworks such as TypeScript and Angular.
 
 RxJS makes it easy for JavaScript developers to write asynchronous code using composable Observables instead of callbacks and Promises.
 
-RxJS stands for Reactive Extensions for JavaScript and it actually has implementations in other programming languages such as Java, Python, Ruby, and PHP etc. It's also available for platforms such as Android. Check out the [complete list of supported languages and platforms](http://reactivex.io/languages.html).
+RxJS stands for Reactive Extensions for JavaScript and it actually has implementations in other programming languages such as Java, Python, Ruby, and PHP etc. Can be used in TypeScript and It's also available for platforms such as Android. Check out the [complete list of supported languages and platforms](http://reactivex.io/languages.html).
 
 RxJS v6 is currently the stable version of RxJS and it has many breaking changes with RxJS v5. You can check out more information about the changes and how to migrate from the old version from this official [migration guide](https://github.com/ReactiveX/rxjs/blob/master/docs_app/content/guide/v6/migration.md).
 
@@ -165,7 +166,7 @@ Let's make this simple!
 
 Your JavaScript code is synchronous when it's running in sequences i.e instruction by instruction in the order they appear in the source code. 
 
-## Example Synchronous JavaScript Code
+## Example Synchronous TypeScript/JavaScript Code
 
 For example, let's consider this simple JavaScript code:
 
@@ -177,11 +178,13 @@ For example, let's consider this simple JavaScript code:
 
 The browser will run this synchronous code line by line from line 1 to 4 starting by assigning the `foo` and `bar` variables, concatenating them and displaying the `foobar` variable in the console.
 
-## JavaScript Supports the Asynchronous Way..
+> Note: If your code is authored in TypeScript, it needs to be compiled to JavaScript before it can be executed by web browsers.
 
-JavaScript supports also the **asynchronous** approach of writing code which makes sense, since you need to respond to the user events in the browser but you don't actually know when the user interacts with your application (and in which order) when you are writing code.
+## JavaScript and TypeScript Supports the Asynchronous Way..
 
-This was originally achieved using callbacks which you need to define in your JavaScript code and specify when they will be called. 
+JavaScript and TypeScript support also the **asynchronous** approach of writing code which makes sense, since you need to respond to the user events in the browser but you don't actually know when the user interacts with your application (and in which order) when you are writing code.
+
+This was originally achieved using callbacks which you need to define in your JavaScript and TypeScript code and specify when they will be called. 
 
 For example, the following JavaScript asynchronous code will display **You clicked the button!** when the user clicks the button identified by the `mybutton` identifier:
 
@@ -192,9 +195,9 @@ For example, the following JavaScript asynchronous code will display **You click
 
 The second argument of the `addEventListener()` method is the callback.
 
-## Handling Asynchronous Code in JavaScript Using Callbacks
+## Handling Asynchronous Code in JavaScript and TypeScript Using Callbacks
 
-You can also use callbacks to handle asynchronous operations in JavaScript which don't involve the DOM. For example, the following code can be used to send an HTTP POST request to a web server:
+You can also use callbacks to handle asynchronous operations in JavaScript and TypeScript which don't involve the DOM. For example, the following code can be used to send an HTTP POST request to a web server:
 
 
     const xhr = new XMLHttpRequest()
@@ -217,17 +220,19 @@ If you have ever extensively worked with callbacks, you'll notice one problem wi
 
 When you write complex applications you usually end up writing nested callbacks (callbacks inside callbacks) with multiple nesting levels. This is what's known as the [callback hell](https://stackoverflow.com/questions/25098066/what-is-callback-hell-and-how-and-why-rx-solves-it). 
 
-## Using Promises and Async/Await Syntax for Handling JavaScript Asynchronous Code
+## Using Promises and Async/Await Syntax for Handling JavaScript/TypeScript Asynchronous Code
 
-Modern JavaScript introduced other approaches or abstractions to deal with asynchronous operations (without using too much callbacks) such as [Promises](https://www.techiediaries.com/javascript-promises-tutorial-example/) and [Async/Await](https://www.techiediaries.com/javascript-async-await-tutorial/).
+Modern JavaScript and TypeScript introduced other approaches or abstractions to deal with asynchronous operations (without using too much callbacks) such as [Promises](https://www.techiediaries.com/javascript-promises-tutorial-example/) and [Async/Await](https://www.techiediaries.com/javascript-async-await-tutorial/).
 
 Promises have been introduced in [ES6](https://www.ecma-international.org/ecma-262/6.0/) (JS 2015).
 
 Async/await has been introduced in ES8 (JS 2017) and it's actually a syntactic sugar on top of Promises which helps developers write asynchronous code with Promises in a way that looks synchronous.
 
+See [how to use the async/await syntax in TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/)
+
 But Promises are actually similar to callbacks and have the same nesting problem at some degree.
 
-## Using Observables for Handling Handling JavaScript Asynchronous Code
+## Using Observables for Handling JavaScript and TypeScript Asynchronous Code
 
 
 Since developers are always looking for better solutions we now have Observables which use the [observer](https://en.wikipedia.org/wiki/Observer_pattern) software pattern.
@@ -235,12 +240,14 @@ Since developers are always looking for better solutions we now have Observables
 
 > The observer pattern is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods. [Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern).
 
-Observables are implemented in the [ReactiveX](http://reactivex.io/) project which has implementations in various languages. RxJS is the JavaScript implementation.
+Observables are implemented in the [ReactiveX](http://reactivex.io/) project which has implementations in various languages. RxJS is the JavaScript implementation which can also be used with TypeScript.
 
 
 > **Note**: Observables are implemented in many other libraries such as [zen-observable](https://github.com/zenparsing/zen-observable) and [xstream](https://github.com/staltz/xstream) but RxJS Observables are the most popular in JavaScript.
 > 
 > Observables are not yet a builtin feature of JavaScript but there is a [proposal](https://tc39.github.io/proposal-observable/) to add them in EcmaScript. 
+
+See how to [convert a TypeScript promise to an RxJS Observable/Subject](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/)
 
 
 ## RxJS Operators
@@ -325,10 +332,10 @@ Check out the second [part](https://www.techiediaries.com/observables-and-subjec
 
 ## Conlusion
 
-In this tutorial, you have been introduced to reactive programming, data streams and RxJS 6.
+In this tutorial, you have been introduced to reactive programming, data streams and RxJS 6 in both JavaScript and TypeScript.
 
 You have learned that reactive programming is about coding with asynchronous data streams and that RxJS is the most popular implementation that implements Observables and the observer pattern.
 
 You learned about RxJS operators which are methods that are used to compose Observables and work on their data streams.
  
-Finally, you learned that Angular 10/9 uses RxJS v6 for working with asynchronous operations and APIs (instead of callbacks and Promises) in many of its commonly used modules such as `HttpClient`, `Router` and `ReactiveForms`.  
+Finally, you learned that TypeScript/Angular 10/9 uses RxJS v6 for working with asynchronous operations and APIs (instead of callbacks and Promises) in many of its commonly used modules such as `HttpClient`, `Router` and `ReactiveForms`.  

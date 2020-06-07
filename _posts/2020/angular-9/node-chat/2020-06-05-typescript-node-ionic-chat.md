@@ -8,6 +8,8 @@ date: 2020-06-06
 tags : [angular]
 ---
 
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
+
 In this first part of a tutorial series to learn how to build a fullstack mobile application with cutting edge technologies like Ionic 5, Node.js (Nest.js), TypeScript, Angular 9. you will be creating the backend project of the application with Nest.js CLI and you'll learn about the available hosted and self-hosted services for implementing chat features in your mobile and web apps.
 
 The application that you’ll be building is a group chat application that will allow users to register, login and then chat with a group of  users.

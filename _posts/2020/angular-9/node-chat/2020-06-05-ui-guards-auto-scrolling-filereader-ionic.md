@@ -7,6 +7,8 @@ categories: angular
 date: 2020-06-06
 tags : [angular]
 ---
+
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
  
 In this tutorial, we'll start by securing the UI of our application using Angular 9 guards then we'll learn how to add support for typing indicators and file attachments using the HTML5 FileReader API in the Ionic 5 and Angular 9 chat application we've built in these previous tutorials. We'll also see how to add automatic scrolling of the chat UI with Angular template variables and the `Content.scrollToBottom()` method and programmatically trigger click events on the file input element. 
 

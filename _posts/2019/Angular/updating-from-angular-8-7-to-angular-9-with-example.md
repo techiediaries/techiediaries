@@ -7,7 +7,7 @@ tags : [angular , angular9]
 ---
 
 
-In this tutorial, we'll see step by step how to upgrade an example Angular 7 project to the latest Angular 9 version. 
+In this tutorial, we'll see step by step how to upgrade an example Angular 7 project to the latest [Angular 9](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) version. 
 
 - Step 1 - Cloning the Project from GitHub
 - Step 2 - Identifying the Used Angular Version in The Project 

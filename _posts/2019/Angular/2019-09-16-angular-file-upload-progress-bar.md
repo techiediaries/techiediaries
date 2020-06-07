@@ -9,17 +9,17 @@ tags : [angular, angular8, angular-9-ngif-examples, angular-9-httpclient-example
 ---
 
 
-In this tutorial, we'll learn how to upload files in Angular 9. For the backend we'll be using Nest.JS
+In this tutorial, we'll learn how to upload files in Angular 9. For the [backend we'll be using Nest.JS](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/)
 
-We'll see how to use `HttpClient` to send POST requests with multipart form data used for file uploading. We'll also see how to use reactive forms.
+We'll see how to use `HttpClient` to send POST requests with [multipart form data used for file uploading](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/). We'll also see how to use reactive forms.
 
 Finally, we'll see how to listen for [HttpClient progress events](https://angular.io/guide/http#listening-to-progress-events). 
 
-Nest.js is a TypeScript framework for building server-side apps inspired by Angular so it's easier to learn by Angular developers since it makes use of the same concepts such as controllers, services and dependency injection etc.
+Nest.js is a [TypeScript framework](https://www.techiediaries.com/angular/typescript-node-ionic-chat/) for building server-side apps inspired by Angular so it's easier to learn by Angular developers since it makes use of the same concepts such as controllers, services and dependency injection etc.
 
 > In this tutorial, we'll be implementing the frontend. For the backend, please check out:
 >
-> [Nest.js Tutorial: File Uploading with Multer and Serving Static Files in Nest](https://www.techiediaries.com/nestjs-upload-serve-static-file)
+> [Nest.js Tutorial: File Uploading with Multer and Serving Static Files in Nest](https://www.techiediaries.com/nestjs-upload-serve-static-file/)
 
 ## Setting up The Backend
 

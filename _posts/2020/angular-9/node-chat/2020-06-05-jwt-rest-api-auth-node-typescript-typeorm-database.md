@@ -8,7 +8,7 @@ date: 2020-06-05
 tags : [angular]
 ---
 
-
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
 
 In this tutorial, we'll learn how to create a REST API server for JWT authentication using Node.js (Nest.js) and TypeScript for our Angular 9/Ionic 5 chat application. 
 
@@ -27,13 +27,13 @@ These are all the tutorial parts:
 - [Private Chat Rooms in Angular 9/Ionic 5: Working with TypeScript Strings, Arrays, Promises, and RxJS Behavior/Replay Subjects](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/)
 
 
-This is the second part of our tutorial series for building a chat mobile application with Node.js, TypeScript, Ionic 5, and Angular 9.
+This is the second part of our tutorial series for building a chat mobile application with Node.js, TypeScript, Ionic 5, and Angular 9. You'll learn:
 
 - How to set up TypeORM and create a database, TypeORM is the most mature ORM in TypeScript.
 - How to use SQLite database with Node and TypeScript. TypeORM supports all major databases like MySQL, PostgreSQL, MSSQL, Oracle, and MongoDB but for simplicity we'll use SQLite3.
 - How to create a TypeORM entity for working with the users SQLite database.
 - How to create a Nest.js service for working with the users database.
-- How to enabling CORS in Node and TypeScript.
+- How to enable CORS in Node and TypeScript.
 
 > Note: Chatkit is the hosted chat service provided by Pusher which is now retired. You can either use your own hosted chat server with an open source solution like [https://chatsdk.co/](https://chatsdk.co/) which is based on Firebase or use PubNub Chat, an alternative paid service for Chatkit.
 

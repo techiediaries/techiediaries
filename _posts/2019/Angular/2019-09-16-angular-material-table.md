@@ -15,7 +15,7 @@ In the previous tutorial(s), you've created a fake REST API that provides data t
     
 Now, that you've created a form to submit data to the back-end. Let's see how to fetch data from the API back-end and display it. We'll also see how to use a Material data table to display data and the Material Dialog component to display contact details.
 
-> **Note**: This tutorial works with Angular 6/7/8.
+> **Note**: This tutorial works with Angular 6/7/8/9.
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ To follow this tutorial, it's better to have completed the previous tutorial(s) 
 
 But, if you only care to learn how to use the Angular Material datatable, you simply need to make sure you have the following prerequisites and requirements:  
 
-- Knowledge of TypeScript and Angular,
+- Knowledge of [TypeScript and Angular](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/),
 - Node.js and npm installed on your machine,
 - Angular CLI 9 installed on your system,
 - An Angular 9 project created,
@@ -185,7 +185,7 @@ constructor(private  dataService:  DataService) {}
 
 > We also assume this service has a `.getPolicies` method that returns an Observable which you can subscribe to in order to get data.
  
-In the `ngOnInit` life-cycle event of your component, call the `.getPolicies` method and subscribe to the returned Observable:
+In the [`ngOnInit` life-cycle event](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) of your Angular component, call the `.getPolicies` method and subscribe to the returned Observable:
 
 ```ts
 ngOnInit() {
@@ -194,7 +194,8 @@ ngOnInit() {
   })
 }
 ```
- 
+
+
 You simply assign the `result.body` which contains the array of policies to your `dataSource` array. If you serve your project, you should see a table of data when you visit the `localhost:4200` address in your browser.
   
 ## Conclusion

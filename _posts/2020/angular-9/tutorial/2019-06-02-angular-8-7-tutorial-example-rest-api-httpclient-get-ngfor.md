@@ -18,7 +18,7 @@ Throughout this tutorial, we are going to build a simple example from scratch us
 In more  details, we'll learn:
 
 
-- How to [create an Angular 8 project using Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/),
+- How to [create an Angular 8/9 project using Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/),
 - How to quickly [set up routing in our project](https://www.techiediaries.com/angular-router/),
 - How to create [Angular components](https://www.techiediaries.com/angular-components/) and services,
 - How to subscribe to Observables,
@@ -28,6 +28,7 @@ You can also follow this tutorial as a video:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lZAP871qYDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+You can also learn how to build a chat app with Angular 9 and Ionic 5 in this [tutorial](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
 
 ## Prerequisites
 

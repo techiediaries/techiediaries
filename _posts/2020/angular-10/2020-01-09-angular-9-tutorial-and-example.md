@@ -53,8 +53,10 @@ You'll need to have the following prerequisites for a better understanding of th
 - A working knowledge of HTML, CSS and JavaScript/TypeScript. You don't need to be an expert in TypeScript but a familiarity with OOP concepts such as classes and constructors is required.
 - Node.js and NPM installed on your development machine.
 
+See [Working with Imports, Decorators, Async/Await and FormData in TypeScript and Angular](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/)
 
-You can check out this [tutorial](https://www.techiediaries.com/ubuntu-install-nodejs-npm/) for how to set up a development environment for Angular on Ubuntu.
+
+You can check out how [install Node and NPM](https://www.techiediaries.com/ubuntu-install-nodejs-npm/) to set up a development environment for Angular on Ubuntu.
 
   
 ##    Step 1 - Installing Angular CLI 10/9
@@ -159,7 +161,7 @@ export class CalculatorComponent implements OnInit {
 }
 ```
 
-We first define a TypeScript class and decorate it with the `@Component()` decorator which provides the following metadata:
+We first define a [TypeScript class and decorate it with the `@Component()` decorator](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) which provides the following metadata:
 
 - `selector` which is used to provide a tag name for the component,just like regular HTML tags except that they are only available in your Angular 10/9 app.
 - `templateUrl` which is used to link an HTML template for rendering the view of the component. You can also use an inline template with the `template` property instead.
@@ -334,7 +336,7 @@ We'll be particularly learning about event and property bindings.
 
 Data binding is a mechansim implemented in most modern frameworks that establishes a connection between the component view and the data in the component's class in such a way that when the data variables changes, the elements that are bound to the data reflect changes automatically and vice versa. 
 
-With Angular 10/9 data bindings, you don't need to manually push data from your component to the DOM and back. This means you don't need to call methods like `querySelector()` or `querySelectorAll()` and listenning for events to synchronize the views with data changes and vice versa. This is done automatically for you! 
+With [Angular 10/9 data bindings](https://www.techiediaries.com/angular/textarea-keydown-focusin-events/), you don't need to manually push data from your component to the DOM and back. This means you don't need to call methods like `querySelector()` or `querySelectorAll()` and listenning for events to synchronize the views with data changes and vice versa. This is done automatically for you! 
 
 Angular 10/9 provides four types of data binding depending on how data flows i.e from the component to the DOM, from the DOM to the component or both ways:
 

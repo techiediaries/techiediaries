@@ -8,6 +8,8 @@ date: 2020-06-06
 tags : [angular]
 ---
 
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
+
 In this tutorial part, we'll learn to customize/upload user profile photos. We assume no previous knowledge of TypeScript which is the programming language used in both Ionic/Angular and Node/Nest.js used to build both the front-end and back-end of our chat application. We'll be also explaining basic concepts such as imports, decorators, Async/Await and HTML5 FormData.
 
 These are all the tutorial parts:

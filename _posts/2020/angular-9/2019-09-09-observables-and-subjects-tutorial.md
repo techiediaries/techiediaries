@@ -12,7 +12,7 @@ We'll also learn about the related concepts such as:
 
 - The observer pattren and subscriptions.
 - Hot and cold observables.
-- RxJS’ `BehaviorSubject` and `ReplaySubject`.
+- [RxJS’ `BehaviorSubject` and `ReplaySubject`](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/).
 - How to create and subscribe to Observables.
 - How Observables are used in Angular.
 - Working with the HttpClient Module and Observables

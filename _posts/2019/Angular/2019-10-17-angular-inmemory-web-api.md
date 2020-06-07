@@ -10,7 +10,7 @@ In this tutorial, you'll see, by example, how to use the in-memory web api modul
 
 
 
-The  [`angular-in-memory-web-api`](https://github.com/angular/in-memory-web-api)  module provides an in memory data store where you can create and fetch data and simulates a real REST API back-end. It intercepts Angular HttpClient requests that would otherwise go to the remote server and redirects them to an in-memory data store that you control.
+The  [`angular-in-memory-web-api`](https://github.com/angular/in-memory-web-api)  module provides an in memory data store where you can create and fetch data and simulates a [real REST API back-end](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). It intercepts Angular HttpClient requests that would otherwise go to the remote server and redirects them to an in-memory data store that you control.
 
 It works as a proxy for your real back-end. Each time you send an HTTP request, the module intercepts it, process it and returns the results from memory. This way, when you are ready to use a real API back-end you will not be required to change the API endpoints you added in your Angular code.
 
@@ -23,7 +23,7 @@ This module intercepts the `HttpClient` (the Angular 4.3+ HTTP client) requests 
 To complete this tutorial, you will need to have a few prerequisites, such as:
 
 - Node.js **8.9+** and npm installed on your system. Both are required to install and run Angular CLI 8,
-- Familiarity with JavaScript and TypeScript.
+- Familiarity with JavaScript and [TypeScript](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/).
 
 That's all what you need, you can use Windows, macOS or any Linux distribution provided that you have the right Node.js version installed on your system.
 
@@ -148,7 +148,7 @@ export class AppModule { }
 
 ## Creating your Data CRUD Service
 
-After installing and setting up the in-memory web api module, you next need to create another service with the `PolicyService` name which encapsulates all the code needed for making CRUD operations to create, read, update and delete insurance policies:
+After installing and setting up the in-memory web api module, you next need to create another Angular service with the `PolicyService` name which encapsulates all the code needed for making CRUD operations to create, read, update and delete insurance policies:
 
 ```bash
 $ ng generate service policy
@@ -313,4 +313,4 @@ $ ng start
 
 ## Conclusion
 
-In this tutorial, you've created a simple Angular 8 CRUD example application that makes use of the `angular-in-memory-web-api` module to mock a REST API with an in-memory database instead of using a real back-end server that could not be yet available at the time when you are creating your front-end application.
+In this tutorial, you've created a simple Angular 8 CRUD example application that makes use of the `angular-in-memory-web-api` module to mock a REST API with an in-memory database instead of using a real back-end server that could not be yet available at the time when you are creating your [front-end application](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/).

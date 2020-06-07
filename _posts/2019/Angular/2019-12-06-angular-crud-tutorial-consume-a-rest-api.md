@@ -12,7 +12,7 @@ tags : [ python , django , mysql, angular, angular9, angular-9-ngfor-examples, a
 
 > You can also get our [Angular 8 book](https://www.techiediaries.com/angular-book-build-your-first-web-apps) for free or pay what you can.
 
-This tutorial is designed for developers that want to use Angular 9 to build front-end apps for their back-end REST APIs. You can either use Python & Django as the backend or use JSON-Server to mock the API if you don't want to deal with Python. We'll be showing both ways in this tutorial.
+This tutorial is designed for developers that want to use [Angular 9 to build front-end apps](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) for their [back-end REST APIs](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). You can either use Python & Django as the backend or use JSON-Server to mock the API if you don't want to deal with Python. We'll be showing both ways in this tutorial.
 
 Check out the other parts of this tutorial:
 

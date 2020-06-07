@@ -8,6 +8,7 @@ date: 2020-06-05
 tags : [angular]
 ---
 
+![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
 
 In the previous tutorial we have created the server side of our chat application that uses TypeScript, and Node/Nest.js. Now, in this tutorial, we are going to create the frontend mobile application using Ionic 5 and Angular 9.
 
