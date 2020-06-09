@@ -11,6 +11,8 @@ In this article, we'll learn by example what's the HTML `download` attribute and
 
 HTML 5 provides many features that are less known by developers but can be useful for quickly solving common development problems.
 
+See also how to [upload forms with FormData and TypeScript](https://www.techiediaries.com/typescript-formdata-example-queryselector-onsubmit/).
+
 ## What's the Download Attribute in HTML 5?
 
 One of these HTML 5 features is the download attribute which enables developers to use a different file download name other than the name in the URL and even force the downloading of a file by the browser which was only possible via server code before that.

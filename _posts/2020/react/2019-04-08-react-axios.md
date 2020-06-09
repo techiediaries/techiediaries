@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "React Tutorial: Call & Consume a JSON REST API with Axios"
+title: "Consume a JSON REST API with React and Axios"
 image: "images/content/react.png"
 excerpt: "Throughout this tutorial, we'll build a simple React application that consumes JSON data from third-part RESTful API using the Axios library. We are also going to style the user interface of our app with Bootstrap 4 components such as the Container and Card components." 
 tags : [react] 

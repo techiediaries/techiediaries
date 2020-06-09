@@ -152,4 +152,4 @@ You also need to make sure the user in the database is successfully updated with
 
 ## Conclusion
 
-In this tutorial, you have seen how you can use Nest.js with Multer to upload files/images to your server. You've also seen how you can serve static files from Nest.js. To send a file to this server, you can either use a REST API client or in a real world scenario, you need to add a form with  `multipart/form-data` type. This will be the subject of other tutorials where we'll see how to create a frontend for our Nest.js application. 
+In this tutorial, you have seen how you can use Nest.js with Multer to upload files/images to your server. You've also seen how you can serve static files from Nest.js. To send a file to this server, you can either use a REST API client or in a real world scenario, you need to add a form with  [`multipart/form-data`](https://www.techiediaries.com/formdata/) type. This will be the subject of other tutorials where we'll see how to create a frontend for our Nest.js application. 

@@ -193,6 +193,8 @@ Next, add a `componentDidMount()` life-cycle method and fetch JSON data from the
   }
 ```
 
+> Note: You can also use [Axios with React](https://www.techiediaries.com/react-axios/) to fetch data from servers.
+
 ### Bootstrap Navigation Bar
 
 `reactstrap` provides a Navbar component which represents a responsive Bootstrap 4 navigation bar component. 

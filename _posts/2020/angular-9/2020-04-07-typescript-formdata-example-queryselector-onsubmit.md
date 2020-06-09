@@ -6,6 +6,8 @@ excerpt: "In this tutorial, we'll learn to use FormData in TypeScript 3.8"
 tags : [typescript] 
 ---
 
+![FormData in TypeScript](https://www.techiediaries.com/images/typescript-formdata.png)
+
 In this post, we'll learn how to use FormData in TypeScript 3.8 to submit an HTML form. We'll also see how to use:
 
 - `querySelector` to query for a DOM element,
@@ -69,7 +71,7 @@ We used the `querySelector` method to query for the form with the `myform` ID.
 
 Next, we used the `onsubmit` method of the form to listen for the submit event on the form.
 
-Inside the handler arrow function passed to the `onsubmit` method, which will be used to handle the form submission, we create an instance of `FormData` and we pass in the form element to the instance.
+Inside the handler arrow function passed to the `onsubmit` method, which will be used to handle the form submission, we create an instance of [`FormData`](https://www.techiediaries.com/formdata/) and we pass in the form element to the instance.
 
 Finally, we simply displayed the form data in the console by using the `get` method of `FormData` to get the value entered in the `input` field.
 

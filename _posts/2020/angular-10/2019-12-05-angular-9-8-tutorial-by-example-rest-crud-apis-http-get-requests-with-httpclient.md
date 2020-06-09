@@ -9,8 +9,7 @@ tags : [angular, angular-10, angular-9, angular-9-tutorials ]
 ---
 
 
-In this Angular 9/10 tutorial, we'll learn to build an Angular 9/10 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding
- a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
+In this Angular 9/10 tutorial, we'll learn to build an Angular 9/10 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
 
  ![Angular 10 tutorial](https://www.techiediaries.com/assets/angular-10-tutorial.png)
 
@@ -93,7 +92,7 @@ The `HttpClient` builtin service provides many advantages to Angular developers:
 - HttpClient has many builtin features for implementing test units,
 - HttpClient makes use of RxJS Observables for handling asynchronous operations instead of Promises which simplify common web development tasks such as 
 - - The concelation of HTTP requests,
-- - Listenning for the progression of download and upload operations,
+- - Listenning for the progression of file download and [file upload](https://www.techiediaries.com/angular-formdata/) operations,
 - - Easy error handling, 
 - - Retrying failed HTTP requests, etc. 
 

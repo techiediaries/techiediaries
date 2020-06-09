@@ -15,7 +15,8 @@ The Apollo client provides two ways to send GraphQL queries:
 - Using the query method,
 - Using the `useQuery` React hook 
 
-The `useQuery` React hook allows you to pass a GraphQL query and will take care of fetching the data automatically.
+The `useQuery` React hook allows you to pass a GraphQL query and will take care of [fetching the data](https://www.techiediaries.com/react-axios/).
+ automatically.
 
 Please note that the useQuery hook is not a built-in React hook such as `useState` or `useEffect` hooks but a custom hook provided by the `@apollo/react-hooks package`   
 

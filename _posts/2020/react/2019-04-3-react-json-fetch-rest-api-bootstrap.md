@@ -181,6 +181,8 @@ export default App;
 
 We simply send a GET request to the `/todos` endpoint. Once the returned Promise is resolved we use the [`setState()` method](https://www.techiediaries.com/react-setstate) to assign the returned data to the `todos` state variable. If there is an error we simply display it in the console.
 
+> Note: You can also [fetch data in React using Axios](https://www.techiediaries.com/react-axios/)
+ 
 If you open your browser console, you should the fetched todos displayed as an array of objects. Let's render them in our UI. Update the `render()` method in the `src/App.js` file as follows:
 
 ```js

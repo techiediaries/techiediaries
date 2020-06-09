@@ -73,7 +73,7 @@ In this step, let’s implement the UI for uploading images to a server.
 
 Go to the  `src/app/home/home.component.ts`  file, and start by adding the following imports:
 
-```
+```ts
 import { Component, OnInit, ViewChild, ElementRef  } from '@angular/core';
 import { HttpEventType, HttpErrorResponse } from '@angular/common/http';
 import { map } from 'rxjs/operators';  
@@ -82,7 +82,7 @@ import { UploadService } from  '../upload.service';
 
 Next, add the  `fileInput`  reference and  `files`  array and inject  the `UploadService` via the component constructor  as follows:
 
-```
+```ts
 @Component({  
   selector: 'app-home',  
   templateUrl: './home.component.html',  
@@ -119,14 +119,14 @@ callUploadService(file) {
   }
 
 ```
-
-We simply make a `FormData` instance and append our file to a `file` field. 
+ 
+We simply make a [`FormData`](https://www.techiediaries.com/formdata/) instance and append our file to a `file` field. 
 
 Please note that you can name the `file` field with any valid key name but you need be aware that you should use the same name in the backend  server for extracting the file data.
 
 Next, we call the  `upload()`  method of  the `UploadService`.
 
-Next, we need to add an  `upload()`  method for uploading multiple image files:
+Next, we need to add an  `upload()`  method for [uploading multiple image files with FormData](https://www.techiediaries.com/angular-formdata/):
 
 ```ts
 private upload() {  

@@ -10,7 +10,7 @@ Throughout this tutorial, we'll be using PHP with React and Axios to create a si
 
 The PHP backend will expose a set of RESTful API endpoints so we'll be using the Axios library for making Ajax calls from the React.js UI.
 
-We'll also see how to handle forms in React and how to send multipart form data with Axios using FormData.
+We'll also see how to handle forms in React and how to send multipart form data with Axios using [FormData](https://www.techiediaries.com/formdata/).
 
 In this tutorial, we are going to integrate React with PHP using Babel in the browser and a `<script>` tag. As such, we'll serve the React application from PHP so we don't need to enable CORS in our server since both the backend and frontend are served from the same domain. 
 
@@ -243,7 +243,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 </body>   
 ```
 
-We first create a React component called `App` by extending the `React.Component` class. Next, we add a contacts variable to the `state` object which will be used to hold the contacts after we fetch them from the PHP REST endpoint using Axios.
+We first create a React component called `App` by extending the `React.Component` class. Next, we add a contacts variable to the `state` object which will be used to hold the contacts after we [fetch them from the PHP REST endpoint using Axios](https://www.techiediaries.com/react-axios/).
 
 Next, we define a React `render()` method which returns a fragment that wraps the `<h1>` header and `<table>` elements.
 

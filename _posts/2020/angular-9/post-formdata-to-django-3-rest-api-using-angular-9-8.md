@@ -7,6 +7,7 @@ categories: angular
 tags : [angular, angular-9] 
 ---
 
+![Django Angular FormData](https://www.techiediaries.com/images/django-angular-upload-formdata.png)
 
 In this post, we will show you how to post FormData to a REST API, built with django 3, using Angular 9/8. 
 

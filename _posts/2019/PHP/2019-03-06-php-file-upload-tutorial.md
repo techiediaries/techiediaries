@@ -353,7 +353,7 @@ Finally, we add the `onSubmit()` method that will be called when the user submit
   }
 ```
 
-We create an instance of `FormData` then we use the `append()` method of the instance to add a key/value pair. the key is the name of the field. In our case it needs to be `avatar` since this is where the PHP script expects to find the uploaded file. Finally we simply call the `uploadFile()` method with the form data that will be posted to the server as an argument and we subscribe to the returned Observable to actually send the POST request. 
+We create an instance of [`FormData`](https://www.techiediaries.com/formdata/) then we use the `append()` method of the instance to add a key/value pair. the key is the name of the field. In our case it needs to be `avatar` since this is where the PHP script expects to find the uploaded file. Finally we simply call the `uploadFile()` method with the form data that will be posted to the server as an argument and we subscribe to the returned Observable to actually send the POST request. 
 
 We assign the result to the `uploadResponse` variable.
 

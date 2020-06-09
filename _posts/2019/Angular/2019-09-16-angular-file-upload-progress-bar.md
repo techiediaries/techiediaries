@@ -265,7 +265,7 @@ Finally, add these two methods for handling selecting a file and submitting the 
   }
 ``` 
 
-We create a a variable of `FormData` type and we append a field named **file**. Pay attention to the name of this field, it should be the same name that your server expects otherwise the server will not be able to extract the file.
+We create a a variable of [`FormData`](https://www.techiediaries.com/formdata/) type and we append a field named **file**. Pay attention to the name of this field, it should be the same name that your server expects otherwise the server will not be able to extract the file.
 
 We then send the form data to the server by calling the upload() method of `UploadService` which also takes the user id as a second argument. As we mentioned before, the user is is simply hard-coded to a value of **1** so you need to make sure you have a user in your database with an id of **1**. 
 

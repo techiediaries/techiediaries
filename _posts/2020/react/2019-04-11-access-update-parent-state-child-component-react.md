@@ -81,7 +81,7 @@ class ContactForm extends React.Component {
 }
 ```
 
-The child component renders an HTML form and stores its internal state comprised of the values of the form fields. It also provides a `handleFormSubmit()` method which handles submitting the form to the backend REST API using the Axios client and the `FormData` structure.
+The child component renders an HTML form and stores its internal state comprised of the values of the form fields. It also provides a `handleFormSubmit()` method which handles submitting the form to the backend [REST API using the Axios client](https://www.techiediaries.com/react-axios/) and the [`FormData`](https://www.techiediaries.com/formdata/) structure.
 
 This is the implementation of the parent `App` component:
 

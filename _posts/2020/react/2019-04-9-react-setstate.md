@@ -59,7 +59,8 @@ We have a `todos` state which will hold the todos we are going to fetch from the
 
 In the constructor of the component we are passing an empty array to the `todos` state.
 
-After fetching data from the third-party API we use the following line to update the state of the component:
+After [fetching data from the REST API](https://www.techiediaries.com/react-axios/) we use the following line to update the state of the component:
+
 
 ```js
 this.setState({ todos: data }) 

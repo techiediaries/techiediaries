@@ -5,15 +5,17 @@ image: "images/content/angular.png"
 excerpt: "" 
 categories: angular
 date: 2020-02-14
-tags : [angular, angular-9] 
+tags : [angular, angular-9, formdata] 
 ---
 
-In this tutorial, we'll learn by example how to implement Angular 9 multiple file upload with FormData and PHP. We'll also see an example of Angular Reactive forms for uploading multiple files.
+![Angular PHP Upload FormData](https://www.techiediaries.com/images/angular-php-upload-formdata.png)
 
-## Multiple File Uploading with Angular 9 FormData and PHP
+In this tutorial, we'll learn by example how to implement Angular 9 multiple file upload with [FormData](https://www.techiediaries.com/formdata/) and PHP. We'll also see an example of Angular Reactive forms for uploading multiple files.
+
+## Multiple File Uploading with Angular 9, FormData and PHP
 
  
-Uploading multiple files in Angular 9 is easy.
+[Uploading multiple files in Angular 9 and FormData](https://www.techiediaries.com/angular-formdata/) is easy.
 
 In this example, we'll show you how to create a form for sending multiple files in your Angular 9 application. 
 

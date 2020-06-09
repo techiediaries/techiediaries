@@ -43,7 +43,7 @@ You can create a form in HTML by using the `<form>` tag.
 
 - You then need to add the input controls, 
 - Specify the type of the HTTP method to that will be used to submit information to the server,
-- Add the submit URL that will be used to process the form data,
+- Add the submit URL that will be used to process the [form data](https://www.techiediaries.com/formdata/),
 
 Let's see a simple example form. 
 

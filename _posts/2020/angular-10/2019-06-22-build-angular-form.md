@@ -107,7 +107,7 @@ export class AppComponent  {
 }
 ```
 
-We passed in the reference to the `NgForm` object that represents our form to the `onSubmit()` method and we can use it to access various properties like `value` which provides a plain JS object that contains the attributes of the form and their values. In this example, we simply print the form value in the console but in a real world situation, we can use it to send the data to a server via a POST request.
+We passed in the reference to the `NgForm` object that represents our form to the `onSubmit()` method and we can use it to access various properties like `value` which provides a plain JS object that contains the attributes of the [form and its data](https://www.techiediaries.com/angular-formdata/). In this example, we simply print the form value in the console but in a real world situation, we can use it to send the data to a server via a POST request.
 
 You can see all the available methods of `NgForm` from the [docs](https://angular.io/api/forms/NgForm#methods). 
 

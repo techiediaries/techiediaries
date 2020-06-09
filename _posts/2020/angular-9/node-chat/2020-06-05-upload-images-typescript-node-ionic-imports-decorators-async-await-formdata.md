@@ -10,7 +10,7 @@ tags : [angular]
 
 ![Angular 9 and Ionic 5 Chat App](https://www.techiediaries.com/images/angular-chat-tutorial.png)
 
-In this tutorial part, we'll learn to customize/upload user profile photos. We assume no previous knowledge of TypeScript which is the programming language used in both Ionic/Angular and Node/Nest.js used to build both the front-end and back-end of our chat application. We'll be also explaining basic concepts such as imports, decorators, Async/Await and HTML5 FormData.
+In this tutorial part, we'll learn to customize/upload user profile photos. We assume no previous knowledge of TypeScript which is the programming language used in both Ionic/Angular and Node/Nest.js used to build both the front-end and back-end of our chat application. We'll be also explaining basic concepts such as imports, decorators, Async/Await and HTML5 [FormData](https://www.techiediaries.com/formdata/).
 
 These are all the tutorial parts:
 
@@ -31,7 +31,7 @@ If you are a TypeScript beginner, you'll also learn throughout this tutorial how
 - How to use TypeScript decorators, which are heavily used by both Angular and Nest.js,
 - How to import APIs from TypeScript modules, 
 - How to use the async/await syntax in TypeScript, 
-- How to use HTML FormData in TypeScript, etc.
+- How to use HTML [FormData in TypeScript](https://www.techiediaries.com/typescript-formdata-example-queryselector-onsubmit/), etc.
 
 You'll learn about new concepts in Node/Nest.js, Angular and Ionic.
 
@@ -381,7 +381,7 @@ This method will be called when the user selects a file. If a file is selected i
 
 ## Uploading Image Files with Angular 9 `HttpClient` and `FormData`
  
-Now that we have added the code to retrieve the user identifier from the local storage and  select the file from the user drive, let’s add the method that actually uploads the selected file to the Node server along with the currently logged in user using Angular 9 `HttpClient` and HTML5 `FormData`:
+Now that we have added the code to retrieve the user identifier from the local storage and  select the file from the user drive, let’s add the method that [uploads the file to the Node server from Angular with FormData](https://www.techiediaries.com/angular-formdata/) along with the currently logged in user using Angular 9 `HttpClient` and HTML5 `FormData`:
 
 
       // src/app/profile/profile.page.ts

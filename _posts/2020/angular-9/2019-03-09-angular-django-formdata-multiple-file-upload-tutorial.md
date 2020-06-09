@@ -8,11 +8,19 @@ tags : [ python , django , angular, angular-9-httpclient-examples, angular-fulls
 author: omar
 ---
 
-In the [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/) we have seen how to implement file uploading in Django and Angular 9. In this tutorial, we'll see how to implement multiple file uploading.
+![Angular Django FormData](https://www.techiediaries.com/images/angular-django-formdata.png)
+
+In the [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/) we have seen how to implement file uploading in Django and Angular 9. In this tutorial, we'll see how to implement multiple file uploading with [FormData](https://www.techiediaries.com/formdata/).
 
 It's recommended that you start from the previous tutorial to see detailed steps of how to create a django project, how to install Angular CLI and generate a new Angular 9 project along with services and components as we won't cover those basics in this part.
 
-## Cloning Angular 9 Django Upload App
+## Working with Angular 9, Django and FormData
+
+In this tutorial, we'll see how to use HTML5 [FormData with Angular](https://www.techiediaries.com/angular-formdata/) and Django to upload multiple files from a TypeScript frontend to a Python server.
+
+Let's get started by cloning a django project with single file uploading already implemented.
+
+### Cloning Angular 9 Django Upload App
 
 If you don't want to follow the steps from the previous part, you first need to get the project we've built. Open a new terminal and run the following command:
 
@@ -35,7 +43,7 @@ $ ng serve
 
 Your Angular application will be available from the `127.0.0.1:4200` address.
 
-## Running the Django 3 Upload Server
+### Running the Django 3 Upload Server
 
 Open a new terminal window and create a virtual environment using the following command:
 
@@ -68,7 +76,7 @@ Open your web browser and navigate to the `127.0.0.1:4200/profile` page where yo
 ![Django REST API File Upload with Angular 7](https://i.imgur.com/kg8YApY.png)
 
 
-## Adding Multiple File Upload with Angular 9
+## Adding Multiple File Upload with Angular 9, TypeScript and FormData
 
 Now, let's proceed to implement multiple file uploading. 
 
@@ -196,7 +204,7 @@ Next, define the `getFiles()` method which return the array of files in the `upl
   }
 ```
 
-## Adding the Upload Method
+## Adding the TypeScript Upload Method
 
 Finally, add the `upload()` method that will be called to actually upload the files to the Django server using `HttpClient` and `FormData`:
 
@@ -224,6 +232,8 @@ Finally, add the `upload()` method that will be called to actually upload the fi
 ```
 
 We call the `getFiles()` method to get an array of all the selected and dropped files. Next we loop over the files array and we create a `FormData` object and we append the current file in the loop to it then we call the `upload()` method of our `UploadService` and we push the returned Observable to the `requests` array.
+
+This is another example of using [FormData and TypeScript](https://www.techiediaries.com/typescript-formdata-example-queryselector-onsubmit/).
 
 Finally we use the RxJS `concat()` operator to concatenate all returned Observables and subscribe to each one of them sequentially to send multiple POST requests to the server.
 

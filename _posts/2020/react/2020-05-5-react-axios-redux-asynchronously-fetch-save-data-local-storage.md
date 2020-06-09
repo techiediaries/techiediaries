@@ -7,7 +7,8 @@ tags: [react , javascript]
 
 In this tutorial, we'll learn about many of Redux concepts by creating a simple React application from scratch using React, Redux and Axios to asynchronously fetch and save data to Local Storage. 
 
-The application we'll be building is a simple JavaScript Jargon app that's based on the *Simplified JavaScript Jargon* available from this [repository](https://github.com/HugoGiraudel/SJSJ). We'll export the entries as JSON data and we'll consume it from our React application using Axios. The state will be handled by Redux. 
+The application we'll be building is a simple JavaScript Jargon app that's based on the *Simplified JavaScript Jargon* available from this [repository](https://github.com/HugoGiraudel/SJSJ). We'll export the entries as JSON data and we'll [consume it from our React application using Axios](https://www.techiediaries.com/react-axios/).
+. The state will be handled by Redux. 
 
 
 

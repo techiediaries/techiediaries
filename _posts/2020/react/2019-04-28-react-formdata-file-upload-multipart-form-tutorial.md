@@ -7,7 +7,7 @@ tags : [react , php]
 skipRss: true
 ---
 
-In this tutorial, you'll learn how to handle multi-part Form Data in React by implementing a simple file upload example. We'll use Axios and HTML5 `FormData`.
+In this tutorial, you'll learn how to handle multi-part Form Data in React by implementing a simple file upload example. We'll use Axios and HTML5 [`FormData`](https://www.techiediaries.com/formdata/).
 
 For the backend, we'll be using a simple PHP application that exposes a unique endpoint that accepts a POST request containing the file/image to upload.
 
@@ -145,8 +145,7 @@ class FileUploadForm extends React.Component {}
 export default FileUploadForm;
 ```  
 
-We import `React` and `axios` and we create and export the `FileUploadForm` component.
-
+We import [`React` and `axios`](https://www.techiediaries.com/react-axios/) and we create and export the `FileUploadForm` component.
 
 Next, create a `file` state variable for holding the file to upload:
 

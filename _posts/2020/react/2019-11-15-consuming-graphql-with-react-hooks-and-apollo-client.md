@@ -75,6 +75,7 @@ This is a screenshot of the React application in a web browser:
 
 ![React GraphQL Example](https://www.diigo.com/file/image/rscqpoqzocdeperodzdsodqdbs/React+App.jpg?k=44aa45f1b25ab934e8566dba04800718)
 
+> Check out how to [consume a REST API with React and Axios](https://www.techiediaries.com/react-axios/).
 
 ## Step 3 - Setting up The Apollo Client 
 

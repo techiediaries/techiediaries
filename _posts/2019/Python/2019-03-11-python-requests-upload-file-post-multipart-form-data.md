@@ -3,12 +3,12 @@ layout: post
 title: "Post Multipart Form Data in Python with Requests: Flask File Upload Example"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial we'll demonstrate how to upload a file from a Python server to another server by sending a POST request with multipart/form-data using the Python requests library." 
-tags : [ python , django] 
+tags : [ python , formdata, django] 
 author: omar
 ---
 
 
-In this tutorial we'll demonstrate how to upload a file from a Python server to another server by sending a POST request with `multipart/form-data` using the Python `requests` library.
+In this tutorial we'll demonstrate how to upload a file from a Python server to another server by sending a POST request with [`multipart/form-data`](https://www.techiediaries.com/formdata/) using the Python `requests` library.
 
 We'll be using two servers. The server that receives the file doesn't need to be a Python server but since we'he previously created one with Django in this [tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/), let's use it instead of re-inventing the wheel. 
 

@@ -331,7 +331,7 @@ The `createUser` method of the Chatkit instance requires a unique user identifie
 We also provide a user avatar for testing using the `https://image.flaticon.com/icons/png/128/149/149071.png` URL.
 
 
-> **Note:** In a production application, you need to provide your users with a way to upload their avatars then associate them with the Chatkit user. You also need to hash passwords before storing them in the database using a tool like [bcrypt](https://www.npmjs.com/package/bcrypt).
+> **Note:** In a production application, you need to provide your users with a way to [upload their avatars](https://www.techiediaries.com/angular-formdata/) then associate them with the Chatkit user. You also need to hash passwords before storing them in the database using a tool like [bcrypt](https://www.npmjs.com/package/bcrypt).
 
 Let's now define the `getToken` method. It takes a user id and returns an `AuthenticationResponse`:
 

@@ -4,9 +4,10 @@ title: "How to Post FormData (multipart/form-data) with Angular 9/8, TypeScript 
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this quick tutorial, you'll learn how to work with FormData in Angular 9/8 and how to post it to a web server via a POST request and HttpClient" 
 date: 2020-1-3
-tags : [angular, angular-9, angular-how-tos, angular-9-httpclient-examples, angular-9-formdata-examples] 
+tags : [angular, formdata, angular-9, angular-how-tos, angular-9-httpclient-examples, angular-9-formdata-examples] 
 ---
 
+![Angular FormData](https://www.techiediaries.com/images/angular-formdata.png)
 
 In this quick howto tutorial, you'll learn how to work with [`FormData` in Angular 9 and TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) and how to post it to a web server via a POST request and `HttpClient`. 
 
@@ -21,7 +22,7 @@ In this tutorial, we'll be looking at `FormData`, A browser API for handling for
 It's particularly helpful if you are working with client side frameworks like Angular as it allows you to easily prepare form data to be sent with POST HTTP requests.
  
 
-> **Note**: You can think of FormData as a representation of an HTML form in JavaScript instead of HTML. 
+> **Note**: You can think of [FormData](https://www.techiediaries.com/formdata/) as a representation of an HTML form in JavaScript instead of HTML. 
 >
 > You also can create a FormData instance from an HTML form. 
 
