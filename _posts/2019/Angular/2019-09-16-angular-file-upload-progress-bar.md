@@ -1,15 +1,17 @@
 ---
 layout: post
-title: "Angular 9/8 File Upload Tutorial: Listen for HTTP Events & Progress Bar Example"
+title: "Angular 10/9 File Upload Tutorial: Listen for HTTP Events & Progress Bar Example"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "In this tutorial, we'll learn how to upload files in Angular 8. For the backend we'll be using Nest.JS.
 We'll see how to use HttpClient to send POST request with multipart form data which is used for file uploading. We'll also see how to use reactive forms and progress bar." 
-date: 2020-1-2
+date: 2020-06-09
 tags : [angular, angular8, angular-9-ngif-examples, angular-9-httpclient-examples, angular-9-form-examples, angular-9-tutorials] 
 ---
 
+![Angular Upload](https://www.techiediaries.com/images/angular-upload.png)
 
-In this tutorial, we'll learn how to upload files in Angular 9. For the [backend we'll be using Nest.JS](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/)
+
+In this tutorial, we'll learn how to upload files in Angular 10. For the [backend we'll be using Nest.JS](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/)
 
 We'll see how to use `HttpClient` to send POST requests with [multipart form data used for file uploading](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/). We'll also see how to use reactive forms.
 
@@ -17,7 +19,7 @@ Finally, we'll see how to listen for [HttpClient progress events](https://angula
 
 Nest.js is a [TypeScript framework](https://www.techiediaries.com/angular/typescript-node-ionic-chat/) for building server-side apps inspired by Angular so it's easier to learn by Angular developers since it makes use of the same concepts such as controllers, services and dependency injection etc.
 
-> In this tutorial, we'll be implementing the frontend. For the backend, please check out:
+> In this tutorial, we'll be implementing the frontend. For the backend, check out:
 >
 > [Nest.js Tutorial: File Uploading with Multer and Serving Static Files in Nest](https://www.techiediaries.com/nestjs-upload-serve-static-file/)
 
@@ -65,17 +67,17 @@ async function bootstrap() {
 bootstrap();
 ```
 
-You can now send Cross Origin Request from your Angular app to your Nest.js without any problems. In production, you may want to disable CORS.
+You can now send Cross Origin Request from your Angular 10 app to your Nest.js without any problems. In production, you may want to disable CORS.
  
-## Installing Angular CLI 9
+## Installing Angular CLI 10
  
-Let's start by installing the Angular CLI 9 using the following command:
+Let's start by installing the Angular CLI 10 using the following command:
 
 ```bash
-$ npm install -g @angular/cli
+$ npm install -g @angular/cli@next
 ```
 
-Next, let's create the Angular 9 project:
+Next, let's create the Angular 10 project:
 
 ```bash
 $ cd angular-upload-example
@@ -91,7 +93,7 @@ $ cd frontend
 $ ng serve
 ```
 
-Your Angular 9 application will be running from the `http://loclahost:4200` address.
+Your Angular 10 application will be running from the `http://loclahost:4200` address.
 
 ## Importing  ReactiveFormsModule & HttpClientModule
 
@@ -267,7 +269,7 @@ Finally, add these two methods for handling selecting a file and submitting the 
 
 We create a a variable of [`FormData`](https://www.techiediaries.com/formdata/) type and we append a field named **file**. Pay attention to the name of this field, it should be the same name that your server expects otherwise the server will not be able to extract the file.
 
-We then send the form data to the server by calling the upload() method of `UploadService` which also takes the user id as a second argument. As we mentioned before, the user is is simply hard-coded to a value of **1** so you need to make sure you have a user in your database with an id of **1**. 
+We then [send the form data to the server from Angular](https://www.techiediaries.com/angular-formdata/) by calling the `upload()` method of `UploadService` which also takes the user ID as a second argument. As we mentioned before, the user is is simply hard-coded to a value of **1** so you need to make sure you have a user in your database with an id of **1**. 
 
 Next, we need to create the HTML template. Open the `src/app/profile/profile.component.html` file and add the following content:
 

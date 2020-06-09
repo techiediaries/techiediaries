@@ -9,7 +9,7 @@ tags : [angular, angular-9-material-examples]
 
 Angular Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering. 
 
-In this tutorial, you'll create an example that shows you how to use Material data-tables in your Angular 9 apps to render tabular data.
+In this tutorial, you'll create an example that shows you how to use Material data-tables in your [Angular 9 apps](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) to render tabular data.
 
 In the previous tutorial(s), you've created a fake REST API that provides data to your application by using Angular.
     

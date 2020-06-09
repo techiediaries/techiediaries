@@ -9,7 +9,7 @@ tags : [angular, formdata, angular-9, angular-how-tos, angular-9-httpclient-exam
 
 ![Angular FormData](https://www.techiediaries.com/images/angular-formdata.png)
 
-In this quick howto tutorial, you'll learn how to work with [`FormData` in Angular 9 and TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) and how to post it to a web server via a POST request and `HttpClient`. 
+In this quick how-to tutorial, you'll learn how to work with [`FormData` in Angular 9 and TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) and how to post it to a web server via a POST request and `HttpClient`. 
 
 One of the most important aspects of web development is forms as they allow you to collect data from users and send it to servers.
 
@@ -27,7 +27,7 @@ It's particularly helpful if you are working with client side frameworks like An
 > You also can create a FormData instance from an HTML form. 
 
 
-The `FormData` API allows you to create a set of key/value elements that correspond to form fields and their values. This can be then sent to the server using Angular HttpClient. 
+The `FormData` API allows you to create a set of key/value elements that correspond to form fields and their values. This can be then sent to the server using [Angular HttpClient](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/). 
 
 > **Note**: A [FormData](https://www.techiediaries.com/formdata/) instance is equivalent to an HTML form sent using the `multipart/form-data` encoding. 
 

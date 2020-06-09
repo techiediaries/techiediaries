@@ -17,7 +17,7 @@ RxJS provides the `catchError()`  operator which as its name suggests can be use
 
 Like the other RxJS operators `catchError()` can be piped into other streams using the `pipe()` function and you only need to provide a function that handles the errors properly as an argument to the operator. 
 
-HttpClient methods such as `get()` or `post()` return RxJS observables which means, we can call the `pipe()` method with the `catchError()` operator.
+[HttpClient methods such as `get()` or `post()` return RxJS observables](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) which means, we can call the `pipe()` method with the `catchError()` operator.
   
 
 We have two two types of errors in client-side apps:

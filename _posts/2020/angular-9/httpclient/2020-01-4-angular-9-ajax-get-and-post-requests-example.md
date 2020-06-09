@@ -33,7 +33,7 @@ The GET method of http is used to retrieve a resource from a server while POST i
 
 ## Angular HttpClient?
 
-`HttpClient` is a built-in service for sending http requests in Angular. It's built on top of the `XMLHttpRequest` interface available in modern and legacy web browsers.
+`HttpClient` is a built-in service for sending [http requests in Angular](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/). It's built on top of the `XMLHttpRequest` interface available in modern and legacy web browsers.
 
 ## Importing `HttpClientModule`
 

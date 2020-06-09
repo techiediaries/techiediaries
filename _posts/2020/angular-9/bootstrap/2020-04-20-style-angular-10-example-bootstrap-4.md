@@ -6,6 +6,8 @@ categories: angular
 tags: [angular, angular-10, bootstrap]
 ---
 
+![Angular Bootstrap Styling](https://www.techiediaries.com/images/style-angular-bootstrap.png)
+
 In this tutorial, we'll learn how to integrate and use bootstrap 4 with Angular 10.
 
 We'll see how to initialize an Angular 10 project and integrate it with Bootstrap 4. Next, we'll use the various Bootstrap 4 CSS utilities to create a responsive layout with navbars, tables, forms, buttons, cards and jumbotrons.

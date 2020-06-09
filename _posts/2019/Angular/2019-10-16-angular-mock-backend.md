@@ -20,7 +20,7 @@ Please note that both `json-server` and `faker.js` are framework agnostic i.e yo
 More often than not, modern web development involves multiple developers working in separate front-end and back-end applications. This approach has many advantages, such as the separation of concerns but also introduces a few challenges such as the difficulties in coordination between the front-end and back-end developers. Here comes the role of tools such as JSON-Server to ease these difficulties. As a front-end developer, JSON-Server is such a great tool that allows you to spin up a REST API server with a fully-working API with zero coding.
 
 
-Read this [tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor) for a real REST API example or also this [tutorial which implements a TypeScript/Node.js REST API with JWT Auth](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). But, as far as Angular concerned, there is no difference between consuming a mocked or real REST API.
+Read to build a real [REST API example](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor) or also this [tutorial which implements a TypeScript/Node.js REST API with JWT Auth](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). But, as far as Angular concerned, there is no difference between consuming a mocked or real REST API.
 
 ## How to Mock A REST API Back-End?
 

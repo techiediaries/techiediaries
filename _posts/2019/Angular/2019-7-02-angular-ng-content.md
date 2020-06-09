@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Content Projection/Transclusion in Angular 8|7 with ng-content"
+title: "Content Projection in Angular 9/8: Pass Data from a Parent Component to a Child Template with Ng-content"
 image: "images/content/angular.png"
 excerpt: "Content projection is an Angular concept that helps developers build reusable components. It allows you to pass data from a parent component to a template of a child component." 
 tags : [ angular , angular8 ] 
 --- 
 
-Content projection is an Angular concept that helps developers build reusable components. It allows you to pass data from a parent component to a template of a child component. It's similar to transclusion in Angular.js
+Content projection is an concept that helps developers build reusable [Angular components](https://www.techiediaries.com/angular-components/). It allows you to pass data from a parent component to a template of a child component. It's similar to transclusion in Angular.js
 
-Let's now see with a simple Angular 8 example how we can project content from a parent component to its child.
+## Content Projection with Angular 9 Example
+
+Let's now see with a simple [Angular 9 example](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) how we can project content from a parent component to its child.
 
 We'll be using Stackblitz for creating our content project example. 
 
@@ -44,13 +46,17 @@ export class HelloComponent  {
 ```
 As, you can see. Using the `@Input` decorator we can pass data to our component from the outside. 
 
+> Read more about [Angular TypeScript decorators](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/).
+
 Now, what if our data is more complex than just a name? Let's say we need to pass some HTML content to our component. This can be done with `@Input` but it's very effiecent and scalable and can be prone to errors.
  
 Here comes content projection with `<ng-content>`.
 
+## Implementing Projected Content
+
 Let's modify our hello component to accept projected content from the outside. 
 
-First, we need to use `<ng-content>` in our component template. This is where the passed data will be projected:
+First, we need to use `<ng-content>` in our Angular component template. This is where the passed data will be projected:
 
 ```ts
 import { Component, Input } from '@angular/core';
@@ -88,11 +94,11 @@ export class HelloComponent  {
 }
 ```  
 
-This means only `<h1>` tags will be passed and rendered. For exampl,e if you now pass the following content to the hello component, it will not be passed:
+This means only `<h1>` tags will be passed and rendered. For example if you now pass the following content to the hello component, it will not be passed:
 
 ```html
 <hello>
-    <h2>Hello Angular!</h2>
+    <h2>Hello Angular 9!</h2>
 </hello>
 ```
 
@@ -106,13 +112,13 @@ Now, to render the content, you need to make the following change:
 
 ```html
 <hello>
-  <h1 title>Hello Angular!</h1>
+  <h1 title>Hello Angular 9!</h1>
 </hello>
 ```
 
 ## Conclusion
 
-As a wrap-up, we've seen how to project content in Angular using `ng-content` which helps you build reusable components. 
+As a wrap-up, we've seen how to project content in Angular 9/8 using `ng-content` which helps you build reusable components. 
 
 
 

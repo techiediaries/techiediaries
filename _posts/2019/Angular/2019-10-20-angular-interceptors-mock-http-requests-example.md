@@ -60,7 +60,7 @@ export class AppModule { }
 
 ## Step 3 - Creating the Angular Interceptor
 
-After configuring Angular HttpClient, you need to create the interceptor. Inside the `src/app` folder of your project, create an `http.interceptor.ts` and add the following code: 
+After [configuring Angular HttpClient](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/), you need to create the interceptor. Inside the `src/app` folder of your project, create an `http.interceptor.ts` and add the following code: 
 
 ```ts
 import { Injectable, Injector } from '@angular/core';
@@ -131,7 +131,7 @@ Open the `tsconfig.json` file and add the `"resolveJsonModule": true` option und
 }
 ```
 
-Now, you can use [TypeScript `import` statement](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) to import JSON files in your Angular project.
+Now, you can use [TypeScript `import` statement](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) to [import JSON files in your Angular project](https://www.techiediaries.com/angular-local-json-files/).
 
 ## Step 6 - Intercepting URLs and Returning Mocked JSON Data
 

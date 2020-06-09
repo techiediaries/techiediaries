@@ -13,7 +13,7 @@ In the [previous tutorial](https://www.techiediaries.com/angular/angular-9-php-m
 
 ## Connecting with a PHP Backend with Angular 9 HttpClient
 
-In this tutorial, you'll learn how to use `HttpClient` in Angular 9 to make HTTP calls to a REST API and use template-based forms to submit data. 
+In this tutorial, you'll learn how to use `HttpClient` in Angular 9 to make HTTP calls to a REST API and use template-based [forms to submit data](https://www.techiediaries.com/angular-formdata/). 
 
 Now that you've created the RESTful API with a PHP script, you can proceed to create your Angular 9 project.
 
@@ -23,7 +23,6 @@ The recommended way of creating Angular projects is through using Angular CLI, t
 
 ```bash
 $ npm install -g @angular/cli
-
 ```
 
 > **Note**: This will install Angular CLI 9 globally so make sure you have configured npm to install packages globally without adding  `sudo`  in Debian systems and macOS or using an administrator command prompt on Windows. You can also just fix your [npm permissions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally) if you get any issues
@@ -52,7 +51,7 @@ You can access the frontend application by pointing your browser to the  [`http:
 
 ## Setting up Angular `HttpClient` & Forms
 
-Angular provides developers with a powerful HTTP client for sending HTTP requests to servers. It's based on the `XMLHttpRequest` interface supported on most browsers and has a plethora of features like the use of RxJS Observable instead of callbacks or promises, typed requests and responses and interceptors.  
+Angular provides developers with a powerful [HTTP client for sending requests](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) to servers. It's based on the `XMLHttpRequest` interface supported on most browsers and has a plethora of features like the use of RxJS Observable instead of callbacks or promises, typed requests and responses and interceptors.  
 
 You can setup `HttpClient` in your project by simply importing the `HttpClientModule` in your main application module.
 

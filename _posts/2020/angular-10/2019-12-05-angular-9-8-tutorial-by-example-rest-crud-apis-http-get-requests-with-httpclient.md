@@ -8,12 +8,13 @@ categories: angular
 tags : [angular, angular-10, angular-9, angular-9-tutorials ] 
 ---
 
+![Angular 10 tutorial](https://www.techiediaries.com/images/angular-10-tutorial.png)
+
 
 In this Angular 9/10 tutorial, we'll learn to build an Angular 9/10 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
 
- ![Angular 10 tutorial](https://www.techiediaries.com/assets/angular-10-tutorial.png)
 
-> Also see: [Building a Chat App with TypeScript/Node.js, Ionic 5/Angular 9 & PubNub/Chatkit](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
+> Also learn to build a [chat app with TypeScript, Angular 9 and PubNub/Chatkit](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
 
 
  ## What We'll Learn in this Angular 9/10 Tutorial? 
@@ -343,7 +344,7 @@ As a summary of what we have done — We installed Angular CLI and initialized a
 
 In this step, we'll proceed to set up the `HttpClient` module in our example.
 
-`HttpClient` lives in a separate Angular module, so we'll need to import it in our main application module before we can use it.
+`HttpClient` lives in a separate [Angular module](https://www.techiediaries.com/angular-modules/), so we'll need to import it in our main application module before we can use it.
 
 Open your example project with a code editor or IDE. I'll be using [Visual Studio Code](https://code.visualstudio.com). 
 
@@ -536,6 +537,7 @@ As a summary of what we did until this point of our tutorial — We have setup H
 
 In the next step of our tutorial, we'll learn how to fetch the JSON data from our REST API server using `HttpClient` v9.
 
+> Also read 3+ ways to [integrate Bootstrap with Angular](https://www.techiediaries.com/angular-bootstrap/) and how to [style Angular 10 UIs with Bootstrap 4](https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/).
 
 ##   Step 8 — Consuming the JSON REST API with Angular HttpClient 9/10
 
@@ -570,7 +572,7 @@ export class DataService {
 }
 ```
 
-We imported and injected the `HttpClient` service as a private `httpClient` instance. We also defined the `REST_API_SERVER` variable that  holds the address of our REST API server.
+We imported and injected the [`HttpClient` service](https://www.techiediaries.com/angular-http-client/) as a private `httpClient` instance. We also defined the `REST_API_SERVER` variable that  holds the address of our REST API server.
 
 Next, add a `sendGetRequest()` method that sends a GET request to the REST API endpoint to retrieve JSON data:
 

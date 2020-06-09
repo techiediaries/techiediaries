@@ -1,17 +1,20 @@
 ---
 layout: post
-title: "Angular Material 8 Tutorial: Build Navigation UI with Toolbar and Side Navigation Menu"
+title: "Angular Material 10/9 Tutorial: Build Navigation UI with Toolbar and Side Navigation Menu"
 image: "images/content/angular.png"
 excerpt: "Angular Material 8 Tutorial: Build Navigation UI with Toolbar and Side Navigation Menu" 
+date: 2020-06-09
 tags : [  angular ,  angular-9-material-examples]
 ---
 
-In the previous [tutorial](https://www.techiediaries.com/angular-tutorial) we’ve seen how to create an Angular 8 application for consuming a simple CRM REST API. We’ve also added component routing to our application in this [tutorial](https://www.techiediaries.com/angular-routing-tutorial). Now, let’s build on those tutorials to create the UI using Angular Material 8.
+In the previous tutorial we’ve seen how to consume a [REST API with Angular 10/9 HttpClient](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/).
+
+We’ve also added [component routing](https://www.techiediaries.com/angular-routing-tutorial/) to our application. Now, let’s learn to create the UI using Angular Material 10.
 
 
-## Setting up Angular Material 8
+## Setting up Angular Material 10/9
 
-We'll be using Material Design to style our CRM UI, so we need to add Angular Material 8 to our project. 
+We'll be using Material Design to style our App UI, so we need to add Angular Material 10 to our Angular project. 
 
 Fortunately, this is only one command away. Open a new terminal and run the following commands:
 
@@ -84,9 +87,9 @@ We import the following Material components modules for building our navigation 
 
 > **Note**: Make sure you [import](https://www.techiediaries.com/es-modules-import-export-default/) the Angular Material modules after Angular's BrowserModule, as the import order matters for NgModules.
 
-## Angular 8 Material Toolbar Example
+## Angular 10 Material Toolbar Example
 
-The Material toolbar components are designed to add containers for headers, titles, or actions. We can use various component such as `<mat-toolbar>` and `<mat-toolbar-row>` to create and structure toolbars for your application.
+The Material toolbar components are designed to add containers for headers, titles, or actions. We can use various component such as `<mat-toolbar>` and `<mat-toolbar-row>` to create and structure toolbars for your Angular 10 application.
 
 Open the `src/app/app.component.html` file and start by adding the toolbar:
 
@@ -128,7 +131,7 @@ This is a screenshot of our toolbar:
 ![Angular 8 Material Toolbar](https://www.diigo.com/file/image/bbccosoazobaoqoedqzdrocrpbd/Ngsimplecrm8.jpg)
 
 
-## Angular Material Sidenav Example
+## Angular 10 Material Sidenav Example
 
 According to the [docs](https://material.angular.io/components/sidenav/overview):
 
@@ -168,6 +171,6 @@ This is a screenshot of our UI:
 
 ## Conclusion
 
-In this tutorial, we’ve added Angular Material 8 to our Angular 8 application which will allow us to build a professional-grade UI for our CRM. Next, we created a navigation UI with Material toolbar, sidenav, buttons and icons components. In the next tutorial, we'll build our table and form UI to create a CRUD interface for creating reading, updating and deleting items from or CRM REST API. 
+In this tutorial, we’ve added Angular Material 10 to our application which will allow us to build a professional-grade UI for our apps. Next, we created a navigation UI with Material toolbar, sidenav, buttons and icons components. In the next tutorial, we'll build our table and form UI to create a CRUD interface for creating reading, updating and deleting items from or CRM REST API. 
   
 

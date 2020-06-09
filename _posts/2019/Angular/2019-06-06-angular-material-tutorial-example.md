@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Angular 8 Material Design Tutorial & Example"
+title: "Angular 10 Material Design Tutorial & Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll be learning how to use Angular 8 Material Design to build a beautiful and professional grade UI interface for our Angular front-end application" 
 tags : [ angular, angular-9-material-examples ]
 ---
  
-Throughout this tutorial, we'll learn about using [Angular Material](https://material.angular.io/) 8 to create professional UIs. 
+Throughout this tutorial, we'll learn about using [Angular Material](https://material.angular.io/) 10 to create professional UIs. 
 
-In the previous tutorial, you have seen how you can install Angular CLI 8 and generate a brand new Angular 8 front-end. Now let's see how we can add Angular Material 8 to our Angular application. 
+In the previous tutorial, you have seen how you can install Angular CLI 8 and generate a brand new Angular 10 front-end. Now let's see how we can add Angular Material 10 to our Angular application. 
 
 ## What's Material Design? 
 
@@ -20,14 +20,16 @@ Angular Material is the implementation of Material Design for Angular. It offers
 
 At this time, Angular Material 8 is the newest version.
 
-In this tutorial, we'll see how to add Material Design to Angular 8 in two ways: 
+In this tutorial, we'll see how to add Material Design to Angular 10 in two ways: 
 
 - The long way: by following a bunch of steps manually. This works for Angular 4+ versions.
 - The short way: by using the `ng add` command to quickly add Angular Material in one step using Angular Schematics. This method only works with Angular 6+.   
 
+> Learn to build a CRM UI with [navigation using Angular Material 10](https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav/).
+
 ## Step1: Installing Angular Material 8 and Angular CDK
 
-Head over to your terminal, navigate inside your created Angular front-end application and then run the following commands to install Angular Material 8 and Angular 8 CDK
+Head over to your terminal, navigate inside your created Angular front-end application and then run the following commands to install Angular Material 8 and Angular 10 CDK
 
 ```bash
 $ npm install --save @angular/material @angular/cdk
@@ -35,7 +37,7 @@ $ npm install --save @angular/material @angular/cdk
 
 ## Step 2: Adding Support for Angular Animations 
 
-Some Angular Material components use animations so you need to add support for animations in your Angular 8 front-end application in order to enable these animations.
+Some Angular Material components use animations so you need to add support for animations in your Angular 10 front-end application in order to enable these animations.
 
 Head back to your terminal and run the following command to install the Angular animations module 
 
@@ -102,7 +104,7 @@ With the release of Angular 6+, the new `ng add` command is available which make
 
 This command will use the package manager to download new dependencies and invoke corresponding installation scripts. This is making sure that the project is updated with dependencies, configuration changes and that package-specific initialization code is executed.
 
-In the following, we’ll use the _ng add_ command to add Angular Material to the previously created Angular 8 application. Head back to your command line, make sure you navigate inside your project's folder and run the following command:
+In the following, we’ll use the _ng add_ command to add Angular Material to the previously created Angular 10 application. Head back to your command line, make sure you navigate inside your project's folder and run the following command:
 
 ```bash
 $ ng add @angular/material
@@ -110,10 +112,10 @@ $ ng add @angular/material
 
 By executing this command, we’re installing Angular Material 8 and the corresponding theming into the project. Furthermore new starter components are registered into _ng generate._
 
-For an example, check out: [Angular Material 8 Tutorial: Build Navigation UI with Toolbar and Side Navigation Menu](https://www.techiediaries.com/angular-material-navigation-toolbar-sidenav) 
+Another popular choice is to use [Angular with Bootstrap 4](https://www.techiediaries.com/angular-bootstrap/) to build professional UIs.
 
 ## Conclusion
 
-That's it, we now have updated our Angular 8 front-end application to use Angular Material. In the next tutorial we'll see more detailed example of using Material data-table to create tables for our data.
+That's it, we now have updated our Angular 10 front-end application to use Angular Material. In the next tutorial we'll see more detailed example of using Material data-table to create tables for our data.
 
 

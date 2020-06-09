@@ -36,7 +36,7 @@ The obvious solution is to configure the backend server properly but that's not 
 
 Also check out an example of how to configure [CORS with TypeScript and Node/Nest.js backend](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) 
 
-Most server languages and frameworks provide easy APIs to configure CORS. For example, in PHP, you can simply add the following lines to your PHP file:
+Most server languages and frameworks provide easy APIs to configure CORS. For example, in [PHP](https://www.techiediaries.com/angular/php-angular-9-crud-api-httpclient/), you can simply add the following lines to your PHP file:
 
 ```php
 header('Access-Control-Allow-Origin: *');
@@ -54,7 +54,7 @@ In this tutorial, we will learn step by step  how to use Angular CLI proxy to fi
 
 ## Step 1 - Prepare your Angular Project
 
-At this step, we expect that you alreay have an Angular project with some code to send HTTP requests and CORS. Otherwise, you need to create a project and some code for sending requests to a server. 
+At this step, we expect that you alreay have an Angular project with some code to [send HTTP requests](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) and CORS. Otherwise, you need to create a project and some code for sending requests to a server. 
 
 Open a new command-line interface and navigate to the root folder of your project.
  

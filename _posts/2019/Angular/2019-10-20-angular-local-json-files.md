@@ -85,7 +85,7 @@ Please note that this supported only in Angular 6.1+ versions.
 
 ## Method 2: Reading Local JSON Files Using Angular `HttpClient` 
 
-The second method that you can use to import JSON files in your Angular application is Angular `HttpClient`. Let's see this by example.
+The second method that you can use to import JSON files in your Angular application is [Angular `HttpClient`](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/). Let's see this by example.
 
 First, you need to import `HttpClientModule` in your app. Open the `src/app/app.module.ts` file and update it as follows:
 
@@ -147,7 +147,7 @@ export class AppComponent implements OnInit {
 
 ## Method 3:  Reading Local JSON Files in Offline Angular Apps Using ES6+ `import` Statement
 
-If your Angular application goes offline, reading the JSON file with `HttpClient` will fail. In this case, we have one more method to import local JSON files using the ES6+ import statement which supports importing JSON files.
+If your Angular application goes offline, reading the JSON file with `HttpClient` will fail. In this case, we have one more method to import local JSON files using the [ES6+ import statement](https://www.techiediaries.com/es-modules-import-export-default/) which supports importing JSON files.
 
 But first we need to add a typing file as follows:
 

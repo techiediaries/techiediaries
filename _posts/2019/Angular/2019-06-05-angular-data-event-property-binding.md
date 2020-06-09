@@ -12,6 +12,8 @@ Up until now, our template is just plain HTML but Angular provides other constru
 
 Simply put, data binding is a fundamental concept in Angular that allows developers to make communication between a component and its view or more precisly the DOM. This way you don't need to manually push data from your component to the DOM and back. 
 
+> Learn how to build a full-stack app in our [Angular 10 CRUD tutorial](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/).
+
 Angular provides four types of data binding and they are essentically different in the way data flows i.e from the component to the DOM, from the DOM to the component or both ways:
 
 - Interpolation: Data flows from the component to the DOM - It's used to display the value of a component member variable in the associated template, e.g. `{{ foobar }}`. We use curly braces for interpolation.

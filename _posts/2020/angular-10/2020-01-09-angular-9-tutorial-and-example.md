@@ -325,6 +325,8 @@ At this point, this is a regular HTML file which doesn't include any Angular cod
 
 If you are building your app with plain JavaScript, you'll need to query the DOM elements and attach your defined functions to various events to implement your calculator but you don't need to do that in our case thanks to the Angular template syntax. 
 
+> Also read 3+ ways to [add Bootstrap to Angular](https://www.techiediaries.com/angular-bootstrap/) and how to [style your Angular 10 app with Bootstrap 4](https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/).
+
 
 ##    Step 5 - Understanding Angular 10/9 Template Syntax
 

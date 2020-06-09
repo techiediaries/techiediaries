@@ -7,6 +7,8 @@ canonical: https://www.techiediaries.com/angular-9-tutorial-and-example/
 tags : [  angular , angular8, angular-9-tutorials]
 ---
 
+![Angular First App](https://www.techiediaries.com/images/angular-first-app.png)
+
 In this tutorial, you will learn to build your first [TypeScript Angular 8](https://www.techiediaries.com/typescript-tutorial/) application from scratch.
 
 You'll get started with the basic concepts like modules, components and directives.
@@ -14,6 +16,8 @@ You'll get started with the basic concepts like modules, components and directiv
 You'll also learn about event and property binding.
 
 We'll be building a simple calculator application to demonstrate all the mentioned concepts.
+
+> Also read how to build a full-stack app in our [Angular 10 REST API tutorial](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/).
 
 ## Prerequisites
 
@@ -183,7 +187,7 @@ Now we need to use Angular magic to turn this template to a working calculator.
 
 ## Conclusion
 
-In this first part, we created our Angular 8 calculator application. In the [next tutorial](https://www.techiediaries.com/angular-data-event-property-binding), we'll use Angular data binding to make a working calculator.
+In this first part, we created our Angular 8 calculator application. In the [next tutorial](https://www.techiediaries.com/angular-data-event-property-binding/), we'll use Angular data binding to make a working calculator.
 
 
 

@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "Lazy Loaded Module Example in Angular 8|7 with loadChildren & Dynamic Imports"
+title: "Lazy Loaded Module Example in Angular 9/8 with loadChildren & Dynamic Imports"
 image: "images/content/angular.png"
-excerpt: "" 
+excerpt: "Lazy loading is the process of loading some features of your Angular application only when you navigate to their routes for the first time. This can be useful for increasing your app performance and decreasing the initial size of the bundle transmitted to the user's browser"
+date: 2020-06-09 
 tags : [ angular , angular8, angular-9-router-examples ] 
 ---
 
 Lazy loading is the process of loading some features of your Angular application only when you navigate to their routes for the first time. This can be useful for increasing your app performance and decreasing the initial size of the bundle transmitted to the user's browser. 
 
-In Angular 8, the syntax for lazy-loading modules has changed and it's now more aligned with the standard browser's API. 
+In Angular 8+, the syntax for lazy-loading modules has changed and it's now more aligned with the standard browser's API. 
 
-You now need to use the [dynamic import](https://javascript.info/modules-dynamic-imports) syntax to import your module in the `loadChildren` property of Angular Router routes. 
+You now need to use the [dynamic import](https://javascript.info/modules-dynamic-imports) syntax to import your module in the `loadChildren` property of [Angular Router routes](https://www.techiediaries.com/angular-routing-tutorial/). 
 
-The dynamic import API is a standard browser's API introduced in modern browers. It's promise-based and gives you access to the module, from where the module's class can be called.
+The dynamic [import API](https://www.techiediaries.com/es-modules-import-export-default/) is a standard browser's API introduced in modern browers. It's [promise](https://www.techiediaries.com/javascript-promises-tutorial-example/)-based and gives you access to the module, from where the module's class can be called.
 
 According to [v8.dev](https://v8.dev/features/dynamic-import)
 
@@ -24,10 +25,10 @@ Let's see a quick example!
 
 ## Prerequisites
 
-You need to have Angular CLI 8 installed and an Angular 8 project with routing setup.
+You need to have Angular CLI 9 installed and an [Angular 9 project](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) with routing setup.
  
 
-## Adding an Angular Module
+## Adding an Angular 9 Module
 
 We can only lazy-load modules in Angular so let's generate a feature module using the Angular CLI:
 
@@ -42,7 +43,7 @@ $ ng generate component admin/login
 $ ng generate component admin/dashboard
 ```
 
-## Using `loadChildren` to Lazy-Load your Module
+## Using `loadChildren` to Lazy-Load your Angular Module
 
 Angular provides the `loadChildren` property of a route's path to specify the module that needs to be lazy loaded when it's first navigated to.
 
@@ -67,7 +68,7 @@ In `loadChildren`, we use the dynamic import syntax to lazy-load (load-at-demand
 
 > Note: The routing module file should be automatically created by the CLI if you opted for automtically adding routing in your project, otherwise you need to create it manually and add the required code for setting up the router.
 
-## Configuring Routes in your Feature Module
+## Configuring Routes in your Angular Feature Module
 
 After configuring the route to lazy-load your feature module, you'll next need to add routing to the various components of the `admin` module which needs to have its own  routes seprated from the main routing module that resides in the `src/app/app-routing.module.ts` file. 
 
@@ -120,6 +121,6 @@ export class AdminModule { }
 
 ## Conclusion
 
-That's all we need to set up lazy-loaded modules in Angular 8. As a wrap-up, we've seen how to use the `loadChildren` property of a route in the Angular Router and the standard compliant dynamic import syntax to lazy load an example admin module.
+That's all we need to set up lazy-loaded modules in Angular 9. As a wrap-up, we've seen how to use the `loadChildren` property of a route in the Angular Router and the standard compliant dynamic import syntax to lazy load an example admin module.
 
 

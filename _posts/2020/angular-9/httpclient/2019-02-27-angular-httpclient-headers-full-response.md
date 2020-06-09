@@ -6,7 +6,7 @@ excerpt: "In this tutorial, we'll learn how to get Angular 9 HttpClient headers 
 tags : [angular, angular-9, angular-9-httpclient-examples ]
 ---
 
-In this Angular 9 HttpClient tutorial, we'll see how you can get headers and the full response when sending Http requests with HttpClient and how to use typed responses.
+In this Angular 9 HttpClient tutorial, we'll see how you can get headers and the full response when [sending Http requests with HttpClient](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) and how to use typed responses.
 
 We'll see an example of getting paginated data from our API server by using the `Link` header. We'll see how to retrieve the full response and how to get an HTTP header from the response.
 
@@ -17,7 +17,7 @@ Wikipedia defines the [Link header](https://www.w3.org/wiki/LinkHeader) as:
 
 ## How to Get Headers and Full Responses with HttpClient in Angular 9?
 
-We'll only build the Angular service of our example pagination demo so you should know how to create a project and other artifacts like components. Otherwise, you can follow the other tutorials in our website that show how to get started with Angular. 
+We'll only build the [Angular service](https://www.techiediaries.com/angular-services/) of our example pagination demo so you should know how to create a project and other artifacts like [Angular components](https://www.techiediaries.com/angular-components/). Otherwise, you can follow the other tutorials in our website that show how to get started with Angular. 
 
 ### How to Obtain the Full Http Response
 

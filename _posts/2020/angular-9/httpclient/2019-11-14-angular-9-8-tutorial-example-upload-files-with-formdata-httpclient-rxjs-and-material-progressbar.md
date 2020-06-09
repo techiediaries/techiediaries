@@ -4,10 +4,10 @@ title: "Angular 9/8 Tutorial & Example — Upload files with FormData, HttpClien
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we’ll see by example how to upload multiple image files using  FormData,  HttpClient (for posting  multipart/form-data), Angular 9/8 and TypeScript" 
 canonical: "https://www.ahmedbouchefra.com/blog/angular-tutorial-example-upload-files-with-formdata-httpclient-rxjs-and-material-progressbar/"
-tags : [angular , angular9, angular-9-ngfor-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-9-material-examples, angular-9-formdata-examples, angular-9-tutorials] 
+tags : [angular , formdata, angular9, angular-9-ngfor-examples, angular-9-httpclient-examples, angular-9-router-examples, angular-9-material-examples, angular-9-formdata-examples, angular-9-tutorials] 
 ---
 
-In this tutorial, we’ll see by example how to upload multiple image files using  **FormData**,  **HttpClient** (for posting  **multipart/form-data**), Angular 9/8 and TypeScript.
+In this tutorial, we’ll see by example how to [upload multiple image files using  FormData, HttpClient](https://www.techiediaries.com/angular-formdata/) (for posting  **multipart/form-data**), Angular 9/8, and TypeScript.
 
 We’ll see how to use Angular Material  **ProgressBar** for indicating activity when uploading images and how to use HttpClient along with with the RxJS  **map()**  method to listen for file upload progress events.
 

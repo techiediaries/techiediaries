@@ -6,9 +6,13 @@ excerpt: "In this tutorial we will see how to use Bootstrap 4 to style websites 
 tags : [angular, angular-9, bootstrap] 
 ---
 
+![Angular Bootstrap](https://www.techiediaries.com/images/angular-bootstrap.png)
+
 In this tutorial, we will see how to use Bootstrap to style apps built using Angular 9. 
 
 We'll see how to integrate Angular with Bootstrap, in various ways including using `ng-bootstrap` and `ngx-bootstrap` packages. 
+
+> Also read how to use [Bootstrap 4 and jQuery with Angular 10](https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/) to build professional UIs.
 
 We'll be using Angular CLI 9 for generating a brand new project.
 
@@ -26,7 +30,7 @@ These are the steps of our tutorial:
 
 ## What is Bootstrap
 
-[Bootstrap](https://www.techiediaries.com/bootstrap-tutorial) is the most popular HTML and CSS framework for building responsive layouts with ease and without having a deep knowledge of CSS (Still custom CSS is required to customize your design ane make it different from the other Bootstrap-styled websites unless you are using a BS theme developed specifically for you).
+[Bootstrap](https://www.techiediaries.com/bootstrap-tutorial/) is the most popular HTML and CSS framework for building responsive layouts with ease and without having a deep knowledge of CSS (Still custom CSS is required to customize your design ane make it different from the other Bootstrap-styled websites unless you are using a BS theme developed specifically for you).
 
 Bootstrap 4 is the latest version of BS which brings many new and powerful features to the framework most importantly Flexbox which is now the default display system for BS grid layout (one of the most important features of BS).
 
@@ -83,7 +87,7 @@ Next, navigate inside the root folder of your project
 $ cd angular-bootstrap-examples
 ```
 
-You can then serve your Angular 9 application using the `ng serve` command as follows:
+You can then serve your [Angular 9 application](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) using the `ng serve` command as follows:
 
 ```bash
 $ ng serve

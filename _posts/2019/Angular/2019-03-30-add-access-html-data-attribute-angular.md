@@ -6,11 +6,18 @@ excerpt: "In this quick tutorial, we'll see how you can add/set and access HTML5
 tags : [ angular ]
 ---
 
+![HTML5 Data Attributes in Angular](https://www.techiediaries.com/images/angular-html-data-attribute.png)
+
+
 In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in [TypeScript and Angular 9](https://www.techiediaries.com/typescript-tutorial/).
 
 We assume you have an Angular 9 project up and running.
 
 We'll be using [https://stackblitz.com/](https://stackblitz.com/edit/angular-set-access-data-attribute-binding?file=src/app/app.component.ts) for this demo and for the sake of simplicity we'll be working on the existing app component.
+
+> Also read how to build a full-stack app in our [Angular 10 tutorial](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/). 
+
+## Adding a TypeScript Array
 
 Open the the `src/app/app.component.ts` file and the following array which holds a set of messages:
 
@@ -40,6 +47,8 @@ export class AppComponent  {
 }
 ```
 
+## Displaying the Array of Data with Angular `ngFor`
+
 Next, open the `src/app.component.html` and add the following code:
 
 {% raw %}
@@ -60,7 +69,9 @@ We simply loop through the `messages` array using the `*ngFor` directive and dis
 
 This should give us the following output:
 
-![Angular 7 data attribute binding](https://www.diigo.com/file/image/bbccosoazoabpdccppzdqscaqcd/angular-set-access-data-attribute-binding+-+StackBlitz.jpg) 
+![Angular 9 data attribute binding](https://www.diigo.com/file/image/bbccosoazoabpdccppzdqscaqcd/angular-set-access-data-attribute-binding+-+StackBlitz.jpg) 
+
+## Using HTML Data Attributes with Angular 
 
 Now, let's suppose we have a requirement in which we need to add the message ID to the `<li>` element holding the given message.
 
@@ -104,7 +115,7 @@ According to [Angular docs](https://angular.io/guide/template-syntax):
 
 Now, if you insepct your page DOM, you'll see that each `<li>` tag has a `data-message-id` attribute with the corresponding message ID from the array.
 
-![Angular 7 Data Attribute Binding](https://www.diigo.com/file/image/bbccosoazoabpddbrbzdqscaqse/Screenshot+from+2019-03-31+00-09-35.jpg?k=264adb26f4590a693a87b4654470d0dc)
+![Angular 9 Data Attribute Binding](https://www.diigo.com/file/image/bbccosoazoabpddbrbzdqscaqse/Screenshot+from+2019-03-31+00-09-35.jpg?k=264adb26f4590a693a87b4654470d0dc)
 
 After adding and setting the value of the data attribute, let's see how we can access and get the value of the attribute in Angular.
 
@@ -142,7 +153,7 @@ If you click on the **Console Log** button, you should see the value of the `dat
 
 ## Conclusion
 
-That's it for this quick tutorial. We have seen how we can add and access HTML5 data attributes in Angular 7. You can see the demo example we've used in this tutorial in this [link](https://stackblitz.com/edit/angular-set-access-data-attribute-binding).
+That's it for this quick tutorial. We have seen how we can add and access HTML5 data attributes in Angular 9. You can see the demo example we've used in this tutorial in this [link](https://stackblitz.com/edit/angular-set-access-data-attribute-binding).
 
 
 

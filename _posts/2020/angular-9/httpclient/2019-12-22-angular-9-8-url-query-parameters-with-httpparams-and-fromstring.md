@@ -7,7 +7,7 @@ tags : [angular, angular-how-tos, angular9]
 ---
   
 
-In this how-to article, we'll learn how to use [`fromString`  and  `HttpParams`](https://angular.io/guide/http#use-fromstring-to-create-httpparams)  to pass query parameters to URLs or REST API endpoints. 
+In this how-to article, we'll learn how to use [`fromString`  and  `HttpParams`](https://angular.io/guide/http#use-fromstring-to-create-httpparams) to pass query parameters to URLs or REST API endpoints. 
 
 Here, we assume we have a REST API endpoint named `server.com/api/products` with  `_page`  and  `_limit`  parameters.
 
@@ -17,7 +17,7 @@ If you are new to these how-tos, check out how to [install and set up a project 
 
 ## Step 1 - Generating and Implementing an Angular 9 Example Service
 
-Head back to your terminal, navigate to your project's directory and run the following command to generate a service:
+Head back to your terminal, navigate to your project's directory and run the following command to generate an [Angular service](https://www.techiediaries.com/angular-services/):
 
 ```bash
 $ ng generate service example
