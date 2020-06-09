@@ -6,13 +6,14 @@ excerpt: "In this tutorial designed for Angular developers, you'll learn about J
 tags : [angular, angular8, javascript] 
 ---
 
-In this tutorial designed for Angular developers, you'll learn about JavaScript Promises introduced in ES6 and you'll see how you can use them with an Angular 7/8 example.
+In this tutorial designed for Angular developers, you'll learn about [JavaScript](https://www.techiediaries.com/javascript/) Promises introduced in ES6 and you'll see how you can use them with an Angular 7/8 example.
 
 JavaScript was originally created for adding interactivity to web pages. If you have written any serious JavaScript code before, then you are most likely familiar with the concept of callback functions which are very common in JavaScript because simply, they are required to handle asynchronous events when users interact with a web page.
 
 Callback functions are not called immediately but instead when the corresponding events are triggered. At the beginning that was fine but when developers started to build complex and rich apps with JavaScript for modern browsers, callbacks became a pain and resulted in what's known as the callback hell which occurs when callback functions are nested in other callbacks at one or more levels. 
 
-As a solution to the callback hell, ES6 introduced Promises which are simply a modern and powerful abstraction for writing asynchronous code in a better and easily maintainable way.
+As a solution to the callback hell, ES6 introduced Promises which are simply a modern and powerful abstraction for writing [asynchronous](
+https://www.techiediaries.com/javascript-async-await-tutorial/) code in a better and easily maintainable way.
 
 Since Angular 2+, asynchronous code is mostly handled using RxJS Observables which are deeply integrated within the Angular APIs but Promises do still have their place since they are part of the modern JavaScript standard.
 

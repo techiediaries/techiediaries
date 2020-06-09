@@ -7,7 +7,7 @@ canonical: https://www.techiediaries.com/angular-9-tutorial-and-example/
 tags : [  angular , angular8, angular-9-tutorials]
 ---
 
-In this tutorial, you will learn to build your first Angular 8 application from scratch.
+In this tutorial, you will learn to build your first [TypeScript Angular 8](https://www.techiediaries.com/typescript-tutorial/) application from scratch.
 
 You'll get started with the basic concepts like modules, components and directives.
 

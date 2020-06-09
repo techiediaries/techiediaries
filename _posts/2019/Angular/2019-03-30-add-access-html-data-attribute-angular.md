@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Angular 7 Example: Adding & Accessing HTML5 Data Attributes"
+title: "Angular 9 Example: Adding & Accessing HTML5 Data Attributes"
 image: "images/content/django.png"
-excerpt: "In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in Angular 7." 
+excerpt: "In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in Angular 9." 
 tags : [ angular ]
 ---
 
-In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in Angular 7.
+In this quick tutorial, we'll see how you can add/set and access HTML5 data attributes in [TypeScript and Angular 9](https://www.techiediaries.com/typescript-tutorial/).
 
-We assume you have an Angular 7 project up and running.
+We assume you have an Angular 9 project up and running.
 
 We'll be using [https://stackblitz.com/](https://stackblitz.com/edit/angular-set-access-data-attribute-binding?file=src/app/app.component.ts) for this demo and for the sake of simplicity we'll be working on the existing app component.
 

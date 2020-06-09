@@ -6,7 +6,7 @@ excerpt: "In this article, we'll focus on understanding the import, export and d
 tags : [javascript, react , reactnative] 
 ---
 
-I have been exploring React Native for building mobile apps with React and JavaScript. After generating my first project and started looking at the code, I noticed the use of the ES6 modern features like the `import` and `export` statements for importing and exporting modules and arrow functions, etc.
+I have been exploring React Native for building mobile apps with React and [JavaScript](https://www.techiediaries.com/javascript/). After generating my first project and started looking at the code, I noticed the use of the ES6 modern features like the `import` and `export` statements for importing and exporting modules and [arrow functions](https://www.techiediaries.com/javascript-arrow-function-default-parameters/), etc.
 
 In this article, we'll focus on understanding the `import`, `export` and `default` keywords. 
 

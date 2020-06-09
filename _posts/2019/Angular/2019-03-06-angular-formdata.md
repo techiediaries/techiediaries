@@ -64,7 +64,7 @@ Open the `src/app/upload/upload.component.html` file and add the following form:
 
 You can also check this example with [HTML textarea](https://www.techiediaries.com/angular/textarea-keydown-focusin-events/).
 
-Next, open the `src/app/upload/upload.component.ts` file and start by importing the necessary APIs:
+Next, open the `src/app/upload/upload.component.ts` file and start by [importing these modules](https://www.techiediaries.com/es-modules-import-export-default/):
 
 ```ts
 import { FormBuilder, FormGroup } from '@angular/forms';
@@ -148,7 +148,7 @@ For reference, `FormData` provides the following methods for working with form d
 
 ## Conclusion
 
-In this tutorial, we've seen how to send post multi-part form data to a server using TypeScript, Angular 9, HttpClient and `FormData`.  
+In this tutorial, we've seen how to send post multi-part form data to a server using [TypeScript, Angular 9](https://www.techiediaries.com/typescript-tutorial/), HttpClient and `FormData`.  
 
 
 

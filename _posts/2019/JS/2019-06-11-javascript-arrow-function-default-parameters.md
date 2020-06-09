@@ -6,7 +6,7 @@ excerpt: "In this post, you will learn about the JavaScript function default par
 tags : [ javascript ]
 ---
 
-Just like most programming languages, JavaScript provides functions which are logical unit of code instructions that execute a specific task or implements a certain algorithm. A function has zero or more parameters and a single return value.
+Just like most programming languages, [JavaScript](https://www.techiediaries.com/javascript/) provides functions which are logical unit of code instructions that execute a specific task or implement a certain algorithm. A function has zero or more parameters and a single return value.
 
 ## How to Declare a JavaScript Arrow Function?
 

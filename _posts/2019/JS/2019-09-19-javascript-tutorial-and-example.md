@@ -6,7 +6,7 @@ excerpt: "In this JavaScript tutorial designed for Angular developers, we'll lea
 tags : [ angular, angular8 ] 
 ---
 
-In this JavaScript tutorial designed for Angular developers, we'll learn how Angular 8 by example makes differential loading to send separate modern and legacy JavaScript bundles to web browsers based on their capabilities thanks to the `module` and `nomodule` attributes and `browserslist`. Next, we'll introduce the various new features of modern JavaScript to Angular devs then finally we'll see how to include custom JavaScript code in our Angular apps.
+In this [JavaScript](https://www.techiediaries.com/javascript/) tutorial designed for Angular developers, we'll learn how Angular 8 by example makes differential loading to send separate modern and legacy JavaScript bundles to web browsers based on their capabilities thanks to the `module` and `nomodule` attributes and `browserslist`. Next, we'll introduce the various new features of modern JavaScript to Angular devs then finally we'll see how to include custom JavaScript code in our Angular apps.
 
 Angular is an open-source, client-side JavaScript platform for building web and mobile apps. 
 
@@ -224,11 +224,13 @@ You don't need to master every feature of TypeScript but you must know JavaScrip
 
 ES6 has new syntax sugar and features that make JavaScript powerful and easier to use. The new ES6 lets you write awesome JavaScript code. Among the new features introduced in JavaScript by ES6 are: 
 
-- New keywords for variable declaration such as `const` and `let`,
-- JS modules
+- New keywords for variable declaration such as [`const`](https://www.techiediaries.com/javascript-const-vs-object-freeze/) and `let`,
+- [JavaScript modules](
+https://www.techiediaries.com/es-modules-import-export-default/)
 - template strings, 
-- arrow functions, 
-- class destructing etc. 
+- [arrow functions](https://www.techiediaries.com/javascript-arrow-function-default-parameters/), 
+- class destructing,
+- [JavaScript Promises](https://www.techiediaries.com/javascript-promises-tutorial-example/) etc. 
 
 ### Declaring Variables in JavaScript/ES6 (`var` vs `let` vs `const`)
 

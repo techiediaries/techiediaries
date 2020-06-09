@@ -43,7 +43,7 @@ Head back to your terminal and run the following command to install the Angular 
 $ npm install --save @angular/animations
 ``` 
 
-Next, you only need to add this module to your app configuration. So go ahead and open the `src/app/app.module.ts` file then import the `BrowserAnimationsModule` module and add it to the list of `imports`: 
+Next, you only need to add this module to your app configuration. So go ahead and open the `src/app/app.module.ts` file then [import](https://www.techiediaries.com/es-modules-import-export-default/) the `BrowserAnimationsModule` module and add it to the list of `imports`: 
 
 ```ts
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';

@@ -6,12 +6,13 @@ excerpt: "In this tutorial, we'll learn how to use external and custom JavaScrip
 tags : [ angular , angular8 ] 
 ---
 
-In this tutorial, we'll learn how to use external and custom JavaScript libraries/code in Angular 8 projects which are based on TypeScript.
+In this tutorial, we'll learn how to use external and custom [JavaScript libraries](https://www.techiediaries.com/es-modules-import-export-default/)/code in Angular 8 projects which are based on TypeScript.
 
 ## Prerequisites
 
 You will need to have the following prerequisites:
 
+- Basic Knowledge of [TypeScript and Angular](https://www.techiediaries.com/typescript-tutorial/),
 - Node and NPM installed on your machine,
 - Angular CLI 8 (`npm install -g @angular/cli`),
 - An Angular project.

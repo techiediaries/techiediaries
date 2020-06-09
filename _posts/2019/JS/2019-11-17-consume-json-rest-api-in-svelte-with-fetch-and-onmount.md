@@ -7,7 +7,7 @@ tags : [sveltejs ]
 ---
 
 
-In this tutorial, we'll see an example of consuming a third-party JSON REST API in Svelte.js 3 using the `fetch()` method available in modern browsers. We'll also see how to import and use the Svelte's `onMount()` life-cycle method to run code when the component is mounted and the `async/await` syntax to await a JavaScript promise. Finally, we'll see how to iterate over the fetched data in the template with the `each` block.
+In this tutorial, we'll see an example of consuming a third-party JSON REST API in Svelte.js 3 using the `fetch()` method available in modern browsers. We'll also see how to import and use the Svelte's `onMount()` life-cycle method to run code when the component is mounted and the `async/await` syntax to await a [JavaScript](https://www.techiediaries.com/javascript/) promise. Finally, we'll see how to iterate over the fetched data in the template with the `each` block.
 
 These are the steps of this example:
 

@@ -8,7 +8,7 @@ tags : [ javascript ]
 
 In this tutorial, we'll look at the difference between `const` and `Object.freeze()` in JavaScript.
 
-Objects are commonly used in JavaScript to hold complex values and user defined types. 
+Objects are commonly used in [JavaScript](https://www.techiediaries.com/javascript/) to hold complex values and user defined types. 
 
 The `const` keyword  is used as a modifier before a variable to make it a constant i.e its value can't be changed once it's assigned when intilaizing the variable. For example:
 

@@ -6,9 +6,9 @@ excerpt: "In this post, you will learn the difference between the Spread and the
 tags : [ javascript , nodejs ]
 ---
 
-ES6 has introduced the three dots (`...`) syntax in JavaScript and Node which can be used, depending on the context, as a Spread oprator or a Rest operator. Let's see the difference between these two operators in more details.
+ES6 has introduced the three dots (`...`) syntax in [JavaScript](https://www.techiediaries.com/javascript/) and Node which can be used, depending on the context, as a Spread operator or a Rest operator. Let's see the difference between these two operators in more details.
 
-In a previous [post](https://www.techiediaries.com/javascript-node-es6-spread-operator-syntax), we've seen what's the Spread operator and that we can use it to expand or unpack the elements of a JavaScript iterable in an appropriate place like inside another array or object literal.
+In a previous post, we've seen what's the [Spread operator in JavaScript](https://www.techiediaries.com/javascript-node-es6-spread-operator-syntax/) and that we can use it to expand or unpack the elements of a JavaScript iterable in an appropriate place like inside another array or object literal.
 
 The Rest operator uses the same syntax but does the opposite of the Spread operator. It reduces or collects values into an array. 
 
@@ -52,6 +52,8 @@ letters2 = [...letters];
 
 The `letters2` array is a deep copy of the `letters` array which means we can change the `letters2` array without affecting the first array.
 
+> Read how to [convert a string to the corresponding array of numbers in JavaScript](https://www.techiediaries.com/convert-string-number-array-react-hooks-vuejs/)
+
 ## Concatenating Arrays with the Spread Operator
 
 We can use the Spread operator to concatenate two or more arrays into one array. Since the Spread operator unpack an array when it's applied to it we can do something like:
@@ -67,7 +69,7 @@ We simply extract the values of the `a` and `b` arrays into the new `ab` array.
 
 ## Using the Spread Operator for Passing function arguments
 
-Let's suppose, you have a function that expects many individual arguments. For example, let's this one:
+Let's suppose, you have a [function that expects many individual arguments](https://www.techiediaries.com/javascript-arrow-function-default-parameters/). For example, let's this one:
 
 ```js
 function print(a, b, c){

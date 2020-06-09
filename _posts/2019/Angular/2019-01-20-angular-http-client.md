@@ -25,7 +25,7 @@ In this tutorial, we are going to learn how to use *HttpClient* by example in **
 > [Angular 7|6 Tutorial: Using Angular HttpClient with Node & Express.js - Example POST Requests](https://www.techiediaries.com/angular-tutorial-httpclient-post/)
 > [Angular 7|6 By Example: HTTP GET Requests with HttpClient (Services, async pipe and Observables)](https://www.techiediaries.com/angular-by-example-httpclient-get/)
 
-The modern web has dramatically evolved in the last few years. Browsers can now run complex JavaScript web applications and most often than not these apps need to fetch data from remote HTTP servers to display it to the users.
+The modern web has dramatically evolved in the last few years. Browsers can now run complex [JavaScript](https://www.techiediaries.com/javascript/) web applications and most often than not these apps need to [fetch data from remote HTTP servers]](https://www.techiediaries.com/javascript-fetch-tutorial-and-example/) to display it to the users.
 
 Modern browsers provide two different mechanisms for sending  HTTP requests and getting responses from web servers:
 
@@ -65,7 +65,7 @@ By the end of this tutorial, you'll learn:
 - How to send an example PUT request with Angular 8 and `HttpClient.put()`,
 - How to send an example DELETE request with Angular 8 and `HttpClient.delete()`
 
-For a more detailed tutorial about HttpClient. Read <a  href="https://www.techiediaries.com/angular-httpclient"  target="blank">Angular 6|7: HttpClient—Building a Service for Sending API Calls and Fetching Data</a> for learning how to create a complete Angular 7 application that uses HttpClient for sending HTTP requests.
+For a more detailed tutorial about HttpClient. Read <a  href="https://www.techiediaries.com/angular-httpclient/"  target="blank">Angular 6|7: HttpClient—Building a Service for Sending API Calls and Fetching Data</a> for learning how to create a complete Angular 7 application that uses HttpClient for sending HTTP requests.
 
 > **Note**: Check out how to build a developer's portfolio web application with Angular 7.1, Firebase and Firestore from these series:
 >

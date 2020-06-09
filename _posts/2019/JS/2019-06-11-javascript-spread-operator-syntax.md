@@ -6,7 +6,7 @@ excerpt: "In this post, you will learn about the JavaScript Spread syntax or ope
 tags : [ javascript , nodejs ]
 ---
 
-Thanks to ES6 we now have the Spread syntax which once you know about it, will change the way your write your JavaScript code in browsers and Node.js and will make it more readable and less complex.
+Thanks to ES6 we now have the Spread syntax which once you know about it, will change the way your write your [JavaScript code](https://www.techiediaries.com/javascript/) in browsers and Node.js and will make it more readable and less complex.
 
 All modern browsers and recent versions of Node.js support the Spread syntax so if you didn't start using it yet, you better start now!
 
@@ -41,6 +41,8 @@ After executing this code, the abcdef array will be actually `['a', 'b', 'c', 'e
 In this example, the Spread operator (the `...` syntax) spreaded or expanded the abc array into its values and since this happends inside the abcdef array it was expected by JavaScript and as such it merged the values into their new array.
 
 As you can notice, this is simply array concatenation but in a more elegant and easy way.
+
+> Read how to use [`Array.find()` and `Array.findIndex()`](https://www.techiediaries.com/javascript-es6-array-find-array-findindex/) methods for searching in arrays. 
 
 ## Using the JavaScript Spread Operator for Objects by Example
 

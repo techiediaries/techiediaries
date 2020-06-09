@@ -7,11 +7,11 @@ tags : [javascript, react]
 ---
 
 
-The Fetch API is a modern browser API for JavaScript that allows you to fetch resources from servers.
+The Fetch API is a modern browser API for [JavaScript](https://www.techiediaries.com/javascript/) that allows you to fetch resources from servers.
 
 Unlike the old XMLHttpRequest interface, Fetch makes use of JavaScript Promises to handle the asynchronous nature of HTTP requests.
  
-This greatly simplifies you code since you can avoid writing callback hell and can be further used with the async-await syntax to get rid of the `then()` callback and write your asynchronous code as syncronous code.
+This greatly simplifies your code since you can avoid writing callback hell and can be further used with the [async-await syntax](https://www.techiediaries.com/javascript-async-await-tutorial/) to get rid of the `then()` callback and write your asynchronous code as syncronous code.
  
 In this tutorial and example, we'll see how to use Fetch to send GET requests inside a Reacts.js example application. We'll also see how to use the Async/Await syntax to avoid using JavaScript Promises in your code.
      
@@ -146,5 +146,5 @@ This is the full example on [Stackblitz](https://stackblitz.com/edit/react-fetch
 
 ## Conclusion
 
-In this tutorial, we've seen by example how to send GET requests with Fetch in JavaScript and React.js. We've also seen how to use the Async/Await syntax with Fetch to avoid using Promises.
+In this tutorial, we've seen by example how to send GET requests with Fetch in JavaScript and React.js. We've also seen how to use the Async/Await syntax with Fetch to avoid using [JavaScript Promises](https://www.techiediaries.com/javascript-promises-tutorial-example/).
  

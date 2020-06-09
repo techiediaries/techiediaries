@@ -7,7 +7,7 @@ tags : [javascript]
 skipRss: true
 ---
 
-`Array.find()` and `Array.findIndex()` are two new methods in JavaScript ES6. They make searching arrays more easier than before without writing cumbersome code and loops.
+`Array.find()` and `Array.findIndex()` are two new methods in [JavaScript](https://www.techiediaries.com/javascript/) ES6. They make searching arrays more easier than before without writing cumbersome code and loops.
 
 Let's see them in more details with simple examples.
 
@@ -15,7 +15,7 @@ Let's see them in more details with simple examples.
 
 The `Array.find()` method is used to search for the first element in the array that verifies the passed predicate. 
 
-Let's take this simple example of an array of numbers:
+Let's take this simple example of an [array of numbers](https://www.techiediaries.com/convert-string-number-array-react-hooks-vuejs/):
 
 ```js
 let myArr = [9, 3, 2, 4, 9, 11, 19];
@@ -58,4 +58,4 @@ We save the index in the `ind` variable then we check if it's different than `-1
 
 ## Wrap-up
 
-We've seen examples of using ES6 `Array.find()` and `Array.findIndex()` method which provides easy ways to search for an element in JavaScript arrays.
+We've seen examples of using ES6 `Array.find()` and `Array.findIndex()` methods which provide easy ways to search for an element in JavaScript arrays.

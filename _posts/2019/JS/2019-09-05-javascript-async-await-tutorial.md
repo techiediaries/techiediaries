@@ -6,9 +6,9 @@ excerpt: "In this tutorial, we'll learn about JavaScript/ES7 async and await key
 tags : [angular, angular8, javascript] 
 ---
 
-In this tutorial, we'll learn about JavaScript/ES7 async and await keywords and we'll see how you can use them to write better asynchronous code in your Angular 7/8 apps with an example using `HttpClient` for sending HTTP requests and RxJS Observables.
+In this tutorial, we'll learn about [JavaScript](https://www.techiediaries.com/javascript/)/ES7 async and await keywords and we'll see how you can use them to write better asynchronous code in your Angular 7/8 apps with an example using `HttpClient` for sending HTTP requests and RxJS Observables.
 
-The async and await keywords are simply syntactic sugar over ES6 Promises and they make it one more step forward toward using fewer callbacks in your code.
+The async and await keywords are simply syntactic sugar over [JavaScript Promises](https://www.techiediaries.com/javascript-promises-tutorial-example/) and they make it one more step forward toward using fewer callbacks in your code.
 
 According to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function):
 

@@ -25,6 +25,8 @@ A **NgModule** is a TypeScript class decorated with the **@NgModule** decorator 
 - Imports other modules with the components, directives, and pipes that components in the current module need.
 - Provides services that the other application components can use.
 
+> Please note that Angular modules are not [JavaScript modules](https://www.techiediaries.com/es-modules-import-export-default/).
+
 Every Angular app has at least one module, conventionally called the **root** module. This is the module that gets [bootstrapped](https://angular.io/guide/bootstrapping) for running the application.
 
 Head over to your Angular project in the Stackblitz IDE. Open the `src/app/app.module.ts` file, you should see the following code:
