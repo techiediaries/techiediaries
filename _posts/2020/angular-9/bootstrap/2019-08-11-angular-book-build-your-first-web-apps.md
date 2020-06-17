@@ -10,7 +10,13 @@ tags : [angular, angular8, angular-books]
 
 This book will walk you through building several apps with Angular while learning new concepts and practices along the way. This book is beginners friendly and doesn't assume any prior experience with Angular. You'll learn Angular from scratch building easy and relatively more complex apps step by step.
 
-In this book, we'll be using the latest Angular 8 version.
+In this book, we'll be using the Angular 8 version.
 
-You can download the book for free from [Leanpub](https://leanpub.com/practical-angular).
+You can purchase the book with 9.99$ from
+ <a
+    href="https://leanpub.com/practical-angular"
+    onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})"
+ >Leanpub</a>
+
+ 
 
