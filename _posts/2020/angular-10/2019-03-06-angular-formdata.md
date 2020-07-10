@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "How to Post FormData (multipart/form-data) with Angular 9/8, TypeScript and HttpClient"
+title: "How to Post/Upload FormData (multipart/form-data) with Angular 10, TypeScript and HttpClient"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this quick tutorial, you'll learn how to work with FormData in Angular 9/8 and how to post it to a web server via a POST request and HttpClient" 
-date: 2020-1-3
+excerpt: "In this quick tutorial, you'll learn how to work with FormData in Angular 10/9 and how to post it to a web server via a POST request and HttpClient" 
+date: 2020-07-10
 tags : [angular, formdata, angular-9, angular-how-tos, angular-9-httpclient-examples, angular-9-formdata-examples] 
 ---
 
 ![Angular FormData](https://www.techiediaries.com/images/angular-formdata.png)
 
-In this quick how-to tutorial, you'll learn how to work with [`FormData` in Angular 9 and TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) and how to post it to a web server via a POST request and `HttpClient`. 
+In this quick how-to tutorial, you'll learn how to work with [`FormData` in Angular 10 and TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/) and how to post it to a web server via a POST request and `HttpClient`. 
 
-One of the most important aspects of web development is forms as they allow you to collect data from users and send it to servers.
+One of the most important aspects of web development is forms as they allow you to collect data from users and upload it to servers.
 
 If you are new to these how-tos, check out how to [install and set up a project and the prerequisites](https://www.techiediaries.com/angular-cli-tutorial/).
 
@@ -31,15 +31,15 @@ The `FormData` API allows you to create a set of key/value elements that corresp
 
 > **Note**: A [FormData](https://www.techiediaries.com/formdata/) instance is equivalent to an HTML form sent using the `multipart/form-data` encoding. 
 
-## How to use FormData in Angular 9?
+## How to use FormData in Angular 10?
 
-Let's now see an example of how you can create a `FormData` instance and send it with `HttpClient` POST in Angular 9.
+Let's now see an example of how you can create a `FormData` instance and send it with `HttpClient` POST in Angular 10.
 
 > **Note**: We assume that you have a server running at the `http://localhost:3000` address with an `/upload` that accepts POST requests for uploading files in your server.
 >
 > If you would like to create a server for uploading files, check out [Nest.js Tutorial: File Uploading with Multer and Serving Static Files in Nest](https://www.techiediaries.com/nestjs-upload-serve-static-file/).
 
-Provided that you have [created an Angular 9 project with Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/), navigate to your project's root folder and run the following command to generate a component that we'll be working with:
+Provided that you have [created an Angular 10 project with Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/), navigate to your project's root folder and run the following command to generate a component that we'll be working with:
 
 ```bash
 $ ng generate component upload
@@ -48,7 +48,7 @@ $ ng generate component upload
 Open the `src/app/upload/upload.component.html` file and add the following form:
 
 ```html
-<h1>Angular 9 FormData (multipart/data-form) Example</h1>
+<h1>Angular 10 FormData (multipart/data-form) Example</h1>
 <div>
     <form [formGroup] = "uploadForm" (ngSubmit)="onSubmit()">      
       <div>
@@ -148,7 +148,7 @@ For reference, `FormData` provides the following methods for working with form d
 
 ## Conclusion
 
-In this tutorial, we've seen how to send post multi-part form data to a server using [TypeScript, Angular 9](https://www.techiediaries.com/typescript-tutorial/), HttpClient and `FormData`.  
+In this tutorial, we've seen how to send post multi-part form data to a server using [TypeScript, Angular 10](https://www.techiediaries.com/typescript-tutorial/), HttpClient and `FormData`.  
 
 
 
