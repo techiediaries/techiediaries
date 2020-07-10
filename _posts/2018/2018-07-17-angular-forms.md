@@ -4,6 +4,7 @@ title: "Angular 9/8 (Reactive) Forms: How to Use FormBuilder,  FormGroup  and  F
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll learn to use Angular forms by creating a simple example using the reactive form approach. We'll see how to use Angular `FormBuilder,  FormGroup  and  FormControl APIs to easily build a form"
 date: 2019-12-30 
+canonical: "https://www.techiediaries.com/angular-formbuilder-formgroup/"
 tags : [angular, angular9] 
 ---
 
