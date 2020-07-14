@@ -1,60 +1,91 @@
-# How to Add CSS in Angular 10 by Example
+---
+layout: bpost
+title: "Add CSS in Angular 10 by Example"
+image: "images/content/angular.png"
+excerpt: "In this tutorial, we'll take a look at how to add CSS styles to your Angular 10 app"
+date:  2020-03-12
+categories: angular
+tags : [  angular ]
+---
 
-In this tutorial, we'll take a look at how to add CSS styles to your Angular app.
+In this tutorial, we'll take a look at how to add CSS styles to your Angular 10 app.
 
-> dynamically assign CSS styles to elements
-> different methods to dynamically assign a CSS style to an element using the style property.
-> You will also learn, how we can toggle that styles on or off, depending on the state of the application with ngStyle and style expressions.
+We'll see how we can dynamically assign CSS styles to elements in Angular. The various methods to dynamically assign a CSS style to an element using the `style` property. Set styles depending on some state in your application with `ngStyle`, `ngClass` and style expressions.
+
+First of all, let's revise how styles are assigned using native JavaScript before tackling the Angular methods.
+
+## Adding CSS Styles Using JavaScript
+
+In JavaScript you could assing CSS styles using the following steps.
+
+
+First, you need to get or query the DOM element that needs to b styled. For example:
+
+```js
+const element = document.querySelector('#elemenID')
+```
+
+Next, you can use the `style` property on the element as follows:
+
+```js
+element.style.color = 'red'
+```
+
+Now, let's see how to do the same in Angular. 
 
 This tutorial works for Angular 10 and previous versions of the platform.
 
+Before that, let's see various ways you can use to include CSS styles in your apps.
+
 Since Angular is component-based, this makes writing and organizing styles easier.
 
-We have various ways to include styles in your app
+We have many ways to include styles in your app such as:
 
 - Inline styles of components, styles are added via the `styles` array property in `@Component` decorator.
 - External stylesheets of components, We import CSS styles using the `styleUrls` property in `@Component` decorator.
 - Template inline styles: The styles can be wrapped in a `style` tag and placed before the HTML markup in the template or can be written as normal inline styles in the template HTML tags using the `style` property. 
 
 
+This is an example of how to use the `styles` property of the component decorator to include inline CSS styles:
+
 ```ts
 @Component({
-  templateUrl: 'card.html',
+  templateUrl: 'app.component.html',
   styles: [`
-    .card {
-      height: 70px;
-      width: 100px;
+    .cls {
+      height: 300px;
+      color: red;
     }
   `],
 })
 ```
 
+This is an example of how to use the `styleUrls` property of the component decorator to include external CSS styles:
+
+
 ```ts
 @Component({
-  styleUrls: ['css/style.css'],
-  templateUrl: 'card.html',
+  styleUrls: ['assets/style.css'],
+  templateUrl: 'app.component.html',
 })
 ```
+
+This is an example of how to use the `template` property of the component decorator to include inline CSS styles using the HTML `<style>` tag:
+
+
 
 ```ts
 @Component({
   template: `
     <style>
-    h1 {
-      color: purple;
+    div {
+      background: black;
     }
     </style>
-    <h1>Styling Angular Components</h1>
+    <h1>Styling Angular 10 Component</h1>
     `
 })
 ```
-
-```ts
-@Component({
-  template: '<h1 style="color:pink">Styling Angular Components</h1>'
-})
-```
-
 
 >We can assign a style to an element like so:
 
@@ -130,35 +161,6 @@ May 23, 2019
 Angular
 NgStyle: How to assign CSS styles in Angular
 
-In this tutorial, we are going to take a look at how we can dynamically assign CSS styles to elements using angular.
-
-We will take a look at different methods to dynamically assign a CSS style to an element using the style property.
-This is an affiliate link. We may receive a commission for purchases made through this link.
-
-You will also learn, how we can toggle that styles on or off, depending on the state of the application with ngStyle and style expressions.
-
-Before we do that, we take a look at how CSS styles are assigned using regular JavaScript and then compare that to the Angular way.
-
-Ready?
-
-Let’s get started!
-
-old-way
-How to add CSS styles without Angular
-
-First, let's take a look at how we used to assign CSS styles using just Javascript.
-
-First of all, we had to find the DOM element to assign the style to. In the best case, we would find that element by id like this:
-
-const element = document.getElementById('divToStyle')
-
-Afterward, we could use the JavaScript DOM-API to assign a style.
-
-element.style.color = 'blue'
-
-Of course, there is no possibility of data binding. Every time we wanted the style to change we would have to call that API again.
-
-Fortunately, we can use Angular to do that heavy lifting for us...
 
 angular-style-property
 Adding CSS styles using the style property

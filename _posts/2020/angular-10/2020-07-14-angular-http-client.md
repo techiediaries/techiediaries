@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Angular Http — Angular 9/8 HttpClient Tutorial"
+title: "Angular 10 HttpClient"
 image: "images/content/angular-httpclient.png"
-excerpt: "How to use HttpClient to make HTTP Requests in Angular 4.3+" 
+excerpt: "How to use HttpClient to make HTTP Requests in Angular 10" 
 tags : [angular, angular8, angular-9-httpclient-examples] 
 ---
 
@@ -10,12 +10,12 @@ What is `HttpClient` in Angular?
 
 ![Angular HttpClient](https://www.techiediaries.com/images/angular-httpclient.png)
 
-In this tutorial we'll be seeing a detailed guide with examples using the new HttpClient in Angular 9/8, available from the `@angular/common/http` module starting with Angular 4.3+ and which replaces the old HTTP client that was available from the `@angular/http` package. This upgrade is not just a change in the name and import path of the module but brings a whole new and powerful features for how you [make HTTP requests in Angular](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/).
+In this tutorial we'll be seeing a detailed guide with examples using the new HttpClient in Angular 10, available from the `@angular/common/http` module starting with Angular 4.3+ and which replaces the old HTTP client that was available from the `@angular/http` package. This upgrade is not just a change in the name and import path of the module but brings a whole new and powerful features for how you [make HTTP requests in Angular](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/).
 
 >Also read how to use [typed and full responses and headers with Angular HttpClient](https://www.techiediaries.com/angular-httpclient-headers-full-response/) 
 
 
-In this tutorial, we are going to learn how to use *HttpClient* by example in **Angular 9/8**. We'll see how to send HTTP POST, GET, PUT and DELETE requests to a back-end server.
+In this tutorial, we are going to learn how to use *HttpClient* by example in **Angular 10**. We'll see how to send HTTP POST, GET, PUT and DELETE requests to a back-end server.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lZAP871qYDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,24 +55,24 @@ We'll be seeing examples of common HTTP methods such as GET, PUT, PATCH, POST an
 
 By the end of this tutorial, you'll learn:
 
-- What is *HttpClient* and how to use with Angular 8|7,
+- What is *HttpClient* and how to use with Angular 10,
 - How to setup the *HttpClientModule*,
 - How to create an example API server with *json-server*,
-- How to send an example GET request with Angular 8 and `HttpClient.get()`,
-- How to send an example POST request with Angular 8 and `HttpClient.post()`,
-- How to send an example PUT request with Angular 8 and `HttpClient.put()`,
-- How to send an example DELETE request with Angular 8 and `HttpClient.delete()`
+- How to send an example GET request with Angular 10 and `HttpClient.get()`,
+- How to send an example POST request with Angular 10 and `HttpClient.post()`,
+- How to send an example PUT request with Angular 10 and `HttpClient.put()`,
+- How to send an example DELETE request with Angular 10 and `HttpClient.delete()`
 
 
-## <a name="Angular_6_HttpClient">Introducing Angular 8 HttpClient Module</a>
+## <a name="Angular_6_HttpClient">Introducing Angular 10 HttpClient Module</a>
 
 Angular 6 deprecated the old HTTP client in favor of the newer *HttpClient* module which is an improved version of the *Http* client API that lives in the *@angular/common/http* package. The old API is still available in *@angular/http* in Angular 6, but will be removed in next versions, for easing the migration process of existing Angular 4+ applications.
 
 Now, let's see how to actually use the *HttpClient* module.
 
-## <a name="Setting_Angular_HttpClient">Setting up the HttpClient Module in Angular 8</a>
+## <a name="Setting_Angular_HttpClient">Setting up the HttpClient Module in Angular 10</a>
 
-Before you can use the new *HttpClient* module in your Angular 8 application, you need to add it to the *imports* array in the application main module. Start by importing the `HttpClientModule` module from the `@angular/common/http` package:
+Before you can use the new *HttpClient* module in your Angular 10 application, you need to add it to the *imports* array in the application main module. Start by importing the `HttpClientModule` module from the `@angular/common/http` package:
 
 ```ts
 import { HttpClientModule } from  '@angular/common/http';
@@ -108,7 +108,7 @@ export  class  AppModule { }
 
 After adding the module to the `imports` array, we are now ready to use the new `HttpClient` API to send GET, POST, PUT and DELETE requests to a REST HTTP server.
 
-## <a name="Example_REST_Server_Angular">Creating an Example REST API Server for Our Angular 8 Application</a>
+## <a name="Example_REST_Server_Angular">Creating an Example REST API Server for Our Angular 10 Application</a>
 
 In this tutorial, we don't need to create a REST API instead we'll use *json-server* which allows us to quickly create a fake RESTful server and expose fake API endpoints, from sample data in a JSON file.
 
@@ -277,7 +277,7 @@ For example:
 
 >**Note**: You can use other features such as filters, sorting and ordering. For more information, check out the [docs](https://github.com/typicode/json-server).
 
-## Installing Angular CLI 8
+## Installing Angular CLI 10
 
 Angular CLI is the official tool for creating Angular projects. Open a new terminal and run the following command to install it:
 
@@ -285,17 +285,17 @@ Angular CLI is the official tool for creating Angular projects. Open a new termi
 $ npm install @angular/cli@next --global
 ```
 
-At the time of this writing `@angular/cli` **v8.0.0-beta.11** is installed.
+At the time of this writing `@angular/cli` **v10.0.0** is installed.
 
 You need to have Node.js installed on your system. On Ubuntu you can follow this [tutorial](https://www.techiediaries.com/ubuntu-install-nodejs-npm/).
 
 > Note: You may need to use a CMD line with admin access in Windows or add `sudo` in Linux and macOS for installing npm packages globally.
-> As of this writing, Angular CLI v7.1.4 will be installed.
+> As of this writing, Angular CLI v10 will be installed.
 
 
-## Creating an Angular 8 Project
+## Creating an Angular 10 Project
 
-After creating the API server, we can now proceed to create our Angular project using Angular CLI v8. In your terminal, navigate to the `angular-httpclient-demo` folder and run the following command:
+After creating the API server, we can now proceed to create our Angular project using Angular CLI 10. In your terminal, navigate to the `angular-httpclient-demo` folder and run the following command:
 
 ```bash
 $ ng new frontend
@@ -308,7 +308,7 @@ The CLI will ask you if you **Would you like to add Angular routing? (y/N)** Typ
 
 Now that we have created the project, before making of HttpClient to send HTTP requests let's first create the basic buildings of our demo application which are simply an `HttpService` that interfaces with the REST server and a bunch of components for making a CRUD interface that calls the methods of `HttpService`.
 
-### Creating an Angular Service
+### Creating an Angular 10 Service
 
 Let's start with the `HttpService`. In your terminal, run:
 
@@ -321,7 +321,7 @@ $ ng g s http
 
  > **Note**: Make sure you have navigated inside the `frontend` folder before running Angular CLI commands.
 
-### Creating Angular Components
+### Creating Angular 10 Components
 
 Next, let's create four components for displaying (list and by id) and creating/updating the customers:
 
@@ -361,7 +361,7 @@ const routes: Routes = [
 export class AppRoutingModule { }
 ```
 
-## <a name="Angular_6_HttpClient_GET_Example">Example of Making HTTP GET Requests using HttpClient in Angular 8|7</a>
+## <a name="Angular_6_HttpClient_GET_Example">Example of Making HTTP GET Requests using HttpClient in Angular 10</a>
 
  
 In this section we suppose that we have a component that displays a list of customers from a server.
@@ -570,7 +570,7 @@ this.customersObservable = this.httpClient.get("http://127.0.0.1:3000/customers"
 
   
 
-## <a name="Angular_6_HttpClient_Put_Example">Sending HTTP PUT Requests in Angular 8</a>
+## <a name="Angular_6_HttpClient_Put_Example">Sending HTTP PUT Requests in Angular 10</a>
 
   
 
@@ -672,7 +672,7 @@ console.log("Error", error);
 );
 
 ```
-## <a name="Angular_6_HttpClient_Post_Example">Sending HTTP POST Requests in Angular 8</a>
+## <a name="Angular_6_HttpClient_Post_Example">Sending HTTP POST Requests in Angular 10</a>
 
 The HTTP POST method has many uses but mostly used when we need to add new data on the server so let's take an example of adding a new customer to our REST API server database using the `post()` method of the *HttpClient* class:
 
@@ -699,10 +699,8 @@ console.log("Error", error);
 
 We are calling the `post()` method from the injected instance of *HttpClient*. The first parameter is the API endpoint and the second parameter is the *customer* data object. We also subscribe to the observable returned by the `post()` method. If the operation is successful we display *POST Request is successful* and the data on the console. If there is an error we log the error on the console
 
-For a step by step tutorial. Make sure to read
-
 ## <a name="Conclusion">Conclusion</a>
 
-So we have seen how to interact with a RESTful API server using common HTTP methods i.e GET, PUT, PATCH, DELETE and POST.
+So we have seen how to interact with a RESTful API server using common HTTP methods i.e GET, PUT, PATCH, DELETE and POST in Angular 10.
 
 For the sake of testing we have used a fake REST API server but you can use the same examples with a real backend server.
