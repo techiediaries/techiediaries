@@ -1,32 +1,33 @@
 ---
 layout: post
-title: "3+ Ways to Add Bootstrap 4 to Angular 9/8 With Example & Tutorial"
+title: "3+ Ways to Add Bootstrap 4 to Angular 10/8 With Example & Tutorial"
 image: "images/content/angular.jpg"
-excerpt: "In this tutorial we will see how to use Bootstrap 4 to style websites built using the Angular 9 framework. We'll see how we can easy integrate both of them, using ng-bootstrap vs. ngx-bootstrap packages  and using the Angular CLI 9 for generating a brand new project." 
-tags : [angular, angular-9, bootstrap] 
+excerpt: "In this tutorial we will see how to use Bootstrap 4 to style websites built using the Angular 10 framework. We'll see how we can easy integrate both of them, using ng-bootstrap vs. ngx-bootstrap packages  and using the Angular CLI 10 for generating a brand new project." 
+date: 2020-08-04 
+tags : [angular, angular-10, bootstrap] 
 ---
 
 ![Angular Bootstrap](https://www.techiediaries.com/images/angular-bootstrap.png)
 
-In this tutorial, we will see how to use Bootstrap to style apps built using Angular 9. 
+In this tutorial, we will see how to use Bootstrap to style apps built using Angular 10. 
 
 We'll see how to integrate Angular with Bootstrap, in various ways including using `ng-bootstrap` and `ngx-bootstrap` packages. 
 
 > Also read how to use [Bootstrap 4 and jQuery with Angular 10](https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/) to build professional UIs.
 
-We'll be using Angular CLI 9 for generating a brand new project.
+We'll be using Angular CLI 10 for generating a brand new project.
 
 These are the steps of our tutorial:
 
-- <a href="Installing_Angular_CLI_9"> Step 1 - Installing Angular CLI v9</a>
-- <a href="Adding_Bootstrap_4_to_Angular_Method_1"> Step 2 - Installing Bootstrap 4 in Your Angular 9 Project</a>
-- <a href="Adding_Bootstrap_4_to_Angular_Method_1"> Step 3 (Method 1) - Adding Bootstrap 4 to Angular 9 Using `angular.json` </a>
-- <a href="Adding_Bootstrap_4_to_Angular_Method_2"> Step 3 (Method 2) - Adding Bootstrap 4 to Angular 9 Using `index.html` </a>
-- <a href="Adding_Bootstrap_4_to_Angular_Method_3">Step 3 (Method 3) - Adding Bootstrap 4 to Angular 9 Using `styles.css` </a>
+- <a href="Installing_Angular_CLI_10"> Step 1 - Installing Angular CLI v10</a>
+- <a href="Adding_Bootstrap_4_to_Angular_Method_1"> Step 2 - Installing Bootstrap 4 in Your Angular 10 Project</a>
+- <a href="Adding_Bootstrap_4_to_Angular_Method_1"> Step 3 (Method 1) - Adding Bootstrap 4 to Angular 10 Using `angular.json` </a>
+- <a href="Adding_Bootstrap_4_to_Angular_Method_2"> Step 3 (Method 2) - Adding Bootstrap 4 to Angular 10 Using `index.html` </a>
+- <a href="Adding_Bootstrap_4_to_Angular_Method_3">Step 3 (Method 3) - Adding Bootstrap 4 to Angular 10 Using `styles.css` </a>
 - <a href="Adding_Bootstrap_4_Using_ng-bootstrap_and_ngx-bootstrap"> Alternative Step - Adding Bootstrap 4 Using `ng-bootstrap` and `ngx-bootstrap`</a>
 
 > Note: You can also use Ionic UI components to create beautifull and professional Angular apps, read 
-[Building Chat App Frontend UI with JWT Auth Using Ionic 5/Angular 9](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/)
+[Building Chat App Frontend UI with JWT Auth Using Ionic 5/Angular 10](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/)
 
 ## What is Bootstrap
 
@@ -44,9 +45,9 @@ This can be done in multiple ways:
 
 - Adding the Bootstrap CSS and JavaScript files in the `styles` and `scripts` arrays of the `angular.json` file of your project
 
-## <a name="Installing_Angular_CLI_9"> Step 1 - Installing Angular CLI v9</a>
+## <a name="Installing_Angular_CLI_10"> Step 1 - Installing Angular CLI v10</a>
 
-Let's get started by installing [Angular CLI v9](https://cli.angular.io/) if it is not yet installed on your machine.
+Let's get started by installing [Angular CLI v10](https://cli.angular.io/) if it is not yet installed on your machine.
 
 Head over to a new command-line interface and run the following command to install the latest version of the Angular CLI:
 
@@ -54,11 +55,11 @@ Head over to a new command-line interface and run the following command to insta
 $ npm install -g @angular/cli
 ```
 
-<s>At the time of writing this tutorial, Angular 9 is still in pre-release, so we need to use the `next` tag to install it. Angular **v9.0.0-rc.2** is installed.</s> 
+<s>At the time of writing this tutorial, Angular 10 is still in pre-release, so we need to use the `next` tag to install it. Angular **v10.0.0** is installed.</s> 
 
->**Note**: This will [install the Angular 9 CLI](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) globally on your system so depending on your npm configuration you may need to add `sudo` (for superuser access) in macOS and Linux or use a command prompt with admin access in Windows.
+>**Note**: This will [install the Angular 10 CLI](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) globally on your system so depending on your npm configuration you may need to add `sudo` (for superuser access) in macOS and Linux or use a command prompt with admin access in Windows.
 
-After the installation, you'll have at your disposal the *ng* utility. Let's use it to generate a new Angular 9 project.
+After the installation, you'll have at your disposal the *ng* utility. Let's use it to generate a new Angular 10 project.
 
 ```bash
 $ ng new angular-bootstrap-examples
@@ -87,7 +88,7 @@ Next, navigate inside the root folder of your project
 $ cd angular-bootstrap-examples
 ```
 
-You can then serve your [Angular 9 application](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) using the `ng serve` command as follows:
+You can then serve your [Angular 10 application](https://www.techiediaries.com/angular/angular-10-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) using the `ng serve` command as follows:
 
 ```bash
 $ ng serve
@@ -95,9 +96,9 @@ $ ng serve
 
 Your app will be served from `http://localhost:4200/`
 
-## <a name="Adding_Bootstrap_4_to_Angular_Method_1"> Step 2 - Installing Bootstrap 4 in Your Angular 9 Project</a>
+## <a name="Adding_Bootstrap_4_to_Angular_Method_1"> Step 2 - Installing Bootstrap 4 in Your Angular 10 Project</a>
 
-In this step, we'll proceed to add Bootstrap 4 to our Angular 9 application.
+In this step, we'll proceed to add Bootstrap 4 to our Angular 10 application.
 
 There are various ways that you can use to install Bootstrap in your project:
 
@@ -125,7 +126,7 @@ Next, you also need to install jQuery using the following command:
 
 At the time of this tutorial **jquery v3.4.1** will be installed.
 
-# <a name="Adding_Bootstrap_4_to_Angular_Method_1"> Step 3 (Method 1) - Adding Bootstrap 4 to Angular 9 Using `angular.json` </a>
+# <a name="Adding_Bootstrap_4_to_Angular_Method_1"> Step 3 (Method 1) - Adding Bootstrap 4 to Angular 10 Using `angular.json` </a>
 
 Open the `angular.json` file of your project and include:
 
@@ -176,7 +177,7 @@ As follows:
 > Note: You also need to add the jQuery JavaScript library file.
 
 
-## <a name="Adding_Bootstrap_4_to_Angular_Method_2"> Step 3 (Method 2) - Adding Bootstrap 4 to Angular 9 Using `index.html` </a>
+## <a name="Adding_Bootstrap_4_to_Angular_Method_2"> Step 3 (Method 2) - Adding Bootstrap 4 to Angular 10 Using `index.html` </a>
 
 You can also include Bootstrap files from `node_modules/bootstrap` using the `index.html` file.
 
@@ -209,7 +210,7 @@ Open the `src/index.html` file and add the following:
 </html>
 ```
 
-## <a name="Adding_Bootstrap_4_to_Angular_Method_3">Step 3 (Method 3) - Adding Bootstrap 4 to Angular 9 Using `styles.css` </a>
+## <a name="Adding_Bootstrap_4_to_Angular_Method_3">Step 3 (Method 3) - Adding Bootstrap 4 to Angular 10 Using `styles.css` </a>
 
 We can also use the `styles.css` file to add the CSS file of Bootstrap to our project.
 
@@ -280,7 +281,7 @@ Now you can use Bootstrap 4 in your Angular application.
 You can find all the available components via this [link](https://ng-bootstrap.github.io/#/components/accordion/examples).
 
 You can also use the `ngx-bootstrap` library 
-![Bootstrap 4 Angular 8](https://screenshotscdn.firefoxusercontent.com/images/3d5b00ef-736b-4657-9fe6-39548985495a.png) 
+![Bootstrap 4 Angular 10](https://screenshotscdn.firefoxusercontent.com/images/3d5b00ef-736b-4657-9fe6-39548985495a.png) 
 
 Simply head back to your terminal, make sure you are inside your Angular project then run the following command to install `ngx-bootstrap`
 
@@ -327,7 +328,7 @@ You need to import the module for each component you want to use in the same way
 You can find all the available components that you can use from the [docs](https://valor-software.com/ngx-bootstrap/#/getting-started)
 
 
-## <a name="Adding_Bootstrap_4_to_Angular_9">Adding Bootstrap 4 to Angular 9</a> 
+## <a name="Adding_Bootstrap_4_to_Angular_10">Adding Bootstrap 4 to Angular 10</a> 
 
 Thanks to the new `ng add` command added on Angular 7+, you have a new simpler and easier way to add Bootstrap without using the `npm install` command for installing the required dependencies or adding any configurations. 
 
@@ -340,7 +341,7 @@ That's it. You now have support for Bootstrap components and styles without any 
 
 ## <a name="Conclusion">Conclusion</a>
 
-In this article, we've seen different ways of including Bootstrap 4 in Angular 9 apps:
+In this article, we've seen different ways of including Bootstrap 4 in Angular 10 apps:
 
 - Using original Bootstrap 4 assets from npm,
 - Using the `ng-bootstrap` library, 

@@ -1,37 +1,38 @@
 ---
 layout: post
-title: "Angular 9 Universal Example Application with Express.js"
+title: "Angular 10 Universal Example Application with Express.js"
 image: "images/content/universal-angular-express.png"
-excerpt: "Throughout this tutorial we are going to build an example, server side rendered, web application with Angular 9 and Express server" 
-tags : [angular, angular-9, express] 
+excerpt: "Throughout this tutorial we are going to build an example, server side rendered, web application with Angular 10 and Express server" 
+date: 2020-08-04 
+tags : [angular, angular-10, express] 
 ---
 
-Throughout this tutorial, we are going to build an example Angular 9 server rendered app with Angular Universal and Express server. The application is a simple portfolio website to showcase your projects with home, projects and contact pages.
+Throughout this tutorial, we are going to build an example Angular 10 server rendered app with Angular Universal and Express server. The application is a simple portfolio website to showcase your projects with home, projects and contact pages.
 
-## Why Building a Server-Side Angular 9 App
+## Why Building a Server-Side Angular 10 App
 
-By building this example project we'll learn how to create Angular 9 web applications and how to render them on the server side (So you can have a SEO friendly website), instead of client side, then serve them with Node.js and Express.js server. 
+By building this example project we'll learn how to create Angular 10 web applications and how to render them on the server side (So you can have a SEO friendly website), instead of client side, then serve them with Node.js and Express.js server. 
 
-## Generating a New Angular 9 Project 
+## Generating a New Angular 10 Project 
 
-Let's get started by generating a new Angular 9 web application using Angular CLI 9 (We assume you already have the latest version of Angular CLI installed)
+Let's get started by generating a new Angular 10 web application using Angular CLI 10 (We assume you already have the latest version of Angular CLI installed)
 
 ```bash
-$ ng new angular-9-universal-portfolio
+$ ng new angular-10-universal-portfolio
 ```
 
 Next run the local development server with:
 
 ```bash
-$ cd angular-9-universal-portfolio 
+$ cd angular-10-universal-portfolio 
 $ ng serve 
 ```
 
 Your web app will be served from [http://127.0.0.1:4200](http://127.0.0.1:4200).
 
-## Adding Angular 9 Components 
+## Adding Angular 10 Components 
 
-Next create the required page components (home, projects and contact) using Angular CLI 9:
+Next create the required page components (home, projects and contact) using Angular CLI 10:
 
 ```bash
 $ ng g component home 
@@ -39,9 +40,9 @@ $ ng g component projects
 $ ng g component contact
 ```
 
-## Adding Material Design 9 
+## Adding Material Design 10 
 
-To add Meterial Design 9 to your Angular 9 project, you need to install these required dependencies:
+To add Meterial Design 10 to your Angular 10 project, you need to install these required dependencies:
 
 ```bash
 $ npm install --save @angular/cdk
@@ -85,7 +86,7 @@ Don't also forget to import `hammerjs`
     export class AppModule { }    
 ```
 
-Before you can add Material 9 components to your project you also have to add this to your project `styles.css` file:
+Before you can add Material 10 components to your project you also have to add this to your project `styles.css` file:
 
 ```css
     @import '~https://fonts.googleapis.com/icon?family=Material+Icons';
@@ -106,7 +107,7 @@ Then in the `tsconfig.app.json` file add:
 
 ## Adding Server Side Rendering Support 
 
-To add server side rendering to our Angular 9 application we need to install the `@angular/platform-server` into our project using:
+To add server side rendering to our Angular 10 application we need to install the `@angular/platform-server` into our project using:
 
 ```bash
 $ npm install --save @angular/animations
@@ -266,7 +267,7 @@ You should see something similar if you insepct the source code of your page:
 
 As you can notice, the `AppComponent` is rendered on the server.
 
-Now serve your app using Angular CLI 9 dev server:
+Now serve your app using Angular CLI 10 dev server:
 
 ```bash
 $ ng serve 
@@ -280,7 +281,7 @@ The `AppComponent` component is not rendered on the server.
 
 ### Creating the Portfolio Website
 
-Now after setting up server side rendering and successfully launching the express server which renders and serves our Angular 9 components, let's create our portfolio website. We have previously created the essential components: home, projects and contact then setup the routing for them in App Module:    
+Now after setting up server side rendering and successfully launching the express server which renders and serves our Angular 10 components, let's create our portfolio website. We have previously created the essential components: home, projects and contact then setup the routing for them in App Module:    
 
 ```ts
     RouterModule.forRoot([
@@ -294,7 +295,7 @@ Now after setting up server side rendering and successfully launching the expres
 
 ## Conclusion
 
-In this tutorial, we've seen how to create a universal (server side rendered) Angular 9 application.
+In this tutorial, we've seen how to create a universal (server side rendered) Angular 10 application.
 
 
 

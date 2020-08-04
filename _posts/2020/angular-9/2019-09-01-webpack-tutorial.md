@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Webpack 4 Tutorial with Angular 8"
+title: "Webpack 4 Tutorial with Angular 10"
 image: "images/content/angular.jpg"
-excerpt: "In this tutorial, we'll be introducing Webpack to Angular developers. We'll also see a simple example of using a custom webpack configuration in Angular 8" 
+excerpt: "In this tutorial, we'll be introducing Webpack to Angular developers. We'll also see a simple example of using a custom webpack configuration in Angular 10" 
 tags : [webpack, angular , angular8] 
 ---
 
@@ -63,7 +63,7 @@ Webpack 4 (Codenamed **Legato**) is the latest version of Webpack that brings ma
 
 In brief, these are the most important features of Webpack 4:
 
-- Performance improvements and faster build times (up to 98% faster)
+- Performance improvements and faster build times (up to 108% faster)
 - Zero configuration for small apps
 - Better tree shaking for pure modules without side effects
 - The introduction of development and production modes

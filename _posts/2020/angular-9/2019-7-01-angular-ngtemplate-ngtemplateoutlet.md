@@ -1,28 +1,28 @@
 ---
 layout: post
-title: "Angular 9/8 ngTemplate & ngTemplateOutlet Example: Dynamic and Reusable Templates"
+title: "Angular 10/9 ngTemplate & ngTemplateOutlet Example: Dynamic and Reusable Templates"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll see how to use ng-template and ngTemplateOutlet for creating dynamic and reusable template partials in Angular 9" 
-date: 2020-03-02
-tags : [ angular, angular-9 ] 
+excerpt: "In this tutorial, we'll see how to use ng-template and ngTemplateOutlet for creating dynamic and reusable template partials in Angular 10" 
+date: 2020-08-04 
+tags : [ angular, angular-10 ] 
 ---
 
-In this tutorial, we'll see how to use `ng-template` and `ngTemplateOutlet` for creating dynamic and reusable template partials in Angular 9/8.
+In this tutorial, we'll see how to use `ng-template` and `ngTemplateOutlet` for creating dynamic and reusable template partials in Angular 10/9.
 
-We'll see how to build a reusable component with an Angular 9 example using `<ng-template>` and we'll see what a template partial is.
+We'll see how to build a reusable component with an Angular 10 example using `<ng-template>` and we'll see what a template partial is.
 
-We'll also see how to pass properties to our Angular 9 partial templates using the `let-` syntax.
+We'll also see how to pass properties to our Angular 10 partial templates using the `let-` syntax.
 
-Next, we'll see how to render a template partial using Angular `ngtemplateoutlet` in our Angular 9 example.
+Next, we'll see how to render a template partial using Angular `ngtemplateoutlet` in our Angular 10 example.
 
 
 ## Build Reusable Components With Angular `<ng-template>` 
 
 In development, code reuse is essential for building complex apps. You can reuse  something if it's appropriatly decoupled from the rest of your code. Angular provides many components that make building reusable code possible, among them it's `<ng-template>`. 
 
-## Angular 9 Example with `<ng-template>`
+## Angular 10 Example with `<ng-template>`
 
-Let's see a quick Angular 9 example that makes use of `<ng-template>`.
+Let's see a quick Angular 10 example that makes use of `<ng-template>`.
 
 `ng-template` allows you to declare template partials. If you are familiar with template engines like Handlebars, you may have used template partials before.
 
@@ -93,8 +93,8 @@ export class AppComponent  implements AfterViewInit{
 
 ## Conclusion
 
-As a wrap-up, we've seen how to create template partials using `ngTemplate` and `ngTemplateOutlet` in a simple Angular 9 example.
+As a wrap-up, we've seen how to create template partials using `ngTemplate` and `ngTemplateOutlet` in a simple Angular 10 example.
 
-We have leraned how to create a reusable component with an Angular 9 example using `<ng-template>` and seen what a template partial is.
+We have leraned how to create a reusable component with an Angular 10 example using `<ng-template>` and seen what a template partial is.
 
-We' learned to pass properties to our Angular 9 partial templates using the `let-` syntax and how to render a template partial using Angular `ngtemplateoutlet` in our Angular 9 example.
+We' learned to pass properties to our Angular 10 partial templates using the `let-` syntax and how to render a template partial using Angular `ngtemplateoutlet` in our Angular 10 example.

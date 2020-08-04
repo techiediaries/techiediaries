@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Angular 9/8 ngForm, ngNoForm and Template Reference Variables"
+title: "Angular 10/9 ngForm, ngNoForm and Template Reference Variables"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this quick tutorial, you'll learn how to use NgForm in Angular 9/8 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular built-in directives (such as ngForm) in your templates"
-date: 2020-03-02 
-tags : [angular, angular-9 ] 
+excerpt: "In this quick tutorial, you'll learn how to use NgForm in Angular 10/8 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular built-in directives (such as ngForm) in your templates"
+date: 2020-08-04 
+tags : [angular, angular-10 ] 
 ---
 
-In this quick tutorial, you'll learn how to use NgForm in Angular 9/8 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular 9 built-in directives (such as `ngForm`) in your templates.
+In this quick tutorial, you'll learn how to use NgForm in Angular 10/9 to work with forms. You'll also learn about template reference variables and how you can use them to reference DOM elements or Angular 10 built-in directives (such as `ngForm`) in your templates.
 
 ## What is Angular NgForm
 
@@ -28,9 +28,9 @@ You can simply get a reference to your form' `ngForm` directive by exporting it 
 
 If you you want to import `FormsModule` in your application but want to skip a specific form, you can use the `ngNoForm` directive which will prevent `ngForm` from being added to the form.
  
-## How to Use NgForm in Your Angular 9 Application by Example
+## How to Use NgForm in Your Angular 10 Application by Example
 
-Provided that you have generated an Angular 9  project with Angular CLI and you are ready to start developing your application. 
+Provided that you have generated an Angular 10  project with Angular CLI and you are ready to start developing your application. 
 
 Let's see how you can use the `ngForm` directive.
 
@@ -138,7 +138,7 @@ The `.value` property provides the value of all fields of the form but you can a
 
 > Note: Don't forget to import `NgForm` from the `@angular/forms` package in your component.
 
-## Resetting an Angular 9 Form
+## Resetting an Angular 10 Form
 
 You can also reset the form using the template variable to the `ngForm` directive. In you component, add the following method:
 
@@ -152,6 +152,6 @@ We simply call the `resetForm()` of the `ngForm` variable.
 
 ## Conclusion
 
-In this quick tutorial, you have seen how you can use the Angular `ngForm` directive and template reference variables to work with forms in Angular 9.
+In this quick tutorial, you have seen how you can use the Angular `ngForm` directive and template reference variables to work with forms in Angular 10.
 
 

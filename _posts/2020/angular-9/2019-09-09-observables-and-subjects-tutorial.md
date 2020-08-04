@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "RxJS Observables and Subjects Tutorial with Angular 7/8"
+title: "RxJS Observables and Subjects Tutorial with Angular 10/9"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn to use the RxJS 6 library with Angular 7/8. We'll learn about how to import the Observable class and the other operators. How to subscribe and unsubscribe from Observables, how to import and call operators and wrap them with the `pipe()` function. We'll also see how to use the async pipe to subscribe to Observables from templates" 
+excerpt: "In this tutorial, we'll learn to use the RxJS 6 library with Angular 10/9. We'll learn about how to import the Observable class and the other operators. How to subscribe and unsubscribe from Observables, how to import and call operators and wrap them with the `pipe()` function. We'll also see how to use the async pipe to subscribe to Observables from templates" 
+date: 2020-08-04 
 tags : [angular, angular8] 
 ---
 
-In this tutorial, we'll learn about RxJS Observables and subjects and how we can use them in Angular 7/8.
+In this tutorial, we'll learn about RxJS Observables and subjects and how we can use them in Angular 10/9.
 
 We'll also learn about the related concepts such as:
 
@@ -14,7 +15,7 @@ We'll also learn about the related concepts such as:
 - Hot and cold observables.
 - [RxJS’ `BehaviorSubject` and `ReplaySubject`](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/).
 - How to create and subscribe to Observables.
-- How Observables are used in Angular.
+- How Observables are used in Angular 10.
 - Working with the HttpClient Module and Observables
 - Using `Observable` with `AsyncPipe`
 
@@ -157,9 +158,9 @@ Once you susbscribe to the `ob$` Observable, you'll get the following output in 
     Data received: A new value! 
 
 
-## How Observables are Used in Angular
+## How Observables are Used in Angular 10
 
-Angular uses the RxJS Observable as a built-in type for many of its APIs such as:
+Angular 10 uses the RxJS Observable as a built-in type for many of its APIs such as:
 
 
 - The `HttpClient` methods return Observables and actual requests are only sent when you subscribe to the returned Observable.
@@ -167,7 +168,7 @@ Angular uses the RxJS Observable as a built-in type for many of its APIs such as
   -  the `[events](https://angular.io/api/router/Router#events)` of the Router instance is an Observable to listen to events on the router. 
   - Also `ActivatedRoute` (which contains information about the route associated with the currently loaded component on the router outlet) has many Observable properties such as `params` and `paramMap` for the route parameters.
 
-Let's assume, you have an Angular component and the Router service injected as `router`. This example from [StackOverflow](https://stackoverflow.com/questions/33520043/how-to-detect-a-route-change-in-angular) shows you how you can subscribe to the router events for detecting a route change:
+Let's assume, you have an Angular 10 component and the Router service injected as `router`. This example from [StackOverflow](https://stackoverflow.com/questions/33520043/how-to-detect-a-route-change-in-angular) shows you how you can subscribe to the router events for detecting a route change:
 
 
     import { Component } from '@angular/core'; 
@@ -198,9 +199,9 @@ Let's assume, you have an Angular component and the Router service injected as `
 - The Reactive Forms Module uses reactive programming and Observables for listening to user input.
 - The `@output()` decorator in a component takes an `EventEmitter` instance. `EventEmitter` is a subclass of the RxJS Observable.
 
-## How to Use RxJS 6 Observable in Your Angular Code
+## How to Use RxJS 6 Observable in Your Angular 10 Code
 
-Angular uses Observables (implemented with the RxJS library) for all asynchronous events. If you are using Angular CLI 6|7, RxJS 6 will be installed by default on your project. 
+Angular 10 uses Observables (implemented with the RxJS library) for all asynchronous events. If you are using Angular CLI 10, RxJS 6 will be installed by default on your project. 
 
 Otherwise you can install it via npm using:
 

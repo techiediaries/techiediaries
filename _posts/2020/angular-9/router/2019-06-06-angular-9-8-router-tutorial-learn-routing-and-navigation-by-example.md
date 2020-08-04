@@ -1,19 +1,19 @@
 ---
 layout: bpost
-title: "Angular 9/8 Router Tutorial: Learn Routing & Navigation by Example"
+title: "Angular 10/9 Router Tutorial: Learn Routing & Navigation by Example"
 excerpt: "In this tutorial part, we’ll learn about Angular Router by example and will teach you everything you need to start using Angular routing to build Single Page Applications." 
 img: "https://www.techiediaries.com/images/angular-router.png"
 tags : [angular , angular9, angular-9-httpclient-examples, angular-9-router-examples] 
 categories: angular
-date : 2020-1-25
+date: 2020-08-04 
 author: ahmed
 ---
 
-In this tutorial, we’ll learn about the Angular Router by building an Angular 9 example and will teach you everything you need to start using routing to build Single Page Applications.
+In this tutorial, we’ll learn about the Angular Router by building an Angular 10 example and will teach you everything you need to start using routing to build Single Page Applications.
 
 You can also check out [this article](https://www.techiediaries.com/angular-routing-tutorial/) for how to add routing to a CRM application by example.
 
-> **Note**: This tutorial is compatible with both Angular 6/7/8 and the new Angular 9 version.
+> **Note**: This tutorial is compatible with both Angular 6/7/8/9 and the new Angular 10 version.
 
 ## Learn Navigation and Routing Using the Angular 9 Router With Example
 
@@ -31,7 +31,7 @@ You'll learn about:
 
 These are the steps of our tutorial:
 
--    Step 1: Creating an Angular 9 Project
+-    Step 1: Creating an Angular 10 Project
 -    Step 2: Understanding what the CLI Automatically Did For You
 -    Step 2.1: Adding `<base href>` 
 -    Step 2.2: Creating a Routing Module
@@ -44,18 +44,18 @@ These are the steps of our tutorial:
 -    Step 6: Implementing The Product List Component
 -    Step 7: Implementing the Product Details Component
 -    Step 8: Defining the Routes
--    Step 9: Adding Navigation Links
+-    Step 10: Adding Navigation Links
 
 
 
-## <a name="Angular-Routing">Angular 9 Routing Concepts</a>
+## <a name="Angular-Routing">Angular 10 Routing Concepts</a>
 
-Now let’s get started with Angular routing. In this section, we’ll learn the basic concepts behind routing in Angular 9. We’ll introduce the Angular Router and then we’ll proceed to create a simple single page application with Angular 9 that demonstrates the commonly used features of the router. 
+Now let’s get started with Angular routing. In this section, we’ll learn the basic concepts behind routing in Angular 10. We’ll introduce the Angular Router and then we’ll proceed to create a simple single page application with Angular 10 that demonstrates the commonly used features of the router. 
 
 In more details, you’ll learn about:
 
 
-- How to create Angular projects using Angular CLI v9,
+- How to create Angular projects using Angular CLI v10,
 - How to choose to have routing automatically setup and also how to manually add it in your project,
 - How to create Angular services and emulate a backend server that you can use to fetch data using `HttpClient`,
 - How to create Angular components,
@@ -81,7 +81,7 @@ Angular Router has a plethora of features such as:
 - Lazy loading of modules,
 - Route guards for adding client side protection and allow or disallow access to components or modules, etc.
 
-Angular 9 provides a powerful router that allows you to map browser routes to components. So let's see how we can add routing to applications built using Angular 9.
+Angular 10 provides a powerful router that allows you to map browser routes to components. So let's see how we can add routing to applications built using Angular 10.
 
 In this section, you’ll learn about various concepts related to Angular routing such as:
 
@@ -224,7 +224,7 @@ Angular Router provides two directives for navigation: The `routerLink` directiv
     <a [routerLink]="'/products'">Products</a>
 {% endraw %}
 
-##    Step 1: Creating a Angular 9 Project
+##    Step 1: Creating a Angular 10 Project
 
 To show you how to use Angular routing to build a frontend application with multiple screen views, we’ll create an Angular 8 project from scratch using Angular CLI 8.
 
@@ -712,11 +712,11 @@ Next, open the `src/app/product-list/product-list.component.html` file and add a
 
 ## Conclusion
 
-This is the end of this first tutorial of our series to learn Angular routing with Angular 9 (most of it is also valid for v8 or previous versions). 
+This is the end of this first tutorial of our series to learn Angular routing with Angular 10 (most of it is also valid for v8 or previous versions). 
 
 We have learned about the basic concepts of client side routing, next we’ve seen the basic concepts of the router and finally created a Single Page Application with basic building such as components, services and modules.
 
-We have seen how you can automatically setup routing in your Angular 9 application using the CLI v9 and how you can simulate a backend server using the In-memory Web API without actually having a backend server.
+We have seen how you can automatically setup routing in your Angular 10 application using the CLI v10 and how you can simulate a backend server using the In-memory Web API without actually having a backend server.
   
 In the next tutorial we'll see how we can access route parameters in our components. 
 

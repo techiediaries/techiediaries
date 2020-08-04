@@ -1,28 +1,28 @@
 ---
 layout: post
-title: "Angular 9/8 Firestore Database CRUD Tutorial"
+title: "Angular 10/9 Firestore Database CRUD Tutorial"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll be using Angular 9 with Firebase and Firestore to create am app that implements the common CRUD operations" 
-date: 2020-02-08 
+excerpt: "In this tutorial, you'll be using Angular 10 with Firebase and Firestore to create am app that implements the common CRUD operations" 
+date: 2020-08-04 
 categories: angular-firebase
-tags : [angular, angular-9, angular-9-ngfor-examples]
+tags : [angular, angular-10, angular-10-ngfor-examples]
 ---
 
-In this tutorial, you'll be using Angular 9/8 with Firebase and Firestore database to create an app that implements the common CRUD operations.
+In this tutorial, you'll be using Angular 10/9 with Firebase and Firestore database to create an app that implements the common CRUD operations.
 
 You can also read how to use your own self-hosted [database with Node and TypeORM](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/).
 
-We'll see step by step how to set up Firebase in our Angular 9 project, and create a service for implementing Firebase CRUD operations using the Firestore realtime database.
+We'll see step by step how to set up Firebase in our Angular 10 project, and create a service for implementing Firebase CRUD operations using the Firestore realtime database.
 
-## Angular 9 CRUD with Firebase and Firestore Database 
+## Angular 10 CRUD with Firebase and Firestore Database 
 
-These are the steps of our Angular 9 Firebase CRUD tutorial:
+These are the steps of our Angular 10 Firebase CRUD tutorial:
 
-- Step 1 - Creating your Angular 9 Project
+- Step 1 - Creating your Angular 10 Project
 - Step 2 - Creating a Firebase Project and a Firestore Database
-- Step 3 - Installing and Adding Firebase to your Angular 9 Project.
-- Step 4 - Create an Angular 9 Model 
-- Step 5 - Creating an Angular 9 Service
+- Step 3 - Installing and Adding Firebase to your Angular 10 Project.
+- Step 4 - Create an Angular 10 Model 
+- Step 5 - Creating an Angular 10 Service
 - Step 6 - Creating a Component for Making CRUD Operations
 
 
@@ -37,13 +37,13 @@ CRUD stands for Create, Read, Update and Delete and refer to the operations that
 Before starting this tutorial, you first need to make sure, you have:
 
 - A recent version of Node.js (v10+) and NPM installed on your system,
-- The latest Angular CLI 9 installed on your system.
+- The latest Angular CLI 10 installed on your system.
 
 If you have the prerequisites, you are ready to start creating your project!
   
-## Step 1 - Creating your Angular 9 Project
+## Step 1 - Creating your Angular 10 Project
 
-The first step in this tutorial is creating a new Angular 9 project using the CLI. 
+The first step in this tutorial is creating a new Angular 10 project using the CLI. 
 
 Head over to your terminal and run the following command:
 
@@ -61,7 +61,7 @@ Now that your project is generated, you need to proceed with creating a Firebase
 
 Next head to the `Project Overview >Develop >Database` page and create a new Firestore database. For now, make sure you enable test mode so you don't need any permissions to access the database.
 
-## Step 3 - Installing and Adding Firebase to your Angular 9 Project.
+## Step 3 - Installing and Adding Firebase to your Angular 10 Project.
 
 After creating your Firebase project and your Firestore database you next need to install the `firebase` and `@angular/fire` packages as follows:
 
@@ -72,7 +72,7 @@ $ npm install --save firebase @angular/fire
 
 Next go to your Firebase project overview then click on *web* and copy the *config* data.
 
-Next, open the `environments/environment.ts` file in your Angular 9 project and add the `firebaseConfig` object inside the `environment` object.
+Next, open the `environments/environment.ts` file in your Angular 10 project and add the `firebaseConfig` object inside the `environment` object.
 
 ```ts
 export const environment = {
@@ -108,9 +108,9 @@ You simply import `AngularFireModule` and `AngularFireDatabaseModule` and you ad
 
 You also call the `initializeApp()` method of `AngularFireModule` to pass the configuration object that you added earlier to the `environments/environment.ts` file.
 
-That's it, you now have added Firebase and Firestore to your Angular 9 project. 
+That's it, you now have added Firebase and Firestore to your Angular 10 project. 
 
-## Step 4 - Create an Angular 9 Model 
+## Step 4 - Create an Angular 10 Model 
 
 After setting up Firestore in your project, you can proceed with creating a model class. In the simple example, we suppose that you are creating an insurance app where we need to manage a set of policies.
 
@@ -139,7 +139,7 @@ export class Policy {
 
 This is an example of an insurance policy with many fields and relationships with other entities omitted for the sake of simplicity.
 
-## Step 5 - Creating an Angular 9 Service
+## Step 5 - Creating an Angular 10 Service
 
 An Angular service allows you to encapsulate the code that could be repeated in many places in your project. Using the Angular CLI, run the following command to generate a service:
 
@@ -201,7 +201,7 @@ deletePolicy(policyId: string){
 
 After creating the model and service for creating, reading, updating and deleting insurance policies, you now need to create the component for testing our methods:
 
-Using Angular CLI 9 run the following command to generate a component:
+Using Angular CLI 10 run the following command to generate a component:
 
 ```bash
 $ ng g c policy-list
@@ -284,4 +284,4 @@ Below the `<table>` markup,  you can also add a form to create an insurance poli
 
 ## Conclusion
 
-In this tutorial, we've seen by example how to add Firebase CRUD operations to your Angular 9 project that allow you to create, read, update and delete data from a Firestore database.
+In this tutorial, we've seen by example how to add Firebase CRUD operations to your Angular 10 project that allow you to create, read, update and delete data from a Firestore database.

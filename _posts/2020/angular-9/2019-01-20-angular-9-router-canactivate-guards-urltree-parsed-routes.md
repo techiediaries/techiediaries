@@ -1,22 +1,22 @@
 ---
 layout: post
-title: "Angular 9/8 Router CanActivate Guards and UrlTree Parsed Routes"
+title: "Angular 10/9 Router CanActivate Guards and UrlTree Parsed Routes"
 image: "images/content/angular.png"
 excerpt: "We'll be learning how to use Router Guards and UrlTree data structures to protect the UI if the user is not logged in and redirect them to the login interface if they don't have access to a specific route." 
 categories: angular
-date: 2020-03-02
-tags : [angular, angular-9-router-examples]
+date: 2020-08-04 
+tags : [angular, angular-10-router-examples]
 ---
 
-In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 9. Let's now [secure the UI with router canactivate guards](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/).
+In the previous tutorial, we have added routing in our developer portfolio web application created with Angular 10. Let's now [secure the UI with router canactivate guards](https://www.techiediaries.com/angular/ui-guards-auto-scrolling-filereader-ionic/).
 
-## Using Angular 9 Guards and UrlTree Interface for Protecting UIs
+## Using Angular 10 Guards and UrlTree Interface for Protecting UIs
 
 We'll be learning how to use `Router` Guards and `UrlTree` data structures to protect the UI if the user is not logged in and redirect them to the login interface if they don't have access to a specific route.
   
 The admin interface can be only accessed by the website owner so we need to use Guards to protect the components of the admin module and only allow access to them if the user is logged in.
 
-## Creating a CanActivate Route Guard with Angular CLI 9
+## Creating a CanActivate Route Guard with Angular CLI 10
 
 First, you need to create a route guard. Run the following command in your terminal to generate a guard service:
 
@@ -185,11 +185,11 @@ Now, go to your application, if you visit any protected route without logging in
 
 Check out all parts:
 
-- [Angular 9/8 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
-- [Angular 9/8  Tutorial Course: Angular NgModules (Feature and Root Modules)](https://www.techiediaries.com/angular-course-modules),
-- [Angular 9/8 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()](https://www.techiediaries.com/angular-course-child-routes),
-- [Angular 9/8 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
-- Angular 9/8 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes
+- [Angular 10/9 Tutorial Course: CLI, Components, Routing & Bootstrap 4](https://www.techiediaries.com/angular-course),
+- [Angular 10/9  Tutorial Course: Angular NgModules (Feature and Root Modules)](https://www.techiediaries.com/angular-course-modules),
+- [Angular 10/9 Tutorial Course: Nested Router-Outlet, Child Routes & forChild()](https://www.techiediaries.com/angular-course-child-routes),
+- [Angular 10/9 Tutorial Course: Authentication with Firebase (Email & Password)](https://www.techiediaries.com/angular-course-firebase-authentication),
+- Angular 10/9 Tutorial Course: Securing the UI with Router Guards and UrlTree Parsed Routes
 
 
 ## Conclusion

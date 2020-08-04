@@ -1,25 +1,25 @@
 ---
 layout: post
-title: "Angular 9/8 Authentication with Firebase (Google, Email & Password): Login, Register, Email Verification and Password Recovery"
+title: "Angular 10/9 Authentication with Firebase (Google, Email & Password): Login, Register, Email Verification and Password Recovery"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you will learn to add email and social authentication with login, register, email verification and password recovery to your Angular 9 app using Firebase and Google" 
-date: 2020-02-08 
+excerpt: "In this tutorial, you will learn to add email and social authentication with login, register, email verification and password recovery to your Angular 10 app using Firebase and Google" 
+date: 2020-08-04 
 categories: angular-firebase
-tags : [angular, angular-9]
+tags : [angular, angular-10]
 ---
 
 
-In this tutorial, you will learn to add email and social authentication with login, register, email verification and password recovery to your Angular 9 app using Firebase and Google. 
+In this tutorial, you will learn to add email and social authentication with login, register, email verification and password recovery to your Angular 10 app using Firebase and Google. 
 
-## Angular 9 Firebase Authentication by Example
+## Angular 10 Firebase Authentication by Example
 
 We'll be adding the following functionalities:
 
-- Angular 9 email and password authentication with Firebase,
+- Angular 10 email and password authentication with Firebase,
 - Social authentication with Firebase and Google,
 - Password recovery,
 - Verification emails,
-- Storing and accessing the authentication state using the browser's localStorage and Angular 9 Observables
+- Storing and accessing the authentication state using the browser's localStorage and Angular 10 Observables
 
 > This tutorial also works with Angular 6, Angular 7 and Angular 8.
 
@@ -28,12 +28,12 @@ We'll be adding the following functionalities:
 You must have the following prerequisites for this tutorial:
 
 - Recent versions of Node.js and NPM. You can install them from their official [website](https://nodejs.org/en/download/),
-- Angular CLI 9 installed (`npm install @angular/cli -g`)
+- Angular CLI 10 installed (`npm install @angular/cli -g`)
 
 
-## Creating the Angular 9 Project
+## Creating the Angular 10 Project
 
-Let's start by creating an Angular 9 project:
+Let's start by creating an Angular 10 project:
 
 ```bash
 $ ng new angular-firebase-auth
@@ -118,7 +118,7 @@ Enter your user's credentials and click on the **Add user** button:
  
 ## Installing AngularFire2
 
-Head back to your terminal, make sure your are inside your Angular 9 project's root folder and run the following command to install Firebase SDK and AngularFire2 from npm:
+Head back to your terminal, make sure your are inside your Angular 10 project's root folder and run the following command to install Firebase SDK and AngularFire2 from npm:
 
 ```bash
 $ npm install firebase @angular/fire --save
@@ -192,9 +192,9 @@ All these routes are children of the admin route. So, for example, you can acces
 
 ![Firebase login](https://www.diigo.com/file/image/rscqpoqzerraeesqszdpsrrboe/Angular7Demo.jpg)
 
-## Creating the Firebase Authentication Angular 9 Service
+## Creating the Firebase Authentication Angular 10 Service
 
-To abstract all the interactions with Firebase authentication, we will create an Angular 9 service using this command:
+To abstract all the interactions with Firebase authentication, we will create an Angular 10 service using this command:
 
 ```bash
 $ ng g s auth/auth
@@ -321,7 +321,7 @@ We are done with the authentication service. Next, we need to create the login a
 
 You can also read how to implement [authentication with TypeScript/Node](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/) stack.
 
-### Implementing the Angular 9 Login UI
+### Implementing the Angular 10 Login UI
 
 Open the `src/app/admin/login/login.component.ts` file and import then inject the authentication service:
 

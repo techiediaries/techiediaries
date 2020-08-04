@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Angular 9/8 Elements Tutorial by Example: Building Web Components"
+title: "Angular 10/9 Elements Tutorial by Example: Building Web Components"
 image: "images/content/angular.png"
-excerpt: "In this Angular 8 Elements tutorial by example we'll learn how to use Angular 6 to build web components or custom elements." 
-tags : [ javascript, angular, angular-9 ]
-date: 2020-02-18
+excerpt: "In this Angular 10 Elements tutorial by example we'll learn how to use Angular  to build web components or custom elements." 
+tags : [ javascript, angular, angular-10 ]
+date: 2020-08-04 
 categories: angular
 author: ahmed
 ---
 
-In this tutorial Angular 9 by example, we'll learn how to build web components and custom elements with Angular 9/8 and use them everywhere using the latest version of Angular and Angular CLI 9.
+In this tutorial Angular 10 by example, we'll learn how to build web components and custom elements with Angular 10/9 and use them everywhere using the latest version of Angular and Angular CLI 10.
 
 ## What is Angular Elements?
 
@@ -17,7 +17,7 @@ The Angular Elements package (`@angular/elements`) allows you to create native c
  
 The `@angular/elements` package provides a `createCustomElement()` API that can be used to transform Angular Components to native Custom Elements.
 
-> **Note**: This tutorial is valid for Angular 8 and Angular 9 versions.
+> **Note**: This tutorial is also valid for Angular 8 and Angular 9 versions.
 
 
 You can find a long and detailed tutorial for web components with Angular from the [Custom Elements & Shadow DOM with Angular article](https://www.techiediaries.com/custom-elements-shadow-dom/).
@@ -31,9 +31,9 @@ According to
 >With [Custom Elements](https://html.spec.whatwg.org/multipage/scripting.html#custom-elements), web developers can **create new HTML tags**, beef-up existing HTML tags, or extend the components other developers have authored. The API is the foundation of [web components](http://webcomponents.org/). It brings a web standards-based way to create reusable components using nothing more than vanilla JS/HTML/CSS. The result is less code, modular code, and more reuse in our apps. 
 
 
-## Installing Angular 9 CLI
+## Installing Angular 10 CLI
 
-Head to your terminal and run the following command to install the Angular CLI 9 globally:
+Head to your terminal and run the following command to install the Angular CLI 10 globally:
 
 ```bash
 npm i -g @angular/cli
@@ -42,30 +42,30 @@ npm i -g @angular/cli
 This will install the latest version and you may need to add **sudo** depending on your npm configuration.
 
 
-## Creating a New Angular 9 Example Project
+## Creating a New Angular 10 Example Project
 
-Head back to your terminal and run the following command to create a new **Angular 9** project using the **Angular CLI**:
+Head back to your terminal and run the following command to create a new **Angular 10** project using the **Angular CLI**:
 
 ```bash
-$ ng new angular-9-webcomponents-demo --prefix custom
+$ ng new angular-10-webcomponents-demo --prefix custom
 ```
 
 We simply use the usual `ng new` command and you can use all the other parameters to add routing or Sass etc. But also note the **custom** prefix -- This is required for custom elements. 
 
 You'll be prompted if you would like to set up routing in your project and which stylesheet format you would like to use. Choose the appropriate answers for your project.
 
-## Adding the Angular Elements 9 Package
+## Adding the Angular Elements 10 Package
 
-To be able to create web components we need to install the Angular Elements v9 package. You can simply use the `ng add` command to install the package:
+To be able to create web components we need to install the Angular Elements v10 package. You can simply use the `ng add` command to install the package:
 
 ```bash
-$ angular-9-webcomponents-demo
+$ angular-10-webcomponents-demo
 $ ng add @angular/elements
 ```
 
 This command adds the `document-register-element.js` polyfill required for web browsers that don't support custom elements yet and the `@angular/elements` package.
 
-## Creating an Example Angular 9 Component 
+## Creating an Example Angular 10 Component 
 
 An Angular component is an angular concept that's different from a web component so let's see how we can create a component and transform it to web component using the `createCustomElement()` function of `@angular/elements`.
 
@@ -152,7 +152,7 @@ ngDoBootstrap() {}
 
 
   
-## Building the Angular 9 Project for Production
+## Building the Angular 10 Project for Production
 
 Just like any normal Angular project. You can use the following command to generate a production build:
 
@@ -221,7 +221,7 @@ Create an `index.html` file then add the following content:
 <!doctype html>
 <html lang="en">
 <head>
-<title>Angular 9 Elements Demo</title>
+<title>Angular 10 Elements Demo</title>
 </head>
 <body>
 <analytics-counter></analytics-counter>
@@ -239,5 +239,5 @@ npm install http-server -g
 
 ## Conclusion
 
-Throughout this tutorial by example, we've seen how to use Angular 9 Elements to build standard web components from Angular 9 components.
+Throughout this tutorial by example, we've seen how to use Angular 10 Elements to build standard web components from Angular 10 components.
 
