@@ -1,10 +1,9 @@
 ---
 layout: post
-title: "Angular 10/9 Firestore Database CRUD Tutorial"
+title: "Angular 10/9 Firebase/Firestore Database CRUD"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, you'll be using Angular 10 with Firebase and Firestore to create am app that implements the common CRUD operations" 
-date: 2020-08-04 
-categories: angular-firebase
+date: 2020-08-05 
 tags : [angular, angular-10, angular-10-ngfor-examples]
 ---
 
