@@ -1,19 +1,23 @@
 ---
 layout: post
-title: "Angular 7|8 Modules"
+title: "Angular 10 Modules"
 image: "images/content/html.png"
-excerpt: "Learn about Angular modules"
+excerpt: "Learn about Angular 10 modules"
 tags: [ angular ] 
+date: 2020-08-05 
 ---
 
-Let's now learn abour Angular modules.
+Let's now learn abour Angular 10 modules by example.
  
 Angular projects adhere to a **modular** and **component-based** architecture. 
+
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Modular_programming):
 
 
 > **Modular programming** is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable **modules**, such that each contains everything necessary to execute only one aspect of the desired functionality.
+
+## How to Create Angular Modules
 
 Angular makes it easy to create **modules** by providing ****[**NgModules**](https://angular.io/guide/ngmodules)**:**
 
@@ -29,7 +33,9 @@ A **NgModule** is a TypeScript class decorated with the **@NgModule** decorator 
 
 Every Angular app has at least one module, conventionally called the **root** module. This is the module that gets [bootstrapped](https://angular.io/guide/bootstrapping) for running the application.
 
-Head over to your Angular project in the Stackblitz IDE. Open the `src/app/app.module.ts` file, you should see the following code:
+## Angular 10 Modules by Example
+
+Head over to your Angular 10 project in the Stackblitz IDE. Open the `src/app/app.module.ts` file, you should see the following code:
 
 
     import { NgModule } from '@angular/core';
@@ -50,5 +56,7 @@ At the top, we have some import statements. `NgModule` belongs to the `@angular/
 
 After the imports, we configure the module by decorating the `AppModule` class with `@``[NgModule](https://angular.io/api/core/NgModule)` and stating what components and directives belong to it (In the `declarations` array) as well as which other modules it uses (In the `imports` array). For more information on the structure of an `@``[NgModule](https://angular.io/api/core/NgModule)`, you can read [Bootstrapping](https://angular.io/guide/bootstrapping) from the official Angular guide.
 
+
+## Conclusion
 
 There is more that you should know about modules but let's leave that to after you build your first app.

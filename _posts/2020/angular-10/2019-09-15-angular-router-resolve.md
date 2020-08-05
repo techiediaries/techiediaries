@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Angular 7/8 Router: Resolve & Route Resolvers Example"
+title: "Angular 10/9 Router: Resolve & Route Resolvers Example"
 image: "images/content/angular.png"
-excerpt: "The Angular 8 Router provides a resolve property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data)" 
+excerpt: "The Angular 10 Router provides a resolve property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data)" 
+date: 2020-08-05 
 tags : [angular, angular8, angular-9-router-examples] 
 ---
 
-The Angular 8 Router provides a `resolve` property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data). 
+The Angular 10 Router provides a `resolve` property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data). 
 
-You can create a route resolver by  implementing the [Resolve](https://angular.io/api/router/Resolve) interface. For example,this a route resolver:
+## How to Create an Angular 10 Route Resolver
+
+You can create a route resolver in Angular 10 and previous versions by  implementing the [Resolve](https://angular.io/api/router/Resolve) interface. For example,this a route resolver:
 
 ```ts
 import { Injectable } from '@angular/core';
@@ -35,6 +38,8 @@ We then create an `APIResolver` class that implements the `Resolve<any>` interfa
 In the constructor of the resolver we inject our `APIService` as `apiService` and we call the `getItems()` method of the service in the `resolve()` method that should be defined in any resolver
 
 
+## Accessing the Route Parameters in the Resolver
+
 Often than not when resolving route data, you want to get access to the parameters of the route in the resolver. You can do that using the `ActivatedRouteSnapshot` class. For example, let's suppose our route has a `date` parameter that needs to be passed to the `getItems(date)` method:
 
 ```ts
@@ -57,6 +62,8 @@ export class APIResolver implements Resolve<any> {
 
 We import the `ActivatedRouteSnapshot` class from the `@angular/router` package and we provide a paramater `route` of type `ActivatedRouteSnapshot` to the `resolve()` method. Finally we use `route.params.date` to get the value of the `date` parameter.
 
+## Passing the Route Resolver to the Angular 10 Router
+
 
 One final thing you need to do is to pass the resolver we created to `resolve` property of the corresponding route in the `Routes` array of your Angular routing module:
 
@@ -70,4 +77,4 @@ One final thing you need to do is to pass the resolver we created to `resolve` p
 
 ## Conclusion
 
-In this tutorial, we've seen how to resolve data using the `resolve` property and the route resolver (`Resolve`) of the Angular 8 router.
+In this tutorial, we've seen how to resolve data using the `resolve` property and the route resolver (`Resolve`) of the Angular 10 router.

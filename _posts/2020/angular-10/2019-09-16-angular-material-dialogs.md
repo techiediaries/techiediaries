@@ -1,14 +1,14 @@
 ---
 layout: bpost
-title: "Angular 9/8 Material Dialog with Example"
+title: "Angular 10/8 Material Dialog with Example"
 image: "images/content/angular.jpg"
 excerpt: "This tutorial shows you how you can use Angular 7/8 Material to build Material UI dialogs for your web application" 
-tags : [angular, angular-9-material-examples] 
-date: 2020-1-2
+tags : [angular, angular-10-material-examples] 
+date: 2020-08-05 
 author: ahmed
 ---
 
-In this tutorial, we're going to learn how to use the Angular Material Dialog component (`MatDialog` along with `MatDialogRef`, `MAT_DIALOG_DATA` and `MatDialogConfig`) to build a custom Angular dialog example in Angular 9.
+In this tutorial, we're going to learn how to use the Angular Material Dialog component (`MatDialog` along with `MatDialogRef`, `MAT_DIALOG_DATA` and `MatDialogConfig`) to build a custom Angular dialog example in Angular 10.
 
 
 We'll also see common cases to work with the Angular Material Dialog such as:
@@ -21,7 +21,7 @@ We'll also see common cases to work with the Angular Material Dialog such as:
 
 Before starting, first, you’ll need to make sure you have followed the steps to set up Angular Material for your Angular application.
 
-Provided that you have initialized a project using [Angular CLI 9 (or v6+)](https://www.techiediaries.com/angular-cli-tutorial/), you can use the `ng add` command for quickly setting up Angular 9 in your project without going through most of the [manual steps](https://material.angular.io/guide/getting-started):
+Provided that you have initialized a project using [Angular CLI 10 (or v6+)](https://www.techiediaries.com/angular-cli-tutorial/), you can use the `ng add` command for quickly setting up Angular 10 in your project without going through most of the [manual steps](https://material.angular.io/guide/getting-started):
 
 ```bash
 $ cd your_angular-project
@@ -61,9 +61,9 @@ Now, you are ready to create your Angular Material dialog. The process involves 
 
 From the final step, you can understand that the `open()` method needs a component as a body so we'll need to create an Angular component.
 
-## Creating an Angular 8 Component 
+## Creating an Angular 10 Component 
 
-Head back to your terminal and use Angular CLI 8 to generate a component as follows:
+Head back to your terminal and use Angular CLI 10 to generate a component as follows:
 
 ```bash
 $ ng generate component dialog-body
@@ -106,13 +106,13 @@ import {MatDialog, MatDialogConfig } from '@angular/material/dialog';
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "Example Angular 8 Material Dialog";
+  title = "Example Angular 10 Material Dialog";
   
   constructor(private matDialog: MatDialog) {}
 }
 ```  
 
-## Step 2: Opening the Angular Material Dialog
+## Step 2: Opening the Angular 10 Material Dialog
 
 Next, add the `openDialog()` method which opens the dialog:
 
@@ -198,7 +198,7 @@ You can optionally pass some value which can be received back in the calling com
   }
 ```
 
-## Step 5: Sending Data to the Angular Dialog Component
+## Step 5: Sending Data to the Angular 10Dialog Component
 
 To be able to send or share data with the Angular dialog component, you can use the `data` option to pass data:
 
@@ -234,7 +234,7 @@ export class DialogBodyComponent {
 }
 ```
 
-## Step 6: Receiving Data from the Angular Dialog Component
+## Step 6: Receiving Data from the Angular 10 Dialog Component
 
 In the calling component, we can get the data passed from the dialog. From the previous example, you can see that calling the `open()` method returns a reference to the dialog:
 
@@ -254,4 +254,4 @@ dialogRef.afterClosed().subscribe(value => {
 
 Dialogs are important UI components for most web applications and thanks to Angular Material you can easily create professional-looking dialogs.
 
-In this tutorial, we've seen how to use the `MatDialog` component (along with `MatDialogRef`, `MAT_DIALOG_DATA` and `MatDialogConfig`) from the Angular Material Dialog module to create a simple dialog component in Angular 9.
+In this tutorial, we've seen how to use the `MatDialog` component (along with `MatDialogRef`, `MAT_DIALOG_DATA` and `MatDialogConfig`) from the Angular Material Dialog module to create a simple dialog component in Angular 10.

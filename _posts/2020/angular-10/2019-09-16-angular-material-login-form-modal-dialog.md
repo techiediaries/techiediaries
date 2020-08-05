@@ -1,18 +1,18 @@
 ---
 layout: bpost
-title: "Angular 9/8 Popup Modal Example with Angular Material Form and Modal Dialog Components"
+title: "Angular 10/9 Popup Modal Example with Angular Material Form and Modal Dialog Components"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll build an example login UI with a form and modal dialog styled with Angular Material 9." 
-date: 2020-1-02
-tags : [angular, angular-9-router-examples, angular-9-material-examples]
+excerpt: "In this tutorial, you'll build an example login UI with a form and modal dialog styled with Angular Material 10." 
+date: 2020-08-05
+tags : [angular, angular-10-router-examples, angular-10-material-examples]
 ---
 
-In this tutorial, you'll learn about Angular Popup Modals and forms by example. We'll be using Angular Material with an Angular 9 example.
+In this tutorial, you'll learn about Angular Popup Modals and forms by example. We'll be using Angular Material with an Angular 10 example.
 
 These are the steps:
 
-- Step 1: Creating an Angular 9 Project
-- Step 2: Adding Angular Material v9
+- Step 1: Creating an Angular 10 Project
+- Step 2: Adding Angular Material v10
 - Creating the Angular Modal Component
 - Adding a Material Card Container
 - Adding an HTML Form
@@ -21,9 +21,9 @@ These are the steps:
 
 In this tutorial, you'll build an example login UI with a form and dialog styled with Angular Material. 
 
-## Step 1: Creating an Angular 9 Project
+## Step 1: Creating an Angular 10 Project
 
-We assume you have [created an Angular 9 project using Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/). Otherwise, you can install Angular CLI from npm using:
+We assume you have [created an Angular 10 project using Angular CLI](https://www.techiediaries.com/angular-cli-tutorial/). Otherwise, you can install Angular CLI from npm using:
 
 
 ```bash
@@ -47,7 +47,7 @@ $ ng serve
 
 Your application will be available from the `http://localhost:4200/` address.
 
-## Step 2: Adding Angular Material v9
+## Step 2: Adding Angular Material v10
 
 Open a new terminal and navigate to your project's folder, next run the `ng add` command to install and set up Angular Material in your project:
 
@@ -225,4 +225,4 @@ You use the [TypeScript `import` keyword](https://www.techiediaries.com/angular/
 
 ## Conclusion
 
-In this tutorial, you have created a simple [login UI example](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) with Angular 9, an HTML form, a Modal popup dialog and Angular Material 9.
+In this tutorial, you have created a simple [login UI example](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) with Angular 10, an HTML form, a Modal popup dialog and Angular Material 10.

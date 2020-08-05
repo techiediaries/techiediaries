@@ -1,21 +1,20 @@
 ---
 layout: post
-title: "Mock a REST API Back-End for Your Angular 9/8 App with JSON-Server and Faker.js"
+title: "Mock a REST API Back-End for Your Angular 10/9 App with JSON-Server and Faker.js"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 8 application which you can consume using Angular HttpClient even before your real back-end is ready" 
+excerpt: "In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 10 application which you can consume using Angular HttpClient even before your real back-end is ready" 
+date: 2020-08-05 
 tags : [angular] 
 ---
 
-In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 9/8 application which you can consume using Angular 9 HttpClient even before your real back-end is ready.
-
-
+In this tutorial, we’ll learn, with a quick example, how to mock a REST API back-end for your Angular 10/9 application which you can consume using Angular 10 HttpClient even before your real back-end is ready.
 
 We'll use two powerful open source packages, [json-server](https://github.com/typicode/json-server) and [faker.js](https://github.com/marak/Faker.js/) and we assume that you have an Angular project ready.
 
 Please note that both `json-server` and `faker.js` are framework agnostic i.e you can use them with any JavaScript framework such as Vue.js or React but in this example we'll use them in the context of an Angular project.
   
 
-## Why Mocking a REST API Back-End?
+## Why Mocking a Back-End for your Angular 10 App?
 
 More often than not, modern web development involves multiple developers working in separate front-end and back-end applications. This approach has many advantages, such as the separation of concerns but also introduces a few challenges such as the difficulties in coordination between the front-end and back-end developers. Here comes the role of tools such as JSON-Server to ease these difficulties. As a front-end developer, JSON-Server is such a great tool that allows you to spin up a REST API server with a fully-working API with zero coding.
 
@@ -109,7 +108,7 @@ $ npm run runServer
 
 Your REST API server will be available from the `[http://localhost:3000/](http://localhost:3000/)` address.
 
-![](https://cdn-images-1.medium.com/max/800/0*0EZg8Lxtit7x_Ty6)
+![Angular 10 backend](https://cdn-images-1.medium.com/max/800/0*0EZg8Lxtit7x_Ty6)
 
   
 
@@ -126,6 +125,6 @@ You can make use of the `_page` and `_limit` parameters to retrieve pages of dat
 
 ## Conclusion
 
-Thanks to json-server you can boost your productivity when developing your [Angular front-end](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) without waiting for the back-end features to be ready. Since json-server is based on Express.js, it's even possible to add advanced features to your mocked back-end such as authentication and route protection. Check out this [tutorial](https://www.techiediaries.com/fake-api-jwt-json-server) for an example with authentication or also this [npm package](https://www.npmjs.com/package/json-server-auth).
+Thanks to json-server you can boost your productivity when developing your [Angular 10 front-end](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) without waiting for the back-end features to be ready. Since json-server is based on Express.js, it's even possible to add advanced features to your mocked back-end such as authentication and route protection. Check out this [tutorial](https://www.techiediaries.com/fake-api-jwt-json-server) for an example with authentication or also this [npm package](https://www.npmjs.com/package/json-server-auth).
   
 

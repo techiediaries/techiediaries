@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "Angular 9/8 Material Data-Table Tutorial & Example"
+title: "Angular 10/8 Material Data-Table Tutorial & Example"
 image: "images/content/angular.png"
-excerpt: "Angular 9 Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering." 
-date: 2020-1-02
-tags : [angular, angular-9-material-examples]
+excerpt: "Angular 10 Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering." 
+date: 2020-08-05 
+tags : [angular, angular-10-material-examples]
 ---
 
 Angular Material data tables provide a quick and efficient way to create tables of data with common features like pagination, filtering and ordering. 
 
-In this tutorial, you'll create an example that shows you how to use Material data-tables in your [Angular 9 apps](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) to render tabular data.
+In this tutorial, you'll create an example that shows you how to use Material data-tables in your [Angular 10 apps](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) to render tabular data.
 
 In the previous tutorial(s), you've created a fake REST API that provides data to your application by using Angular.
     
@@ -17,7 +17,7 @@ Now, that you've created a form to submit data to the back-end. Let's see how to
 
 > **Note**: This tutorial works with Angular 6/7/8/9.
 
-## Prerequisites
+## Angular 10 Material Table by Example
 
 To follow this tutorial, it's better to have completed the previous tutorial(s) where you can setup Angular CLI and create your project. You also need to make sure you have understood the requirements of the vehicle insurance application that you are building throughout the series.
 
@@ -25,15 +25,15 @@ But, if you only care to learn how to use the Angular Material datatable, you si
 
 - Knowledge of [TypeScript and Angular](https://www.techiediaries.com/angular/typescript-strings-arrays-promises-rxjs-behavior-replay-subjects/),
 - Node.js and npm installed on your machine,
-- Angular CLI 9 installed on your system,
-- An Angular 9 project created,
+- Angular CLI 10 installed on your system,
+- An Angular 10 project created,
 - You have some data that you can display in your data-table 
 
 That's it, you are now ready to follow with the next steps.
 
 ## Setting up Angular Material
 
-Supposed that you have [created a project using Angular CLI 9 (or v6+)](https://www.techiediaries.com/angular-cli-tutorial/), you can use the `ng add` command for quickly setting up Angular 8 in your project without going most of the [manual steps](https://material.angular.io/guide/getting-started):
+Supposed that you have [created a project using Angular CLI 10 (or v6+)](https://www.techiediaries.com/angular-cli-tutorial/), you can use the `ng add` command for quickly setting up Angular 8 in your project without going most of the [manual steps](https://material.angular.io/guide/getting-started):
 
 ```bash
 $ cd your_angular_project
@@ -200,4 +200,4 @@ You simply assign the `result.body` which contains the array of policies to your
   
 ## Conclusion
 
-In this tutorial, you've seen how you can add Material Design Table in your Angular 9 project, and how you can use the various components it provides to display your tabular data in a modern and professional interface. The Angular 9 Material table has many different features like pagination and filtering that we'll be seeing in another tutorial.
+In this tutorial, you've seen how you can add Material Design Table in your Angular 10 project, and how you can use the various components it provides to display your tabular data in a modern and professional interface. The Angular 10 Material table has many different features like pagination and filtering that we'll be seeing in another tutorial.

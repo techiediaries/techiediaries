@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Angular 7/8 Router: Route Animations Tutorial and Example"
+title: "Angular 10/9 Router: Route Animations by Example"
 image: "images/content/angular.png"
-excerpt: "The Angular 8 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application." 
+excerpt: "The Angular 10 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application"
+date: 2020-08-05 
 tags : [angular, angular8, angular-9-router-examples] 
 ---
 
-The Angular 7/8 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application.
+The Angular 10 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application.
 
-## Creating an Angular 8 Project
+## Creating an Angular 10 Project
 
-In this tutorial we assume you already have Angular CLI v6 installed. You can then generate a project using the following command from your terminal:
+In this tutorial we assume you already have Angular CLI 10 installed. You can then generate a project using the following command from your terminal:
 
 ```bash
 $ ng new angular-project
@@ -24,9 +25,9 @@ $ ng g c detail
 ```
 
 
-## Adding Routes
+## Adding Angular 10 Routes
 
-Next, you need to add routes to the created components in your routing module `app-routing.module.ts`:
+Next, you need to add routes to the created Angular 10 components in your routing module `app-routing.module.ts`:
 
 ```ts
 
@@ -96,7 +97,7 @@ import { DetailComponent } from './detail/detail.component';
 export class AppModule { }
 ```
 
-## Defining and Registering Animations
+## Defining and Registering Angular Router Animations
 
 In `app.component.ts` you need to define your animation and register in the `animations` array of the component:
 
@@ -169,4 +170,4 @@ We use a template reference to create a reference to the router outlet `#o="outl
 
 ## Conclusion
 
-In this quick Angular 8 router animations tutorial, we've seen how to define and trigger animations when navigating between routes in Angular 8 applications. 
+In this quick Angular 10 router animations tutorial, we've seen how to define and trigger animations when navigating between routes in Angular 10 applications. 

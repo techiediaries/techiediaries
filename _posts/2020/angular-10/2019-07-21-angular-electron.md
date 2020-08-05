@@ -1,45 +1,43 @@
 ---
 layout: post
-title: "Electron with Angular 9/8 Tutorial"
+title: "Electron with Angular 10/9 Tutorial"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn how to integrate Angular 9 with Electron to build cross-platform desktop apps with the most powerful web technologies"
-date: 2020-02-13 
-tags : [ angular , angular-9] 
+excerpt: "In this tutorial, we'll learn how to integrate Angular 10 with Electron to build cross-platform desktop apps with the most powerful web technologies"
+date: 2020-08-05 
+tags : [ angular , angular-10] 
 ---
 
-In this tutorial, we'll learn how to easily integrate Angular 9/8 with Electron to build cross-platform desktop apps with the most powerful web technologies.
+In this tutorial, we'll learn how to easily integrate Angular 10/9 with Electron to build cross-platform desktop apps with the most powerful web technologies.
 
-## Prerequisites
+You will need to have recent versions of Node and NPM installed on your machine and you'll also need Angular CLI 10 for creating the Angular project.
 
-You will need to have recent versions of Node and NPM installed on your machine and you'll also need Angular CLI 9 for creating the Angular project.
+## Creating an Angular 10 Project
 
-## Creating an Angular 9 Project
-
-Let's start by creating an Angular 9 project. Open a new terminal and run the following command:
+Let's start by creating an Angular 10 project. Open a new terminal and run the following command:
 
 ```bash
-$ ng new angular-9-electron-demo
+$ ng new angular-10-electron-demo
 ``` 
 
-You'll be prompted for a couple questions about the routing and stylesheets format. You can choose the convenient answers for your project. Both answers won't actually affect how we integrate Electron with Angular 9. 
+You'll be prompted for a couple questions about the routing and stylesheets format. You can choose the convenient answers for your project. Both answers won't actually affect how we integrate Electron with Angular 10. 
 
 You optionally can see you app up and running in a web browser by executing the following commands:
 
 ```bash
-$ cd angular-9-electron-demo
+$ cd angular-10-electron-demo
 $ ng serve
 ```
 
 Next, simply go to the `http://localhost:4200` address.
 
-![Electron + Angular 9](https://www.diigo.com/file/image/badcbccczobedbqocdzdrrcspad/ElectronApp.jpg)
+![Electron + Angular 10](https://www.diigo.com/file/image/badcbccczobedbqocdzdrrcspad/ElectronApp.jpg)
 
 Now, let's see how we can integrate this app with Electron.
 
 
-## Installing Electron in your Angular 9 Project
+## Installing Electron in your Angular 10 Project
 
-Make sure you are inside your Angular 9 project and run the following command to install Electron as a development dependency:
+Make sure you are inside your Angular 10 project and run the following command to install Electron as a development dependency:
 
 ```bash
 $ cd angular-electron-demo
@@ -99,7 +97,7 @@ Go to the  `angular.json`  file in your project's folder,  and change the value 
 
 ```javascript
       "projects": {
-        "electron-angular-9-demo": {
+        "electron-angular-10-demo": {
           "root": "",
           "sourceRoot": "src",
           "projectType": "application",
@@ -118,16 +116,16 @@ Next, in the  `package.json`  file, add the  `main`  key with the value set to  
 
 ```json
     {
-      "name": "angular-9-electron-demo",
+      "name": "angular-10-electron-demo",
       "version": "0.0.0",
       "main": "main.js",
       // [...]
     }
 ```
 
-## Integrating Angular 9 & Electron 
+## Integrating Angular 10 & Electron 
 
-Next, add a script for conveniently starting the Electron app after building the Angular 9 project:
+Next, add a script for conveniently starting the Electron app after building the Angular 10 project:
 
 ```json
     {
@@ -158,11 +156,11 @@ $ npm run start:electron
 
 Your app should be compiled and started as the following screenshot:
 
-![Electron + Angular 9](https://www.diigo.com/file/image/badcbccczobpbrrarrzdrsospbd/Electron+and+Angular+8.jpg)
+![Electron + Angular 10](https://www.diigo.com/file/image/badcbccczobpbrrarrzdrsospbd/Electron+and+Angular+8.jpg)
 
-## Solving the "Failed to load module script" Issue with Angular 9 
+## Solving the "Failed to load module script" Issue with Angular 10 
 
-If you are using the latest Angular 9 version, your Electron app will be started but without the Angular app due to a **Failed to load module script** error:
+If you are using the latest Angular 10 version, your Electron app will be started but without the Angular app due to a **Failed to load module script** error:
 
 This is because Angular 8+ uses [differential loading](https://web.dev/codelab-serve-modern-code)  which basically means we'll get two builds, a modern es2015 build and an ES5 legacy build. The web browser will load the right build based on its capabilities.
 
@@ -181,4 +179,4 @@ That's it. This should resolve the problem and load the Angular 8 app inside the
 
 ## Conclusion
 
-In this quick tutorial, we've seen how to integrate Angular 9 with Electron. 
+In this quick tutorial, we've seen how to integrate Angular 10 with Electron. 

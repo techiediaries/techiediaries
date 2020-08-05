@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "Content Projection in Angular 9/8: Pass Data from a Parent Component to a Child Template with Ng-content"
+title: "Content Projection in Angular 10/9: Pass Data from a Parent Component to a Child Template with Ng-content"
 image: "images/content/angular.png"
-excerpt: "Content projection is an Angular concept that helps developers build reusable components. It allows you to pass data from a parent component to a template of a child component." 
+excerpt: "Content projection is an Angular concept that helps developers build reusable components. It allows you to pass data from a parent component to a template of a child component" 
+date: 2020-08-05 
 tags : [ angular , angular8 ] 
 --- 
 
 Content projection is an concept that helps developers build reusable [Angular components](https://www.techiediaries.com/angular-components/). It allows you to pass data from a parent component to a template of a child component. It's similar to transclusion in Angular.js
 
-## Content Projection with Angular 9 Example
+## Content Projection with Angular 10 Example
 
-Let's now see with a simple [Angular 9 example](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) how we can project content from a parent component to its child.
+Let's now see with a simple [Angular 10 example](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/) how we can project content from a parent component to its child.
 
 We'll be using Stackblitz for creating our content project example. 
 
 You can check our example from this [link](https://stackblitz.com/edit/angular-8-ng-content). 
 
- In Stackblitz, we already have a project generated with a couple of components - `AppComponent` and `HelloComponent`.
+In Stackblitz, we already have a project generated with a couple of components - `AppComponent` and `HelloComponent`.
 
 The hello component takes an input property called `name` and renders the following content:
 
@@ -52,7 +53,7 @@ Now, what if our data is more complex than just a name? Let's say we need to pas
  
 Here comes content projection with `<ng-content>`.
 
-## Implementing Projected Content
+## Implementing Projected Content in Angular 10
 
 Let's modify our hello component to accept projected content from the outside. 
 
@@ -98,7 +99,7 @@ This means only `<h1>` tags will be passed and rendered. For example if you now 
 
 ```html
 <hello>
-    <h2>Hello Angular 9!</h2>
+    <h2>Hello Angular 10!</h2>
 </hello>
 ```
 
@@ -118,7 +119,7 @@ Now, to render the content, you need to make the following change:
 
 ## Conclusion
 
-As a wrap-up, we've seen how to project content in Angular 9/8 using `ng-content` which helps you build reusable components. 
+As a wrap-up, we've seen how to project content in Angular 10/9 using `ng-content` which helps you build reusable components. 
 
 
 

@@ -1,18 +1,23 @@
 ---
 layout: post
-title: "Angular 8 Data (Event & Property) Binding Tutorial: Build your First Angular App"
+title: "Angular 10/9 Data (Event & Property) Binding by Example"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll continue building our calculator application using Angular 8. We'll be particularly learning about data binding both event and property binding. " 
+excerpt: "In this tutorial, we'll continue building our calculator application using Angular 10. We'll be particularly learning about data binding both event and property binding"
+date: 2020-08-05 
 tags : [  angular  , angular8]
 ---
 
-In this tutorial, we'll continue building our calculator application using Angular 8. We'll be particularly learning about data binding both event and property binding. 
+In this tutorial, we'll continue building our calculator application using Angular 10. We'll be particularly learning about data binding both event and property binding. 
 
 Up until now, our template is just plain HTML but Angular provides other constructs that we can use in the templates such as data binding (interpolation, event and property binding). 
 
-Simply put, data binding is a fundamental concept in Angular that allows developers to make communication between a component and its view or more precisly the DOM. This way you don't need to manually push data from your component to the DOM and back. 
+## What's Data Binding in Angular?
+
+Simply put, data binding is a fundamental concept in Angular 10 and previous versions that allows developers to make communication between a component and its view or more precisly the DOM. This way you don't need to manually push data from your component to the DOM and back. 
 
 > Learn how to build a full-stack app in our [Angular 10 CRUD tutorial](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/).
+
+## Four Ways for Data Binding in Angular
 
 Angular provides four types of data binding and they are essentically different in the way data flows i.e from the component to the DOM, from the DOM to the component or both ways:
 
@@ -23,6 +28,8 @@ Angular provides four types of data binding and they are essentically different 
 - Event binding: Data flows from the DOM to the component. When a DOM event, such as a `click`, is triggered, the bound method from the component is called. For example: `<button (click)="sayHi()">Hi</button>` - The `sayHi()` method will be called so it needs to be defined in the component class. We use parentheses for event binding.
 
 - Two-way data binding: Data flows both ways. For example:  `<input type="text" [(ngModel)]="foobar">` (The `foobar` variable needs to be defined in the component). The input element and `foobar` will have the same value and when one changes, the other one changes to the same value accordingly. We use the banana in the box syntax which combines brackets and parentheses for two-way data binding. `ngModel` is a special directive that binds to the `value` attribute of the `<input>` and `<textarea>` elements but you can constrcut two-way data binding for any property in the DOM or component. Two-way data binding = property binding + event binding.
+
+## Data Binding with Angular 10 Example
   
 Equipped with this information, let's implement our calculator application.
 
@@ -136,7 +143,7 @@ Finally, define the `clear()` method that will be used to clear the result area 
 
 Now, you need to use data binding to bind these methods to the template.
 
-## Angular Property Binding by Example
+## Angular 10 Property Binding by Example
 
 We have defined variables and methods in the component. Now, we'll need to bind them to the template.
 
@@ -154,7 +161,7 @@ We use brackets around the `value` attribute to create a property binding.
 
 Now, our current number will be displayed in our calculator and when the value of the `currentNumber` variable changes, the displayed value will change accordingly without having to manually add any code to update the DOM.
 
-## Angular Event Binding by Example
+## Angular 10 Event Binding by Example
 
 Next, when a digit button is clicked we need to call the `getNumber()` method to append the digit to the current number string. For this, we can use Angular event binding to bind the `getNumber()` method to the `click` event of buttons displaying the digits. Changte your component template as follows:
 
@@ -215,4 +222,4 @@ That's it our calculator is ready!
 
 ## Conclusion
 
-In this tutorial, we've finished building our simple calculator application with Angular 8. We've learned about the types of data bindings and we've seen example of event and property binding in Angular 8.
+In this tutorial, we've finished building our simple calculator application with Angular 10. We've learned about the types of data bindings and we've seen example of event and property binding in Angular 10.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Angular 9/8 Material Examples: Date Picker, Input, CheckBox, Radio Button and Select"
+title: "Angular 10/9 Material Date Picker, Input, CheckBox, Radio Button and Select"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 9/8 web app." 
-date: 2020-1-02
-tags : [angular, angular-9-material-examples]
+excerpt: "In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 10/9 web app." 
+date: 2020-08-05 
+tags : [angular, angular-10-material-examples]
 ---
 
-In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 9 web application. We'll use common components like form fields, input, label, date pickers, radio buttons and select.
+In this tutorial, you'll learn how to use Angular Material to style forms in your Angular 10 web application. We'll use common components like form fields, input, label, date pickers, radio buttons and select.
 
 We'll particularly see how to use forms and date pickers by example.
 
@@ -24,7 +24,7 @@ We'll be using the following Material components in this tutorial to style a for
 
 These are the most commonly needed fields in forms.
 
-We assume you have [Angular CLI 9 installed](https://www.techiediaries.com/angular-cli-tutorial/) and you have created a project. Both these tasks can be easily done from your terminal using these two commands:
+We assume you have [Angular CLI 10 installed](https://www.techiediaries.com/angular-cli-tutorial/) and you have created a project. Both these tasks can be easily done from your terminal using these two commands:
 
 ```bash
 $ npm install @angular/cli -g # Install Angular CLI globally on your system
@@ -33,11 +33,11 @@ $ ng new mat-form-example # Create a project named mat-form-example
 
 > **Note**: You need to have recent versions of Node.js and NPM installed on your system.
 
-## Setting up Angular Material in your Angular Project
+## Setting up Angular Material in your Angular 10 Project
 
-After setting up an [example Angular project](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/), you need to import and set up Angular Material in your project and import the individual Material modules that you want to use using the [import statement of TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/).
+After setting up an [example Angular 10 project](https://www.techiediaries.com/angular/angular-9-8-tutorial-by-example-rest-crud-apis-http-get-requests-with-httpclient/), you need to import and set up Angular Material in your project and import the individual Material modules that you want to use using the [import statement of TypeScript](https://www.techiediaries.com/angular/upload-images-typescript-node-ionic-imports-decorators-async-await-formdata/).
 
-You can set up Angular Material in your Angular 9 project using the `ng add` command:
+You can set up Angular Material in your Angular 10 project using the `ng add` command:
 
 ```bash
 $ cd mat-form-example
@@ -46,7 +46,7 @@ $ ng add @angular/material
 
 You then need to [configure or disable animations](https://material.angular.io/guide/getting-started#step-2-configure-animations).
 
-## Importing the Material Modules
+## Importing the Angular 10 Material Modules
 
 Next, you need to import the individual Material modules in your main application module to include the needed components. Open the `src/app/app.module.ts` file and add the following imports:
 
@@ -71,7 +71,7 @@ The `MatCardModule` contains the Material Card component which will be used to w
 
 That's it, you can now use these Material components in your project.
 
-## Creating the Angular 9 Component & Styling it with Angular Material
+## Creating the Angular 10 Component & Styling it with Angular Material
 
 In this tutorial, we'll build a simple form for creating contacts. 
 
@@ -218,6 +218,8 @@ public  saveCustomer(){
 ## Conclusion
 
 Angular Material provides various components to build professional UI forms with individual components for common fields.
+
+We used form fields, input, label, date pickers, radio buttons and select.
    
-In this tutorial, you have seen how you can build a simple form, with a date picker, using Angular 9 Material. 
+In this tutorial, you have seen how you can build a simple form, with a date picker, using Angular 10 Material. 
 

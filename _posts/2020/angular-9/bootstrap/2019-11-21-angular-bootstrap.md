@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "3+ Ways to Add Bootstrap 4 to Angular 10/8 With Example & Tutorial"
+title: "3+ Ways to Add Bootstrap 4 to Angular 10/9 With Example & Tutorial"
 image: "images/content/angular.jpg"
 excerpt: "In this tutorial we will see how to use Bootstrap 4 to style websites built using the Angular 10 framework. We'll see how we can easy integrate both of them, using ng-bootstrap vs. ngx-bootstrap packages  and using the Angular CLI 10 for generating a brand new project." 
 date: 2020-08-04 
