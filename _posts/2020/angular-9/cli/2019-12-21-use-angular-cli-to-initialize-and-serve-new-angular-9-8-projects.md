@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Angular 9/8 How-To: Use Angular CLI to Initialize & Serve New Angular Projects"
+title: "Use Angular 10 CLI to Initialize & Serve New Angular Projects"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this quick how-to tutorial, we'll see how to use Angular CLI v9, as of this writing, to generate a project and serve it locally using a live-reload development server." 
-tags : [angular, angular-how-tos, angular9] 
+excerpt: "In this quick how-to tutorial, we'll see how to use Angular CLI v10, as of this writing, to generate a project and serve it locally using a live-reload development server"
+date: 2020-08-05 
+tags : [angular, angular-how-tos, angular10] 
 ---
 
-In this quick how-to tutorial, we'll see how to use Angular CLI v9, as of this writing, to generate a project and serve it locally using a live-reload development server. 
+In this quick how-to tutorial, we'll see how to use Angular CLI v10, as of this writing, to generate a project and serve it locally using a live-reload development server. 
 
 ## Step 1  — Checking the Angular CLI Version
  
-After installing Angular 9 CLI, you can run many commands. Let’s start by checking the version of the installed CLI:
+After installing Angular 10 CLI, you can run many commands. Let’s start by checking the version of the installed CLI:
 
 ```bash
 $ ng version
@@ -20,7 +21,7 @@ $ ng version
 You should get a similar output:
 
 ```bash
-Angular CLI: 9.0.0-rc.2
+Angular CLI: 10.0.0-rc.2
 Node: 10.16.3
 OS: win32 ia32
 Angular: <error>
@@ -30,18 +31,18 @@ Angular: <error>
 
 Package                         Version
 ---------------------------------------------------------
-@angular-devkit/architect       0.900.0-rc.2 (cli-only)
+@angular-devkit/architect       0.1000.0-rc.2 (cli-only)
 @angular-devkit/build-angular   <error>
-@angular-devkit/core            9.0.0-rc.2 (cli-only)
-@angular-devkit/schematics      9.0.0-rc.2 (cli-only)
-@schematics/angular             9.0.0-rc.2 (cli-only)
-@schematics/update              0.900.0-rc.2 (cli-only)
+@angular-devkit/core            10.0.0-rc.2 (cli-only)
+@angular-devkit/schematics      10.0.0-rc.2 (cli-only)
+@schematics/angular             10.0.0-rc.2 (cli-only)
+@schematics/update              0.1000.0-rc.2 (cli-only)
 rxjs                            6.5.3 (cli-only)
 typescript                      3.6
 
 ```
 
-## Step 2  — Displaying the Help of Angular 9 CLI
+## Step 2  — Displaying the Help of Angular 10 CLI
 
 A second command that you might need to run is the  **_help_**  command:
 
@@ -75,9 +76,9 @@ The CLI provides the following commands:
 -   `xi18n`: Extracts i18n messages from source code.
     
 
-## Step 3  —  Generating a New Angular 9 Project
+## Step 3  —  Generating a New Angular 10 Project
 
-You can use Angular CLI  to quickly generate your Angular 9 project by running the following command in your terminal:
+You can use Angular CLI  to quickly generate your Angular 10 project by running the following command in your terminal:
 
 ```bash
 $ ng new frontend
