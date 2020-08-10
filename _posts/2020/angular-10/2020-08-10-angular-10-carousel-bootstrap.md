@@ -2,12 +2,12 @@
 layout: bpost
 title: "Angular 10 Carousel Example with Bootstrap 4"
 image: "images/content/angular.png"
-excerpt: "In this tutorial, we'll learn how to a carousel with the latest Angular 10 version and Bootstrap 4"
+excerpt: "In this tutorial, we'll learn how to create a carousel with the latest Angular 10 version and Bootstrap 4"
 date: 2020-08-10
 tags : [angular]
 ---
 
-In this tutorial, we'll learn how to a carousel with the latest Angular 10 version and Bootstrap 4.
+In this tutorial, we'll learn how to create a carousel with the latest Angular 10 version and Bootstrap 4.
 
 > The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup. It also includes support for previous/next controls and indicators. [Source](https://getbootstrap.com/docs/4.4/components/carousel/)
 
