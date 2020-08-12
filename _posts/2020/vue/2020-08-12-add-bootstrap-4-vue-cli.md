@@ -1,6 +1,6 @@
 ---
 layout: bpost
-title: "Add Bootstrap 4 with Vue 3/4 CLI"
+title: "Add Bootstrap 4 with Vue CLI 3/4"
 image: "images/content/vue.png"
 excerpt: "In this tutorial, we’ll see by example how to integrate Bootstrap 4 with Vue.js using Bootstrap-Vue and Vue CLI" 
 tags : [vuejs] 
