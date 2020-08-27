@@ -222,6 +222,8 @@ export class ProductService {
 
 We have previously generated three components and added them to the router, let's now implement the actual functionality of each component.
 
+We'll be using Bootstrap 4 for styling the UI so you'll need to install it in your project. Check out three ways for how to [add bootstrap to your Angular project](https://www.techiediaries.com/angular-bootstrap/).
+
 ### Creating a New Product Component
 
 This component provides a form for submitting a new product with two fields, `name`  and  `description`. It injects and calls  the `ProductService.create()`  method.
