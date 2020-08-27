@@ -1,13 +1,13 @@
 ---
 layout: bpost
-title: "Angular 10 CRUD Application Example with REST Web API"
+title: "Angular 10 CRUD Application Example with REST Web API and Bootstrap 4"
 image: "images/content/angular.png"
 excerpt: "Throughout this tutorial, We'll be learning how to build an Angular 10 CRUD application to consume a REST Web API, create, read, modify and search data"
 date: 2020-08-26
 tags : [angular]
 ---
 
-Throughout this tutorial, We'll be learning how to build an Angular 10 CRUD application to consume a REST Web API, create, read, modify and search data.
+Throughout this tutorial, We'll be learning how to build an Angular 10 CRUD application with Bootstrap 4 styles to consume a REST Web API, create, read, modify and search data.
 
 ## Introducing our Angular 10 CRUD Application
 
@@ -140,7 +140,10 @@ export class AppRoutingModule { }
 
 ## Step 5 — Adding and Styling a Navigation Bar Using Bootstrap 4
 
-Next, let's add Bootstrap 4 to our application and a navigation bar 
+Next, let's add Bootstrap 4 to our application and a navigation bar.
+
+We'll be using Bootstrap 4 for styling the UI so you'll need to install it in your project. Check out three ways for how to [add bootstrap to your Angular project](https://www.techiediaries.com/angular-bootstrap/).
+
 
 Open the  `src/app/app.component.html` file,  and update as follows:
 
@@ -222,7 +225,6 @@ export class ProductService {
 
 We have previously generated three components and added them to the router, let's now implement the actual functionality of each component.
 
-We'll be using Bootstrap 4 for styling the UI so you'll need to install it in your project. Check out three ways for how to [add bootstrap to your Angular project](https://www.techiediaries.com/angular-bootstrap/).
 
 ### Creating a New Product Component
 
@@ -651,4 +653,4 @@ Go to your web browser and navigate to the  `http://localhost:4200/`  address to
 
 ## Conclusion
 
-In this tutorial, we’ve built an Angular 10 CRUD application for a Web REST API. 
+In this tutorial, we’ve built an Angular 10 CRUD application for a Web REST API and we used Bootstrap 4 for styling the UI. 
