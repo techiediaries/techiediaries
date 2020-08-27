@@ -9,6 +9,8 @@ tags : [angular]
 
 Throughout this tutorial, We'll be learning how to build an Angular 10 CRUD application with Bootstrap 4 styles to consume a REST Web API, create, read, modify and search data.
 
+> [Download this tutorial as a PDF ebook](https://www.techiediaries.com/angular-10-crud-bootstrap-tutorial.pdf) for offline reading.
+
 ## Introducing our Angular 10 CRUD Application
 
 We will learn how to build an Angular 10 front-end application that fetches data from a REST API of products:
