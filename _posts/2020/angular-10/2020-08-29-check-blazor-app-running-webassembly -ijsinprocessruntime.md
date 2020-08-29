@@ -2,12 +2,12 @@
 layout: bpost
 title: "Check if Blazor App is Running On WebAssembly Using IJSInProcessRuntime"
 image: "images/content/blazor.png"
-excerpt: "Let's see by example how to use StateHasChanged and InvokeAsync to force UI refresh in blazor"
+excerpt: "Blazor apps can run both on server-side or client-side via webassembly. In this short example, we'll see how to check if your app is runnning with server-side Blazor or webassembly"
 date: 2020-08-29
 tags : [blazor]
 ---
 
-Blazor apps can run both on server-side or client-side via webassembly. In this short example, we'll see how check if your app is runnning with  server-side Blazor or webassembly.
+Blazor apps can run both on server-side or client-side via webassembly. In this short example, we'll see how to check if your app is runnning with  server-side Blazor or webassembly.
 
 The trick is to use the `IJSInProcessRuntime` interface. This is example which displays if the app is running inside a webassembly environment or in the server when clicking on a button.
 
