@@ -24,6 +24,9 @@ $ ng new angular10ngrx
 $ cd angular10ngrx 
 ```
 
+The CLI will ask you a couple of questions — If  **Would you like to add Angular routing?**  Type  **y**  for Yes and  **Which stylesheet format would you like to use?**  Choose  **CSS**.
+
+
 Next, create a new Angular component using the following command:
 
 ```bash
