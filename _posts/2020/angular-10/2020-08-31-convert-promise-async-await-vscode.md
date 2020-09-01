@@ -4,7 +4,7 @@ title: "Convert Promise-Based Chain to Async/Await with VS Code"
 image: "images/content/blazor.png"
 excerpt: "In this quick example, we'll learn how to convert a promise in JavaScript to async/await syntax manually and then with VS Code"
 date: 2020-08-31
-tags : [javascript]
+tags : [javascript , vscode]
 ---
 
 In this example, we'll see how to convert a promise to async/await syntax in JavaScript/TypeScript manually and then automatically using a Visual Studio Code feature. 

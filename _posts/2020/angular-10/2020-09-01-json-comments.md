@@ -7,7 +7,7 @@ date: 2020-09-01
 tags : [angular, javascript]
 ---
 
-In this quick example, we'll learn how to use comments in JSON files. We'll see tricks and methods used by developers to add single-line and multiple-line comments to their JSON files, the external libraries and packages for stripping comments from your files before feeding them to the regular `JSON.parse()` method in JavaScript and Node.js and we'll also see simple JavaScript code for removing comments without libraries. Finally, we'll see alternative formats to JSON that supports comments such as JSON5 and JSONC.   
+In this quick example, we'll learn how to use comments in JSON files. We'll see workarounds and methods used by developers to add single-line and multiple-line comments to their JSON files, the external libraries and packages for stripping comments from your files before feeding them to the regular `JSON.parse()` method in JavaScript and Node.js and we'll also see simple JavaScript code for removing comments without external libraries. Finally, we'll see alternative formats to JSON that support comments such as JSON5 and JSONC.   
 
 ## JSON Doesn't Support Comments!
 
