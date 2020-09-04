@@ -1,23 +1,25 @@
 ---
 layout: bpost
-title: "GitHub Actions & Angular: Install Node.js, Angular CLI and Deploy your App to GitHub Pages"
-image: "images/content/blazor.png"
-excerpt: "In this quick example, we'll see how to use Github Actions to install Node.js and Angular CLI and deploy our Angular application to GitHub pages."
+title: "GitHub Actions & Angular 10/9: Install Node.js, Angular CLI and Deploy your App to GitHub Pages"
+image: "images/content/angular.png"
+excerpt: "In this quick example, we'll see how to use Github Actions to install Node.js and Angular CLI and deploy our Angular application to GitHub pages"
 date: 2020-09-04
 tags : [angular]
 ---
 
-In this example, we'll see how to use Github Actions to install Node.js and Angular CLI and then build deploy our Angular application to GitHub pages.
+In this example, we'll see how to use Github Actions to install Node.js and Angular CLI 10 and then build and deploy our Angular 10 application or any previous version to GitHub pages.
 
-## Creating a GitHub Actions Workflow
+## Step 1: Creating a GitHub Actions Workflow
 
-Head over to your GitHub repository, next go to the **Actions** tab and setup a workflow by clicking on the **set up a workflow yourself** link as below:
+Head over to your GitHub repository, next go to the **Actions** tab and set up a workflow by clicking on the **set up a workflow yourself** link as below:
 
-![GitHub Actions Set up Workflow](https://www.techiediaries.com/images/github-actions-setup-workflow.png)
+![GitHub Actions Set up Workflow](https://www.techiediaries.com/assets/images/github-actions-setup-workflow.png)
+
 You'll be taken to the following UI:
 
-![GitHub Actions New Workflow](https://www.techiediaries.com/images/new-github-actions-workflow.png)
-We already have a workflow with the name main.yml inside the `.github/workflows` folder of our repository with the following content:
+![GitHub Actions New Workflow](https://www.techiediaries.com/assets/images/new-github-actions-workflow.png)
+
+A workflow named `main.yml` will be created inside the `.github/workflows` folder of our repository with the following content:
 
 ```yaml
 # This is a basic workflow to help you get started with Actions
@@ -58,10 +60,11 @@ jobs:
 
 The workflow is made up of a single job with two steps that simply print some messages on the shell of a Ubuntu runner. 
 
-## Installing Node.JS and Angular CLI and Deploying to GitHub Pages
+## Step 2: Installing Node.JS and Angular CLI and Deploying to GitHub Pages
 
-Let's modify this to install Node.js and Angular CLI and then build our project and deploy it to the web. 
+Let's modify the previous workflow to install Node.js and Angular CLI 10 and then build our project and deploy it to the web. 
 
+{% raw %}
 ```yaml
 name: CI
 on:
@@ -86,30 +89,37 @@ jobs:
           branch: gh-pages
           token: ${{ secrets.ACCESS_TOKEN }}
 ```
+{% endraw %}
 
-## Generating a New Access Token
+We use the [tsunematsu21/actions-publish-gh-pages]() to deploy our app to GitHub pages. This action will need an access token that needs to be generated from your GitHub account's settings page.
+
+## Step 3: Generating a New Access Token
 
 Go to [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new) and generate a new token with the `repo` scope and make sure to copy it.
 
-## Creating a New Secret for Access Token
+## Step 4: Creating a New Secret for Access Token
 
-Next, head over to your repository **Settings** tab, and next to **Secrets** and create a **New secret**  
+Next, head over to your repository' **Settings** tab, and next go to **Secrets** and create a **New secret**:  
 
 ![GitHub Secrets](https://www.techiediaries.com/assets/images/github-settings-secrets.png) 
 Name your secret `ACCESS_TOKEN` and paste your access token.
 
-## Pushing and Starting your Workflow File
+## Step 5: Pushing and Starting your Workflow 
 
 Finally, commit your workflow file to your repo. The workflow will start automatically since it's configured to start when we push code to the repo.
 
-Go to your Actions tab to see the state of your build workflow:
+Go to the **Actions** tab to see the state of your build workflow:
 
 ![GitHub Workflow Progress](https://www.techiediaries.com/assets/images/github-workflow-progress.png)
+
 You can even visualize when the steps of the build job are running:
 
 
 ![GitHub Workflow Progress](https://www.techiediaries.com/assets/images/github-actions-job-progress.png)
+
 When completed successfully, you should have a `gh-pages` branch created in your repository that contains the content of the `dist` folder of our Angular application after being built with the previous build job.
+
+See the app running from [https://techiediaries.github.io/angular-bootstrap-demo](https://techiediaries.github.io/angular-bootstrap-demo/).
 
 ## Conclusion
 
