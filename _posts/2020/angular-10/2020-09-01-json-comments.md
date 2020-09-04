@@ -1,10 +1,10 @@
 ---
-layout: bpost
+layout: post
 title: "Using Comments in JSON with Node.js and JavaScript Examples"
 image: "images/content/json.png"
 excerpt: "In this quick example, we'll learn how to add single-line and multiple-line comments to JSON"
-date: 2020-09-01
-tags : [angular, javascript]
+date: 2020-09-04  23:27
+tags : [angular, javascript, python, django]
 ---
 
 In this article, we'll learn how to use comments in JSON files. We'll see workarounds and methods used by developers to add single-line and multiple-line comments to their JSON files, the external libraries and packages for stripping comments from your files before feeding them to the regular `JSON.parse()` method in JavaScript and Node.js and we'll also see simple JavaScript code for removing comments without external libraries. Finally, we'll see the alternative formats to JSON that support comments such as JSON5 and JSONC.   

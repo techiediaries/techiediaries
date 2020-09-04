@@ -3,8 +3,8 @@ layout: bpost
 title: "Removing Comments from JSON with Python"
 image: "images/content/python.png"
 excerpt: "How to remove comments from JSON files with Python"
-date: 2020-09-01
-tags : [python]
+date: 2020-09-04  23:27
+tags : [python, django]
 ---
 
 JSON doesn't permit comments by design. As explained by its creator [Douglas Crockford](https://web.archive.org/web/20120506232618/https://plus.google.com/118095276221607585885/posts/RK8qyGVaGSr). 
