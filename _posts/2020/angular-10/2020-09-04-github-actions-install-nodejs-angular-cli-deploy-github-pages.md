@@ -9,9 +9,39 @@ tags : [angular]
 
 In this example, we'll see how to use Github Actions to install Node.js and Angular CLI 10 and then build and deploy our Angular 10 application or any previous version to GitHub pages.
 
+Throughout this tutorial, we'll learn how to set up  [Github Actions](https://github.com/features/actions) in your Angular 10 project to build and deploy your app to GitHub pages.
+
+As a prerequisite, you need to have an Angular 10 project pushed to a GitHub repository.
+
+## Introducing GitHub Actions
+
+_Github Actions_ are a newly released CI/CD platform that can be used by open source repositories for free.  It's introduced by GitHub to help developers automate their project workflow. 
+
+Github Actions can handle many processes that can be triggered by a multiple of events on the platform such as:
+
+-   push code
+-   make a release
+-   pull request
+-   create an issue, etc.
+
+They can also be triggered manually from the Actions tab in your repository or by sending a secured (using a private access token) HTTP Post request to a predefined endpoint.
+  
+[GitHub Actions](https://github.com/features/actions)  help you automate all your development workflows from building, testing, to deploying your application to your host directly from GitHub. 
+
+If you have an Angular project pushed to GitHub, let's see how you can create a GitHub Actions workflow to build, test, and deploy the Angular application to GitHub Pages.
+
+
+
 ## Step 1: Creating a GitHub Actions Workflow
 
+
+According to the [official docs](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions):
+
+>A workflow is a configurable automated process made up of one or more jobs. You must create a YAML file to define your workflow configuration.
+
 Head over to your GitHub repository, next go to the **Actions** tab and set up a workflow by clicking on the **set up a workflow yourself** link as below:
+
+> You can also create a folder named `.github/workflows` at the root of your Angular code repository with a workflow file that has the `.yml` extension.
 
 ![GitHub Actions Set up Workflow](https://www.techiediaries.com/assets/images/github-actions-setup-workflow.png)
 
@@ -60,6 +90,9 @@ jobs:
 
 The workflow is made up of a single job with two steps that simply print some messages on the shell of a Ubuntu runner. 
 
+>A workflow run is made up of one or more jobs. Jobs run in parallel by default. To run jobs sequentially, you can define dependencies on other jobs using the `jobs.<job_id>.needs` keyword. Each job runs in an environment specified by `runs-on`.
+
+
 ## Step 2: Installing Node.JS and Angular CLI and Deploying to GitHub Pages
 
 Let's modify the previous workflow to install Node.js and Angular CLI 10 and then build our project and deploy it to the web. 
@@ -91,7 +124,32 @@ jobs:
 ```
 {% endraw %}
 
-We use the [tsunematsu21/actions-publish-gh-pages]() to deploy our app to GitHub pages. This action will need an access token that needs to be generated from your GitHub account's settings page.
+We use the [tsunematsu21/actions-publish-gh-pages](https://github.com/tsunematsu21/actions-publish-gh-pages) to deploy our app to GitHub pages. This action will need an access token that needs to be generated from your GitHub account's settings page.
+
+### Checking out Source Code
+
+Jobs do not get the code of the repository by default. We'll have to instruct the job to do it  using the `checkout@v1` action. We use the following step under our `build` job:
+
+```yaml
+    steps:
+    - uses: actions/checkout@v1
+```
+
+
+### Installing Node.js
+
+Angular CLI requires Node.js so we'll need to install it in our job running Ubuntu.
+
+For installing Node.js. we'll add another step in our job as follows:
+
+```yaml
+    steps:
+    - uses: actions/setup-node@v1 #this will install Node and npm on Ubuntu
+      with:
+        node-version: '12.x'
+```
+
+Thanks to this, our `build` job is configured to use use Node.js version 12.x inside the Ubuntu runner. 
 
 ## Step 3: Generating a New Access Token
 
