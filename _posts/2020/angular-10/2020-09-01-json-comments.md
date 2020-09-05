@@ -3,7 +3,7 @@ layout: post
 title: "Using Comments in JSON with Node.js and JavaScript Examples"
 image: "images/content/json.png"
 excerpt: "In this quick example, we'll learn how to add single-line and multiple-line comments to JSON"
-date: 2020-09-04  23:27
+date: 2020-09-05
 tags : [angular, javascript, python, django]
 ---
 
