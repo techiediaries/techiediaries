@@ -1,8 +1,8 @@
 ---
-layout: bpost
+layout: post
 title: "How to Delete Local/Remote Git Branches" 
-date: 2020-08-13
-tags: [git]
+date: 2020-09-05
+tags: [git, python, django]
 excerpt: "If you have previously worked with Git for versioning your Angular code, there is a good chance that you had some situation where you wanted to delete a remote branch or multiple branches. This happens many times to developers, particularly in large projects"
 ---
 
