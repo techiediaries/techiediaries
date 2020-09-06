@@ -3,7 +3,7 @@ layout: bpost
 title: "Run your Python Unit Tests with GitHub Actions"
 image: "images/content/python.png"
 excerpt: "In this tutorial, we'll learn how to automatically run your Python unit tests using GitHub Actions"
-date: 2020-09-06
+date: 2020-09-07
 tags : [python, django]
 ---
 
@@ -145,5 +145,5 @@ $ git push origin master
 
 ## Conclusion
 
-In this tutorial, we've seen how to use a GitHub Actions workflow to automate running your Python tests with PyTest.
+In this tutorial, we've seen how to use a GitHub Actions workflow to automate running your Python tests with Pytest.
 
