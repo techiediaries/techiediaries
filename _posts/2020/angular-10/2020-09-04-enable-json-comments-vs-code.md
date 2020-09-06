@@ -3,7 +3,7 @@ layout: bpost
 title: "Enable JSON with Comments in VS Code"
 image: "images/content/angular.png"
 excerpt: "In this article, we'll see how to enable JSON comments in VS Code."
-date: 2020-09-04 23:19
+date: 2020-09-04
 tags : [angular]
 ---
 
