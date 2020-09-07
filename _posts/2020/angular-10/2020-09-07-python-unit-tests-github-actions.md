@@ -9,6 +9,7 @@ tags : [python, django]
 
 In this tutorial, we'll learn how to automatically run your Python unit tests using GitHub Actions.
 
+
 We'll see how to set up a GitHub Actions workflow that install Python 3.6 inside a Ubuntu system along with our project's dependencies e.g. `pytest` and finnaly run the unit tests after pushing our code to a GitHub repository.  
 
 Let's see how to automate running unit tests when making a commit and pushing your code to GitHub or when making a pull request. 
