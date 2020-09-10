@@ -2,13 +2,13 @@
 layout: bpost
 title: "Laravel 8 REST API Authentication with JWT Tutorial by Example"
 image: "images/content/bootstrap.png"
-excerpt: "Throughout this tutorial, we’ll be learning how to authenticate REST APIs using JWT in the latest Laravel 8 version. You will learn how to create rest API using Laravel 8 with JWT authentication"
+excerpt: "Throughout this tutorial, we’ll be learning how to authenticate REST APIs using JWT in the latest Laravel 8 version. You will learn how to create a REST API using Laravel 8 with JWT authentication"
 date: 2020-09-10
 tags : [php, laravel]
 author: kaima
 ---
 
-Throughout this tutorial, we’ll be learning how to authenticate REST APIs using JWT in the latest Laravel 8 version. You will learn how to create rest API using Laravel 8 with JWT authentication.
+Throughout this tutorial, we’ll be learning how to authenticate REST APIs using JWT in the latest Laravel 8 version. You will learn how to create a REST API using Laravel 8 with JWT authentication.
 
 We’ll see how to set up JWT authentication in Laravel 8 and implement a secured REST API using the  **tymon/jwt-auth**  package.
 
