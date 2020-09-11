@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Laravel 6 Model Events Tutorial"
+title: "Laravel 8 Model Events Tutorial"
 image: "images/content/laravel.png"
-excerpt: "In this tutorial, we'll learn about Model events in Laravel 6 for using them in our CRM application to update the role of the user to an admin before saving it to the database." 
+excerpt: "In this tutorial, we'll learn about Model events in Laravel 8 for using them in our CRM application to update the role of the user to an admin before saving it to the database." 
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
-In this tutorial, we'll learn about model events in Laravel 6 for using them in our CRM application to update the role of the user to an admin before saving it to the database.
+In this tutorial, we'll learn about model events in Laravel 8 for using them in our CRM application to update the role of the user to an admin before saving it to the database.
 
-The Laravel ORM provides powerful abstractions for working with the supported databases. One of the features of Eloquent is the implementation of the **observer pattern** for sending and listening to events sent by Laravel models when actions such as creating or saving models are executed.
+The Laravel 8 ORM provides powerful abstractions for working with the supported databases. One of the features of Eloquent is the implementation of the **observer pattern** for sending and listening to events sent by Laravel 8 models when actions such as creating or saving models are executed.
 
 If you are not familiar with the observer pattern, it's simply: 
 
@@ -18,9 +18,9 @@ Design patterns are simply common solutions to problems in software development,
 
   
 
-## Laravel Model Events
+## Laravel 8 Model Events
 
-A Model in Laravel provides an abstraction for working with a database table with a high-level API. Among these APIs, are events which are fired when actions are performed on the model.
+A Model in Laravel 8 provides an abstraction for working with a database table with a high-level API. Among these APIs, are events which are fired when actions are performed on the model.
 
 Models events are simpy hooks into the important points of a model's lifecycle which you can use to easily run code when database records are saved, updated or deleted.
 
@@ -86,6 +86,8 @@ We simply added a static `boot()` method to our `User` model. Inside this method
 
 Inside the `saving()` listener function, we check if a user with an admin role exists in the database, if not we assign the admin value to the role field.
 
+## Serving your Laravel 8 App
+
 Now, start your Laravel app if it's not running yet:
 
 ```bash
@@ -100,6 +102,6 @@ At this point of our tutorial, we have seen how we can listen to the `saving` ev
 
 ## Conclusion
 
-In this tutorial, we've learned about Laravel Model events and we have seen how to listen for the saving event on the `User` model for updating the role of the user being saved. 
+In this tutorial, we've learned about Laravel 8 Model events and we have seen how to listen for the saving event on the `User` model for updating the role of the user being saved. 
 
 
