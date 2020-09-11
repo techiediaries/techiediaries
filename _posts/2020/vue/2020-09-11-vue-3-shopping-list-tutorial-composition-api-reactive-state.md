@@ -7,6 +7,7 @@ tags : [vuejs, vue3].
 author: kaima 
 ---
 
+
 Throughout this tutorial, you will learn how to use  Vue 3 and the Composition API to build your a web application. The Composition API is introduced in Vue 3 as an alternative to the Options API.
 
 We'll learn how to create reactive state using the `reactive()` function.
