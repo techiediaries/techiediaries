@@ -7,6 +7,7 @@ tags : [css].
 author: kaima 
 ---
 
+
 In this article, we'll learn how to center text in CSS horizontally and vertically with Flexbox.
 
 HTML has the `<center>` tag for centering text but you can also use `text-align` CSS property with the `center` value to center text horizontally.
