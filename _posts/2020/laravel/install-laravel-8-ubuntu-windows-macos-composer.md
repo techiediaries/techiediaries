@@ -1,13 +1,3 @@
----
-layout: post
-title: Install Laravel 8 On Ubuntu, Windows and macOS with Composer
-date: 2020-02-1 05:44
-categories: laravel
-author: ahmed
-tags: [ laravel ]
-excerpt: "Learn how to install Laravel 8"
----
-
 Laravel 8 is [released](https://laravel.com/docs/8.x/releases) on September, 2020 and you can start using it for building your new project or upgrade your existing Laravel project to this version.
 
 Starting with Laravel 6, Laravel follows semver i.e a new major version will be released every six months.

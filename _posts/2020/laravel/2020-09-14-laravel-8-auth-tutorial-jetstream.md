@@ -1,6 +1,6 @@
 ---
 layout: bpost
-title: ""Laravel 8 Auth Example with Jetstream
+title: "Laravel 8 Auth Example with Jetstream"
 image: "images/content/laravel.png"
 excerpt: "In this article, you'll learn how to use the new Jetstream package in Laravel 8 for auth scaffolding" 
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
