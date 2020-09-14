@@ -3,10 +3,9 @@ layout: bpost
 title: "Vue 3 Shopping List Tutorial: Composition API and Reactive State"
 image: "images/content/vue.png"
 excerpt: "Throughout this tutorial, you will learn how to use  Vue 3 and the Composition API to build your a web application. The Composition API is introduced in Vue 3 as an alternative to the Options API" 
-tags : [vuejs, vue3].
+tags : [vuejs, vue3]
 author: kaima 
 ---
-
 
 Throughout this tutorial, you will learn how to use  Vue 3 and the Composition API to build your a web application. The Composition API is introduced in Vue 3 as an alternative to the Options API.
 
