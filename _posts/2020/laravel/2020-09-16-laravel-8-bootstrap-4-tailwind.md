@@ -54,6 +54,12 @@ Finally, you need to install the bootstrap package and its dependencies from npm
 ```bash
 $ npm install
 $ npm run dev
+
+ DONE  Compiled successfully in 22806ms                               6:13:23 PM
+
+       Asset      Size   Chunks             Chunk Names
+/css/app.css  4.21 MiB  /js/app  [emitted]  /js/app
+  /js/app.js  1.33 MiB  /js/app  [emitted]  /js/app
 ```
 
 ## Using Bootstrap 4 in your Laravel 8 Blade Templates
