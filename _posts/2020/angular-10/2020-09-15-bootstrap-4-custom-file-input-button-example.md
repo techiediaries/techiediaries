@@ -4,7 +4,7 @@ title: "Bootstrap 4 Custom File Input Button Text"
 image: "images/content/angular.png"
 excerpt: "In this quick tip article, we'll see how to add comments to the package.json file"
 date: 2020-09-15
-tags : [json , javascript]
+tags : [json , javascript, bootstrap]
 ---
 
 In this quick tip article, we'll see how to use custom text and styles with Bootstrap 4 file input.

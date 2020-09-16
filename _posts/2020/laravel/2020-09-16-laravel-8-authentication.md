@@ -2,7 +2,7 @@
 layout: bpost
 title: "Laravel 8 Authentication Tutorial"
 image: "images/content/laravel.png"
-excerpt: "In this tutorial, we'll see you step by step how to implement authentication in your Laravel 8 application" 
+excerpt: "In this tutorial, we'll see step by step how to implement authentication in your Laravel 8 application" 
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
