@@ -27,7 +27,7 @@ Laravel Livewire is a library that enables you to build modern, reactive, dynami
 
 ## Laravel 8 Auth Scaffolding
 
-Let's see how to create a Laravel 8 authentication example tutorial with Jetstream and then we'll see how to use Inertia.js for a Vue powered UI.
+Let's see how to create a Laravel 8 authentication example tutorial with Jetstream scaffolding and then we'll see how to use Inertia.js for a Vue powered UI or Livewire for a Blade powerd UI.
 
 
 ### What's Laravel 8 Jetstream
@@ -55,12 +55,15 @@ $ laravel new laravel8authapp --jet
 
 You need to use the `--jet` option to create a new Jetstream-based Laravel 8 application.
 
-You can also install jetsteram in your app, if you created your app without Jetstream, using the following commands:
+
+You can also install Jetsteram in your app using Composer, if you created your app without Jetstream, using the following commands:
 
 ```bash
 $ cd laravel8authapp
 $ composer require laravel/jetstream
 ```
+
+If you installed Jetstream using Composer, you should run the `jetstream:install` artisan command which accepts the name of the stack you prefer (livewire or inertia).
 
 ## Scaffolding Auth with Livewire
 
@@ -136,5 +139,5 @@ $ php artisan migrate
 
 ## Conclusion
 
-In this article, we've seen how to use Laravel 8 authentication scaffolding to implement authentication using Jetstream with or without Inertia.js/Vue.js.
+In this article, we've seen how to use Jetstream scaffolding to implement Laravel 8 authentication using Inertia.js (Vue.js) and Livewire (Blade).
 
