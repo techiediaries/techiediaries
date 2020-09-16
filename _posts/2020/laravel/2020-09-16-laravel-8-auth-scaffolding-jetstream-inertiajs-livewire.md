@@ -8,6 +8,8 @@ tags : [laravel, laravel-6-tutorials-and-examples, laravel6]
 
 In this tutorial, you'll learn how to use the new Jetstream package with Inertia.js and Livewire stacks for Laravel 8 auth scaffolding.
 
+Jetstream makes of use of Tailwind CSS, Vue.js and Blade templates for styles and UI.
+
 [Inertia.js](https://jetstream.laravel.com/1.x/stacks/inertia.html) is a stack provided by Jetstream that uses Vue.js as its templating language,
 
 Laravel 7 introduced the `laravel/ui` package to create authentication scaffolding but with the latest Laravel 8 version, a new  `laravel/jetstream` package is introduced.
@@ -140,4 +142,6 @@ $ php artisan migrate
 ## Conclusion
 
 In this article, we've seen how to use Jetstream scaffolding to implement Laravel 8 authentication using Inertia.js (Vue.js) and Livewire (Blade).
+
+Jetstream makes use of Tailwind CSS, Vue.js and Blade templates for styles and UI.
 
