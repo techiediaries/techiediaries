@@ -1,26 +1,26 @@
 ---
 layout: post
-title: "Multiple File/Image Upload with Django 3, Angular 10 and FormData"
+title: "Multiple Image Files Upload with Django 3, Angular 10 and FormData"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "Throughout this tutorial, we'll see how you can implement multiple file upload in Django 3. We'll be using Angular 10 to create a simple interface that allows the user to select multiple files and upload them to the server via POST requests and FormData"
 date: 2020-08-04 
 tags : [ python , django , angular, angular-10-httpclient-examples, angular-fullstack-examples, angular-10-formdata-examples, angular-10-tutorials ] 
-author: omar
+author: ahmed
 ---
 
 ![Angular Django FormData](https://www.techiediaries.com/images/angular-django-formdata.png)
 
-In the [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/) we have seen how to implement file uploading in Django and Angular 10. In this tutorial, we'll see how to implement multiple file uploading with [FormData](https://www.techiediaries.com/formdata/).
+In the [previous tutorial](https://www.techiediaries.com/django-rest-image-file-upload-tutorial/) we have seen how to implement image file uploading in Django 3 and Angular 10. In this tutorial, we'll see how to implement multiple file uploading with [FormData](https://www.techiediaries.com/formdata/) and `HttpClient`.
 
-It's recommended that you start from the previous tutorial to see detailed steps of how to create a django project, how to install Angular CLI and generate a new Angular 10 project along with services and components as we won't cover those basics in this part.
+> **Note**: It's recommended that you start from the previous tutorial to see detailed steps of how to create a django 3 project, how to install Angular 10 CLI and generate a new Angular 10 project along with services and components as we won't cover these things in this tutorial.
 
-## Working with Angular 10, Django and FormData
+## Working with Angular 10, Django 3 and FormData
 
-In this tutorial, we'll see how to use HTML5 [FormData with Angular](https://www.techiediaries.com/angular-formdata/) and Django to upload multiple files from a TypeScript frontend to a Python server.
+In this tutorial, we'll see how to use HTML5 [FormData with Angular](https://www.techiediaries.com/angular-formdata/) and django 3 to upload multiple image files from an Angular 10 frontend to a Python server.
 
-Let's get started by cloning a django project with single file uploading already implemented.
+Let's get started by cloning a django 3 project with the single file uploading that was already implemented.
 
-### Cloning Angular 10 Django Upload App
+### Cloning the Angular 10 Upload Frontend
 
 If you don't want to follow the steps from the previous part, you first need to get the project we've built. Open a new terminal and run the following command:
 
@@ -41,9 +41,11 @@ Next, start the development server using:
 $ ng serve
 ```
 
-Your Angular application will be available from the `127.0.0.1:4200` address.
+Your Angular 10 application will be available from the `127.0.0.1:4200` address.
 
 ### Running the Django 3 Upload Server
+
+Next, let's set up and run our django 3 REST API uploading server.
 
 Open a new terminal window and create a virtual environment using the following command:
 
@@ -76,9 +78,9 @@ Open your web browser and navigate to the `127.0.0.1:4200/profile` page where yo
 ![Django REST API File Upload with Angular 7](https://i.imgur.com/kg8YApY.png)
 
 
-## Adding Multiple File Upload with Angular 10, TypeScript and FormData
+## Adding Multiple Image Upload with Angular 10, TypeScript and FormData
 
-Now, let's proceed to implement multiple file uploading. 
+Now, let's proceed to implement multiple image uploading. 
 
 >As a reminder, before you can upload files in your django application, you need to set the `MEDIA_URL` and `MEDIA_ROOT` in your `settings.py` file:
 
@@ -96,9 +98,9 @@ $ npm install --save ng2-file-upload
 ```
 
 
-## Importing the File Upload Angular Module
+## Importing the Angular 10 File Upload Module
 
-After installing this package, you will need to import `FileUploadModule` in your application module. Open the `src/app/app.module.ts` file and the following changes:
+After installing this package, you will need to import `FileUploadModule` in your Angular 10 application module. Open the `src/app/app.module.ts` file and the following changes:
 
 ```ts
 // [...]
@@ -119,7 +121,7 @@ import { FileUploadModule } from 'ng2-file-upload';
 export class AppModule { }
 ``` 
 
-After adding `FileUploadModule` you'll be able to use the following directives in your templates:
+After adding `FileUploadModule` you'll be able to use the following directives in your Angular templates:
 
 - The `ng2FileDrop` directive which will enable you to add an area where users can drag and drop multiple files, 
 - The `ng2FileSelect` directive which will enable you to add an input button for selecting multiple files.
@@ -130,7 +132,7 @@ Open the `src/app/profile/profile.component.html` file and the following content
 
 {% raw %}
 ```html
-<h1>Django REST API with Angular 10 File Upload Example</h1>
+<h1>Django 3 REST API with Angular 10 File Upload Example</h1>
 
 <div ng2FileDrop
 [ngClass]="{'drop-file-over': hasBaseDropZoneOver}"
@@ -231,7 +233,9 @@ Finally, add the `upload()` method that will be called to actually upload the fi
   }
 ```
 
-We call the `getFiles()` method to get an array of all the selected and dropped files. Next we loop over the files array and we create a `FormData` object and we append the current file in the loop to it then we call the `upload()` method of our `UploadService` and we push the returned Observable to the `requests` array.
+We call the `getFiles()` method to get an array of all the selected and dropped files. Next we iterate over the image files array and we create a `FormData` object.
+
+Next, we append the current file in the loop to the `FormData` object and we call the `upload()` method of our `UploadService` then we push the returned Observable to the `requests` array.
 
 This is another example of using [FormData and TypeScript](https://www.techiediaries.com/typescript-formdata-example-queryselector-onsubmit/).
 
@@ -280,4 +284,4 @@ HTML5 provides the `FormData` interface which is equivalent to using a `multipar
 
 ## Conclusion
 
-In this tutorial, we've seen an example of multiple file upload with Angular 10 and Django 3. 
+In this tutorial, we've seen an example of multiple image files upload with Angular 10 and django 3. 
