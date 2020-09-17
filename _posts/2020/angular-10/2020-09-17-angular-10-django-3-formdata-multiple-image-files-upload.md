@@ -3,7 +3,6 @@ layout: post
 title: "Multiple Image Files Upload with Django 3, Angular 10 and FormData"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "Throughout this tutorial, we'll see how you can implement multiple file upload in Django 3. We'll be using Angular 10 to create a simple interface that allows the user to select multiple files and upload them to the server via POST requests and FormData"
-date: 2020-08-04 
 tags : [ python , django , angular, angular-10-httpclient-examples, angular-fullstack-examples, angular-10-formdata-examples, angular-10-tutorials ] 
 author: ahmed
 ---
