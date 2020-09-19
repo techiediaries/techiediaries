@@ -6,8 +6,6 @@ excerpt: "Throughout this tutorial, we’ll be learning how to use Vue.js with A
 tags : [vue, vuejs, graphql] 
 ---
 
-
-
 Throughout this tutorial, we’ll be learning how to use Vue.js with Apollo client to create a CRUD interface for consuming an API built with Node.js, Express, and GraphQL. 
 
 Vue is a modern progressive UI library for building user interfaces similar to React, the library which has been traditionally used with GraphQL since both technologies originated from Facebook.
