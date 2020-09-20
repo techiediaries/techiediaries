@@ -10,7 +10,7 @@ Laravel is one of the most popular PHP-based framework for creating database-dri
 
 Laravel is described by its creators as the framework for web artisans. It's based on the MVC (Model-View-Controller) pattern and can be used for easily creating apps for making CRUD (Create, Retrieve, Update, Delete) operations against a database.
 
-Laravel has a large community of worlwide developers around it that creates packages for common web development problems for other don't need to re-invent the wheel. 
+Laravel has a large community of worlwide developers around it that creates packages for common web development problems so other developers don't need to re-invent the wheel. 
 
 The Laravel team releases a new version each six months. At the time of writing this tutorial, the latest version is Laravel 8 which was released on the 8th Sept 2020.
 

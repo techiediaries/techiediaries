@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "Using Laravel 6 with Docker and Docker-Compose"
+title: "Using Laravel 8 with Docker and Docker-Compose"
 image: "images/content/laravel.png"
-excerpt: "In this tutorial we'll learn how we can use Docker/Docker-compose to develop and run Laravel 6 applications locally" 
+excerpt: "In this tutorial we'll learn how we can use Docker/Docker-compose to develop and run Laravel 8 applications locally" 
 tags : [laravel, laravel6, laravel-6-tutorials-and-examples, docker] 
 ---
 
-In this tutorial, we'll learn how we can use Docker and Compose to develop and run Laravel 6 applications locally. Following this tutorial you'll learn:
+In this tutorial, we'll learn how we can use Docker and Compose to develop and run Laravel 8 applications locally. Following this tutorial you'll learn:
 
 - What's Docker and Docker-compose,
 - How to install Docker and Docker-Compose,
-- How to use Docker to install and run Laravel 6 applications.
+- How to use Docker to install and run Laravel 8 applications.
 
+## What's Docker
 
 Docker is a container tool that allows developers and organizations to build, run and deploy applications using containers.
 
@@ -27,7 +28,7 @@ start by installing Docker for your type of operating system by following one of
 -   [**Windows**](https://docs.docker.com/docker-for-windows/install/)
 -   [**MacOS**](https://docs.docker.com/docker-for-mac/install/)
 
-## Docker-Compose
+## What's Docker-Compose
 
 The [official documentation](https://docs.docker.com/compose/overview/) describes docker-compose as:
  
@@ -41,9 +42,9 @@ Using docker-compose involves three easy steps:
     
 3.  Finally you just need to run `docker-compose up` and Compose will start all the services for your application
 
-## Creating a Laravel 6 Project
+## Creating a Laravel 8 Project
 
-Let's create a Laravel 6 project and then see how we can dockerize it using Docker.
+Let's create a Laravel 8 project and then see how we can dockerize it using Docker.
 
 We have different ways to create Laravel projects: Using Composer (PHP package manager), cloning from GitHub or downloading using cURL.
 
@@ -197,5 +198,5 @@ We are defining a volume using  `./:/var/www`  which simply mount our current di
 
 ## Conclusion
 
-In this tutorial, we've seen how to use Docker to create a development environment with Laravel 6. We've seen how to use both Docker and docker-compose to run our Laravel 6 application in an isolated container.
+In this tutorial, we've seen how to use Docker to create a development environment with Laravel 8. We've seen how to use both Docker and docker-compose to run our Laravel 8 application in an isolated container.
 

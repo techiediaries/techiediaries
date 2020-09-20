@@ -1,17 +1,21 @@
 ---
 layout: post
-title: "Laravel 6 Auth Redirection Using redirectTo"
+title: "Laravel 8 Auth Redirection Using redirectTo"
 image: "images/content/laravel.png"
-excerpt: "In this tutorial, we'll learn how to customize the auth system in our Laravel 6 CRM app to redirect users after they register or login to a different route depending on their role"   
+excerpt: "In this tutorial, we'll learn how to customize the auth system in our Laravel 8 CRM app to redirect users after they register or login to a different route depending on their role"   
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
 
-In this tutorial, we'll learn how to customize the auth system in our Laravel 6 CRM app to redirect users after they register or login to a different route depending on their role.
+In this tutorial, we'll learn how to customize the auth system in our Laravel 8 app to redirect users after they register or login to a different route depending on their role.
  
-Most of the times, the authentication system provided by Laravel 6 is enough for adding login and registration to your web application. 
+Most of the times, the authentication system provided by Laravel 8 is enough for adding login and registration to your web application. 
 
 The auth scaffolding which is now moved to a separate `laravel/ui` package provides out of the box routes and views for the `LoginController`, `RegisterController`, and `ResetPasswordController` which are included in your project and are responsible for providing the functionality of the auth system.
+
+> Please note that the Laravel team recommends developers to use Jetstream for new Laravel 8 projects but they have also updated the `laravel/ui` package to version 3 for using with Laravel 8, especially if you are updating your previous Laravel 7 app to the latest version.
+
+## Laravel 8 Auth Redirection Using `$redirectTo`
 
 If you take a look at the `app/Http/Controllers/Auth/LoginController.php` file, for example, you would find the following code:
 
@@ -42,6 +46,8 @@ You can see that a `$redirectTo` variable exists and has the value of `/home` wh
 In the Laravel built-in authentication system, you can customize many sides such as the redirection route using the `$redirectTo` variable which exists in both the login and registration controllers.
 
 If you want to redirect your users to different routes other than the default ones after they register or login, you simply need to change the value of `$redirectTo`. 
+
+## Laravel 8 Auth Redirection Using `redirectTo()` Method
 
 Now, what if you want to redirect users to a route depending on some user criteria such as their role?
 
@@ -135,6 +141,8 @@ class RegisterController extends Controller
 
 You can either remove the `$redirectTo` variable or leave it as it will be simply overridden by the `redirectTo()` method.
 
+## Creating a Laravel 8 Controller for Admin
+
 Now, all you need is to create an `/admin` route along with an `AdminController`.  Head back to your terminal and run the following artisan command:
 
 ```bash
@@ -172,4 +180,4 @@ Route::get('/admin', 'AdminController@index')->name('admin');
 
 ## Conclusion
 
-In this tutorial, we've implemented redirection in our Laravel 6 CRM app so admin users are redirected to a different route while the normal users are redirected to the home route. Redirection doesn't enforce any security rules because the normal users will still be able to visit the `/admin` route. We need to prevent that using a middleware which is the subject of the next tutorial.
+In this tutorial, we've implemented redirection in our Laravel 8 CRM app so admin users are redirected to a different route while the normal users are redirected to the home route. Redirection doesn't enforce any security rules because the normal users will still be able to visit the `/admin` route. We need to prevent that using a middleware which is the subject of the next tutorial.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Disable Laravel 6 Registration & Dynamic Routes"
+title: "Disable Laravel 8 Registration & Dynamic Routes"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll see how we can disable and remove the register route and view from the authentication system of our application if there is at least one admin user in our database. We'll achieve that by dynamically adding the register route to the routes/web.php file after querying the database to check for the absence of users with the admin role" 
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
@@ -8,16 +8,20 @@ tags : [laravel, laravel-6-tutorials-and-examples, laravel6]
 
 In this tutorial, we'll see how we can disable and remove the register route and view from the authentication system of our application if there is at least one admin user in our database. We'll achieve that by dynamically adding the register route to the `routes/web.php` file after querying the database to check for the absence of users with the admin role. 
 
-If you didn't follow from the previous tutorial(s), where we started building a CRM application from scratch using Laravel 6 framework, let's give you some background why we need to disable the registration functionality in our application.  
+If you didn't follow from the previous tutorial(s), where we started building a CRM application from scratch using Laravel 8 framework, let's give you some background why we need to disable the registration functionality in our application.  
 
 We are building a self-hosted CRM application that can be hosted on the web by teams and organizations for managing their customer relationships. So, not anyone should be able to register except for the first user that should be the admin. 
 
 Other users will be created via the users' dashboard by the admin(s). 
 
-We have already added user authentication using the auth scaffolding in Laravel 6 via the separated `laravel/ui` package. So, all we need to do is customizing the system to disable registration after the creation of a first admin user. 
+We have already added user authentication using the auth scaffolding in Laravel 8 via the separated `laravel/ui` package. So, all we need to do is customizing the system to disable registration after the creation of a first admin user. 
+
+> Note: The Laravel team recommends developers to use Jetstream for new Laravel 8 projects but they have also updated the `laravel/ui` package to version 3 for using with Laravel 8, especially if you are updating your previous Laravel 7/6 app to the latest version.
+
 
 We've also added a role field the users' table so we can assign admin roles to specific users in our application.
 
+## Disabling Laravel 8 Registration and Dynamic Routes
  
 We'll learn: 
 
@@ -59,5 +63,5 @@ Laravel provides **model events and observers** which we shall see in the next t
 
 ## Conclusion
 
-In this tutorial, we've seen how to disable registration in our Laravel 6 application by conditionally calling the `Auth::routes()` method for dynamically inserting the appropriate routes depending on the existence or absence of admin users in the database. 
+In this tutorial, we've seen how to disable registration in our Laravel 8 application by conditionally calling the `Auth::routes()` method for dynamically inserting the appropriate routes depending on the existence or absence of admin users in the database. 
 
