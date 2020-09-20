@@ -1,8 +1,8 @@
 ---
 layout: bytag
-title: Vue 3 Tutorial(s)
+title: Vue 3
 comments: false
-tag: vue-3
+tag: vuejs
 ---
 
 Vue 3 is the next version of one of the three most popular JavaScript libraries for building front-end user interfaces.
