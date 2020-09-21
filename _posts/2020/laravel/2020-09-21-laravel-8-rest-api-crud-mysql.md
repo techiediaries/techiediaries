@@ -4,15 +4,18 @@ title: "Laravel 8 REST API CRUD Tutorial by Example App with Bootstrap 4 and MyS
 image: "images/content/php.png"
 excerpt: "Throughout this tutorial for beginners you'll learn to use Laravel 8 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database from scratch starting with the installation of Composer (PHP package manager) to implementing and serving your application." 
 tags : [php , laravel, laravel-6-tutorials-and-examples, mysql]
-date: 2020-09-20
+date: 2020-09-21
 ---
 
-Throughout this tutorial for beginners you'll learn to use Laravel 8 - the latest version of one of the most popular PHP frameworks - to create a CRUD web application with a MySQL database and Bootstrap 4 styles from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
+Throughout this tutorial for beginners you'll learn to use Laravel 8 - the latest version of one of the most popular PHP frameworks - to create a REST API CRUD web application with a MySQL database and Bootstrap 4 styles from scratch and step by step starting with the installation of Composer (PHP package manager) to implementing and serving your application.
 
 This tutorial is updated from our [Laravel 6/7 tutorial](https://www.techiediaries.com/laravel/php-laravel-7-6-tutorial-crud-example-app-bootstrap-4-mysql-database)
 
+## Creating our Laravel 8 CRUD REST API
 
-## Prerequisites
+Before implementing our Laravel 8 REST API CRUD application, let's see the prerequisites that we'll need to have for this tutorial.
+
+### Prerequisites
 
 This tutorial assumes you have PHP and MySQL installed on your system. Follow the instructions for your operating system to install both of them.
 
@@ -22,135 +25,23 @@ Familiarly with PHP is required since Laravel 8 is based on PHP.
 
 For development I will be using a Ubuntu 18.04+ machine so the commands in this tutorial are targeting this system but you should be able to follow this tutorial in any operating system you use.
 
-## Installing PHP 7.3+
+Please check out the previous tutorial for how to [Install Laravel 8 and PHP 7.3](https://www.techiediaries.com/install-laravel-8-php-7-3-composer/).
 
-Laravel 8 requires PHP 7.3+ or above so you need this version or the latest version of PHP installed on your system. The process is straightforward on most systems.
+We have cover the following topics in our previous post:
 
-On Ubuntu, you can follow these instructions.
+- Installing PHP 7.3+
+- Installing the Required PHP 7.3 Modules
+- Installing PHP Composer
+- Installing and Creating a Laravel 8 Project
+- Installing the Front-End Dependencies
 
-First add the `ondrej/php` PPA which contains the latest version of PHP: 
+After we have installed Laravel 8 and created a new project, let's create our Laravel 8 REST API example.
 
-```bash
-$ sudo add-apt-repository ppa:ondrej/php
-$ sudo apt-get update
-```
+### Creating a MySQL Database
 
-Next, install PHP 7.3 using the following command:
+Let's start by creating a MySQL database that we'll use to persist dat ain our Laravel 8 REST API application. 
 
-```bash
-$ sudo apt-get install php7.3
-```
-
- 
-### Installing the Required PHP 7.3 Modules
-
-Laravel requires a bunch of modules. You can install them using the following command:
-
-```bash
-$ sudo apt-get install php7.3 php7.3-cli php7.3-common php7.3-json php7.3-opcache php7.3-mysql php7.3-mbstring php7.3-mcrypt php7.3-zip php7.3-fpm php7.3-xml
-```
- 
-## Installing PHP Composer
-
-Let's start our journey by installing Composer, The PHP package manager.
-
-Navigate in your home directory, then download the installer from the official website using  `curl`:
-
-```bash
-$ cd ~
-$ curl -sS https://getcomposer.org/installer -o composer-setup.php
-```
-
-You can then install  `composer`  globally on your system by using the following command:
-
-```bash
-$ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-```
-
-You can make sure your installation works as expected by running `composer` in your terminal:
- 
-```bash
-$ composer
-```
-
-If you've successfully installed Composer in your system, you are ready to create a Laravel 8 project.
-
-## Installing and Creating a Laravel 8 Project
-
-In this section we'll introduce Laravel and then proceed it to install and create a Laravel 8 project. 
-
-### About Laravel
-
-[Laravel docs](https://packagist.org/packages/laravel/framework) describe it as:
-
->Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
->-   [Simple, fast routing engine](https://laravel.com/docs/routing).
->-   [Powerful dependency injection container](https://laravel.com/docs/container).
->-   Multiple back-ends for  [session](https://laravel.com/docs/session)  and  [cache](https://laravel.com/docs/cache)  storage.
->-   Expressive, intuitive  [database ORM](https://laravel.com/docs/eloquent).
->-   Database agnostic  [schema migrations](https://laravel.com/docs/migrations).
->-   [Robust background job processing](https://laravel.com/docs/queues).
->-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
->Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
-
-Generating a Laravel 8 project is easy and straightforward. In your terminal, run the following command:
-
-```bash
-$ composer create-project  --prefer-dist  laravel/laravel laravel-8-crud-app 8
-```
-
-This will install `laravel/laravel` **v8**.
-
-> **Note**: Make sure you have PHP 7.3+ installed on your system. Otherwise, composer will use a previous version of Laravel for your project.
-
-You can verify the installed version in your project using:
-
-```bash
-$ cd laravel-8-crud-app
-$ php artisan -V
-Laravel Framework 8
-```
-
-## Installing the Front-End Dependencies
-
-In your generated project, you can see that a `package.json` file is generated which includes many front-end libraries that can be used by your project:
-
-- axios,
-- bootstrap,
-- cross-env,
-- jquery,
-- laravel-mix,
-- lodash,
-- popper.js,
-- resolve-url-loader,
-- sass,
-- sass-loader,
-- vue.
- 
-
-> **Note**: You can use your preferred libraries with Laravel not specifically the ones added to `package.json`. 
-> 
->The `package.json` file in your Laravel project includes a few packages such as `vue` and `axios` to help you get started building your JavaScript application. 
->
->It also includes `bootstrap` to help you get started with Bootstrap for styling your UI.
->
-> It include [Laravel Mix](https://laravel.com/docs/6/mix#working-with-stylesheets) to help you compile your SASS files to plain CSS.
- 
-You need to use `npm` to install the front-end dependencies:
-
-```bash
-$ npm install
-```
-
-After running this command a `node_modules` folder will be created and the dependencies will be installed into it.
-
-> **Note**: You need to have Node.js and npm installed on your system before you can install the front-end dependencies.
-
-## Creating a MySQL Database
-
-Let's now create a MySQL database that we'll use to persist dat ain our Laravel application. In your terminal, run the following command to run the `mysql` client:
+In your terminal, run the following command to run the `mysql` client:
 
 ```bash
 $ mysql -u root -p
@@ -268,7 +159,7 @@ You can now create the `contacts` table in the database using the following comm
 $ php artisan migrate
 ```
 
-Now, let's look at our `Contact` model, which will be used to interact with the `contacts` database table. Open the `app/Contact.php` and update it:
+Now, let's look at our `Contact` model, which will be used to interact with the `contacts` database table. Open the `app/Models/Contact.php` file and update it as follows:
 
 ```php
 <?php
