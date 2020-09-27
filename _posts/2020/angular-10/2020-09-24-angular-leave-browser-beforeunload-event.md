@@ -4,12 +4,12 @@ title: "Angular 10 Leave Browser Beforeunload Event: Warn Users Leaving your App
 image: "images/content/angular.png"
 excerpt: "In this article, we'll learn about the beforeunload event which is a browser event that's used to prompt or warn users that they're about to leave a page or in our case the Angular app"
 date: 2020-09-24
-tags : [angular]
+tags : [angular , javascript]
 ---
 
 In this article, we'll learn about the `beforeunload` event which is a browser event that's used to prompt or warn users that they're about to leave a page or in our case the Angular app. 
 
-![Angular 10 Leave Browser Beforeunload Event](htpps://www.techiediaries.com/assets/images/angular-beforeunload.jpeg)
+![Angular 10 Leave Browser Beforeunload Event](https://www.techiediaries.com/assets/images/angular-beforeunload.jpeg)
 
 ## How to Use beforeunload in JavaScript
 
