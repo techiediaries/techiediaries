@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: bpost
 title: "Angular 8 Book: Build your first web apps with Angular 8"
 image: "images/content/angular-by-example-httpclient-get.png"
 excerpt: "Practical Angular: Build your first web apps with Angular 8" 
@@ -12,11 +12,7 @@ This book will walk you through building several apps with Angular while learnin
 
 In this book, we'll be using the Angular 8 version.
 
-You can purchase the book with 9.99$ from
- <a
-    href="https://leanpub.com/practical-angular"
-    onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})"
- >Leanpub</a>
+You can purchase the book with 9.99$ from <a href="https://leanpub.com/practical-angular" onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})">Leanpub</a>
 
  
 
