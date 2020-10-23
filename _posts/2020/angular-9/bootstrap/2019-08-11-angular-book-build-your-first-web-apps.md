@@ -1,128 +1,65 @@
 ---
 layout: bpost
-title: "Angular 8 Book: Build your first web apps with Angular 8"
+title: "Angular for Enterprise-Ready Web Applications: Build and deliver production-grade and cloud-scale evergreen web apps with Angular 9 and beyond, 2nd Edition"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "Practical Angular: Build your first web apps with Angular 8" 
+excerpt: "Angular for Enterprise-Ready Web Applications: Build and deliver production-grade and cloud-scale evergreen web apps with Angular 9 and beyond, 2nd Edition" 
 tags : [angular, angular8, angular-books] 
 ---
 
-This book teaches modern application development with Angular 2 and Angular 4. It begins with the basics of Angular and the technologies and techniques used throughout the book, such as key features of TypeScript, newer ES6 syntax and concepts, and details about the tools needed to write professional Angular applications.
+**Revised and updated second edition of the bestselling hands-on guide to building enterprise-ready web apps using an evergreen Angular platform**
 
-The reader will next build an Angular application from scratch while learning about the primary pieces of an Angular application and see how they work together. Using lots of examples, the core parts of Angular will be introduced, such as Components, the Router, and Services.
+#### Key Features
 
-The book also covers techniques like server-side rendering and how to incrementally add Angular 2+ features to existing AngularJS applications. Finally, the reader will gain insight into advanced skills that should be part of any professional Angular developer’s toolkit such as testing, tooling options, and performance tuning.
+-   Updated examples, projects, and a new overview of tools – including NgRX and Ivy, automated testing, and Firebase authentication
+-   New chapter summarizing history of web frameworks and Angular version updates
+-   All-new RESTful API implementation leveraging the MEAN stack with MongoDB, Express.js, Angular and Node.js
 
-- Understand how Angular is organized and learn best practices for designing Angular applications
-- Quickly build Angular templates with built-in directives that enhance the user experience
-- Bind UI elements to your data model, so changes to your model and UI occur automatically in tandem
-- Define custom Angular directives that extend HTML
-- Implement zoomable images, expandable lists, and other rich UI components
-- Implement client-side services that interact with web servers
-- Build dynamic browser views to provide even richer user interaction
-- Create custom services you can easily reuse
-- Implement rich UI components as custom Angular directives
+#### Book Description
 
-Contents at a Glance
+This second edition of Angular for Enterprise-Ready Web Applications is updated with in-depth coverage of the evergreen Angular platform.
 
+You’ll start by mastering Angular programming fundamentals. Using the Kanban method and GitHub tools, you’ll build great-looking apps with Angular Material and also leverage reactive programming patterns with RxJS, discover the flux pattern with NgRx, become familiar with automated testing, utilize continuous integration using CircleCI, and deploy your app to the cloud using Vercel Now and GCloud.
 
-Introduction
+You will then learn how to design and develop line-of-business apps using router-first architecture with observable data anchors, demonstrated through oft-used recipes like master/detail views, and data tables with pagination and forms. Next, you’ll discover robust authentication and authorization design demonstrated via integration with Firebase, API documentation using Swagger, and API implementation using the MEAN stack.
 
-What is Angular
-Why Use Angular
-Who this Book is For
-How to Use this Book
-Getting the Source Code
-Chapter 1: Jumping into JavaScript
+Finally, you will learn about DevOps using Docker, build a highly available cloud infrastructure on AWS, capture user behavior with Google Analytics, and perform load testing. By the end of the book, you’ll be familiar with the entire gamut of modern web development and full-stack architecture, learning patterns and practices to be successful as an individual developer on the web or as a team in the enterprise.
 
-Setting Up a JavaScript Development Environment
-Defining Variables
-Understanding JavaScript Data Types
-Using Operators
-Implementing Looping
-Creating Functions
-Understanding Variable Scope
-Using JavaScript Objects
-Manipulating Strings
-Working with Arrays
-Adding Error Handling
-Chapter 2: Jumping into TypeScript
+#### What you will learn
 
-Learning the Different Types
-Understanding Interfaces
-Implementing Classes
-Implementing Modules
-Understanding Functions
-Chapter 3: Getting Started with Angular
+-   Adopt a minimalist, value-first approach to delivering web apps
+-   Master Angular development fundamentals, RxJS, CLI tools, GitHub, and Docker
+-   Discover the flux pattern and NgRx
+-   Implement a RESTful APIs using Node.js, Express.js, and MongoDB
+-   Create secure and efficient web apps for any cloud provider or your own servers
+-   Deploy your app on highly available cloud infrastructure using DevOps, CircleCI, and AWS
 
-Why Angular?
-Understanding Angular
-Separation of Responsibilities
-Adding Angular to Your Environment
-Using the Angular CLI
-Creating a Basic Angular Application
-Chapter 4: Angular Components
+#### Who this book is for
 
-Component Configuration
-Building the Template
-Using Constructors
-Using External Templates
-Implementing Directives
-Chapter 5: Expressions
+This book is for developers who want to confidently deliver high-quality and production-grade Angular apps from design to deployment. Developers that have prior experience in writing a RESTful APIs will also benefit, as well as developers who will gain greater awareness of how they fit into the larger picture of delivering a web application. Prior experience with RESTful APIs is desired.
 
-Using Expressions
-Using Pipes
-Building a Custom Pipe
-Chapter 6: Data Binding
+#### Table of Contents
 
-Understanding Data Binding
-Interpolation
-Property Binding
-Attribute Binding
-Class Binding
-Style Binding
-Event Binding
-Two-Way Binding
-Chapter 7: Built-in Directives
-
-Understanding Directives
-Using Built-in Directives
-Structural Directives
-Attribute Directives
-Chapter 8: Custom Directives
-
-Creating a Custom Attribute Directive
-Creating a Custom Directive with a Component
-Chapter 9: Events and Change Detection
-
-Using Browser Events
-Emitting Custom Events
-Using Observables
-Chapter 10: Implementing Angular Services in Web Applications
-
-Understanding Angular Services
-Using the Built in Services
-Sending HTTP GET and PUT Requests with the http Service
-Implementing a Simple Mock Server Using the http Service
-Changing Views with the router Service
-Implementing a Router with a Navigation Bar
-Implementing a Router with Parameters
-Chapter 11: Creating Your Own Custom Angular Service
-
-Integrating Custom Services into Angular Applications
-Implementing a Simple Application That Uses a Constant Data Service
-Implementing a Data Transform Service
-Implementing a Variable Data Service
-Implementing a Service that Returns a Promise
-Implementing a Shared Service
-Chapter 12: Having Fun with Angular
-
-Implementing an Angular Application That Uses the Animation Service
-Implementing an Angular Application That Zooms in on Images
-Implementing an Angular Application That Enables Drag and Drop
-Implementing a Star Rating Angular Component
+1.  Introduction to Angular and Its Concepts
+2.  Setting Up Your Development Environment
+3.  Creating a Basic Angular App
+4.  Automated Testing, CI, and Release to Production
+5.  Delivering High-Quality UX with Material
+6.  Forms, Observables, and Subjects
+7.  Creating A Router-First Line-Of-Business App
+8.  Designing Authentication and Authorization
+9.  DevOps Using Docker
+10.  RESTful APIs and Full Stack Implementation
+11.  Recipes – Reusability, Routing, and Caching
+12.  Recipes – Master/Detail, Data Tables, and NgRx
+13.  Highly Available Cloud Infrastructure on AWS
+14.  Google Analytics and Advanced Cloud Ops
+15.  Appendix A - Debugging Angular
+16.  Appendix B - Angular Cheat Sheet
+17.  Bonus Chapter: Appendix C - Keeping Angular and Tools Evergreen
+18.  Bonus Chapter: Appendix D - Self-Assessment Answers
 
 
-You can purchase the book with $17.27 from <a href="https://www.amazon.com/Learning-Angular-Hands-Guide-ebook/dp/B075RCQ7YJ" onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})">Amazon</a>
+You can purchase the book with $26.59 from <a href="https://www.amazon.com/Angular-Enterprise-Ready-Web-Applications-production-grade-ebook/dp/B07SSFDSZ7" onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})">Amazon</a>
 
  
 
