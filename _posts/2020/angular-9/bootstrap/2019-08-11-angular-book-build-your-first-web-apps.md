@@ -59,7 +59,6 @@ This book is for developers who want to confidently deliver high-quality and pro
 18.  Bonus Chapter: Appendix D - Self-Assessment Answers
 
 
-You can purchase the book with $26.59 from <a href="https://www.amazon.com/Angular-Enterprise-Ready-Web-Applications-production-grade-ebook/dp/B07SSFDSZ7" onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})">Amazon</a>
-
+You can purchase the book with $26.59 from <a href="https://amzn.to/2TiBHQ3" onclick="ga('send', 'event', {transport: 'beacon', eventAction: 'click', eventCategory: 'BuyAngularBook'})">Amazon</a>
  
 
