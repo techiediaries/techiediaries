@@ -1,13 +1,15 @@
 ---
 layout: bytag
-title: Angular 10 Tutorials
+title: Angular 10/11 Tutorials
 comments: false
 tag: angular
 ---
 
+Angular 11 is in Release Candidate!
+
 Angular 10 has been released, check out the [new features](https://www.techiediaries.com/angular/angular-10-new-features/)
  
-# Angular 10 Learning Path
+# Angular 11 Learning Path
 
 Throughout this tutorial series and learning path you'll learn Angular--the most popular platform for building front-end web applications 
 

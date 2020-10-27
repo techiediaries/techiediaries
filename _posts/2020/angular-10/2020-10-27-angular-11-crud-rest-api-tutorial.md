@@ -1,20 +1,19 @@
 ---
 layout: bpost
-title: "Angular 10 CRUD Application Example with REST Web API and Bootstrap 4"
+title: "Angular 11 Tutorial: CRUD Application Example with REST Web API and Bootstrap 4"
 image: "images/content/angular.png"
-excerpt: "Throughout this tutorial, We'll be learning how to build an Angular 10 CRUD application to consume a REST Web API, create, read, modify and search data"
-date: 2020-08-26
-canonical: "https://www.techiediaries.com/angular-11-crud-rest-api-tutorial/"
+excerpt: "Throughout this tutorial, We'll be learning how to build an Angular 11 CRUD application to consume a REST Web API, create, read, modify and search data"
+date: 2020-10-27
 tags : [angular]
 ---
 
-Throughout this tutorial, We'll be learning how to build an Angular 10 CRUD application with Bootstrap 4 styles to consume a REST Web API, create, read, modify and search data.
+Throughout this tutorial, We'll be learning how to build an Angular 11 CRUD application with Bootstrap 4 styles to consume a REST Web API, create, read, modify and search data.
 
 > [Download this tutorial as a PDF ebook](https://www.techiediaries.com/angular-10-crud-bootstrap-tutorial.pdf) for offline reading.
 
-## Introducing our Angular 10 CRUD Application
+## Introducing our Angular 11 CRUD Application
 
-We will learn how to build an Angular 10 front-end application that fetches data from a REST API of products:
+We will learn how to build an Angular 11 front-end application that fetches data from a REST API of products:
 
 -   Each product has id, name, description, availability status.
 -   Users would be able to create, retrieve, update, and delete products.
@@ -24,7 +23,7 @@ We will learn how to build an Angular 10 front-end application that fetches data
 
 ## The REST API Endpoints
 
-We'll be building a Angular 10 frontend app for a presumed REST API exporting the following REST API endpoints:
+We'll be building a Angular 11 frontend app for a presumed REST API exporting the following REST API endpoints:
 
 
 
@@ -38,7 +37,7 @@ We'll be building a Angular 10 frontend app for a presumed REST API exporting th
 
 All of them can work well with this Angular App.
 
-## Angular 10 CRUD App Structure
+## Angular 11 CRUD App Structure
 
 These are the components of our CRUD app:
 
@@ -48,22 +47,22 @@ These are the components of our CRUD app:
 –  `ProductUpdateComponent`  which displays a form for editing product’s details by  `:id`.  
 –  `ProductCreateComponent`  which displays a form for creating a new product.
 
-The components use the `ProductService`  methods for actually making CRUD operations against the REST API. The service makes use of Angular  10 `HTTPClient`  to send HTTP requests to the REST and process responses.
+The components use the `ProductService`  methods for actually making CRUD operations against the REST API. The service makes use of Angular  11 `HTTPClient`  to send HTTP requests to the REST and process responses.
 
 
 
-## Step 1 — Creating a New Angular 10 Project
+## Step 1 — Creating a New Angular 11 Project
 
-Let's get started by generating a new Angular 10 project using the CLI. You need to run the following command:
+Let's get started by generating a new Angular 11 project using the CLI. You need to run the following command:
 
 ```bash
-$ ng new Angular10CRUDExample 
+$ ng new Angular11CRUDExample 
 ```
 
 The CLI will ask you a couple of questions — If  **Would you like to add Angular routing?**  Type  **y**  for Yes and  **Which stylesheet format would you like to use?**  Choose  **CSS**.
 
 
-## Step 2 — Generating Angular 10 CRUD Components and Service
+## Step 2 — Generating Angular 11 CRUD Components and Service
 
 Next, we need to generate a bunch of components and a service using the Angular CLI as follows:
 
@@ -109,7 +108,7 @@ export class AppModule { }
 
 ## Step 4 — Adding Routes for the CRUD Components
 
-We have the components that compose our application UI but we need to link them with their routes to be able to navigate between them using the Angular 10 Router.
+We have the components that compose our application UI but we need to link them with their routes to be able to navigate between them using the Angular 11 Router.
 
 We'll create three routes:
   
@@ -172,9 +171,9 @@ Open the  `src/app/app.component.html` file,  and update as follows:
 
 We have created a bootstrap navigation bar and wrapped the router outlet with a container div.
 
-## Step 6 — Creating an Angular 10 CRUD Service
+## Step 6 — Creating an Angular 11 CRUD Service
 
-Next, we need to create a CRUD service that will use Angular 10  `HTTPClient`  to send HTTP requests to the REST API server.  
+Next, we need to create a CRUD service that will use Angular 11  `HTTPClient`  to send HTTP requests to the REST API server.  
 
 
 Open the `src/services/product.service.ts` file and update it as follows:
@@ -224,7 +223,7 @@ export class ProductService {
 
 ```
 
-## Step 7 — Implementing the Angular 10 CRUD Components
+## Step 7 — Implementing the Angular 11 CRUD Components
 
 We have previously generated three components and added them to the router, let's now implement the actual functionality of each component.
 
@@ -484,7 +483,7 @@ If you click on  **Edit**  button of any product, you will be directed to the pr
 
 ### The Product Details Component
 
-Next, let's implement the product details component of our Angular 10 CRUD application.
+Next, let's implement the product details component of our Angular 11 CRUD application.
 
 Open the `src/components/product-details/product-details.component.ts` file and update it as follows:
 
@@ -641,12 +640,12 @@ Open the `src/components/product-details/product-details.component.html` file an
 
 ```
 
-## Step 8 — Serving the Angular 10 CRUD App
+## Step 8 — Serving the Angular 11 CRUD App
 
 Head back to your command-line interface, make sure your are navigated at the root of your project's directory and run the following command to start a live development server in your local machine:
 
 ```bash
-$ cd Angular10CRUDExample
+$ cd Angular11CRUDExample
 $ ng serve    
 ```
 
@@ -656,4 +655,4 @@ Go to your web browser and navigate to the  `http://localhost:4200/`  address to
 
 ## Conclusion
 
-In this tutorial, we’ve built an Angular 10 CRUD application for a Web REST API and we used Bootstrap 4 for styling the UI. 
+In this tutorial, we’ve built an Angular 11 CRUD application for a Web REST API and we used Bootstrap 4 for styling the UI. 
