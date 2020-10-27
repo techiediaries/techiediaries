@@ -1,14 +1,18 @@
 ---
-layout: bpost
-title: "Laravel 8 Authentication Tutorial"
+layout: post
+title: "Laravel 8 Authentication Tutorial by Example"
 image: "images/content/laravel.png"
 excerpt: "In this tutorial, we'll see step by step how to implement authentication in your Laravel 8 application" 
 tags : [laravel, laravel-6-tutorials-and-examples, laravel6] 
 ---
 
+![Laravel 8 Authentication](https://www.techiediaries.com/images/laravel-8-authentication-tutorial.png)
+
 Laravel 8 was officially released on 8th September 2020. The laravel team follows semantic versioning and releases a new major Laravel version in every 6-month. 
 
 Laravel 8 is not an LTS (Long-Time-Support) release, the Laravel 8 version will have 6 months bug fixes until March 8, 2021, and 1-year security fixes until 8 September 2021.
+
+## Implemening Laravel 8 Authentication with Jetstream
 
 More often than not, developers need to implement authentication in their web applications to protect some pages from public access. If you are using Laravel and PHP, adding authentication in your apps is very easy and straightforward as it provides built-in system for authentication with the ability to customize it when needed. In Laravel 8, we have a new application scaffolding system, called Jetstream that makes scaffolding a complete authentication system a breeze including optional integration with modern front-end tools such as Vue.js and Tailwind CSS. In this tutorial, we'll see you step by step how to implement authentication in your Laravel 8 application. 
 
@@ -25,7 +29,7 @@ In this article, you'll be learning about the following topics:
 - How to protect your app routes
  
 
-## Step 1 -- Creating a Laravel 8 Auth Project
+## Step 1 -- Creating a Laravel 8 Authentication Project
 
 If you don't have a Laravel 8 project, let's get started by creating a new project. 
 
@@ -62,7 +66,7 @@ Please execute the "npm install && npm run dev" command to build your assets.
 
 The [Inertia.js](https://jetstream.laravel.com/1.x/stacks/inertia.html) stack provided by Jetstream uses Vue.js as its templating language. Building an Inertia application is a lot like building a typical Vue application; however, you will use Laravel's router instead of Vue router. Inertia is a small library that allows you to render single-file Vue components from your Laravel backend by providing the name of the component and the data that should be hydrated into that component's "props".
 
-## Step 3 -- Generating Auth Scaffolding
+## Step 3 -- Generating Authentication Scaffolding
 
 After installation of Laravel 8 Jetstream package. It automatically scaffolds the login, two-factor login, registration, password reset, and email verification views for your project.
 
@@ -92,7 +96,7 @@ Now our Laravel 8 authentication system is ready. Let's serve our application an
 - You can register from `/register`.
  
 
-## Step 4 -- Protecting Routes 
+## Step 4 -- Protecting Routes Using the Authentication Middleware
 
 After successfully scaffolding our Laravel 8 authentication system. We need to protect our routes from non logged-in users by using auth middleware in our routes or controllers:
 

@@ -16,6 +16,8 @@ The Laravel team releases a new version each six months. At the time of writing 
 
 Throughout this tutorial, we'll be learning how to create a CRUD app with Laravel 8 to create, insert, update and delete products from a MySQL database.
 
+> Read how to [add authentication to your Laravel 8 app](https://www.techiediaries.com/laravel-8-authentication/).
+
 ## Laravel 8 Prerequisites
 
 In order to follow this tutorial, you'll need to have the following prerequisites:

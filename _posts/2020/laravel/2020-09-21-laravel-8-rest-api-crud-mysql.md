@@ -706,4 +706,4 @@ This is a screenshot of the page after we created a contact:
 
 ## Conclusion
 
-We've reached the end of this tutorial. We created a REST API CRUD application with Laravel 8, PHP 7 and MySQL.
+We've reached the end of this tutorial. We created a REST API CRUD application with Laravel 8, PHP 7 and MySQL. Next, you can learn how to [add authentication to your Laravel 8 app](https://www.techiediaries.com/laravel-8-authentication/).
