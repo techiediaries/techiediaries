@@ -7,6 +7,7 @@ date: 2020-08-04
 tags : [angular, angular-10-router-examples] 
 ---
 
+
 In the previous [tutorial of the Angular 10 Router](https://www.techiediaries.com/angular-router-route-parameters/), we've seen how to use basic routing between components then how to handle route parameters using different methods. We've also seen how to use the `RouterLink` directive to create route links. This tutorial continues from the previous tutorials with other methods to implement navigation.
 
 ## RouterLink Example with Angular 10

@@ -7,7 +7,8 @@ date: 2020-05-04
 tags : [ angular , angular-10 ]
 ---
 
-In the previous [tutorial](https://www.techiediaries.com/angular-tutorial/), we’ve created our Angular 10 pplication using Angular CLI, let’s now see how we can add routing and navigation to our applications.
+
+In the previous [tutorial](https://www.techiediaries.com/angular-tutorial/), we’ve created our Angular 10 application using Angular CLI, let’s now see how we can add routing and navigation to our applications.
 
 We’ll learn how we can set up routing manually using a Router Module and outlet, how to add routes to our components to the Router configuration and how to use the `redirectTo` property to redirect users to different routes. We’ll also see the difference between the `prefix` and `full` matching strategies and how to use the `routerLink` directive to create navigation links.   
 

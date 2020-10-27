@@ -6,6 +6,7 @@ excerpt: "The router-outlet is a directive that's available from the @angular/ro
 tags : [angular, angular-how-tos, angular9, angular-9-router-examples] 
 ---
 
+
 ## What's the Router Outlet in Angular?
 
 The router-outlet is a directive that's available from the `@angular/router` package and is used by the router to mark where in a template, a matched component should be inserted.
