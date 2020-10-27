@@ -109,32 +109,6 @@ $batch = Bus::batch([
   ->dispatch();
 ```
 
-
-Here is another example from [Mailcoach](https://mailcoach.app/) source code:
-
-
-```php
-protected function sendMailsForCampaign(Campaign $campaign)
-{
-    $jobs = $campaign->list->subscribers
-        ->cursor()
-        ->map(fn (Subscriber $subscriber) => $this->createSendMailJob($campaign, $subscriber, $segment))
-        ->filter()
-        ->toArray();
-
-    $batch = Bus::batch($jobs)
-        ->allowFailures()
-        ->finally(function () use ($campaign) {
-            $campaign->markAsSent($this->campaign->sends()->count());
-
-            event(new CampaignSentEvent($campaign));
-        })
-        ->dispatch();
-
-    $campaign->update(['send_batch_id' => $batch->id]);
-}
-```
-
 By default, the entire batch of jobs would be canceled when one of the jobs fails. In this case, we don't want one failing mail to stop all others. We can prevent that from happening by calling `allowFailures`.
 
 Instead of polling to check if all mails are sent, we can pass a callable to the finally method. That callable will be executed when all jobs in the batch have been processed. 
