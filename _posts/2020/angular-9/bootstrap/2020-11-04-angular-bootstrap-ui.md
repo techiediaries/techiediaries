@@ -1,21 +1,18 @@
 ---
 layout: post
-title: "Angular 7/8 & Bootstrap 4 UIs: ng-bootstrap and ngx-bootstrap [Part 1] "
+title: "Add Bootstrap 4 to Angular 11 UIs With Ng-Bootstrap and Ngx-Bootstrap"
 image: "images/content/angular.png"
-excerpt: "In this tutorial series, you'll learn to use Angular 7/8 & Bootstrap 4 to build professional grade UIs." 
-tags : [angular, angular8]
+excerpt: "In this tutorial series, you'll learn to use Angular 11 & Bootstrap 4 to build professional grade UIs" 
+tags : [angular, angular11]
 ---
 
+In this tutorial series, you'll learn to use Angular 11 & Bootstrap 4 to build professional grade UIs.
 
-In this tutorial series, you'll learn to use Angular 8 & Bootstrap 4 to build professional grade UIs.
+In this first part, you'll learn about the different ways you can use to add Bootstrap 4 to your Angular 11 project such as `ng-bootstrap`,  `ngx-bootstrap` and the old way (with jQuery).
 
-In this first part, you'll learn about the different ways you can use to integrate Bootstrap 4 with your Angular 8 project such as `ng-bootstrap`,  `ngx-bootstrap` and the old way (with jQuery).
-
-You'll also prepare a project that will be used to demonstrate the different components using Angular CLI 8.
+You'll also prepare a project that will be used to demonstrate the different components using Angular CLI 11.
   
 First let's start with the prerequisites.
-
-## Tutorial Prerequisites
 
 If you want to follow this tutorial, step by step from scratch, you'll need to have some prerequisites such as:
 
@@ -25,15 +22,15 @@ If you want to follow this tutorial, step by step from scratch, you'll need to h
 
 If you are ready then let's dive in!
 
-## Installing Angular CLI 8
+## Installing Angular CLI 11
 
 If you don't have the latest version of Angular CLI installed, you first need to run the following command to install it:
 
 ```bash
-$ npm install @angular/cli -g
+$ npm install @angular/cli@next -g
 ```  
 
-This will install Angular CLI 8 globally on your system so you need to make sure you have npm configured to allow to isntall packages system-wide without  super user privileges. Otherwise, simply add sudo before your command in Linux and macOS systems or use an administrator command prompt  in Windows.
+This will install Angular CLI 11 globally on your system so you need to make sure you have npm configured to allow to isntall packages system-wide without  super user privileges. Otherwise, simply add sudo before your command in Linux and macOS systems or use an administrator command prompt  in Windows.
 
 If you already have a previous version of the CLI installed, you need to update it to the latest version. For a tutorial on how to upgrade the Angular toolchain, see [Angular 7 Upgrade: Ng Update Angular 6 CLI](https://www.techiediaries.com/updating-angular-cli-projects/)
 
@@ -41,9 +38,9 @@ If you already have a previous version of the CLI installed, you need to update 
 
 
 
-## Creating Angular 8 & Bootstrap 4 Project
+## Creating Angular 11 & Bootstrap 4 Project
 
-Now that you have installed the latest version Angular CLI, you can now create your Angular 8 project using the following command from your terminal or command prompt:
+Now that you have installed the latest version Angular CLI, you can now create your Angular 11 project using the following command from your terminal or command prompt:
 
 ```bash
 $ ng new angular-bootstrap4-demo
@@ -66,7 +63,7 @@ There different approaches that you can follow to add Bootstrap to your project.
 - You can also just use the full original Bootstrap with CSS and JavaScript files but you should include jQuery since many components depend on it.
 
 
-## Using ng-bootstrap with Angular 8
+## Using ng-bootstrap with Angular 11
 
 First we'll start by installing the dependencies using:
 
@@ -95,7 +92,7 @@ export class AppModule {
 }
 ```
 
-For the sake of making your Angular 8 production bundle smaller, you can also import only the needed modules for the Bootstrap 4 components that you want to use in your project, such as buttons, cards, modals, pagination or alerts. For instance, this is an example for importing the `NgbAlertModule` module:
+For the sake of making your Angular 11 production bundle smaller, you can also import only the needed modules for the Bootstrap 4 components that you want to use in your project, such as buttons, cards, modals, pagination or alerts. For instance, this is an example for importing the `NgbAlertModule` module:
 
 ```ts
 import { NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
@@ -111,7 +108,7 @@ export class AppModule {
 
 You can find all the available components and modules from the [official website](https://ng-bootstrap.github.io/#/components/accordion/examples).
 
-## Using `bootstrap` with Angular 8
+## Using `bootstrap` with Angular 11
 
 First install `bootstrap` from npm:
 
@@ -119,7 +116,7 @@ First install `bootstrap` from npm:
 $ npm install bootstrap --save
 ```
 
-Next you need to instruct Angular CLI 8 to load the Bootstrap styles.
+Next you need to instruct Angular CLI 11 to load the Bootstrap styles.
 
 There are many ways to do that. The simpest method is by using the `src/styles.css` file  and adding the following code:
 
@@ -127,7 +124,7 @@ There are many ways to do that. The simpest method is by using the `src/styles.c
 @import "~bootstrap/dist/css/bootstrap.css";  
 ```
 
-## Using `ngx-bootstrap` with Angular 8
+## Using `ngx-bootstrap` with Angular 11
  
 First, you need to install `ngx-bootstrap` in your project from npm using:
 
@@ -143,7 +140,7 @@ Next you need to load Bootstrap 4 CSS file using one of the possible ways, such 
 
 ### Using `ng-add` and `ngx-bootstrap` 
 
-Alternatively, you can also use the `ng add` command of Angular CLI 8 to automatically add `ngx-bootstrap` to your project by simpy running the following command:
+Alternatively, you can also use the `ng add` command of Angular CLI 11 to automatically add `ngx-bootstrap` to your project by simpy running the following command:
 
 ```bash
 $ ng add ngx-bootstrap
@@ -175,7 +172,7 @@ You can also use the `ng add` command to add individual components. This is a [l
 
 ## Conclusion
 
-In this tutorial, we've seen different ways to include Bootstrap 4 in your Angular 8 project such as `bootstrap`, `ng-boostrap` and `ngx-bootstrap`. We've seen how to use the `ng add` command of Angular CLI v8 to automatically add `ngx-bootstrap` in your project without any manual intervention. 
+In this tutorial, we've seen different ways to include Bootstrap 4 in your Angular 11 project such as `bootstrap`, `ng-boostrap` and `ngx-bootstrap`. We've seen how to use the `ng add` command of Angular CLI v11 to automatically add `ngx-bootstrap` in your project without any manual intervention. 
 
 You've also installed Angular CLI and created a new project.
 

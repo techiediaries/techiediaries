@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Angular 9 CRUD Tutorial: Consume a Python/Django CRUD REST API"
+title: "Angular 11 CRUD Tutorial: Consume a Python/Django CRUD REST API"
 image: "images/content/learn-django.png"
-excerpt: "Throughout this tutorial for beginners, we'll learn to build a full-stack example web application with Angular 9, the latest version of the most popular framework/platform for building mobile and desktop client side applications created and used internally by Google." 
-tags : [ python , django , mysql, angular, angular9, angular-9-ngfor-examples, angular-9-httpclient-examples, angular-9-tutorials]
+excerpt: "Throughout this tutorial for beginners, we'll learn to build a full-stack example web application with Angular 11, the latest version of the most popular framework/platform for building mobile and desktop client side applications created and used internally by Google." 
+tags : [ angular]
 ---
   
 
 
-**Angular 9** is in pre-release! Read about its [new features in this article](https://www.techiediaries.com/angular-features) and how to [update to the latest Angular version in this article](https://www.techiediaries.com/updating-angular-cli-projects).
+**Angular 11** is in pre-release! Read about its [new features in this article](https://www.techiediaries.com/angular-features) and how to [update to the latest Angular version in this article](https://www.techiediaries.com/updating-angular-cli-projects).
 
 > You can also get our [Angular 8 book](https://www.techiediaries.com/angular-book-build-your-first-web-apps) for free or pay what you can.
 
-This tutorial is designed for developers that want to use [Angular 9 to build front-end apps](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) for their [back-end REST APIs](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). You can either use Python & Django as the backend or use JSON-Server to mock the API if you don't want to deal with Python. We'll be showing both ways in this tutorial.
+This tutorial is designed for developers that want to use [Angular 11 to build front-end apps](https://www.techiediaries.com/angular/ionic-chat-ui-jwt-auth/) for their [back-end REST APIs](https://www.techiediaries.com/angular/jwt-rest-api-auth-node-typescript-typeorm-database/). You can either use Python & Django as the backend or use JSON-Server to mock the API if you don't want to deal with Python. We'll be showing both ways in this tutorial.
 
 Check out the other parts of this tutorial:
 
@@ -26,7 +26,7 @@ If you would like to consume a third-party REST API instead of building your own
 
 You will see by example how to build a CRUD REST API with Python.
 
-The new features of Angular 9 include better performance and smaller bundles thanks to Ivy. 
+The new features of Angular 11 include better performance and smaller bundles thanks to Ivy. 
 
 Throughout this tutorial, designed for beginners, you'll learn Angular by example by building a full-stack CRUD — Create, Read, Update and Delete — web application using the latest version of the most popular framework and platform for building mobile and desktop client side applications (also called SPAs or Single Page Applications), created and used internally by Google.
 
@@ -39,7 +39,7 @@ You'll also learn to use various features such as **HttpClient** for sending AJA
 By the end of this tutorial, you'll learn by building a real world example application:
 
 - How to install the latest version of the CLI,
-- How to use the CLI to generate a new Angular 9 project,
+- How to use the CLI to generate a new Angular 11 project,
 - How to build a simple CRM application,
 - What's a component and component-based architecture
 - How to use RxJS 6 Observables and operators (`map()` and `filter()` etc.)
@@ -195,18 +195,18 @@ This is nearly the same REST API exposed by our real Python REST API server.
 
 The example Angular application we'll be building is the front-end for the CRM RESTful API that will allow you to create accounts, contacts and activities. It's a perfect example for a CRUD (Create, Read, Update and Delete) application built as an SPA (Single Page Application). The example application is work on progress so we'll be building it through a series of tutorials and will be updated to contain advanced features such as RxJS and JWT authentication. 
 
-## <a name="Installing_the_Angular_CLI_9">Installing the Angular CLI 9</a>
+## <a name="Installing_the_Angular_CLI_11">Installing the Angular CLI 11</a>
 
 
-Make sure you have Node.js installed, next run the following command in your terminal to install Angular CLI 9:
+Make sure you have Node.js installed, next run the following command in your terminal to install Angular CLI 11:
 
 ```bash
 $ npm install @angular/cli@next --global
 ```
 
-At the time of this writing `@angular/cli` **v9.0.0-rc** will be installed.
+At the time of this writing `@angular/cli` **v11.0.0-rc** will be installed.
 
-Before the final release of Angular 9, you will need to use the `@next` tag to install the pre-release version.
+Before the final release of Angular 11, you will need to use the `@next` tag to install the pre-release version.
 
 You can check the installed version by running the following command:
 
@@ -214,7 +214,7 @@ You can check the installed version by running the following command:
 $ ng version
 ```
 
-Now, you're ready to create a project using Angular CLI 9. Simply run the following command in your terminal:
+Now, you're ready to create a project using Angular CLI 11. Simply run the following command in your terminal:
 
 ```bash
 ng new ngsimplecrm
@@ -420,7 +420,7 @@ export  class  AppModule { }
 
 ## <a name="Setting_up_HttpClient_Angular">Setting up HttpClient</a>
 
-Now that we've created the various components, let's set up *HttpClient* in our Angular 9 project to consume the RESTful API back-end.
+Now that we've created the various components, let's set up *HttpClient* in our Angular 11 project to consume the RESTful API back-end.
 
 You simply need to add `HttpClientModule` to the `imports` array of the main application module:
 
@@ -490,6 +490,6 @@ export  class  ContactService {
 
 ## <a name="Conclusion">Conclusion</a>
 
-Throughout this tutorial for beginners, we've seen, by building a simple real world CRUD example, how to use different Angular 9 concepts to create simple full-stack CRUD application. 
+Throughout this tutorial for beginners, we've seen, by building a simple real world CRUD example, how to use different Angular 11 concepts to create simple full-stack CRUD application. 
 
 In the next [tutorial](https://www.techiediaries.com/angular-routing-tutorial) we'll be learning how to add routing to our example application.
