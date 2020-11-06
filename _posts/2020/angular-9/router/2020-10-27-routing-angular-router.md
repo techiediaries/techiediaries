@@ -3,7 +3,7 @@ layout: post
 title: "Routing with Angular 11 Router: Full-Tutorial & App by Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial part, we’ll learn about Angular Router by example and will teach you everything you need to start using Angular routing to build Single Page Applications" 
-date: 2020-10-31
+date: 2020-11-05
 tags : [ angular , angular-10 ]
 author: ahmed
 ---
@@ -17,11 +17,18 @@ We'll learn how to use multiple outlets, redirect users from the empty path, use
 
 > **Note**: This tutorial works with all Angular 6, 7, 8, 9, 10 and the new Angular 11 version.
 
-## Learn Navigation and Routing Using the Angular 11 Router With Example
+## Navigation and Routing Using the Angular 11 Router With Example
 
-You'll learn about:
+Now let’s get started with Angular routing. In this section, we’ll learn the basic concepts behind routing in Angular 11. We’ll introduce the Angular Router and then we’ll proceed to create a simple single page application with Angular 11 that demonstrates the commonly used features of the router. 
+
+In more details, you’ll learn about:
 
 
+- How to create Angular projects using Angular CLI v11,
+- How to choose to have routing automatically setup and also how to manually add it in your project,
+- How to create Angular services and emulate a backend server that you can use to fetch data using `HttpClient`,
+- How to create Angular components,
+- How to add component routing in your application using the router.
 - How to import the necessary Angular built-in APIs to implement component routing and navigation,
 - How to create the routing module and import it in the main application module,
 - How to add routes to components,
@@ -52,18 +59,6 @@ These are the steps of first section:
 -    Step 8: Defining the Routes
 -    Step 10: Adding Navigation Links
 
-
-
-Now let’s get started with Angular routing. In this section, we’ll learn the basic concepts behind routing in Angular 11. We’ll introduce the Angular Router and then we’ll proceed to create a simple single page application with Angular 11 that demonstrates the commonly used features of the router. 
-
-In more details, you’ll learn about:
-
-
-- How to create Angular projects using Angular CLI v11,
-- How to choose to have routing automatically setup and also how to manually add it in your project,
-- How to create Angular services and emulate a backend server that you can use to fetch data using `HttpClient`,
-- How to create Angular components,
-- How to add component routing in your application using the router.
 
 ## Introducing the Angular Router 
 
@@ -709,7 +704,7 @@ Next, open the `src/app/product-list/product-list.component.html` file and add a
 {% endraw %}
 
 
-## Wrap-up
+### Wrap-up
 
 This is the end of this first section to learn Angular routing with Angular 11 (most of it is also valid for version 10 or previous versions). 
 
@@ -719,7 +714,7 @@ We have seen how you can automatically set up routing in your Angular 11 applica
   
 In the next section, we'll see how we can access route parameters in our components. 
 
-# Route Parameters with Snapshot and ParamMap
+## Route Parameters with Snapshot and ParamMap
 
 In this section, we're going to see how to handle route parameters with Angular 11 Router example using different methods: Snapshot and ParamMap Observable.
 
@@ -730,7 +725,7 @@ Angular provides a powerful router library that allows developers to implement a
 - Child routes,
 - Auxiliary routes etc.
 
-## Handling Route Parameters with Angular 11
+### Handling Route Parameters with Angular 11
  
 In the previous [tutorial](https://www.techiediaries.com/angular-router), we have created a basic routing between components with the Angular Router. In this tutorial we're going to see how to handle route parameters in Angular 11.
 
@@ -767,7 +762,7 @@ export class ProductDetailComponent implements OnInit {
 }
 ```  
 
-## An Angular Route with a Parameter Example
+### An Angular Route with a Parameter Example
 
 In the previous tutorial, we've added this route object in our router configuration:
 
@@ -779,14 +774,14 @@ The `:id` placeholder (called dynamic router parameter) means that the `ProductD
 
 The Angular Router will also allow you to retrieve the value of `:id` from the activated component (i.e in this case `ProductDetailComponent` ) so let's see how?
 
-## How to Get Route Parameters
+### How to Get Route Parameters
 
 The Angular Router provides two different methods to get route parameters:
 
 - Using the route snapshot,
 - Using Router Observables
 
-## Navigation Using The RouterLink Directive with Parameters
+### Navigation Using The RouterLink Directive with Parameters
 
 Open `src/app/product-list/product-list.component.html` then change the list of products to use anchor tags with the `routerLink` directive to be able to navigate the `ProductDetailComponent` component.
 
@@ -849,15 +844,15 @@ You can also use the *snapshot* object of the `ActivatedRoute` instance: `this.r
   }
 ```  
 
-## Wrap-up
+### Wrap-up
 
 The Angular Router allows you to easily retrieve parameters from the URL which is an essential functionality that is required by most web applications. You can use both ways: the `paramMap` observable or the snapshot way but the latter requires you to be careful when re-using components. 
 
-# The Angular 11 RouterLink, Navigate and NavigateByUrl
+## The Angular 11 RouterLink, Navigate and NavigateByUrl
 
 In the previous sections, we've seen how to use basic routing between components and how to handle route parameters using different methods. We've also seen how to use the `RouterLink` directive to create route links. This section continues from the previous section with the other methods to implement navigation.
 
-## RouterLink Example with Angular 11
+### RouterLink Example with Angular 11
 
 Let's give a second look at how we used the `RouterLink` directive in the previous tutorial(s). 
 
@@ -879,7 +874,7 @@ We then created a link with a parameter using:
 <a [routerLink]="['/product/',product.id]">{{product.name}}</a>
 ```
 
-## Navigating Programatically Using Angular 11 `Router.navigate()` and `Router.navigateByUrl()`
+### Navigating Programatically Using Angular 11 `Router.navigate()` and `Router.navigateByUrl()`
 
 The Angular 11 Router provides two methods that you can use to navigate to other components in your component class instead of using the `RouterLink` directive in the template. The two methods are `navigate()` and `navigateByUrl()` and they can be useful in multiple situations where you need to trigger navigation via code. They return a promise that resolves to true or false.
 
@@ -965,12 +960,11 @@ This is the whole template:
 <iframe src="https://codesandbox.io/embed/8p3r7o1q2" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 
-## Wrap-up
+### Wrap-up
 
 In this tutorial, we've seen different methods to implement navigation with the Angular 11 Router i.e using the `routerLink` directive with the anchor tags in components HTML template or using `Router.navigate()` and `Router.navigateByUrl()` methods in situations where you want to navigate in the component class. 
 
-# Named and Multiple Outlets (Auxiliary Routes) Example
-
+## Named and Multiple Outlets (Auxiliary Routes) Example
 
 In the previous sections, we've seen the basics of the Angular 11 Router. We've seen how to configure the Angular router and how to add routes. 
 
@@ -981,7 +975,7 @@ This is the application we'll be building:
 <iframe src="https://codesandbox.io/embed/github/techiediaries/angular-router-demo/tree/master/" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 
-## How to Create a Named Router Outlet?
+### How to Create a Named Router Outlet?
 
 You can create a named Router outlet using the *name* property of the `<router-outlet>` component:
 
@@ -989,7 +983,7 @@ You can create a named Router outlet using the *name* property of the `<router-o
 <router-outlet  name="outlet1"></router-outlet>
 ```
 
-## How to Create Multiple Router-Outlets?
+### How to Create Multiple Router-Outlets?
 
 You can have multiple outlets in the same template:
 
@@ -1001,7 +995,7 @@ You can have multiple outlets in the same template:
 - The unnamed outlet is the primary outlet. 
 - Except for the primary outlet, all other outlets must have a name.
 
-## Adding Multiple Outlets to Our Demo Application
+### Adding Multiple Outlets to Our Demo Application
 
 First, you can get the source of our previous example from this [repository](https://github.com/techiediaries/angular-router-demo).
  
@@ -1051,7 +1045,7 @@ Or also using the `routerLink` directive
 </a>
 ```
 
-## Primary and Auxiliary Angular 11 Router Outlets by Example
+### Primary and Auxiliary Angular 11 Router Outlets by Example
 
 So let's say, we want to render a different sidebar component when the user navigates to the `/products` URL. This way, the `ProductListComponent` will be rendered in the primary outlet and in the same time the `ProductListSidebarComponent` will be rendered in the auxiliary sidebar outlet. 
 
@@ -1101,13 +1095,13 @@ This says, when the user clicks on the *Products List* link. Both routes with th
 
 You need to specify all the outlets where you want the navigation to take place including the primary outlet.
 
-## Wrap-up
+### Wrap-up
  
 By having primary and auxiliary named outlets, you can implement advanced scenarios by independently rendering multiple components in the same time. 
 
 In this section, we have learned how to use named and multiple Router-Outlets and auxiliary routes in Angular 11.
 
-# Resolve & Route Resolvers Example"
+## Resolve & Route Resolvers Example
 
 The Angular 11 Router provides a `resolve` property that takes a route resolver and allows your application to fetch data before navigating to the route (i.e resolving route data). 
 
@@ -1140,7 +1134,7 @@ We then create an `APIResolver` class that implements the `Resolve<any>` interfa
 In the constructor of the resolver we inject our `APIService` as `apiService` and we call the `getItems()` method of the service in the `resolve()` method that should be defined in any resolver
 
 
-## Accessing the Route Parameters in the Resolver
+### Accessing the Route Parameters in the Resolver
 
 Often than not when resolving route data, you want to get access to the parameters of the route in the resolver. You can do that using the `ActivatedRouteSnapshot` class. For example, let's suppose our route has a `date` parameter that needs to be passed to the `getItems(date)` method:
 
@@ -1164,7 +1158,7 @@ export class APIResolver implements Resolve<any> {
 
 We import the `ActivatedRouteSnapshot` class from the `@angular/router` package and we provide a paramater `route` of type `ActivatedRouteSnapshot` to the `resolve()` method. Finally we use `route.params.date` to get the value of the `date` parameter.
 
-## Passing the Route Resolver to the Angular 11 Router
+### Passing the Route Resolver to the Angular 11 Router
 
 
 One final thing you need to do is to pass the resolver we created to `resolve` property of the corresponding route in the `Routes` array of your Angular routing module:
@@ -1177,15 +1171,15 @@ One final thing you need to do is to pass the resolver we created to `resolve` p
 }
 ```
 
-## Wrap-up
+### Wrap-up
 
 In this tutorial, we've seen how to resolve data using the `resolve` property and the route resolver (`Resolve`) of the Angular 11 router.
 
-# Route Animations by Example
+## Route Animations by Example
 
 The Angular 11 Router supports adding animations when navigating between different routes in your application. In this tutorial, we'll learn how to use the Angular’s animations API to play animations when a route changes in your application.
 
-## Creating an Angular 11 Project
+### Creating an Angular 11 Project
 
 In this tutorial we assume you already have Angular CLI 11 installed. You can then generate a project using the following command from your terminal:
 
@@ -1201,7 +1195,7 @@ $ ng g c detail
 ```
 
 
-## Adding Angular 11 Routes
+### Adding Angular 11 Routes
 
 Next, you need to add routes to the created Angular 11 components in your routing module `app-routing.module.ts`:
 
@@ -1247,7 +1241,7 @@ The `routerLink` directive is used to create links to paths defined in the routi
 
 The `<router-outlet>` is where the Angular router inserts the component(s) matching the current route.
 
-## Adding the Angular Animations Module: `BrowserAnimationsModule`
+### Adding the Angular Animations Module: `BrowserAnimationsModule`
 
 Before we can create routing animations, we need to import the animations module in the main application module:
 
@@ -1271,7 +1265,7 @@ import { DetailComponent } from './detail/detail.component';
 export class AppModule { }
 ```
 
-## Defining and Registering Angular Router Animations
+### Defining and Registering Angular Router Animations
 
 In `app.component.ts` you need to define your animation and register in the `animations` array of the component:
 
@@ -1329,7 +1323,7 @@ We can also spcifiy any number of transitions since the second paramter of the `
 
 Next we create a `group([])` of `query()` methods  to query for any components that are entering or leaving the DOM and apply styles and animations to the `:enter` and `:leave` states which creates fade in and fade out effects.  
 
-## Applying the Animation on the Router Outlet
+### Applying the Animation on the Router Outlet
 
 After defining the `myAnimation` animation we need to apply it to our router outlet
 
@@ -1341,13 +1335,13 @@ After defining the `myAnimation` animation we need to apply it to our router out
 
 We use a template reference to create a reference to the router outlet `#o="outlet"`. This is useful for knowing when the router outlet is active so we can trigger the animation.
 
-## Wrap-up
+### Wrap-up
 
 In this quick section, we've seen how to define and trigger animations when navigating between routes in Angular 11 applications. 
 
 You can find the code in this [repository](https://github.com/techiediaries/angular-router-demo).
 
-# Example 2: Path Redirection and Handling 404 Paths Using Router Wildcard Routes
+## Example 2: Path Redirection and Handling 404 Paths Using Router Wildcard Routes
  
 In this example, we'll see how to redirect users to a new URL path or component using the Angular 11 router and how to deal with not found pages and redirect to a 404 component if no match is found using wildcard paths.
 
@@ -1364,7 +1358,7 @@ When you create your project with Angular CLI, you will be prompted if **Would y
 
 Otherwise, you will need to set up routing manually.
 
-## Step 1 – Setting up routing in your Angular app
+### Step 1 – Setting up routing in your Angular app
 
 Before seeing how to redirect users to new paths or components, we first need to set up routing in our Angular 11 project.
 
@@ -1394,7 +1388,7 @@ export class AppRoutingModule { }
 
 This is a typical Angular module and we need to add routing configuration to it.
 
-## Step 2 - Adding routing configuration
+### Step 2 - Adding routing configuration
 
 Let's now add the router configuration to the routing module. Start by importing `Routes` and `RouterModule ` from  `@angular/router` as follows:
 
@@ -1427,7 +1421,7 @@ Next, you need to add the router outlet to the app template. Open the `src/app/a
 
 That's it we have configured the router in our Angular 11 project.
 
-## Step 3 – Adding components to the router
+### Step 3 – Adding components to the router
 
 Next, before see an exampe of how to redirect users to new paths or components, we need one or more components in our project. Head to your command-line interface and run the following commands:
 
@@ -1459,7 +1453,7 @@ const routes: Routes = [
 
 So now if you visit the `/home` path you should go to home component and if you visit the `/about` path you should go to the about component.
 
-## Step 4 - Redirect the empty path to the home path
+### Step 4 - Redirect the empty path to the home path
 
 Now that we have added routing to the home and about components, let's see how to redirect users to the `/home` path when they first visit our app from the empty path.
 
@@ -1476,7 +1470,7 @@ const routes: Routes = [
 
 Internally, the router uses a function called [applyRedirects](https://github.com/angular/angular/blob/master/packages/router/src/apply_redirects.ts#L56) to process redirects.
 
-## Step 5 - Handle 404 (not found pages) using wildcard paths
+### Step 5 - Handle 404 (not found pages) using wildcard paths
 
 Now, let's see ho to handle 404 not found page in Angular. Head back to your terminal and run the following command to generate a not found component:
 
@@ -1503,11 +1497,11 @@ import { NotFoundComponent } from './notfound/notfound.component';
 
 We use the wildcard path denoted by `**` to catch any non existing routes and we use the `redirectTo` property to redirect them to the `/404` path which maps to the not found component.
 
-## Wrap-up
+### Wrap-up
 
 In this section, we've seen by example how to redirect users to different paths in your Angular app and how to handle 404 not found or invalid paths using wildcard paths.
 
-# Angular Router by Example with Parameters and Guards
+## Angular Router by Example with Parameters and Guards
 
 Angular provides a powerful router for creating apps with multiple views, parameters, guards, and navigation etc. In this tutorial, we'll see how to implement routing by example in Angular 11 but this also valid for previous versions such as Angular 7/8.
 
@@ -1527,7 +1521,7 @@ First, you need to have a few prerequisites if you intend to follow this tutoria
 
 
 
-## Step 1: Setting up Angular Routing 
+### Step 1: Setting up Angular Routing 
 
 Starting with Angular 7, the CLI will allow to automatically set up routing without the hassle of creating and configuring a routing module.
 
@@ -1550,7 +1544,7 @@ $ ng serve
 
 You can access your app from the `http://localhost:4200` address using your web browser.
 
-## Step 2: Adding Multiple Views/Pages or Configuring Angular Routes
+### Step 2: Adding Multiple Views/Pages or Configuring Angular Routes
 
 Now that you have routing set up, you can add multiple pages or views with navigation.
 
@@ -1610,7 +1604,7 @@ After adding the router outlet to the app component, it's can now be referred to
 You can add any navigation or static parts of your UI in the app shell. Let's, for example, add a navigation menu!
 
 
-## Step 3: Adding Navigation in Angular 11
+### Step 3: Adding Navigation in Angular 11
 
 Open the `src/app/app.component.html` file and add the following markup on top of the `<router-outlet>` directive:
 
@@ -1629,7 +1623,7 @@ In HTML, we use the href attribute of `<a>` elements to specif the target path b
 This directive takes the path associated with the component to navigate to.
 
 
-## Step 4: Using Angular Route Parameters
+### Step 4: Using Angular Route Parameters
 
 More often than not, we need to use routes with parameters in our application.
 
@@ -1694,7 +1688,7 @@ ngOnInit() {
 }
 ```
 
-## Step 5: Using Angular Route Guards
+### Step 5: Using Angular Route Guards
 
 Angular Router enables us to protect/guard routes from user navigation using route guards.
 
@@ -1727,11 +1721,11 @@ const routes: Routes = [
 
 We import the guard class and we apply it to all the routes using the `canActivate` property.
 
-## Wrap-up
+### Wrap-up
 
 In this section, we have seen how to automatically set up routing with Angular 11 with the basics of the router.
 
-# Lazy Loading Modules Tutorial (loadChildren() Example)
+## Lazy Loading Modules Tutorial (loadChildren() Example)
 
 In this section, we'll see by example how to lazy loading components using feature modules and the `loadChildren()` method. 
 
@@ -1740,7 +1734,7 @@ Lazy loading modules in Angular allows applications to load modules only when th
 To add lazy loading in your Angular 11 application you need to set up routing to use the `loadChildren()` method and add components that you want to lazy-load inside feature modules i.e outside the main application module `app-main.module.ts`.
 
 
-## Creating a Feature Module
+### Creating a Feature Module
 
 We now need to create a feature module using the following command:
 
@@ -1758,7 +1752,7 @@ $ ng g c lazymodule/component3
 
 These commands will generate three components inside the *lazymodule* module.
 
-## Using `loadChildren()` 
+### Using `loadChildren()` 
 
 In the main routing file `app-routing.module.ts`, you need to use the `loadChildren()` method to lazy load the feature module:
 
@@ -1779,7 +1773,7 @@ export class AppRoutingModule { }
 
 The `loadChildren()` method takes the path to the module, appended to `#` appended to the module’s class name.
 
-## Routing Components Inside the Feature Module
+### Routing Components Inside the Feature Module
 
 ```ts
 import { NgModule } from '@angular/core';
@@ -1809,6 +1803,6 @@ export class LazyModuleModule {}
 
 In the feature module, we include the routes with RouterModule's `forChild()` method instead of the `forRoot()` method.
 
-## Wrap-up
+### Wrap-up
 
 In this section, we've seen how to lazy load modules with Angular 11 router using feature modules and the `loadChildren()` method.
