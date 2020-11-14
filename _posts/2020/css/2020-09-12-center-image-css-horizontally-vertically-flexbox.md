@@ -4,6 +4,7 @@ title: "Centering Images Horizontally & Vertically in CSS With Flexbox"
 image: "images/content/css.png"
 excerpt: "In this article, we'll see how to center images in CSS both vertically and horizontally with Flexbox. We'll see how to center images inside flex div containers and then how to adjust that to the whole HTML page using viewport units" 
 tags : [css ]
+canonical: "https://www.techiediaries.com/css-centering/"
 author: kaima 
 ---
 

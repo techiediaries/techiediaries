@@ -4,6 +4,7 @@ title: "Center Text in CSS Horizontally and Vertically with Flexbox"
 image: "images/content/css.png"
 excerpt: "In this article, we'll learn how to center text in CSS horizontally and vertically with Flexbox" 
 tags : [css]
+canonical: "https://www.techiediaries.com/css-centering/"
 author: kaima 
 ---
 
