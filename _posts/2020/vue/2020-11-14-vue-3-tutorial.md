@@ -1,6 +1,6 @@
 ---
 layout: bpost
-title: "Vue.js 3 Tutorial by Example: Create Vue 3 App, Components, Router & Composition API"
+title: "Vue.js 3 Tutorial by Example: Vue 3 App, Components, Props & Composition API"
 image: "images/content/vue.png"
 excerpt: "In this tutorial, we'll show you how to develop a simple app using the current version of Vue 3,  we'll particularly focus on the new features" 
 tags : [vuejs, vue-3] 
@@ -20,8 +20,9 @@ At the end of this tutorial, you will understand:
 4.  The changes made to the Global Vue API and the introduction of the `createApp` method.
 5.  The changes made to the Events API and the removal of `$on`, `$off`, and `$once`.
 6.  You no longer can use `$refs` to access DOM elements.
+7.  Vue 3 component props.
 
-We'll also show you how to develop apps using the current version of Vue 3, we'll particularly focus on the new features.
+We'll also show you how to develop apps using the current version of Vue 3, we'll particularly focus on the new features including components and props.
 
 You'll see how you can pass data from a parent component down to a deeply nested child component using the `provide / inject` pair. We'll also look at how we can reposition and transfer components from one point in our app to another using Teleport and how to use the multi-root node component. Finally, we learn about the changes made to the Events API and Global API including `createApp`, `$on`, `$off`, and `$once`.
 
@@ -61,6 +62,32 @@ In more details, these are some of the new features of Vue 3:
 11. Hooks API (experimental),
 12. Time Slicing Support (experimental), 
 13. provide / inject, etc.
+
+### Vue 3 Props 
+
+Props are necessary for any Vue application as they alow you to pass data between components. Props are simply attributes that we need to register on a component to pass data from a parent component to its children. 
+
+Since props let us to share data between components, it allows you to organize our Vue apps and components in a modular way. 
+
+In Vue 3, we can access props inside components in a different way than Vue 2.
+
+In Vue 2, a component’s props are simply part of the `this` object and can be accessed by using `this.propName`. However with the introduction of the `setup()` method in Vue 3 components, `this` does not contain the properties that it used to contain in Vue 2.
+
+So how do we use Vue 3 props without `this`?
+
+Fortunately for us, it's easy! The setup method accepts two arguments
+
+- context, which is an object that contains specific properties that used to be found on `this`
+- props, which is an object that contains the component’s props
+
+This props object is what we need to use to access our props. All we need to do is `props.propName` – without the `this` variable:
+
+```js
+setup (context, props) {
+    // context has attrs, slots, and emit() 
+    console.log(props.propName) // access a prop in our component
+}
+```
 
 ### `provide / inject`
 
