@@ -10,21 +10,25 @@ Vue.js 3 is the latest version of Vue which was re-written from scratch with Typ
 
 Vue 3 is available for use in production at the current time so you can use the new version to learn about its new features.
 
-Now that Vue 3 is released, developers need to upgrade from Vue 2 as it provides with many new features that are super handy when building readable and maintainable components, and better ways to structure Vue applications. We’ll be taking a look at some of these features in this tutorial.
+Now that Vue 3 is released, developers need to upgrade from Vue 2 as it provides many new features that are super handy when building readable and maintainable components, and better ways to structure Vue applications. We’ll be taking a look at some of these features in this tutorial.
 
 At the end of this tutorial, you will understand:
 
 1.  The `provide / inject` pair and how to use it.
 2.  Teleport and how to use it.
 3.  Fragments and how to start using them.
-4.  The changes made to the Global Vue API.
-5.  The changes made to the Events API.
+4.  The changes made to the Global Vue API and the introduction of the `createApp` method.
+5.  The changes made to the Events API and the removal of `$on`, `$off`, and `$once`.
+6.  You no longer can use `$refs` to access DOM elements.
 
 We'll also show you how to develop apps using the current version of Vue 3, we'll particularly focus on the new features.
 
-we'll see how you can pass data from a parent component down to a deeply nested child component using the `provide / inject` pair. We'll also look at how we can reposition and transfer components from one point in our app to another using Teleport and how to use the multi-root node component. Finally, we also learn about the changes made to the Events API and Global API including `createApp`, `$on`, `$off`, and `$once`.
+You'll see how you can pass data from a parent component down to a deeply nested child component using the `provide / inject` pair. We'll also look at how we can reposition and transfer components from one point in our app to another using Teleport and how to use the multi-root node component. Finally, we learn about the changes made to the Events API and Global API including `createApp`, `$on`, `$off`, and `$once`.
 
-Throughout this tutorial sections, you will learn how to use Vue 3 and the Composition API and the router to build your web application examples. We'll also learn about the `ref()` function and how to create reactive state using the `reactive()` function in Vue 3, which can be used to define reactive variables, and then we'll learn about the `setup()` method introduced as a part of the Composition API added in Vue 3 as an alternative to the Options API. 
+Throughout this tutorial sections, you will learn how to use Vue 3 and the Composition API to build your web application examples. We'll also learn about the `ref()` function and how to create reactive state using the `reactive()` function in Vue 3, which can be used to define reactive variables, and then we'll learn about the `setup()` method introduced as a part of the Composition API added in Vue 3 as an alternative to the Options API. 
+
+If you have already used Vue 2 `$refs` and wonder how to use `$refs` inside the new `setup()` method. You'll learn how to use the new `ref()` function as an alternative for static and dynamic HTML element references.
+
 
 The Composition API allows you to write and organize components in a Vue 3 application following a reactive approach. The Vue Composition API will help you to build a more scalable application.
 
@@ -145,6 +149,42 @@ this.$eventBus.$emit('message', 'Hello')
 
 ```
 With Vue 3, you can't do this anymore because `$on`, `$off`, and `$once` are all removed but `$emit` is still available because it's needed by children component to emit events to their parent components. You can use `provide / inject` or any of the recommended [third-party libraries](https://v3.vuejs.org/guide/migration/events-api.html#migration-strategy) instead of the events API.
+
+
+
+## Using `$refs` to Access DOM 
+
+When using the Vue 3 Composition API via the `setup()` method, you no longer can use `this.$refs`, instead, we can use the new `ref()` function as follows
+
+```html
+<script>
+import {
+  onMounted,
+  ref,
+} from 'vue';
+
+export default {
+  setup() {
+    const elRef = ref(null);
+    onMounted(() => {
+      console.log(elRef.value.textContent);
+    });
+
+    return {
+      // You need to return the ref,
+      // or it will not work.
+      elRef,
+    };
+  },
+};
+</script>
+
+<template>
+    <div ref="elRef">
+      Hello Vue 3
+    </div>
+</template>
+```
 
 ### Do you Need to Learn/Use Vue 2 or Vue 3 at this Time?
 
