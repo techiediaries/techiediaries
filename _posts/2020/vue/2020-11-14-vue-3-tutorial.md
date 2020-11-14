@@ -10,13 +10,26 @@ Vue.js 3 is the latest version of Vue which was re-written from scratch with Typ
 
 Vue 3 is available for use in production at the current time so you can use the new version to learn about its new features.
 
-In this tutorial, we'll show you how to develop apps using the current version of Vue 3, we'll particularly focus on the new features.
+Now that Vue 3 is released, developers need to upgrade from Vue 2 as it provides with many new features that are super handy when building readable and maintainable components, and better ways to structure Vue applications. We’ll be taking a look at some of these features in this tutorial.
 
-Throughout this tutorial sections, you will learn how to use Vue 3 and the Composition API and the router to build your web application examples. We'll also learn about the `ref()` function in Vue 3. In Vue 3, you can use the `ref()` function to define a reactive variable and then we'll learn about the `setup()` method in Vue 3.
+At the end of this tutorial, you will understand:
 
-The Composition API is introduced in Vue 3 as an alternative to the Options API. We'll learn how to create reactive state using the `reactive()` function. We’ll be learning how to create a shopping list application with Vue 3 and the Vue Composition API.
- 
+1.  The `provide / inject` pair and how to use it.
+2.  Teleport and how to use it.
+3.  Fragments and how to start using them.
+4.  The changes made to the Global Vue API.
+5.  The changes made to the Events API.
+
+We'll also show you how to develop apps using the current version of Vue 3, we'll particularly focus on the new features.
+
+we'll see how you can pass data from a parent component down to a deeply nested child component using the `provide / inject` pair. We'll also look at how we can reposition and transfer components from one point in our app to another using Teleport and how to use the multi-root node component. Finally, we also learn about the changes made to the Events API and Global API including `createApp`, `$on`, `$off`, and `$once`.
+
+Throughout this tutorial sections, you will learn how to use Vue 3 and the Composition API and the router to build your web application examples. We'll also learn about the `ref()` function and how to create reactive state using the `reactive()` function in Vue 3, which can be used to define reactive variables, and then we'll learn about the `setup()` method introduced as a part of the Composition API added in Vue 3 as an alternative to the Options API. 
+
 The Composition API allows you to write and organize components in a Vue 3 application following a reactive approach. The Vue Composition API will help you to build a more scalable application.
+
+We’ll be learning how to create a shopping list application with Vue 3 and the Vue Composition API.
+ 
 
 ## What's Vue 3 and Its New Features
 
@@ -34,20 +47,112 @@ In more details, these are some of the new features of Vue 3:
 
 1. Class-based components and ES2015 classes,
 2. Fragments, which allows you to have components with multiple root nodes,
-3. Portals, which allows you to render content outside of Vue’s mount element,
+3. TelePort, which allows you to render content outside of Vue’s mount element,
 4. The Composition API, which is similar to React Hooks, a new syntax that allows you to use functions for organizing your code by feature not operation, 
-6. TypeScript support, Vue 3 is built-in TypeScript and allows you to optionally use TS for development.
-7. Modularity
-8. Virtual DOM rewrite for faster performance
-9. Slots Generation optimization (separate rendering for parent & child components)
-10. Static props hoisting
-11. Hooks API (experimental)
-12. Time Slicing Support (experimental)
+6. TypeScript support, Vue 3 is built-in TypeScript and allows you to optionally use TS for development,
+7. Modularity,
+8. Virtual DOM rewrite for faster performance,
+9. Slots Generation optimization (separate rendering for parent & child components),
+10. Static props hoisting,
+11. Hooks API (experimental),
+12. Time Slicing Support (experimental), 
+13. provide / inject, etc.
+
+### `provide / inject`
+
+In Vue 2, we used [`props`](https://v3.vuejs.org/guide/component-props.html) for passing data such as string, arrays, objects, and so on from a parent component directly to its children component. But in many cases, we also need to pass data from the parent component to a deeply nested child component which was, not so appropriate, to do with `props` since we'll have to pass data to many intermediate components that don't actually need them. Developers resorted to more advanced patterns such as Vuex Store and Event Hub, and to avoid passing data through the deeply nested components. 
+
+Thanks to the new Vue 3, we can now pass data efficiently using the new Provide and inject pair. We can use `provide` as a function or an object to make data available from a parent component to any of its nested component. We make use of the object form when passing hard-coded values to `provide` like this:
 
 
-### Do you Need to Learn Vue 2 or Vue 3 at this Time?
+### Teleport
+
+In some cases, where we need to create Vue components and define them in one part of our application but they are actually intended to be displayed in another part of our application. Think for example of a modal or a popup which need to cover the whole view port. Thanks to Vue 3 Teleport, we don't need to use CSS’s `position` property anymore for implementing this type of requirements.
+
+Teleport is a new feature that makes it easy to display a component outside its default position i.e the `#app` container where Vue apps are usually wrapped. You can, for example, use Teleport to display a header component outside the `#app` div. Please note that you can only Teleport to elements that exisit outside of the Vue DOM.
+
+You need to provide two props to the Teleport component:
+
+1.  `to`: In this prop, you can pass a class `name`, an `id`, an element or a `data-*` attribute. We can also make this value dynamic by passing a `:to` prop as opposed to `to` and change the Teleport element dynamically.
+2.  `:disabled`: In this prop, we pass a `Boolean` value and can be used to toggle the Teleport feature on an element or component. This can be useful for dynamically changing the position of an element.
+
+### Fragments
+
+One of the issues developers have always faced with Vue 2, was adding multiple root elements in the `template` of components and as a workaround, they wrap all elements in a parent element. While this is not a big issue, there are cases where you want to render a component without a container that wraps such the root elements.
+
+With Vue 3, we have a new feature called Fragments that enables developers to add multiple elements as roots in the template. 
+
+### Global API and `createApp`
+
+In Vue 2, it was not possible to isolate some functionalities to one instance of your app (if you have more than one instance in your app) without it affecting other apps because they are all mounted on Vue. For example:
+
+```javascript
+Vue.directive('directive1', {
+    /* ... */
+})
+
+Vue.mixin({
+  /* ... */
+})
+
+const app1 = new Vue({ el: '#app1' })
+const app2 = new Vue({ el: '#app2' })
+```
+
+
+In this code, you can't, for example, have the [Vue Directive](https://v3.vuejs.org/guide/custom-directive.html) associated with `app1` and the Mixin with `app2` but instead, they’re both available in the two apps.
+
+Vue 3 provides a new Global API to solve this type of problems, called `createApp`. This method returns a new instance of a Vue app. Now, all APIs such as components, mixins, directives, and `use`, that mutate `Vue` are available within separate app instances and each instance of your Vue app can have functionalities that are unique to them without affecting other existing apps.
+
+We can rewrite the previous code as follows:
+
+```javascript
+const app1 = createApp({})
+const app2 = createApp({})
+app1.directive('directive1', {
+    /* ... */
+})
+app2.mixin({
+    /* ... */
+})
+```
+
+You can also add functionalities that you want to share among all your apps using a [factory function](https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1#:~:text=A%20factory%20function%20is%20any,keyword%2C%20it's%20a%20factory%20function.).
+
+
+
+### Events API: `$on`, `$off`, and `$once` Are Removed
+
+In Vue 2, developers used the events API for passing data between components that don’t share a parent/child relationship ( along the [Vuex Store](https://vuex.vuejs.org/)) via Event Bus. This is how you can easily do that. First, you need to create an `eventBus.js` file with the following code:
+
+```javascript
+const eventBus = new Vue()
+export default eventBus;
+```
+
+Next, you need to import this file in  `main.js` to make it globally available in your app:
+
+```javascript
+import eventBus from 'eventBus'
+Vue.prototype.$eventBus = eventBus
+```
+
+Now, you can emit events and listen for emitted events like this;
+
+```javascript
+this.$eventBus.$on('alert', alertMe)
+this.$eventBus.$emit('message', 'Hello')
+
+```
+With Vue 3, you can't do this anymore because `$on`, `$off`, and `$once` are all removed but `$emit` is still available because it's needed by children component to emit events to their parent components. You can use `provide / inject` or any of the recommended [third-party libraries](https://v3.vuejs.org/guide/migration/events-api.html#migration-strategy) instead of the events API.
+
+### Do you Need to Learn/Use Vue 2 or Vue 3 at this Time?
 
 Since Vue 3 is released, you can start by learning it instead of Vue 2 because many new APIs are introduced or updated, most of the fundamental concepts and patterns of Vue 2 will still be available in Vue 3.
+
+Vue.js 3 itself is quite sol­id, and the first-par­ty pack­ages such as Vue Router are updated by the Vue team but for third par­ty pack­ages, they may take some  for get­ting updat­ed for Vue 3.
+
+So using Vue 3 now depends on how much you rely on those third par­ty packages.
 
 This is what you'll learn by following this tutorial:
 
@@ -114,11 +219,11 @@ Using the new  `createApp` method  we create  a new app instance that will not b
 Learn more:  [Global API change RFC](https://github.com/vuejs/rfcs/blob/master/active-rfcs/0009-global-api-change.md).
 
 
-### Create a Vue 3 Project with Vue CLI and The `vue-next` plugin
+### Create a Vue 3 Project from Vue 2 and The `vue-next` plugin
 
 Now, let's see a second way that you can use to create a Vue 3 project at this time by using Vue CLI with the `vue-next` plugin.
 
-First, open a new terminal and install the latest version of Angular CLI if it's not yet installed in your development machine:
+First, open a new terminal and install the latest version of Vue CLI if it's not yet installed in your development machine:
 
 ```bash
 $ npm install --global @vue/cli
@@ -166,6 +271,44 @@ $ npm run serve
 ```
 
 Throughout this tutorial, you will learn to create your first Vue 3 component. You also see how to use the [component `setup`](https://www.techiediaries.com/vue-3-setup/) method.
+
+
+## Creating a Vue 3 App with Vue CLI v4.5+
+
+Now that Vue 3 os officially released, we can use Vue CLI to create a Vue 3 application but we first need to install Vue CLI which is the official tool for initializing Vue projects.
+
+Before that, you'll need to have Node.js and npm installed on your development machine which can be installed by following one of these methods: 
+
+-   Visit the [official website](https://nodejs.org) and get the installers for your operating system.
+-   Use the official package manager for your system.
+-   Use a Node version manager similar to [NVM](https://github.com/nvm-sh/nvm) which will help you manage [multiple versions of Node](https://www.shabang.dev/multiple-versions-node-nvm/) on your system.
+
+Now, go to a new terminal and run the following command:
+
+```bash
+$ npm install -g @vue/cli
+```
+
+>Note: If, you get prompted to add `sudo` to your command in macOS or Ubuntu, or need to use a CMD prompt with administrator access in Windows to install your package globally, you simply need to fix your npm permissions. Visit the npm website for [instructions](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally), or simply use a version manager like NVM to avoid these configurations.
+
+The `npm install` command will install `vue/cli` v4.5.8 at the time of writing this article.
+
+Next, we can initialize a new Vue 3 application using the following command:
+
+```bash
+$ vue create vue3demo
+```
+
+You'll be prompted to select a preset, select `Default (Vue 3 Preview) ([Vue 3] babel, eslint)`.
+
+Wait for the CLI to create your project's files and install the dependencies from npm, then navigate to your project's folder and run the development server using the following commands:
+
+```bash
+$ cd vue3demo
+$ npm run serve
+```
+ 
+Open your web browser and go to [http://localhost:8080/](http://localhost:8080/) to see your Vue 3 app running.
 
 
 ## Understanding Vue 3 Ref for Reactive Variables
@@ -275,19 +418,7 @@ In order to follow this tutorial, you are going to need:
 
 ## Step 1 — Installing Vue CLI 4
 
-Let's start by installing Vue CLI 4 in our local development machine.
-
-Open a command line interface and run the following command:
-
-```bash
-$ npm i -g vue-cli
-```
-
-After installing the CLI. If you run the `vue --version` command, you should get the following output:
-
-```bash
-@vue/cli 4.5.2
-```
+Let's start by installing Vue CLI 4 in our local development machine. Refer to the previous section titled "Creating a Vue 3 App with Vue CLI v4.5+".
 
 ## Step 2 — Creating a New Vue 3 Project
 
@@ -361,9 +492,9 @@ export default {
 </script>
 ```
 
-We first import `ref` and `computed` from vue3, next we define the `setup` function. In the `setup` function of the component, we define two reactive variables and two functions for generating a random value and add it to the array and initialize the array.
+We first import `ref` and `computed` from vue, next we define the `setup` function. In the `setup` function of the component, we define two reactive variables and two functions for generating a random value and add it to the array and initialize the array.
 
-Next, we define a computed function for calaculating the total of the renadom values. Finally, we return all the defined variables and functions,   from the component's `setup` method, that we need to reference from the component's template.
+Next, we define a computed function for calculating the total of the renadom values. Finally, we return all the defined variables and functions, from the component's `setup` method, that we need to reference from the component's template.
 
 >If setup returns an object, the properties on the object can be accessed in the component's template. [The Vue 3 docs](https://v3.vuejs.org/guide/composition-api-setup.html)
 
@@ -447,19 +578,12 @@ In order to follow this tutorial step by step on your development machine, you a
 
 ## Step 1 — Installing Vue CLI 4
 
-Let's start by installing Vue CLI 4 in our local development machine.
-
-Open a command line interface and run the following command:
-
-```bash
-$ npm i -g vue-cli
-
-```
+Let's start by installing Vue CLI 4 in our local development machine. Refer to the previous section titled "Creating a Vue 3 App with Vue CLI v4.5+".
 
 After installing the CLI. If you run the `vue --version` command, you should get the following output:
 
 ```bash
-@vue/cli 4.5.2
+@vue/cli 4.5.8
 ```
 
 ## Step 2 — Creating a New Vue 3 Project
@@ -556,7 +680,7 @@ ul li {
 </style>
 ```
 
-Next, we need to import our shopping list component from the `ShoppingList.vue` file  in our  `App.vue` file  as follows:
+Next, we need to import our shopping list component from the `ShoppingList.vue` file  in our  `App.vue` file as follows:
 
 ```markup
 <template>
@@ -868,6 +992,14 @@ We have seen how the Vue 3 router works by example, but you don't need to go thr
 
 When you create a Vue project, simply “Manually select features” when prompted to select a preset then make sure to check “Router“ when prompted to select the features needed for your project. This will instruct the CLI to install Vue Router inside your Vue 3 app and add the code we've seen before for creating and configuring a router instance. You simply need to add your routes inside the `routes` array. 
 
+### References
+
+-   [Using Multiple Teleports On The Same Target](https://v3.vuejs.org/guide/teleport.html#using-multiple-teleports-on-the-same-target), Vue.js Docs
+-   [Non-Prop Attributes](https://v3.vuejs.org/guide/component-attrs.html#non-prop-attributes), Vue.js Docs
+-   [Working With Reactivity](https://v3.vuejs.org/guide/component-provide-inject.html#working-with-reactivity), Vue.js Docs
+-   [`teleport`](https://v3.vuejs.org/api/built-in-components.html#teleport), Vue.js Docs
+-   [Fragments](https://v3.vuejs.org/guide/migration/fragments.html), Vue.js Docs
+-   [2.x Syntax](https://v3.vuejs.org/guide/migration/events-api.html#_2-x-syntax), Vue.js Docs
 
 
 
