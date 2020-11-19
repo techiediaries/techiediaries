@@ -33,6 +33,7 @@ Throughout this book, we’ll build a full-stack web application with an Angular
 6.  Debug Angular app using the Ivy runtime
 
 ### CHAPTER 2:  Setting up GraphQL with Node.js/Express.js and Apollo  
+
 After setting up the development environment, installing Node.js, and initializing the Angular front-end project using the CLI, we'll next need to set up a Node.js server with GraphQL support to implement the back-end. In this chapter, we'll explain how to install Express.js and configure it with TypeScript and GraphQL. We’ll add routing, static assets and cors. Finally, we'll learn how to test our GraphQL server and debug it using Postman, GraphiQL and Apollo DevTools..
 
 ### Main Chapter Headings
@@ -227,6 +228,6 @@ Now that we have tested our code back-end and front-end’ code. In this chapter
 
 Subscribe to our mailing list to be notified when the book is ready for purchase!
 
-<iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/64nF/GeD" width="100%"></iframe>
+<iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/64nF/GeD" width="100%" height="300px"></iframe>
 
 <script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
