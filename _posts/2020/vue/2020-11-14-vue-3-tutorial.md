@@ -51,7 +51,7 @@ According to Evan You, Vue 3 will be faster, smaller, more maintainable, and eas
 In more details, these are some of the new features of Vue 3:
 
 1. Class-based components and ES2015 classes,
-2. Fragments, which allows you to have components with multiple root nodes,
+2. Fragments, which allow you to have components with multiple root nodes,
 3. TelePort, which allows you to render content outside of Vue’s mount element,
 4. The Composition API, which is similar to React Hooks, a new syntax that allows you to use functions for organizing your code by feature not operation, 
 6. TypeScript support, Vue 3 is built-in TypeScript and allows you to optionally use TS for development,
@@ -63,11 +63,19 @@ In more details, these are some of the new features of Vue 3:
 12. Time Slicing Support (experimental), 
 13. provide / inject, etc.
 
+### Understanding Vue 3 Components
+
+Like most modern web development libraries and frameworks, Vue adopts a component-based approach to build apps where components are the building blocks of the application.
+
+A component controls a patch of the user interface and interacts with the other components in the application. 
+
+We'll learn how to scaffold a new Vue 3 project using the latest version of Vue CLI and create a Vue 3 component.
+
 ### Vue 3 Props 
 
 Props are necessary for any Vue application as they alow you to pass data between components. Props are simply attributes that we need to register on a component to pass data from a parent component to its children. 
 
-Since props let us to share data between components, it allows you to organize our Vue apps and components in a modular way. 
+Since props let us share data between components, it allows you to organize your Vue apps and components in a modular way. 
 
 In Vue 3, we can access props inside components in a different way than Vue 2.
 
@@ -75,7 +83,7 @@ In Vue 2, a component’s props are simply part of the `this` object and can be 
 
 So how do we use Vue 3 props without `this`?
 
-Fortunately for us, it's easy! The setup method accepts two arguments
+Fortunately for us, it's easy! The `setup` method accepts two arguments:
 
 - context, which is an object that contains specific properties that used to be found on `this`
 - props, which is an object that contains the component’s props
@@ -88,30 +96,6 @@ setup (context, props) {
     console.log(props.propName) // access a prop in our component
 }
 ```
-
-### `provide / inject`
-
-In Vue 2, we used [`props`](https://v3.vuejs.org/guide/component-props.html) for passing data such as string, arrays, objects, and so on from a parent component directly to its children component. But in many cases, we also need to pass data from the parent component to a deeply nested child component which was, not so appropriate, to do with `props` since we'll have to pass data to many intermediate components that don't actually need them. Developers resorted to more advanced patterns such as Vuex Store and Event Hub, and to avoid passing data through the deeply nested components. 
-
-Thanks to the new Vue 3, we can now pass data efficiently using the new Provide and inject pair. We can use `provide` as a function or an object to make data available from a parent component to any of its nested component. We make use of the object form when passing hard-coded values to `provide` like this:
-
-
-### Teleport
-
-In some cases, where we need to create Vue components and define them in one part of our application but they are actually intended to be displayed in another part of our application. Think for example of a modal or a popup which need to cover the whole view port. Thanks to Vue 3 Teleport, we don't need to use CSS’s `position` property anymore for implementing this type of requirements.
-
-Teleport is a new feature that makes it easy to display a component outside its default position i.e the `#app` container where Vue apps are usually wrapped. You can, for example, use Teleport to display a header component outside the `#app` div. Please note that you can only Teleport to elements that exisit outside of the Vue DOM.
-
-You need to provide two props to the Teleport component:
-
-1.  `to`: In this prop, you can pass a class `name`, an `id`, an element or a `data-*` attribute. We can also make this value dynamic by passing a `:to` prop as opposed to `to` and change the Teleport element dynamically.
-2.  `:disabled`: In this prop, we pass a `Boolean` value and can be used to toggle the Teleport feature on an element or component. This can be useful for dynamically changing the position of an element.
-
-### Fragments
-
-One of the issues developers have always faced with Vue 2, was adding multiple root elements in the `template` of components and as a workaround, they wrap all elements in a parent element. While this is not a big issue, there are cases where you want to render a component without a container that wraps such the root elements.
-
-With Vue 3, we have a new feature called Fragments that enables developers to add multiple elements as roots in the template. 
 
 ### Global API and `createApp`
 
@@ -150,7 +134,113 @@ app2.mixin({
 
 You can also add functionalities that you want to share among all your apps using a [factory function](https://medium.com/javascript-scene/javascript-factory-functions-with-es6-4d224591a8b1#:~:text=A%20factory%20function%20is%20any,keyword%2C%20it's%20a%20factory%20function.).
 
+### Understanding Vue 3 Setup Method
 
+In this example, we'll learn about the `setup()` method in Vue 3.
+
+
+#### What's the `Setup` Function in Vue 3?
+
+Vue 3 introduced the composition api as an alternative to the options api in Vue 2 for writing components.
+
+A Vue 3 component needs to have a `setup()` function which is a part the Composition API. This function will be executed before creating the component object. As a side effect, `this`, that refers to the component itself, is not available in the `setup()` function.
+
+#### Why Using the Vue 3 `Setup` Method?
+
+In the body of the `setup()` function, you can declare the data properties, computed methods, watch methods, and any required JS methods needed by the component. 
+
+It will then return an object containing all the public methods and data properties which you can then access from the component's template.
+
+### Understanding Vue 3 Ref for Reactive Variables
+
+In this section, we'll learn about the `ref()` function in Vue 3. In Vue 3, you can use the `ref()` function to define a reactive variable.
+
+#### Declaring Reactive Variables from Primitives
+
+Ref is used to declare reactive variables from primitive types such as:
+
+- String
+- Number
+- BigInt
+- Boolean
+- Symbol
+- Null
+- Undefined
+
+
+For example:
+
+```js
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const name = ref("");
+    const num = ref(1);
+    const bool = ref(true);
+    const n = ref(null);
+  }
+};
+```
+
+#### Vue 3 Ref Example
+
+Now, let's consider this Vue 3 component:
+
+```js
+<template>
+  <h1>{{ productName }}</h1>
+</template>
+
+<script>
+  import { ref } from "vue";
+
+  export default {
+    setup() {
+      const productName = ref("Product 001");
+
+      return { productName };
+    }
+  };
+</script>
+```
+
+The `ref()` function takes a value and returns a reactive and mutable ref object. 
+
+You can access or mutate the value of the ref object using the `.value` property but that's only inside the `setup()` method. In the corresponding template, you can use the name of the variable as usual i.e `productName` in our case. 
+
+Why don't you need to use the `productName.value` property in the template:
+
+```html
+<template>
+  <h1>{{ productName }}</h1>
+</template>
+```
+
+Simply because When a ref is returned as a property on the rendering context (i.e from the `setup()` method) in the template, it gets unwraped to the original primitive value.
+
+### `provide / inject`
+
+In Vue 2, we used [`props`](https://v3.vuejs.org/guide/component-props.html) for passing data – such as string, arrays, objects, and so on – from a parent component directly to its children component. But in many cases, we also need to pass data from the parent component to a deeply nested child component which is, not so appropriate, to do with `props` since we'll have to pass data to many intermediate components that don't actually need this data. Developers resorted to more advanced patterns such as Vuex Store and Event Hub, to avoid passing data through the deeply nested components. 
+
+Thanks to the new Vue 3, we can now pass data efficiently using the new Provide and inject pair. We can use `provide` as a function or an object to make data available from a parent component to any of its nested component. 
+
+### Teleport
+
+In some cases, where we need to create Vue components and define them in one part of our application but they are actually intended to be displayed in another part of our application. Think for example of a modal or a popup which need to cover the whole view port. Thanks to Vue 3 Teleport, we don't need to use CSS’s `position` property anymore for implementing this type of requirements.
+
+Teleport is a new feature that makes it easy to display a component outside its default position i.e the `#app` container where Vue apps are usually wrapped. You can, for example, use Teleport to display a header component outside the `#app` div. Please note that you can only Teleport to elements that exist outside of the Vue DOM.
+
+You need to provide two props to the Teleport component:
+
+1. `to`: In this prop, you can pass a class `name`, an `id`, an element or a `data-*` attribute. We can also make this value dynamic by passing a `:to` prop as opposed to `to` and change the Teleport element dynamically.
+2. `:disabled`: In this prop, we pass a `Boolean` value and can be used to toggle the Teleport feature on an element or component. This can be useful for dynamically changing the position of an element.
+
+### Fragments
+
+One of the issues developers have always faced with Vue 2, was adding multiple root elements in the `template` of components and as a workaround, they wrap all elements in a parent element. While this is not a big issue, there are cases where you want to render a component without a container that wraps the root elements.
+
+With Vue 3, we have a new feature called Fragments that enables developers to add multiple elements as roots in the template. 
 
 ### Events API: `$on`, `$off`, and `$once` Are Removed
 
@@ -173,15 +263,13 @@ Now, you can emit events and listen for emitted events like this;
 ```javascript
 this.$eventBus.$on('alert', alertMe)
 this.$eventBus.$emit('message', 'Hello')
-
 ```
+
 With Vue 3, you can't do this anymore because `$on`, `$off`, and `$once` are all removed but `$emit` is still available because it's needed by children component to emit events to their parent components. You can use `provide / inject` or any of the recommended [third-party libraries](https://v3.vuejs.org/guide/migration/events-api.html#migration-strategy) instead of the events API.
-
-
 
 ## Using `$refs` to Access DOM 
 
-When using the Vue 3 Composition API via the `setup()` method, you no longer can use `this.$refs`, instead, we can use the new `ref()` function as follows
+When using the Vue 3 Composition API via the `setup()` method, you no longer can use `this.$refs`, instead, we can use the new `ref()` function as follows:
 
 ```html
 <script>
@@ -217,7 +305,7 @@ export default {
 
 Since Vue 3 is released, you can start by learning it instead of Vue 2 because many new APIs are introduced or updated, most of the fundamental concepts and patterns of Vue 2 will still be available in Vue 3.
 
-Vue.js 3 itself is quite sol­id, and the first-par­ty pack­ages such as Vue Router are updated by the Vue team but for third par­ty pack­ages, they may take some  for get­ting updat­ed for Vue 3.
+Vue.js 3 itself is quite sol­id, and the first-par­ty pack­ages such as Vue Router are updated by the Vue team but for third par­ty pack­ages, they may take sometime  for get­ting updat­ed for Vue 3.
 
 So using Vue 3 now depends on how much you rely on those third par­ty packages.
 
@@ -281,7 +369,7 @@ Next, we need to call the  `mount`  method on the `app` instance and provide the
 app.mount("#app");
 ```
 
-Using the new  `createApp` method  we create  a new app instance that will not be polluted by any global configuration (plugins, mixins, prototype properties etc.)  applied to other instances. This particularly comes handy when writing unit tests to make each test isolated from the other.
+Using the new `createApp` method  we create  a new app instance that will not be polluted by any global configuration (plugins, mixins, prototype properties etc.)  applied to other instances. This particularly comes handy when writing unit tests to make each test isolated from the other.
 
 Learn more:  [Global API change RFC](https://github.com/vuejs/rfcs/blob/master/active-rfcs/0009-global-api-change.md).
 
@@ -376,103 +464,6 @@ $ npm run serve
 ```
  
 Open your web browser and go to [http://localhost:8080/](http://localhost:8080/) to see your Vue 3 app running.
-
-
-## Understanding Vue 3 Ref for Reactive Variables
-
-In this section, we'll learn about the `ref()` function in Vue 3. In Vue 3, you can use the `ref()` function to define a reactive variable.
-
-### Declaring Reactive Variables from Primitives
-
-Ref is used to declare reactive variables from primitive types such as:
-
-- String
-- Number
-- BigInt
-- Boolean
-- Symbol
-- Null
-- Undefined
-
-
-For example:
-
-```js
-import { ref } from "vue";
-
-export default {
-  setup() {
-    const name = ref("");
-    const num = ref(1);
-    const bool = ref(true);
-    const n = ref(null);
-  }
-};
-```
-
-### Vue 3 Ref Example
-
-Now, let's consider this Vue 3 component:
-
-```js
-<template>
-  <h1>{{ productName }}</h1>
-</template>
-
-<script>
-  import { ref } from "vue";
-
-  export default {
-    setup() {
-      const productName = ref("Product 001");
-
-      return { productName };
-    }
-  };
-</script>
-```
-
-The `ref()` function takes a value and returns a reactive and mutable ref object. 
-
-You can access or mutate the value of the ref object using the `.value` property but that's only inside the `setup()` method. In the corresponding template, you can use the name of the variable as usual i.e `productName` in our case. 
-
-Why don't you need to use the `productName.value` property in the template:
-
-```html
-<template>
-  <h1>{{ productName }}</h1>
-</template>
-```
-
-Simply because When a ref is returned as a property on the rendering context (i.e from the `setup()` method) in the template, it gets unwraped to the original primitive value.
-
-## Understanding Vue 3 Setup Method
-
-In this example, we'll learn about the `setup()` method in Vue 3.
-
-
-### What's the `Setup` Function in Vue 3?
-
-Vue 3 introduced the composition api as an alternative to the options api in Vue 2 for writing components.
-
-A Vue 3 component needs to have a `setup()` function which is a part the Composition API. This function will be executed before creating the component object. As a side effect, `this`, that refers to the component itself, is not available in the `setup()` function.
-
-### Why Using the Vue 3 `Setup` Method?
-
-In the body of the `setup()` function, you can declare the data properties, computed methods, watch methods, and any required JS methods needed by the component. 
-
-It will then return an object containing all the public methods and data properties which you can then access from the component's template.
-
-## Understanding Vue 3 Components
-
-We'll learn how to scaffold a new Vue 3 project using the latest version of Vue CLI and create a Vue 3 component.
-
-
-Like most modern web development libraries and frameworks, Vue adopts a component-based approach to build apps where components are the building blocks of the application.
-
-A component controls a patch of the user interface and interacts with the other components in the application. 
-
-In this tutorial section, we’ll be learning how to create a Vue 3 component step by step.
 
 
 ### Prerequisites
@@ -1058,6 +1049,10 @@ Open the `src/views/App.vue` file and update it as follows:
 We have seen how the Vue 3 router works by example, but you don't need to go throughout all these steps thanks to Vue CLI which enables you to automatically install and add Vue Router.
 
 When you create a Vue project, simply “Manually select features” when prompted to select a preset then make sure to check “Router“ when prompted to select the features needed for your project. This will instruct the CLI to install Vue Router inside your Vue 3 app and add the code we've seen before for creating and configuring a router instance. You simply need to add your routes inside the `routes` array. 
+
+<iframe class="mj-w-res-iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/64nF/GgC" width="100%" height="500px"></iframe>
+
+<script type="text/javascript" src="https://app.mailjet.com/statics/js/iframeResizer.min.js"></script>
 
 ### References
 
