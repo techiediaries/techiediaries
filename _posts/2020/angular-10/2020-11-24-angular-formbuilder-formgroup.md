@@ -1,14 +1,14 @@
 ---
 layout: post
-title: "Angular 10 FormBuilder/FormGroup/FormArray and FormControl By Example"
+title: "Angular 11 FormBuilder/FormGroup/FormArray and FormControl By Example"
 image: "images/content/angular.png"
 excerpt: "In this tutorial, we'll learn to use Angular forms by creating a simple example using FormBuilder,  FormGroup  and  FormControl APIs"
-date: 2020-07-10 
+date: 2020-11-24 
 tags : [angular, angular-10] 
 ---
 
 
-In this tutorial, we'll learn to use Angular forms by creating a simple example using the `FormBuilder`,  `FormGroup`, `FormArray`  and  `FormControl`  APIs  and the latest Angular 10 version.
+In this tutorial, we'll learn to use Angular forms by creating a simple example using the `FormBuilder`,  `FormGroup`, `FormArray`  and  `FormControl`  APIs  and the latest Angular 11 version.
 
 We'll see how to use Angular  `FormBuilder`,  `FormGroup`, `FormArray`  and  `FormControl`  APIs then we'll build a form.
 
@@ -74,7 +74,7 @@ Next, you need to create an instance of `FormGroup` with the instances of `FormC
 ```ts
 productForm = new FormGroup({
      reference: new FormControl(),
-     quantity: new FormControl('10')
+     quantity: new FormControl('11')
 }); 
 ```
 
@@ -94,7 +94,7 @@ These are the steps of this tutorial:
 
 -  Prerequisites
 -  Angular Forms, Step 1 — Installing Angular CLI 9 
--  Step 2 — Initializing your Angular 10 Project 
+-  Step 2 — Initializing your Angular 11 Project 
 -  Step 3 — Adding a Reactive Form
 -  Step 3.1 — Importing the  `ReactiveFormsModule`  
 -  Step 3.2 — Importing  `FormControl`  and  `FormGroup`
@@ -109,11 +109,11 @@ This tutorial assumes you already have Node.js and npm installed on your machine
 
 You also need to be familiar with TypeScript and the basics of Angular such as [components](https://www.techiediaries.com/angular-components/).
 
-Let's see how to install Angular 10 CLI.
+Let's see how to install Angular 11 CLI.
 
-##  Angular Forms, Step 1 — Installing Angular CLI 10 
+##  Angular Forms, Step 1 — Installing Angular CLI 11 
 
-In this step, we'll set up Angular CLI 10 in our development machine.
+In this step, we'll set up Angular CLI 11 in our development machine.
 
 Angular CLI is built on top of Node.js so as mentionned before make sure you have it installed on your machine together with npm.
  
@@ -127,11 +127,11 @@ In your terminal or command prompt run the following command:
 $ npm install -g @angular/cli
 ```
 
-This will install **angular/cli v10.0.0**  in our system.
+This will install **angular/cli v11.0.0**  in our system.
 
 That's it, you can now initialize your project using this tool.
 
-## Step 2 — Initializing your Angular 10 Project 
+## Step 2 — Initializing your Angular 11 Project 
 
 Go back to your terminal and run the following commands:
 
@@ -228,7 +228,7 @@ export class AppComponent {
 Next, we need to create an [HTML form](https://www.techiediaries.com/html-tutorial/) in the  `src/app/app.component.html`  file:
 
 ```html
-<h1>Angular 10 Forms Example</h1>
+<h1>Angular 11 Forms Example</h1>
 <form [formGroup]="exampleForm">
   <div class="form-group">
     <label>First Name:</label>
