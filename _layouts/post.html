@@ -120,6 +120,38 @@ post_class: post-template
         </div>
         <div class="col-xs-12 col-md-4">
             <div style="margin-top:10px;">
+                <!-- STICKY: Begin-->
+<div id='vi-sticky-ad'>
+    <div id='vi-ad' style='background-color: #fff;'>
+            <div class='adsbyvli' data-ad-slot='vi_1214246844' data-width='300' data-height='250'></div> <script> vitag.videoDiscoverConfig = { random: true, noFixedVideo: true}; (vitag.Init = window.vitag.Init || []).push(function () { viAPItag.initInstreamBanner('vi_1214246844') });</script>
+    </div>
+</div>
+<script>
+    if (window.innerWidth > 900){
+            var adElemSticky = document.getElementById('vi-sticky-ad');
+            window.onscroll = function() {
+                    var adElem = document.getElementById('vi-ad');
+                    var rect = adElemSticky.getBoundingClientRect();
+                    adElemSticky.style.width = rect.width + 'px';
+                    adElemSticky.style.height = rect.height + 'px';
+                    if (rect.top <= 0){
+                            adElem.style.position = 'fixed';
+                            adElem.style.top = '0';
+                            adElem.style.zIndex = '2147483647';
+                            adElem.style.width = rect.width + 'px';
+                            adElem.style.height = rect.height + 'px';
+                    } else {
+                            adElem.style.position = '';
+                            adElem.style.top = '';
+                            adElem.style.zIndex = '';
+                            adElem.style.width = '';
+                            adElem.style.height = '';
+                    }
+            };
+    }
+</script>
+<!-- STICKY : techiediaries.com_videodiscovery End -->
+
                 <a href="https://github.com/techiediaries/angular-cookbook">
                 Angular Cookbook
                 </a></br>
