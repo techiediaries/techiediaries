@@ -3,7 +3,7 @@ layout: post
 title: "Adding item separators and header to FlatList"
 image: "images/content/reactnative.png"
 excerpt: "In this tutorial, we’ll see how we can customize our FlatList component using a header and item separators"
-tags: [ 'reactnative', react ] 
+tags: [ 'reactnative', '2', react ] 
 categories: react-native-tutorial
 ---
 
