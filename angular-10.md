@@ -1,15 +1,19 @@
 ---
 layout: bytag
-title: Angular 10/11 Tutorials
+title: Angular 12/11 Tutorials
 comments: false
 tag: angular
 ---
 
-Angular 11 is in Release Candidate!
+Angular 12 should arrive early this year with new features:
 
-Angular 10 has been released, check out the [new features](https://www.techiediaries.com/angular/angular-10-new-features/)
- 
-# Angular 11 Learning Path
+- Implementing stricter type checking for reactive forms.
+- The possibility to opt out from Zone.js 
+- NgModules will be optional
+
+For more details about Angular 12, check out this [article](https://shabang.substack.com/p/whats-new-with-angular-12-eb9)
+
+# Angular 12/11 Learning Path
 
 Throughout this tutorial series and learning path you'll learn Angular--the most popular platform for building front-end web applications 
 
@@ -40,7 +44,7 @@ The concept of [directives](https://docs.angularjs.org/guide/directive) was also
 
 The other introduced concept is [Dependency Injection](https://docs.angularjs.org/guide/di), which allows developers to inject what's called services (singletons that encapsulates a unique and re-usable functionality within an application) into other components which encourages re-usability of the code.
 
-## Why Learning Angular 10?
+## Why Learning Angular 12?
 
 By learning Angular, you'll have more chances of finding a job as a front-end developer! So in this learning path, will teach you the framework through building several examples from scratch.
 
@@ -58,7 +62,7 @@ You'll learn about:
 - Using Bootstrap with Angular,
 - Deployment.
 
-## How Long Will it Take to Learn Angular 10?
+## How Long Will it Take to Learn Angular 12?
 
 This depends of what you mean by learning Angular. If you want to be able to build and deploy a production-ready Angular application in a reasonable timeframe, this will probably take byou etween 6 and 12 months depending on your background and existing skills.
 
@@ -113,5 +117,5 @@ Frameworks provide abstractions for working with many aspects like for example D
 
 Nowadays powerful and modern JavaScript frameworks have emerged and taken the web by storm. Instead of websites with poorly structured JS or jQuery code we have now complete web apps with best practices and code structure with complex and rich UIs. These modern client-side web apps use heavy JavaScript which impacts performance and by result the user experience; and as such even if web browsers became more powerful we still need to follow best practices and battle tested tools and patterns which client-side frameworks try to help with.
 
-## All Angular 10/9/8/7/6 Articles
+## All Angular 12/11/10 Articles
 

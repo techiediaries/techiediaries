@@ -1,16 +1,61 @@
 ---
 layout: post
-title: "Angular 9.1 New Features and Ivy: Angular 10 is Coming"
+title: "Angular 12/11 New Features"
 image: "images/content/angular.png"
-excerpt: "Angular 9 new features: better performance and smaller bundle size thanks to Ivy!" 
-date: 2020-03-26
-categories: angular
+excerpt: "Angular 12/11 new features: better performance, and optional NgModules.." 
 tags : [angular , angular-8, angular-9] 
 ---
 
-In this post, we'll see the new features of Angular 9.1 with the support of TypeScript 3.8, so what's new with the Angular 9.1 version? 
+In this post, we'll see the new features of each version of Angular starting from version 6 to Angular 12.
 
-> Note:  The next major beta of Angular is released, check out [Angular 10 new features](https://www.techiediaries.com/angular/angular-10-new-features/)
+Angular 12 should arrive early this year with new features:
+
+- Implementing stricter type checking for reactive forms.
+- The possibility to opt out from Zone.js 
+- NgModules will be optional
+
+For more details about Angular 12, check out this [article](https://shabang.substack.com/p/whats-new-with-angular-12-eb9)
+
+
+## Angular 11 New Features
+
+Angular 11 was released on the 11th day of the 11th month of 2020 with some great updates for Angular developers. It introduces updates across the platform including the framework, the CLI, and components. Most importantly:
+
+- Experimental support for Webpack 5 which brings a new module federation feature.
+- An updated roadmap to keep developers updated about the current priorities of the Angular team. 
+- Improved component tests harnesses which were introduced in Angular 9 to help with testing Angular Material components with a robust and legible API surface. With version 11 the team added harnesses for all of the components!
+- Improved reporting and logging by making the CLI output clear and easier to read.
+- A preview of the language service with Ivy instead of View Engine.
+- Improved support for Hot Module Replacement (HMR): In version 11 the CLI is updated to allow enabling HMR when starting an application with `ng serve --hmr`.
+- Automatic inlining of fonts.
+
+##  Angular 10 New Features
+
+[Angular 10](https://www.techiediaries.com/angular/), the next version of one of the most popular front-end frameworks is in beta version at this time. This means we are moving toward the final release of this new version. 
+
+Two beta versions of the platform were released on April 8, 2020. The new upgrade will be focusing more on the ecosystem than introducing new big features.
+
+A target date for an Angular 10 production release is still to be determined. Angular 9.0 has been released on February 6, followed by Angular 9.1 on March 25. 
+
+
+You can install Angular 10 CLI using npm or yarn using the following command:
+
+```bash
+$ npm install --global @angular/cli@next
+```
+
+Before the final release of version 10, you'll need to add the `next` tag to install the latest prerelease version
+
+You can also download the [beta prereleases](https://github.com/angular/angular/releases) from GitHub.
+
+
+At the current time, these are the new features of Angular 10: 
+
+- A new compiler feature which adds dependency information and `ng-content` selectors to metadata.  This will enable the Angular Language Service or similar utilities, to provide suggestions for directives and components defined in libraries.
+- Fixing  undecorated-class migration to decorate derived classes of undecorated classes that use Angular features.
+-   Urlmatcher’s type can now always return null.
+-   Fixing a service worker bug,  preventing the worker from registering in cases when there is a long-running task or recurring timeout.
+-   Multiple bug fixes are made such as the compiler avoiding undefined expressions in a holey array and the [core avoiding a migration error](https://github.com/angular/angular/pull/36367) when a non-existent symbol is imported. There is also a workaround in the core for the [Terser inlining bug](https://github.com/angular/angular/pull/36200), etc.
 
 ## What's New with Angular 9.1?
 
