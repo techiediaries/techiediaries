@@ -180,9 +180,12 @@ post_class: post-template
             <div style="margin-top:10px;">
                 <h3>Most Popular Posts</h3>
 
-                <a href="https://www.techiediaries.com/10-best-angular-templates/">
-                10+ Best Anguar 9/10 Templates for Developers
+                <a href="https://www.techiediaries.com/angular-12-new-features/">
+                Anguar 12 New Features
                 </a></br>
+                <a href="https://www.techiediaries.com/10-best-angular-templates/">
+                    10+ Best Anguar 9/10 Templates for Developers
+                </a></br>    
                 <a href="https://www.techiediaries.com/angular-bootstrap/">
                 3+ Ways to Add Bootstrap 4 to Angular 10/9 With Example & Tutorial
                 </a></br>
@@ -237,8 +240,30 @@ post_class: post-template
             <!-- Ezoic - middlesidebar - sidebar_middle 
             <div style="margin-top: 20px;" id="ezoic-pub-ad-placeholder-160"></div>
             <!-- End Ezoic - middlesidebar - sidebar_middle -->
+            
+
+            {% if page.tags contains 'angular' %}
+            <div style="margin-top:10px;">
+                <h3>Angular Newsletter</h3>
+                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
+                <img src="https://www.techiediaries.com/handsonangular.png"/>
+                </a>
+
+            </div>
 
 
+            {% endif %}
+{% if page.tags contains 'react' %}
+            <div style="margin-top:10px;">
+                <h3>React Newsletter</h3>
+                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
+                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
+                </a>
+
+            </div>
+            
+
+            {% endif %}
             <div id="stickybar">
 
                 {% include social.html %}
@@ -273,7 +298,7 @@ post_class: post-template
                     <p>Buy our Full-Stack Angular 11 and GraphQL Book</p>
                     <p>Build a social app from scratch.. </p>
                 </a> -->
-                <iframe src="https://shabang.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+
 
                 <!-- techiediaries.com_300x600: Begin -->
                 <div class="adsbyvli" data-ad-slot="vi_1214246848"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246848")})</script>
