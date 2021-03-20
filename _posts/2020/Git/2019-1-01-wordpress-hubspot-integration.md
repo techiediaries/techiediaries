@@ -6,14 +6,64 @@ tags: []
 excerpt: "HubSpot enhances your WordPress instance to give you the ability to optimize your website to drive quality traffic, lead conversions, customer communications, sales and increased customer happiness. It’s a full-serve inbound marketing software platform targeted to help you achieve your businesses success"
 ---
 
-HubSpot is all-in-one inbound marketing software tool that can allow you to optimize your WordPress website for lead generation and conversion. Site owners use HubSpot to improve traffic generation, lead capture, automated nurturing and sales conversion. HubSpot has cemented themselves as a force to be reckoned with in this space. HubSpot does bundle its own content management system (CMS), but many marketers don’t realize HubSpot WordPress integration is possible via  [a plugin](https://wordpress.org/plugins/hubspot-tracking-code/)  that gives you an easy way to continue using WordPress as your CMS while integrating HubSpot into your site for your inbound marketing efforts.
+WordPress was originally created as a blogging platform while HubSpot offers an CMS, CRM and many marketing tools of the box without the need to install extra plugins.
+HubSpot can help you optimize your WordPress website for lead generation and conversion. 
+HubSpot also bundle its own content management system but if you prefer to use WordPress, you can still use the marketing tools provided by HubSpot thanks to the HubSpot WordPress integration [plugins](https://wordpress.org/plugins/hubspot-tracking-code/)  
 
-## What is HubSpot?
 
-HubSpot enhances your WordPress instance to give you the ability to optimize your website to drive quality traffic, lead conversions, customer communications, sales and increased customer happiness. It’s a full-serve inbound marketing software platform targeted to help you achieve your businesses success.
+## How to Integrate HubSpot with WordPress
 
-In this article, we’re going to walk through the four-step inbound marketing framework HubSpot recommends for connecting with your audience at the right place and the right time during their buying journey.  
-  
+Throughout this section, we’ll show step by step how to integrate the HubSpot with your WordPress website.  
+
+### Step 1: Installing weForms
+
+As a first step, you need to make sure you have [weForms](https://wordpress.org/plugins/weforms/) installed on your WordPress website. 
+
+Otherwise, you simply need to go to your WordPress dashboard then access plugins page. Next, click on add new and search for the weForms plugin from the search field, then install the plugin to activate it.
+
+![Wp-admin-plugins](https://wedevs.s3.amazonaws.com/uploads/2018/11/Wp-admin-plugins.png)
+
+### Step 2: Activating the HubSpot Module
+
+Next go to the weForms options. Specificqlly, the Modules tab then simply look for HubSpot and activate it.
+
+![weForms-hubspot integration](https://wedevs.s3.amazonaws.com/uploads/2018/11/chrome_2018-11-09_15-21-19.png "weForms-hubspot integration")
+
+### Step 3: Getting a HubSpot API Key
+
+After activating the HubSpot module, you will have to an API key. You simply need to go to [https://app.hubspot.com/l/api-key/]( https://app.hubspot.com/l/api-key/) to grab your API key, provided that you have a HubSpot account.
+
+If you still need to try HubSpot, you can singup for [free sandbox account](https://app.hubspot.com/signup/standalone-cms-developer?userType=developer).
+
+![weforms-hubspot](https://wedevs.s3.amazonaws.com/uploads/2018/11/chrome_2018-11-09_15-47-43.png "weforms-hubspot")
+
+
+Next, you need to copy the API key in the weForms HubSpot settings as follows:
+
+![](https://wedevs.s3.amazonaws.com/uploads/2018/11/Connect-WordPress-to-Hubspot-2.png)
+
+
+### Step 4: Integrating your Form with HubSpot 
+
+Next, you need to select the form you need to integrate with HubSpot. Go to the ‘Integrations' option and activate HubSpot.
+
+![weforms-allforms integration-hubspot](https://wedevs.s3.amazonaws.com/uploads/2018/11/chrome_2018-11-09_17-03-45.png "weforms-allforms integration-hubspot")
+
+
+When you click on ‘Integrations', this will show a page with all the available integrations. Look for HubSpot and map the form input fields with HubSpot for your First Name, Last Name, and Email. Select the required fields and sync the list. This syncing will send those WordPress data to your newly integrated HubSpot site. All you have to do is enter your name and email to keep the record and save it.
+
+![weforms-allforms integration-hubspot](https://wedevs.s3.amazonaws.com/uploads/2018/11/chrome_2018-11-09_17-04-01.png "weforms-allforms integration-hubspot")
+
+### Step 5: Testing the HubSpot Integration
+
+Finally, you can test if the integration is working. Simply, click on the Preview button that will take you to the front end.
+
+![Weforms-hubspot-preview](https://wedevs.s3.amazonaws.com/uploads/2018/11/chrome_2018-11-09_17-04-17.png "Weforms-hubspot-preview")
+
+Enter a name and the other fields and submit the form. You should see your name on the list as HubSpot owner.
+
+![](https://wedevs.s3.amazonaws.com/uploads/2018/11/weforms-form-info-submit-hubspot-view.png)
+
 
 ## Attract Visitors to Your Website
 
