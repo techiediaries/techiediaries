@@ -1,256 +1,345 @@
 ---
-layout: nil
-skipRss: true
-skipNavigation: true
+layout: mydefault
+disqus: false
+archive: false
+post_class: post-template
 ---
 
-<!DOCTYPE html>
-<html lang="en">
+<div class="container">
+    <div id="main-content" class="row main">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="msvalidate.01" content="717883E5CC017F74428029865039B548" />
-	<meta name="google-site-verification" content="p5fO6UZ8-nSvKNUMfwmf8jb7dSQTMnSgw7Vrm4V49YE" />
-	<meta name="ahrefs-site-verification" content="b31f0540449b159cb3a9d3272e5f5f7e77a6b7f90289f44bae3ad46d2e015a05">
-	<meta name='dmca-site-verification' content='aUZXeDk0WWR1YXZEbmtuNkV5c2tRaVFUc2NHWlRyUFdVa0lWakF5Y0ptRT01' />
-	<meta property="fb:pages" content="217712901582117" />
-	<meta property="og:image" content="{{page.image}}" />
-	<meta name="p:domain_verify" content="75051f0a45f89e01f06be43dbaff6f74" />
-	<meta name="ezoic-ads" content="disabled" />
-
-
-	<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
-	<title>{{ page.title }} | {{site.name}}</title>
-	{% if page.excerpt %}
-	<meta name="description" content="{{ page.excerpt }}">{% endif %}
-
-	<link rel="manifest" href="{{ site.baseurl }}/manifest.json" />
-
-
-	{% include bpost-css.html %}
+        <div class="mainheading col-xs-12 col-md-12">
+            <!-- techiediaries.com_970x250: Begin -->
+            <div class="adsbyvli" data-ad-slot="vi_1214246851"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246851")})</script>
+            <!-- techiediaries.com_970x250 End -->
 
 
 
+            <!-- Post Title -->
+            <h1 class="posttitle">{{ page.title }}</h1>
 
-	<!-- 
-	<script src="//g.ezoic.net/ezoic/ezoiclitedata.go?did=51807"></script>
-	-->
+            <ul class="rrssb-buttons">
+                <li>
+                    {% if page.author %}
+                    {% assign author = site.authors[page.author] %}
 
-</head>
+                    {% else %}
+                    {% assign author = site.authors["ahmed"] %}
+                    {% endif %}
 
-<body>
+                    <p>Author: Techiediaries Team</p>
 
-	{% include analytics.html %}
+                </li>
+                <li>
+                    <!-- Post Date -->
+                    <p>
+                        <small>
+                            <span class="post-date"><time class="post-date"
+                                    datetime="{{ page.date | date:"%Y-%m-%d" }}">
+                                    {{page.date | date_to_string }}</time></span>
+                            {% if page.last_modified_at %}
+                            (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+                                itemprop="dateModified">{{
+                                page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+                            {% endif %}
+                        </small>
+                    </p>
+                </li>
+                <li> <a title="Share on Twitter"
+                        href="https://twitter.com/intent/tweet?text={{page.url | prepend: 'https://www.techiediaries.com'}} {{page.excerpt}} by @techiediaries"
+                        target="_blank" rel="noopener"> <svg title="Twitter" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 28 28">
+                            <path fill="var(--twitter)"
+                                d="M24.3 8.8c.4 8.3-6 15.4-14.3 15.8a15 15 0 0 1-9-2.3c2.8.2 5.5-.6 7.6-2.3A5.4 5.4 0 0 1 4 16.3c1 .2 1.7 0 2.5 0A5.4 5.4 0 0 1 2 11a5.4 5.4 0 0 0 2.3.5 5.4 5.4 0 0 1-1.4-7A15 15 0 0 0 13.7 10a5.2 5.2 0 0 1 3.4-6.4 5.2 5.2 0 0 1 5.6 1.7A9 9 0 0 0 26 4a5 5 0 0 1-2.3 3 9 9 0 0 0 3-1 5 5 0 0 1-2.4 2.8z" />
+                        </svg> </a></li>
+                <li> <a title="Share on Facebook"
+                        href="https://www.facebook.com/sharer/sharer.php?u={{page.url| prepend: 'https://www.techiediaries.com'}}"
+                        target="_blank" rel="noopener"> <svg title="Facebook" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 29 29">
+                            <path fill="var(--fb)"
+                                d="M26.4 0H2.6C1.6 0 0 1.7 0 2.6v23.8c0 1 1.7 2.6 2.6 2.6H15V18h-4v-4h4v-3c0-3.8 2.8-6 6.2-6 1.6 0 2.4 0 2.8.2V9h-2.8c-1.8 0-2.2 1-2.2 2.2V14h5l-.6 4H19v11h7.4c1 0 2.6-1.7 2.6-2.6V2.6c0-1-1.7-2.6-2.6-2.6z" />
+                        </svg> </a></li>
+                <li> <a title="Share on Reddit"
+                        href="http://www.reddit.com/submit?url={{page.url| prepend: 'https://www.techiediaries.com'}}&title={{page.title}}"
+                        target="_blank" rel="noopener"> <svg title="Reddit" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 28 28">
+                            <path fill="var(--reddit)"
+                                d="M11.8 15.3c0-1-.8-2-2-2-1 0-1.8 1-1.8 2s1 2 2 2 1.8-1 1.8-2zm6.3-2c-1 0-1.8 1-1.8 2s1 2 2 2 1.8-1 1.8-2-1-2-2-2zm-.5 6.5c-.7.7-1.8 1-3.5 1s-3-.3-3.5-1a.7.7 0 0 0-1 0c-.2.3-.2.7 0 1 1 1 2.4 1.4 4.5 1.4 2 0 3.5-.5 4.5-1.4a.7.7 0 0 0 0-1c-.3-.3-.7-.3-1 0z" />
+                            <path fill="var(--reddit)"
+                                d="M27.7 13.3a3.2 3.2 0 0 0-3.2-3.3c-.8 0-1.5.3-2 .8-2-1.3-4.8-2-7.5-2.2L16.4 4l4 .8c.2 1.4 1.4 2.6 2.8 2.6A2.7 2.7 0 0 0 26 4.7C26 3.2 24.6 2 23 2c-1 0-2 .6-2.4 1.5l-4.7-1a.7.7 0 0 0-.7.4l-1.7 5.6c-3 0-6 .8-8 2.2-.6-.5-1.3-.8-2-.8-2 0-3.3 1.5-3.3 3.2 0 1 .6 2 1.4 2.7v.7c0 2.4 1.2 4.5 3.6 6C7.6 24 10.6 24.8 14 25c3 0 6.2-1 8.5-2.4 2.4-1.5 3.7-3.6 3.7-6V16c1-.5 1.5-1.6 1.5-2.7zm-4.5-10c.7 0 1.3.7 1.3 1.4a1.3 1.3 0 0 1-2.7 0c0-.7.6-1.3 1.4-1.3zm-21.6 10c0-1 1-2 2-2l.8.3c-1 1-1.8 2-2.2 3-.4-.4-.6-.8-.6-1.3zm20.2 8.3c-2 1.3-5 2-8 2-2.8 0-5.6-.7-7.7-2-2-1.3-3-3-3-4.8C3 15 4 13.3 6 12c2.2-1.4 5-2 8-2s5.6.6 7.7 2c2 1.3 3 3 3 4.8.2 1.8-1 3.5-3 4.8zm4-7c-.4-1-1.2-2-2.3-3l1-.2c1 0 2 .8 2 2a2 2 0 0 1-.7 1.2z" />
+                        </svg> </a></li>
+                <li> <a title="Share on Hacker News"
+                        href="https://news.ycombinator.com/submitlink?u={{page.url| prepend: 'https://www.techiediaries.com'}}"
+                        target="_blank" rel="noopener"> <svg title="Hacker News" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 28 28">
+                            <path fill="var(--h-news)" d="M14 13.6L9.5 4.4h-3L13 16.6v7h2.5v-7l6-12.2h-2.6z" />
+                        </svg> </a></li>
+            </ul>
 
-	{% include header.html %}
 
-	<div class="site-content">
-		<div class="container">
-			<div id="main-content" class="row main">
-				
-		
-		<!-- techiediaries.com_970x250: Begin -->
-<div class="adsbyvli" data-ad-slot="vi_1214246851"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246851")})</script>
-<!-- techiediaries.com_970x250 End -->
+        </div>
+        <div id="content" class="col-xs-12 col-md-8 content">
 
-				<div class="mainheading col-xs-12 col-md-12">
-		
-					
-		
-					<!-- Post Title -->
-					<h1 class="posttitle">{{ page.title }}</h1>
-		
-					<ul class="rrssb-buttons">
-						<li>
-							{% if page.author %}
-							{% assign author = site.authors[page.author] %}
-				
-							{% else %}
-							{% assign author = site.authors["ahmed"] %}
-							{% endif %}
-				
-							<p>Author: Techiediaries Team</p>
-							
-						</li>
-						<li>
-							<!-- Post Date -->
-							<p>
-								<small>
-									<span class="post-date"><time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">
-											{{page.date | date_to_string }}</time></span>
-									{% if page.last_modified_at %}
-									(Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{
-										page.last_modified_at | date: "%b %-d, %Y" }}</time>)
-									{% endif %}
-								</small>
-							</p>
-						</li>
-						<li> <a title="Share on Twitter"
-								href="https://twitter.com/intent/tweet?text={{page.url | prepend: 'https://www.techiediaries.com'}} {{page.excerpt}} by @techiediaries"
-								target="_blank" rel="noopener"> <svg title="Twitter" xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 28 28">
-									<path fill="var(--twitter)"
-										d="M24.3 8.8c.4 8.3-6 15.4-14.3 15.8a15 15 0 0 1-9-2.3c2.8.2 5.5-.6 7.6-2.3A5.4 5.4 0 0 1 4 16.3c1 .2 1.7 0 2.5 0A5.4 5.4 0 0 1 2 11a5.4 5.4 0 0 0 2.3.5 5.4 5.4 0 0 1-1.4-7A15 15 0 0 0 13.7 10a5.2 5.2 0 0 1 3.4-6.4 5.2 5.2 0 0 1 5.6 1.7A9 9 0 0 0 26 4a5 5 0 0 1-2.3 3 9 9 0 0 0 3-1 5 5 0 0 1-2.4 2.8z" />
-								</svg> </a></li>
-						<li> <a title="Share on Facebook"
-								href="https://www.facebook.com/sharer/sharer.php?u={{page.url| prepend: 'https://www.techiediaries.com'}}"
-								target="_blank" rel="noopener"> <svg title="Facebook" xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 29 29">
-									<path fill="var(--fb)"
-										d="M26.4 0H2.6C1.6 0 0 1.7 0 2.6v23.8c0 1 1.7 2.6 2.6 2.6H15V18h-4v-4h4v-3c0-3.8 2.8-6 6.2-6 1.6 0 2.4 0 2.8.2V9h-2.8c-1.8 0-2.2 1-2.2 2.2V14h5l-.6 4H19v11h7.4c1 0 2.6-1.7 2.6-2.6V2.6c0-1-1.7-2.6-2.6-2.6z" />
-								</svg> </a></li>
-						<li> <a title="Share on Reddit"
-								href="http://www.reddit.com/submit?url={{page.url| prepend: 'https://www.techiediaries.com'}}&title={{page.title}}"
-								target="_blank" rel="noopener"> <svg title="Reddit" xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 28 28">
-									<path fill="var(--reddit)"
-										d="M11.8 15.3c0-1-.8-2-2-2-1 0-1.8 1-1.8 2s1 2 2 2 1.8-1 1.8-2zm6.3-2c-1 0-1.8 1-1.8 2s1 2 2 2 1.8-1 1.8-2-1-2-2-2zm-.5 6.5c-.7.7-1.8 1-3.5 1s-3-.3-3.5-1a.7.7 0 0 0-1 0c-.2.3-.2.7 0 1 1 1 2.4 1.4 4.5 1.4 2 0 3.5-.5 4.5-1.4a.7.7 0 0 0 0-1c-.3-.3-.7-.3-1 0z" />
-									<path fill="var(--reddit)"
-										d="M27.7 13.3a3.2 3.2 0 0 0-3.2-3.3c-.8 0-1.5.3-2 .8-2-1.3-4.8-2-7.5-2.2L16.4 4l4 .8c.2 1.4 1.4 2.6 2.8 2.6A2.7 2.7 0 0 0 26 4.7C26 3.2 24.6 2 23 2c-1 0-2 .6-2.4 1.5l-4.7-1a.7.7 0 0 0-.7.4l-1.7 5.6c-3 0-6 .8-8 2.2-.6-.5-1.3-.8-2-.8-2 0-3.3 1.5-3.3 3.2 0 1 .6 2 1.4 2.7v.7c0 2.4 1.2 4.5 3.6 6C7.6 24 10.6 24.8 14 25c3 0 6.2-1 8.5-2.4 2.4-1.5 3.7-3.6 3.7-6V16c1-.5 1.5-1.6 1.5-2.7zm-4.5-10c.7 0 1.3.7 1.3 1.4a1.3 1.3 0 0 1-2.7 0c0-.7.6-1.3 1.4-1.3zm-21.6 10c0-1 1-2 2-2l.8.3c-1 1-1.8 2-2.2 3-.4-.4-.6-.8-.6-1.3zm20.2 8.3c-2 1.3-5 2-8 2-2.8 0-5.6-.7-7.7-2-2-1.3-3-3-3-4.8C3 15 4 13.3 6 12c2.2-1.4 5-2 8-2s5.6.6 7.7 2c2 1.3 3 3 3 4.8.2 1.8-1 3.5-3 4.8zm4-7c-.4-1-1.2-2-2.3-3l1-.2c1 0 2 .8 2 2a2 2 0 0 1-.7 1.2z" />
-								</svg> </a></li>
-						<li> <a title="Share on Hacker News"
-								href="https://news.ycombinator.com/submitlink?u={{page.url| prepend: 'https://www.techiediaries.com'}}"
-								target="_blank" rel="noopener"> <svg title="Hacker News" xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 0 28 28">
-									<path fill="var(--h-news)" d="M14 13.6L9.5 4.4h-3L13 16.6v7h2.5v-7l6-12.2h-2.6z" />
-								</svg> </a></li>
-					</ul>
-		
-			
-				</div>
-				<div id="content" class="col-xs-12 col-md-8 content">
-		
-		
-					<!-- Post Featured Image -->
-					{% if page.img %}
-					<img class="featured-image img-fluid" src="{{page.img}}" alt="{{ page.title }}">
-		
-					{% endif %}
-		
-					<!-- End Featured Image -->
-		
-		
-					<!-- Post Content -->
-		
-					<div class="article-post">
-		
-		
-						{{content}}
-						</hr>
-						</hr>
-		
-					</div>
-		
-					<hr />
-		
-				</div>
-				<div class="col-xs-12 col-md-4">
-		
-            <!-- techiediaries.com_300x600: Begin -->
-            <div class="adsbyvli" data-ad-slot="vi_1214246848"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246848")})</script>
-            <!-- techiediaries.com_300x600 End -->
-		
-					<div id="stickybar">
-		
-						{% include social.html %}
-		
-						<div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full"
-							data-count="hidden"></div>
-						<p>Get our Angular 2+ posts in your inbox</p>
-		
-		
-						<!--<form
-							action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0"
-							method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-							target="_blank" novalidate>
-		
-							<input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
-							<div style="position: absolute; left: -5000px;" aria-hidden="true">
-								<input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
-							</div>
-							<input class="submit-btn" type="submit" value="Subscribe" name="subscribe"
-								id="mc-embedded-subscribe" class="button">
-						</form>-->
 
-						<a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/?ref=sidebar">
-							<!-- <img src="https://www.techiediaries.com/buy-angular-book2.jpg" /> -->
-							<p>Buy our Full-Stack Angular 11 and GraphQL Book</p>
-							<p>Build a social app from scratch.. </p>
-						</a>
-						
-						<div class="upscribe-embed" data-src="https://upscri.be/ipdyfv"></div>
-		
-					</div>
-				</div>
-			</div>
-			<!-- End Post -->
-		
-		</div>
-		</div>
-		<!-- End Article
-		================================================== -->
-		<div class="row mb-5">
-			                <!-- techiediaries.com_instream: Begin -->
-							<div class="adsbyvli" data-ad-slot="vi_1214246843"></div><script>vitag.videoConfig = {width: 640, height: 480, loadingText: "Loading advertisement..", complete: function () {}, error: function () {}}; (vitag.Init = window.vitag.Init || []).push(function () { viAPItag.startPreRoll('vi_1214246843'); });</script>
-							<!-- techiediaries.com_instream End -->
-			
-			
-			<div class="col-md-8">
-				<p>Get our books</p>
-				<ul>
-					<li><a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/">Practical Angular: Build
-							your first web apps with Angular 8</a></li>
-					<li><a href="https://www.techiediaries.com/react-native-for-beginners-book/">React Native for Beginners
-							[2019]</a></li>
-		
-		
-				</ul>
-			</div>
-		</div>
-		
-		
-		<a href="//www.dmca.com/Protection/Status.aspx?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
-			title="DMCA.com Protection Status" class="dmca-badge"> <img
-				src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
-				alt="DMCA.com Protection Status" /></a>
-		<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-	</div>
+            <!-- Post Featured Image -->
+            {% if page.img %}
+            <img class="featured-image img-fluid" src="{{page.img}}" alt="{{ page.title }}">
 
-	<script>window.upsettings = {'api_key': 'ATZgQDLY9DQqfGjaFpbRTWNMZoy22xTK3XubUrGkWxBrx2CpikcFmFcA4pd4'}</script><script>(function(){var w=window;var up=w.Upscribe;if(typeof up==="function"){up('reattach_activator');up('update',upsettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Upscribe=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://upscri.be/js/snippet.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if( w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-	
-<!-- STICKY: Begin-->
+            {% endif %}
+
+            <!-- End Featured Image -->
+
+
+            <!-- Post Content -->
+
+            <div class="article-post">
+
+
+                {{content}}
+
+<!-- techiediaries.com_728x90: Begin -->
+<div class="adsbyvli" data-ad-slot="vi_1214246846"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246846")})</script>
+<!-- techiediaries.com_728x90 End -->
+
+                </hr style="margin-top: 250px;">
+
+
+
+                <div id="custom-inline"></div>
+
+                </hr style="margin-bottom: 250px;">
+
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                    data-ad-client="ca-pub-9293763250492023" data-ad-slot="9249041598"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+            </div>
+
+            <hr />
+
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div style="margin-top:10px;">
+                <!-- STICKY: Begin-->
 <div id='vi-sticky-ad'>
-	<div id='vi-ad' style='background-color: #fff;'>
-			<div class='adsbyvli' data-ad-slot='vi_1214246844' data-width='300' data-height='250'></div> <script> vitag.videoDiscoverConfig = { random: true, noFixedVideo: true}; (vitag.Init = window.vitag.Init || []).push(function () { viAPItag.initInstreamBanner('vi_1214246844') });</script>
-	</div>
+    <div id='vi-ad' style='background-color: #fff;'>
+            <div class='adsbyvli' data-ad-slot='vi_1214246844' data-width='300' data-height='250'></div> <script> vitag.videoDiscoverConfig = { random: true, noFixedVideo: true}; (vitag.Init = window.vitag.Init || []).push(function () { viAPItag.initInstreamBanner('vi_1214246844') });</script>
+    </div>
 </div>
 <script>
-	if (window.innerWidth > 900){
-			var adElemSticky = document.getElementById('vi-sticky-ad');
-			window.onscroll = function() {
-					var adElem = document.getElementById('vi-ad');
-					var rect = adElemSticky.getBoundingClientRect();
-					adElemSticky.style.width = rect.width + 'px';
-					adElemSticky.style.height = rect.height + 'px';
-					if (rect.top <= 0){
-							adElem.style.position = 'fixed';
-							adElem.style.top = '0';
-							adElem.style.zIndex = '2147483647';
-							adElem.style.width = rect.width + 'px';
-							adElem.style.height = rect.height + 'px';
-					} else {
-							adElem.style.position = '';
-							adElem.style.top = '';
-							adElem.style.zIndex = '';
-							adElem.style.width = '';
-							adElem.style.height = '';
-					}
-			};
-	}
+    if (window.innerWidth > 900){
+            var adElemSticky = document.getElementById('vi-sticky-ad');
+            window.onscroll = function() {
+                    var adElem = document.getElementById('vi-ad');
+                    var rect = adElemSticky.getBoundingClientRect();
+                    adElemSticky.style.width = rect.width + 'px';
+                    adElemSticky.style.height = rect.height + 'px';
+                    if (rect.top <= 0){
+                            adElem.style.position = 'fixed';
+                            adElem.style.top = '0';
+                            adElem.style.zIndex = '2147483647';
+                            adElem.style.width = rect.width + 'px';
+                            adElem.style.height = rect.height + 'px';
+                    } else {
+                            adElem.style.position = '';
+                            adElem.style.top = '';
+                            adElem.style.zIndex = '';
+                            adElem.style.width = '';
+                            adElem.style.height = '';
+                    }
+            };
+    }
 </script>
-<!-- STICKY : techiediaries.com_videodiscovery End -->	
+<!-- STICKY : techiediaries.com_videodiscovery End -->
 
-</body>
+                <a href="https://github.com/techiediaries/angular-cookbook">
+                Angular Cookbook
+                </a></br>
+                <a href="https://shabang.substack.com/p/whats-new-with-angular-12-eb9">
+                    What's new with Angular 12
+                </a></br>
+                <a href="https://shabang.substack.com/p/an-angular-11-roadmap-the-past-present">
+                    An Angular 11 Roadmap - The Past, Present, and Future of Angular
+                </a></br>    
+                <a href="https://www.techiediaries.com/angular-developer-roadmap">
+                    Angular 11 Developer Roadmap
+                </a></br>
+                <a href="https://www.techiediaries.com/vue-3-playground">
+                    Vue 3 Playground
+                </a></br>
+                    
+            </div>
 
-</html>
+            <!-- techiediaries.com_300x250: Begin -->
+            <div class="adsbyvli" data-ad-slot="vi_1214246845"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246845")})</script>
+            <!-- techiediaries.com_300x250 End -->
+
+            <div style="margin-top:10px;">
+                <h3>Most Popular Posts</h3>
+
+                <a href="https://www.techiediaries.com/angular-12-new-features/">
+                Anguar 12 New Features
+                </a></br>
+                <a href="https://www.techiediaries.com/10-best-angular-templates/">
+                    10+ Best Anguar 9/10 Templates for Developers
+                </a></br>    
+                <a href="https://www.techiediaries.com/angular-bootstrap/">
+                3+ Ways to Add Bootstrap 4 to Angular 10/9 With Example & Tutorial
+                </a></br>
+                <a href="https://www.techiediaries.com/angular-11-crud-rest-api-tutorial/">
+                    Angular 11 CRUD REST API 
+                </a></br>
+                <a href="https://www.techiediaries.com/angular-11-tutorial-example-rest-crud-http-get-httpclient/">
+                    Angular 11 Tutorial with HttpClient
+                </a></br> 
+                <a href="https://www.techiediaries.com/routing-angular-router/">
+                    Routing and Navigation with Angular 11 Router
+                </a></br>
+                <a href="https://www.techiediaries.com/vue-3-tutorial/">
+                    Full Vue 3 Tutorial by Example
+                </a></br>
+                <a href="https://www.techiediaries.com/css-centering/">
+                    CSS Centering
+                </a></br>
+                <a href="https://www.techiediaries.com/css-grid-layout-tutorial/">
+                    CSS Grid Layout Tutorial
+                </a></br>
+                <a href="https://www.techiediaries.com/json-comments/">
+                    Adding Comments to JSON
+                </a></br>
+                <a href="https://www.techiediaries.com/delete-local-remote-git-branches/">
+                    How to Delete Local/Remote Git Branches
+                </a></br>
+                <a href="https://www.techiediaries.com/webpack-tutorial/">
+                    Webpack Tutorial for Angular Developers
+                </a></br>
+                <a href="https://www.techiediaries.com/graphql-tutorial/">
+                    GraphQL Tutorial for Angular Developers
+                </a></br>                
+                <a href="https://www.techiediaries.com/angular-git/">
+                    Git and GitHub for Angular Developers
+                </a></br>     
+                <a href="https://www.techiediaries.com/bootstrap-5-sass-gulp-4-tutorial-example/">
+                    Bootstrap 5 with Sass and Gulp 4 Tutorial by Example
+                </a></br>    
+            </div>
+            <!-- Ezoic - topsidebar - sidebar 
+            <div style="margin-top: 20px;" id="ezoic-pub-ad-placeholder-159"></div>
+            <!-- End Ezoic - topsidebar - sidebar -->
+            <!-- techiediaries.com_320x100: Begin -->
+            <div class="adsbyvli" data-ad-slot="vi_1214246852"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246852")})</script>
+            <!-- techiediaries.com_320x100 End -->
+
+
+
+
+
+            <!-- Ezoic - middlesidebar - sidebar_middle 
+            <div style="margin-top: 20px;" id="ezoic-pub-ad-placeholder-160"></div>
+            <!-- End Ezoic - middlesidebar - sidebar_middle -->
+            
+
+            {% if page.tags contains 'angular' %}
+            <div style="margin-top:10px;">
+                <h3>Angular Newsletter</h3>
+                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
+                <img src="https://www.techiediaries.com/handsonangular.png"/>
+                </a>
+
+            </div>
+
+
+            {% endif %}
+{% if page.tags contains 'react' %}
+            <div style="margin-top:10px;">
+                <h3>React Newsletter</h3>
+                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
+                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
+                </a>
+
+            </div>
+            
+
+            {% endif %}
+            <div id="stickybar">
+
+                {% include social.html %}
+
+                <div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full"
+                    data-count="hidden"></div>
+
+
+                <!--
+                    
+                    <form
+                    action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                    target="_blank" novalidate>
+
+                    <input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
+                    </div>
+                    <input class="submit-btn" type="submit" value="Subscribe" name="subscribe"
+                        id="mc-embedded-subscribe" class="button">
+                </form> -->
+                <!--<div class="upscribe-embed" data-src="https://upscri.be/ipdyfv"></div>-->
+
+
+                <!-- Ezoic - sticky-sidebar-ad - sidebar_floating_1 
+                <div style="margin-top: 159px;" id="ezoic-pub-ad-placeholder-163"></div>
+                <!-- End Ezoic - sticky-sidebar-ad - sidebar_floating_1 -->
+
+                <!--<a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/?ref=sidebar">
+                     <img src="https://www.techiediaries.com/buy-angular-book2.jpg" /> 
+                    <p>Buy our Full-Stack Angular 11 and GraphQL Book</p>
+                    <p>Build a social app from scratch.. </p>
+                </a> -->
+
+
+                <!-- techiediaries.com_300x600: Begin -->
+                <div class="adsbyvli" data-ad-slot="vi_1214246848"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246848")})</script>
+                <!-- techiediaries.com_300x600 End -->
+
+                <div id="carbon-block"></div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Post -->
+
+</div>
+</div>
+<!-- End Article
+================================================== -->
+<div class="row mb-5">
+    <div class="col-md-8">
+        <p>Get our books</p>
+        <ul>
+            <li><a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/">Practical Angular: Build
+                    your first web apps with Angular 8</a></li>
+            <li><a href="https://www.techiediaries.com/react-native-for-beginners-book/">React Native for Beginners
+                    [2019]</a></li>
+
+
+        </ul>
+
+    </div>
+</div>
+
+
+<a href="//www.dmca.com/Protection/Status.aspx?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
+    title="DMCA.com Protection Status" class="dmca-badge"> <img
+        src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
+        alt="DMCA.com Protection Status" /></a>
+<script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+
+<div class="row mb-5">
+    <div class="col-md-12">
+        
+    </div>
+</div>
