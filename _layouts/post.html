@@ -10,13 +10,15 @@ post_class: post-template
 
         <div class="mainheading col-xs-12 col-md-12">
             <!-- techiediaries.com_970x250: Begin -->
-            <div class="adsbyvli" data-ad-slot="vi_1214246851"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246851")})</script>
+            <!-- <div class="adsbyvli" data-ad-slot="vi_1214246851"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246851")})</script>  -->
             <!-- techiediaries.com_970x250 End -->
 
 
 
             <!-- Post Title -->
-            <h1 class="posttitle">{{ page.title }}</h1>
+            <h1 class="posttitle">
+                {{ page.title }}
+            </h1>
 
             <ul class="rrssb-buttons">
                 <li>
@@ -242,28 +244,6 @@ post_class: post-template
             <!-- End Ezoic - middlesidebar - sidebar_middle -->
             
 
-            {% if page.tags contains 'angular' %}
-            <div style="margin-top:10px;">
-                <h3>Angular Newsletter</h3>
-                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
-                <img src="https://www.techiediaries.com/handsonangular.png"/>
-                </a>
-
-            </div>
-
-
-            {% endif %}
-{% if page.tags contains 'react' %}
-            <div style="margin-top:10px;">
-                <h3>React Newsletter</h3>
-                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
-                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
-                </a>
-
-            </div>
-            
-
-            {% endif %}
             <div id="stickybar">
                 <!--
                 {% include social.html %}
@@ -302,10 +282,32 @@ post_class: post-template
 
 
 <!-- techiediaries.com_300x250: Begin -->
-<div class="adsbyvli" data-ad-slot="vi_1214246845"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246845")})</script>
+<!-- <div class="adsbyvli" data-ad-slot="vi_1214246845"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246845")})</script> -->
 <!-- techiediaries.com_300x250 End -->
 
 
+                            {% if page.tags contains 'angular' %}
+            <div style="margin-top:10px;">
+                <h3>Angular Newsletter</h3>
+                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
+                <img src="https://www.techiediaries.com/handsonangular.png"/>
+                </a>
+
+            </div>
+
+
+            {% endif %}
+{% if page.tags contains 'react' %}
+            <div style="margin-top:10px;">
+                <h3>React Newsletter</h3>
+                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
+                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
+                </a>
+
+            </div>
+            
+
+            {% endif %}
                 <div id="carbon-block"></div>
 
 
