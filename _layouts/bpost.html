@@ -157,10 +157,7 @@ post_class: post-template
     }
 </script> -->
 <!-- STICKY : techiediaries.com_videodiscovery End -->
-                
-                <div class="adsbyvli" data-ad-slot="vi_1214246844"></div> 
-                <script> vitag.videoDiscoverConfig = { random: true, noFixedVideo: true }; (vitag.Init = window.vitag.Init || []).push(function () { viAPItag.initInstreamBanner("vi_1214246844") }); </script>
-                
+                                
 
                 <a href="https://github.com/techiediaries/angular-cookbook">
                 Angular Cookbook
@@ -168,9 +165,6 @@ post_class: post-template
                 <a href="https://shabang.substack.com/p/whats-new-with-angular-12-eb9">
                     What's new with Angular 12
                 </a></br>
-                <a href="https://shabang.substack.com/p/an-angular-11-roadmap-the-past-present">
-                    An Angular 11 Roadmap - The Past, Present, and Future of Angular
-                </a></br>    
                 <a href="https://www.techiediaries.com/angular-developer-roadmap">
                     Angular 11 Developer Roadmap
                 </a></br>
@@ -179,6 +173,32 @@ post_class: post-template
                 </a></br>
                     
             </div>
+
+     {% if page.tags contains 'angular' %}
+            <div style="margin-top:10px;">
+                <p style="text-align: center;margin: 5px auto;">Hands-on Angular eBook</p>
+                
+                <a href="https://angularnewsletter.substack.com/embed">
+                    <p style="text-align: center;margin: 5px auto;">Subscribe to our Angular newsletter and get our hands-on Angular book for free!</p>
+                <img src="https://www.techiediaries.com/handsonangular.png"/>
+                </a>
+
+            </div>
+
+
+            {% endif %}
+{% if page.tags contains 'react' %}
+            <div style="margin-top:10px;">
+
+                <a href="https://reactnewsletter.substack.com/embed">
+                <p style="text-align: center;margin: 5px auto;">Subscribe to our React newsletter and get our Hands-on React Native eBook</p>
+                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
+                </a>
+
+            </div>
+            
+
+            {% endif %}
 
             <!-- techiediaries.com_300x250: Begin -->
             <div class="adsbyvli" data-ad-slot="vi_1214246845"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246845")})</script>
@@ -254,6 +274,7 @@ post_class: post-template
                 <!--
                  put id=stickybar for stickybar
                 {% include social.html %}
+
                 <div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full"
                     data-count="hidden"></div> 
                 --> 
@@ -265,6 +286,7 @@ post_class: post-template
                     action="https://techiediaries.us17.list-manage.com/subscribe/post?u=444ae13ce2d2ced511cf9d19b&amp;id=dcd51aa7a0"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" novalidate>
+
                     <input id="mce-EMAIL" type="email" name="EMAIL" class="subscribe-input" placeholder="Your e-mail">
                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
                         <input type="text" name="b_444ae13ce2d2ced511cf9d19b_dcd51aa7a0" tabindex="-1" value="">
@@ -295,37 +317,15 @@ post_class: post-template
                 <p style="text-align: center;margin: 5px auto;">ADVERTISEMENT</p>
                 <div class="adsbyvli" data-ad-slot="vi_1214246845"></div>
                 <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1214246845") })</script>
-                
-
-                            {% if page.tags contains 'angular' %}
-            <div style="margin-top:10px;">
-                <h3>Angular Newsletter</h3>
-                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
-                <img src="https://www.techiediaries.com/handsonangular.png"/>
-                </a>
-
-            </div>
-
-
-            {% endif %}
-{% if page.tags contains 'react' %}
-            <div style="margin-top:10px;">
-                <h3>React Newsletter</h3>
-                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
-                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
-                </a>
-
-            </div>
-            
-
-            {% endif %}
-                
                 <style>
                   .vi-sidebar {
                     padding: 0px;
                   }
                 </style>
               </div>
+
+              <div class="adsbyvli" data-ad-slot="vi_1214246844"></div> 
+              <script> vitag.videoDiscoverConfig = { random: true, noFixedVideo: true }; (vitag.Init = window.vitag.Init || []).push(function () { viAPItag.initInstreamBanner("vi_1214246844") }); </script>
 
 
                 <div id="carbon-block"></div>
@@ -343,14 +343,31 @@ post_class: post-template
 <div class="row mb-5">
     <div class="col-md-8">
         <p>Get our books</p>
-        <ul>
-            <li><a href="https://www.techiediaries.com/angular-book-build-your-first-web-apps/">Practical Angular: Build
-                    your first web apps with Angular 8</a></li>
-            <li><a href="https://www.techiediaries.com/react-native-for-beginners-book/">React Native for Beginners
-                    [2019]</a></li>
+     {% if page.tags contains 'angular' %}
+            <div style="margin-top:10px;">
+                <p style="text-align: center;margin: 5px auto;">Hands-on Angular eBook</p>
+                
+                <a href="https://angularnewsletter.substack.com/embed">
+                    <p style="text-align: center;margin: 5px auto;">Subscribe to our Angular newsletter and get our hands-on Angular book for free!</p>
+                <img src="https://www.techiediaries.com/handsonangular.png"/>
+                </a>
+
+            </div>
 
 
-        </ul>
+            {% endif %}
+{% if page.tags contains 'react' %}
+            <div style="margin-top:10px;">
+
+                <a href="https://reactnewsletter.substack.com/embed">
+                <p style="text-align: center;margin: 5px auto;">Subscribe to our React newsletter and get our Hands-on React Native eBook</p>
+                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
+                </a>
+
+            </div>
+            
+
+            {% endif %}
 
     </div>
 </div>
@@ -381,6 +398,7 @@ post_class: post-template
             </a>
             
             </li>
+
         </ul>
         
     </div>
