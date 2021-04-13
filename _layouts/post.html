@@ -9,18 +9,15 @@ post_class: post-template
     <div id="main-content" class="row main">
 
         <div class="mainheading col-xs-12 col-md-12">
-            <!-- techiediaries.com_970x250: Begin -->
-            <!-- <div class="adsbyvli" data-ad-slot="vi_1214246851"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246851")})</script>  -->
-            <!-- techiediaries.com_970x250 End -->
-
-
 
             <!-- Post Title -->
             <h1 class="posttitle">
                 {{ page.title }}
             </h1>
-            <div class="adsbyvli" data-ad-slot="outstream"></div>
-
+             <!-- techiediaries.com_970x250: Begin -->
+            <div class="adsbyvli" data-ad-slot="vi_1214246851"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246851")})</script>  
+            <!-- techiediaries.com_970x250 End -->
+            
             <ul class="rrssb-buttons">
                 <li>
                     {% if page.author %}
@@ -106,6 +103,7 @@ post_class: post-template
 
                 </hr style="margin-top: 250px;">
 
+            <div class="adsbyvli" data-ad-slot="outstream"></div>
 
 
                 <div id="custom-inline"></div>
@@ -244,9 +242,46 @@ post_class: post-template
             <div style="margin-top: 20px;" id="ezoic-pub-ad-placeholder-160"></div>
             <!-- End Ezoic - middlesidebar - sidebar_middle -->
             
+            <div class="vi-sticky-ad">
+                <p style="text-align: center;margin: 5px auto;">ADVERTISEMENT</p>
+                <div class="adsbyvli" data-ad-slot="vi_1214246845"></div>
+                <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1214246845") })</script>
+                
 
-            <div id="stickybar">
+                            {% if page.tags contains 'angular' %}
+            <div style="margin-top:10px;">
+                <h3>Angular Newsletter</h3>
+                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
+                <img src="https://www.techiediaries.com/handsonangular.png"/>
+                </a>
+
+            </div>
+
+
+            {% endif %}
+{% if page.tags contains 'react' %}
+            <div style="margin-top:10px;">
+                <h3>React Newsletter</h3>
+                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
+                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
+                </a>
+
+            </div>
+            
+
+            {% endif %}
+                
+                <style>
+                  .vi-sidebar {
+                    padding: 0px;
+                  }
+                </style>
+              </div>
+
+            <div id="">
+                
                 <!--
+                 put id=stickybar for stickybar
                 {% include social.html %}
 
                 <div class="g-ytsubscribe" data-channelid="UCgQpmtmgBgYxn03Vcf6r7aQ" data-layout="full"
@@ -285,30 +320,10 @@ post_class: post-template
 <!-- techiediaries.com_300x250: Begin -->
 <!-- <div class="adsbyvli" data-ad-slot="vi_1214246845"></div><script>(vitag.Init = window.vitag.Init || []).push(function(){viAPItag.display("vi_1214246845")})</script> -->
 <!-- techiediaries.com_300x250 End -->
+                
 
 
-                            {% if page.tags contains 'angular' %}
-            <div style="margin-top:10px;">
-                <h3>Angular Newsletter</h3>
-                <a href="https://angularnewsletter.substack.com/embed">Get our Angular book for free!
-                <img src="https://www.techiediaries.com/handsonangular.png"/>
-                </a>
 
-            </div>
-
-
-            {% endif %}
-{% if page.tags contains 'react' %}
-            <div style="margin-top:10px;">
-                <h3>React Newsletter</h3>
-                <a href="https://reactnewsletter.substack.com/embed">Get our React Native book for free!
-                <img src="https://www.techiediaries.com/handsonreactnative.png"/>
-                </a>
-
-            </div>
-            
-
-            {% endif %}
                 <div id="carbon-block"></div>
 
 
@@ -342,6 +357,21 @@ post_class: post-template
         src="https://images.dmca.com/Badges/dmca_protected_sml_120m.png?ID=dfbd6797-0920-4722-a279-1be28f0f669f"
         alt="DMCA.com Protection Status" /></a>
 <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+
+<script>
+      var vi_stickyConfig = {
+        'widthActive': 1280,                        // the minimum width of the screen for the glue to work
+        'element_sidebar': 'vi-sidebar',               // class sidebar
+        'addingFixedTop': 30, // distance from top to sidebar fixed
+        'startFixed': 600, // starting distance taken fixed div ad 1 - <div class="vi-sticky-ad"></div>
+        'startFixed_2': 3000, // starting distance taken fixed div ad 2 - <div class="vi-sticky-ad"></div>
+        'sidebarStickyMode': 'sticky', // mode sticky : normal - sticky
+        'distanceChange': 1360,        // element end event fixed
+        'distanceFrom': 900,
+        'distanceTo': 1550,
+      }
+    </script>
+    <script src="https://static.vliplatform.com/plugins/sticky/visticky-uncontent.min.js?v=1.01"></script>
 
 <!--<div class="row mb-5">
     <div class="col-md-12">
