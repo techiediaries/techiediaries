@@ -44,10 +44,10 @@ In Java’s case, there are a lot of books, videos, and courses beginners can us
 
 ### Best Java Books For All-Level Learners:
 
--   [Head First Java](https://www.amazon.com/Head-First-Java-Kathy-Sierra/dp/0596009208&sa=D&source=editors&ust=1618859371612000&usg=AOvVaw06xFbaCpHMW5DlzSor1264). It’s a must-read for Java beginners since the book succinctly covers Java Core. Advanced learners can use Head First Java for reference on I/O, networking, or swing.
--   [Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997&sa=D&source=editors&ust=1618859371613000&usg=AOvVaw1WVzvPnNGtDI9X6HhNMpgx). This book is a level higher than Head First Java. Although it doesn’t give beginners such a refined explanation of the basics, it’s a great resource for learning conventions and best practices.
--   [Java Performance](https://www.amazon.com/Java-Performance-Definitive-Guide-Getting/dp/1449358454&sa=D&source=editors&ust=1618859371614000&usg=AOvVaw2xtrm2ApxGfZi77-X5KCjS) is an advanced book that helps advanced coders make the most out of JVM. It covers garbage collections, internals, profiling, JVM tuning, and other concepts.
--   [Head-First Object-Oriented Analysis and Design](https://www.amazon.com/Head-First-Object-Oriented-Analysis-Design/dp/0596008678&sa=D&source=editors&ust=1618859371614000&usg=AOvVaw05R5fOIPaMwwJ-GR8yBRQJ). From the creators of the Head First series, this book is an enjoyable glimpse into the world of OOP design practices - preference for interface over implementation, DRY, and others.
+-   [Head First Java](https://www.amazon.com/Head-First-Java-Kathy-Sierra/dp/0596009208). It’s a must-read for Java beginners since the book succinctly covers Java Core. Advanced learners can use Head First Java for reference on I/O, networking, or swing.
+-   [Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997). This book is a level higher than Head First Java. Although it doesn’t give beginners such a refined explanation of the basics, it’s a great resource for learning conventions and best practices.
+-   [Java Performance](https://www.amazon.com/Java-Performance-Definitive-Guide-Getting/dp/1449358454) is an advanced book that helps advanced coders make the most out of JVM. It covers garbage collections, internals, profiling, JVM tuning, and other concepts.
+-   [Head-First Object-Oriented Analysis and Design](https://www.amazon.com/Head-First-Object-Oriented-Analysis-Design/dp/0596008678): From the creators of the Head First series, this book is an enjoyable glimpse into the world of OOP design practices - preference for interface over implementation, DRY, and others.
 
 ## Bottom Line
 
