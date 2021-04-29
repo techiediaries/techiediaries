@@ -1,0 +1,105 @@
+[
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Brian Heater',
+    title: 'Smartphone shipments jumped 27% globally in Q1',
+    description: 'More good news from a smartphone market currently rebounding from the far reaching impacts of the pandemic. New numbers from Canalys put global shipments for Q1 2021 at 27% above where they were the same time last year. The industry was hit early and hit hard…',
+    url: 'https://techcrunch.com/2021/04/29/smartphone-shipments-jumped-27-globally-in-q1/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/03/GettyImages-1209693436.jpg?w=667',
+    publishedAt: '2021-04-29T14:07:15Z',
+    content: 'More good news from a smartphone market currently rebounding from the far reaching impacts of the pandemic. New numbers from Canalys put global shipments for Q1 2021 at 27% above where they were the … [+1484 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Darrell Etherington',
+    title: 'Blue Origin will start selling tickets for New Shepard space tourism flights on May 5',
+    description: 'Blue Origin seems very close to flying paying customers on its New Shepard sub-orbital rocket, having conducted a dress rehearsal of astronaut loading and unloading on its latest mission. Today, it also revealed that it will be selling the first ticket (ticke…',
+    url: 'https://techcrunch.com/2021/04/29/blue-origin-will-start-selling-tickets-for-new-shepard-space-tourism-flights-on-may-5/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/04/BlueOrigin_NS15_02_Launch.jpg?w=557',
+    publishedAt: '2021-04-29T13:57:54Z',
+    content: 'Blue Origin seems very close to flying paying customers on its New Shepard sub-orbital rocket, having conducted a dress rehearsal of astronaut loading and unloading on its latest mission. Today, it a… [+1381 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Mike Butcher',
+    title: 'Erase All Kittens raises $1M Seed round for Mario-style game which teaches girls to code',
+    description: 'Erase All Kittens (EAK) is an EdTech startup that created a ‘Mario-style’ web-based game designed for kids aged 8-12. However, the game has a twist: it places an emphasis on inspiring girls to code (since let’s face it, most coding tools are created by men). …',
+    url: 'https://techcrunch.com/2021/04/29/erase-all-kittens-raises-1m-seed-round-for-mario-style-game-which-teaches-girls-to-code/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/04/EAK.jpg?w=544',
+    publishedAt: '2021-04-29T13:54:38Z',
+    content: 'Erase All Kittens (EAK) is an EdTech startup that created a Mario-style web-based game designed for kids aged 8-12. However, the game has a twist: it places an emphasis on inspiring girls to code (si… [+4762 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Rebecca Bellan',
+    title: 'Lime launches 100 e-mopeds in New York City as Mayor de Blasio reveals plan to fully re-open by July 1',
+    description: 'Weeks after Lime became one of the first companies to win the bid to operate e-scooters in New York City, the micromobility giant is bringing e-mopeds to the city’s streets. This will be the first company to host multiple modes of micromobility sharing in NYC…',
+    url: 'https://techcrunch.com/2021/04/29/lime-launches-100-e-mopeds-in-new-york-city-as-mayor-de-blasio-reveals-plan-to-fully-re-open-by-july-1/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/04/Moped-DC.jpg?w=600',
+    publishedAt: '2021-04-29T13:28:17Z',
+    content: 'Weeks after Lime became one of the first companies to win the bid to operate e-scooters in New York City, the micromobility giant is bringing e-mopeds to the city’s streets. This will be the first co… [+3695 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Rebecca Dixon',
+    title: 'The gig is up on 21st-century exploitation',
+    description: 'Today’s app-based or “gig” economy is frequently dressed up in talk about “modern innovation” and the “21st century of work.” This facade is a wolf in sheep’s clothing.',
+    url: 'https://techcrunch.com/2021/04/29/the-gig-is-up-on-21st-century-exploitation/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/04/GettyImages-1182246221.jpg?w=711',
+    publishedAt: '2021-04-29T13:23:22Z',
+    content: 'Todays app-based or gig economy is frequently dressed up in talk about modern innovation and the 21st century of work. This facade is a wolf in sheeps clothing.\r\n' +
+      'Precarious, contingent work is nothin… [+4744 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Ron Miller',
+    title: 'Wasabi scores $112M Series C on $700M valuation to take on cloud storage hyperscalers',
+    description: 'Taking on Amazon S3 in the cloud storage game would seem to be a fool-hearty proposition, but Wasabi has found a way to build storage cheaply and pass the savings onto customers. Today the Boston-based startup announced a $112 million Series C investment on a…',
+    url: 'https://techcrunch.com/2021/04/29/wasabi-scores-112m-series-c-on-700m-valuation-to-take-on-cloud-storage-hyperscalers/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2018/08/GettyImages-508455950.jpg?w=712',
+    publishedAt: '2021-04-29T13:16:22Z',
+    content: 'Taking on Amazon S3 in the cloud storage game would seem to be a fool-hearty proposition, but Wasabi has found a way to build storage cheaply and pass the savings onto customers. Today the Boston-bas… [+3122 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Ingrid Lunden',
+    title: 'Vectra AI picks up $130M at a $1.2B valuation for its network approach to threat detection and response',
+    description: 'Cybersecurity nightmares like the SolarWinds hack highlight how malicious hackers continue to exploit vulnerabilities in software and apps to do their dirty work. Today a startup that’s built a platform to help organizations protect themselves from this by ru…',
+    url: 'https://techcrunch.com/2021/04/29/vectra-ai-picks-up-130m-at-a-1-2b-valuation-for-its-network-approach-to-threat-detection-and-response/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2020/06/GettyImages-1200274448.jpg?w=711',
+    publishedAt: '2021-04-29T13:06:18Z',
+    content: 'Cybersecurity nightmares like the SolarWinds hack highlight how malicious hackers continue to exploit vulnerabilities in software and apps to do their dirty work. Today a startup that’s built a platf… [+4076 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Mike Butcher',
+    title: 'Gr4vy launches Cloud payment orchestration, pulls in $11.1M Series A led by Nyca Partners',
+    description: 'Gr4vy, (pronounced ‘gravy’) is a cloud-native payments company with a “payment orchestration platform (POP)” that merges a Cloud platform with payments infrastructure. It’s also announcing a Series A funding round of $11.1M, led by Nyca Partners (a VC with a …',
+    url: 'https://techcrunch.com/2021/04/29/gr4vy-launches-cloud-payment-orchestration-pulls-in-11-1m-series-a-led-by-nyca-partners/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/04/founders_photos.jpg?w=711',
+    publishedAt: '2021-04-29T13:00:29Z',
+    content: 'Gr4vy, (pronounced gravy) is a cloud-native payments company with a payment orchestration platform (POP) that merges a Cloud platform with payments infrastructure. Its also announcing a Series A fund… [+4169 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Brian Heater',
+    title: 'Google announces career and digital training initiative for formerly incarcerated individuals',
+    description: 'Google today announced the launch of Grow with Google Career Readiness for Reentry. The initiative — created in partnership with nonprofits The Last Mile, Center for Employment Opportunities (CEO), Defy Ventures, Fortune Society and The Ladies of Hope Ministr…',
+    url: 'https://techcrunch.com/2021/04/29/google-formerly-incarcerated/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/01/GettyImages-1229247383.jpg?w=600',
+    publishedAt: '2021-04-29T13:00:09Z',
+    content: 'Google today announced the launch of Grow with Google Career Readiness for Reentry. The initiative — created in partnership with nonprofits The Last Mile, Center for Employment Opportunities (CEO), D… [+1576 chars]'
+  },
+  {
+    source: { id: 'techcrunch', name: 'TechCrunch' },
+    author: 'Sydney Anh Mai',
+    title: 'Hacking my way into analytics: A creative’s journey to design with data',
+    description: "There's a growing need for basic data literacy in the tech industry, and it’s only getting more taxing by the year, so it's essential to equip your whole team with the right exploratory medium.",
+    url: 'https://techcrunch.com/2021/04/29/hacking-my-way-into-analytics-a-creatives-journey-to-design-with-data/',
+    urlToImage: 'https://techcrunch.com/wp-content/uploads/2021/04/GettyImages-1274421614-1.jpg?w=623',
+    publishedAt: '2021-04-29T12:45:31Z',
+    content: 'Growing up, did you ever wonder how many chairs youd have to stack to reach the sky?\r\n' +
+      'No? I guess thats just me then.\r\n' +
+      'As a child, I always asked a lot of how many/much questions. Some were legitimat… [+1680 chars]'
+  }
+]
