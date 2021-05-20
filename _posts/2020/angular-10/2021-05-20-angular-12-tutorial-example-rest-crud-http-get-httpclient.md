@@ -1,36 +1,36 @@
 ---
 layout: post
-title: "Angular 11 Tutorial By Example: REST CRUD APIs & HTTP GET Requests with HttpClient"
+title: "Angular 12 Tutorial By Example: REST CRUD APIs & HTTP GET Requests with HttpClient"
 image: "images/content/angular-by-example-httpclient-get.png"
-excerpt: "In this Angular 11 tutorial, we'll learn to build an Angular 11 example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud" 
-date: 2020-11-24  
-tags : [angular, angular-11, angular-11, angular-11-tutorials ] 
+excerpt: "In this Angular 12 tutorial, we'll learn to build an Angular 12 example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud" 
+date: 2021-05-20  
+tags : [angular, angular-12, angular-12, angular-12-tutorials ] 
 ---
 
-![Angular 11 tutorial](https://www.techiediaries.com/images/angular-10-tutorial.png)
+![Angular 12 tutorial](https://www.techiediaries.com/images/angular-10-tutorial.png)
 
 
-In this Angular 11 tutorial, we'll learn to build an Angular 11 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
+In this Angular 12 tutorial, we'll learn to build an Angular 12 Ajax CRUD example application going through all the required steps from creating/simulating a REST API, scaffolding a new project, setting up the essential APIs, and finally building and deploying your final application to the cloud.  
 
 
-> Also learn to build a [chat app with TypeScript, Angular 11 and PubNub/Chatkit](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
+> Also learn to build a [chat app with TypeScript, Angular 12 and PubNub/Chatkit](https://www.techiediaries.com/angular/typescript-node-ionic-chat/)
 
 
- ## What We'll Learn in this Angular 11 Tutorial? 
+ ## What We'll Learn in this Angular 12 Tutorial? 
 
-- We'll learn by example how to send GET requests with URL query strings and parameters and process HTTP responses from REST API servers in your Angular 11 application using `Httplient` for fetching and consuming JSON data, how to do error handling for HTTP errors using the RxJS `throwError()` and `catchError()` operators, how to retry failed HTTP requests in poor network connections and cancel pending requests using the RxJS `retry()` and `takeUntil()` operators, and finally how to deploy the application to Firebase hosting using the latest Angular 8.3+ features. 
+- We'll learn by example how to send GET requests with URL query strings and parameters and process HTTP responses from REST API servers in your Angular 12 application using `Httplient` for fetching and consuming JSON data, how to do error handling for HTTP errors using the RxJS `throwError()` and `catchError()` operators, how to retry failed HTTP requests in poor network connections and cancel pending requests using the RxJS `retry()` and `takeUntil()` operators, and finally how to deploy the application to Firebase hosting using the latest Angular 8.3+ features. 
 - We'll also see how to use Angular services and RxJS Observables, and learn how to set up Angular Material in our project and style the UI with Material Design components.
-- We'll see how to use the new `ng deploy` feature in Angular 8.3+ to easily deploy your Angular 11 application from the command-line to Firebase hosting. 
+- We'll see how to use the new `ng deploy` feature in Angular 8.3+ to easily deploy your Angular 12 application from the command-line to Firebase hosting. 
 
 
 
 > **Note**: Please note that we are using HttpClient which is an improved version of the HTTP Client API, available starting 
-from Angular version [4.3.0-rc.0](https://github.com/angular/angular/blob/master/CHANGELOG.md#430-rc0-2017-07-08). The old HTTP client is not available in Angular 11. 
+from Angular version [4.3.0-rc.0](https://github.com/angular/angular/blob/master/CHANGELOG.md#430-rc0-2017-07-08). The old HTTP client is not available in Angular 12. 
 
-You can also check out how to use HttpClient with Angular 11 to build a news application that fetches JSON data from a third-party REST API [in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor/). 
+You can also check out how to use HttpClient with Angular 12 to build a news application that fetches JSON data from a third-party REST API [in this tutorial](https://www.techiediaries.com/angular-tutorial-example-rest-api-httpclient-get-ngfor/). 
 
 
-Throughout this step by step Angular 11 tutorial, we are going to see a practical CRUD example of how to use the HttpClient that's available from the
+Throughout this step by step Angular 12 tutorial, we are going to see a practical CRUD example of how to use the HttpClient that's available from the
 `@angular/common/http` package, to make HTTP GET requests using the `get()` method.
 
 ## What We'll Cover in this Tutorial?
@@ -38,8 +38,8 @@ Throughout this step by step Angular 11 tutorial, we are going to see a practica
 We'll cover:
 
 - How to create a fake and complete working CRUD REST API,
-- How to install Angular CLI v11,
-- How to create an Angular 11 project using Angular CLI,
+- How to install Angular CLI v12,
+- How to create an Angular 12 project using Angular CLI,
 - How to set up Angular Material and style your application with Material Design,
 - How to create Angular components, routing and navigation between them,
 - How to create and inject Angular services, 
@@ -53,23 +53,23 @@ We'll cover:
 
 ## The Steps of this Tutorial
 
-The steps of this Angular 11 tutorial are as follows:
+The steps of this Angular 12 tutorial are as follows:
 
--   Step 1 — Setting up Angular CLI 11
--   Step 2 — Initializing a New Angular 11 Example Project
+-   Step 1 — Setting up Angular CLI 12
+-   Step 2 — Initializing a New Angular 12 Example Project
 -   Step 3 — Setting up a (Fake) JSON REST API
--   Step 4 — Setting up Angular HttpClient 11 in our Example Project 
--   Step 5 — Creating Angular 11 Components
--   Step 6 — Adding Angular 11 Routing
--   Step 7 — Styling the UI with Angular Material 11
--   Step 8 — Consuming the JSON REST API with Angular HttpClient 11
+-   Step 4 — Setting up Angular HttpClient 12 in our Example Project 
+-   Step 5 — Creating Angular 12 Components
+-   Step 6 — Adding Angular 12 Routing
+-   Step 7 — Styling the UI with Angular Material 12
+-   Step 8 — Consuming the JSON REST API with Angular HttpClient 12
 -   Step 9 — Adding HTTP Error Handling with RxJS `catchError()` & `HttpClient`
 -   Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
 -   Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
 -   Step 12 — Adding URL Query Parameters to the HttpClient get() Method
--   Step 13 — Getting the Full HTTP Response with Angular HttpClient 11
--   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 11
--   Step 15 — Building and Deploying your Angular 11 Application to Firebase Hosting
+-   Step 13 — Getting the Full HTTP Response with Angular HttpClient 12
+-   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 12
+-   Step 15 — Building and Deploying your Angular 12 Application to Firebase Hosting
 
 
 Let's get started by introducing Angular HttpClient, its features and why using it.
@@ -94,7 +94,7 @@ The `HttpClient` builtin service provides many advantages to Angular developers:
 - - Easy error handling, 
 - - Retrying failed HTTP requests, etc. 
 
-Now after introducing HttpClient, let's proceed to building our example application starting with the prerequisites needed to successfully complete our Angular 11 tutorial.
+Now after introducing HttpClient, let's proceed to building our example application starting with the prerequisites needed to successfully complete our Angular 12 tutorial.
 
 ## Prerequisites   
 
@@ -105,14 +105,14 @@ Before getting started you need a few prerequisites:
 
 > **Note**: If you don't want to install a local environment for Angular development but still want to try the code in this tutorial, you can use [Stackblitz](https://stackblitz.com/), an online IDE for frontend development that you can use to create an Angular project compatible with Angular CLI.
 
-If you have the previous prerequisites, you are ready for the next steps of our Angular 11 tutorial that will teach you by example how to use Angular HttpClient to send HTTP GET requests for fetching JSON data and the various RxJS operators such as `catchError()`, `tap()`, `retry()`, and `takeUntil()` for implementing advanced features such as error handling, retrying failed HTTP requests and cancelling pending requests.
+If you have the previous prerequisites, you are ready for the next steps of our Angular 12 tutorial that will teach you by example how to use Angular HttpClient to send HTTP GET requests for fetching JSON data and the various RxJS operators such as `catchError()`, `tap()`, `retry()`, and `takeUntil()` for implementing advanced features such as error handling, retrying failed HTTP requests and cancelling pending requests.
 
-In the first step(s) of our tutorial, we'll see how to install Angular CLI 11 and create an example project from scratch.
+In the first step(s) of our tutorial, we'll see how to install Angular CLI 12 and create an example project from scratch.
 
 
-##   Step 1 — Setting up Angular CLI 11
+##   Step 1 — Setting up Angular CLI 12
 
-In this step, we'll [install the latest Angular CLI 11](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) version (at the time of writing this tutorial).
+In this step, we'll [install the latest Angular CLI 12](https://www.ahmedbouchefra.com/angular/install-angular-9-cli-and-create-project-with-routing/) version (at the time of writing this tutorial).
 
 > **Note**: These instructions are also valid for Angular 8/9.
 
@@ -124,34 +124,31 @@ In this step, we'll [install the latest Angular CLI 11](https://www.ahmedbouchef
 $ npm install -g @angular/cli
 ```
 
-At the time of writing this tutorial, **angular/cli v11** will be installed on your system.
+At the time of writing this tutorial, **angular/cli v12** will be installed on your system.
 
 
 If you run the `ng version` command, you should get a similar output:
 
 ```bash
-Angular CLI: 10.0.0
-Node: 12.14.0
+Angular CLI: 12.0.0
+Node: 14.17.0
+Package Manager: npm 6.14.13
 OS: linux x64
 
 Angular: 
 ... 
-Ivy Workspace: 
 
 Package                      Version
 ------------------------------------------------------
-@angular-devkit/architect    0.1100.0-next.0
-@angular-devkit/core         11.0.0-next.0
-@angular-devkit/schematics   11.0.0-next.0
-@angular/cli                 11.0.0-next.0
-@schematics/angular          11.0.0-next.0
-@schematics/update           0.1100.0-next.0
-rxjs                         6.5.4
+@angular-devkit/architect    0.1200.0 (cli-only)
+@angular-devkit/core         12.0.0 (cli-only)
+@angular-devkit/schematics   12.0.0 (cli-only)
+@schematics/angular          12.0.0 (cli-only)
 ```
 
 In the next step, we'll learn how to intialize a new example project from the command-line.
 
-##   Step 2 — Initializing a New Angular 11 Example Project
+##   Step 2 — Initializing a New Angular 12 Example Project
 
 In this step, we'll proceed to create our example project. Head back to your command-line interface and run the following commands:
 
@@ -167,31 +164,25 @@ This will instruct the CLI to automatically set up routing in our project so we'
 If you run the `ng version` command inside your project's folder, you should get a similar output:
 
 ```bash
-Angular CLI: 11.0.2
-Node: 12.14.0
+Angular CLI: 12.0.0
+Node: 14.17.0
+Package Manager: npm 6.14.13
 OS: linux x64
 
-Angular: 11.0.1
-... animations, common, compiler, compiler-cli, core, forms
-... language-service, platform-browser, platform-browser-dynamic
+Angular: 12.0.0
+... animations, cdk, cli, common, compiler, compiler-cli, core
+... forms, material, platform-browser, platform-browser-dynamic
 ... router
-Ivy Workspace: Yes
 
-Package                           Version
------------------------------------------------------------
-@angular-devkit/architect         0.1100.2
-@angular-devkit/build-angular     0.1100.2
-@angular-devkit/build-optimizer   0.1100.2
-@angular-devkit/build-webpack     0.1100.2
-@angular-devkit/core              11.0.2
-@angular-devkit/schematics        11.0.2
-@angular/cli                      11.0.2
-@ngtools/webpack                  11.0.2
-@schematics/angular               11.0.2
-@schematics/update                0.1100.2
-rxjs                              6.5.4
-typescript                        3.7.5
-webpack                           4.41.2
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1200.0
+@angular-devkit/build-angular   12.0.0
+@angular-devkit/core            12.0.0
+@angular-devkit/schematics      12.0.0
+@schematics/angular             12.0.0
+rxjs                            6.6.7
+typescript                      4.2.4
 ```
 
 Next, navigate to you project’s folder and run the local development server using the following commands:
@@ -206,7 +197,7 @@ A local development server will start listening on the `http://localhost:4200/` 
 
 Open your web browser and navigate to the `http://localhost:4200/` address to see your app up and running. This is a screenshot at this point:
  
-![Angular 11 Project](https://paper-attachments.dropbox.com/s_F52E295BB9C92BEFE7506DFCE2086C2583C762072AFE2CA1A9CE9AD4DA9FF751_1567465432228_Angulardemo.png)
+![Angular 12 Project](https://paper-attachments.dropbox.com/s_F52E295BB9C92BEFE7506DFCE2086C2583C762072AFE2CA1A9CE9AD4DA9FF751_1567465432228_Angulardemo.png)
 
 You should now leave the development server running and start a new command-line interface for running the CLI commands of the next steps.
 
@@ -329,10 +320,10 @@ For example:
 
 Leave the JSON REST API server running and open a new command-line interface for typing the commands of the next steps.
 
-As a summary of what we have done — We installed Angular CLI and initialized a new project based on the latest Angular 11 version. Then, we created a REST API using `json-server` based on a JSON file. In the next step of our Angular 11 tutorial, we'll learn how to set up `HttpClient` in our Angular 11 project.
+As a summary of what we have done — We installed Angular CLI and initialized a new project based on the latest Angular 12 version. Then, we created a REST API using `json-server` based on a JSON file. In the next step of our Angular 12 tutorial, we'll learn how to set up `HttpClient` in our Angular 12 project.
 
 
-##   Step 4 — Setting up Angular 11 HttpClient in our Example Project 
+##   Step 4 — Setting up Angular 12 HttpClient in our Example Project 
 
 In this step, we'll proceed to set up the `HttpClient` module in our example.
 
@@ -368,7 +359,7 @@ export class AppModule { }
 That's all, we are now ready to use the `HttpClient` service in our project but before that we need to create a couple of components — The home and about components. This is what we'll learn to do in the next step.
 
 
-## Step 5 — Creating Angular 11 Components
+## Step 5 — Creating Angular 12 Components
 
 In this step, we'll proceed to create the Angular components that control our application UI. 
 
@@ -400,16 +391,16 @@ Next, open the `src/app/about/about.component.html` and add the following code:
 
 ```html
 <p style="padding: 13px;">
-An Angular 11 example application that demonstrates how to use HttpClient to consume REST APIs
+An Angular 12 example application that demonstrates how to use HttpClient to consume REST APIs
 </p>
 ```
 
 We'll update the home component in the following steps.
 
-In the next step of our Angular 11 tutorial, we'll add these components to the router.
+In the next step of our Angular 12 tutorial, we'll add these components to the router.
 
 
-##   Step 6 — Adding Angular 11 Routing
+##   Step 6 — Adding Angular 12 Routing
 
 In this step, we'll proceed to add routing to our example.
 
@@ -440,9 +431,9 @@ We first imported the home and about components, next we added three routes incl
 In the next step of our example, we'll set up Angular Material in our project for styling our UI.
 
 
-##   Step 7 — Styling the UI with Angular Material 11
+##   Step 7 — Styling the UI with Angular Material 12
 
-In this step of our Angular 11 tutorial, we'll proceed to add Angular Material to our project and style our application UI.
+In this step of our Angular 12 tutorial, we'll proceed to add Angular Material to our project and style our application UI.
 
 [Angular Material](https://material.angular.io) provides Material Design components that allow developers to create professional UIs. Setting up Angular Material in our project is much easier now with the new `ng add` command of the Angular CLI v7+. 
 
@@ -525,13 +516,13 @@ Next, open the `src/app/app.component.html` file and update it as follows:
 
 We created the shell of our application containing a top bar with two navigation buttons to the home and about components.
 
-As a summary of what we did until this point of our tutorial — We have setup HttpClient and Angular Material v11 in our project, created the home and about components and configured routing, and finaly added the shell of our application containing a topbar with navigation.  
+As a summary of what we did until this point of our tutorial — We have setup HttpClient and Angular Material v12 in our project, created the home and about components and configured routing, and finaly added the shell of our application containing a topbar with navigation.  
 
-In the next step of our tutorial, we'll learn how to fetch the JSON data from our REST API server using `HttpClient` v11.
+In the next step of our tutorial, we'll learn how to fetch the JSON data from our REST API server using `HttpClient` v12.
 
-> Also read 3+ ways to [integrate Bootstrap with Angular](https://www.techiediaries.com/angular-bootstrap/) and how to [style Angular 11 UIs with Bootstrap 4](https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/).
+> Also read 3+ ways to [integrate Bootstrap with Angular](https://www.techiediaries.com/angular-bootstrap/) and how to [style Angular 12 UIs with Bootstrap 4](https://www.techiediaries.com/angular/style-angular-10-example-bootstrap-4/).
 
-##   Step 8 — Consuming the JSON REST API with Angular HttpClient 11
+##   Step 8 — Consuming the JSON REST API with Angular HttpClient 12
 
 In this step, we'll proceed to consume JSON data from our REST API server in our example application.
 
@@ -632,7 +623,7 @@ Next, open the `src/app/home/home.component.html` file and update it as follows:
 <div style="padding: 13px;">
     <mat-spinner *ngIf="products.length === 0"></mat-spinner>
 
-    <mat-card *ngFor="let product of products" style="margin-top:11px;">
+    <mat-card *ngFor="let product of products" style="margin-top:12px;">
         <mat-card-header>
             <mat-card-title>{{product.name}}</mat-card-title>
             <mat-card-subtitle>{{product.price}} $/ {{product.quantity}}
@@ -658,7 +649,7 @@ Next, we iterated over the `products` array using [`ngFor`](https://www.techiedi
  
 This is a screenshot of the home page after JSON data is fetched:
 
-![Angular 11 Example](https://www.diigo.com/file/image/rscqpoqzoceecpdoczdspbaqes/Angular+8+Example.jpg?k=7c12b74876bb19d81f1a3528d82b79d3)
+![Angular 12 Example](https://www.diigo.com/file/image/rscqpoqzoceecpdoczdspbaqes/Angular+8+Example.jpg?k=7c12b74876bb19d81f1a3528d82b79d3)
 
 Next, we'll see how to add error handling to our service.
 
@@ -725,7 +716,7 @@ In the next step, we'll see how to improve our data service by automatically ret
 
 ##   Step 10 — Retrying Failed HTTP Requests with RxJS `retry()` & `HttpClient`
 
-In this step of our Angular 11 tutorial, we'll see how to use the `retry()` operator of RxJS with HttpClient to automatically resubscribing to the returned Observable which results in resending the failed HTTP requests.
+In this step of our Angular 12 tutorial, we'll see how to use the `retry()` operator of RxJS with HttpClient to automatically resubscribing to the returned Observable which results in resending the failed HTTP requests.
 
 In many cases, errors are temporary and due to poor network conditions so simply trying again will make them go away automatically. For example, in mobile devices network interruptions are frequent so if the user tries again, they may get a successful response. Instead of letting users manually retry, let's see how to do that automatically in our example application.  
 
@@ -754,7 +745,7 @@ In the next step, we'll see how to unsubscribe from RxJS Observables in our exam
 
 ##   Step 11 — Unsubscribing from HttpClient Observables with RxJS `takeUntil()`  
 
-In this step of our Angular 11 tutorial, we'll learn about why we need and how to unsubscribe from Observables in our code using the `takeUntil()` operator.
+In this step of our Angular 12 tutorial, we'll learn about why we need and how to unsubscribe from Observables in our code using the `takeUntil()` operator.
 
 First of all, do you need to unsubscribe from the Observables returned by the `HttpClient` methods?
 
@@ -822,7 +813,7 @@ That's it. In this step, we have added the logic to cancel any pending HTTP requ
 Also read how to [Unsubscribe from the RxJS subjects](https://www.techiediaries.com/angular/unsubscribe-rxjs-subjects-ondestroy-oninit-changedetectorref/) when the Angular component is destroyed
 
 
-In the next step of our Angular 11 tutorial, we'll see how to use URL query parameters with the `get()` method of `HttpClient`. 
+In the next step of our Angular 12 tutorial, we'll see how to use URL query parameters with the `get()` method of `HttpClient`. 
 
 
 ##   Step 12 — Adding URL Query Parameters to the HttpClient `get()` Method
@@ -853,7 +844,7 @@ In the Link header you’ll get first, prev, next and last links. In the next st
 
 
 
-##   Step 13 — Getting the Full HTTP Response with Angular HttpClient 11
+##   Step 13 — Getting the Full HTTP Response with Angular HttpClient 12
 
 In this ste, we'll proceed by implementing the logic for retrieving pagination information from the Link header contained in the HTTP response received from the JSON REST API server.
 
@@ -996,7 +987,7 @@ Finally, add open the `src/app/home/home.component.html` file and update the tem
 <div style="padding: 13px;">
     <mat-spinner *ngIf="products.length === 0"></mat-spinner>
 
-    <mat-card *ngFor="let product of products" style="margin-top:11px;">
+    <mat-card *ngFor="let product of products" style="margin-top:12px;">
         <mat-card-header>
             <mat-card-title>#{{product.id}} {{product.name}}</mat-card-title>
             <mat-card-subtitle>{{product.price}} $/ {{product.quantity}}
@@ -1027,7 +1018,7 @@ This is a screenshot of our application:
 ![](https://www.diigo.com/file/image/rscqpoqzoceparbdpzdspbsdra/Angular+8+HTTP+Example.jpg?k=143b81257774810f9369004fda4c1f4c)
 
 
-##   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 11
+##   Step 14 — Requesting a Typed HTTP Response with Angular HttpClient 12
 
 In this step, we'll see how to use typed HTTP responses in our example application.
 
@@ -1112,7 +1103,7 @@ Next change the type of the HTTP response in the `sendGetRequest()` call:
 You also need to do the same for the other `firstPage()`, `previousPage()`, `nextPage()` and `lastPage()` methods.
 
 
-##   Step 15 — Building and Deploying your Angular 11 Application to Firebase Hosting
+##   Step 15 — Building and Deploying your Angular 12 Application to Firebase Hosting
 
 In this step, we'll see how to build and deploy our example application to Firebase hosting using the ng deploy command available in Angular 8.3+.
 
@@ -1166,7 +1157,7 @@ The command will produce an optimized build of your application (equivalent to t
 
 ## Conclusion
 
-Throughout this Angular 11 tutorial, we've built a complete working Angular application example using the latest version.
+Throughout this Angular 12 tutorial, we've built a complete working Angular application example using the latest version.
 
 As a recap, we've particularly seen by example how to set up `HttpClient` and send HTTP GET requests with parameters using the `HttpClient.get()` method, how to handle HTTP errors using the RxJS `throwError()` and `catchError()` operators, unsubscribe from RxJS Observables for the cancelled HTTP requests using the `takeUntil()` operator and retry failed requests with the `retry()` operator and finally how to deploy our application to Firebase hosting using the latest `ng deploy` feature available from Angular 8.3+.
 
