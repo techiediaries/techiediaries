@@ -19,8 +19,41 @@ post_class: post-template
             <h1>
                 {{ page.title }}
             </h1>
+  
+            {% if page.img %}
+            <img style="height: min-content;" src="{{page.img}}" alt="{{ page.title }}">
 
-            
+            {% endif %}
+
+            <div class="article-post">
+                {{content}}
+
+                <!-- techiediaries.com_728x90: Begin -->
+                
+<div style="margin: 15px 0; clear: both">
+<div class="adsbyvli" style="width:728px; height:90px" data-ad-slot="vi_1214256783"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1214256783") })</script>
+</div>
+                <!-- techiediaries.com_728x90 End -->
+
+                </hr style="margin-top: 250px;">
+
+            <div style="margin: 17px;" class="adsbyvli" data-ad-slot="outstream"></div>
+
+
+                <div id="custom-inline"></div>
+
+                </hr style="margin-bottom: 250px;">
+
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
+                    data-ad-client="ca-pub-9293763250492023" data-ad-slot="9249041598"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
+            </div>
+
+            <hr />
             <ul class="rrssb-buttons">
                 <li>
                     {% if page.author %}
@@ -78,50 +111,6 @@ post_class: post-template
                             <path fill="var(--h-news)" d="M14 13.6L9.5 4.4h-3L13 16.6v7h2.5v-7l6-12.2h-2.6z" />
                         </svg> </a></li>
             </ul>
-
-
-            <!-- Post Featured Image -->
-            {% if page.img %}
-            <img class="featured-image img-fluid" src="{{page.img}}" alt="{{ page.title }}">
-
-            {% endif %}
-
-            <!-- End Featured Image -->
-
-
-            <!-- Post Content -->
-
-            <div class="article-post">
-
-
-                {{content}}
-
-                <!-- techiediaries.com_728x90: Begin -->
-                
-<div style="margin: 15px 0; clear: both">
-<div class="adsbyvli" style="width:728px; height:90px" data-ad-slot="vi_1214256783"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1214256783") })</script>
-</div>
-                <!-- techiediaries.com_728x90 End -->
-
-                </hr style="margin-top: 250px;">
-
-            <div style="margin: 17px;" class="adsbyvli" data-ad-slot="outstream"></div>
-
-
-                <div id="custom-inline"></div>
-
-                </hr style="margin-bottom: 250px;">
-
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed"
-                    data-ad-client="ca-pub-9293763250492023" data-ad-slot="9249041598"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-
-            </div>
-
-            <hr />
 
         </div>
         <div class="col-xs-12 col-md-4  vi-sidebar">
